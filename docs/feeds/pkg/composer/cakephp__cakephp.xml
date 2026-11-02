@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要対応] composer: CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection (CRITICAL)</title>
+<title>[要確認] composer: CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-vjqc-q4mp-2rvf"/>
 <id>urn:bug-hou:GHSA-vjqc-q4mp-2rvf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; CakePHPのFunctionsBuilderの複数のメソッドにSQLインジェクション&lt;br&gt;→ 4.5.12 / 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7 以降に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CakePHPのFunctionsBuilderのSQLインジェクション。使っている場合に影響&lt;br&gt;→ cakephp/database 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7、cakephp 4.5.12 に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
 </entry>
 </feed>

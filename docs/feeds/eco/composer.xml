@@ -42,11 +42,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのwatermark()でパストラバーサルし任意ファイル漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.11に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69089&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要対応] PHP: CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection (CRITICAL)</title>
+<title>[要確認] PHP: CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-vjqc-q4mp-2rvf"/>
 <id>urn:bug-hou:GHSA-vjqc-q4mp-2rvf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; CakePHPのFunctionsBuilderの複数のメソッドにSQLインジェクション&lt;br&gt;→ 4.5.12 / 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7 以降に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CakePHPのFunctionsBuilderのSQLインジェクション。使っている場合に影響&lt;br&gt;→ cakephp/database 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7、cakephp 4.5.12 に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] PHP: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>
