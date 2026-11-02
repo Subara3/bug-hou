@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜oauthlib（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/oauthlib.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/oauthlib.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: OAuthLib: Bearer token can be retrieved as long as client knows a valid client ID for device workflow (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3jp2-3mrg-2vxc"/>
+<id>urn:bug-hou:GHSA-3jp2-3mrg-2vxc</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;oauthlib &amp;gt;= 3.3.0, &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-49272&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] pip: OAuthLib: Token grants can use attacker-supplied client_id for authorization after authenticating a different client (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7984-qgvg-3j9c"/>
+<id>urn:bug-hou:GHSA-7984-qgvg-3j9c</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; OAuthLibで別クライアントのclient_idで認可される。HIGH&lt;br&gt;→ oauthlib 4.0.0に更新&lt;/p&gt;&lt;p&gt;oauthlib &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-118669&lt;/p&gt;</content>
+</entry>
+</feed>

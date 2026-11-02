@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜npm の新着</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>Node.js: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xjj6-f33q-929c"/>
+<id>urn:bug-hou:GHSA-xjj6-f33q-929c</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 6.23.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.18.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109869&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xcx6-jx8p-x3h5"/>
+<id>urn:bug-hou:GHSA-xcx6-jx8p-x3h5</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@azure/msal-node &amp;gt;= 5.0.0-beta.0, &amp;lt; 7.1.0 → 7.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-109461&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: dd-trace: ReDOS in URL query string obfuscation (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-x94g-w73q-hpcw"/>
+<id>urn:bug-hou:GHSA-x94g-w73q-hpcw</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;dd-trace &amp;gt;= 2.0.0, &amp;lt; 5.131.1 → 5.131.1, dd-trace &amp;gt;= 6.0.0, &amp;lt; 6.20.1 → 6.20.1&lt;/p&gt;&lt;p&gt;CVE-2026-116693&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Satori-generated SVG has improper escaping (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wx4j-mvgx-mqwp"/>
+<id>urn:bug-hou:GHSA-wx4j-mvgx-mqwp</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;satori &amp;gt;= 0.0.27, &amp;lt; 0.33.5 → 0.33.5&lt;/p&gt;&lt;p&gt;CVE-2026-94545&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: CKEditor: Cross-site scripting (XSS) in the engine package (LOW)</title>
+<link href="https://github.com/advisories/GHSA-v6mg-96c6-gmpq"/>
+<id>urn:bug-hou:GHSA-v6mg-96c6-gmpq</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ckeditor5 &amp;gt;= 29.0.0, &amp;lt; 47.7.4 → 47.7.4, @ckeditor/ckeditor5-engine &amp;gt;= 29.0.0, &amp;lt; 47.7.4 → 47.7.4, ckeditor5 &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1, @ckeditor/ckeditor5-engine &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-116687&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: CKEditor: Cross-site scripting (XSS) in the engine package (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rh54-vffm-5fvp"/>
+<id>urn:bug-hou:GHSA-rh54-vffm-5fvp</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ckeditor5 &amp;gt;= 45.0.0, &amp;lt; 47.7.4 → 47.7.4, @ckeditor/ckeditor5-engine &amp;gt;= 45.0.0, &amp;lt; 47.7.4 → 47.7.4, ckeditor5 &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1, @ckeditor/ckeditor5-engine &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-116688&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: better-auth: OAuth Proxy lets an attacker sign in as another user (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r4xp-prcw-77qf"/>
+<id>urn:bug-hou:GHSA-r4xp-prcw-77qf</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.5.0-beta.12, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;GHSA-r4xp-prcw-77qf&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qrxm-fqhp-jwvm"/>
+<id>urn:bug-hou:GHSA-qrxm-fqhp-jwvm</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 4.2.1, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-87018&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Ghost: Authorization Bypass in Comment Like Feature (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-qrh6-cwg3-343x"/>
+<id>urn:bug-hou:GHSA-qrh6-cwg3-343x</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ghost &amp;gt;= 5.9.0, &amp;lt; 6.44.1 → 6.44.1&lt;/p&gt;&lt;p&gt;CVE-2026-103288&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici WebSocket client vulnerable to Denial of Service via failed HTTP/2 handshake (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qq8j-7v2v-3rwp"/>
+<id>urn:bug-hou:GHSA-qq8j-7v2v-3rwp</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 8.11.0, &amp;lt; 8.11.2 → 8.11.2&lt;/p&gt;&lt;p&gt;CVE-2026-109855&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: better-auth: Device login approval does not show the requesting client or permissions (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-q84f-53jg-9ppm"/>
+<id>urn:bug-hou:GHSA-q84f-53jg-9ppm</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-q7qp-rjg7-q26m"/>
+<id>urn:bug-hou:GHSA-q7qp-rjg7-q26m</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;multer &amp;gt;= 2.0.0, &amp;lt; 2.5.0 → 2.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-113872&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: dcmjs: DS/IS VALUE REPRESENTATION INPUT VALIDATION BYPASS (LOW)</title>
+<link href="https://github.com/advisories/GHSA-px68-xx5g-48q5"/>
+<id>urn:bug-hou:GHSA-px68-xx5g-48q5</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;dcmjs &amp;lt; 0.52.0 → 0.52.0&lt;/p&gt;&lt;p&gt;CVE-2026-46350&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Highcharts Core: `javascript:` URL in an `xlink:href` attribute survives text filtering and reaches exported charts (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mw4f-gj5x-6xr4"/>
+<id>urn:bug-hou:GHSA-mw4f-gj5x-6xr4</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;highcharts &amp;gt;= 10.3.2, &amp;lt; 11.4.9 → 11.4.9, highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.2 → 12.6.2, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.1.0 → 13.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-116796&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Serialize JavaScript: Cross-site scripting (XSS) via unescaped &lt;/script at the end of a serialized function body (LOW)</title>
+<link href="https://github.com/advisories/GHSA-m5mm-p8h7-m29v"/>
+<id>urn:bug-hou:GHSA-m5mm-p8h7-m29v</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;serialize-javascript &amp;lt; 7.1.3 → 7.1.3&lt;/p&gt;&lt;p&gt;CVE-2026-115897&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Highcharts Dashboards: `__proto__` data table id writes sync listeners to `Object.prototype` (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-jqgh-w3cc-7jqw"/>
+<id>urn:bug-hou:GHSA-jqgh-w3cc-7jqw</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-118243&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Fallow: Jest and Vitest `projects` entries let an analyzed repository make Fallow read files outside the project root (LOW)</title>
+<link href="https://github.com/advisories/GHSA-jfwm-3p3c-6hx5"/>
+<id>urn:bug-hou:GHSA-jfwm-3p3c-6hx5</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fallow &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, @fallow-cli/fallow-node &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, fallow-cli &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, fallow-core &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0&lt;/p&gt;&lt;p&gt;CVE-2026-115569&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Fallow: A `.*` glob segment let an analyzed repository make Fallow test paths in the parent of the project root (LOW)</title>
+<link href="https://github.com/advisories/GHSA-h4fr-cmh5-qr62"/>
+<id>urn:bug-hou:GHSA-h4fr-cmh5-qr62</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fallow &amp;lt; 3.34.0 → 3.34.0, @fallow-cli/fallow-node &amp;lt; 3.34.0 → 3.34.0, fallow-cli &amp;lt; 3.34.0 → 3.34.0, fallow-config &amp;lt; 3.34.0 → 3.34.0, fallow-core &amp;lt; 3.34.0 → 3.34.0&lt;/p&gt;&lt;p&gt;GHSA-h4fr-cmh5-qr62&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Highcharts Dashboards: `chartConstructor` is an unchecked lookup into the Highcharts namespace (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-grj7-r4jv-pw9j"/>
+<id>urn:bug-hou:GHSA-grj7-r4jv-pw9j</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-118245&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Nodemailer: RFC 5322 comment inside an angle-bracket address is never stripped (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-g73g-hqqh-jr95"/>
+<id>urn:bug-hou:GHSA-g73g-hqqh-jr95</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-g73g-hqqh-jr95&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: MCP TypeScript SDK: HTTP server transports and handlers did not limit request body size or JSON-RPC batch length (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-f897-62hf-6gxq"/>
+<id>urn:bug-hou:GHSA-f897-62hf-6gxq</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@modelcontextprotocol/sdk &amp;gt;= 1.10.0, &amp;lt; 1.30.1 → 1.30.1, @modelcontextprotocol/server &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/node &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/hono &amp;gt;= 2.0.0, &amp;lt; 2.0.1 → 2.0.1&lt;/p&gt;&lt;p&gt;GHSA-f897-62hf-6gxq&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-f72v-6w45-q472"/>
+<id>urn:bug-hou:GHSA-f72v-6w45-q472</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 7.15.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109841&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Highcharts Dashboards / Grid Pro: `DataTable.setCell` and column writers treat `__proto__` as an existing column. (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-c75x-9x9h-28rm"/>
+<id>urn:bug-hou:GHSA-c75x-9x9h-28rm</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118247&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9fm3-97px-rjf6"/>
+<id>urn:bug-hou:GHSA-9fm3-97px-rjf6</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 5.15.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109932&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-965c-763c-88jm"/>
+<id>urn:bug-hou:GHSA-965c-763c-88jm</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-834v-8h66-3h79"/>
+<id>urn:bug-hou:GHSA-834v-8h66-3h79</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;happy-dom &amp;gt;= 17.0.0, &amp;lt;= 21.0.3 → 21.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-115895&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7w82-6f9j-v9jp"/>
+<id>urn:bug-hou:GHSA-7w82-6f9j-v9jp</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-7w82-6f9j-v9jp&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: qs : qs.stringify with arrayFormat 'comma' throws an uncaught TypeError on array elements carrying a non-callable own toString (DoS) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6pq8-jhm2-2vcw"/>
+<id>urn:bug-hou:GHSA-6pq8-jhm2-2vcw</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;qs &amp;gt;= 6.7.0, &amp;lt;= 6.16.0 → 6.16.1&lt;/p&gt;&lt;p&gt;CVE-2026-110816&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Highcharts Grid: custom icon definition objects written with raw `setAttribute` on `&lt;path&gt;` (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-6g3c-p4fg-xv47"/>
+<id>urn:bug-hou:GHSA-6g3c-p4fg-xv47</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/grid-lite &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/grid-pro &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118242&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Highcharts Core: HTML text parsing falls back to unfiltered `innerHTML` during printing (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-65hg-cf3f-5m39"/>
+<id>urn:bug-hou:GHSA-65hg-cf3f-5m39</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.1 → 12.6.1, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.0.2 → 13.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-118244&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Highcharts Grid Pro: cell-renderer `attributes` map written with raw `setAttribute` (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-5ghw-9mgr-jvx2"/>
+<id>urn:bug-hou:GHSA-5ghw-9mgr-jvx2</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/dashboards = 3.6.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116797&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici vulnerable to Denial of Service via unhandled exception in the decompress interceptor (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-55wc-3pg8-jfw6"/>
+<id>urn:bug-hou:GHSA-55wc-3pg8-jfw6</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 7.15.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-87029&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici vulnerable to cache poisoning and cross-user disclosure via cross-origin redirects (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4w7w-5xrc-9h26"/>
+<id>urn:bug-hou:GHSA-4w7w-5xrc-9h26</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109829&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici vulnerable to Denial of Service via unbounded memory in the EventSource parser (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4qv8-2p9j-2685"/>
+<id>urn:bug-hou:GHSA-4qv8-2p9j-2685</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 6.5.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109924&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6 (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4mfg-r38w-w8fg"/>
+<id>urn:bug-hou:GHSA-4mfg-r38w-w8fg</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-4mfg-r38w-w8fg&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Nodemailer: Quadratic (O(n^2)) SMTP client reply parsing lets a malicious server or MITM cause a pre-auth remote denial of service (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4g23-2xm8-66gc"/>
+<id>urn:bug-hou:GHSA-4g23-2xm8-66gc</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.9 → 10.0.10&lt;/p&gt;&lt;p&gt;GHSA-4g23-2xm8-66gc&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Nodemailer: Quadratic backtracking in SMTP AUTH mechanism detection regexes allows pre-auth remote denial of service (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4ffr-jq9g-5ffx"/>
+<id>urn:bug-hou:GHSA-4ffr-jq9g-5ffx</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-4ffr-jq9g-5ffx&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: @better-auth/drizzle-adapter: Concurrent requests can exceed rate limits on PostgreSQL (LOW)</title>
+<link href="https://github.com/advisories/GHSA-44jh-23m7-hpcf"/>
+<id>urn:bug-hou:GHSA-44jh-23m7-hpcf</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@better-auth/drizzle-adapter &amp;gt;= 1.6.17, &amp;lt; 1.7.7 → 1.7.7, @better-auth/kysely-adapter &amp;gt;= 1.6.17, &amp;lt; 1.7.0 → 1.7.0, better-auth &amp;gt;= 1.6.17, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;GHSA-44jh-23m7-hpcf&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: undici vulnerable to TLS certificate validation bypass via dropped tls options in Agent (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2m5v-pch6-74hx"/>
+<id>urn:bug-hou:GHSA-2m5v-pch6-74hx</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 4.0.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109383&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] Node.js: Nuxt dev server arbitrary file read through client error reports (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-x287-wcfc-q46c"/>
+<id>urn:bug-hou:GHSA-x287-wcfc-q46c</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxt開発サーバーで任意ファイル読取。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119198&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Node.js: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qm8w-vx34-5j9j"/>
+<id>urn:bug-hou:GHSA-qm8w-vx34-5j9j</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; @nx/maven・@nx/gradleでnx.json経由のコマンド注入。HIGH&lt;br&gt;→ 22.7.9/23.1.2に更新&lt;/p&gt;&lt;p&gt;@nx/maven &amp;gt;= 22.0.2, &amp;lt; 22.7.9 → 22.7.9, @nx/maven &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2, @nx/gradle &amp;gt;= 21.0.0, &amp;lt; 22.7.9 → 22.7.9, @nx/gradle &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-119282&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Node.js: follow-redirects: Cross-realm sensitiveHeaders arrays are discarded and custom credentials can follow redirects (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mrwp-f3q8-3g9p"/>
+<id>urn:bug-hou:GHSA-mrwp-f3q8-3g9p</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; follow-redirectsで資格情報がリダイレクト先に送られる。HIGH&lt;br&gt;→ follow-redirects 1.16.2に更新&lt;/p&gt;&lt;p&gt;follow-redirects &amp;gt;= 1.16.0, &amp;lt;= 1.16.1 → 1.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-116689&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Node.js: Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-jc66-7q78-782g"/>
+<id>urn:bug-hou:GHSA-jc66-7q78-782g</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; node-forgeのPKCS#12でMAC偽造。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118782&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Node.js: @sigstore/oci sends the registry Authorization header to a cross-host blob-upload Location (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-j63v-mwhm-56jx"/>
+<id>urn:bug-hou:GHSA-j63v-mwhm-56jx</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; @sigstore/ociが別ホストに認証ヘッダーを送る。HIGH&lt;br&gt;→ @sigstore/oci 0.7.2に更新&lt;/p&gt;&lt;p&gt;@sigstore/oci &amp;lt;= 0.7.1 → 0.7.2&lt;/p&gt;&lt;p&gt;CVE-2026-118763&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Node.js: Forge: Denial of service in TLS record processing via call stack exhaustion (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-hqq3-7jhf-c5jx"/>
+<id>urn:bug-hou:GHSA-hqq3-7jhf-c5jx</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; node-forgeのTLSレコード処理でスタック枯渇。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119187&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] Node.js: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891) (LOW)</title>
+<link href="https://github.com/advisories/GHSA-h6cr-wjv9-3cpp"/>
+<id>urn:bug-hou:GHSA-h6cr-wjv9-3cpp</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのmodInverseで無限ループ。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118781&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] Node.js: minimatch has potential denial of service via globparts amplification (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-g3hv-75wg-m249"/>
+<id>urn:bug-hou:GHSA-g3hv-75wg-m249</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; minimatchのパターン展開でDoS。MEDIUM&lt;br&gt;→ minimatch 11.0.1に更新&lt;/p&gt;&lt;p&gt;minimatch &amp;lt; 11.0.1 → 11.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-118764&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] Node.js: Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9v7c-q64q-vv33"/>
+<id>urn:bug-hou:GHSA-9v7c-q64q-vv33</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxtでドットセグメントによりミドルウェア判定回避。MEDIUM&lt;br&gt;→ nuxt 4.6.3に更新&lt;/p&gt;&lt;p&gt;nuxt &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3, @nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119200&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Node.js: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8hrf-8g6f-7xwp"/>
+<id>urn:bug-hou:GHSA-8hrf-8g6f-7xwp</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; node-forgeのTLSレコード処理でDoS。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119188&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Node.js: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8494-f6mr-cjpv"/>
+<id>urn:bug-hou:GHSA-8494-f6mr-cjpv</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; @hapi/contentのContent-Disposition解析でDoS。HIGH&lt;br&gt;→ @hapi/content 6.0.3に更新&lt;/p&gt;&lt;p&gt;@hapi/content &amp;lt;= 6.0.2 → 6.0.3, content &amp;gt;= 3.0.6, &amp;lt;= 4.0.6&lt;/p&gt;&lt;p&gt;CVE-2026-119202&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜symfony/http-foundation（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/symfony__http-foundation.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/symfony__http-foundation.xml</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[確認しておく] composer: Symfony: ReDoS in HeaderUtils::split() Reachable Through the Cache-Control Request Header (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r925-mgvr-h9cc"/>
+<id>urn:bug-hou:GHSA-r925-mgvr-h9cc</id>
+<updated>2026-10-27T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; SymfonyのCache-ControlヘッダーでReDoS。HIGH&lt;br&gt;→ http-foundation 6.4.46/7.4.19/8.1.7に更新&lt;/p&gt;&lt;p&gt;symfony/http-foundation &amp;gt;= 6.0.1, &amp;lt; 6.4.46 → 6.4.46, symfony/http-foundation &amp;gt;= 7.0.0, &amp;lt; 7.4.19 → 7.4.19, symfony/http-foundation &amp;gt;= 8.0.0, &amp;lt; 8.1.7 → 8.1.7, symfony/symfony &amp;gt;= 6.0.1, &amp;lt; 6.4.46 → 6.4.46, symfony/symfony &amp;gt;= 7.0.0, &amp;lt; 7.4.19 → 7.4.19, symfony/symfony &amp;gt;= 8.0.0, &amp;lt; 8.1.7 → 8.1.7, symfony/http-foundation &amp;gt;= 4.1.0, &amp;lt; 5.4.54 → 5.4.54, symfony/symfony &amp;gt;= 4.1.0, &amp;lt; 5.4.54 → 5.4.54&lt;/p&gt;&lt;p&gt;CVE-2026-108082&lt;/p&gt;</content>
+</entry>
+</feed>

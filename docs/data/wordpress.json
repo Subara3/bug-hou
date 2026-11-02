@@ -93,6 +93,132 @@
    "cvss": "3.1",
    "desc": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
    "kev": true,
+   "affects": [
+    {
+     "product": "WordPress",
+     "ee": "4.7.37"
+    },
+    {
+     "product": "WordPress",
+     "si": "4.8",
+     "ee": "4.8.32"
+    },
+    {
+     "product": "WordPress",
+     "si": "4.9",
+     "ee": "4.9.33"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.0",
+     "ee": "5.0.29"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.1",
+     "ee": "5.1.26"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.2",
+     "ee": "5.2.28"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.3",
+     "ee": "5.3.25"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.4",
+     "ee": "5.4.23"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.5",
+     "ee": "5.5.22"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.6",
+     "ee": "5.6.21"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.7",
+     "ee": "5.7.19"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.8",
+     "ee": "5.8.17"
+    },
+    {
+     "product": "WordPress",
+     "si": "5.9",
+     "ee": "5.9.18"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.0",
+     "ee": "6.0.16"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.1",
+     "ee": "6.1.14"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.2",
+     "ee": "6.2.13"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.3",
+     "ee": "6.3.12"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.4",
+     "ee": "6.4.12"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.5",
+     "ee": "6.5.12"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.6",
+     "ee": "6.6.9"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.7",
+     "ee": "6.7.9"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.8",
+     "ee": "6.8.10"
+    },
+    {
+     "product": "WordPress",
+     "si": "6.9",
+     "ee": "6.9.9"
+    },
+    {
+     "product": "WordPress",
+     "si": "7.0",
+     "ee": "7.0.6"
+    },
+    {
+     "product": "WordPress",
+     "si": "7.1",
+     "ee": "7.1.2"
+    }
+   ],
    "cwe": [
     "CWE-98"
    ],

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜hydra-core（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/hydra-core.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/hydra-core.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Hydra legacy target blacklist permits unsafe PyYAML loading (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-wf6j-7hvr-gr93"/>
+<id>urn:bug-hou:GHSA-wf6j-7hvr-gr93</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hydra-core &amp;gt;= 1.3.6, &amp;lt; 1.3.8 → 1.3.8, hydra-core &amp;gt;= 1.4.0.dev9, &amp;lt; 1.4.0rc3 → 1.4.0rc3&lt;/p&gt;&lt;p&gt;GHSA-wf6j-7hvr-gr93&lt;/p&gt;</content>
+</entry>
+</feed>

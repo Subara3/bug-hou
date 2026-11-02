@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜autobahn（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/autobahn.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/autobahn.xml</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] pip: Autobahn Python: permessage-brotli inflates a whole frame before maxMessagePayloadSize is checked (incomplete fix of GHSA-hxp9-w8x3-p566) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-pjh6-c8mg-3x7m"/>
+<id>urn:bug-hou:GHSA-pjh6-c8mg-3x7m</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Autobahnのbrotli展開がサイズ確認前に行われる。MEDIUM&lt;br&gt;→ autobahn 26.10.1に更新&lt;/p&gt;&lt;p&gt;autobahn &amp;gt;= 26.7.1, &amp;lt; 26.10.1 → 26.10.1&lt;/p&gt;&lt;p&gt;CVE-2026-116579&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -82,7 +82,7 @@ function lampOf(t) {
 }
 
 function renderNav() {
-  $("#nav").innerHTML = meta.targets
+  $("#nav").innerHTML = mineNavLink() + meta.targets
     .map(
       (t) => `<a href="#${esc(t.id)}" data-id="${esc(t.id)}" aria-current="${t.id === current}">
         <span class="lamp ${lampOf(t)}"></span>
@@ -361,7 +361,7 @@ document.addEventListener("input", (e) => {
   $("#cves").innerHTML = renderCves(cache[current]);
 });
 
-window.addEventListener("hashchange", () => show(location.hash.slice(1)));
+window.addEventListener("hashchange", () => route());
 
 (async () => {
   try {
@@ -388,5 +388,6 @@ window.addEventListener("hashchange", () => show(location.hash.slice(1)));
   // ランプを正確にするため全対象を先に読む（小さいファイルなので）
   await Promise.all(meta.targets.map(async (t) => (cache[t.id] = await loadJSON(`${t.id}.json`).catch(() => null))));
   for (const k of Object.keys(cache)) if (!cache[k]) delete cache[k];
-  await show(location.hash.slice(1));
+  await initWatch();
+  await route();
 })();

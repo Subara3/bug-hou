@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@highcharts/dashboards（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@highcharts__dashboards.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@highcharts__dashboards.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: Highcharts Dashboards: `__proto__` data table id writes sync listeners to `Object.prototype` (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-jqgh-w3cc-7jqw"/>
+<id>urn:bug-hou:GHSA-jqgh-w3cc-7jqw</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-118243&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Highcharts Dashboards: `chartConstructor` is an unchecked lookup into the Highcharts namespace (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-grj7-r4jv-pw9j"/>
+<id>urn:bug-hou:GHSA-grj7-r4jv-pw9j</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-118245&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Highcharts Dashboards / Grid Pro: `DataTable.setCell` and column writers treat `__proto__` as an existing column. (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-c75x-9x9h-28rm"/>
+<id>urn:bug-hou:GHSA-c75x-9x9h-28rm</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118247&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Highcharts Grid Pro: cell-renderer `attributes` map written with raw `setAttribute` (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-5ghw-9mgr-jvx2"/>
+<id>urn:bug-hou:GHSA-5ghw-9mgr-jvx2</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/dashboards = 3.6.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116797&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] npm: Highcharts Dashboards parses sidebar component labels as HTML (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rcqf-f6h2-ccg9"/>
+<id>urn:bug-hou:GHSA-rcqf-f6h2-ccg9</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Highcharts DashboardsのサイドバーラベルをHTML解析。HIGH&lt;br&gt;→ @highcharts/dashboards 4.2.3に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.2 → 4.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-118252&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] npm: Highcharts Grid: `javascript:` URL in credits.href runs script on click (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-6hgp-fmhr-mrg4"/>
+<id>urn:bug-hou:GHSA-6hgp-fmhr-mrg4</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Highcharts Gridのcredits.hrefでjavascript: URL実行。HIGH&lt;br&gt;→ dashboards 4.0.0/grid-pro 3.2.0に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 3.2.0, &amp;lt;= 3.6.0 → 4.0.0, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118255&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] npm: Highcharts Dashboards parses fullscreen labels as HTML (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-58g7-7f52-h92c"/>
+<id>urn:bug-hou:GHSA-58g7-7f52-h92c</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Highcharts Dashboardsの全画面ラベルをHTML解析。HIGH&lt;br&gt;→ @highcharts/dashboards 4.2.3に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt; 4.2.3 → 4.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-118253&lt;/p&gt;</content>
+</entry>
+</feed>

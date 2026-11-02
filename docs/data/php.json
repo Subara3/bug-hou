@@ -159,6 +159,28 @@
    "cvss": "4.0",
    "desc": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
    "kev": true,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "7.3.0",
+     "ee": "8.2.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.36"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.27"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.12"
+    }
+   ],
    "cwe": [
     "CWE-1325",
     "CWE-416",
@@ -178,6 +200,28 @@
    "cvss": "4.0",
    "desc": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
    "kev": true,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "5.4.0",
+     "ee": "8.2.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.36"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.27"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.12"
+    }
+   ],
    "cwe": [
     "CWE-1325",
     "CWE-416",
@@ -197,6 +241,28 @@
    "cvss": "3.1",
    "desc": "When the HTTP stream wrapper follows a redirect and the response carries a Location header with an empty value, the redirect code reads one byte past the end of the heap buffer holding the location. The value of that out-of-bounds byte decides which redirect target is built, so a malicious server controls whether the client is sent to the host root or to the current directory.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-125"
    ],
@@ -213,6 +279,28 @@
    "cvss": "3.1",
    "desc": "The SOAP HTTP client guards its response buffer growth with a check that relies on signed integer overflow, which is undefined behaviour and is not guaranteed to trigger. When the check is optimised away, a malicious SOAP server can make the client allocate a buffer far smaller than the data it then writes into it, producing a heap buffer overflow.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-190"
    ],
@@ -229,6 +317,28 @@
    "cvss": "3.1",
    "desc": "The mysqlnd wire protocol parser reads fields out of server packets before checking that the packet still holds enough bytes for them. A malicious or compromised MySQL server can send a truncated packet and make the client read past the end of the packet buffer, which is undefined behaviour and can crash the process.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-122"
    ],
@@ -245,6 +355,28 @@
    "cvss": "4.0",
    "desc": "On Windows, PHP's filesystem and stream APIs do not reject reserved device names such as CON, PRN, AUX, NUL, COM1 to COM9, LPT1 to LPT9, CONIN$ and CONOUT$ when they appear as a component of a path. An attacker-controlled filename therefore reaches CreateFileW() and opens a device instead of the regular file the application expected, which can block or hang the request and exhaust worker processes.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-67"
    ],
@@ -261,6 +393,28 @@
    "cvss": "3.1",
    "desc": "phar_tar_number() parses the octal size field of a TAR header into a uint32_t with no overflow check. The field is 11 octal digits wide and holds values up to 0x1FFFFFFFF, so a size above 0xFFFFFFFF silently wraps. The parser then skips the wrong number of data blocks and interprets attacker-controlled file content as the next TAR header, which lets a crafted archive inject entries that PharData reports and extracts as if they were genuine.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-190"
    ],
@@ -277,6 +431,28 @@
    "cvss": "3.1",
    "desc": "cleanup_xml_node() in the SOAP XML parser recurses once per XML nesting level with no depth limit. An unauthenticated attacker can post a SOAP request containing tens of thousands of nested elements to any SoapServer endpoint, exhaust the stack and crash the process. The same unbounded recursion exists in the SOAP value decoder and in the WSDL node search helper.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-674"
    ],
@@ -293,6 +469,28 @@
    "cvss": "3.1",
    "desc": "When the http:// stream wrapper follows a redirect it forwards the user-supplied Authorization, Cookie and Proxy-Authorization headers unchanged, even when the redirect target is a different host, a different port, or a downgrade from HTTPS to HTTP. A server that can steer a redirect therefore receives credentials that were only meant for the original origin. This is the same class of issue that libcurl fixed in 7.58.0 ( CVE-2018-1000007 https://github.com/advisories/GHSA-g7x2-hrfp-pv5f ).",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-200",
     "CWE-522"
@@ -310,6 +508,28 @@
    "cvss": "3.1",
    "desc": "php_openssl_matches_wildcard_name() in ext/openssl/xp_ssl.c underflows the length argument passed to memchr() when a TLS server certificate presents a wildcard name whose literal characters are together longer than the hostname being verified. A malicious server presenting such a certificate makes the PHP client read up to SIZE_MAX bytes past the end of a heap allocation. The path is reachable from any default client stream, because verify_peer_name is enabled by default.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-122"
    ],
@@ -326,6 +546,28 @@
    "cvss": "3.1",
    "desc": "PHP's OpenSSL stream peer verification checks the certificate's subjectAltName entries first and, whenever no entry matches, falls back to the Common Name. RFC 6125 requires the CN to be ignored once the certificate presents any service identity, so a certificate carrying a non-matching DNS SAN was still accepted when its CN matched the requested peer_name. A certificate trusted by the client for one name can therefore be used to impersonate another.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-297"
    ],
@@ -342,6 +584,28 @@
    "cvss": "3.1",
    "desc": "The IPv6 branch of the FastCGI client access check compares only the first 12 bytes of a 16-byte IPv6 address, so listen.allowed_clients matches on a /96 prefix instead of the exact address. An attacker who can source an address sharing the first 96 bits with an allowed one passes the check and reaches the FastCGI endpoint.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-1023"
    ],
@@ -358,6 +622,28 @@
    "cvss": "3.1",
    "desc": "The convert.base64-encode, convert.quoted-printable-encode and convert.quoted-printable-decode stream filters accept a line-break-chars option whose length is tracked separately from the string itself. The filter constructors duplicate the value with pestrdup(), which stops at the first NUL byte, while keeping the original length. When the filter later emits a line break it copies the recorded length out of the truncated allocation, reading past its end and placing adjacent heap bytes into the filter output.",
    "kev": false,
+   "affects": [
+    {
+     "product": "PHP",
+     "si": "8.2.0",
+     "ee": "8.2.34"
+    },
+    {
+     "product": "PHP",
+     "si": "8.3.0",
+     "ee": "8.3.35"
+    },
+    {
+     "product": "PHP",
+     "si": "8.4.0",
+     "ee": "8.4.26"
+    },
+    {
+     "product": "PHP",
+     "si": "8.5.0",
+     "ee": "8.5.11"
+    }
+   ],
    "cwe": [
     "CWE-122",
     "CWE-125"
@@ -368,6 +654,7 @@
  "ghsa": [
   {
    "id": "GHSA-9vw2-f4vp-x7gf",
+   "ecosystem": "composer",
    "cve": "CVE-2026-119193",
    "summary": "PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling",
    "severity": "MEDIUM",
@@ -386,6 +673,7 @@
   },
   {
    "id": "GHSA-p96f-p2p2-2g3h",
+   "ecosystem": "composer",
    "cve": "CVE-2026-96634",
    "summary": "AdminNeo SQLite: multi_query Incorrect Check of Function Return Value RCE",
    "severity": "MEDIUM",
@@ -404,6 +692,7 @@
   },
   {
    "id": "GHSA-6vfx-w7q3-42gq",
+   "ecosystem": "composer",
    "cve": "CVE-2026-96633",
    "summary": "AdminNeo SQLite Database-List Drop Arbitrary File Deletion",
    "severity": "HIGH",
@@ -422,6 +711,7 @@
   },
   {
    "id": "GHSA-79wv-8rh2-9vp2",
+   "ecosystem": "composer",
    "cve": "CVE-2026-96631",
    "summary": "AdminNeo has Cookie Attribute Injection via Unsanitized X-Forwarded-Prefix in Set-Cookie Headers",
    "severity": "HIGH",
@@ -440,6 +730,7 @@
   },
   {
    "id": "GHSA-rx7m-wxwq-vxr9",
+   "ecosystem": "composer",
    "cve": "CVE-2026-96632",
    "summary": "AdminNeo Vulnerable to XSS via Rogue MySQL Server Version String (CSP Nonce Bypass)",
    "severity": "HIGH",
@@ -458,6 +749,7 @@
   },
   {
    "id": "GHSA-q5mp-gfjf-cf2j",
+   "ecosystem": "composer",
    "cve": "CVE-2026-96630",
    "summary": "AdminNeo: RCE via SQLite VACUUM INTO (ATTACH Blocklist Bypass)",
    "severity": "HIGH",
@@ -476,6 +768,7 @@
   },
   {
    "id": "GHSA-wm25-49w3-5qrg",
+   "ecosystem": "composer",
    "cve": "CVE-2026-96629",
    "summary": "AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery",
    "severity": "MEDIUM",
@@ -494,6 +787,7 @@
   },
   {
    "id": "GHSA-jm85-8cpp-9cjc",
+   "ecosystem": "composer",
    "cve": "CVE-2026-59978",
    "summary": "AdminNeo: version-cache array injection causes persistent denial of service",
    "severity": "HIGH",
@@ -512,6 +806,7 @@
   },
   {
    "id": "GHSA-pg53-p7qp-65cv",
+   "ecosystem": "composer",
    "cve": null,
    "summary": "PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets",
    "severity": "LOW",
@@ -530,6 +825,7 @@
   },
   {
    "id": "GHSA-68wq-phq7-p2vg",
+   "ecosystem": "composer",
    "cve": "CVE-2026-55186",
    "summary": "MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow",
    "severity": "MEDIUM",
@@ -548,6 +844,7 @@
   },
   {
    "id": "GHSA-mf2p-h6hf-fcwm",
+   "ecosystem": "composer",
    "cve": "CVE-2026-116675",
    "summary": "TinyMCE Cross-Site Scripting (XSS) vulnerability using media plugin `data-mce-object` serialization",
    "severity": "HIGH",
@@ -591,6 +888,7 @@
   },
   {
    "id": "GHSA-2v3c-qxhr-7vpv",
+   "ecosystem": "composer",
    "cve": "CVE-2026-109413",
    "summary": "Symfony: Unbounded Recursion in the YAML Inline Lexer Lets a Single Document Crash the Process",
    "severity": "HIGH",
@@ -644,6 +942,7 @@
   },
   {
    "id": "GHSA-r925-mgvr-h9cc",
+   "ecosystem": "composer",
    "cve": "CVE-2026-108082",
    "summary": "Symfony: ReDoS in HeaderUtils::split() Reachable Through the Cache-Control Request Header",
    "severity": "HIGH",
@@ -697,6 +996,7 @@
   },
   {
    "id": "GHSA-2phh-27fw-q4gc",
+   "ecosystem": "composer",
    "cve": "CVE-2026-108360",
    "summary": "PhpSpreadsheet: SSRF whitelist bypass via unre-validated HTTP redirect in Drawing::setPath external image loading",
    "severity": "MEDIUM",
@@ -735,6 +1035,7 @@
   },
   {
    "id": "GHSA-j2w7-387v-m2rq",
+   "ecosystem": "composer",
    "cve": "CVE-2026-108359",
    "summary": "PhpSpreadsheet ODS Reader: Unbounded number-rows-repeated → CPU & Memory Exhaustion (DoS)",
    "severity": "HIGH",
@@ -773,6 +1074,7 @@
   },
   {
    "id": "GHSA-3x94-m842-937c",
+   "ecosystem": "composer",
    "cve": "CVE-2026-108358",
    "summary": "PhpSpreadsheet: XmlScanner Bypass via ISO-2022 Escape Sequences Allows XXE and Denial of Service",
    "severity": "HIGH",
@@ -811,6 +1113,7 @@
   },
   {
    "id": "GHSA-rxj4-h86g-25gc",
+   "ecosystem": "composer",
    "cve": "CVE-2026-108357",
    "summary": "PhpSpreadsheet: XmlScanner Bypass via Double-Encoded unentity() TOCTOU Allows XXE and Denial of Service",
    "severity": "HIGH",
@@ -834,6 +1137,7 @@
   },
   {
    "id": "GHSA-v5fq-cf5m-vwv7",
+   "ecosystem": "composer",
    "cve": "CVE-2026-33944",
    "summary": "Dolibarr has SQL Injection in societe/class/societe.class.php via localtax1_value parameter",
    "severity": "HIGH",
@@ -852,6 +1156,7 @@
   },
   {
    "id": "GHSA-f9x3-7vq9-cph6",
+   "ecosystem": "composer",
    "cve": "CVE-2026-114509",
    "summary": "Laravel TokenGuard authentication bypass through non-string API credentials",
    "severity": "CRITICAL",
@@ -875,6 +1180,7 @@
   },
   {
    "id": "GHSA-5wcm-3v2w-8362",
+   "ecosystem": "composer",
    "cve": "CVE-2026-114508",
    "summary": "Laravel relationship inclusion can trigger unauthorized data destruction",
    "severity": "MEDIUM",
@@ -898,6 +1204,7 @@
   },
   {
    "id": "GHSA-mhf7-xp6r-6qrc",
+   "ecosystem": "composer",
    "cve": null,
    "summary": "Livewire: Authorization bypass in #[Authorize] via reordered parameter keys and #[Json] execution order",
    "severity": "MEDIUM",
@@ -916,6 +1223,7 @@
   },
   {
    "id": "GHSA-x397-5hrv-j9m9",
+   "ecosystem": "composer",
    "cve": "CVE-2026-113712",
    "summary": "Cachet has Stored XSS in Incident Component",
    "severity": "MEDIUM",
@@ -934,6 +1242,7 @@
   },
   {
    "id": "GHSA-54mm-6729-r5wp",
+   "ecosystem": "composer",
    "cve": "CVE-2026-85990",
    "summary": "Leantime: Any Authenticated User Can Self-Escalate to Admin via Unauthorized JSON-RPC Methods",
    "severity": "HIGH",
@@ -952,6 +1261,7 @@
   },
   {
    "id": "GHSA-f8ff-652m-j5rx",
+   "ecosystem": "composer",
    "cve": "CVE-2026-62858",
    "summary": "YOURLS: Unauthenticated File Inclusion",
    "severity": "MEDIUM",
@@ -970,6 +1280,7 @@
   },
   {
    "id": "GHSA-g4f2-2pf3-2pwj",
+   "ecosystem": "composer",
    "cve": "CVE-2026-104827",
    "summary": "react/http: Unbounded HTTP Client Response Header Buffering Leads to Memory Exhaustion DoS",
    "severity": "HIGH",
@@ -988,6 +1299,7 @@
   },
   {
    "id": "GHSA-x2rp-9qf7-2fmq",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107842",
    "summary": "Contao: Protected page content is disclosed to anonymous visitors after contao.search.index_protected is disabled",
    "severity": "MEDIUM",
@@ -1011,6 +1323,7 @@
   },
   {
    "id": "GHSA-mfxh-vp55-7gc6",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107843",
    "summary": "Contao: The registration module re-sends activation mails",
    "severity": "MEDIUM",
@@ -1034,6 +1347,7 @@
   },
   {
    "id": "GHSA-9ff2-p842-45wq",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107848",
    "summary": "Contao: Cross-site request forgery in custom backend actions",
    "severity": "LOW",
@@ -1057,6 +1371,7 @@
   },
   {
    "id": "GHSA-mrvp-7wmx-5m4h",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107844",
    "summary": "Contao: Path traversal in the images controller",
    "severity": "MEDIUM",
@@ -1080,6 +1395,7 @@
   },
   {
    "id": "GHSA-628f-v4f6-p37r",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107845",
    "summary": "Contao: Cross-site scripting in the comments bundle",
    "severity": "CRITICAL",
@@ -1103,6 +1419,7 @@
   },
   {
    "id": "GHSA-q6wp-fr43-gm9v",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107850",
    "summary": "Contao: Improper access control in the preview links module",
    "severity": "MEDIUM",
@@ -1121,6 +1438,7 @@
   },
   {
    "id": "GHSA-5974-gfqc-wrcm",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107851",
    "summary": "Contao: Improper access control in the table access voter",
    "severity": "MEDIUM",
@@ -1139,6 +1457,7 @@
   },
   {
    "id": "GHSA-9rjx-3jch-6vjf",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107380",
    "summary": "enshrined/svg-sanitize: Stored XSS via DTD Entity / HTML5 Named Character Reference Collision",
    "severity": "MEDIUM",
@@ -1157,6 +1476,7 @@
   },
   {
    "id": "GHSA-m9xh-6747-9r6f",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107381",
    "summary": "svg-sanitizer: Mixed-case xlink:HrEf skips the `<use>` nesting-DoS check in Resolver::processReferences",
    "severity": "MEDIUM",
@@ -1175,6 +1495,7 @@
   },
   {
    "id": "GHSA-v383-3rw5-q8rf",
+   "ecosystem": "composer",
    "cve": "CVE-2026-107379",
    "summary": "enshrined/svg-sanitize: Denial of Service via DTD Attribute Declaration Crash",
    "severity": "MEDIUM",
@@ -1193,6 +1514,7 @@
   },
   {
    "id": "GHSA-p279-5wcv-45vq",
+   "ecosystem": "composer",
    "cve": "CVE-2026-104890",
    "summary": "Kunstmaan CMS: MediaBundle extension blacklist bypass allows authenticated administrators to upload executable PHP files leading to remote code execution",
    "severity": "HIGH",
@@ -1216,6 +1538,7 @@
   },
   {
    "id": "GHSA-7m6h-rg42-m449",
+   "ecosystem": "composer",
    "cve": "CVE-2026-104181",
    "summary": "Filament: Multi-factor authentication (app) management actions do not require password reauthentication",
    "severity": "MEDIUM",
@@ -1239,6 +1562,7 @@
   },
   {
    "id": "GHSA-8fxw-fmj8-xp7j",
+   "ecosystem": "composer",
    "cve": "CVE-2026-88023",
    "summary": "MongoDB: GridFS data disclosure and deletion via query-operator injection in file IDs",
    "severity": "MEDIUM",
@@ -1262,6 +1586,7 @@
   },
   {
    "id": "GHSA-96h3-5x6v-m776",
+   "ecosystem": "composer",
    "cve": "CVE-2026-59944",
    "summary": "Composer: GHSA-gjfg-22fp-rrxx fix bypass via symlinked package bin path",
    "severity": "MEDIUM",
@@ -1285,6 +1610,7 @@
   },
   {
    "id": "GHSA-97jj-33gv-5xf9",
+   "ecosystem": "composer",
    "cve": null,
    "summary": "league/commonmark: DisallowedRawHtml bypassed when a disallowed tag name ends the raw-HTML literal",
    "severity": "MEDIUM",
@@ -1303,6 +1629,7 @@
   },
   {
    "id": "GHSA-3q6v-r5mr-hxv8",
+   "ecosystem": "composer",
    "cve": null,
    "summary": "league/commonmark: Quadratic-time denial of service in the GitHub Flavored Markdown Table extension block-start scan",
    "severity": "HIGH",
@@ -1321,6 +1648,7 @@
   },
   {
    "id": "GHSA-jh5r-qr3c-85q8",
+   "ecosystem": "composer",
    "cve": "CVE-2026-102279",
    "summary": "Laravel: XSS in Debug Page Information",
    "severity": "LOW",
@@ -1344,6 +1672,7 @@
   },
   {
    "id": "GHSA-cxf4-7mrp-vvpr",
+   "ecosystem": "composer",
    "cve": "CVE-2026-102601",
    "summary": "Flysystem: WhitespacePathNormalizer's control-character (CorruptedPathDetected) check is bypassed by malformed UTF-8 in the path, affecting every adapter",
    "severity": "LOW",
@@ -1362,6 +1691,7 @@
   },
   {
    "id": "GHSA-r6hr-vr92-vv28",
+   "ecosystem": "composer",
    "cve": "CVE-2026-65954",
    "summary": "PHPCSUtils: Remote code execution via eval() in AbstractArrayDeclarationSniff::getActualArrayKey()",
    "severity": "HIGH",
@@ -1380,6 +1710,7 @@
   },
   {
    "id": "GHSA-g7vj-c29h-3h5m",
+   "ecosystem": "composer",
    "cve": "CVE-2026-92161",
    "summary": "FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider",
    "severity": "CRITICAL",
@@ -1403,6 +1734,7 @@
   },
   {
    "id": "GHSA-v65j-hff3-753c",
+   "ecosystem": "composer",
    "cve": "CVE-2026-57440",
    "summary": "Mediawiki EmbedVideo Extension has stored XSS via malformed src url with $wgEmbedVideoRequireConsent disabled",
    "severity": "HIGH",
@@ -1421,6 +1753,7 @@
   },
   {
    "id": "GHSA-qxg3-46rw-79j8",
+   "ecosystem": "composer",
    "cve": "CVE-2026-61823",
    "summary": "code16 Sharp vulnerable to stored XSS via iframe srcdoc Attribute",
    "severity": "HIGH",
@@ -1439,6 +1772,7 @@
   },
   {
    "id": "GHSA-vj3q-vp3g-j9c8",
+   "ecosystem": "composer",
    "cve": "CVE-2026-61825",
    "summary": "code16/sharp has a stored XSS via data-html-content Sanitizer Bypass",
    "severity": "HIGH",
@@ -1457,6 +1791,7 @@
   },
   {
    "id": "GHSA-87mg-5grr-rhwh",
+   "ecosystem": "composer",
    "cve": "CVE-2026-57232",
    "summary": "Contao: Server-Side Request Forgery (SSRF) via Unvalidated RSS Feed URL in Feed Reader Module",
    "severity": "LOW",
@@ -1490,6 +1825,7 @@
   },
   {
    "id": "GHSA-36h5-qg4p-q2qf",
+   "ecosystem": "composer",
    "cve": "CVE-2026-61815",
    "summary": "zbateson/mail-mime-parser has CRLF header injection via attachment filename",
    "severity": "HIGH",
@@ -1513,6 +1849,7 @@
   },
   {
    "id": "GHSA-f6v3-2qmr-vfjx",
+   "ecosystem": "composer",
    "cve": "CVE-2026-61816",
    "summary": "zbateson/mail-mime-parser has uncontrolled resource consumption (CPU/memory DoS) parsing untrusted MIME",
    "severity": "HIGH",
@@ -1536,6 +1873,7 @@
   },
   {
    "id": "GHSA-rw77-vq4g-x3hp",
+   "ecosystem": "composer",
    "cve": "CVE-2026-56738",
    "summary": "phpMyFAQ has SQL Injection in `StopWords::add()` — Unescaped Stop Word Insertion",
    "severity": "HIGH",
@@ -1559,6 +1897,7 @@
   },
   {
    "id": "GHSA-8gpw-xvpf-hvx5",
+   "ecosystem": "composer",
    "cve": "CVE-2026-56737",
    "summary": "phpMyFAQ's two-factor authentication login bypasses the password factor",
    "severity": "HIGH",
@@ -1582,6 +1921,7 @@
   },
   {
    "id": "GHSA-pgwp-vc7q-cvj3",
+   "ecosystem": "composer",
    "cve": "CVE-2026-56736",
    "summary": "phpMyFAQ has Stored XSS in Admin FAQ Editor via HTML Entity Bypass in Frontend FAQ Submission",
    "severity": "HIGH",
@@ -1605,6 +1945,7 @@
   },
   {
    "id": "GHSA-396x-xmvh-p563",
+   "ecosystem": "composer",
    "cve": "CVE-2026-63498",
    "summary": "Snipe-IT: Stored XSS via Inline XML Rendering in the Uploaded Files API",
    "severity": "HIGH",
@@ -1623,6 +1964,7 @@
   },
   {
    "id": "GHSA-p9h3-gvpq-5539",
+   "ecosystem": "composer",
    "cve": "CVE-2026-62368",
    "summary": "Snipe-IT: Stored XSS via Custom Field name in asset-list column headers",
    "severity": "HIGH",
@@ -1641,6 +1983,7 @@
   },
   {
    "id": "GHSA-hxcx-9h4f-42xx",
+   "ecosystem": "composer",
    "cve": "CVE-2026-63493",
    "summary": "Snipe-IT: 2FA bypass via the API token flow",
    "severity": "HIGH",
@@ -1659,6 +2002,7 @@
   },
   {
    "id": "GHSA-4f5f-j737-pm58",
+   "ecosystem": "composer",
    "cve": "CVE-2026-62998",
    "summary": "REDAXO: Unwhitelisted ORDER BY Column in rex_list Allows Authenticated Column Enumeration",
    "severity": "MEDIUM",
@@ -1677,6 +2021,7 @@
   },
   {
    "id": "GHSA-9rg8-2wvr-fgjh",
+   "ecosystem": "composer",
    "cve": "CVE-2026-76089",
    "summary": "Formie: Missing authorization on sent notification resend modal exposes submission PII",
    "severity": "HIGH",
@@ -1700,6 +2045,7 @@
   },
   {
    "id": "GHSA-584p-f93j-wpgc",
+   "ecosystem": "composer",
    "cve": "CVE-2026-76087",
    "summary": "Formie: Unauthenticated users can overwrite incomplete submissions via submit action",
    "severity": "HIGH",
@@ -1720,6 +2066,821 @@
     }
    ],
    "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-v3f3-cmj4-cvj9",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-76086",
+   "summary": "Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials",
+   "severity": "HIGH",
+   "score": 8.5,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-v3f3-cmj4-cvj9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "verbb/formie",
+     "range": ">= 3.0.0, < 3.1.31",
+     "fixed": "3.1.31"
+    },
+    {
+     "name": "verbb/formie",
+     "range": "< 2.2.23",
+     "fixed": "2.2.23"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-jg26-q8hg-3pq4",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-92692",
+   "summary": "Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated)",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-jg26-q8hg-3pq4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "sulu/sulu",
+     "range": "< 2.6.25",
+     "fixed": "2.6.25"
+    },
+    {
+     "name": "sulu/sulu",
+     "range": ">= 3.0.0, < 3.0.8",
+     "fixed": "3.0.8"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-gxrg-x694-283w",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-73858",
+   "summary": "Solspace Freeform: Limited Twig template injection via submitted field values",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-gxrg-x694-283w",
+   "kev": false,
+   "packages": [
+    {
+     "name": "solspace/craft-freeform",
+     "range": ">= 5.0.0, <= 5.10.13",
+     "fixed": "5.10.14"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-5mmc-8pc9-wggg",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-88974",
+   "summary": "WPGraphQL: Contributor can publish and modify posts without the required capabilities via updatePost",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-5mmc-8pc9-wggg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "wp-graphql/wp-graphql",
+     "range": "< 2.22.2",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-m8r3-22v6-g877",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-63000",
+   "summary": "REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates",
+   "severity": "MEDIUM",
+   "score": 6.4,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-m8r3-22v6-g877",
+   "kev": false,
+   "packages": [
+    {
+     "name": "redaxo/source",
+     "range": "<= 5.21.1",
+     "fixed": "5.21.2"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-w998-qmw9-mf4m",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-63002",
+   "summary": "REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames",
+   "severity": "MEDIUM",
+   "score": 4.8,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-w998-qmw9-mf4m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "redaxo/source",
+     "range": "<= 5.21.1",
+     "fixed": "5.21.2"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-mf2p-wjp4-99pq",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-63001",
+   "summary": "REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()`",
+   "severity": "MEDIUM",
+   "score": 4.8,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-mf2p-wjp4-99pq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "redaxo/source",
+     "range": "<= 5.21.1",
+     "fixed": "5.21.2"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-5gmm-hjfj-8ff7",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-71537",
+   "summary": "Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade)",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-5gmm-hjfj-8ff7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "paymenter/paymenter",
+     "range": "<= 1.5.6",
+     "fixed": "1.5.7"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-jr78-w6w5-m8f8",
+   "ecosystem": "composer",
+   "cve": null,
+   "summary": "Semantic MediaWiki'a missing authorization in the smwtask API module allows unauthenticated access to admin-only maintenance tasks",
+   "severity": "HIGH",
+   "score": 7.3,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-jr78-w6w5-m8f8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": ">= 3.0.0, <= 7.2.1",
+     "fixed": "7.3.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-9rcc-pmj8-ffhr",
+   "ecosystem": "composer",
+   "cve": null,
+   "summary": "Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354)",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-9rcc-pmj8-ffhr",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": ">= 4.2.0, <= 7.2.0",
+     "fixed": "7.2.1"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-cx86-7xwp-w9wf",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77616",
+   "summary": "Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-cx86-7xwp-w9wf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": ">= 7.0.0, <= 7.1.0",
+     "fixed": "7.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-q5fm-9mx6-44f4",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77610",
+   "summary": "Semantic MediaWiki has a query debug output XSS (`DebugFormatter`)",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-q5fm-9mx6-44f4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": "<= 7.1.0",
+     "fixed": "7.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-hw3m-8j5x-94ff",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77609",
+   "summary": "Semantic MediaWiki has an open redirect in Special:URIResolver",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-hw3m-8j5x-94ff",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": "<= 7.1.0",
+     "fixed": "7.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-7xv3-gf2g-498h",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77607",
+   "summary": "Semantic MediaWiki affected by Special:Ask table `sep` parameter reflected XSS",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-7xv3-gf2g-498h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": "<= 7.1.0",
+     "fixed": "7.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-59xw-qv23-j3rc",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77608",
+   "summary": "Semantic MediaWiki has reflected XSS in `Special:SearchByProperty` (`property` and `value` parameters)",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-59xw-qv23-j3rc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": "<= 7.1.0",
+     "fixed": "7.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-3jp5-3h47-28qf",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77606",
+   "summary": "Semantic MediaWiki has reflected XSS in Special:Ask plain table headers",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-3jp5-3h47-28qf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": "<= 7.1.0",
+     "fixed": "7.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-hg8h-557g-q8pp",
+   "ecosystem": "composer",
+   "cve": "CVE-2025-61682",
+   "summary": "Semantic MediaWiki vulnerable to stored XSS through wikitext via improper use of non-reserved data attributes",
+   "severity": "HIGH",
+   "score": 8.6,
+   "published": "2026-09-18",
+   "url": "https://github.com/advisories/GHSA-hg8h-557g-q8pp",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mediawiki/semantic-media-wiki",
+     "range": ">= 3.1.0, < 7.0.0",
+     "fixed": "7.0.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-r94f-hx44-8jqf",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-72819",
+   "summary": "Grav CMS vulnerable to remote code execution via .zip file upload",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-r94f-hx44-8jqf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "< 2.0.13",
+     "fixed": "2.0.13"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-xhfv-7758-r9hx",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-75837",
+   "summary": "Grav: Missing admin.super guard on core group blueprint access field allows admin.users operator to escalate to super-admin",
+   "severity": "HIGH",
+   "score": 7.7,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-xhfv-7758-r9hx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "< 2.0.14",
+     "fixed": "2.0.14"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-q2j8-x8hf-63ch",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-75834",
+   "summary": "Grav: Single invalid UTF-8 byte disables every rule in Security::detectXss(), bypassing the page-content XSS safety gate",
+   "severity": "MEDIUM",
+   "score": 5.1,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-q2j8-x8hf-63ch",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "< 2.0.14",
+     "fixed": "2.0.14"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-f8wv-xp27-6gq7",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-75827",
+   "summary": "Grav: Blueprint dynamic-data bare-function branch is denylist-gated and omits error_log, giving arbitrary file write",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-f8wv-xp27-6gq7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.14",
+     "fixed": "2.0.15"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-vfmf-q6x9-cw96",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-75828",
+   "summary": "Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-vfmf-q6x9-cw96",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.14",
+     "fixed": "2.0.15"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-4v9q-p283-qc2m",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-74907",
+   "summary": "Grav: Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`)",
+   "severity": "HIGH",
+   "score": 8.2,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-4v9q-p283-qc2m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.14",
+     "fixed": "2.0.15"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-jq29-c7v8-rg55",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-72695",
+   "summary": "Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion",
+   "severity": "HIGH",
+   "score": 7.1,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-jq29-c7v8-rg55",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.15",
+     "fixed": "2.0.16"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-x424-64qh-5j54",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-84997",
+   "summary": "react/http: A malformed HTTP chunked body can lead to a denial-of-service and peg the CPU",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-x424-64qh-5j54",
+   "kev": false,
+   "packages": [
+    {
+     "name": "react/http",
+     "range": ">= 0.6.0, <= 1.11.0",
+     "fixed": "1.11.1"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-vjqc-q4mp-2rvf",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-79752",
+   "summary": "CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection",
+   "severity": "CRITICAL",
+   "score": 9.2,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-vjqc-q4mp-2rvf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "cakephp/database",
+     "range": ">= 4.6.0, < 4.6.5",
+     "fixed": "4.6.5"
+    },
+    {
+     "name": "cakephp/database",
+     "range": ">= 5.0.0, < 5.1.9",
+     "fixed": "5.1.9"
+    },
+    {
+     "name": "cakephp/database",
+     "range": ">= 5.2.0, < 5.2.14",
+     "fixed": "5.2.14"
+    },
+    {
+     "name": "cakephp/database",
+     "range": ">= 5.3.0, < 5.3.7",
+     "fixed": "5.3.7"
+    },
+    {
+     "name": "cakephp/cakephp",
+     "range": "< 4.5.12",
+     "fixed": "4.5.12"
+    },
+    {
+     "name": "cakephp/cakephp",
+     "range": ">= 4.6.0, < 4.6.5",
+     "fixed": "4.6.5"
+    },
+    {
+     "name": "cakephp/cakephp",
+     "range": ">= 5.0.0, < 5.1.9",
+     "fixed": "5.1.9"
+    },
+    {
+     "name": "cakephp/cakephp",
+     "range": ">= 5.2.0, < 5.2.14",
+     "fixed": "5.2.14"
+    },
+    {
+     "name": "cakephp/cakephp",
+     "range": ">= 5.3.0, < 5.3.7",
+     "fixed": "5.3.7"
+    },
+    {
+     "name": "cakephp/database",
+     "range": ">= 3.0.0, < 4.5.12",
+     "fixed": "4.5.12"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-47ch-6w46-6xm7",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-72697",
+   "summary": "Grav: media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content",
+   "severity": "HIGH",
+   "score": 7.1,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-47ch-6w46-6xm7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.15",
+     "fixed": "2.0.16"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-3jhr-mxmx-38cx",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-76839",
+   "summary": "Grav: UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet()",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-3jhr-mxmx-38cx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.15",
+     "fixed": "2.0.16"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-xjw5-q542-3vmr",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-76846",
+   "summary": "Grav: config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-xjw5-q542-3vmr",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.15",
+     "fixed": "2.0.16"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-p597-crqc-m349",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-72698",
+   "summary": "Grav: The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths",
+   "severity": "HIGH",
+   "score": 7.1,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-p597-crqc-m349",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "< 2.0.16",
+     "fixed": "2.0.16"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-38p6-h87p-r4cg",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-72701",
+   "summary": "Grav: Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection",
+   "severity": "LOW",
+   "score": 3.7,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-38p6-h87p-r4cg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.15",
+     "fixed": "2.0.16"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-9ccq-2jfg-qw33",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-72702",
+   "summary": "Grav: Origin validation bypass in Uri::referrer() and Pages::referrerRoute() via unanchored prefix match",
+   "severity": "LOW",
+   "score": null,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-9ccq-2jfg-qw33",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.15",
+     "fixed": "2.0.16"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-g4c3-4g96-6g4m",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-45140",
+   "summary": "Chamilo LMS CStudio upload flow allows unauthenticated remote code execution",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-g4c3-4g96-6g4m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "chamilo/chamilo-lms",
+     "range": "<= 2.0.0",
+     "fixed": "2.0.1"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-6qw9-4vv5-jr97",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-75831",
+   "summary": "Grav: Stored XSS via Markdown audio/video media <source> URL",
+   "severity": "MEDIUM",
+   "score": 5.1,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-6qw9-4vv5-jr97",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "<= 2.0.14",
+     "fixed": "2.0.15"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-269c-h76q-8cxw",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-72832",
+   "summary": "Grav: Stored XSS via quoted-attribute bypass in detectXss",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-269c-h76q-8cxw",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": ">= 1.5.2, <= 2.0.12",
+     "fixed": "2.0.13"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-w3f4-8pj2-599w",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-69089",
+   "summary": "Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-w3f4-8pj2-599w",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "= 2.0.10",
+     "fixed": "2.0.11"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-7pgq-cr25-xvc8",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-69088",
+   "summary": "Grav: Incomplete callable validation in blueprint dynamic fields allows arbitrary static method invocation and file disclosure",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-7pgq-cr25-xvc8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": ">= 2.0.7, <= 2.0.10",
+     "fixed": "2.0.11"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-c4wf-2xxc-68qm",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-65608",
+   "summary": "Grav: FlexDirectory::dynamicDataField() executes arbitrary callables from blueprint data with no validation",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-c4wf-2xxc-68qm",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": ">= 1.7.0, < 2.0.9",
+     "fixed": "2.0.9"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-8h9x-89f2-m7x3",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-61449",
+   "summary": "Grav: Decompression-bomb size cap bypassed by forged ZIP size in ZipArchiver/Installer",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-09-17",
+   "url": "https://github.com/advisories/GHSA-8h9x-89f2-m7x3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "= 2.0.1",
+     "fixed": "2.0.2"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-ffmg-hfvg-jhg9",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-58657",
+   "summary": "Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav",
+   "severity": "MEDIUM",
+   "score": 4.8,
+   "published": "2026-09-16",
+   "url": "https://github.com/advisories/GHSA-ffmg-hfvg-jhg9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "getgrav/grav",
+     "range": "= 2.0.0-rc.9",
+     "fixed": "2.0.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
   }
  ],
  "eol": {

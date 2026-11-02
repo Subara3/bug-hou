@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜undici（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/undici.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/undici.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xjj6-f33q-929c"/>
+<id>urn:bug-hou:GHSA-xjj6-f33q-929c</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 6.23.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.18.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109869&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qrxm-fqhp-jwvm"/>
+<id>urn:bug-hou:GHSA-qrxm-fqhp-jwvm</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 4.2.1, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-87018&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici WebSocket client vulnerable to Denial of Service via failed HTTP/2 handshake (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qq8j-7v2v-3rwp"/>
+<id>urn:bug-hou:GHSA-qq8j-7v2v-3rwp</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 8.11.0, &amp;lt; 8.11.2 → 8.11.2&lt;/p&gt;&lt;p&gt;CVE-2026-109855&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-f72v-6w45-q472"/>
+<id>urn:bug-hou:GHSA-f72v-6w45-q472</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 7.15.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109841&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9fm3-97px-rjf6"/>
+<id>urn:bug-hou:GHSA-9fm3-97px-rjf6</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 5.15.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109932&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici vulnerable to Denial of Service via unhandled exception in the decompress interceptor (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-55wc-3pg8-jfw6"/>
+<id>urn:bug-hou:GHSA-55wc-3pg8-jfw6</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 7.15.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-87029&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici vulnerable to cache poisoning and cross-user disclosure via cross-origin redirects (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4w7w-5xrc-9h26"/>
+<id>urn:bug-hou:GHSA-4w7w-5xrc-9h26</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109829&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici vulnerable to Denial of Service via unbounded memory in the EventSource parser (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4qv8-2p9j-2685"/>
+<id>urn:bug-hou:GHSA-4qv8-2p9j-2685</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 6.5.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109924&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: undici vulnerable to TLS certificate validation bypass via dropped tls options in Agent (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2m5v-pch6-74hx"/>
+<id>urn:bug-hou:GHSA-2m5v-pch6-74hx</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;undici &amp;gt;= 4.0.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109383&lt;/p&gt;</content>
+</entry>
+</feed>

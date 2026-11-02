@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜contao/contao（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/contao__contao.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/contao__contao.xml</id>
+<updated>2026-09-24T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] composer: Contao: Server-Side Request Forgery (SSRF) via Unvalidated RSS Feed URL in Feed Reader Module (LOW)</title>
+<link href="https://github.com/advisories/GHSA-87mg-5grr-rhwh"/>
+<id>urn:bug-hou:GHSA-87mg-5grr-rhwh</id>
+<updated>2026-09-24T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; ContaoのRSSリーダーでSSRF。LOW&lt;br&gt;→ 5.3.48/5.7.9に更新&lt;/p&gt;&lt;p&gt;contao/contao &amp;gt;= 5.3.35, &amp;lt; 5.3.48 → 5.3.48, contao/contao &amp;gt;= 5.4.0, &amp;lt; 5.7.9 → 5.7.9, contao/core-bundle &amp;gt;= 5.3.35, &amp;lt; 5.3.48 → 5.3.48, contao/core-bundle &amp;gt;= 5.4.0, &amp;lt; 5.7.9 → 5.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-57232&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜verbb/formie（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/verbb__formie.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/verbb__formie.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-v3f3-cmj4-cvj9"/>
+<id>urn:bug-hou:GHSA-v3f3-cmj4-cvj9</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76086&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: Formie: Missing authorization on sent notification resend modal exposes submission PII (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9rg8-2wvr-fgjh"/>
+<id>urn:bug-hou:GHSA-9rg8-2wvr-fgjh</id>
+<updated>2026-09-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Formieの通知再送で認可なく個人情報が見える。HIGH&lt;br&gt;→ Formie 3.1.31/2.2.23に更新&lt;/p&gt;&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76089&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: Formie: Unauthenticated users can overwrite incomplete submissions via submit action (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-584p-f93j-wpgc"/>
+<id>urn:bug-hou:GHSA-584p-f93j-wpgc</id>
+<updated>2026-09-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Formieで認証なしに未完了の送信を上書き。HIGH&lt;br&gt;→ Formie 3.1.31/2.2.23に更新&lt;/p&gt;&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76087&lt;/p&gt;</content>
+</entry>
+</feed>

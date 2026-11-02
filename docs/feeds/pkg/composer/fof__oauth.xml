@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜fof/oauth（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/fof__oauth.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/fof__oauth.xml</id>
+<updated>2026-09-25T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[確認しておく] composer: FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-g7vj-c29h-3h5m"/>
+<id>urn:bug-hou:GHSA-g7vj-c29h-3h5m</id>
+<updated>2026-09-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Flarum OAuthのDiscord連携で認証なし乗っ取り。利用者の少ない拡張のCRITICAL&lt;br&gt;→ fof/oauth 1.7.4/2.0.0-beta.4に更新&lt;/p&gt;&lt;p&gt;fof/oauth &amp;lt; 1.7.4 → 1.7.4, fof/oauth &amp;gt;= 2.0.0-beta.1, &amp;lt; 2.0.0-beta.4 → 2.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-92161&lt;/p&gt;</content>
+</entry>
+</feed>

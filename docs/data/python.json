@@ -15,6 +15,7 @@
    "cvss": "4.0",
    "desc": "socket.getaddrinfo() previously accepted null bytes within *host* and *port* parameters which can cause the values to be silently truncated.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-158"
    ],
@@ -31,6 +32,7 @@
    "cvss": "4.0",
    "desc": "Response body and chunk parsing would handle non-hex or negative integers incorrectly which could result in misinterpreting HTTP response contents.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-444"
    ],
@@ -47,6 +49,7 @@
    "cvss": "4.0",
    "desc": "Python has added a denylist for known compromised certificates to the \"ssl\" module to ensure user safety even without certificate revocation configured. Known compromised certificates will automatically be rejected regardless of the SSLContext policy configuration.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-299"
    ],
@@ -63,6 +66,7 @@
    "cvss": "4.0",
    "desc": "tarfile.tar_filter could be bypassed using crafted link entries, including symlinks with empty or directory-like names, to redirect later archive members outside the intended extraction directory. This allowed a malicious tar archive to cause tarfile.extractall() with filter=\"tar\" to write files outside the destination directory, subject to the permissions of the extracting process.\n\nThis is the tarfile.tar_filter counterpart of CVE-2026-7774, which covered tarfile.data_filter.",
    "kev": false,
+   "affects": [],
    "cwe": [],
    "first_seen": "0000-00-00"
   },
@@ -77,6 +81,7 @@
    "cvss": "4.0",
    "desc": "A remote, unauthenticated TLS client can make a server crash or call\nthrough a freed pointer if its sni_callback assigns a different context to\nSSLSocket.context (the documented way to select a certificate per server\nname) and nothing else keeps the original ssl.SSLContext alive. Typical\ncases are servers that create an SSLContext per connection or replace it\nwhile connections are open; servers that wrap their listening socket with\nit are not affected.\n\n\nMitigation: keep a reference to every SSLContext that sets sni_callback for\nthe lifetime of the server. TLS clients are not affected.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-416"
    ],
@@ -93,6 +98,7 @@
    "cvss": "4.0",
    "desc": "ssl.SSLContext.wrap_bio() didn't require the server_hostname argument\nto not be None if ssl.SSLContext.check_hostname was set. Due to a\nmissing parameter check in SSLObject, if the server_hostname argument\nisn't supplied then hostname verification would be silently skipped.\n\n\nThis defect could lead to programs where certificate hostname verification\n*appeared* to be succeeding with SSLContext.check_hostname = True and no\nValueError being raised due to misconfiguration.\n\n\nIf the program passes a server_hostname value that isn't an empty string\nor None to any of these APIs then certificate hostname verification\nproceeds as expected and the program is not affected by this vulnerability.\n\n\nMitigating this vulnerability doesn't require updating Python or applying\nthe patch. To mitigate, pass a valid non-None and non-empty\nserver_hostname value to SSLContext.wrap_bio(),\nasyncio.create_connection(), or asyncio.loop.start_tls() and\ncertificate hostname verification will proceed as expected. Upgrading to\nthe latest version of Python or applying the patch only changes the\nbehavior from silently skipping hostname verification to raising a\nValueError, similar to SSLContext.wrap_socket(), when server_hostname\nisn't supplied.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-297"
    ],
@@ -109,6 +115,7 @@
    "cvss": "4.0",
    "desc": "The cleanup of tempfile.TemporaryDirectory is vulnerable to a race condition. An attacker who can modify the tree during cleanup can replace a directory with a symbolic link, causing files outside of the temporary directory to be deleted or have their permissions and file flags reset, with the privileges of the process performing the cleanup. Note that platforms where shutil.rmtree.avoids_symlink_attacks is false, remain affected, and file flags may still be reset outside of the tree on all platforms.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-59"
    ],
@@ -125,6 +132,7 @@
    "cvss": "4.0",
    "desc": "In CPython 3.13 and earlier, the tarfile module's data and tar extraction filters are vulnerable to crafted archives containing a hard link to a symbolic link. Such archives may cause extraction to modify the permissions or modification time of a file outside the destination directory, or expose the contents of that file within the extracted tree.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-59"
    ],
@@ -141,6 +149,7 @@
    "cvss": "4.0",
    "desc": "When tarfile extracts a link on a system that doesn't support links, it falls back to extracting a member from the archive. In this case, the filter function is run twice: once for the extracted member, and once with name set to the location of the link. For one of the calls, the return value was ignored. Instead, the member should be skipped if either call returns None.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-22",
     "CWE-59"
@@ -158,6 +167,7 @@
    "cvss": "4.0",
    "desc": "When decompressing crafted zip files using the bzip/LZMA/Zstandard \n\ncompressions, Python could use an attacker-controlled size to \n\npre-allocate memory, possibly resulting in memory exhaustion.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-400"
    ],
@@ -174,6 +184,7 @@
    "cvss": "4.0",
    "desc": "The tarfile module's tar and data\n extraction filters created directories outside the destination for \nmembers whose name leaves the destination and returns to it, such as ../evil/../dest/sub/file. The containment check used the resolved path, but intermediate directories were created from the name as given.\n\nOnly\n empty directories are created outside the destination. Member contents \nare still extracted inside it. To return to the destination the member's\n name must contain the destination directory's own final component, so \nextraction into a secure randomised directory is not affected.\n\nThis affects POSIX platforms only. On Windows, .. components are collapsed before the path reaches the filesystem, so the directories outside the destination are never created.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-22"
    ],
@@ -190,6 +201,7 @@
    "cvss": "4.0",
    "desc": "The \"stringprep\" module didn't process characters from RFC 3454 tables \nB.2 or B.3 correctly: the latest Unicode codepoint attributes were used \ninstead of the specified Unicode 3.2.0. This behavior would cause \nmismatches when processing domain names using IDNA 2003 (the \"idna\" \ncodec) and the in_table_b2() function of the \"stringprep\" module. This \nonly affects domain names containing characters that were not previously\n registered or had their Unicode attributes such as case-folding \nbehavior updated since Unicode 3.2.0.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-436"
    ],
@@ -206,6 +218,7 @@
    "cvss": "4.0",
    "desc": "The HTTPPasswordMgr class in the urllib.request module, along with its subclasses HTTPPasswordMgrWithDefaultRealm and HTTPPasswordMgrWithPriorAuth, did not take the URL scheme into account when matching stored credentials against a requested URL. Credentials added for an https:// URL were also used for requests to the same host over http://, so an attacker able to redirect or downgrade a client to plain HTTP (for example, via an HTTPS-to-HTTP redirect or an on-path position) could capture credentials in cleartext. Credentials added for http:// URLs could likewise be sent over https://.\n\nCredential matching is now scoped by URL scheme. Credentials registered with a URL that includes a scheme are only used for requests with the same scheme. Credentials registered with a bare authority (such as example.com or example.com:8080) continue to match any scheme, preserving compatibility with existing code, including proxy authentication.\n\nUsers who cannot upgrade immediately can mitigate by ensuring that applications never make plain http:// requests to hosts for which credentials are registered, for example by not following redirects to http:// URLs.",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-319",
     "CWE-522"
@@ -223,6 +236,7 @@
    "cvss": "4.0",
    "desc": "Attacker-controlled CSV samples can trigger super-linear \nregular-expression work during dialect sniffing and consume significant \nCPU when applications pass unbounded input to csv.Sniffer.sniff().",
    "kev": false,
+   "affects": [],
    "cwe": [
     "CWE-1176"
    ],
@@ -232,6 +246,7 @@
  "ghsa": [
   {
    "id": "GHSA-5849-834g-hvw5",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119203",
    "summary": "pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search",
    "severity": "HIGH",
@@ -250,6 +265,7 @@
   },
   {
    "id": "GHSA-cggf-277g-3q54",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119204",
    "summary": "pypdf has possible large memory usage when parsing page tree",
    "severity": "HIGH",
@@ -268,6 +284,7 @@
   },
   {
    "id": "GHSA-mfr5-77xh-9j7h",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119205",
    "summary": "pypdf has possible infinite loop when cloning dictionaries",
    "severity": "HIGH",
@@ -286,6 +303,7 @@
   },
   {
    "id": "GHSA-c73q-w75p-j82v",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116672",
    "summary": "Authlib RFC 7592 examples omit registration-access-token client binding",
    "severity": "HIGH",
@@ -304,6 +322,7 @@
   },
   {
    "id": "GHSA-42gh-23hr-vphw",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119206",
    "summary": "pypdf has possible long runtimes when retrieving page labels",
    "severity": "HIGH",
@@ -322,6 +341,7 @@
   },
   {
    "id": "GHSA-4vqv-7265-gm2w",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119207",
    "summary": "pypdf has possible large memory usage for exceptions in strict mode",
    "severity": "HIGH",
@@ -340,6 +360,7 @@
   },
   {
    "id": "GHSA-62m5-6wh8-28x7",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119208",
    "summary": "pypdf has possible long runtimes/large memory usage for encrypted PDF files",
    "severity": "HIGH",
@@ -358,6 +379,7 @@
   },
   {
    "id": "GHSA-x3rh-gjgm-fmqc",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119209",
    "summary": "pypdf has possible large memory usage when parsing cross-reference streams",
    "severity": "HIGH",
@@ -376,6 +398,7 @@
   },
   {
    "id": "GHSA-2qm8-x737-gmw5",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119196",
    "summary": "pyasn1 has quadratic CPU consumption in constructed BIT STRING decoding",
    "severity": "HIGH",
@@ -394,6 +417,7 @@
   },
   {
    "id": "GHSA-mm57-4v3p-rchx",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119197",
    "summary": "pyasn1 has quadratic-complexity denial of service in binary REAL decoding",
    "severity": "HIGH",
@@ -412,6 +436,7 @@
   },
   {
    "id": "GHSA-9m75-vc3g-4x39",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119195",
    "summary": "pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding",
    "severity": "HIGH",
@@ -430,6 +455,7 @@
   },
   {
    "id": "GHSA-fm9c-5rcf-2q5p",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119194",
    "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
    "severity": "HIGH",
@@ -448,6 +474,7 @@
   },
   {
    "id": "GHSA-mpqx-q82w-9x46",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119286",
    "summary": "GraphQL-core has denial of service via memory leak in aborted validations",
    "severity": "HIGH",
@@ -466,6 +493,7 @@
   },
   {
    "id": "GHSA-7984-qgvg-3j9c",
+   "ecosystem": "pip",
    "cve": "CVE-2026-118669",
    "summary": "OAuthLib: Token grants can use attacker-supplied client_id for authorization after authenticating a different client",
    "severity": "HIGH",
@@ -484,6 +512,7 @@
   },
   {
    "id": "GHSA-9gh4-xw24-9xh5",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116677",
    "summary": "OpenWISP Controller CA CRL REST API does not scope requests to managed organizations",
    "severity": "MEDIUM",
@@ -502,6 +531,7 @@
   },
   {
    "id": "GHSA-9pg5-8c7x-5hfx",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119284",
    "summary": "joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection",
    "severity": "MEDIUM",
@@ -520,6 +550,7 @@
   },
   {
    "id": "GHSA-jpxq-7h8p-2q76",
+   "ecosystem": "pip",
    "cve": "CVE-2026-119283",
    "summary": "joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption",
    "severity": "HIGH",
@@ -538,6 +569,7 @@
   },
   {
    "id": "GHSA-vpp8-g58w-m8mp",
+   "ecosystem": "pip",
    "cve": null,
    "summary": "Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset",
    "severity": "HIGH",
@@ -556,6 +588,7 @@
   },
   {
    "id": "GHSA-26mh-57q7-jfvr",
+   "ecosystem": "pip",
    "cve": "CVE-2026-61438",
    "summary": "PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox",
    "severity": "HIGH",
@@ -574,6 +607,7 @@
   },
   {
    "id": "GHSA-r4j5-9xpp-3985",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115927",
    "summary": "Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks",
    "severity": "MEDIUM",
@@ -592,6 +626,7 @@
   },
   {
    "id": "GHSA-pw9p-v7r6-gx4p",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116578",
    "summary": "Tornado: Open redirect in RedirectHandler via protocol-relative URLs",
    "severity": "LOW",
@@ -610,6 +645,7 @@
   },
   {
    "id": "GHSA-pcg2-g6cj-q92c",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116577",
    "summary": "Tornado: Quadratic CPU usage when parsing HTTP headers with line folding",
    "severity": "MEDIUM",
@@ -628,6 +664,7 @@
   },
   {
    "id": "GHSA-6jp4-8v48-cc5v",
+   "ecosystem": "pip",
    "cve": "CVE-2026-117601",
    "summary": "Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it",
    "severity": "CRITICAL",
@@ -646,6 +683,7 @@
   },
   {
    "id": "GHSA-5324-3w58-qpp2",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116575",
    "summary": "Mem0: Cross-tenant conversation leak via unescaped delimiter collision in session-scope key (_build_session_scope)",
    "severity": "MEDIUM",
@@ -669,6 +707,7 @@
   },
   {
    "id": "GHSA-h2r5-x5m7-3935",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115910",
    "summary": "Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim",
    "severity": "MEDIUM",
@@ -687,6 +726,7 @@
   },
   {
    "id": "GHSA-6pwm-x34p-fvj2",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115920",
    "summary": "ONNX: Out-of-bounds read in ConvTranspose shape inference via undersized weight rank",
    "severity": "MEDIUM",
@@ -705,6 +745,7 @@
   },
   {
    "id": "GHSA-q69g-f4f5-v8m7",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115922",
    "summary": "ONNX: Denial of service via unchecked expansion of packed sub-byte tensors in ONNX Python APIs",
    "severity": "MEDIUM",
@@ -723,6 +764,7 @@
   },
   {
    "id": "GHSA-m4pr-6v3c-6fgr",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115921",
    "summary": "ONNX: Null Pointer Dereference in ScanInferenceFunction Due to Missing Required Attribute",
    "severity": "MEDIUM",
@@ -741,6 +783,7 @@
   },
   {
    "id": "GHSA-48m4-24cq-37qf",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115919",
    "summary": "ONNX: Out-of-Bounds Read in RNN/GRU/LSTM Shape Inference (Old Opsets, Missing Rank Check)",
    "severity": "MEDIUM",
@@ -759,6 +802,7 @@
   },
   {
    "id": "GHSA-vvpg-rrww-wpmh",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115917",
    "summary": "vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server",
    "severity": "LOW",
@@ -777,6 +821,7 @@
   },
   {
    "id": "GHSA-8397-8qf6-f2gm",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115913",
    "summary": "vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine",
    "severity": "MEDIUM",
@@ -795,6 +840,7 @@
   },
   {
    "id": "GHSA-gq5q-89c7-vhvx",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115914",
    "summary": "vLLM DeepSeek-OCR image processing vulnerable to denial of service",
    "severity": "MEDIUM",
@@ -813,6 +859,7 @@
   },
   {
    "id": "GHSA-h3rc-j82p-2c3h",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115915",
    "summary": "vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE",
    "severity": "HIGH",
@@ -831,6 +878,7 @@
   },
   {
    "id": "GHSA-6757-hggm-hp2w",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115912",
    "summary": "vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled",
    "severity": "HIGH",
@@ -849,6 +897,7 @@
   },
   {
    "id": "GHSA-q97c-p368-75c4",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115916",
    "summary": "vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS)",
    "severity": "MEDIUM",
@@ -867,6 +916,7 @@
   },
   {
    "id": "GHSA-x567-49g5-p4cf",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115918",
    "summary": "vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs",
    "severity": "MEDIUM",
@@ -885,6 +935,7 @@
   },
   {
    "id": "GHSA-542m-9234-8gvf",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115911",
    "summary": "vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool",
    "severity": "MEDIUM",
@@ -903,6 +954,7 @@
   },
   {
    "id": "GHSA-8prr-f582-jqq3",
+   "ecosystem": "pip",
    "cve": "CVE-2026-115885",
    "summary": "LangGraph CLI prints the registry push token in `langgraph deploy --verbose` output",
    "severity": "MEDIUM",
@@ -921,6 +973,7 @@
   },
   {
    "id": "GHSA-pjh6-c8mg-3x7m",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116579",
    "summary": "Autobahn Python: permessage-brotli inflates a whole frame before maxMessagePayloadSize is checked (incomplete fix of GHSA-hxp9-w8x3-p566)",
    "severity": "MEDIUM",
@@ -939,6 +992,7 @@
   },
   {
    "id": "GHSA-4hm6-w6qq-w73v",
+   "ecosystem": "pip",
    "cve": "CVE-2026-118668",
    "summary": "LangGraph JavaScript custom authentication may permit cross-user Store access",
    "severity": "HIGH",
@@ -957,6 +1011,7 @@
   },
   {
    "id": "GHSA-wfhq-q4j2-c37m",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112941",
    "summary": "filelock: SoftReadWriteLock follows a lock tree swapped in after its first acquire and writes lock records into directories of the user running the lock",
    "severity": "LOW",
@@ -975,6 +1030,7 @@
   },
   {
    "id": "GHSA-6627-m3xw-93mp",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112908",
    "summary": "filelock: StrictSoftFileLock creates its claim directories without the lock mode, so another local user with a write bit on them can end a live hold",
    "severity": "MEDIUM",
@@ -993,6 +1049,7 @@
   },
   {
    "id": "GHSA-9c4x-gm8v-wgc4",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112911",
    "summary": "filelock: StrictSoftFileLock and SoftReadWriteLock adopt a protocol directory another user created first, losing mutual exclusion",
    "severity": "MEDIUM",
@@ -1011,6 +1068,7 @@
   },
   {
    "id": "GHSA-8mx5-7m5m-r77g",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112910",
    "summary": "filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL",
    "severity": "MEDIUM",
@@ -1029,6 +1087,7 @@
   },
   {
    "id": "GHSA-cwqr-hh33-gh44",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112915",
    "summary": "filelock ReadWriteLock: a crafted lock database makes every acquire stall or hang regardless of timeout",
    "severity": "MEDIUM",
@@ -1047,6 +1106,7 @@
   },
   {
    "id": "GHSA-rfpc-qcw5-3pc4",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112939",
    "summary": "filelock: SoftFileLock removes a live holder's marker when another user forges the PID in a writable marker",
    "severity": "MEDIUM",
@@ -1065,6 +1125,7 @@
   },
   {
    "id": "GHSA-9j6q-wvj5-jgjg",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112912",
    "summary": "filelock: Symlink swap during SoftFileLock's writability check leaks whether a path exists and is writable by the lock taker",
    "severity": "LOW",
@@ -1083,6 +1144,7 @@
   },
   {
    "id": "GHSA-69hj-f68j-2879",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112909",
    "summary": "filelock: UnixFileLock truncates and chmods any regular file another user renames or hard-links onto the lock path",
    "severity": "MEDIUM",
@@ -1101,6 +1163,7 @@
   },
   {
    "id": "GHSA-j8f7-rjxc-mr56",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112936",
    "summary": "filelock: ReadWriteLock follows a symlink at the lock path into SQLite",
    "severity": "MEDIUM",
@@ -1119,6 +1182,7 @@
   },
   {
    "id": "GHSA-m462-7rxw-wvpg",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112938",
    "summary": "filelock: StrictSoftFileLock follows a symbolic link swapped in at <path>.filelock and creates claim files in a directory another local user chooses",
    "severity": "MEDIUM",
@@ -1137,6 +1201,7 @@
   },
   {
    "id": "GHSA-fj95-fr6c-h845",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112934",
    "summary": "filelock: SoftReadWriteLock holder refresh writes through a hard link and hangs on a named pipe that another local user renames over its record",
    "severity": "MEDIUM",
@@ -1155,6 +1220,7 @@
   },
   {
    "id": "GHSA-fq56-3cx3-fjxp",
+   "ecosystem": "pip",
    "cve": "CVE-2026-112935",
    "summary": "filelock: SoftFileLock stale-lock break removes a live lock file on a reused inode number and admits two holders",
    "severity": "MEDIUM",
@@ -1173,6 +1239,7 @@
   },
   {
    "id": "GHSA-3fx2-cqw9-xr3c",
+   "ecosystem": "pip",
    "cve": "CVE-2026-118667",
    "summary": "LangGraph: Unencoded identifiers in LangGraph SDK v3 streaming can redirect authenticated GET requests",
    "severity": "MEDIUM",
@@ -1196,6 +1263,7 @@
   },
   {
    "id": "GHSA-5j9r-fx4x-rpvg",
+   "ecosystem": "pip",
    "cve": "CVE-2026-58273",
    "summary": "rucio has an Authorization Bypass on REST API endpoint for signing URLs",
    "severity": "HIGH",
@@ -1224,6 +1292,7 @@
   },
   {
    "id": "GHSA-m65p-9j7q-6w33",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116690",
    "summary": "MLflow vulnerable to arbitrary file read on unauthenticated servers via prompt model version source",
    "severity": "HIGH",
@@ -1242,6 +1311,7 @@
   },
   {
    "id": "GHSA-j7qq-vr8c-xvw3",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116691",
    "summary": "MLflow CrewAI autologging records LLM provider API keys in logged trace spans",
    "severity": "MEDIUM",
@@ -1260,6 +1330,7 @@
   },
   {
    "id": "GHSA-26p8-2jq9-3vq9",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116692",
    "summary": "MLflow vulnerable to remote code execution on unauthenticated servers via third-party scorer deserialization importing caller-placed artifact modules",
    "severity": "CRITICAL",
@@ -1278,6 +1349,7 @@
   },
   {
    "id": "GHSA-w4fh-qvv9-3v23",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116684",
    "summary": "Model Context Protocol Python SDK: Server bearer-token authentication accepts tokens issued for a different resource server",
    "severity": "MEDIUM",
@@ -1301,6 +1373,7 @@
   },
   {
    "id": "GHSA-f5m9-jfrj-jjj7",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116694",
    "summary": "OpenTelemetry Python: Unbounded memory allocation in Jaeger baggage propagation",
    "severity": "MEDIUM",
@@ -1319,6 +1392,7 @@
   },
   {
    "id": "GHSA-5h93-6whr-6q8j",
+   "ecosystem": "pip",
    "cve": "CVE-2026-116685",
    "summary": "Model Context Protocol Python SDK: HTTP client transports followed cross-origin redirects carrying custom headers and bodies",
    "severity": "MEDIUM",
@@ -1339,6 +1413,801 @@
     }
    ],
    "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-rwrf-2pqf-9j8j",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-116686",
+   "summary": "Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-rwrf-2pqf-9j8j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mcp",
+     "range": ">= 2.0.0, < 2.2.0",
+     "fixed": "2.2.0"
+    },
+    {
+     "name": "mcp",
+     "range": ">= 1.10.0, < 1.30.0",
+     "fixed": "1.30.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-wf6j-7hvr-gr93",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Hydra legacy target blacklist permits unsafe PyYAML loading",
+   "severity": "HIGH",
+   "score": 7.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-wf6j-7hvr-gr93",
+   "kev": false,
+   "packages": [
+    {
+     "name": "hydra-core",
+     "range": ">= 1.3.6, < 1.3.8",
+     "fixed": "1.3.8"
+    },
+    {
+     "name": "hydra-core",
+     "range": ">= 1.4.0.dev9, < 1.4.0rc3",
+     "fixed": "1.4.0rc3"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-8m4g-j4wp-wgcg",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114616",
+   "summary": "Authlib accepts an empty HMAC key, allowing JWS/JWT signature forgery (HS256/HS384/HS512)",
+   "severity": "HIGH",
+   "score": 7.4,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-8m4g-j4wp-wgcg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "Authlib",
+     "range": "< 1.9.1",
+     "fixed": "1.9.1"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-x4rv-c3wx-4cr8",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114620",
+   "summary": "Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-x4rv-c3wx-4cr8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "authlib",
+     "range": ">= 1.6.0, < 1.9.0",
+     "fixed": "1.9.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-c5mf-xmp2-59rc",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114617",
+   "summary": "Authlib: ID token can disable its own nonce validation via the nonce_supported claim",
+   "severity": "MEDIUM",
+   "score": 4.2,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-c5mf-xmp2-59rc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "authlib",
+     "range": "<= 1.8.0",
+     "fixed": "1.9.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-fch4-3c6x-j4gc",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114618",
+   "summary": "Authlib: Default JWT bearer grant accepts assertions for the wrong audience",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-fch4-3c6x-j4gc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "authlib",
+     "range": "< 1.9.0",
+     "fixed": "1.9.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-q686-2qmg-hqc7",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114619",
+   "summary": "Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens",
+   "severity": "MEDIUM",
+   "score": 4.6,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-q686-2qmg-hqc7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "authlib",
+     "range": "< 1.9.0",
+     "fixed": "1.9.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-7vr2-2fgp-9w7p",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114615",
+   "summary": "Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys",
+   "severity": "HIGH",
+   "score": 7.4,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-7vr2-2fgp-9w7p",
+   "kev": false,
+   "packages": [
+    {
+     "name": "authlib",
+     "range": ">= 1.3.1, <= 1.8.0",
+     "fixed": "1.9.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-jj7h-c3hg-m23x",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114614",
+   "summary": "Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts",
+   "severity": "LOW",
+   "score": 2.6,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-jj7h-c3hg-m23x",
+   "kev": false,
+   "packages": [
+    {
+     "name": "authlib",
+     "range": "<= 1.7.2",
+     "fixed": "1.8.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-45c3-73f7-pv4m",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114605",
+   "summary": "dnspython dns.name.from_wire_parser() excessive CPU use",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-45c3-73f7-pv4m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "dnspython",
+     "range": "< 2.9.0",
+     "fixed": "2.9.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-3633-r77q-h3v3",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-116588",
+   "summary": "Datadog dd-trace-py: ReDoS in URL query string obfuscation",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-3633-r77q-h3v3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "ddtrace",
+     "range": ">= 1.5.0, < 3.19.9",
+     "fixed": "3.19.9"
+    },
+    {
+     "name": "ddtrace",
+     "range": ">= 4.0.0, < 4.15.6",
+     "fixed": "4.15.6"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-p3m5-h5v9-vqj6",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-116589",
+   "summary": "Datadog dd-trace-py: IAST instrumentation can lead to application DOS",
+   "severity": "HIGH",
+   "score": 8.2,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-p3m5-h5v9-vqj6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "ddtrace",
+     "range": ">= 3.13.0, < 4.15.5",
+     "fixed": "4.15.5"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-98qm-wvgf-w4cf",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-106435",
+   "summary": "MongoDB Python Driver: Out-of-bounds read in BSON decoding via a malformed Regex element",
+   "severity": "HIGH",
+   "score": 8.2,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-98qm-wvgf-w4cf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "pymongo",
+     "range": ">= 3.9.0, <= 4.18.2",
+     "fixed": "4.18.3"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-h3rc-6mm3-gc2m",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114053",
+   "summary": "vLLM: Request-controlled mm_processor_kwargs.code_revision allows remote code execution",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-h3rc-6mm3-gc2m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "vllm",
+     "range": ">= 0.7.3, < 0.31.0",
+     "fixed": "0.31.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-3w55-933p-8pv5",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage",
+   "severity": "HIGH",
+   "score": 7.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-3w55-933p-8pv5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "strands-agents",
+     "range": "< 1.48.0",
+     "fixed": "1.48.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-763v-5pjm-fx36",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Strands Agents: Default FileSessionManager storage is world-readable on shared systems",
+   "severity": "MEDIUM",
+   "score": 5.7,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-763v-5pjm-fx36",
+   "kev": false,
+   "packages": [
+    {
+     "name": "strands-agents",
+     "range": "< 1.48.0",
+     "fixed": "1.48.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-vqrg-773h-4wxc",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114510",
+   "summary": "Flexible GraphRAG: Cypher/Graph Injection via broken string-escaping in FalkorDB adapter (_escape()) - full graph wipe from ingested-document content",
+   "severity": "HIGH",
+   "score": 7.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-vqrg-773h-4wxc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "flexible-graphrag",
+     "range": ">= 0.6.0, < 0.8.2",
+     "fixed": "0.8.2"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-g5ff-637f-6q2m",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "LiteLLM: internal_user_viewer arbitrary local file read via `vertex_ai_credentials`",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-g5ff-637f-6q2m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "litellm",
+     "range": "< 1.95.0",
+     "fixed": "1.95.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-hhww-mrg2-969h",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "LiteLLM vulnerable to reflected XSS in /sso/debug/callback",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-hhww-mrg2-969h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "litellm",
+     "range": ">= 1.65.5, < 1.85.0",
+     "fixed": "1.85.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-23mf-xhv8-69c2",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "GitPython: arbitrary file read via attacker-controlled branch name in `Head.checkout()` (incomplete fix of CVE-2026-78679)",
+   "severity": "HIGH",
+   "score": 7.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-23mf-xhv8-69c2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GitPython",
+     "range": "<= 3.1.62",
+     "fixed": "3.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-gq48-pqfc-9p58",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "GitPython: Submodule.move() follows an attacker-committed intermediate symlink outside the worktree",
+   "severity": "MEDIUM",
+   "score": null,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-gq48-pqfc-9p58",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GitPython",
+     "range": "< 3.2.0",
+     "fixed": "3.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-f9j4-qggq-h239",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "GitPython Remote.pull() refspec bypasses the --upload-pack unsafe-option guard, enabling arbitrary command execution",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-f9j4-qggq-h239",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GitPython",
+     "range": ">= 3.1.30, < 3.2.0",
+     "fixed": "3.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-w8jc-g24h-crhw",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "GitPython command wrappers omit unsafe protocol and option checks",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-w8jc-g24h-crhw",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GitPython",
+     "range": "<= 3.1.62",
+     "fixed": "3.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-fx3j-rwgx-fr94",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "GitPython: separate_git_dir leaks env vars via crafted .gitmodules submodule name",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-fx3j-rwgx-fr94",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GitPython",
+     "range": "<= 3.1.62",
+     "fixed": "3.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-m64x-33q8-m5h7",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "GitPython parse_actor_and_date() is vulnerable to quadratic backtracking on malformed identity lines",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-m64x-33q8-m5h7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GitPython",
+     "range": "<= 3.1.62",
+     "fixed": "3.2.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-7hp6-4w63-5g45",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114612",
+   "summary": "LiteLLM: Privilege Escalation to Proxy Admin via Cross-Domain Reuse of the Salt Key",
+   "severity": "HIGH",
+   "score": 7.7,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-7hp6-4w63-5g45",
+   "kev": false,
+   "packages": [
+    {
+     "name": "litellm",
+     "range": ">= 1.91.0, < 1.100.4",
+     "fixed": "1.100.4"
+    },
+    {
+     "name": "litellm",
+     "range": ">= 1.101.0, < 1.101.3",
+     "fixed": "1.101.3"
+    },
+    {
+     "name": "litellm",
+     "range": ">= 1.102.0, < 1.102.2",
+     "fixed": "1.102.2"
+    },
+    {
+     "name": "litellm",
+     "range": ">= 1.103.0, < 1.103.1",
+     "fixed": "1.103.1"
+    },
+    {
+     "name": "litellm",
+     "range": ">= 1.104.0rc1, < 1.104.0rc2",
+     "fixed": "1.104.0rc2"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-j586-36cw-2gc2",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114613",
+   "summary": "MessagePack: Unbounded memory leak in msgpack C extension on strict_map_key validation failure",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-j586-36cw-2gc2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "msgpack",
+     "range": "< 1.2.3",
+     "fixed": "1.2.3"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-j456-xh4h-cpf2",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "NLTK: WekaClassifier passes an unvalidated caller-controlled model path to the weka JVM, bypassing nltk.pathsec containment",
+   "severity": "HIGH",
+   "score": 8.6,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-j456-xh4h-cpf2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-6v38-4h7w-rj9h",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-96760",
+   "summary": "Authlib: empty signatures validation in JWS JSON deserialization",
+   "severity": "CRITICAL",
+   "score": 9.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-6v38-4h7w-rj9h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "authlib",
+     "range": "<= 1.8.0",
+     "fixed": "1.9.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-22qq-2fwx-7p67",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114608",
+   "summary": "Pylint: Arbitrary code execution via pickle deserialization of the stats cache in PYLINT_HOME",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-22qq-2fwx-7p67",
+   "kev": false,
+   "packages": [
+    {
+     "name": "pylint",
+     "range": "< 4.0.9",
+     "fixed": "4.0.9"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-frvg-qw88-hww9",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-94624",
+   "summary": "vllm p2p never connected zmq_exhaustion",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-frvg-qw88-hww9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "vllm",
+     "range": "< 0.32.0",
+     "fixed": "0.32.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-qr6x-7v33-6qmg",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-115924",
+   "summary": "Rembg: Unauthenticated SAM model injection permits local-file disclosure through malicious ONNX graphs",
+   "severity": "HIGH",
+   "score": 8.6,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-qr6x-7v33-6qmg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "rembg",
+     "range": "< 2.0.82",
+     "fixed": "2.0.82"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-jj36-9pvh-vj5r",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-83813",
+   "summary": "Twisted: DNS Response Spoofing in twisted.names Due to Missing Source Address Validation",
+   "severity": "LOW",
+   "score": 3.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-jj36-9pvh-vj5r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "Twisted",
+     "range": "<= 26.4.0",
+     "fixed": "26.10.0rc1"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-wqw6-wpr3-45rh",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114610",
+   "summary": "fpdf2: Exponential SVG '<use>' expansion causes CPU and memory exhaustion in 'FPDF.image()'",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-wqw6-wpr3-45rh",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fpdf2",
+     "range": ">= 2.5.0, < 2.8.8",
+     "fixed": "2.8.8"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-rw7v-4hrq-x6r9",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-114609",
+   "summary": "fpdf2 implicitly loads external URLs and local image paths when rendering attacker-controlled content",
+   "severity": "MEDIUM",
+   "score": 5.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-rw7v-4hrq-x6r9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fpdf2",
+     "range": "<= 2.8.7",
+     "fixed": "2.8.8"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-m4w4-3r8h-jw98",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-35002",
+   "summary": "Agno: Arbitrary code execution via `eval()` on `field_type` in `FunctionCall`",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-m4w4-3r8h-jw98",
+   "kev": false,
+   "packages": [
+    {
+     "name": "agno",
+     "range": "< 2.3.24",
+     "fixed": "2.3.24"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-3jp2-3mrg-2vxc",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-49272",
+   "summary": "OAuthLib: Bearer token can be retrieved as long as client knows a valid client ID for device workflow",
+   "severity": "HIGH",
+   "score": 8.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-3jp2-3mrg-2vxc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "oauthlib",
+     "range": ">= 3.3.0, < 4.0.0",
+     "fixed": "4.0.0"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-6hp3-vr39-rqw8",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-48705",
+   "summary": "MONAILabel Server Crash and Silent Inference Corruption via Crafted DICOM (pydicom DS/IS Validation Bypass)",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-6hp3-vr39-rqw8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "monai",
+     "range": "< 1.6.1",
+     "fixed": "1.6.1"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-vcw3-r3fx-j444",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-27975",
+   "summary": "Ajenti has potential Remote Code Execution",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-vcw3-r3fx-j444",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aj",
+     "range": "< 2.2.13",
+     "fixed": "2.2.13"
+    }
+   ],
+   "first_seen": "2026-11-02"
+  },
+  {
+   "id": "GHSA-jqc4-5cvw-7w85",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-112937",
+   "summary": "filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-10-23",
+   "url": "https://github.com/advisories/GHSA-jqc4-5cvw-7w85",
+   "kev": false,
+   "packages": [
+    {
+     "name": "filelock",
+     "range": ">= 4.1.0, <= 4.2.0",
+     "fixed": "4.2.1"
+    }
+   ],
+   "first_seen": "2026-11-02"
   }
  ],
  "eol": {

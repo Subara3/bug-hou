@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜pypdf（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/pypdf.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/pypdf.xml</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[確認しておく] pip: pypdf has possible large memory usage when parsing cross-reference streams (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-x3rh-gjgm-fmqc"/>
+<id>urn:bug-hou:GHSA-x3rh-gjgm-fmqc</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfの相互参照ストリーム解析で大量メモリ。HIGH&lt;br&gt;→ pypdf 6.21.3以降に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.3 → 6.21.3&lt;/p&gt;&lt;p&gt;CVE-2026-119209&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] pip: pypdf has possible infinite loop when cloning dictionaries (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mfr5-77xh-9j7h"/>
+<id>urn:bug-hou:GHSA-mfr5-77xh-9j7h</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfの辞書複製で無限ループ。HIGH&lt;br&gt;→ pypdf 6.21.4に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.4 → 6.21.4&lt;/p&gt;&lt;p&gt;CVE-2026-119205&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] pip: pypdf has possible large memory usage when parsing page tree (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-cggf-277g-3q54"/>
+<id>urn:bug-hou:GHSA-cggf-277g-3q54</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfのページツリー解析で大量メモリ消費。HIGH&lt;br&gt;→ pypdf 6.21.4に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.4 → 6.21.4&lt;/p&gt;&lt;p&gt;CVE-2026-119204&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] pip: pypdf has possible long runtimes/large memory usage for encrypted PDF files (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-62m5-6wh8-28x7"/>
+<id>urn:bug-hou:GHSA-62m5-6wh8-28x7</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfの暗号化PDFで長時間処理・大量メモリ。HIGH&lt;br&gt;→ pypdf 6.21.3以降に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.3 → 6.21.3&lt;/p&gt;&lt;p&gt;CVE-2026-119208&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] pip: pypdf has possible infinite loop when hitting EOF in standard xref table during trailer search (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-5849-834g-hvw5"/>
+<id>urn:bug-hou:GHSA-5849-834g-hvw5</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfのxref探索で無限ループ。HIGH&lt;br&gt;→ pypdf 6.21.4に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.4 → 6.21.4&lt;/p&gt;&lt;p&gt;CVE-2026-119203&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] pip: pypdf has possible large memory usage for exceptions in strict mode (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4vqv-7265-gm2w"/>
+<id>urn:bug-hou:GHSA-4vqv-7265-gm2w</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfのstrictモードの例外で大量メモリ消費。HIGH&lt;br&gt;→ pypdf 6.21.3以降に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.3 → 6.21.3&lt;/p&gt;&lt;p&gt;CVE-2026-119207&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] pip: pypdf has possible long runtimes when retrieving page labels (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-42gh-23hr-vphw"/>
+<id>urn:bug-hou:GHSA-42gh-23hr-vphw</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfのページラベル取得で長時間処理。HIGH&lt;br&gt;→ pypdf 6.21.3以降に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.3 → 6.21.3&lt;/p&gt;&lt;p&gt;CVE-2026-119206&lt;/p&gt;</content>
+</entry>
+</feed>

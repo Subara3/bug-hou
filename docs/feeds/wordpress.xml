@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜WordPress</title>
+<link href="https://subara3.github.io/bug-hou/#wordpress"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/wordpress.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/wordpress.xml</id>
+<updated>2026-09-25T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[悪用確認] WordPress: CVE-2026-87902 WordPress Core</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-87902"/>
+<id>urn:bug-hou:kev:CVE-2026-87902</id>
+<updated>2026-09-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WordPress Core Remote File Inclusion Vulnerability&lt;/p&gt;&lt;p&gt;WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.&lt;/p&gt;&lt;p&gt;対応期限 2026-09-28&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[対応が必要] WordPress: CVE-2026-87902 8.1 HIGH ⚠KEV</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-87902"/>
+<id>urn:bug-hou:CVE-2026-87902</id>
+<updated>2026-09-22T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：対応が必要&lt;/b&gt; WordPress本体で認証なしにローカルPHPを読込、条件次第でRCE。KEV掲載&lt;br&gt;→ WordPressを修正済みの版に更新&lt;/p&gt;&lt;p&gt;An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[悪用確認] WordPress: CVE-2026-63030 WordPress Core</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-63030"/>
+<id>urn:bug-hou:kev:CVE-2026-63030</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WordPress Core Interpretation Conflict Vulnerability&lt;/p&gt;&lt;p&gt;WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.&lt;/p&gt;&lt;p&gt;対応期限 2026-07-24&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[悪用確認] WordPress: CVE-2026-60137 WordPress Core</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-60137"/>
+<id>urn:bug-hou:kev:CVE-2026-60137</id>
+<updated>2026-07-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WordPress Core SQL Injection Vulnerability&lt;/p&gt;&lt;p&gt;WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.&lt;/p&gt;&lt;p&gt;対応期限 2026-08-04&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[悪用確認] WordPress: CVE-2026-41940 WebPros cPanel &amp; WHM and WP2 (WordPress Squared)</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-41940"/>
+<id>urn:bug-hou:kev:CVE-2026-41940</id>
+<updated>2026-04-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WebPros cPanel &amp;amp; WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability&lt;/p&gt;&lt;p&gt;WebPros cPanel &amp;amp; WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.&lt;/p&gt;&lt;p&gt;対応期限 2026-05-03&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[悪用確認] WordPress: CVE-2020-25213 WordPress File Manager Plugin</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2020-25213"/>
+<id>urn:bug-hou:kev:CVE-2020-25213</id>
+<updated>2021-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WordPress File Manager Plugin Remote Code Execution Vulnerability&lt;/p&gt;&lt;p&gt;WordPress File Manager plugin contains a remote code execution vulnerability that allows unauthenticated users to execute PHP code and upload malicious files on a target site.&lt;/p&gt;&lt;p&gt;対応期限 2022-05-03&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[悪用確認] WordPress: CVE-2020-11738 WordPress Snap Creek Duplicator Plugin</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2020-11738"/>
+<id>urn:bug-hou:kev:CVE-2020-11738</id>
+<updated>2021-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WordPress Snap Creek Duplicator Plugin File Download Vulnerability&lt;/p&gt;&lt;p&gt;WordPress Snap Creek Duplicator plugin contains a file download vulnerability when an administrator creates a new copy of their site that allows an attacker to download the generated files from their Wordpress dashboard. This vulnerability affects Duplicator and Dulplicator Pro.&lt;/p&gt;&lt;p&gt;対応期限 2022-05-03&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[悪用確認] WordPress: CVE-2019-9978 WordPress Social Warfare Plugin</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2019-9978"/>
+<id>urn:bug-hou:kev:CVE-2019-9978</id>
+<updated>2021-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WordPress Social Warfare Plugin Cross-Site Scripting (XSS) Vulnerability&lt;/p&gt;&lt;p&gt;WordPress Social Warfare plugin contains a cross-site scripting (XSS) vulnerability that allows for remote code execution. This vulnerability affects Social Warfare and Social Warfare Pro.&lt;/p&gt;&lt;p&gt;対応期限 2022-05-03&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-02T04:20:53Z",
+ "fetched_at": "2026-11-02T05:03:35Z",
  "days": 90,
  "targets": [
   {
@@ -10,7 +10,7 @@
    "high": 1,
    "kev_recent": 2,
    "kev_total": 13,
-   "ghsa": 60,
+   "ghsa": 100,
    "jvn": 1
   },
   {
@@ -32,7 +32,7 @@
    "high": 0,
    "kev_recent": 0,
    "kev_total": 1,
-   "ghsa": 60,
+   "ghsa": 100,
    "jvn": 0
   },
   {
@@ -43,7 +43,7 @@
    "high": 2,
    "kev_recent": 0,
    "kev_total": 0,
-   "ghsa": 60,
+   "ghsa": 100,
    "jvn": 0
   },
   {
@@ -72,7 +72,7 @@
   "python.cves": "ok",
   "python.ghsa": "ok",
   "python.eol": "ok",
-  "webserver.cves": "error: The read operation timed out",
+  "webserver.cves": "ok",
   "webserver.eol": "ok"
  }
 }

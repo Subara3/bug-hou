@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@hono/node-server（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@hono__node-server.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@hono__node-server.xml</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] npm: @hono/node-server: `serveStatic` decodes the request path a second time, leading to bypass of middleware on static paths (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rmxm-3fg6-px4f"/>
+<id>urn:bug-hou:GHSA-rmxm-3fg6-px4f</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; @hono/node-serverのserveStaticで二重デコード。MEDIUM&lt;br&gt;→ @hono/node-server 2.1.3に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 1.19.10, &amp;lt; 2.1.3 → 2.1.3&lt;/p&gt;&lt;p&gt;CVE-2026-118663&lt;/p&gt;</content>
+</entry>
+</feed>

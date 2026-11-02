@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜strands-agents（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/strands-agents.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/strands-agents.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Strands Agents: Default FileSessionManager storage is world-readable on shared systems (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-763v-5pjm-fx36"/>
+<id>urn:bug-hou:GHSA-763v-5pjm-fx36</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-763v-5pjm-fx36&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3w55-933p-8pv5"/>
+<id>urn:bug-hou:GHSA-3w55-933p-8pv5</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-3w55-933p-8pv5&lt;/p&gt;</content>
+</entry>
+</feed>

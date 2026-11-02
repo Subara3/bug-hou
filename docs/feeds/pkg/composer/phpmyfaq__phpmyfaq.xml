@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜phpmyfaq/phpmyfaq（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/phpmyfaq__phpmyfaq.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/phpmyfaq__phpmyfaq.xml</id>
+<updated>2026-09-24T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[確認しておく] composer: phpMyFAQ has SQL Injection in `StopWords::add()` — Unescaped Stop Word Insertion (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rw77-vq4g-x3hp"/>
+<id>urn:bug-hou:GHSA-rw77-vq4g-x3hp</id>
+<updated>2026-09-24T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; phpMyFAQのStopWords::add()でSQLインジェクション。HIGH&lt;br&gt;→ phpMyFAQ 4.1.6に更新&lt;/p&gt;&lt;p&gt;phpmyfaq/phpmyfaq &amp;lt;= 4.1.5 → 4.1.6, thorsten/phpmyfaq &amp;lt;= 4.1.5 → 4.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-56738&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: phpMyFAQ has Stored XSS in Admin FAQ Editor via HTML Entity Bypass in Frontend FAQ Submission (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-pgwp-vc7q-cvj3"/>
+<id>urn:bug-hou:GHSA-pgwp-vc7q-cvj3</id>
+<updated>2026-09-24T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; phpMyFAQの管理画面で格納型XSS。HIGH&lt;br&gt;→ phpMyFAQ 4.2.0-alpha以降に更新&lt;/p&gt;&lt;p&gt;thorsten/phpmyfaq &amp;lt; 4.2.0-alpha → 4.2.0-alpha, phpmyfaq/phpmyfaq &amp;lt; 4.2.0-alpha → 4.2.0-alpha&lt;/p&gt;&lt;p&gt;CVE-2026-56736&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: phpMyFAQ's two-factor authentication login bypasses the password factor (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8gpw-xvpf-hvx5"/>
+<id>urn:bug-hou:GHSA-8gpw-xvpf-hvx5</id>
+<updated>2026-09-24T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; phpMyFAQの二要素ログインでパスワード確認を回避。HIGH&lt;br&gt;→ phpMyFAQ 4.1.6に更新&lt;/p&gt;&lt;p&gt;thorsten/phpmyfaq &amp;gt;= 3.2.0, &amp;lt; 4.1.6 → 4.1.6, phpmyfaq/phpmyfaq &amp;gt;= 3.2.0, &amp;lt; 4.1.6 → 4.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-56737&lt;/p&gt;</content>
+</entry>
+</feed>

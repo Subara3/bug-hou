@@ -29,11 +29,14 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch.py
 
+      - name: フィード
+        run: python scripts/feeds.py
+
       - name: 差分があればコミット
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data
+          git add docs/data docs/feeds
           if git diff --cached --quiet; then
             echo "変更なし"
           else

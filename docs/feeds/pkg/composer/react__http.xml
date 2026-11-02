@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜react/http（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/react__http.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/react__http.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: react/http: A malformed HTTP chunked body can lead to a denial-of-service and peg the CPU (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-x424-64qh-5j54"/>
+<id>urn:bug-hou:GHSA-x424-64qh-5j54</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;react/http &amp;gt;= 0.6.0, &amp;lt;= 1.11.0 → 1.11.1&lt;/p&gt;&lt;p&gt;CVE-2026-84997&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: react/http: Unbounded HTTP Client Response Header Buffering Leads to Memory Exhaustion DoS (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-g4f2-2pf3-2pwj"/>
+<id>urn:bug-hou:GHSA-g4f2-2pf3-2pwj</id>
+<updated>2026-10-15T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; react/httpクライアントのヘッダー無制限バッファでDoS。HIGH&lt;br&gt;→ react/http 1.11.1に更新&lt;/p&gt;&lt;p&gt;react/http &amp;gt;= 1.0.0, &amp;lt;= 1.11.0 → 1.11.1&lt;/p&gt;&lt;p&gt;CVE-2026-104827&lt;/p&gt;</content>
+</entry>
+</feed>

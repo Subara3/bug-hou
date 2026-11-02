@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜adminneo-org/adminneo（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/adminneo-org__adminneo.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/adminneo-org__adminneo.xml</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] composer: AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wm25-49w3-5qrg"/>
+<id>urn:bug-hou:GHSA-wm25-49w3-5qrg</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AdminNeoのCSRFトークン秘密が推測可能。MEDIUM&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96629&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: AdminNeo Vulnerable to XSS via Rogue MySQL Server Version String (CSP Nonce Bypass) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rx7m-wxwq-vxr9"/>
+<id>urn:bug-hou:GHSA-rx7m-wxwq-vxr9</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoで不正MySQLサーバーのバージョン文字列からXSS。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96632&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: AdminNeo: RCE via SQLite VACUUM INTO (ATTACH Blocklist Bypass) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-q5mp-gfjf-cf2j"/>
+<id>urn:bug-hou:GHSA-q5mp-gfjf-cf2j</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoでSQLiteのVACUUM INTOによるRCE。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96630&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] composer: AdminNeo SQLite: multi_query Incorrect Check of Function Return Value RCE (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-p96f-p2p2-2g3h"/>
+<id>urn:bug-hou:GHSA-p96f-p2p2-2g3h</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AdminNeoのSQLite関連RCE。MEDIUM&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96634&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: AdminNeo: version-cache array injection causes persistent denial of service (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-jm85-8cpp-9cjc"/>
+<id>urn:bug-hou:GHSA-jm85-8cpp-9cjc</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoのバージョンキャッシュで持続的DoS。HIGH&lt;br&gt;→ AdminNeo 5.5.0以降に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;gt;= 4.6.2, &amp;lt; 5.5.0 → 5.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-59978&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: AdminNeo has Cookie Attribute Injection via Unsanitized X-Forwarded-Prefix in Set-Cookie Headers (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-79wv-8rh2-9vp2"/>
+<id>urn:bug-hou:GHSA-79wv-8rh2-9vp2</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoのX-Forwarded-PrefixでCookie属性注入。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;gt;= 4.6.0, &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96631&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] composer: AdminNeo SQLite Database-List Drop Arbitrary File Deletion (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-6vfx-w7q3-42gq"/>
+<id>urn:bug-hou:GHSA-6vfx-w7q3-42gq</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoのSQLite一覧から任意ファイル削除。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96633&lt;/p&gt;</content>
+</entry>
+</feed>

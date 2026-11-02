@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜mongodb/mongodb（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/mongodb__mongodb.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/mongodb__mongodb.xml</id>
+<updated>2026-10-05T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] composer: MongoDB: GridFS data disclosure and deletion via query-operator injection in file IDs (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-8fxw-fmj8-xp7j"/>
+<id>urn:bug-hou:GHSA-8fxw-fmj8-xp7j</id>
+<updated>2026-10-05T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MongoDB PHPライブラリのGridFSで演算子注入。MEDIUM&lt;br&gt;→ mongodb/mongodb 1.24.5/2.4.2に更新&lt;/p&gt;&lt;p&gt;mongodb/mongodb &amp;gt;= 1.1.0, &amp;lt; 1.21.5 → 1.24.5, mongodb/mongodb &amp;gt;= 2.0.0, &amp;lt; 2.4.2 → 2.4.2&lt;/p&gt;&lt;p&gt;CVE-2026-88023&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜contao/comments-bundle（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/contao__comments-bundle.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/contao__comments-bundle.xml</id>
+<updated>2026-10-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[確認しておく] composer: Contao: Cross-site scripting in the comments bundle (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-628f-v4f6-p37r"/>
+<id>urn:bug-hou:GHSA-628f-v4f6-p37r</id>
+<updated>2026-10-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Contaoのコメント機能でXSS。利用者の少ないCMSのCRITICAL&lt;br&gt;→ comments-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/comments-bundle &amp;gt;= 4.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/comments-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107845&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜sulu/sulu（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/sulu__sulu.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/sulu__sulu.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-jg26-q8hg-3pq4"/>
+<id>urn:bug-hou:GHSA-jg26-q8hg-3pq4</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;sulu/sulu &amp;lt; 2.6.25 → 2.6.25, sulu/sulu &amp;gt;= 3.0.0, &amp;lt; 3.0.8 → 3.0.8&lt;/p&gt;&lt;p&gt;CVE-2026-92692&lt;/p&gt;</content>
+</entry>
+</feed>

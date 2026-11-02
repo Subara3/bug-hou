@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜laravel/framework（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/laravel__framework.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/laravel__framework.xml</id>
+<updated>2026-10-23T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[対応が必要] composer: Laravel TokenGuard authentication bypass through non-string API credentials (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-f9x3-7vq9-cph6"/>
+<id>urn:bug-hou:GHSA-f9x3-7vq9-cph6</id>
+<updated>2026-10-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：対応が必要&lt;/b&gt; LaravelのTokenGuardで認証回避。CRITICAL&lt;br&gt;→ laravel/framework 13.29.0/12.68.0に更新&lt;/p&gt;&lt;p&gt;laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.29.0 → 13.29.0, laravel/framework &amp;lt; 12.68.0 → 12.68.0&lt;/p&gt;&lt;p&gt;CVE-2026-114509&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] composer: Laravel relationship inclusion can trigger unauthorized data destruction (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-5wcm-3v2w-8362"/>
+<id>urn:bug-hou:GHSA-5wcm-3v2w-8362</id>
+<updated>2026-10-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Laravelのリレーション指定で意図しないデータ削除。MEDIUM&lt;br&gt;→ laravel/framework 12.68.0/13.27.0に更新&lt;/p&gt;&lt;p&gt;laravel/framework &amp;gt;= 12.45.0, &amp;lt; 12.68.0 → 12.68.0, laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.27.0 → 13.27.0&lt;/p&gt;&lt;p&gt;CVE-2026-114508&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] composer: Laravel: XSS in Debug Page Information (LOW)</title>
+<link href="https://github.com/advisories/GHSA-jh5r-qr3c-85q8"/>
+<id>urn:bug-hou:GHSA-jh5r-qr3c-85q8</id>
+<updated>2026-09-29T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Laravelのデバッグページ情報でXSS。LOW&lt;br&gt;→ laravel/framework 12.69.0/13.30.0に更新&lt;/p&gt;&lt;p&gt;laravel/framework &amp;lt; 12.69.0 → 12.69.0, laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.30.0 → 13.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-102279&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜chamilo/chamilo-lms（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/chamilo__chamilo-lms.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/chamilo__chamilo-lms.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: Chamilo LMS CStudio upload flow allows unauthenticated remote code execution (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-g4c3-4g96-6g4m"/>
+<id>urn:bug-hou:GHSA-g4c3-4g96-6g4m</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;chamilo/chamilo-lms &amp;lt;= 2.0.0 → 2.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-45140&lt;/p&gt;</content>
+</entry>
+</feed>

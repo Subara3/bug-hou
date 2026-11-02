@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜starcitizenwiki/embedvideo（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/starcitizenwiki__embedvideo.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/starcitizenwiki__embedvideo.xml</id>
+<updated>2026-09-25T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[確認しておく] composer: Mediawiki EmbedVideo Extension has stored XSS via malformed src url with $wgEmbedVideoRequireConsent disabled (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-v65j-hff3-753c"/>
+<id>urn:bug-hou:GHSA-v65j-hff3-753c</id>
+<updated>2026-09-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; MediaWiki EmbedVideoで格納型XSS。同意設定無効時。HIGH&lt;br&gt;→ embedvideo 4.1.0に更新&lt;/p&gt;&lt;p&gt;starcitizenwiki/embedvideo &amp;lt;= 4.0.0 → 4.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-57440&lt;/p&gt;</content>
+</entry>
+</feed>

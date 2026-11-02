@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜parse-server（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/parse-server.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/parse-server.xml</id>
+<updated>2026-10-29T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] npm: Parse Server vulnerable to stored XSS via malformed Content-Type bypassing file upload extension blocklist (LOW)</title>
+<link href="https://github.com/advisories/GHSA-r899-h629-j84r"/>
+<id>urn:bug-hou:GHSA-r899-h629-j84r</id>
+<updated>2026-10-29T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Parse Serverのアップロード拡張子判定回避でXSS。LOW&lt;br&gt;→ parse-server 9.10.0-alpha.2/8.6.84に更新&lt;/p&gt;&lt;p&gt;parse-server &amp;gt;= 9.0.0, &amp;lt; 9.10.0-alpha.2 → 9.10.0-alpha.2, parse-server &amp;lt;= 8.6.83 → 8.6.84&lt;/p&gt;&lt;p&gt;CVE-2026-61448&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -190,6 +190,49 @@ a:hover { color: var(--red); text-decoration-color: var(--red); }
 .advice.lv-check b { color: #9a6400; }
 .advice.lv-watch b { color: var(--slate); }
 
+/* 見張りリスト */
+.board a.mine-link { border-bottom: 2px solid #4a4740; grid-template-columns: 18px 1fr auto; }
+.eye { color: var(--red); font-size: 15px; line-height: 1; }
+.nb { color: #fff; background: var(--red); padding: 0 5px; font-weight: 800; }
+
+.mine { animation: rise .45s ease-out; }
+.w-form {
+  display: flex; flex-wrap: wrap; align-items: flex-end; gap: 12px 16px;
+  padding: 18px 20px; margin: 0 0 14px;
+  border: 1.5px solid var(--ink); background: var(--paper);
+}
+.w-form label { display: flex; flex-direction: column; gap: 4px; font: 400 11px var(--mono); color: var(--ink-2); }
+.w-form label.grow { flex: 1 1 220px; }
+.w-form select, .w-form input {
+  font: 400 14px var(--mono); color: var(--ink);
+  background: transparent; border: 0; border-bottom: 1.5px solid var(--ink);
+  padding: 4px 2px; min-width: 150px;
+}
+.w-form select:focus, .w-form input:focus { outline: none; border-bottom-color: var(--red); }
+.seg { display: flex; gap: 0; }
+.seg .chip + .chip { border-left: 0; }
+.chip.add { background: var(--red); border-color: var(--red); color: #fff; padding: 6px 18px; }
+.chip.ghost { border-color: var(--rule); color: var(--ink-2); }
+.chip.done { background: var(--green); border-color: var(--green); color: #fff; }
+.w-hint { font-size: 12.5px; color: var(--ink-2); margin: 0 0 34px; }
+.linkish { font: inherit; color: inherit; background: none; border: 0; padding: 0; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; cursor: pointer; }
+.linkish:hover { color: var(--red); }
+
+.w-entry { margin: 0 0 36px; }
+.w-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px;
+  padding-bottom: 8px; border-bottom: 1.5px solid var(--ink);
+}
+.w-head h3 { margin: 0; font: 700 22px/1.2 var(--disp); }
+.w-kind { font: 600 11px var(--mono); color: var(--ink-2); border: 1px solid var(--rule); padding: 0 6px; }
+.w-stat { display: flex; gap: 10px; font: 600 12px var(--mono); color: var(--ink-2); }
+.w-stat .hot { color: var(--red); }
+.w-btns { margin-left: auto; display: flex; gap: 6px; align-items: center; flex-wrap: wrap; }
+.w-url { font: 400 11px var(--mono); background: var(--paper-2); padding: 2px 6px; word-break: break-all; }
+.w-eol { margin: 10px 0 0; font-size: 13px; display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; }
+.behind { color: var(--red); font-weight: 700; }
+.w-note { margin: 8px 0 0; font-size: 12px; color: var(--ink-2); }
+
 /* バージョン表 */
 .eol-group + .eol-group { margin-top: 18px; }
 .eol-group h3 { margin: 0 0 6px; font: 600 12px var(--mono); color: var(--ink-2); letter-spacing: .08em; text-transform: uppercase; }

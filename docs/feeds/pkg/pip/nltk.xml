@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜nltk（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/nltk.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/nltk.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: NLTK: WekaClassifier passes an unvalidated caller-controlled model path to the weka JVM, bypassing nltk.pathsec containment (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-j456-xh4h-cpf2"/>
+<id>urn:bug-hou:GHSA-j456-xh4h-cpf2</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-j456-xh4h-cpf2&lt;/p&gt;</content>
+</entry>
+</feed>

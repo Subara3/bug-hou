@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜ddtrace（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/ddtrace.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/ddtrace.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Datadog dd-trace-py: IAST instrumentation can lead to application DOS (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-p3m5-h5v9-vqj6"/>
+<id>urn:bug-hou:GHSA-p3m5-h5v9-vqj6</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ddtrace &amp;gt;= 3.13.0, &amp;lt; 4.15.5 → 4.15.5&lt;/p&gt;&lt;p&gt;CVE-2026-116589&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Datadog dd-trace-py: ReDoS in URL query string obfuscation (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3633-r77q-h3v3"/>
+<id>urn:bug-hou:GHSA-3633-r77q-h3v3</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ddtrace &amp;gt;= 1.5.0, &amp;lt; 3.19.9 → 3.19.9, ddtrace &amp;gt;= 4.0.0, &amp;lt; 4.15.6 → 4.15.6&lt;/p&gt;&lt;p&gt;CVE-2026-116588&lt;/p&gt;</content>
+</entry>
+</feed>

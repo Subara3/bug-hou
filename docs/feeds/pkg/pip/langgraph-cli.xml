@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜langgraph-cli（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/langgraph-cli.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/langgraph-cli.xml</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] pip: LangGraph CLI prints the registry push token in `langgraph deploy --verbose` output (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-8prr-f582-jqq3"/>
+<id>urn:bug-hou:GHSA-8prr-f582-jqq3</id>
+<updated>2026-10-28T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LangGraph CLIの詳細出力にpushトークンが出る。MEDIUM&lt;br&gt;→ langgraph-cli 0.4.32に更新&lt;/p&gt;&lt;p&gt;langgraph-cli &amp;gt;= 0.4.15, &amp;lt;= 0.4.31 → 0.4.32&lt;/p&gt;&lt;p&gt;CVE-2026-115885&lt;/p&gt;</content>
+</entry>
+</feed>

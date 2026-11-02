@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜livewire/livewire（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/livewire__livewire.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/livewire__livewire.xml</id>
+<updated>2026-10-23T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] composer: Livewire: Authorization bypass in #[Authorize] via reordered parameter keys and #[Json] execution order (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-mhf7-xp6r-6qrc"/>
+<id>urn:bug-hou:GHSA-mhf7-xp6r-6qrc</id>
+<updated>2026-10-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Livewireの#[Authorize]回避。MEDIUM&lt;br&gt;→ livewire 4.4.8に更新&lt;/p&gt;&lt;p&gt;livewire/livewire &amp;gt;= 4.3.0, &amp;lt; 4.4.8 → 4.4.8&lt;/p&gt;&lt;p&gt;GHSA-mhf7-xp6r-6qrc&lt;/p&gt;</content>
+</entry>
+</feed>

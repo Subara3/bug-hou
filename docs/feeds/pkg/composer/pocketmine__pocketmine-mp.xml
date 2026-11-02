@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜pocketmine/pocketmine-mp（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/pocketmine__pocketmine-mp.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/pocketmine__pocketmine-mp.xml</id>
+<updated>2026-10-29T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] composer: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets (LOW)</title>
+<link href="https://github.com/advisories/GHSA-pg53-p7qp-65cv"/>
+<id>urn:bug-hou:GHSA-pg53-p7qp-65cv</id>
+<updated>2026-10-29T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; PocketMine-MPの繰り返しパケットによる負荷。LOW&lt;br&gt;→ 5.44.2に更新&lt;/p&gt;&lt;p&gt;pocketmine/pocketmine-mp &amp;lt; 5.44.2 → 5.44.2&lt;/p&gt;&lt;p&gt;GHSA-pg53-p7qp-65cv&lt;/p&gt;</content>
+</entry>
+</feed>

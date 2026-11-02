@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜vite（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/vite.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/vite.xml</id>
+<updated>2026-10-29T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] npm: Vite: `server.fs.deny` bypassed with queries (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-8g5g-mxqh-grgj"/>
+<id>urn:bug-hou:GHSA-8g5g-mxqh-grgj</id>
+<updated>2026-10-29T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Viteのserver.fs.denyをクエリで回避。MEDIUM&lt;br&gt;→ vite 6.4.5に更新&lt;/p&gt;&lt;p&gt;vite = 6.4.4 → 6.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-118662&lt;/p&gt;</content>
+</entry>
+</feed>

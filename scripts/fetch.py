@@ -159,8 +159,44 @@ def nvd_score(cve: dict):
     return None, "", None, None
 
 
+def nvd_affects(cve: dict, prefixes: dict[str, str]) -> list[dict]:
+    """CVEの構成情報から、対象製品の影響バージョン範囲を抜き出す。"""
+    out = []
+
+    def walk(nodes):
+        for n in nodes:
+            for m in n.get("cpeMatch", []):
+                if not m.get("vulnerable"):
+                    continue
+                crit = m.get("criteria", "")
+                parts = crit.split(":")
+                key = ":".join(parts[:5])
+                if key not in prefixes:
+                    continue
+                r = {"product": prefixes[key]}
+                ver = parts[5] if len(parts) > 5 else "*"
+                if ver not in ("*", "-", ""):
+                    r["eq"] = ver
+                for src, dst in (
+                    ("versionStartIncluding", "si"),
+                    ("versionStartExcluding", "se"),
+                    ("versionEndIncluding", "ei"),
+                    ("versionEndExcluding", "ee"),
+                ):
+                    if m.get(src):
+                        r[dst] = m[src]
+                if r not in out:
+                    out.append(r)
+            walk(n.get("nodes", []))
+
+    for conf in cve.get("configurations", []):
+        walk(conf.get("nodes", []))
+    return out
+
+
 def nvd_for(target: dict, days: int, kev_ids: set[str]) -> list[dict]:
     seen: dict[str, dict] = {}
+    prefixes = {q["cpe"]: q["product"] for q in target["nvd"] if "cpe" in q}
     for q in target["nvd"]:
         if "cpe" in q:
             params = {"virtualMatchString": q["cpe"]}
@@ -185,6 +221,7 @@ def nvd_for(target: dict, days: int, kev_ids: set[str]) -> list[dict]:
                 "cvss": ver,
                 "desc": desc.strip(),
                 "kev": cve["id"] in kev_ids,
+                "affects": nvd_affects(cve, prefixes),
                 "cwe": sorted(
                     {
                         d["value"]
@@ -198,7 +235,7 @@ def nvd_for(target: dict, days: int, kev_ids: set[str]) -> list[dict]:
 
 
 # ---------------------------------------------------------------- GHSA
-def ghsa_for(ecosystem: str, kev_ids: set[str], limit: int = 60) -> list[dict]:
+def ghsa_for(ecosystem: str, kev_ids: set[str], limit: int = 100) -> list[dict]:
     headers = {"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"}
     if GH_TOKEN:
         headers["Authorization"] = f"Bearer {GH_TOKEN}"
@@ -219,6 +256,7 @@ def ghsa_for(ecosystem: str, kev_ids: set[str], limit: int = 60) -> list[dict]:
         out.append(
             {
                 "id": a["ghsa_id"],
+                "ecosystem": ecosystem,
                 "cve": a.get("cve_id"),
                 "summary": a.get("summary", ""),
                 "severity": (a.get("severity") or "").upper(),
@@ -355,6 +393,21 @@ def main():
                 "jvn": len(data["jvn"]),
             }
         )
+
+    # パッケージの脆弱性は直近100件ずつしか取れないので、180日分を貯めておく
+    arc = {a["id"]: a for a in load("ghsa_archive.json", [])}
+    for t in cfg["targets"]:
+        for a in load(f"{t['id']}.json", {}).get("ghsa", []):
+            a = dict(a)
+            a.pop("first_seen", None)
+            arc[a["id"]] = a
+    arc_cut = (NOW - timedelta(days=180)).strftime("%Y-%m-%d")
+    save(
+        "ghsa_archive.json",
+        sorted((a for a in arc.values() if a["published"] >= arc_cut), key=lambda a: a["published"], reverse=True),
+    )
+    for a in arc.values():
+        current.add(a["id"])
 
     # 一覧から消えたものは記録も消す（ファイルが膨らみ続けないように）
     save("first_seen.json", {k: v for k, v in sorted(first_seen.items()) if k in current})

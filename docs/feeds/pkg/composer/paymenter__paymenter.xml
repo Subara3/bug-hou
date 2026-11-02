@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜paymenter/paymenter（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/paymenter__paymenter.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/paymenter__paymenter.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-5gmm-hjfj-8ff7"/>
+<id>urn:bug-hou:GHSA-5gmm-hjfj-8ff7</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-71537&lt;/p&gt;</content>
+</entry>
+</feed>

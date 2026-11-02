@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜minimatch（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/minimatch.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/minimatch.xml</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[様子見] npm: minimatch has potential denial of service via globparts amplification (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-g3hv-75wg-m249"/>
+<id>urn:bug-hou:GHSA-g3hv-75wg-m249</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; minimatchのパターン展開でDoS。MEDIUM&lt;br&gt;→ minimatch 11.0.1に更新&lt;/p&gt;&lt;p&gt;minimatch &amp;lt; 11.0.1 → 11.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-118764&lt;/p&gt;</content>
+</entry>
+</feed>

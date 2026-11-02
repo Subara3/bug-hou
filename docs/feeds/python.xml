@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜Python</title>
+<link href="https://subara3.github.io/bug-hou/#python"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/python.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/python.xml</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>Python: Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-x4rv-c3wx-4cr8"/>
+<id>urn:bug-hou:GHSA-x4rv-c3wx-4cr8</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;authlib &amp;gt;= 1.6.0, &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114620&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: fpdf2: Exponential SVG '&lt;use&gt;' expansion causes CPU and memory exhaustion in 'FPDF.image()' (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wqw6-wpr3-45rh"/>
+<id>urn:bug-hou:GHSA-wqw6-wpr3-45rh</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fpdf2 &amp;gt;= 2.5.0, &amp;lt; 2.8.8 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114610&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Hydra legacy target blacklist permits unsafe PyYAML loading (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-wf6j-7hvr-gr93"/>
+<id>urn:bug-hou:GHSA-wf6j-7hvr-gr93</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hydra-core &amp;gt;= 1.3.6, &amp;lt; 1.3.8 → 1.3.8, hydra-core &amp;gt;= 1.4.0.dev9, &amp;lt; 1.4.0rc3 → 1.4.0rc3&lt;/p&gt;&lt;p&gt;GHSA-wf6j-7hvr-gr93&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GitPython command wrappers omit unsafe protocol and option checks (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-w8jc-g24h-crhw"/>
+<id>urn:bug-hou:GHSA-w8jc-g24h-crhw</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-w8jc-g24h-crhw&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Flexible GraphRAG: Cypher/Graph Injection via broken string-escaping in FalkorDB adapter (_escape()) - full graph wipe from ingested-document content (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-vqrg-773h-4wxc"/>
+<id>urn:bug-hou:GHSA-vqrg-773h-4wxc</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;flexible-graphrag &amp;gt;= 0.6.0, &amp;lt; 0.8.2 → 0.8.2&lt;/p&gt;&lt;p&gt;CVE-2026-114510&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Ajenti has potential Remote Code Execution (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-vcw3-r3fx-j444"/>
+<id>urn:bug-hou:GHSA-vcw3-r3fx-j444</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;aj &amp;lt; 2.2.13 → 2.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-27975&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rwrf-2pqf-9j8j"/>
+<id>urn:bug-hou:GHSA-rwrf-2pqf-9j8j</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116686&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: fpdf2 implicitly loads external URLs and local image paths when rendering attacker-controlled content (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rw7v-4hrq-x6r9"/>
+<id>urn:bug-hou:GHSA-rw7v-4hrq-x6r9</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fpdf2 &amp;lt;= 2.8.7 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114609&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Rembg: Unauthenticated SAM model injection permits local-file disclosure through malicious ONNX graphs (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qr6x-7v33-6qmg"/>
+<id>urn:bug-hou:GHSA-qr6x-7v33-6qmg</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;rembg &amp;lt; 2.0.82 → 2.0.82&lt;/p&gt;&lt;p&gt;CVE-2026-115924&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-q686-2qmg-hqc7"/>
+<id>urn:bug-hou:GHSA-q686-2qmg-hqc7</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114619&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Datadog dd-trace-py: IAST instrumentation can lead to application DOS (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-p3m5-h5v9-vqj6"/>
+<id>urn:bug-hou:GHSA-p3m5-h5v9-vqj6</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ddtrace &amp;gt;= 3.13.0, &amp;lt; 4.15.5 → 4.15.5&lt;/p&gt;&lt;p&gt;CVE-2026-116589&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GitPython parse_actor_and_date() is vulnerable to quadratic backtracking on malformed identity lines (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-m64x-33q8-m5h7"/>
+<id>urn:bug-hou:GHSA-m64x-33q8-m5h7</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-m64x-33q8-m5h7&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Agno: Arbitrary code execution via `eval()` on `field_type` in `FunctionCall` (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-m4w4-3r8h-jw98"/>
+<id>urn:bug-hou:GHSA-m4w4-3r8h-jw98</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;agno &amp;lt; 2.3.24 → 2.3.24&lt;/p&gt;&lt;p&gt;CVE-2026-35002&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-jqc4-5cvw-7w85"/>
+<id>urn:bug-hou:GHSA-jqc4-5cvw-7w85</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;filelock &amp;gt;= 4.1.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112937&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts (LOW)</title>
+<link href="https://github.com/advisories/GHSA-jj7h-c3hg-m23x"/>
+<id>urn:bug-hou:GHSA-jj7h-c3hg-m23x</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;authlib &amp;lt;= 1.7.2 → 1.8.0&lt;/p&gt;&lt;p&gt;CVE-2026-114614&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Twisted: DNS Response Spoofing in twisted.names Due to Missing Source Address Validation (LOW)</title>
+<link href="https://github.com/advisories/GHSA-jj36-9pvh-vj5r"/>
+<id>urn:bug-hou:GHSA-jj36-9pvh-vj5r</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Twisted &amp;lt;= 26.4.0 → 26.10.0rc1&lt;/p&gt;&lt;p&gt;CVE-2026-83813&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: MessagePack: Unbounded memory leak in msgpack C extension on strict_map_key validation failure (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-j586-36cw-2gc2"/>
+<id>urn:bug-hou:GHSA-j586-36cw-2gc2</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;msgpack &amp;lt; 1.2.3 → 1.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-114613&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: WekaClassifier passes an unvalidated caller-controlled model path to the weka JVM, bypassing nltk.pathsec containment (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-j456-xh4h-cpf2"/>
+<id>urn:bug-hou:GHSA-j456-xh4h-cpf2</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-j456-xh4h-cpf2&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: LiteLLM vulnerable to reflected XSS in /sso/debug/callback (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-hhww-mrg2-969h"/>
+<id>urn:bug-hou:GHSA-hhww-mrg2-969h</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;litellm &amp;gt;= 1.65.5, &amp;lt; 1.85.0 → 1.85.0&lt;/p&gt;&lt;p&gt;GHSA-hhww-mrg2-969h&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: vLLM: Request-controlled mm_processor_kwargs.code_revision allows remote code execution (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-h3rc-6mm3-gc2m"/>
+<id>urn:bug-hou:GHSA-h3rc-6mm3-gc2m</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;vllm &amp;gt;= 0.7.3, &amp;lt; 0.31.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-114053&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GitPython: Submodule.move() follows an attacker-committed intermediate symlink outside the worktree (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-gq48-pqfc-9p58"/>
+<id>urn:bug-hou:GHSA-gq48-pqfc-9p58</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GitPython &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-gq48-pqfc-9p58&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: LiteLLM: internal_user_viewer arbitrary local file read via `vertex_ai_credentials` (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-g5ff-637f-6q2m"/>
+<id>urn:bug-hou:GHSA-g5ff-637f-6q2m</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;litellm &amp;lt; 1.95.0 → 1.95.0&lt;/p&gt;&lt;p&gt;GHSA-g5ff-637f-6q2m&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GitPython: separate_git_dir leaks env vars via crafted .gitmodules submodule name (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-fx3j-rwgx-fr94"/>
+<id>urn:bug-hou:GHSA-fx3j-rwgx-fr94</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-fx3j-rwgx-fr94&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: vllm p2p never connected zmq_exhaustion (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-frvg-qw88-hww9"/>
+<id>urn:bug-hou:GHSA-frvg-qw88-hww9</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-94624&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Authlib: Default JWT bearer grant accepts assertions for the wrong audience (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-fch4-3c6x-j4gc"/>
+<id>urn:bug-hou:GHSA-fch4-3c6x-j4gc</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114618&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GitPython Remote.pull() refspec bypasses the --upload-pack unsafe-option guard, enabling arbitrary command execution (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-f9j4-qggq-h239"/>
+<id>urn:bug-hou:GHSA-f9j4-qggq-h239</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GitPython &amp;gt;= 3.1.30, &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-f9j4-qggq-h239&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Authlib: ID token can disable its own nonce validation via the nonce_supported claim (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-c5mf-xmp2-59rc"/>
+<id>urn:bug-hou:GHSA-c5mf-xmp2-59rc</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114617&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: MongoDB Python Driver: Out-of-bounds read in BSON decoding via a malformed Regex element (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-98qm-wvgf-w4cf"/>
+<id>urn:bug-hou:GHSA-98qm-wvgf-w4cf</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;pymongo &amp;gt;= 3.9.0, &amp;lt;= 4.18.2 → 4.18.3&lt;/p&gt;&lt;p&gt;CVE-2026-106435&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Authlib accepts an empty HMAC key, allowing JWS/JWT signature forgery (HS256/HS384/HS512) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8m4g-j4wp-wgcg"/>
+<id>urn:bug-hou:GHSA-8m4g-j4wp-wgcg</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Authlib &amp;lt; 1.9.1 → 1.9.1&lt;/p&gt;&lt;p&gt;CVE-2026-114616&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7vr2-2fgp-9w7p"/>
+<id>urn:bug-hou:GHSA-7vr2-2fgp-9w7p</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;authlib &amp;gt;= 1.3.1, &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114615&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: LiteLLM: Privilege Escalation to Proxy Admin via Cross-Domain Reuse of the Salt Key (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7hp6-4w63-5g45"/>
+<id>urn:bug-hou:GHSA-7hp6-4w63-5g45</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;litellm &amp;gt;= 1.91.0, &amp;lt; 1.100.4 → 1.100.4, litellm &amp;gt;= 1.101.0, &amp;lt; 1.101.3 → 1.101.3, litellm &amp;gt;= 1.102.0, &amp;lt; 1.102.2 → 1.102.2, litellm &amp;gt;= 1.103.0, &amp;lt; 1.103.1 → 1.103.1, litellm &amp;gt;= 1.104.0rc1, &amp;lt; 1.104.0rc2 → 1.104.0rc2&lt;/p&gt;&lt;p&gt;CVE-2026-114612&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Strands Agents: Default FileSessionManager storage is world-readable on shared systems (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-763v-5pjm-fx36"/>
+<id>urn:bug-hou:GHSA-763v-5pjm-fx36</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-763v-5pjm-fx36&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-6v38-4h7w-rj9h"/>
+<id>urn:bug-hou:GHSA-6v38-4h7w-rj9h</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: MONAILabel Server Crash and Silent Inference Corruption via Crafted DICOM (pydicom DS/IS Validation Bypass) (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-6hp3-vr39-rqw8"/>
+<id>urn:bug-hou:GHSA-6hp3-vr39-rqw8</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;monai &amp;lt; 1.6.1 → 1.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-48705&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-45c3-73f7-pv4m"/>
+<id>urn:bug-hou:GHSA-45c3-73f7-pv4m</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;dnspython &amp;lt; 2.9.0 → 2.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114605&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3w55-933p-8pv5"/>
+<id>urn:bug-hou:GHSA-3w55-933p-8pv5</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-3w55-933p-8pv5&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: OAuthLib: Bearer token can be retrieved as long as client knows a valid client ID for device workflow (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3jp2-3mrg-2vxc"/>
+<id>urn:bug-hou:GHSA-3jp2-3mrg-2vxc</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;oauthlib &amp;gt;= 3.3.0, &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-49272&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Datadog dd-trace-py: ReDoS in URL query string obfuscation (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3633-r77q-h3v3"/>
+<id>urn:bug-hou:GHSA-3633-r77q-h3v3</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ddtrace &amp;gt;= 1.5.0, &amp;lt; 3.19.9 → 3.19.9, ddtrace &amp;gt;= 4.0.0, &amp;lt; 4.15.6 → 4.15.6&lt;/p&gt;&lt;p&gt;CVE-2026-116588&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GitPython: arbitrary file read via attacker-controlled branch name in `Head.checkout()` (incomplete fix of CVE-2026-78679) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-23mf-xhv8-69c2"/>
+<id>urn:bug-hou:GHSA-23mf-xhv8-69c2</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-23mf-xhv8-69c2&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Pylint: Arbitrary code execution via pickle deserialization of the stats cache in PYLINT_HOME (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-22qq-2fwx-7p67"/>
+<id>urn:bug-hou:GHSA-22qq-2fwx-7p67</id>
+<updated>2026-11-02T00:00:00Z</updated>
+<content type="html">&lt;p&gt;pylint &amp;lt; 4.0.9 → 4.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-114608&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: pypdf has possible large memory usage when parsing cross-reference streams (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-x3rh-gjgm-fmqc"/>
+<id>urn:bug-hou:GHSA-x3rh-gjgm-fmqc</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfの相互参照ストリーム解析で大量メモリ。HIGH&lt;br&gt;→ pypdf 6.21.3以降に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.3 → 6.21.3&lt;/p&gt;&lt;p&gt;CVE-2026-119209&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: GraphQL-core has denial of service via memory leak in aborted validations (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mpqx-q82w-9x46"/>
+<id>urn:bug-hou:GHSA-mpqx-q82w-9x46</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; GraphQL-coreの中断した検証でメモリリーク。HIGH&lt;br&gt;→ graphql-core 3.3.1に更新&lt;/p&gt;&lt;p&gt;graphql-core &amp;gt;= 3.3.0a3, &amp;lt; 3.3.1 → 3.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-119286&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: pyasn1 has quadratic-complexity denial of service in binary REAL decoding (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mm57-4v3p-rchx"/>
+<id>urn:bug-hou:GHSA-mm57-4v3p-rchx</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pyasn1のREALデコードで二乗時間のDoS。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;lt;= 0.6.4 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119197&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: pypdf has possible infinite loop when cloning dictionaries (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mfr5-77xh-9j7h"/>
+<id>urn:bug-hou:GHSA-mfr5-77xh-9j7h</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfの辞書複製で無限ループ。HIGH&lt;br&gt;→ pypdf 6.21.4に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.4 → 6.21.4&lt;/p&gt;&lt;p&gt;CVE-2026-119205&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-jpxq-7h8p-2q76"/>
+<id>urn:bug-hou:GHSA-jpxq-7h8p-2q76</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; joserfcのJWE recipients無制限でCPU枯渇。HIGH&lt;br&gt;→ joserfc 1.7.5以降に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.5 → 1.7.5&lt;/p&gt;&lt;p&gt;CVE-2026-119283&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-fm9c-5rcf-2q5p"/>
+<id>urn:bug-hou:GHSA-fm9c-5rcf-2q5p</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pyasn1のスキーマなしコンテナデコードで二乗時間。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;gt;= 0.3.3, &amp;lt; 0.6.5 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119194&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: pypdf has possible large memory usage when parsing page tree (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-cggf-277g-3q54"/>
+<id>urn:bug-hou:GHSA-cggf-277g-3q54</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pypdfのページツリー解析で大量メモリ消費。HIGH&lt;br&gt;→ pypdf 6.21.4に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.4 → 6.21.4&lt;/p&gt;&lt;p&gt;CVE-2026-119204&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: Authlib RFC 7592 examples omit registration-access-token client binding (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-c73q-w75p-j82v"/>
+<id>urn:bug-hou:GHSA-c73q-w75p-j82v</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AuthlibのRFC 7592の例でトークンとクライアントの紐付けが欠落。HIGH&lt;br&gt;→ Authlib 1.9.1に更新&lt;/p&gt;&lt;p&gt;Authlib &amp;gt;= 0.15, &amp;lt;= 1.9.0 → 1.9.1&lt;/p&gt;&lt;p&gt;CVE-2026-116672&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[様子見] Python: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9pg5-8c7x-5hfx"/>
+<id>urn:bug-hou:GHSA-9pg5-8c7x-5hfx</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; joserfcのJWSサイズ確認前にメモリ確保。MEDIUM&lt;br&gt;→ joserfc 1.7.6に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.6 → 1.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-119284&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[確認しておく] Python: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9m75-vc3g-4x39"/>
+<id>urn:bug-hou:GHSA-9m75-vc3g-4x39</id>
+<updated>2026-10-30T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; pyasn1の構造化文字列デコードで二乗時間のDoS。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;lt;= 0.6.4 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119195&lt;/p&gt;</content>
+</entry>
+</feed>

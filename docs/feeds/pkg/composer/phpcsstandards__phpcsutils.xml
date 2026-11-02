@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜phpcsstandards/phpcsutils（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/phpcsstandards__phpcsutils.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/phpcsstandards__phpcsutils.xml</id>
+<updated>2026-09-29T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[確認しておく] composer: PHPCSUtils: Remote code execution via eval() in AbstractArrayDeclarationSniff::getActualArrayKey() (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r6hr-vr92-vv28"/>
+<id>urn:bug-hou:GHSA-r6hr-vr92-vv28</id>
+<updated>2026-09-29T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; PHPCSUtilsのeval()でRCE。HIGH&lt;br&gt;→ phpcsutils 1.2.3に更新&lt;/p&gt;&lt;p&gt;phpcsstandards/phpcsutils &amp;gt;= 1.0.0-alpha1, &amp;lt; 1.2.3 → 1.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-65954&lt;/p&gt;</content>
+</entry>
+</feed>
