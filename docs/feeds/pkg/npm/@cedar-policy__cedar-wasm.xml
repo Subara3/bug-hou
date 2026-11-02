@@ -7,10 +7,10 @@
 <updated>2026-10-29T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] npm: Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence (LOW)</title>
+<title>[様子見] npm: Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence (LOW)</title>
 <link href="https://github.com/advisories/GHSA-c33x-vcv4-vg3g"/>
 <id>urn:bug-hou:GHSA-c33x-vcv4-vg3g</id>
 <updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Cedarのテンプレート検証漏れ。LOW&lt;br&gt;→ cedar 4.11.1/3.4.3に更新&lt;/p&gt;&lt;p&gt;cedar-policy &amp;gt;= 4.0.0, &amp;lt; 4.11.1 → 4.11.1, cedar-policy &amp;gt;= 3.0.0, &amp;lt; 3.4.3 → 3.4.3, @cedar-policy/cedar-wasm &amp;gt;= 4.0.1, &amp;lt; 4.11.1 → 4.11.1, @cedar-policy/cedar-wasm &amp;gt;= 3.2.0, &amp;lt; 3.4.3 → 3.4.3&lt;/p&gt;&lt;p&gt;GHSA-c33x-vcv4-vg3g&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Cedarのテンプレート検証漏れ。LOW&lt;br&gt;→ cedar 4.11.1/3.4.3に更新&lt;/p&gt;&lt;p&gt;cedar-policy &amp;gt;= 4.0.0, &amp;lt; 4.11.1 → 4.11.1, cedar-policy &amp;gt;= 3.0.0, &amp;lt; 3.4.3 → 3.4.3, @cedar-policy/cedar-wasm &amp;gt;= 4.0.1, &amp;lt; 4.11.1 → 4.11.1, @cedar-policy/cedar-wasm &amp;gt;= 3.2.0, &amp;lt; 3.4.3 → 3.4.3&lt;/p&gt;&lt;p&gt;GHSA-c33x-vcv4-vg3g&lt;/p&gt;</content>
 </entry>
 </feed>

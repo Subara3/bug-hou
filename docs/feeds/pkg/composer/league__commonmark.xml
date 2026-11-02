@@ -7,11 +7,11 @@
 <updated>2026-09-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: league/commonmark: DisallowedRawHtml bypassed when a disallowed tag name ends the raw-HTML literal (MEDIUM)</title>
+<title>[様子見] composer: league/commonmark: DisallowedRawHtml bypassed when a disallowed tag name ends the raw-HTML literal (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-97jj-33gv-5xf9"/>
 <id>urn:bug-hou:GHSA-97jj-33gv-5xf9</id>
 <updated>2026-09-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; league/commonmarkのDisallowedRawHtml回避。MEDIUM&lt;br&gt;→ league/commonmark 2.10.2に更新&lt;/p&gt;&lt;p&gt;league/commonmark &amp;gt;= 1.3.0, &amp;lt;= 2.10.1 → 2.10.2&lt;/p&gt;&lt;p&gt;GHSA-97jj-33gv-5xf9&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; league/commonmarkのDisallowedRawHtml回避。MEDIUM&lt;br&gt;→ league/commonmark 2.10.2に更新&lt;/p&gt;&lt;p&gt;league/commonmark &amp;gt;= 1.3.0, &amp;lt;= 2.10.1 → 2.10.2&lt;/p&gt;&lt;p&gt;GHSA-97jj-33gv-5xf9&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] composer: league/commonmark: Quadratic-time denial of service in the GitHub Flavored Markdown Table extension block-start scan (HIGH)</title>

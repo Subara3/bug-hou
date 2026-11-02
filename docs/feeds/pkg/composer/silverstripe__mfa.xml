@@ -7,10 +7,10 @@
 <updated>2026-10-29T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow (MEDIUM)</title>
+<title>[様子見] composer: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-68wq-phq7-p2vg"/>
 <id>urn:bug-hou:GHSA-68wq-phq7-p2vg</id>
 <updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; SilverStripe MFAがパスワードリセットで回避可能。MEDIUM&lt;br&gt;→ silverstripe/mfa 6.0.0に更新&lt;/p&gt;&lt;p&gt;silverstripe/mfa &amp;lt; 6.0.0 → 6.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-55186&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; SilverStripe MFAがパスワードリセットで回避可能。MEDIUM&lt;br&gt;→ silverstripe/mfa 6.0.0に更新&lt;/p&gt;&lt;p&gt;silverstripe/mfa &amp;lt; 6.0.0 → 6.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-55186&lt;/p&gt;</content>
 </entry>
 </feed>

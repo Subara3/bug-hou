@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] pip: Pylint: Arbitrary code execution via pickle deserialization of the stats cache in PYLINT_HOME (MEDIUM)</title>
+<title>[様子見] pip: Pylint: Arbitrary code execution via pickle deserialization of the stats cache in PYLINT_HOME (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-22qq-2fwx-7p67"/>
 <id>urn:bug-hou:GHSA-22qq-2fwx-7p67</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Pylintの統計キャッシュのpickle読込で任意コード実行。MEDIUM&lt;br&gt;→ pylint 4.0.9に更新&lt;/p&gt;&lt;p&gt;pylint &amp;lt; 4.0.9 → 4.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-114608&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Pylintの統計キャッシュのpickle読込で任意コード実行。MEDIUM&lt;br&gt;→ pylint 4.0.9に更新&lt;/p&gt;&lt;p&gt;pylint &amp;lt; 4.0.9 → 4.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-114608&lt;/p&gt;</content>
 </entry>
 </feed>

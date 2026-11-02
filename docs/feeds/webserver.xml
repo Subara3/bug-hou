@@ -19,11 +19,11 @@ The use of prefixed system databases is very rare.
 Users are recommended to upgrade to version 3.5.3, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-90799 1.3 LOW</title>
+<title>[様子見] Apache / nginx: CVE-2026-90799 1.3 LOW</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-90799"/>
 <id>urn:bug-hou:CVE-2026-90799</id>
 <updated>2026-10-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; CouchDBで認証済み利用者がメモリ枯渇を起こす。LOW&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;Unsafe binary deserialisation in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows an authenticated user to cause a denial of service via memory exhaustion.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; CouchDBで認証済み利用者がメモリ枯渇を起こす。LOW&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;Unsafe binary deserialisation in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows an authenticated user to cause a denial of service via memory exhaustion.
 
 Users are recommended to upgrade to version 3.5.3, which fixes this issue.&lt;/p&gt;</content>
 </entry>
@@ -101,11 +101,11 @@ There is no data plane exposure; this is a control plane issue only.
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-95101 6.9 MEDIUM</title>
+<title>[様子見] Apache / nginx: CVE-2026-95101 6.9 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-95101"/>
 <id>urn:bug-hou:CVE-2026-95101</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; HTTP/3とproxy_request_bufferingでデータ注入。MEDIUM&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; HTTP/3とproxy_request_bufferingでデータ注入。MEDIUM&lt;/p&gt;&lt;p&gt;Description
 NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with 
 
 proxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.
@@ -217,11 +217,11 @@ paths. There is no control plane exposure; this is a data plane issue only.
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-101025 6.9 MEDIUM</title>
+<title>[様子見] Apache / nginx: CVE-2026-101025 6.9 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-101025"/>
 <id>urn:bug-hou:CVE-2026-101025</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; njsのxml.parse()失敗時にメモリリーク。MEDIUM&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; njsのxml.parse()失敗時にメモリリーク。MEDIUM&lt;/p&gt;&lt;p&gt;Description
 
 
 NGINX JavaScript (njs) has a vulnerability where the built-in njs engine leaks a libxml2 parser context when xml.parse() fails. The failure path did not register cleanup and the context was not released for the lifetime of the process. An unauthenticated attacker may send requests with malformed XML and can cause unbounded memory growth in long-lived NGINX worker processes.
@@ -258,11 +258,11 @@ In affected signed-XML consumers, an unauthenticated attacker can cause security
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_dav_fsで書込権限を持つ利用者がDBを破損。HIGH&lt;br&gt;→ WebDAVの利用有無を確認&lt;/p&gt;&lt;p&gt;Integer overflow in mod_dav_fs in Apache HTTP Server through 2.4.68 allows an authenticated WebDAV client with write access to crash worker processes and persistently corrupt a directory's property database via PROPPATCH requests declaring many XML namespaces.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-79768 5.3 MEDIUM</title>
+<title>[様子見] Apache / nginx: CVE-2026-79768 5.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-79768"/>
 <id>urn:bug-hou:CVE-2026-79768</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; mod_userdirの特定設定でパス同値の問題。MEDIUM&lt;/p&gt;&lt;p&gt;Path equivalence: '/./' (single dot directory) vulnerability in Apache HTTP Server's mod_userdir module when configured with absolute non-wildcard UserDir directive (the 2nd form in https://httpd.apache.org/docs/2.4/mod/mod_userdir.html#userdir)
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; mod_userdirの特定設定でパス同値の問題。MEDIUM&lt;/p&gt;&lt;p&gt;Path equivalence: '/./' (single dot directory) vulnerability in Apache HTTP Server's mod_userdir module when configured with absolute non-wildcard UserDir directive (the 2nd form in https://httpd.apache.org/docs/2.4/mod/mod_userdir.html#userdir)
 
 
 
@@ -347,11 +347,11 @@ This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</con
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-58415 5.3 MEDIUM</title>
+<title>[様子見] Apache / nginx: CVE-2026-58415 5.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-58415"/>
 <id>urn:bug-hou:CVE-2026-58415</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; mod_dav_fsで.DAV状態ディレクトリが読める。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Internal state files accessible to external parties in mod_dav_fs in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows a remote client to read WebDAV dead properties of resources it cannot author via a GET request for the .DAV state directory
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; mod_dav_fsで.DAV状態ディレクトリが読める。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Internal state files accessible to external parties in mod_dav_fs in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows a remote client to read WebDAV dead properties of resources it cannot author via a GET request for the .DAV state directory
 
 
 
@@ -362,7 +362,7 @@ This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</con
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-57941"/>
 <id>urn:bug-hou:CVE-2026-57941</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; httpdのmod_http2でUAF。認証なし・CRITICAL&lt;br&gt;→ mod_http2の利用有無を確認しhttpdを更新&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session-&amp;gt;bbtmp re-entrancy
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; httpdのmod_http2で解放後のメモリ使用。CRITICAL&lt;br&gt;→ mod_http2を使っているなら2.4.68より新しい版に更新&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session-&amp;gt;bbtmp re-entrancy
 
 
 
@@ -440,31 +440,31 @@ This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</con
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-42528 4.3 MEDIUM</title>
+<title>[様子見] Apache / nginx: CVE-2026-42528 4.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-42528"/>
 <id>urn:bug-hou:CVE-2026-42528</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; mod_davでロック作成権限者がプロセスを落とす。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;A memory calculation bug in mod_dav in Apache httpd 2.4.67 and earlier allows an attacker with permission to create WebDAV locks to crash server child processes.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; mod_davでロック作成権限者がプロセスを落とす。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;A memory calculation bug in mod_dav in Apache httpd 2.4.67 and earlier allows an attacker with permission to create WebDAV locks to crash server child processes.
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-42356 3.7 LOW</title>
+<title>[様子見] Apache / nginx: CVE-2026-42356 3.7 LOW</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-42356"/>
 <id>urn:bug-hou:CVE-2026-42356</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; httpdのCGI内部リダイレクト先がCGIとして実行。LOW&lt;/p&gt;&lt;p&gt;Deployment of wrong handler vulnerability in Apache HTTP Server allows the target of some internal redirects from CGI programs to also be treated as CGI and executed. The target must already be in a directory enabled for CGI and have no other extension understood by mod_mime.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; httpdのCGI内部リダイレクト先がCGIとして実行。LOW&lt;/p&gt;&lt;p&gt;Deployment of wrong handler vulnerability in Apache HTTP Server allows the target of some internal redirects from CGI programs to also be treated as CGI and executed. The target must already be in a directory enabled for CGI and have no other extension understood by mod_mime.
 
 
 
 This issue affects Apache HTTP Server: from 2.4.60 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] Apache / nginx: CVE-2026-90439 6.9 MEDIUM</title>
+<title>[様子見] Apache / nginx: CVE-2026-90439 6.9 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-90439"/>
 <id>urn:bug-hou:CVE-2026-90439</id>
 <updated>2026-09-15T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; HTTP/3と古いOpenSSLの組合せでヒープ溢れ。MEDIUM&lt;/p&gt;&lt;p&gt;NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions &amp;lt;= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; HTTP/3と古いOpenSSLの組合せでヒープ溢れ。MEDIUM&lt;/p&gt;&lt;p&gt;NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions &amp;lt;= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.
 
 Impact:
 This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.

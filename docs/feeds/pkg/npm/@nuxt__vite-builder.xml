@@ -7,24 +7,24 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] npm: Nuxt dev server arbitrary file read through client error reports (MEDIUM)</title>
+<title>[様子見] npm: Nuxt dev server arbitrary file read through client error reports (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x287-wcfc-q46c"/>
 <id>urn:bug-hou:GHSA-x287-wcfc-q46c</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Nuxt開発サーバーで任意ファイル読取。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119198&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxt開発サーバーで任意ファイル読取。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119198&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Nuxt dev server exposes private runtime config through the Nitro dev bundle (MEDIUM)</title>
+<title>[様子見] npm: Nuxt dev server exposes private runtime config through the Nitro dev bundle (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-648h-gw55-m2g7"/>
 <id>urn:bug-hou:GHSA-648h-gw55-m2g7</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Nuxt開発サーバーで非公開設定が露出。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 3.0.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119199&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxt開発サーバーで非公開設定が露出。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 3.0.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119199&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Nuxt dev server exposes generated appSecret through Vite file serving (MEDIUM)</title>
+<title>[様子見] npm: Nuxt dev server exposes generated appSecret through Vite file serving (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3xf4-9g3c-4h4w"/>
 <id>urn:bug-hou:GHSA-3xf4-9g3c-4h4w</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Nuxt開発サーバーでappSecretが露出。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119201&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxt開発サーバーでappSecretが露出。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119201&lt;/p&gt;</content>
 </entry>
 </feed>

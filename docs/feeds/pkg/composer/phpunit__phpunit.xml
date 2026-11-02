@@ -7,10 +7,10 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling (MEDIUM)</title>
+<title>[様子見] composer: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9vw2-f4vp-x7gf"/>
 <id>urn:bug-hou:GHSA-9vw2-f4vp-x7gf</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; 共有一時ディレクトリ経由のローカル攻撃。MEDIUM&lt;br&gt;→ PHPUnit 13.4.4に更新&lt;/p&gt;&lt;p&gt;phpunit/phpunit &amp;gt;= 13.4.0, &amp;lt; 13.4.4 → 13.4.4&lt;/p&gt;&lt;p&gt;CVE-2026-119193&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 共有一時ディレクトリ経由のローカル攻撃。MEDIUM&lt;br&gt;→ PHPUnit 13.4.4に更新&lt;/p&gt;&lt;p&gt;phpunit/phpunit &amp;gt;= 13.4.0, &amp;lt; 13.4.4 → 13.4.4&lt;/p&gt;&lt;p&gt;CVE-2026-119193&lt;/p&gt;</content>
 </entry>
 </feed>

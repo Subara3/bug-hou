@@ -7,10 +7,10 @@
 <updated>2026-10-07T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: Kunstmaan CMS: MediaBundle extension blacklist bypass allows authenticated administrators to upload executable PHP files leading to remote code execution (HIGH)</title>
+<title>[様子見] composer: Kunstmaan CMS: MediaBundle extension blacklist bypass allows authenticated administrators to upload executable PHP files leading to remote code execution (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-p279-5wcv-45vq"/>
 <id>urn:bug-hou:GHSA-p279-5wcv-45vq</id>
 <updated>2026-10-07T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Kunstmaan CMSで管理者がPHPをアップロードしRCE。管理者権限前提&lt;br&gt;→ media-bundle 7.3.2に更新&lt;/p&gt;&lt;p&gt;kunstmaan/media-bundle &amp;lt; 7.3.2 → 7.3.2, kunstmaan/bundles-cms &amp;lt; 7.3.2 → 7.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-104890&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Kunstmaan CMSで管理者がPHPをアップロードしRCE。管理者権限前提&lt;br&gt;→ media-bundle 7.3.2に更新&lt;/p&gt;&lt;p&gt;kunstmaan/media-bundle &amp;lt; 7.3.2 → 7.3.2, kunstmaan/bundles-cms &amp;lt; 7.3.2 → 7.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-104890&lt;/p&gt;</content>
 </entry>
 </feed>

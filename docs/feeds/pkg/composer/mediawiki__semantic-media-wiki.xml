@@ -7,11 +7,11 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: Semantic MediaWiki has a query debug output XSS (`DebugFormatter`) (MEDIUM)</title>
+<title>[様子見] composer: Semantic MediaWiki has a query debug output XSS (`DebugFormatter`) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q5fm-9mx6-44f4"/>
 <id>urn:bug-hou:GHSA-q5fm-9mx6-44f4</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのクエリデバッグ出力でXSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77610&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのクエリデバッグ出力でXSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77610&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] composer: Semantic MediaWiki'a missing authorization in the smwtask API module allows unauthenticated access to admin-only maintenance tasks (HIGH)</title>
@@ -21,11 +21,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH&lt;br&gt;→ semantic-media-wiki 7.3.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.0.0, &amp;lt;= 7.2.1 → 7.3.0&lt;/p&gt;&lt;p&gt;GHSA-jr78-w6w5-m8f8&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Semantic MediaWiki has an open redirect in Special:URIResolver (MEDIUM)</title>
+<title>[様子見] composer: Semantic MediaWiki has an open redirect in Special:URIResolver (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-hw3m-8j5x-94ff"/>
 <id>urn:bug-hou:GHSA-hw3m-8j5x-94ff</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのURIResolverでオープンリダイレクト。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77609&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのURIResolverでオープンリダイレクト。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77609&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] composer: Semantic MediaWiki vulnerable to stored XSS through wikitext via improper use of non-reserved data attributes (HIGH)</title>
@@ -35,38 +35,38 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiでwikitextのdata属性から格納型XSS。HIGH&lt;br&gt;→ semantic-media-wiki 7.0.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.1.0, &amp;lt; 7.0.0 → 7.0.0&lt;/p&gt;&lt;p&gt;CVE-2025-61682&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token (MEDIUM)</title>
+<title>[様子見] composer: Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cx86-7xwp-w9wf"/>
 <id>urn:bug-hou:GHSA-cx86-7xwp-w9wf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSpecial:Askで偽造トークンの反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 7.0.0, &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77616&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSpecial:Askで偽造トークンの反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 7.0.0, &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77616&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354) (MEDIUM)</title>
+<title>[様子見] composer: Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9rcc-pmj8-ffhr"/>
 <id>urn:bug-hou:GHSA-9rcc-pmj8-ffhr</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのFacetedSearchで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.1に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 4.2.0, &amp;lt;= 7.2.0 → 7.2.1&lt;/p&gt;&lt;p&gt;GHSA-9rcc-pmj8-ffhr&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのFacetedSearchで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.1に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 4.2.0, &amp;lt;= 7.2.0 → 7.2.1&lt;/p&gt;&lt;p&gt;GHSA-9rcc-pmj8-ffhr&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Semantic MediaWiki affected by Special:Ask table `sep` parameter reflected XSS (MEDIUM)</title>
+<title>[様子見] composer: Semantic MediaWiki affected by Special:Ask table `sep` parameter reflected XSS (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7xv3-gf2g-498h"/>
 <id>urn:bug-hou:GHSA-7xv3-gf2g-498h</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSpecial:Askのsepで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77607&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSpecial:Askのsepで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77607&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Semantic MediaWiki has reflected XSS in `Special:SearchByProperty` (`property` and `value` parameters) (MEDIUM)</title>
+<title>[様子見] composer: Semantic MediaWiki has reflected XSS in `Special:SearchByProperty` (`property` and `value` parameters) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-59xw-qv23-j3rc"/>
 <id>urn:bug-hou:GHSA-59xw-qv23-j3rc</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSearchByPropertyで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77608&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSearchByPropertyで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77608&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Semantic MediaWiki has reflected XSS in Special:Ask plain table headers (MEDIUM)</title>
+<title>[様子見] composer: Semantic MediaWiki has reflected XSS in Special:Ask plain table headers (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3jp5-3h47-28qf"/>
 <id>urn:bug-hou:GHSA-3jp5-3h47-28qf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSpecial:Ask表ヘッダーで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77606&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSpecial:Ask表ヘッダーで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77606&lt;/p&gt;</content>
 </entry>
 </feed>

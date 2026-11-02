@@ -7,10 +7,10 @@
 <updated>2026-10-05T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: Filament: Multi-factor authentication (app) management actions do not require password reauthentication (MEDIUM)</title>
+<title>[様子見] composer: Filament: Multi-factor authentication (app) management actions do not require password reauthentication (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7m6h-rg42-m449"/>
 <id>urn:bug-hou:GHSA-7m6h-rg42-m449</id>
 <updated>2026-10-05T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; FilamentのMFA管理操作で再認証なし。MEDIUM&lt;br&gt;→ Filament 4.13.3/5.8.3に更新&lt;/p&gt;&lt;p&gt;filament/filament &amp;gt;= 4.0.0, &amp;lt;= 4.13.2 → 4.13.3, filament/filament &amp;gt;= 5.0.0, &amp;lt;= 5.8.2 → 5.8.3&lt;/p&gt;&lt;p&gt;CVE-2026-104181&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; FilamentのMFA管理操作で再認証なし。MEDIUM&lt;br&gt;→ Filament 4.13.3/5.8.3に更新&lt;/p&gt;&lt;p&gt;filament/filament &amp;gt;= 4.0.0, &amp;lt;= 4.13.2 → 4.13.3, filament/filament &amp;gt;= 5.0.0, &amp;lt;= 5.8.2 → 5.8.3&lt;/p&gt;&lt;p&gt;CVE-2026-104181&lt;/p&gt;</content>
 </entry>
 </feed>

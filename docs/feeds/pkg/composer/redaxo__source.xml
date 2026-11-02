@@ -7,31 +7,31 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
+<title>[様子見] composer: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-w998-qmw9-mf4m"/>
 <id>urn:bug-hou:GHSA-w998-qmw9-mf4m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()` (MEDIUM)</title>
+<title>[様子見] composer: REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()` (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mf2p-wjp4-99pq"/>
 <id>urn:bug-hou:GHSA-mf2p-wjp4-99pq</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; REDAXOのメディアマネージャー種別名で格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63001&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアマネージャー種別名で格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63001&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates (MEDIUM)</title>
+<title>[様子見] composer: REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-m8r3-22v6-g877"/>
 <id>urn:bug-hou:GHSA-m8r3-22v6-g877</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; REDAXOのパッケージ更新にCSRF対策がない。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのパッケージ更新にCSRF対策がない。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: REDAXO: Unwhitelisted ORDER BY Column in rex_list Allows Authenticated Column Enumeration (MEDIUM)</title>
+<title>[様子見] composer: REDAXO: Unwhitelisted ORDER BY Column in rex_list Allows Authenticated Column Enumeration (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4f5f-j737-pm58"/>
 <id>urn:bug-hou:GHSA-4f5f-j737-pm58</id>
 <updated>2026-09-24T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; REDAXOで認証済み利用者がカラムを列挙。MEDIUM&lt;br&gt;→ REDAXO 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-62998&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOで認証済み利用者がカラムを列挙。MEDIUM&lt;br&gt;→ REDAXO 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-62998&lt;/p&gt;</content>
 </entry>
 </feed>

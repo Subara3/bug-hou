@@ -21,11 +21,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのTLSレコード処理でスタック枯渇。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119187&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891) (LOW)</title>
+<title>[様子見] npm: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891) (LOW)</title>
 <link href="https://github.com/advisories/GHSA-h6cr-wjv9-3cpp"/>
 <id>urn:bug-hou:GHSA-h6cr-wjv9-3cpp</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; node-forgeのmodInverseで無限ループ。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118781&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのmodInverseで無限ループ。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118781&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message (HIGH)</title>
@@ -42,11 +42,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのPEMデコードでReDoS。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118779&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie (MEDIUM)</title>
+<title>[様子見] npm: Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6wvx-3r32-xmcg"/>
 <id>urn:bug-hou:GHSA-6wvx-3r32-xmcg</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; node-forgeのforge.httpでプロトタイプ汚染。MEDIUM&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118777&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのforge.httpでプロトタイプ汚染。MEDIUM&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118777&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13 (HIGH)</title>
@@ -56,31 +56,31 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeの証明書検証でbasicConstraints回避。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119190&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Forge: AES-GCM authentication bypass via unvalidated tagLength option (MEDIUM)</title>
+<title>[様子見] npm: Forge: AES-GCM authentication bypass via unvalidated tagLength option (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5cwg-6vw7-rj6p"/>
 <id>urn:bug-hou:GHSA-5cwg-6vw7-rj6p</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; node-forgeのAES-GCMタグ長未検証。MEDIUM&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119186&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのAES-GCMタグ長未検証。MEDIUM&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119186&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Forge: TLS client crash when the server sends no certificate (MEDIUM)</title>
+<title>[様子見] npm: Forge: TLS client crash when the server sends no certificate (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-525v-9gp9-w22h"/>
 <id>urn:bug-hou:GHSA-525v-9gp9-w22h</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; node-forgeのTLSクライアントがクラッシュ。MEDIUM&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118778&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのTLSクライアントがクラッシュ。MEDIUM&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118778&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Forge: ASN.1 OID first arc truncation in asn1.oidToDer (LOW)</title>
+<title>[様子見] npm: Forge: ASN.1 OID first arc truncation in asn1.oidToDer (LOW)</title>
 <link href="https://github.com/advisories/GHSA-4642-5mcj-2rqw"/>
 <id>urn:bug-hou:GHSA-4642-5mcj-2rqw</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; node-forgeのOID変換の切り詰め。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118775&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのOID変換の切り詰め。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118775&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store (LOW)</title>
+<title>[様子見] npm: Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store (LOW)</title>
 <link href="https://github.com/advisories/GHSA-4487-j8r4-4g2f"/>
 <id>urn:bug-hou:GHSA-4487-j8r4-4g2f</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; node-forgeの証明書チェーン検証でCA削除。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118780&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeの証明書チェーン検証でCA削除。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118780&lt;/p&gt;</content>
 </entry>
 </feed>

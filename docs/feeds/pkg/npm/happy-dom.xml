@@ -21,10 +21,10 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Happy DOMで信頼できないHTML解析時にSSRF。HIGH&lt;br&gt;→ happy-dom 21.0.0に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;lt;= 20.14.6 → 21.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-118660&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Happy DOM has cookie scope forgery: no DNS-label boundary on Domain= matching , attacker origin sets victim cookies (MEDIUM)</title>
+<title>[様子見] npm: Happy DOM has cookie scope forgery: no DNS-label boundary on Domain= matching , attacker origin sets victim cookies (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5fpq-26gf-qwcr"/>
 <id>urn:bug-hou:GHSA-5fpq-26gf-qwcr</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Happy DOMのCookieドメイン照合の不備。MEDIUM&lt;br&gt;→ happy-dom 20.14.6以降に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;lt;= 20.14.5 → 20.14.6&lt;/p&gt;&lt;p&gt;CVE-2026-118661&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Happy DOMのCookieドメイン照合の不備。MEDIUM&lt;br&gt;→ happy-dom 20.14.6以降に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;lt;= 20.14.5 → 20.14.6&lt;/p&gt;&lt;p&gt;CVE-2026-118661&lt;/p&gt;</content>
 </entry>
 </feed>

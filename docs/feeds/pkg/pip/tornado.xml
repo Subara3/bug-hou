@@ -7,24 +7,24 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] pip: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks (MEDIUM)</title>
+<title>[様子見] pip: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r4j5-9xpp-3985"/>
 <id>urn:bug-hou:GHSA-r4j5-9xpp-3985</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Tornadoの細かいチャンクでイベントループ停止。MEDIUM&lt;br&gt;→ tornado 6.6に更新&lt;/p&gt;&lt;p&gt;tornado &amp;lt; 6.6 → 6.6&lt;/p&gt;&lt;p&gt;CVE-2026-115927&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Tornadoの細かいチャンクでイベントループ停止。MEDIUM&lt;br&gt;→ tornado 6.6に更新&lt;/p&gt;&lt;p&gt;tornado &amp;lt; 6.6 → 6.6&lt;/p&gt;&lt;p&gt;CVE-2026-115927&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: Tornado: Open redirect in RedirectHandler via protocol-relative URLs (LOW)</title>
+<title>[様子見] pip: Tornado: Open redirect in RedirectHandler via protocol-relative URLs (LOW)</title>
 <link href="https://github.com/advisories/GHSA-pw9p-v7r6-gx4p"/>
 <id>urn:bug-hou:GHSA-pw9p-v7r6-gx4p</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; TornadoのRedirectHandlerでオープンリダイレクト。LOW&lt;br&gt;→ tornado 6.6に更新&lt;/p&gt;&lt;p&gt;tornado &amp;lt; 6.6 → 6.6&lt;/p&gt;&lt;p&gt;CVE-2026-116578&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; TornadoのRedirectHandlerでオープンリダイレクト。LOW&lt;br&gt;→ tornado 6.6に更新&lt;/p&gt;&lt;p&gt;tornado &amp;lt; 6.6 → 6.6&lt;/p&gt;&lt;p&gt;CVE-2026-116578&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: Tornado: Quadratic CPU usage when parsing HTTP headers with line folding (MEDIUM)</title>
+<title>[様子見] pip: Tornado: Quadratic CPU usage when parsing HTTP headers with line folding (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-pcg2-g6cj-q92c"/>
 <id>urn:bug-hou:GHSA-pcg2-g6cj-q92c</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Tornadoのヘッダー折り返し解析で二乗時間。MEDIUM&lt;br&gt;→ tornado 6.6に更新&lt;/p&gt;&lt;p&gt;tornado &amp;lt; 6.6 → 6.6&lt;/p&gt;&lt;p&gt;CVE-2026-116577&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Tornadoのヘッダー折り返し解析で二乗時間。MEDIUM&lt;br&gt;→ tornado 6.6に更新&lt;/p&gt;&lt;p&gt;tornado &amp;lt; 6.6 → 6.6&lt;/p&gt;&lt;p&gt;CVE-2026-116577&lt;/p&gt;</content>
 </entry>
 </feed>

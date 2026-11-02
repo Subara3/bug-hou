@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] npm: dcmjs: DS/IS VALUE REPRESENTATION INPUT VALIDATION BYPASS (LOW)</title>
+<title>[様子見] npm: dcmjs: DS/IS VALUE REPRESENTATION INPUT VALIDATION BYPASS (LOW)</title>
 <link href="https://github.com/advisories/GHSA-px68-xx5g-48q5"/>
 <id>urn:bug-hou:GHSA-px68-xx5g-48q5</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; dcmjsのDS/IS値の入力検証を回避。LOW&lt;br&gt;→ dcmjs 0.52.0に更新&lt;/p&gt;&lt;p&gt;dcmjs &amp;lt; 0.52.0 → 0.52.0&lt;/p&gt;&lt;p&gt;CVE-2026-46350&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; dcmjsのDS/IS値の入力検証を回避。LOW&lt;br&gt;→ dcmjs 0.52.0に更新&lt;/p&gt;&lt;p&gt;dcmjs &amp;lt; 0.52.0 → 0.52.0&lt;/p&gt;&lt;p&gt;CVE-2026-46350&lt;/p&gt;</content>
 </entry>
 </feed>

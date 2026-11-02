@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] npm: Waline login accepts a non-string email as a match-all MongoDB query (MEDIUM)</title>
+<title>[様子見] npm: Waline login accepts a non-string email as a match-all MongoDB query (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-jf75-q64q-g65r"/>
 <id>urn:bug-hou:GHSA-jf75-q64q-g65r</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Walineのログインで非文字列emailが全件一致。MEDIUM&lt;br&gt;→ @waline/vercel 1.41.0に更新&lt;/p&gt;&lt;p&gt;@waline/vercel &amp;lt;= 1.40.3 → 1.41.0&lt;/p&gt;&lt;p&gt;GHSA-jf75-q64q-g65r&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Walineのログインで非文字列emailが全件一致。MEDIUM&lt;br&gt;→ @waline/vercel 1.41.0に更新&lt;/p&gt;&lt;p&gt;@waline/vercel &amp;lt;= 1.40.3 → 1.41.0&lt;/p&gt;&lt;p&gt;GHSA-jf75-q64q-g65r&lt;/p&gt;</content>
 </entry>
 </feed>

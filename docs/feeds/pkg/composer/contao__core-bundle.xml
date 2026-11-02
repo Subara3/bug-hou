@@ -7,52 +7,52 @@
 <updated>2026-10-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: Contao: Protected page content is disclosed to anonymous visitors after contao.search.index_protected is disabled (MEDIUM)</title>
+<title>[様子見] composer: Contao: Protected page content is disclosed to anonymous visitors after contao.search.index_protected is disabled (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x2rp-9qf7-2fmq"/>
 <id>urn:bug-hou:GHSA-x2rp-9qf7-2fmq</id>
 <updated>2026-10-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Contaoの保護ページ内容が匿名に表示。MEDIUM&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107842&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Contaoの保護ページ内容が匿名に表示。MEDIUM&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107842&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Contao: Improper access control in the preview links module (MEDIUM)</title>
+<title>[様子見] composer: Contao: Improper access control in the preview links module (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q6wp-fr43-gm9v"/>
 <id>urn:bug-hou:GHSA-q6wp-fr43-gm9v</id>
 <updated>2026-10-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Contaoのプレビューリンクのアクセス制御不備。MEDIUM&lt;br&gt;→ core-bundle 5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 5.7.1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107850&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Contaoのプレビューリンクのアクセス制御不備。MEDIUM&lt;br&gt;→ core-bundle 5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 5.7.1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107850&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Contao: Path traversal in the images controller (MEDIUM)</title>
+<title>[様子見] composer: Contao: Path traversal in the images controller (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mrvp-7wmx-5m4h"/>
 <id>urn:bug-hou:GHSA-mrvp-7wmx-5m4h</id>
 <updated>2026-10-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Contaoの画像コントローラーでパストラバーサル。MEDIUM&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.1.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107844&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Contaoの画像コントローラーでパストラバーサル。MEDIUM&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.1.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107844&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Contao: The registration module re-sends activation mails (MEDIUM)</title>
+<title>[様子見] composer: Contao: The registration module re-sends activation mails (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mfxh-vp55-7gc6"/>
 <id>urn:bug-hou:GHSA-mfxh-vp55-7gc6</id>
 <updated>2026-10-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Contaoの登録モジュールが有効化メールを再送。MEDIUM&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.1.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107843&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Contaoの登録モジュールが有効化メールを再送。MEDIUM&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.1.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107843&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Contao: Cross-site request forgery in custom backend actions (LOW)</title>
+<title>[様子見] composer: Contao: Cross-site request forgery in custom backend actions (LOW)</title>
 <link href="https://github.com/advisories/GHSA-9ff2-p842-45wq"/>
 <id>urn:bug-hou:GHSA-9ff2-p842-45wq</id>
 <updated>2026-10-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Contaoのバックエンド操作でCSRF。LOW&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107848&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Contaoのバックエンド操作でCSRF。LOW&lt;br&gt;→ core-bundle 5.3.50/5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 4.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107848&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Contao: Improper access control in the table access voter (MEDIUM)</title>
+<title>[様子見] composer: Contao: Improper access control in the table access voter (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5974-gfqc-wrcm"/>
 <id>urn:bug-hou:GHSA-5974-gfqc-wrcm</id>
 <updated>2026-10-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Contaoのテーブルアクセス判定の不備。MEDIUM&lt;br&gt;→ core-bundle 5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 5.7.0, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107851&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Contaoのテーブルアクセス判定の不備。MEDIUM&lt;br&gt;→ core-bundle 5.7.12に更新&lt;/p&gt;&lt;p&gt;contao/core-bundle &amp;gt;= 5.7.0, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-107851&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] composer: Contao: Server-Side Request Forgery (SSRF) via Unvalidated RSS Feed URL in Feed Reader Module (LOW)</title>
+<title>[様子見] composer: Contao: Server-Side Request Forgery (SSRF) via Unvalidated RSS Feed URL in Feed Reader Module (LOW)</title>
 <link href="https://github.com/advisories/GHSA-87mg-5grr-rhwh"/>
 <id>urn:bug-hou:GHSA-87mg-5grr-rhwh</id>
 <updated>2026-09-24T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; ContaoのRSSリーダーでSSRF。LOW&lt;br&gt;→ 5.3.48/5.7.9に更新&lt;/p&gt;&lt;p&gt;contao/contao &amp;gt;= 5.3.35, &amp;lt; 5.3.48 → 5.3.48, contao/contao &amp;gt;= 5.4.0, &amp;lt; 5.7.9 → 5.7.9, contao/core-bundle &amp;gt;= 5.3.35, &amp;lt; 5.3.48 → 5.3.48, contao/core-bundle &amp;gt;= 5.4.0, &amp;lt; 5.7.9 → 5.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-57232&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; ContaoのRSSリーダーでSSRF。LOW&lt;br&gt;→ 5.3.48/5.7.9に更新&lt;/p&gt;&lt;p&gt;contao/contao &amp;gt;= 5.3.35, &amp;lt; 5.3.48 → 5.3.48, contao/contao &amp;gt;= 5.4.0, &amp;lt; 5.7.9 → 5.7.9, contao/core-bundle &amp;gt;= 5.3.35, &amp;lt; 5.3.48 → 5.3.48, contao/core-bundle &amp;gt;= 5.4.0, &amp;lt; 5.7.9 → 5.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-57232&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,31 +7,31 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] pip: ONNX: Denial of service via unchecked expansion of packed sub-byte tensors in ONNX Python APIs (MEDIUM)</title>
+<title>[様子見] pip: ONNX: Denial of service via unchecked expansion of packed sub-byte tensors in ONNX Python APIs (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q69g-f4f5-v8m7"/>
 <id>urn:bug-hou:GHSA-q69g-f4f5-v8m7</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; ONNXのサブバイトテンソル展開でDoS。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115922&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; ONNXのサブバイトテンソル展開でDoS。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115922&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: ONNX: Null Pointer Dereference in ScanInferenceFunction Due to Missing Required Attribute (MEDIUM)</title>
+<title>[様子見] pip: ONNX: Null Pointer Dereference in ScanInferenceFunction Due to Missing Required Attribute (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-m4pr-6v3c-6fgr"/>
 <id>urn:bug-hou:GHSA-m4pr-6v3c-6fgr</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; ONNXのScan推論でNULL参照。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;gt;= 1.4.0, &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115921&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; ONNXのScan推論でNULL参照。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;gt;= 1.4.0, &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115921&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: ONNX: Out-of-bounds read in ConvTranspose shape inference via undersized weight rank (MEDIUM)</title>
+<title>[様子見] pip: ONNX: Out-of-bounds read in ConvTranspose shape inference via undersized weight rank (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6pwm-x34p-fvj2"/>
 <id>urn:bug-hou:GHSA-6pwm-x34p-fvj2</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; ONNXのConvTranspose形状推論で境界外読み。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;gt;= 1.2.1, &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115920&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; ONNXのConvTranspose形状推論で境界外読み。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;gt;= 1.2.1, &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115920&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: ONNX: Out-of-Bounds Read in RNN/GRU/LSTM Shape Inference (Old Opsets, Missing Rank Check) (MEDIUM)</title>
+<title>[様子見] pip: ONNX: Out-of-Bounds Read in RNN/GRU/LSTM Shape Inference (Old Opsets, Missing Rank Check) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-48m4-24cq-37qf"/>
 <id>urn:bug-hou:GHSA-48m4-24cq-37qf</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; ONNXのRNN系形状推論で境界外読み。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115919&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; ONNXのRNN系形状推論で境界外読み。MEDIUM&lt;br&gt;→ onnx 1.22.0に更新&lt;/p&gt;&lt;p&gt;onnx &amp;lt;= 1.21.0 → 1.22.0&lt;/p&gt;&lt;p&gt;CVE-2026-115919&lt;/p&gt;</content>
 </entry>
 </feed>

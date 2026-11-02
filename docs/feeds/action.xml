@@ -11,49 +11,49 @@
 <link href="https://github.com/advisories/GHSA-vjqc-q4mp-2rvf"/>
 <id>urn:bug-hou:GHSA-vjqc-q4mp-2rvf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; CakePHPのFunctionsBuilderの複数メソッドでSQL注入。CRITICAL&lt;br&gt;→ cakephp 4.5.12/database 4.6.5/5.1.9/5.2.14/5.3.7に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; CakePHPのFunctionsBuilderの複数のメソッドにSQLインジェクション&lt;br&gt;→ 4.5.12 / 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7 以降に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] Node.js: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-965c-763c-88jm"/>
 <id>urn:bug-hou:GHSA-965c-763c-88jm</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; better-authでOAuth stateをマジックリンクとして使い他人としてサインイン。CRITICAL&lt;br&gt;→ better-auth 1.7.7に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; better-authでOAuthのstateをマジックリンクに使い、別人としてログインできる&lt;br&gt;→ better-authを1.7.7以降に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] Python: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-6v38-4h7w-rj9h"/>
 <id>urn:bug-hou:GHSA-6v38-4h7w-rj9h</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; AuthlibのJWS JSONデシリアライズで空の署名を検証通過。CRITICAL&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; AuthlibのJWS JSONの読み込みで空の署名の検証に不備&lt;br&gt;→ authlibを1.9.0以降に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] Python: MLflow vulnerable to remote code execution on unauthenticated servers via third-party scorer deserialization importing caller-placed artifact modules (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-26p8-2jq9-3vq9"/>
 <id>urn:bug-hou:GHSA-26p8-2jq9-3vq9</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; 認証なしMLflowサーバーでスコアラーのデシリアライズからRCE。CRITICAL&lt;br&gt;→ mlflow 3.17.0に更新&lt;/p&gt;&lt;p&gt;mlflow &amp;gt;= 3.12.0rc0, &amp;lt; 3.17.0 → 3.17.0&lt;/p&gt;&lt;p&gt;CVE-2026-116692&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; MLflowで認証なしのサーバーにRCE&lt;br&gt;→ mlflowを3.17.0以降に更新&lt;/p&gt;&lt;p&gt;mlflow &amp;gt;= 3.12.0rc0, &amp;lt; 3.17.0 → 3.17.0&lt;/p&gt;&lt;p&gt;CVE-2026-116692&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] Python: CVE-2026-115557 9.4 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-115557"/>
 <id>urn:bug-hou:CVE-2026-115557</id>
 <updated>2026-10-24T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; CPythonのsslに既知の侵害証明書の拒否リストを追加。CRITICAL&lt;br&gt;→ CPythonを修正済みの版に更新&lt;/p&gt;&lt;p&gt;Python has added a denylist for known compromised certificates to the "ssl" module to ensure user safety even without certificate revocation configured. Known compromised certificates will automatically be rejected regardless of the SSLContext policy configuration.&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; CPythonのsslに漏えい済み証明書を拒否する仕組みを追加。CRITICAL&lt;br&gt;→ Pythonを修正済みの版に更新&lt;/p&gt;&lt;p&gt;Python has added a denylist for known compromised certificates to the "ssl" module to ensure user safety even without certificate revocation configured. Known compromised certificates will automatically be rejected regardless of the SSLContext policy configuration.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] PHP: Laravel TokenGuard authentication bypass through non-string API credentials (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-f9x3-7vq9-cph6"/>
 <id>urn:bug-hou:GHSA-f9x3-7vq9-cph6</id>
 <updated>2026-10-23T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; LaravelのTokenGuardで認証回避。CRITICAL&lt;br&gt;→ laravel/framework 13.29.0/12.68.0に更新&lt;/p&gt;&lt;p&gt;laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.29.0 → 13.29.0, laravel/framework &amp;lt; 12.68.0 → 12.68.0&lt;/p&gt;&lt;p&gt;CVE-2026-114509&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; LaravelのTokenGuardで文字列以外のAPI認証情報により認証回避&lt;br&gt;→ laravel/frameworkを13.29.0 / 12.68.0 以降に更新&lt;/p&gt;&lt;p&gt;laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.29.0 → 13.29.0, laravel/framework &amp;lt; 12.68.0 → 12.68.0&lt;/p&gt;&lt;p&gt;CVE-2026-114509&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] Node.js: CVE-2026-111497 9.2 CRITICAL ⚠KEV</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497"/>
 <id>urn:bug-hou:CVE-2026-111497</id>
 <updated>2026-10-22T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Brotliデコーダーのバッファオーバーフロー。KEV掲載&lt;br&gt;→ Brotliを1.0.10/1.1.1/1.2.1に更新&lt;/p&gt;&lt;p&gt;A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Brotliの展開処理でバッファあふれ。認証なしで外から攻撃でき、KEV掲載&lt;br&gt;→ Brotliを1.0.10 / 1.1.1 / 1.2.1 に更新&lt;/p&gt;&lt;p&gt;A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.
 
 
 
@@ -66,21 +66,21 @@ Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-109619"/>
 <id>urn:bug-hou:CVE-2026-109619</id>
 <updated>2026-10-21T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体のグローバル状態が解放済みメモリを参照しRCE。KEV掲載&lt;br&gt;→ PHPを修正済みのパッチ版に更新&lt;/p&gt;&lt;p&gt;PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体でリクエスト間の古いメモリ参照によりRCE。KEV掲載&lt;br&gt;→ PHPを修正済みの版に更新&lt;/p&gt;&lt;p&gt;PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] PHP: CVE-2026-109618 9.2 CRITICAL ⚠KEV</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-109618"/>
 <id>urn:bug-hou:CVE-2026-109618</id>
 <updated>2026-10-21T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体のOOM処理の不備でRCE。KEV掲載&lt;br&gt;→ PHPを修正済みのパッチ版に更新&lt;/p&gt;&lt;p&gt;PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体のメモリ不足時の処理の不備でRCE。KEV掲載&lt;br&gt;→ PHPを修正済みの版に更新&lt;/p&gt;&lt;p&gt;PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] Apache / nginx: CVE-2026-57941 9.8 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-57941"/>
 <id>urn:bug-hou:CVE-2026-57941</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; httpdのmod_http2でUAF。認証なし・CRITICAL&lt;br&gt;→ mod_http2の利用有無を確認しhttpdを更新&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session-&amp;gt;bbtmp re-entrancy
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; httpdのmod_http2で解放後のメモリ使用。CRITICAL&lt;br&gt;→ mod_http2を使っているなら2.4.68より新しい版に更新&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session-&amp;gt;bbtmp re-entrancy
 
 
 
@@ -91,6 +91,6 @@ This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</con
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-87902"/>
 <id>urn:bug-hou:CVE-2026-87902</id>
 <updated>2026-09-22T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; WordPress本体で認証なしにローカルPHPを読込、条件次第でRCE。KEV掲載&lt;br&gt;→ WordPressを修正済みの版に更新&lt;/p&gt;&lt;p&gt;An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; WordPress本体で認証なしにローカルのPHPを読み込み、条件次第でRCE。KEV掲載&lt;br&gt;→ WordPressを修正済みの版に更新&lt;/p&gt;&lt;p&gt;An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.&lt;/p&gt;</content>
 </entry>
 </feed>

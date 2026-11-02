@@ -14,32 +14,32 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; vLLMでリクエスト中のcode_revisionからRCE。HIGH&lt;br&gt;→ vllm 0.31.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.7.3, &amp;lt; 0.31.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-114053&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: vllm p2p never connected zmq_exhaustion (MEDIUM)</title>
+<title>[様子見] pip: vllm p2p never connected zmq_exhaustion (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-frvg-qw88-hww9"/>
 <id>urn:bug-hou:GHSA-frvg-qw88-hww9</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; vLLMのp2p接続でzmqが枯渇。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-94624&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMのp2p接続でzmqが枯渇。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-94624&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs (MEDIUM)</title>
+<title>[様子見] pip: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x567-49g5-p4cf"/>
 <id>urn:bug-hou:GHSA-x567-49g5-p4cf</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; vLLMのResponses APIでチャットテンプレート制限回避。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.16.0, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115918&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMのResponses APIでチャットテンプレート制限回避。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.16.0, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115918&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server (LOW)</title>
+<title>[様子見] pip: vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server (LOW)</title>
 <link href="https://github.com/advisories/GHSA-vvpg-rrww-wpmh"/>
 <id>urn:bug-hou:GHSA-vvpg-rrww-wpmh</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; vLLMの既定CORSが緩い。LOW&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115917&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMの既定CORSが緩い。LOW&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115917&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS) (MEDIUM)</title>
+<title>[様子見] pip: vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q97c-p368-75c4"/>
 <id>urn:bug-hou:GHSA-q97c-p368-75c4</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; vLLMで語彙外トークンIDによりエンジン停止。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115916&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMで語彙外トークンIDによりエンジン停止。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115916&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] pip: vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE (HIGH)</title>
@@ -49,18 +49,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; vLLMで信頼できないEPS入力からGhostscript RCE。HIGH&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115915&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: vLLM DeepSeek-OCR image processing vulnerable to denial of service (MEDIUM)</title>
+<title>[様子見] pip: vLLM DeepSeek-OCR image processing vulnerable to denial of service (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gq5q-89c7-vhvx"/>
 <id>urn:bug-hou:GHSA-gq5q-89c7-vhvx</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; vLLMのDeepSeek-OCR画像処理でDoS。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.11.1, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115914&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMのDeepSeek-OCR画像処理でDoS。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.11.1, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115914&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine (MEDIUM)</title>
+<title>[様子見] pip: vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-8397-8qf6-f2gm"/>
 <id>urn:bug-hou:GHSA-8397-8qf6-f2gm</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; vLLMのPhi-4音声エンコーダーでOOM。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115913&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMのPhi-4音声エンコーダーでOOM。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115913&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] pip: vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled (HIGH)</title>
@@ -70,10 +70,10 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; vLLMのSHMハンドル偽造でpickle.loads()に到達。HIGH&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115912&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool (MEDIUM)</title>
+<title>[様子見] pip: vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-542m-9234-8gvf"/>
 <id>urn:bug-hou:GHSA-542m-9234-8gvf</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; vLLMのchat_template描画でスレッドプール枯渇。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.19.0, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115911&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMのchat_template描画でスレッドプール枯渇。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.19.0, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-115911&lt;/p&gt;</content>
 </entry>
 </feed>

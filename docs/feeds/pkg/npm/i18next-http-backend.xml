@@ -7,17 +7,17 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] npm: i18next-http-backend: Namespace value starting with / forms a protocol-relative URL when loadPath/addPath places {{ns}} right after a / (bypass of the // check added for GHSA-xvq9-wjp8-hwqf) (LOW)</title>
+<title>[様子見] npm: i18next-http-backend: Namespace value starting with / forms a protocol-relative URL when loadPath/addPath places {{ns}} right after a / (bypass of the // check added for GHSA-xvq9-wjp8-hwqf) (LOW)</title>
 <link href="https://github.com/advisories/GHSA-9jhj-wvmw-cfx5"/>
 <id>urn:bug-hou:GHSA-9jhj-wvmw-cfx5</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; i18next-http-backendのnsでプロトコル相対URL。LOW&lt;br&gt;→ i18next-http-backend 4.0.3に更新&lt;/p&gt;&lt;p&gt;i18next-http-backend &amp;lt; 4.0.3 → 4.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-115730&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; i18next-http-backendのnsでプロトコル相対URL。LOW&lt;br&gt;→ i18next-http-backend 4.0.3に更新&lt;/p&gt;&lt;p&gt;i18next-http-backend &amp;lt; 4.0.3 → 4.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-115730&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: i18next-http-backend: Query-parameter injection through &amp; and = in lng when loadPath/addPath puts {{lng}} in the query string (LOW)</title>
+<title>[様子見] npm: i18next-http-backend: Query-parameter injection through &amp; and = in lng when loadPath/addPath puts {{lng}} in the query string (LOW)</title>
 <link href="https://github.com/advisories/GHSA-3cmx-xjww-583x"/>
 <id>urn:bug-hou:GHSA-3cmx-xjww-583x</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; i18next-http-backendのlngでクエリ注入。LOW&lt;br&gt;→ i18next-http-backend 4.0.4に更新&lt;/p&gt;&lt;p&gt;i18next-http-backend &amp;lt; 4.0.4 → 4.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-118258&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; i18next-http-backendのlngでクエリ注入。LOW&lt;br&gt;→ i18next-http-backend 4.0.4に更新&lt;/p&gt;&lt;p&gt;i18next-http-backend &amp;lt; 4.0.4 → 4.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-118258&lt;/p&gt;</content>
 </entry>
 </feed>

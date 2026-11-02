@@ -7,10 +7,10 @@
 <updated>2026-10-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] composer: Cachet has Stored XSS in Incident Component (MEDIUM)</title>
+<title>[様子見] composer: Cachet has Stored XSS in Incident Component (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x397-5hrv-j9m9"/>
 <id>urn:bug-hou:GHSA-x397-5hrv-j9m9</id>
 <updated>2026-10-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Cachetの格納型XSS。MEDIUM&lt;br&gt;→ 修正版なし&lt;/p&gt;&lt;p&gt;cachethq/cachet &amp;lt;= 2.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-113712&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Cachetの格納型XSS。MEDIUM&lt;br&gt;→ 修正版なし&lt;/p&gt;&lt;p&gt;cachethq/cachet &amp;lt;= 2.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-113712&lt;/p&gt;</content>
 </entry>
 </feed>

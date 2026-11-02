@@ -7,18 +7,18 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] npm: systeminformation has prototype pollution in `networkStats()` via the interface name (MEDIUM)</title>
+<title>[様子見] npm: systeminformation has prototype pollution in `networkStats()` via the interface name (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7648-jmwf-vw7j"/>
 <id>urn:bug-hou:GHSA-7648-jmwf-vw7j</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; systeminformationのnetworkStatsでプロトタイプ汚染。MEDIUM&lt;br&gt;→ systeminformation 5.33.13に更新&lt;/p&gt;&lt;p&gt;systeminformation &amp;lt; 5.33.13 → 5.33.13&lt;/p&gt;&lt;p&gt;CVE-2026-116674&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; systeminformationのnetworkStatsでプロトタイプ汚染。MEDIUM&lt;br&gt;→ systeminformation 5.33.13に更新&lt;/p&gt;&lt;p&gt;systeminformation &amp;lt; 5.33.13 → 5.33.13&lt;/p&gt;&lt;p&gt;CVE-2026-116674&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: systeminformation has path traversal in Linux networkStats() that allows symlink-based file disclosure outside /sys/class/net (LOW)</title>
+<title>[様子見] npm: systeminformation has path traversal in Linux networkStats() that allows symlink-based file disclosure outside /sys/class/net (LOW)</title>
 <link href="https://github.com/advisories/GHSA-4vjg-vx72-qq4g"/>
 <id>urn:bug-hou:GHSA-4vjg-vx72-qq4g</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; systeminformationのLinuxでシンボリックリンク経由の読取。LOW&lt;br&gt;→ systeminformation 5.33.14に更新&lt;/p&gt;&lt;p&gt;systeminformation &amp;lt; 5.33.14 → 5.33.14&lt;/p&gt;&lt;p&gt;CVE-2026-116673&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; systeminformationのLinuxでシンボリックリンク経由の読取。LOW&lt;br&gt;→ systeminformation 5.33.14に更新&lt;/p&gt;&lt;p&gt;systeminformation &amp;lt; 5.33.14 → 5.33.14&lt;/p&gt;&lt;p&gt;CVE-2026-116673&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks (HIGH)</title>

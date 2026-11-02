@@ -7,17 +7,17 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] pip: fpdf2: Exponential SVG '&lt;use&gt;' expansion causes CPU and memory exhaustion in 'FPDF.image()' (MEDIUM)</title>
+<title>[様子見] pip: fpdf2: Exponential SVG '&lt;use&gt;' expansion causes CPU and memory exhaustion in 'FPDF.image()' (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wqw6-wpr3-45rh"/>
 <id>urn:bug-hou:GHSA-wqw6-wpr3-45rh</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; fpdf2のSVG &amp;lt;use&amp;gt;の指数的展開でCPU・メモリ枯渇。MEDIUM&lt;br&gt;→ fpdf2 2.8.8に更新&lt;/p&gt;&lt;p&gt;fpdf2 &amp;gt;= 2.5.0, &amp;lt; 2.8.8 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114610&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; fpdf2のSVG &amp;lt;use&amp;gt;の指数的展開でCPU・メモリ枯渇。MEDIUM&lt;br&gt;→ fpdf2 2.8.8に更新&lt;/p&gt;&lt;p&gt;fpdf2 &amp;gt;= 2.5.0, &amp;lt; 2.8.8 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114610&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: fpdf2 implicitly loads external URLs and local image paths when rendering attacker-controlled content (MEDIUM)</title>
+<title>[様子見] pip: fpdf2 implicitly loads external URLs and local image paths when rendering attacker-controlled content (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rw7v-4hrq-x6r9"/>
 <id>urn:bug-hou:GHSA-rw7v-4hrq-x6r9</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; fpdf2が攻撃者のコンテンツから外部URLやローカル画像を読込。MEDIUM&lt;br&gt;→ fpdf2 2.8.8に更新&lt;/p&gt;&lt;p&gt;fpdf2 &amp;lt;= 2.8.7 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114609&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; fpdf2が攻撃者のコンテンツから外部URLやローカル画像を読込。MEDIUM&lt;br&gt;→ fpdf2 2.8.8に更新&lt;/p&gt;&lt;p&gt;fpdf2 &amp;lt;= 2.8.7 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114609&lt;/p&gt;</content>
 </entry>
 </feed>

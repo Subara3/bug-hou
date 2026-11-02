@@ -18,7 +18,7 @@
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-87902"/>
 <id>urn:bug-hou:CVE-2026-87902</id>
 <updated>2026-09-22T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; WordPress本体で認証なしにローカルPHPを読込、条件次第でRCE。KEV掲載&lt;br&gt;→ WordPressを修正済みの版に更新&lt;/p&gt;&lt;p&gt;An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; WordPress本体で認証なしにローカルのPHPを読み込み、条件次第でRCE。KEV掲載&lt;br&gt;→ WordPressを修正済みの版に更新&lt;/p&gt;&lt;p&gt;An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[悪用確認] WordPress: CVE-2026-63030 WordPress Core</title>

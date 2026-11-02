@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] pip: Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim (MEDIUM)</title>
+<title>[様子見] pip: Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-h2r5-x5m7-3935"/>
 <id>urn:bug-hou:GHSA-h2r5-x5m7-3935</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Python Social AuthのOIDC nonceがセッションに紐付かない。MEDIUM&lt;br&gt;→ social-auth-core 6.2.0に更新&lt;/p&gt;&lt;p&gt;social-auth-core &amp;lt;= 6.1.1 → 6.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-115910&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Python Social AuthのOIDC nonceがセッションに紐付かない。MEDIUM&lt;br&gt;→ social-auth-core 6.2.0に更新&lt;/p&gt;&lt;p&gt;social-auth-core &amp;lt;= 6.1.1 → 6.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-115910&lt;/p&gt;</content>
 </entry>
 </feed>

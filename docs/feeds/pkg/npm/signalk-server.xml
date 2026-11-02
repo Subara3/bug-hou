@@ -7,11 +7,11 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] npm: signalk-server has SSRF via absolute signalk.appIcon URL in the app store icon fetcher (MEDIUM)</title>
+<title>[様子見] npm: signalk-server has SSRF via absolute signalk.appIcon URL in the app store icon fetcher (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7wpf-ch8f-5f4x"/>
 <id>urn:bug-hou:GHSA-7wpf-ch8f-5f4x</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; signalk-serverのアイコン取得でSSRF。MEDIUM&lt;br&gt;→ signalk-server 2.34.0に更新&lt;/p&gt;&lt;p&gt;signalk-server &amp;gt;= 2.28.0-beta.2, &amp;lt; 2.34.0 → 2.34.0&lt;/p&gt;&lt;p&gt;GHSA-7wpf-ch8f-5f4x&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; signalk-serverのアイコン取得でSSRF。MEDIUM&lt;br&gt;→ signalk-server 2.34.0に更新&lt;/p&gt;&lt;p&gt;signalk-server &amp;gt;= 2.28.0-beta.2, &amp;lt; 2.34.0 → 2.34.0&lt;/p&gt;&lt;p&gt;GHSA-7wpf-ch8f-5f4x&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: Signal K resources API path traversal can disclose the JWT signing secret and enable remote code execution (CRITICAL)</title>

@@ -14,18 +14,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SerovalのfromJSONで配列長未検証によるDoS。HIGH&lt;br&gt;→ seroval 1.6.8に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.4.1, &amp;lt;= 1.6.7 → 1.6.8&lt;/p&gt;&lt;p&gt;CVE-2026-116584&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Seroval: Code injection through a typed array's own constructor property (MEDIUM)</title>
+<title>[様子見] npm: Seroval: Code injection through a typed array's own constructor property (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-f86p-h4j2-7qgj"/>
 <id>urn:bug-hou:GHSA-f86p-h4j2-7qgj</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Serovalの型付き配列でコード注入。MEDIUM&lt;br&gt;→ seroval 1.6.11に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.6.0, &amp;lt; 1.6.11 → 1.6.11&lt;/p&gt;&lt;p&gt;CVE-2026-116583&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Serovalの型付き配列でコード注入。MEDIUM&lt;br&gt;→ seroval 1.6.11に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.6.0, &amp;lt; 1.6.11 → 1.6.11&lt;/p&gt;&lt;p&gt;CVE-2026-116583&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] npm: Seroval: Script injection through RegExp sources in serialized output (MEDIUM)</title>
+<title>[様子見] npm: Seroval: Script injection through RegExp sources in serialized output (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9wx9-5pv9-3349"/>
 <id>urn:bug-hou:GHSA-9wx9-5pv9-3349</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; SerovalのRegExpでスクリプト注入。MEDIUM&lt;br&gt;→ seroval 1.6.10に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.5.5, &amp;lt; 1.6.10 → 1.6.10, seroval &amp;lt; 1.0.0 → 1.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116582&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; SerovalのRegExpでスクリプト注入。MEDIUM&lt;br&gt;→ seroval 1.6.10に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.5.5, &amp;lt; 1.6.10 → 1.6.10, seroval &amp;lt; 1.0.0 → 1.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116582&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS) (HIGH)</title>

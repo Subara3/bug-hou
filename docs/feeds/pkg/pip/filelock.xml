@@ -7,94 +7,94 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見でよい] pip: filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name (MEDIUM)</title>
+<title>[様子見] pip: filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-jqc4-5cvw-7w85"/>
 <id>urn:bug-hou:GHSA-jqc4-5cvw-7w85</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのReadWriteLockで他ユーザーがリネームしたディレクトリを削除。MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 4.1.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112937&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのReadWriteLockで他ユーザーがリネームしたディレクトリを削除。MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 4.1.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112937&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: SoftReadWriteLock follows a lock tree swapped in after its first acquire and writes lock records into directories of the user running the lock (LOW)</title>
+<title>[様子見] pip: filelock: SoftReadWriteLock follows a lock tree swapped in after its first acquire and writes lock records into directories of the user running the lock (LOW)</title>
 <link href="https://github.com/advisories/GHSA-wfhq-q4j2-c37m"/>
 <id>urn:bug-hou:GHSA-wfhq-q4j2-c37m</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのSoftReadWriteLockの差替え追従。ローカル・LOW&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 4.1.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112941&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのSoftReadWriteLockの差替え追従。ローカル・LOW&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 4.1.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112941&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: SoftFileLock removes a live holder's marker when another user forges the PID in a writable marker (MEDIUM)</title>
+<title>[様子見] pip: filelock: SoftFileLock removes a live holder's marker when another user forges the PID in a writable marker (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rfpc-qcw5-3pc4"/>
 <id>urn:bug-hou:GHSA-rfpc-qcw5-3pc4</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockでPID偽造により保持者のマーカー削除。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.22.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112939&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockでPID偽造により保持者のマーカー削除。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.22.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112939&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: StrictSoftFileLock follows a symbolic link swapped in at &lt;path&gt;.filelock and creates claim files in a directory another local user chooses (MEDIUM)</title>
+<title>[様子見] pip: filelock: StrictSoftFileLock follows a symbolic link swapped in at &lt;path&gt;.filelock and creates claim files in a directory another local user chooses (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-m462-7rxw-wvpg"/>
 <id>urn:bug-hou:GHSA-m462-7rxw-wvpg</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのStrictSoftFileLockがリンクを追う。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.30.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112938&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのStrictSoftFileLockがリンクを追う。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.30.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112938&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: ReadWriteLock follows a symlink at the lock path into SQLite (MEDIUM)</title>
+<title>[様子見] pip: filelock: ReadWriteLock follows a symlink at the lock path into SQLite (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-j8f7-rjxc-mr56"/>
 <id>urn:bug-hou:GHSA-j8f7-rjxc-mr56</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのReadWriteLockがシンボリックリンクを追う。ローカル・MEDIUM&lt;br&gt;→ filelock 4.0.9以降に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.20.4, &amp;lt;= 4.0.8 → 4.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-112936&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのReadWriteLockがシンボリックリンクを追う。ローカル・MEDIUM&lt;br&gt;→ filelock 4.0.9以降に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.20.4, &amp;lt;= 4.0.8 → 4.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-112936&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: SoftFileLock stale-lock break removes a live lock file on a reused inode number and admits two holders (MEDIUM)</title>
+<title>[様子見] pip: filelock: SoftFileLock stale-lock break removes a live lock file on a reused inode number and admits two holders (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-fq56-3cx3-fjxp"/>
 <id>urn:bug-hou:GHSA-fq56-3cx3-fjxp</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockの古いロック解除で2者が同時保持。MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.22.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112935&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockの古いロック解除で2者が同時保持。MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.22.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112935&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: SoftReadWriteLock holder refresh writes through a hard link and hangs on a named pipe that another local user renames over its record (MEDIUM)</title>
+<title>[様子見] pip: filelock: SoftReadWriteLock holder refresh writes through a hard link and hangs on a named pipe that another local user renames over its record (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-fj95-fr6c-h845"/>
 <id>urn:bug-hou:GHSA-fj95-fr6c-h845</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのSoftReadWriteLockがハードリンク経由で書込。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 4.0.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112934&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのSoftReadWriteLockがハードリンク経由で書込。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 4.0.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112934&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock ReadWriteLock: a crafted lock database makes every acquire stall or hang regardless of timeout (MEDIUM)</title>
+<title>[様子見] pip: filelock ReadWriteLock: a crafted lock database makes every acquire stall or hang regardless of timeout (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cwqr-hh33-gh44"/>
 <id>urn:bug-hou:GHSA-cwqr-hh33-gh44</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockの細工DBで取得が停止。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.20.4, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112915&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockの細工DBで取得が停止。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.20.4, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112915&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: Symlink swap during SoftFileLock's writability check leaks whether a path exists and is writable by the lock taker (LOW)</title>
+<title>[様子見] pip: filelock: Symlink swap during SoftFileLock's writability check leaks whether a path exists and is writable by the lock taker (LOW)</title>
 <link href="https://github.com/advisories/GHSA-9j6q-wvj5-jgjg"/>
 <id>urn:bug-hou:GHSA-9j6q-wvj5-jgjg</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのシンボリックリンク差替えで情報漏れ。ローカル・LOW&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.32.6, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112912&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのシンボリックリンク差替えで情報漏れ。ローカル・LOW&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.32.6, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112912&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: StrictSoftFileLock and SoftReadWriteLock adopt a protocol directory another user created first, losing mutual exclusion (MEDIUM)</title>
+<title>[様子見] pip: filelock: StrictSoftFileLock and SoftReadWriteLock adopt a protocol directory another user created first, losing mutual exclusion (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9c4x-gm8v-wgc4"/>
 <id>urn:bug-hou:GHSA-9c4x-gm8v-wgc4</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockで他ユーザー作成のディレクトリを採用。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.30.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112911&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockで他ユーザー作成のディレクトリを採用。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.30.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112911&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL (MEDIUM)</title>
+<title>[様子見] pip: filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-8mx5-7m5m-r77g"/>
 <id>urn:bug-hou:GHSA-8mx5-7m5m-r77g</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのWindowsでmode無視。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.10.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112910&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのWindowsでmode無視。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.10.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112910&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: UnixFileLock truncates and chmods any regular file another user renames or hard-links onto the lock path (MEDIUM)</title>
+<title>[様子見] pip: filelock: UnixFileLock truncates and chmods any regular file another user renames or hard-links onto the lock path (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-69hj-f68j-2879"/>
 <id>urn:bug-hou:GHSA-69hj-f68j-2879</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockが差し替えられたファイルを切り詰め。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112909&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockが差し替えられたファイルを切り詰め。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112909&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見でよい] pip: filelock: StrictSoftFileLock creates its claim directories without the lock mode, so another local user with a write bit on them can end a live hold (MEDIUM)</title>
+<title>[様子見] pip: filelock: StrictSoftFileLock creates its claim directories without the lock mode, so another local user with a write bit on them can end a live hold (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6627-m3xw-93mp"/>
 <id>urn:bug-hou:GHSA-6627-m3xw-93mp</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; filelockのディレクトリ権限不備。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.30.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112908&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのディレクトリ権限不備。ローカル・MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 3.30.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112908&lt;/p&gt;</content>
 </entry>
 </feed>
