@@ -95,7 +95,7 @@ function showAbout() {
 
       <h3>3つの区分</h3>
       <table class="doc-table"><tbody>${levelRows}</tbody></table>
-      <p>仕分けはClaude（Anthropic社のAI）が、各脆弱性の説明文・CVSSスコア・悪用の有無をもとに、次の基準で行っています。</p>
+      <p>仕分けはClaude（Anthropic社のAI）が行っています。各脆弱性の説明文・CVSSスコア・悪用の有無を見て、次の基準で判定します。</p>
       <ul>
         <li><b>要対応</b>：CISA KEV（悪用が確認された脆弱性の一覧）に載っているもの。本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性で、ネットワーク越しに認証なしで突けるCRITICAL・HIGH。広く使われているパッケージ（Laravel、Symfony、express、Django、requestsなど）の、リモートから突けるCRITICAL</li>
         <li><b>要確認</b>：上に当てはまらないHIGH。特定の設定や拡張モジュールを使っているときだけ影響するもの。利用者の少ないパッケージのCRITICAL</li>
@@ -128,12 +128,12 @@ function showAbout() {
       </tbody></table>
 
       <h3>ウォッチリストとメール通知</h3>
-      <p><a href="#mine">ウォッチリスト</a>に「PHP 8.3.14」や「laravel/framework 12.50.0」のように登録すると、そのバージョンに当てはまる脆弱性だけを表示し、要対応・要確認・問題なしを判定します。登録内容はこのブラウザのlocalStorageに保存され、サーバーには送りません。</p>
-      <p>メールで受け取りたい場合は、ウォッチリストの「フィードURLをコピー」で取れるURLを、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a>など）に登録してください。全体の要対応だけなら <code>${esc(new URL("feeds/action.xml", location.href).href)}</code> です。</p>
+      <p><a href="#mine">ウォッチリスト</a>に「PHP 8.3.14」や「laravel/framework 12.50.0」のように登録すると、そのバージョンに当てはまる脆弱性だけを表示します。あわせて、要対応・要確認・問題なしのどれに当たるかも出します。登録内容はこのブラウザのlocalStorageに保存され、サーバーには送りません。</p>
+      <p>メールで受け取りたい場合は、ウォッチリストの「フィードURLをコピー」でURLを取り、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a>など）に登録してください。全体の要対応だけなら <code>${esc(new URL("feeds/action.xml", location.href).href)}</code> です。</p>
 
       <h3>知っておいてほしいこと</h3>
       <ul>
-        <li>表示しているのは直近${meta.days}日に公開されたCVEです。それより前の脆弱性は、ウォッチリストのパッケージ照合でだけ拾います</li>
+        <li>表示しているのは直近${meta.days}日に公開されたCVEです。それより前の脆弱性は、ウォッチリストでパッケージを照合したときだけ表示します</li>
         <li>NVDの分析が済んでいないCVEは、影響するバージョンの範囲がまだありません。ウォッチリストでは「バージョン情報なし（要確認）」に分けています</li>
         <li>新しく出たものは、次の仕分けまで最大6時間「未判定」になります</li>
         <li>仕分けは説明文とスコアからの自動判定です。自分の環境で使っていない機能の脆弱性が要対応に入ることもあります</li>

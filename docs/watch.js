@@ -323,7 +323,7 @@ async function showMine() {
   const box = $("#mine-view");
   box.innerHTML = `<div class="target-head"><h2>ウォッチリスト</h2><p>登録はこのブラウザに保存されます</p></div>
     ${formHtml()}
-    <p class="w-hint">「フィードURLをコピー」で取れるURLを、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a> など）に登録すると、新着がメールで届きます。
+    <p class="w-hint">「フィードURLをコピー」で取ったURLをRSSのメール転送サービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a> など）に登録すると、新着がメールで届きます。
     全体の「要対応」だけを受け取るなら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/action.xml"))}">このフィード</button>。</p>
     <div id="w-list">${list.length ? "" : '<p class="empty">まだ登録がありません。上のフォームから製品やパッケージを追加してください。</p>'}</div>`;
 
@@ -337,7 +337,7 @@ async function showMine() {
       try {
         await fetchLive(w);
       } catch (e) {
-        note = `過去分の問い合わせに失敗（${e.message}）。直近180日分だけで照合しています`;
+        note = `過去分の問い合わせに失敗しました（${e.message}）。直近180日分だけで照合しています`;
       }
     }
     const m = w.kind === "package" ? matchPackage(w, liveCached(w)) : matchProduct(w);

@@ -187,7 +187,7 @@ function renderKev(d) {
         <div class="meta"><span>対応期限 ${esc(k.due || "—")}</span></div>
       </div>
     </div>`;
-  let html = recent.length ? recent.map(row).join("") : `<p class="empty">直近${meta.days}日の追加はなし</p>`;
+  let html = recent.length ? recent.map(row).join("") : `<p class="empty">直近${meta.days}日の追加はありません</p>`;
   if (old.length) {
     html += `<details class="more"><summary class="mono">それ以前の${old.length}件</summary>${old.map(row).join("")}</details>`;
   }
