@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] pip: rucio has an Authorization Bypass on REST API endpoint for signing URLs (HIGH)</title>
+<title>[要確認] pip: rucio has an Authorization Bypass on REST API endpoint for signing URLs (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-5j9r-fx4x-rpvg"/>
 <id>urn:bug-hou:GHSA-5j9r-fx4x-rpvg</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; rucioのURL署名APIで認可回避。HIGH&lt;br&gt;→ rucio 35.9.0/38.6.0/41.0.0rc1に更新&lt;/p&gt;&lt;p&gt;rucio &amp;gt;= 1.16.1, &amp;lt; 35.9.0 → 35.9.0, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.0 → 38.6.0, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 41.0.0rc1 → 41.0.0rc1&lt;/p&gt;&lt;p&gt;CVE-2026-58273&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; rucioのURL署名APIで認可回避。HIGH&lt;br&gt;→ rucio 35.9.0/38.6.0/41.0.0rc1に更新&lt;/p&gt;&lt;p&gt;rucio &amp;gt;= 1.16.1, &amp;lt; 35.9.0 → 35.9.0, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.0 → 38.6.0, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 41.0.0rc1 → 41.0.0rc1&lt;/p&gt;&lt;p&gt;CVE-2026-58273&lt;/p&gt;</content>
 </entry>
 </feed>

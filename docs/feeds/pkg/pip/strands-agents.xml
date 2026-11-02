@@ -7,17 +7,17 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Strands Agents: Default FileSessionManager storage is world-readable on shared systems (MEDIUM)</title>
+<title>[様子見でよい] pip: Strands Agents: Default FileSessionManager storage is world-readable on shared systems (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-763v-5pjm-fx36"/>
 <id>urn:bug-hou:GHSA-763v-5pjm-fx36</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-763v-5pjm-fx36&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Strands Agentsのセッション保存が共有環境で全員に読取可能。MEDIUM&lt;br&gt;→ strands-agents 1.48.0に更新&lt;/p&gt;&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-763v-5pjm-fx36&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage (HIGH)</title>
+<title>[様子見でよい] pip: Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3w55-933p-8pv5"/>
 <id>urn:bug-hou:GHSA-3w55-933p-8pv5</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-3w55-933p-8pv5&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Strands Agentsのセッション保存でシンボリックリンクによるローカル権限昇格&lt;br&gt;→ strands-agents 1.48.0に更新&lt;/p&gt;&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-3w55-933p-8pv5&lt;/p&gt;</content>
 </entry>
 </feed>

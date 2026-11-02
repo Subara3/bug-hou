@@ -7,10 +7,10 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] npm: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service (HIGH)</title>
+<title>[要確認] npm: joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4528-x5fx-h6hg"/>
 <id>urn:bug-hou:GHSA-4528-x5fx-h6hg</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; joiのemail(multiple)で二乗時間のDoS。HIGH&lt;br&gt;→ joi 17.13.9/18.3.1に更新&lt;/p&gt;&lt;p&gt;joi &amp;gt;= 17.1.1, &amp;lt; 17.13.9 → 17.13.9, @hapi/joi &amp;gt;= 16.0.0, &amp;lt;= 17.1.1, joi &amp;gt;= 18.0.0, &amp;lt; 18.3.1 → 18.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-118772&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; joiのemail(multiple)で二乗時間のDoS。HIGH&lt;br&gt;→ joi 17.13.9/18.3.1に更新&lt;/p&gt;&lt;p&gt;joi &amp;gt;= 17.1.1, &amp;lt; 17.13.9 → 17.13.9, @hapi/joi &amp;gt;= 16.0.0, &amp;lt;= 17.1.1, joi &amp;gt;= 18.0.0, &amp;lt; 18.3.1 → 18.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-118772&lt;/p&gt;</content>
 </entry>
 </feed>

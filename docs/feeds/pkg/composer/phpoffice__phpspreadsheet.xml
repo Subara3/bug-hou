@@ -7,31 +7,31 @@
 <updated>2026-10-27T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] composer: PhpSpreadsheet: XmlScanner Bypass via Double-Encoded unentity() TOCTOU Allows XXE and Denial of Service (HIGH)</title>
+<title>[要確認] composer: PhpSpreadsheet: XmlScanner Bypass via Double-Encoded unentity() TOCTOU Allows XXE and Denial of Service (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rxj4-h86g-25gc"/>
 <id>urn:bug-hou:GHSA-rxj4-h86g-25gc</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; PhpSpreadsheetのXmlScanner回避でXXE。HIGH&lt;br&gt;→ PhpSpreadsheet 5.10.0/3.10.8に更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8&lt;/p&gt;&lt;p&gt;CVE-2026-108357&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; PhpSpreadsheetのXmlScanner回避でXXE。HIGH&lt;br&gt;→ PhpSpreadsheet 5.10.0/3.10.8に更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8&lt;/p&gt;&lt;p&gt;CVE-2026-108357&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] composer: PhpSpreadsheet ODS Reader: Unbounded number-rows-repeated → CPU &amp; Memory Exhaustion (DoS) (HIGH)</title>
+<title>[要確認] composer: PhpSpreadsheet ODS Reader: Unbounded number-rows-repeated → CPU &amp; Memory Exhaustion (DoS) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-j2w7-387v-m2rq"/>
 <id>urn:bug-hou:GHSA-j2w7-387v-m2rq</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; PhpSpreadsheetのODS読込でCPU・メモリ枯渇。HIGH&lt;br&gt;→ PhpSpreadsheet 5.10.0/3.10.8などに更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8, phpoffice/phpspreadsheet &amp;gt;= 2.2.0, &amp;lt;= 2.4.7 → 2.4.8, phpoffice/phpspreadsheet &amp;gt;= 2.0.0, &amp;lt;= 2.1.18 → 2.1.19, phpoffice/phpspreadsheet &amp;lt;= 1.30.6 → 1.30.7&lt;/p&gt;&lt;p&gt;CVE-2026-108359&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; PhpSpreadsheetのODS読込でCPU・メモリ枯渇。HIGH&lt;br&gt;→ PhpSpreadsheet 5.10.0/3.10.8などに更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8, phpoffice/phpspreadsheet &amp;gt;= 2.2.0, &amp;lt;= 2.4.7 → 2.4.8, phpoffice/phpspreadsheet &amp;gt;= 2.0.0, &amp;lt;= 2.1.18 → 2.1.19, phpoffice/phpspreadsheet &amp;lt;= 1.30.6 → 1.30.7&lt;/p&gt;&lt;p&gt;CVE-2026-108359&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] composer: PhpSpreadsheet: XmlScanner Bypass via ISO-2022 Escape Sequences Allows XXE and Denial of Service (HIGH)</title>
+<title>[要確認] composer: PhpSpreadsheet: XmlScanner Bypass via ISO-2022 Escape Sequences Allows XXE and Denial of Service (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3x94-m842-937c"/>
 <id>urn:bug-hou:GHSA-3x94-m842-937c</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; PhpSpreadsheetのXmlScanner回避でXXE。HIGH&lt;br&gt;→ PhpSpreadsheet 5.10.0/3.10.8などに更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8, phpoffice/phpspreadsheet &amp;gt;= 2.2.0, &amp;lt;= 2.4.7 → 2.4.8, phpoffice/phpspreadsheet &amp;gt;= 2.0.0, &amp;lt;= 2.1.18 → 2.1.19, phpoffice/phpspreadsheet &amp;lt;= 1.30.6 → 1.30.7&lt;/p&gt;&lt;p&gt;CVE-2026-108358&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; PhpSpreadsheetのXmlScanner回避でXXE。HIGH&lt;br&gt;→ PhpSpreadsheet 5.10.0/3.10.8などに更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8, phpoffice/phpspreadsheet &amp;gt;= 2.2.0, &amp;lt;= 2.4.7 → 2.4.8, phpoffice/phpspreadsheet &amp;gt;= 2.0.0, &amp;lt;= 2.1.18 → 2.1.19, phpoffice/phpspreadsheet &amp;lt;= 1.30.6 → 1.30.7&lt;/p&gt;&lt;p&gt;CVE-2026-108358&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] composer: PhpSpreadsheet: SSRF whitelist bypass via unre-validated HTTP redirect in Drawing::setPath external image loading (MEDIUM)</title>
+<title>[様子見でよい] composer: PhpSpreadsheet: SSRF whitelist bypass via unre-validated HTTP redirect in Drawing::setPath external image loading (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-2phh-27fw-q4gc"/>
 <id>urn:bug-hou:GHSA-2phh-27fw-q4gc</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; PhpSpreadsheetの外部画像読込でSSRF許可リスト回避。MEDIUM&lt;br&gt;→ PhpSpreadsheet 5.10.0などに更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8, phpoffice/phpspreadsheet &amp;gt;= 2.2.0, &amp;lt;= 2.4.7 → 2.4.8, phpoffice/phpspreadsheet &amp;gt;= 2.0.0, &amp;lt;= 2.1.18 → 2.1.19, phpoffice/phpspreadsheet &amp;lt;= 1.30.6 → 1.30.7&lt;/p&gt;&lt;p&gt;CVE-2026-108360&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; PhpSpreadsheetの外部画像読込でSSRF許可リスト回避。MEDIUM&lt;br&gt;→ PhpSpreadsheet 5.10.0などに更新&lt;/p&gt;&lt;p&gt;phpoffice/phpspreadsheet &amp;gt;= 4.0.0, &amp;lt;= 5.9.0 → 5.10.0, phpoffice/phpspreadsheet &amp;gt;= 3.3.0, &amp;lt;= 3.10.7 → 3.10.8, phpoffice/phpspreadsheet &amp;gt;= 2.2.0, &amp;lt;= 2.4.7 → 2.4.8, phpoffice/phpspreadsheet &amp;gt;= 2.0.0, &amp;lt;= 2.1.18 → 2.1.19, phpoffice/phpspreadsheet &amp;lt;= 1.30.6 → 1.30.7&lt;/p&gt;&lt;p&gt;CVE-2026-108360&lt;/p&gt;</content>
 </entry>
 </feed>

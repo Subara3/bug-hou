@@ -7,45 +7,45 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: GitPython command wrappers omit unsafe protocol and option checks (HIGH)</title>
+<title>[要確認] pip: GitPython command wrappers omit unsafe protocol and option checks (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-w8jc-g24h-crhw"/>
 <id>urn:bug-hou:GHSA-w8jc-g24h-crhw</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-w8jc-g24h-crhw&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのコマンドラッパーが危険なプロトコルやオプションを未検査。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-w8jc-g24h-crhw&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: GitPython parse_actor_and_date() is vulnerable to quadratic backtracking on malformed identity lines (HIGH)</title>
+<title>[要確認] pip: GitPython parse_actor_and_date() is vulnerable to quadratic backtracking on malformed identity lines (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-m64x-33q8-m5h7"/>
 <id>urn:bug-hou:GHSA-m64x-33q8-m5h7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-m64x-33q8-m5h7&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのparse_actor_and_date()で二乗時間のバックトラック。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-m64x-33q8-m5h7&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: GitPython: Submodule.move() follows an attacker-committed intermediate symlink outside the worktree (MEDIUM)</title>
+<title>[様子見でよい] pip: GitPython: Submodule.move() follows an attacker-committed intermediate symlink outside the worktree (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gq48-pqfc-9p58"/>
 <id>urn:bug-hou:GHSA-gq48-pqfc-9p58</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;GitPython &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-gq48-pqfc-9p58&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GitPythonのSubmodule.move()がシンボリックリンクで作業ツリー外へ。MEDIUM&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-gq48-pqfc-9p58&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: GitPython: separate_git_dir leaks env vars via crafted .gitmodules submodule name (MEDIUM)</title>
+<title>[様子見でよい] pip: GitPython: separate_git_dir leaks env vars via crafted .gitmodules submodule name (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-fx3j-rwgx-fr94"/>
 <id>urn:bug-hou:GHSA-fx3j-rwgx-fr94</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-fx3j-rwgx-fr94&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GitPythonで細工した.gitmodulesから環境変数が漏洩。MEDIUM&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-fx3j-rwgx-fr94&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: GitPython Remote.pull() refspec bypasses the --upload-pack unsafe-option guard, enabling arbitrary command execution (HIGH)</title>
+<title>[要確認] pip: GitPython Remote.pull() refspec bypasses the --upload-pack unsafe-option guard, enabling arbitrary command execution (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-f9j4-qggq-h239"/>
 <id>urn:bug-hou:GHSA-f9j4-qggq-h239</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;GitPython &amp;gt;= 3.1.30, &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-f9j4-qggq-h239&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのRemote.pull()でrefspecから任意コマンド実行。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;gt;= 3.1.30, &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-f9j4-qggq-h239&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: GitPython: arbitrary file read via attacker-controlled branch name in `Head.checkout()` (incomplete fix of CVE-2026-78679) (HIGH)</title>
+<title>[要確認] pip: GitPython: arbitrary file read via attacker-controlled branch name in `Head.checkout()` (incomplete fix of CVE-2026-78679) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-23mf-xhv8-69c2"/>
 <id>urn:bug-hou:GHSA-23mf-xhv8-69c2</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-23mf-xhv8-69c2&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのcheckout()でブランチ名から任意ファイル読取。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-23mf-xhv8-69c2&lt;/p&gt;</content>
 </entry>
 </feed>

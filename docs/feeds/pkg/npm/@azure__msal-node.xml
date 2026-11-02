@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint (HIGH)</title>
+<title>[要確認] npm: MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xcx6-jx8p-x3h5"/>
 <id>urn:bug-hou:GHSA-xcx6-jx8p-x3h5</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@azure/msal-node &amp;gt;= 5.0.0-beta.0, &amp;lt; 7.1.0 → 7.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-109461&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MSAL Nodeの認可コードフローでパラメータが攻撃者の宛先に漏洩。HIGH&lt;br&gt;→ @azure/msal-node 7.1.0に更新&lt;/p&gt;&lt;p&gt;@azure/msal-node &amp;gt;= 5.0.0-beta.0, &amp;lt; 7.1.0 → 7.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-109461&lt;/p&gt;</content>
 </entry>
 </feed>

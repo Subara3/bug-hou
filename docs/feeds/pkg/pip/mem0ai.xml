@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] pip: Mem0: Cross-tenant conversation leak via unescaped delimiter collision in session-scope key (_build_session_scope) (MEDIUM)</title>
+<title>[様子見でよい] pip: Mem0: Cross-tenant conversation leak via unescaped delimiter collision in session-scope key (_build_session_scope) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5324-3w58-qpp2"/>
 <id>urn:bug-hou:GHSA-5324-3w58-qpp2</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Mem0でテナント間の会話漏洩。MEDIUM&lt;br&gt;→ mem0ai 2.0.18/3.1.6に更新&lt;/p&gt;&lt;p&gt;mem0ai &amp;lt; 2.0.18 → 2.0.18, mem0ai &amp;lt; 3.1.6 → 3.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-116575&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Mem0でテナント間の会話漏洩。MEDIUM&lt;br&gt;→ mem0ai 2.0.18/3.1.6に更新&lt;/p&gt;&lt;p&gt;mem0ai &amp;lt; 2.0.18 → 2.0.18, mem0ai &amp;lt; 3.1.6 → 3.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-116575&lt;/p&gt;</content>
 </entry>
 </feed>

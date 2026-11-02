@@ -7,10 +7,10 @@
 <updated>2026-09-29T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] composer: Flysystem: WhitespacePathNormalizer's control-character (CorruptedPathDetected) check is bypassed by malformed UTF-8 in the path, affecting every adapter (LOW)</title>
+<title>[様子見でよい] composer: Flysystem: WhitespacePathNormalizer's control-character (CorruptedPathDetected) check is bypassed by malformed UTF-8 in the path, affecting every adapter (LOW)</title>
 <link href="https://github.com/advisories/GHSA-cxf4-7mrp-vvpr"/>
 <id>urn:bug-hou:GHSA-cxf4-7mrp-vvpr</id>
 <updated>2026-09-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Flysystemのパス制御文字チェック回避。LOW&lt;br&gt;→ league/flysystem 3.35.3に更新&lt;/p&gt;&lt;p&gt;league/flysystem &amp;lt;= 3.35.2 → 3.35.3&lt;/p&gt;&lt;p&gt;CVE-2026-102601&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Flysystemのパス制御文字チェック回避。LOW&lt;br&gt;→ league/flysystem 3.35.3に更新&lt;/p&gt;&lt;p&gt;league/flysystem &amp;lt;= 3.35.2 → 3.35.3&lt;/p&gt;&lt;p&gt;CVE-2026-102601&lt;/p&gt;</content>
 </entry>
 </feed>

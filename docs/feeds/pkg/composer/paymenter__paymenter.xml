@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade) (MEDIUM)</title>
+<title>[様子見でよい] composer: Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5gmm-hjfj-8ff7"/>
 <id>urn:bug-hou:GHSA-5gmm-hjfj-8ff7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-71537&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Paymenterのダウングレード処理で返金の二重取り競合。MEDIUM&lt;br&gt;→ paymenter 1.5.7に更新&lt;/p&gt;&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-71537&lt;/p&gt;</content>
 </entry>
 </feed>

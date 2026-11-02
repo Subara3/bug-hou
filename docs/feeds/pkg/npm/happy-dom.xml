@@ -7,24 +7,24 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution (HIGH)</title>
+<title>[要確認] npm: Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-834v-8h66-3h79"/>
 <id>urn:bug-hou:GHSA-834v-8h66-3h79</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;happy-dom &amp;gt;= 17.0.0, &amp;lt;= 21.0.3 → 21.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-115895&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Happy DOMで未サニタイズのimport別名からホスト上でコード実行。HIGH&lt;br&gt;→ happy-dom 21.0.4に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;gt;= 17.0.0, &amp;lt;= 21.0.3 → 21.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-115895&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] npm: Happy DOM: SSRF via iframe and link stylesheet when parsing untrusted HTML (HIGH)</title>
+<title>[要確認] npm: Happy DOM: SSRF via iframe and link stylesheet when parsing untrusted HTML (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-c8p4-j97h-3vg8"/>
 <id>urn:bug-hou:GHSA-c8p4-j97h-3vg8</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Happy DOMで信頼できないHTML解析時にSSRF。HIGH&lt;br&gt;→ happy-dom 21.0.0に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;lt;= 20.14.6 → 21.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-118660&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Happy DOMで信頼できないHTML解析時にSSRF。HIGH&lt;br&gt;→ happy-dom 21.0.0に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;lt;= 20.14.6 → 21.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-118660&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] npm: Happy DOM has cookie scope forgery: no DNS-label boundary on Domain= matching , attacker origin sets victim cookies (MEDIUM)</title>
+<title>[様子見でよい] npm: Happy DOM has cookie scope forgery: no DNS-label boundary on Domain= matching , attacker origin sets victim cookies (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5fpq-26gf-qwcr"/>
 <id>urn:bug-hou:GHSA-5fpq-26gf-qwcr</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Happy DOMのCookieドメイン照合の不備。MEDIUM&lt;br&gt;→ happy-dom 20.14.6以降に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;lt;= 20.14.5 → 20.14.6&lt;/p&gt;&lt;p&gt;CVE-2026-118661&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Happy DOMのCookieドメイン照合の不備。MEDIUM&lt;br&gt;→ happy-dom 20.14.6以降に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;lt;= 20.14.5 → 20.14.6&lt;/p&gt;&lt;p&gt;CVE-2026-118661&lt;/p&gt;</content>
 </entry>
 </feed>

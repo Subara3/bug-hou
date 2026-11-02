@@ -7,31 +7,31 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: better-auth: OAuth Proxy lets an attacker sign in as another user (HIGH)</title>
+<title>[要確認] npm: better-auth: OAuth Proxy lets an attacker sign in as another user (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r4xp-prcw-77qf"/>
 <id>urn:bug-hou:GHSA-r4xp-prcw-77qf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.5.0-beta.12, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;GHSA-r4xp-prcw-77qf&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; better-authのOAuth Proxyで他人としてサインイン可能。HIGH&lt;br&gt;→ better-auth 1.7.7に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.5.0-beta.12, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;GHSA-r4xp-prcw-77qf&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: better-auth: Device login approval does not show the requesting client or permissions (HIGH)</title>
+<title>[要確認] npm: better-auth: Device login approval does not show the requesting client or permissions (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-q84f-53jg-9ppm"/>
 <id>urn:bug-hou:GHSA-q84f-53jg-9ppm</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; better-authのデバイスログイン承認で要求元や権限が表示されない。HIGH&lt;br&gt;→ better-auth 1.7.0-rc.3に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
+<title>[要対応] npm: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-965c-763c-88jm"/>
 <id>urn:bug-hou:GHSA-965c-763c-88jm</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; better-authでOAuth stateをマジックリンクとして使い他人としてサインイン。CRITICAL&lt;br&gt;→ better-auth 1.7.7に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: @better-auth/drizzle-adapter: Concurrent requests can exceed rate limits on PostgreSQL (LOW)</title>
+<title>[様子見でよい] npm: @better-auth/drizzle-adapter: Concurrent requests can exceed rate limits on PostgreSQL (LOW)</title>
 <link href="https://github.com/advisories/GHSA-44jh-23m7-hpcf"/>
 <id>urn:bug-hou:GHSA-44jh-23m7-hpcf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@better-auth/drizzle-adapter &amp;gt;= 1.6.17, &amp;lt; 1.7.7 → 1.7.7, @better-auth/kysely-adapter &amp;gt;= 1.6.17, &amp;lt; 1.7.0 → 1.7.0, better-auth &amp;gt;= 1.6.17, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;GHSA-44jh-23m7-hpcf&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; better-authのPostgreSQLアダプタで同時リクエストがレート制限を超過。LOW&lt;br&gt;→ better-auth 1.7.7に更新&lt;/p&gt;&lt;p&gt;@better-auth/drizzle-adapter &amp;gt;= 1.6.17, &amp;lt; 1.7.7 → 1.7.7, @better-auth/kysely-adapter &amp;gt;= 1.6.17, &amp;lt; 1.7.0 → 1.7.0, better-auth &amp;gt;= 1.6.17, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;GHSA-44jh-23m7-hpcf&lt;/p&gt;</content>
 </entry>
 </feed>

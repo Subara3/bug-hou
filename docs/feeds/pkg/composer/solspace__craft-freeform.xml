@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: Solspace Freeform: Limited Twig template injection via submitted field values (MEDIUM)</title>
+<title>[様子見でよい] composer: Solspace Freeform: Limited Twig template injection via submitted field values (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gxrg-x694-283w"/>
 <id>urn:bug-hou:GHSA-gxrg-x694-283w</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;solspace/craft-freeform &amp;gt;= 5.0.0, &amp;lt;= 5.10.13 → 5.10.14&lt;/p&gt;&lt;p&gt;CVE-2026-73858&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Freeformの送信値で限定的なTwigテンプレート注入。MEDIUM&lt;br&gt;→ craft-freeform 5.10.14に更新&lt;/p&gt;&lt;p&gt;solspace/craft-freeform &amp;gt;= 5.0.0, &amp;lt;= 5.10.13 → 5.10.14&lt;/p&gt;&lt;p&gt;CVE-2026-73858&lt;/p&gt;</content>
 </entry>
 </feed>

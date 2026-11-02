@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>
+<title>[要確認] pip: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-45c3-73f7-pv4m"/>
 <id>urn:bug-hou:GHSA-45c3-73f7-pv4m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;dnspython &amp;lt; 2.9.0 → 2.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114605&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dnspythonのfrom_wire_parser()でCPUを過剰消費。HIGH&lt;br&gt;→ dnspython 2.9.0に更新&lt;/p&gt;&lt;p&gt;dnspython &amp;lt; 2.9.0 → 2.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114605&lt;/p&gt;</content>
 </entry>
 </feed>

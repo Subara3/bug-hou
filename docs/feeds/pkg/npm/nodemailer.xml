@@ -7,24 +7,24 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Nodemailer: RFC 5322 comment inside an angle-bracket address is never stripped (MEDIUM)</title>
+<title>[様子見でよい] npm: Nodemailer: RFC 5322 comment inside an angle-bracket address is never stripped (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-g73g-hqqh-jr95"/>
 <id>urn:bug-hou:GHSA-g73g-hqqh-jr95</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-g73g-hqqh-jr95&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Nodemailerで山括弧内のRFC 5322コメントが除去されない。MEDIUM&lt;br&gt;→ nodemailer 10.0.13に更新&lt;/p&gt;&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-g73g-hqqh-jr95&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: Nodemailer: Quadratic (O(n^2)) SMTP client reply parsing lets a malicious server or MITM cause a pre-auth remote denial of service (MEDIUM)</title>
+<title>[様子見でよい] npm: Nodemailer: Quadratic (O(n^2)) SMTP client reply parsing lets a malicious server or MITM cause a pre-auth remote denial of service (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4g23-2xm8-66gc"/>
 <id>urn:bug-hou:GHSA-4g23-2xm8-66gc</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.9 → 10.0.10&lt;/p&gt;&lt;p&gt;GHSA-4g23-2xm8-66gc&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; NodemailerのSMTP応答解析が二乗時間で悪意あるサーバーからDoS。MEDIUM&lt;br&gt;→ nodemailer 10.0.10に更新&lt;/p&gt;&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.9 → 10.0.10&lt;/p&gt;&lt;p&gt;GHSA-4g23-2xm8-66gc&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: Nodemailer: Quadratic backtracking in SMTP AUTH mechanism detection regexes allows pre-auth remote denial of service (MEDIUM)</title>
+<title>[様子見でよい] npm: Nodemailer: Quadratic backtracking in SMTP AUTH mechanism detection regexes allows pre-auth remote denial of service (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4ffr-jq9g-5ffx"/>
 <id>urn:bug-hou:GHSA-4ffr-jq9g-5ffx</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-4ffr-jq9g-5ffx&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; NodemailerのSMTP AUTH判定の正規表現で認証前DoS。MEDIUM&lt;br&gt;→ nodemailer 10.0.13に更新&lt;/p&gt;&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-4ffr-jq9g-5ffx&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] pip: LangGraph JavaScript custom authentication may permit cross-user Store access (HIGH)</title>
+<title>[要確認] pip: LangGraph JavaScript custom authentication may permit cross-user Store access (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4hm6-w6qq-w73v"/>
 <id>urn:bug-hou:GHSA-4hm6-w6qq-w73v</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; LangGraphのカスタム認証で他ユーザーのStoreに触れる。HIGH&lt;br&gt;→ langgraph-api 0.15.0に更新&lt;/p&gt;&lt;p&gt;langgraph-api &amp;gt;= 0.1.2, &amp;lt; 0.15.0 → 0.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-118668&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; LangGraphのカスタム認証で他ユーザーのStoreに触れる。HIGH&lt;br&gt;→ langgraph-api 0.15.0に更新&lt;/p&gt;&lt;p&gt;langgraph-api &amp;gt;= 0.1.2, &amp;lt; 0.15.0 → 0.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-118668&lt;/p&gt;</content>
 </entry>
 </feed>

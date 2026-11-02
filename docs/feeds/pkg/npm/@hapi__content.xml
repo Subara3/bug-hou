@@ -7,10 +7,10 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] npm: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service (HIGH)</title>
+<title>[要確認] npm: @hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-8494-f6mr-cjpv"/>
 <id>urn:bug-hou:GHSA-8494-f6mr-cjpv</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; @hapi/contentのContent-Disposition解析でDoS。HIGH&lt;br&gt;→ @hapi/content 6.0.3に更新&lt;/p&gt;&lt;p&gt;@hapi/content &amp;lt;= 6.0.2 → 6.0.3, content &amp;gt;= 3.0.6, &amp;lt;= 4.0.6&lt;/p&gt;&lt;p&gt;CVE-2026-119202&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @hapi/contentのContent-Disposition解析でDoS。HIGH&lt;br&gt;→ @hapi/content 6.0.3に更新&lt;/p&gt;&lt;p&gt;@hapi/content &amp;lt;= 6.0.2 → 6.0.3, content &amp;gt;= 3.0.6, &amp;lt;= 4.0.6&lt;/p&gt;&lt;p&gt;CVE-2026-119202&lt;/p&gt;</content>
 </entry>
 </feed>

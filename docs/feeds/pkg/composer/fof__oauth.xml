@@ -7,10 +7,10 @@
 <updated>2026-09-25T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] composer: FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider (CRITICAL)</title>
+<title>[要確認] composer: FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-g7vj-c29h-3h5m"/>
 <id>urn:bug-hou:GHSA-g7vj-c29h-3h5m</id>
 <updated>2026-09-25T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Flarum OAuthのDiscord連携で認証なし乗っ取り。利用者の少ない拡張のCRITICAL&lt;br&gt;→ fof/oauth 1.7.4/2.0.0-beta.4に更新&lt;/p&gt;&lt;p&gt;fof/oauth &amp;lt; 1.7.4 → 1.7.4, fof/oauth &amp;gt;= 2.0.0-beta.1, &amp;lt; 2.0.0-beta.4 → 2.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-92161&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Flarum OAuthのDiscord連携で認証なし乗っ取り。利用者の少ない拡張のCRITICAL&lt;br&gt;→ fof/oauth 1.7.4/2.0.0-beta.4に更新&lt;/p&gt;&lt;p&gt;fof/oauth &amp;lt; 1.7.4 → 1.7.4, fof/oauth &amp;gt;= 2.0.0-beta.1, &amp;lt; 2.0.0-beta.4 → 2.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-92161&lt;/p&gt;</content>
 </entry>
 </feed>

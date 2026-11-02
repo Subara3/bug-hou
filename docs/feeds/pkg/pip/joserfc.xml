@@ -7,17 +7,17 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] pip: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption (HIGH)</title>
+<title>[要確認] pip: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jpxq-7h8p-2q76"/>
 <id>urn:bug-hou:GHSA-jpxq-7h8p-2q76</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; joserfcのJWE recipients無制限でCPU枯渇。HIGH&lt;br&gt;→ joserfc 1.7.5以降に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.5 → 1.7.5&lt;/p&gt;&lt;p&gt;CVE-2026-119283&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; joserfcのJWE recipients無制限でCPU枯渇。HIGH&lt;br&gt;→ joserfc 1.7.5以降に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.5 → 1.7.5&lt;/p&gt;&lt;p&gt;CVE-2026-119283&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] pip: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection (MEDIUM)</title>
+<title>[様子見でよい] pip: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9pg5-8c7x-5hfx"/>
 <id>urn:bug-hou:GHSA-9pg5-8c7x-5hfx</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; joserfcのJWSサイズ確認前にメモリ確保。MEDIUM&lt;br&gt;→ joserfc 1.7.6に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.6 → 1.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-119284&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; joserfcのJWSサイズ確認前にメモリ確保。MEDIUM&lt;br&gt;→ joserfc 1.7.6に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.6 → 1.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-119284&lt;/p&gt;</content>
 </entry>
 </feed>

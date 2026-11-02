@@ -7,38 +7,38 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] npm: Seroval `fromJSON`/`fromCrossJSON` denial of service via unvalidated array node length (HIGH)</title>
+<title>[要確認] npm: Seroval `fromJSON`/`fromCrossJSON` denial of service via unvalidated array node length (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-wp97-x4hv-qvhp"/>
 <id>urn:bug-hou:GHSA-wp97-x4hv-qvhp</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; SerovalのfromJSONで配列長未検証によるDoS。HIGH&lt;br&gt;→ seroval 1.6.8に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.4.1, &amp;lt;= 1.6.7 → 1.6.8&lt;/p&gt;&lt;p&gt;CVE-2026-116584&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SerovalのfromJSONで配列長未検証によるDoS。HIGH&lt;br&gt;→ seroval 1.6.8に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.4.1, &amp;lt;= 1.6.7 → 1.6.8&lt;/p&gt;&lt;p&gt;CVE-2026-116584&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] npm: Seroval: Code injection through a typed array's own constructor property (MEDIUM)</title>
+<title>[様子見でよい] npm: Seroval: Code injection through a typed array's own constructor property (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-f86p-h4j2-7qgj"/>
 <id>urn:bug-hou:GHSA-f86p-h4j2-7qgj</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Serovalの型付き配列でコード注入。MEDIUM&lt;br&gt;→ seroval 1.6.11に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.6.0, &amp;lt; 1.6.11 → 1.6.11&lt;/p&gt;&lt;p&gt;CVE-2026-116583&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Serovalの型付き配列でコード注入。MEDIUM&lt;br&gt;→ seroval 1.6.11に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.6.0, &amp;lt; 1.6.11 → 1.6.11&lt;/p&gt;&lt;p&gt;CVE-2026-116583&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] npm: Seroval: Script injection through RegExp sources in serialized output (MEDIUM)</title>
+<title>[様子見でよい] npm: Seroval: Script injection through RegExp sources in serialized output (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9wx9-5pv9-3349"/>
 <id>urn:bug-hou:GHSA-9wx9-5pv9-3349</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; SerovalのRegExpでスクリプト注入。MEDIUM&lt;br&gt;→ seroval 1.6.10に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.5.5, &amp;lt; 1.6.10 → 1.6.10, seroval &amp;lt; 1.0.0 → 1.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116582&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; SerovalのRegExpでスクリプト注入。MEDIUM&lt;br&gt;→ seroval 1.6.10に更新&lt;/p&gt;&lt;p&gt;seroval &amp;gt;= 1.5.5, &amp;lt; 1.6.10 → 1.6.10, seroval &amp;lt; 1.0.0 → 1.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116582&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] npm: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS) (HIGH)</title>
+<title>[要確認] npm: Seroval: fromJSON deserializer trusts node-supplied array length and sequence doneAt (unauthenticated event-loop DoS) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-97r2-qh9m-474h"/>
 <id>urn:bug-hou:GHSA-97r2-qh9m-474h</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; SerovalのfromJSONで認証なしDoS。HIGH&lt;br&gt;→ seroval 1.6.8に更新&lt;/p&gt;&lt;p&gt;seroval &amp;lt;= 1.6.7 → 1.6.8&lt;/p&gt;&lt;p&gt;CVE-2026-116581&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SerovalのfromJSONで認証なしDoS。HIGH&lt;br&gt;→ seroval 1.6.8に更新&lt;/p&gt;&lt;p&gt;seroval &amp;lt;= 1.6.7 → 1.6.8&lt;/p&gt;&lt;p&gt;CVE-2026-116581&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] npm: Seroval: Deserialization invokes attacker-chosen callables: AsyncIteratorFactoryInstance calls source.on(listener) without type check (HIGH)</title>
+<title>[要確認] npm: Seroval: Deserialization invokes attacker-chosen callables: AsyncIteratorFactoryInstance calls source.on(listener) without type check (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7rv5-mrxv-xcr9"/>
 <id>urn:bug-hou:GHSA-7rv5-mrxv-xcr9</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Serovalのデシリアライズで任意の関数を呼ばせる。HIGH&lt;br&gt;→ seroval 1.6.8に更新&lt;/p&gt;&lt;p&gt;seroval &amp;lt;= 1.6.7 → 1.6.8&lt;/p&gt;&lt;p&gt;CVE-2026-116580&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Serovalのデシリアライズで任意の関数を呼ばせる。HIGH&lt;br&gt;→ seroval 1.6.8に更新&lt;/p&gt;&lt;p&gt;seroval &amp;lt;= 1.6.7 → 1.6.8&lt;/p&gt;&lt;p&gt;CVE-2026-116580&lt;/p&gt;</content>
 </entry>
 </feed>

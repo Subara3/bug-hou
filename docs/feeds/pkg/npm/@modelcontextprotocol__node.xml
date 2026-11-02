@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: MCP TypeScript SDK: HTTP server transports and handlers did not limit request body size or JSON-RPC batch length (HIGH)</title>
+<title>[要確認] npm: MCP TypeScript SDK: HTTP server transports and handlers did not limit request body size or JSON-RPC batch length (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-f897-62hf-6gxq"/>
 <id>urn:bug-hou:GHSA-f897-62hf-6gxq</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@modelcontextprotocol/sdk &amp;gt;= 1.10.0, &amp;lt; 1.30.1 → 1.30.1, @modelcontextprotocol/server &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/node &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/hono &amp;gt;= 2.0.0, &amp;lt; 2.0.1 → 2.0.1&lt;/p&gt;&lt;p&gt;GHSA-f897-62hf-6gxq&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MCP TypeScript SDKのHTTPトランスポートで本文サイズやバッチ長が無制限。HIGH&lt;br&gt;→ @modelcontextprotocol/sdk 1.30.1などに更新&lt;/p&gt;&lt;p&gt;@modelcontextprotocol/sdk &amp;gt;= 1.10.0, &amp;lt; 1.30.1 → 1.30.1, @modelcontextprotocol/server &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/node &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/hono &amp;gt;= 2.0.0, &amp;lt; 2.0.1 → 2.0.1&lt;/p&gt;&lt;p&gt;GHSA-f897-62hf-6gxq&lt;/p&gt;</content>
 </entry>
 </feed>

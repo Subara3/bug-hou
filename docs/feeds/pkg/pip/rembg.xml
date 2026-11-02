@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Rembg: Unauthenticated SAM model injection permits local-file disclosure through malicious ONNX graphs (HIGH)</title>
+<title>[要確認] pip: Rembg: Unauthenticated SAM model injection permits local-file disclosure through malicious ONNX graphs (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-qr6x-7v33-6qmg"/>
 <id>urn:bug-hou:GHSA-qr6x-7v33-6qmg</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;rembg &amp;lt; 2.0.82 → 2.0.82&lt;/p&gt;&lt;p&gt;CVE-2026-115924&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Rembgで認証なしのSAMモデル注入からローカルファイル漏洩。HIGH&lt;br&gt;→ rembg 2.0.82に更新&lt;/p&gt;&lt;p&gt;rembg &amp;lt; 2.0.82 → 2.0.82&lt;/p&gt;&lt;p&gt;CVE-2026-115924&lt;/p&gt;</content>
 </entry>
 </feed>

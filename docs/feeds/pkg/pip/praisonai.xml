@@ -7,10 +7,10 @@
 <updated>2026-10-29T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] pip: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox (HIGH)</title>
+<title>[要確認] pip: PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-26mh-57q7-jfvr"/>
 <id>urn:bug-hou:GHSA-26mh-57q7-jfvr</id>
 <updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; PraisonAIのASTサンドボックス破りでRCE。HIGH&lt;br&gt;→ praisonai 4.6.78に更新&lt;/p&gt;&lt;p&gt;praisonai &amp;lt; 4.6.78 → 4.6.78&lt;/p&gt;&lt;p&gt;CVE-2026-61438&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; PraisonAIのASTサンドボックス破りでRCE。HIGH&lt;br&gt;→ praisonai 4.6.78に更新&lt;/p&gt;&lt;p&gt;praisonai &amp;lt; 4.6.78 → 4.6.78&lt;/p&gt;&lt;p&gt;CVE-2026-61438&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,10 +7,10 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] npm: follow-redirects: Cross-realm sensitiveHeaders arrays are discarded and custom credentials can follow redirects (HIGH)</title>
+<title>[要確認] npm: follow-redirects: Cross-realm sensitiveHeaders arrays are discarded and custom credentials can follow redirects (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-mrwp-f3q8-3g9p"/>
 <id>urn:bug-hou:GHSA-mrwp-f3q8-3g9p</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; follow-redirectsで資格情報がリダイレクト先に送られる。HIGH&lt;br&gt;→ follow-redirects 1.16.2に更新&lt;/p&gt;&lt;p&gt;follow-redirects &amp;gt;= 1.16.0, &amp;lt;= 1.16.1 → 1.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-116689&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; follow-redirectsで資格情報がリダイレクト先に送られる。HIGH&lt;br&gt;→ follow-redirects 1.16.2に更新&lt;/p&gt;&lt;p&gt;follow-redirects &amp;gt;= 1.16.0, &amp;lt;= 1.16.1 → 1.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-116689&lt;/p&gt;</content>
 </entry>
 </feed>

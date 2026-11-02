@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] pip: Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it (CRITICAL)</title>
+<title>[要確認] pip: Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-6jp4-8v48-cc5v"/>
 <id>urn:bug-hou:GHSA-6jp4-8v48-cc5v</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Electrumで悪意あるサーバーが送信直後の取引を差替え。利用者の少ないCRITICAL&lt;br&gt;→ electrum 4.8.3に更新&lt;/p&gt;&lt;p&gt;electrum &amp;lt; 4.8.3 → 4.8.3&lt;/p&gt;&lt;p&gt;CVE-2026-117601&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Electrumで悪意あるサーバーが送信直後の取引を差替え。利用者の少ないCRITICAL&lt;br&gt;→ electrum 4.8.3に更新&lt;/p&gt;&lt;p&gt;electrum &amp;lt; 4.8.3 → 4.8.3&lt;/p&gt;&lt;p&gt;CVE-2026-117601&lt;/p&gt;</content>
 </entry>
 </feed>

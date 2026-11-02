@@ -7,353 +7,353 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>PHP: Grav: config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled (HIGH)</title>
+<title>[要確認] PHP: Grav: config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xjw5-q542-3vmr"/>
 <id>urn:bug-hou:GHSA-xjw5-q542-3vmr</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76846&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravでconfig_access有効時にsystem設定の秘密が漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76846&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Missing admin.super guard on core group blueprint access field allows admin.users operator to escalate to super-admin (HIGH)</title>
+<title>[要確認] PHP: Grav: Missing admin.super guard on core group blueprint access field allows admin.users operator to escalate to super-admin (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xhfv-7758-r9hx"/>
 <id>urn:bug-hou:GHSA-xhfv-7758-r9hx</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75837&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravでadmin.users権限者がスーパー管理者に昇格。HIGH&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75837&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: react/http: A malformed HTTP chunked body can lead to a denial-of-service and peg the CPU (HIGH)</title>
+<title>[要確認] PHP: react/http: A malformed HTTP chunked body can lead to a denial-of-service and peg the CPU (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-x424-64qh-5j54"/>
 <id>urn:bug-hou:GHSA-x424-64qh-5j54</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;react/http &amp;gt;= 0.6.0, &amp;lt;= 1.11.0 → 1.11.1&lt;/p&gt;&lt;p&gt;CVE-2026-84997&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; react/httpで不正なチャンク本文によりCPUを占有しDoS。HIGH&lt;br&gt;→ react/http 1.11.1に更新&lt;/p&gt;&lt;p&gt;react/http &amp;gt;= 0.6.0, &amp;lt;= 1.11.0 → 1.11.1&lt;/p&gt;&lt;p&gt;CVE-2026-84997&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
+<title>[様子見でよい] PHP: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-w998-qmw9-mf4m"/>
 <id>urn:bug-hou:GHSA-w998-qmw9-mf4m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images (HIGH)</title>
+<title>[要確認] PHP: Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-w3f4-8pj2-599w"/>
 <id>urn:bug-hou:GHSA-w3f4-8pj2-599w</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav = 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69089&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのwatermark()でパストラバーサルし任意ファイル漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.11に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69089&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection (CRITICAL)</title>
+<title>[要対応] PHP: CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-vjqc-q4mp-2rvf"/>
 <id>urn:bug-hou:GHSA-vjqc-q4mp-2rvf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; CakePHPのFunctionsBuilderの複数メソッドでSQL注入。CRITICAL&lt;br&gt;→ cakephp 4.5.12/database 4.6.5/5.1.9/5.2.14/5.3.7に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>
+<title>[要確認] PHP: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-vfmf-q6x9-cw96"/>
 <id>urn:bug-hou:GHSA-vfmf-q6x9-cw96</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75828&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdetectXss回避で格納型XSS。CRITICAL&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75828&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials (HIGH)</title>
+<title>[要確認] PHP: Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-v3f3-cmj4-cvj9"/>
 <id>urn:bug-hou:GHSA-v3f3-cmj4-cvj9</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76086&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; FormieのフォームSSRFで保存済み連携の認証情報が漏洩。HIGH&lt;br&gt;→ verbb/formie 2.2.23/3.1.31に更新&lt;/p&gt;&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76086&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav CMS vulnerable to remote code execution via .zip file upload (HIGH)</title>
+<title>[要確認] PHP: Grav CMS vulnerable to remote code execution via .zip file upload (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r94f-hx44-8jqf"/>
 <id>urn:bug-hou:GHSA-r94f-hx44-8jqf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.13 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72819&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Grav CMSでzipアップロードからRCE。HIGH&lt;br&gt;→ getgrav/grav 2.0.13に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.13 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72819&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki has a query debug output XSS (`DebugFormatter`) (MEDIUM)</title>
+<title>[様子見でよい] PHP: Semantic MediaWiki has a query debug output XSS (`DebugFormatter`) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q5fm-9mx6-44f4"/>
 <id>urn:bug-hou:GHSA-q5fm-9mx6-44f4</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77610&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのクエリデバッグ出力でXSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77610&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Single invalid UTF-8 byte disables every rule in Security::detectXss(), bypassing the page-content XSS safety gate (MEDIUM)</title>
+<title>[様子見でよい] PHP: Grav: Single invalid UTF-8 byte disables every rule in Security::detectXss(), bypassing the page-content XSS safety gate (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q2j8-x8hf-63ch"/>
 <id>urn:bug-hou:GHSA-q2j8-x8hf-63ch</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75834&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Gravで不正UTF-8の1バイトによりdetectXssを回避。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75834&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths (HIGH)</title>
+<title>[要確認] PHP: Grav: The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-p597-crqc-m349"/>
 <id>urn:bug-hou:GHSA-p597-crqc-m349</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.16 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72698&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのsystem/site/theme変数がTwigサンドボックスを素通り。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.16 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72698&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()` (MEDIUM)</title>
+<title>[様子見でよい] PHP: REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()` (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mf2p-wjp4-99pq"/>
 <id>urn:bug-hou:GHSA-mf2p-wjp4-99pq</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63001&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; REDAXOのメディアマネージャー種別名で格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63001&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates (MEDIUM)</title>
+<title>[様子見でよい] PHP: REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-m8r3-22v6-g877"/>
 <id>urn:bug-hou:GHSA-m8r3-22v6-g877</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; REDAXOのパッケージ更新にCSRF対策がない。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki'a missing authorization in the smwtask API module allows unauthenticated access to admin-only maintenance tasks (HIGH)</title>
+<title>[要確認] PHP: Semantic MediaWiki'a missing authorization in the smwtask API module allows unauthenticated access to admin-only maintenance tasks (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jr78-w6w5-m8f8"/>
 <id>urn:bug-hou:GHSA-jr78-w6w5-m8f8</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.0.0, &amp;lt;= 7.2.1 → 7.3.0&lt;/p&gt;&lt;p&gt;GHSA-jr78-w6w5-m8f8&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH&lt;br&gt;→ semantic-media-wiki 7.3.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.0.0, &amp;lt;= 7.2.1 → 7.3.0&lt;/p&gt;&lt;p&gt;GHSA-jr78-w6w5-m8f8&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion (HIGH)</title>
+<title>[要確認] PHP: Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jq29-c7v8-rg55"/>
 <id>urn:bug-hou:GHSA-jq29-c7v8-rg55</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72695&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdeleteFile()でパストラバーサルし任意ファイル削除。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72695&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated) (MEDIUM)</title>
+<title>[様子見でよい] PHP: Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-jg26-q8hg-3pq4"/>
 <id>urn:bug-hou:GHSA-jg26-q8hg-3pq4</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;sulu/sulu &amp;lt; 2.6.25 → 2.6.25, sulu/sulu &amp;gt;= 3.0.0, &amp;lt; 3.0.8 → 3.0.8&lt;/p&gt;&lt;p&gt;CVE-2026-92692&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Suluのcategoriesパラメータで認証なしJCR-SQL2注入。MEDIUM&lt;br&gt;→ sulu/sulu 2.6.25/3.0.8に更新&lt;/p&gt;&lt;p&gt;sulu/sulu &amp;lt; 2.6.25 → 2.6.25, sulu/sulu &amp;gt;= 3.0.0, &amp;lt; 3.0.8 → 3.0.8&lt;/p&gt;&lt;p&gt;CVE-2026-92692&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki has an open redirect in Special:URIResolver (MEDIUM)</title>
+<title>[様子見でよい] PHP: Semantic MediaWiki has an open redirect in Special:URIResolver (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-hw3m-8j5x-94ff"/>
 <id>urn:bug-hou:GHSA-hw3m-8j5x-94ff</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77609&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのURIResolverでオープンリダイレクト。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77609&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki vulnerable to stored XSS through wikitext via improper use of non-reserved data attributes (HIGH)</title>
+<title>[要確認] PHP: Semantic MediaWiki vulnerable to stored XSS through wikitext via improper use of non-reserved data attributes (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-hg8h-557g-q8pp"/>
 <id>urn:bug-hou:GHSA-hg8h-557g-q8pp</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.1.0, &amp;lt; 7.0.0 → 7.0.0&lt;/p&gt;&lt;p&gt;CVE-2025-61682&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiでwikitextのdata属性から格納型XSS。HIGH&lt;br&gt;→ semantic-media-wiki 7.0.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.1.0, &amp;lt; 7.0.0 → 7.0.0&lt;/p&gt;&lt;p&gt;CVE-2025-61682&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Solspace Freeform: Limited Twig template injection via submitted field values (MEDIUM)</title>
+<title>[様子見でよい] PHP: Solspace Freeform: Limited Twig template injection via submitted field values (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gxrg-x694-283w"/>
 <id>urn:bug-hou:GHSA-gxrg-x694-283w</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;solspace/craft-freeform &amp;gt;= 5.0.0, &amp;lt;= 5.10.13 → 5.10.14&lt;/p&gt;&lt;p&gt;CVE-2026-73858&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Freeformの送信値で限定的なTwigテンプレート注入。MEDIUM&lt;br&gt;→ craft-freeform 5.10.14に更新&lt;/p&gt;&lt;p&gt;solspace/craft-freeform &amp;gt;= 5.0.0, &amp;lt;= 5.10.13 → 5.10.14&lt;/p&gt;&lt;p&gt;CVE-2026-73858&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Chamilo LMS CStudio upload flow allows unauthenticated remote code execution (CRITICAL)</title>
+<title>[要確認] PHP: Chamilo LMS CStudio upload flow allows unauthenticated remote code execution (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-g4c3-4g96-6g4m"/>
 <id>urn:bug-hou:GHSA-g4c3-4g96-6g4m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;chamilo/chamilo-lms &amp;lt;= 2.0.0 → 2.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-45140&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Chamilo LMSのCStudioアップロードで認証なしRCE。CRITICAL&lt;br&gt;→ chamilo-lms 2.0.1に更新&lt;/p&gt;&lt;p&gt;chamilo/chamilo-lms &amp;lt;= 2.0.0 → 2.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-45140&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav (MEDIUM)</title>
+<title>[様子見でよい] PHP: Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-ffmg-hfvg-jhg9"/>
 <id>urn:bug-hou:GHSA-ffmg-hfvg-jhg9</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav = 2.0.0-rc.9 → 2.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-58657&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Gravの画像resize()で格納型CSS注入。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.0に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.0-rc.9 → 2.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-58657&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Blueprint dynamic-data bare-function branch is denylist-gated and omits error_log, giving arbitrary file write (CRITICAL)</title>
+<title>[要確認] PHP: Grav: Blueprint dynamic-data bare-function branch is denylist-gated and omits error_log, giving arbitrary file write (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-f8wv-xp27-6gq7"/>
 <id>urn:bug-hou:GHSA-f8wv-xp27-6gq7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75827&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのブループリント動的データでerror_logから任意ファイル書込。CRITICAL&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75827&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token (MEDIUM)</title>
+<title>[様子見でよい] PHP: Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cx86-7xwp-w9wf"/>
 <id>urn:bug-hou:GHSA-cx86-7xwp-w9wf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 7.0.0, &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77616&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSpecial:Askで偽造トークンの反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 7.0.0, &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77616&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: FlexDirectory::dynamicDataField() executes arbitrary callables from blueprint data with no validation (HIGH)</title>
+<title>[要確認] PHP: Grav: FlexDirectory::dynamicDataField() executes arbitrary callables from blueprint data with no validation (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-c4wf-2xxc-68qm"/>
 <id>urn:bug-hou:GHSA-c4wf-2xxc-68qm</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;gt;= 1.7.0, &amp;lt; 2.0.9 → 2.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-65608&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdynamicDataField()が検証なしに任意のcallableを実行。HIGH&lt;br&gt;→ getgrav/grav 2.0.9に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 1.7.0, &amp;lt; 2.0.9 → 2.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-65608&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354) (MEDIUM)</title>
+<title>[様子見でよい] PHP: Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9rcc-pmj8-ffhr"/>
 <id>urn:bug-hou:GHSA-9rcc-pmj8-ffhr</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 4.2.0, &amp;lt;= 7.2.0 → 7.2.1&lt;/p&gt;&lt;p&gt;GHSA-9rcc-pmj8-ffhr&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのFacetedSearchで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.1に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 4.2.0, &amp;lt;= 7.2.0 → 7.2.1&lt;/p&gt;&lt;p&gt;GHSA-9rcc-pmj8-ffhr&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Origin validation bypass in Uri::referrer() and Pages::referrerRoute() via unanchored prefix match (LOW)</title>
+<title>[様子見でよい] PHP: Grav: Origin validation bypass in Uri::referrer() and Pages::referrerRoute() via unanchored prefix match (LOW)</title>
 <link href="https://github.com/advisories/GHSA-9ccq-2jfg-qw33"/>
 <id>urn:bug-hou:GHSA-9ccq-2jfg-qw33</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72702&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのUri::referrer()で前方一致によるOrigin検証回避。LOW&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72702&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Decompression-bomb size cap bypassed by forged ZIP size in ZipArchiver/Installer (MEDIUM)</title>
+<title>[様子見でよい] PHP: Grav: Decompression-bomb size cap bypassed by forged ZIP size in ZipArchiver/Installer (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-8h9x-89f2-m7x3"/>
 <id>urn:bug-hou:GHSA-8h9x-89f2-m7x3</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav = 2.0.1 → 2.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-61449&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのZIP展開で偽装サイズにより解凍爆弾の上限を回避。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.2に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.1 → 2.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-61449&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki affected by Special:Ask table `sep` parameter reflected XSS (MEDIUM)</title>
+<title>[様子見でよい] PHP: Semantic MediaWiki affected by Special:Ask table `sep` parameter reflected XSS (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7xv3-gf2g-498h"/>
 <id>urn:bug-hou:GHSA-7xv3-gf2g-498h</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77607&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSpecial:Askのsepで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77607&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Incomplete callable validation in blueprint dynamic fields allows arbitrary static method invocation and file disclosure (HIGH)</title>
+<title>[要確認] PHP: Grav: Incomplete callable validation in blueprint dynamic fields allows arbitrary static method invocation and file disclosure (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7pgq-cr25-xvc8"/>
 <id>urn:bug-hou:GHSA-7pgq-cr25-xvc8</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;gt;= 2.0.7, &amp;lt;= 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69088&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのブループリント動的フィールドで任意の静的メソッド呼出。HIGH&lt;br&gt;→ getgrav/grav 2.0.11に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 2.0.7, &amp;lt;= 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69088&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Stored XSS via Markdown audio/video media &lt;source&gt; URL (MEDIUM)</title>
+<title>[様子見でよい] PHP: Grav: Stored XSS via Markdown audio/video media &lt;source&gt; URL (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6qw9-4vv5-jr97"/>
 <id>urn:bug-hou:GHSA-6qw9-4vv5-jr97</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75831&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのMarkdown音声・動画sourceのURLで格納型XSS。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75831&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: WPGraphQL: Contributor can publish and modify posts without the required capabilities via updatePost (MEDIUM)</title>
+<title>[様子見でよい] PHP: WPGraphQL: Contributor can publish and modify posts without the required capabilities via updatePost (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5mmc-8pc9-wggg"/>
 <id>urn:bug-hou:GHSA-5mmc-8pc9-wggg</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;wp-graphql/wp-graphql &amp;lt; 2.22.2&lt;/p&gt;&lt;p&gt;CVE-2026-88974&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; WPGraphQLで寄稿者が権限なしに投稿を公開・変更。MEDIUM&lt;/p&gt;&lt;p&gt;wp-graphql/wp-graphql &amp;lt; 2.22.2&lt;/p&gt;&lt;p&gt;CVE-2026-88974&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade) (MEDIUM)</title>
+<title>[様子見でよい] PHP: Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5gmm-hjfj-8ff7"/>
 <id>urn:bug-hou:GHSA-5gmm-hjfj-8ff7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-71537&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Paymenterのダウングレード処理で返金の二重取り競合。MEDIUM&lt;br&gt;→ paymenter 1.5.7に更新&lt;/p&gt;&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-71537&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki has reflected XSS in `Special:SearchByProperty` (`property` and `value` parameters) (MEDIUM)</title>
+<title>[様子見でよい] PHP: Semantic MediaWiki has reflected XSS in `Special:SearchByProperty` (`property` and `value` parameters) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-59xw-qv23-j3rc"/>
 <id>urn:bug-hou:GHSA-59xw-qv23-j3rc</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77608&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSearchByPropertyで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77608&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`) (HIGH)</title>
+<title>[要確認] PHP: Grav: Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4v9q-p283-qc2m"/>
 <id>urn:bug-hou:GHSA-4v9q-p283-qc2m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-74907&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのplugin-asset-map.phpで認証なしパストラバーサル。HIGH&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-74907&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content (HIGH)</title>
+<title>[要確認] PHP: Grav: media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-47ch-6w46-6xm7"/>
 <id>urn:bug-hou:GHSA-47ch-6w46-6xm7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72697&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのmedia_directory()でパストラバーサルとファイル内容漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72697&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Semantic MediaWiki has reflected XSS in Special:Ask plain table headers (MEDIUM)</title>
+<title>[様子見でよい] PHP: Semantic MediaWiki has reflected XSS in Special:Ask plain table headers (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3jp5-3h47-28qf"/>
 <id>urn:bug-hou:GHSA-3jp5-3h47-28qf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77606&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Semantic MediaWikiのSpecial:Ask表ヘッダーで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77606&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet() (HIGH)</title>
+<title>[要確認] PHP: Grav: UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet() (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3jhr-mxmx-38cx"/>
 <id>urn:bug-hou:GHSA-3jhr-mxmx-38cx</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76839&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのTwigサンドボックスで編集者がパスワードハッシュや2FA秘密を取得。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76839&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection (LOW)</title>
+<title>[様子見でよい] PHP: Grav: Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection (LOW)</title>
 <link href="https://github.com/advisories/GHSA-38p6-h87p-r4cg"/>
 <id>urn:bug-hou:GHSA-38p6-h87p-r4cg</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72701&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのCSRF用nonce比較が定数時間でない。LOW&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72701&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Grav: Stored XSS via quoted-attribute bypass in detectXss (MEDIUM)</title>
+<title>[様子見でよい] PHP: Grav: Stored XSS via quoted-attribute bypass in detectXss (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-269c-h76q-8cxw"/>
 <id>urn:bug-hou:GHSA-269c-h76q-8cxw</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;gt;= 1.5.2, &amp;lt;= 2.0.12 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72832&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのdetectXssを引用属性で回避し格納型XSS。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.13に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 1.5.2, &amp;lt;= 2.0.12 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72832&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] PHP: AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery (MEDIUM)</title>
+<title>[様子見でよい] PHP: AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wm25-49w3-5qrg"/>
 <id>urn:bug-hou:GHSA-wm25-49w3-5qrg</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AdminNeoのCSRFトークン秘密が推測可能。MEDIUM&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96629&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; AdminNeoのCSRFトークン秘密が推測可能。MEDIUM&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96629&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] PHP: AdminNeo Vulnerable to XSS via Rogue MySQL Server Version String (CSP Nonce Bypass) (HIGH)</title>
+<title>[要確認] PHP: AdminNeo Vulnerable to XSS via Rogue MySQL Server Version String (CSP Nonce Bypass) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rx7m-wxwq-vxr9"/>
 <id>urn:bug-hou:GHSA-rx7m-wxwq-vxr9</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoで不正MySQLサーバーのバージョン文字列からXSS。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96632&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AdminNeoで不正MySQLサーバーのバージョン文字列からXSS。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96632&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] PHP: AdminNeo: RCE via SQLite VACUUM INTO (ATTACH Blocklist Bypass) (HIGH)</title>
+<title>[要確認] PHP: AdminNeo: RCE via SQLite VACUUM INTO (ATTACH Blocklist Bypass) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-q5mp-gfjf-cf2j"/>
 <id>urn:bug-hou:GHSA-q5mp-gfjf-cf2j</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoでSQLiteのVACUUM INTOによるRCE。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96630&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AdminNeoでSQLiteのVACUUM INTOによるRCE。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96630&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] PHP: AdminNeo SQLite: multi_query Incorrect Check of Function Return Value RCE (MEDIUM)</title>
+<title>[様子見でよい] PHP: AdminNeo SQLite: multi_query Incorrect Check of Function Return Value RCE (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-p96f-p2p2-2g3h"/>
 <id>urn:bug-hou:GHSA-p96f-p2p2-2g3h</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AdminNeoのSQLite関連RCE。MEDIUM&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96634&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; AdminNeoのSQLite関連RCE。MEDIUM&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96634&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] PHP: AdminNeo: version-cache array injection causes persistent denial of service (HIGH)</title>
+<title>[要確認] PHP: AdminNeo: version-cache array injection causes persistent denial of service (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jm85-8cpp-9cjc"/>
 <id>urn:bug-hou:GHSA-jm85-8cpp-9cjc</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoのバージョンキャッシュで持続的DoS。HIGH&lt;br&gt;→ AdminNeo 5.5.0以降に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;gt;= 4.6.2, &amp;lt; 5.5.0 → 5.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-59978&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AdminNeoのバージョンキャッシュで持続的DoS。HIGH&lt;br&gt;→ AdminNeo 5.5.0以降に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;gt;= 4.6.2, &amp;lt; 5.5.0 → 5.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-59978&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] PHP: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling (MEDIUM)</title>
+<title>[様子見でよい] PHP: PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9vw2-f4vp-x7gf"/>
 <id>urn:bug-hou:GHSA-9vw2-f4vp-x7gf</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 共有一時ディレクトリ経由のローカル攻撃。MEDIUM&lt;br&gt;→ PHPUnit 13.4.4に更新&lt;/p&gt;&lt;p&gt;phpunit/phpunit &amp;gt;= 13.4.0, &amp;lt; 13.4.4 → 13.4.4&lt;/p&gt;&lt;p&gt;CVE-2026-119193&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; 共有一時ディレクトリ経由のローカル攻撃。MEDIUM&lt;br&gt;→ PHPUnit 13.4.4に更新&lt;/p&gt;&lt;p&gt;phpunit/phpunit &amp;gt;= 13.4.0, &amp;lt; 13.4.4 → 13.4.4&lt;/p&gt;&lt;p&gt;CVE-2026-119193&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] PHP: AdminNeo has Cookie Attribute Injection via Unsanitized X-Forwarded-Prefix in Set-Cookie Headers (HIGH)</title>
+<title>[要確認] PHP: AdminNeo has Cookie Attribute Injection via Unsanitized X-Forwarded-Prefix in Set-Cookie Headers (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-79wv-8rh2-9vp2"/>
 <id>urn:bug-hou:GHSA-79wv-8rh2-9vp2</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoのX-Forwarded-PrefixでCookie属性注入。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;gt;= 4.6.0, &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96631&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AdminNeoのX-Forwarded-PrefixでCookie属性注入。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;gt;= 4.6.0, &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96631&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] PHP: AdminNeo SQLite Database-List Drop Arbitrary File Deletion (HIGH)</title>
+<title>[要確認] PHP: AdminNeo SQLite Database-List Drop Arbitrary File Deletion (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-6vfx-w7q3-42gq"/>
 <id>urn:bug-hou:GHSA-6vfx-w7q3-42gq</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AdminNeoのSQLite一覧から任意ファイル削除。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96633&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AdminNeoのSQLite一覧から任意ファイル削除。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96633&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] PHP: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets (LOW)</title>
+<title>[様子見でよい] PHP: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets (LOW)</title>
 <link href="https://github.com/advisories/GHSA-pg53-p7qp-65cv"/>
 <id>urn:bug-hou:GHSA-pg53-p7qp-65cv</id>
 <updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; PocketMine-MPの繰り返しパケットによる負荷。LOW&lt;br&gt;→ 5.44.2に更新&lt;/p&gt;&lt;p&gt;pocketmine/pocketmine-mp &amp;lt; 5.44.2 → 5.44.2&lt;/p&gt;&lt;p&gt;GHSA-pg53-p7qp-65cv&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; PocketMine-MPの繰り返しパケットによる負荷。LOW&lt;br&gt;→ 5.44.2に更新&lt;/p&gt;&lt;p&gt;pocketmine/pocketmine-mp &amp;lt; 5.44.2 → 5.44.2&lt;/p&gt;&lt;p&gt;GHSA-pg53-p7qp-65cv&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] PHP: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow (MEDIUM)</title>
+<title>[様子見でよい] PHP: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-68wq-phq7-p2vg"/>
 <id>urn:bug-hou:GHSA-68wq-phq7-p2vg</id>
 <updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; SilverStripe MFAがパスワードリセットで回避可能。MEDIUM&lt;br&gt;→ silverstripe/mfa 6.0.0に更新&lt;/p&gt;&lt;p&gt;silverstripe/mfa &amp;lt; 6.0.0 → 6.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-55186&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; SilverStripe MFAがパスワードリセットで回避可能。MEDIUM&lt;br&gt;→ silverstripe/mfa 6.0.0に更新&lt;/p&gt;&lt;p&gt;silverstripe/mfa &amp;lt; 6.0.0 → 6.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-55186&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,143 +7,143 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: Grav: config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled (HIGH)</title>
+<title>[要確認] composer: Grav: config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xjw5-q542-3vmr"/>
 <id>urn:bug-hou:GHSA-xjw5-q542-3vmr</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76846&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravでconfig_access有効時にsystem設定の秘密が漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76846&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Missing admin.super guard on core group blueprint access field allows admin.users operator to escalate to super-admin (HIGH)</title>
+<title>[要確認] composer: Grav: Missing admin.super guard on core group blueprint access field allows admin.users operator to escalate to super-admin (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xhfv-7758-r9hx"/>
 <id>urn:bug-hou:GHSA-xhfv-7758-r9hx</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75837&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravでadmin.users権限者がスーパー管理者に昇格。HIGH&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75837&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images (HIGH)</title>
+<title>[要確認] composer: Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-w3f4-8pj2-599w"/>
 <id>urn:bug-hou:GHSA-w3f4-8pj2-599w</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav = 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69089&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのwatermark()でパストラバーサルし任意ファイル漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.11に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69089&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>
+<title>[要確認] composer: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-vfmf-q6x9-cw96"/>
 <id>urn:bug-hou:GHSA-vfmf-q6x9-cw96</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75828&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdetectXss回避で格納型XSS。CRITICAL&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75828&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav CMS vulnerable to remote code execution via .zip file upload (HIGH)</title>
+<title>[要確認] composer: Grav CMS vulnerable to remote code execution via .zip file upload (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r94f-hx44-8jqf"/>
 <id>urn:bug-hou:GHSA-r94f-hx44-8jqf</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.13 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72819&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Grav CMSでzipアップロードからRCE。HIGH&lt;br&gt;→ getgrav/grav 2.0.13に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.13 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72819&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Single invalid UTF-8 byte disables every rule in Security::detectXss(), bypassing the page-content XSS safety gate (MEDIUM)</title>
+<title>[様子見でよい] composer: Grav: Single invalid UTF-8 byte disables every rule in Security::detectXss(), bypassing the page-content XSS safety gate (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q2j8-x8hf-63ch"/>
 <id>urn:bug-hou:GHSA-q2j8-x8hf-63ch</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75834&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Gravで不正UTF-8の1バイトによりdetectXssを回避。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75834&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths (HIGH)</title>
+<title>[要確認] composer: Grav: The system, site, and theme Twig variables bypass the content sandbox entirely and are never covered by config_denied_paths (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-p597-crqc-m349"/>
 <id>urn:bug-hou:GHSA-p597-crqc-m349</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.16 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72698&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのsystem/site/theme変数がTwigサンドボックスを素通り。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.16 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72698&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion (HIGH)</title>
+<title>[要確認] composer: Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jq29-c7v8-rg55"/>
 <id>urn:bug-hou:GHSA-jq29-c7v8-rg55</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72695&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdeleteFile()でパストラバーサルし任意ファイル削除。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72695&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav (MEDIUM)</title>
+<title>[様子見でよい] composer: Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-ffmg-hfvg-jhg9"/>
 <id>urn:bug-hou:GHSA-ffmg-hfvg-jhg9</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav = 2.0.0-rc.9 → 2.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-58657&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Gravの画像resize()で格納型CSS注入。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.0に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.0-rc.9 → 2.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-58657&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Blueprint dynamic-data bare-function branch is denylist-gated and omits error_log, giving arbitrary file write (CRITICAL)</title>
+<title>[要確認] composer: Grav: Blueprint dynamic-data bare-function branch is denylist-gated and omits error_log, giving arbitrary file write (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-f8wv-xp27-6gq7"/>
 <id>urn:bug-hou:GHSA-f8wv-xp27-6gq7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75827&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのブループリント動的データでerror_logから任意ファイル書込。CRITICAL&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75827&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: FlexDirectory::dynamicDataField() executes arbitrary callables from blueprint data with no validation (HIGH)</title>
+<title>[要確認] composer: Grav: FlexDirectory::dynamicDataField() executes arbitrary callables from blueprint data with no validation (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-c4wf-2xxc-68qm"/>
 <id>urn:bug-hou:GHSA-c4wf-2xxc-68qm</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;gt;= 1.7.0, &amp;lt; 2.0.9 → 2.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-65608&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdynamicDataField()が検証なしに任意のcallableを実行。HIGH&lt;br&gt;→ getgrav/grav 2.0.9に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 1.7.0, &amp;lt; 2.0.9 → 2.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-65608&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Origin validation bypass in Uri::referrer() and Pages::referrerRoute() via unanchored prefix match (LOW)</title>
+<title>[様子見でよい] composer: Grav: Origin validation bypass in Uri::referrer() and Pages::referrerRoute() via unanchored prefix match (LOW)</title>
 <link href="https://github.com/advisories/GHSA-9ccq-2jfg-qw33"/>
 <id>urn:bug-hou:GHSA-9ccq-2jfg-qw33</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72702&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのUri::referrer()で前方一致によるOrigin検証回避。LOW&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72702&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Decompression-bomb size cap bypassed by forged ZIP size in ZipArchiver/Installer (MEDIUM)</title>
+<title>[様子見でよい] composer: Grav: Decompression-bomb size cap bypassed by forged ZIP size in ZipArchiver/Installer (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-8h9x-89f2-m7x3"/>
 <id>urn:bug-hou:GHSA-8h9x-89f2-m7x3</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav = 2.0.1 → 2.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-61449&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのZIP展開で偽装サイズにより解凍爆弾の上限を回避。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.2に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.1 → 2.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-61449&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Incomplete callable validation in blueprint dynamic fields allows arbitrary static method invocation and file disclosure (HIGH)</title>
+<title>[要確認] composer: Grav: Incomplete callable validation in blueprint dynamic fields allows arbitrary static method invocation and file disclosure (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7pgq-cr25-xvc8"/>
 <id>urn:bug-hou:GHSA-7pgq-cr25-xvc8</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;gt;= 2.0.7, &amp;lt;= 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69088&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのブループリント動的フィールドで任意の静的メソッド呼出。HIGH&lt;br&gt;→ getgrav/grav 2.0.11に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 2.0.7, &amp;lt;= 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69088&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Stored XSS via Markdown audio/video media &lt;source&gt; URL (MEDIUM)</title>
+<title>[様子見でよい] composer: Grav: Stored XSS via Markdown audio/video media &lt;source&gt; URL (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6qw9-4vv5-jr97"/>
 <id>urn:bug-hou:GHSA-6qw9-4vv5-jr97</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75831&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのMarkdown音声・動画sourceのURLで格納型XSS。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75831&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`) (HIGH)</title>
+<title>[要確認] composer: Grav: Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4v9q-p283-qc2m"/>
 <id>urn:bug-hou:GHSA-4v9q-p283-qc2m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-74907&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのplugin-asset-map.phpで認証なしパストラバーサル。HIGH&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-74907&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content (HIGH)</title>
+<title>[要確認] composer: Grav: media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-47ch-6w46-6xm7"/>
 <id>urn:bug-hou:GHSA-47ch-6w46-6xm7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72697&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのmedia_directory()でパストラバーサルとファイル内容漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72697&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet() (HIGH)</title>
+<title>[要確認] composer: Grav: UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet() (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3jhr-mxmx-38cx"/>
 <id>urn:bug-hou:GHSA-3jhr-mxmx-38cx</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76839&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのTwigサンドボックスで編集者がパスワードハッシュや2FA秘密を取得。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76839&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection (LOW)</title>
+<title>[様子見でよい] composer: Grav: Non constant time nonce comparison in Utils::verifyNonce() used for CSRF protection (LOW)</title>
 <link href="https://github.com/advisories/GHSA-38p6-h87p-r4cg"/>
 <id>urn:bug-hou:GHSA-38p6-h87p-r4cg</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72701&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのCSRF用nonce比較が定数時間でない。LOW&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72701&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Grav: Stored XSS via quoted-attribute bypass in detectXss (MEDIUM)</title>
+<title>[様子見でよい] composer: Grav: Stored XSS via quoted-attribute bypass in detectXss (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-269c-h76q-8cxw"/>
 <id>urn:bug-hou:GHSA-269c-h76q-8cxw</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;getgrav/grav &amp;gt;= 1.5.2, &amp;lt;= 2.0.12 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72832&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; GravのdetectXssを引用属性で回避し格納型XSS。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.13に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 1.5.2, &amp;lt;= 2.0.12 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72832&lt;/p&gt;</content>
 </entry>
 </feed>

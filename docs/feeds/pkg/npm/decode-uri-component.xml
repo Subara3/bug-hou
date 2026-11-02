@@ -7,10 +7,10 @@
 <updated>2026-10-29T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] npm: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs (HIGH)</title>
+<title>[要確認] npm: decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-qr28-fpjm-wq7f"/>
 <id>urn:bug-hou:GHSA-qr28-fpjm-wq7f</id>
 <updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; decode-uri-componentで二乗時間のDoS。HIGH&lt;br&gt;→ decode-uri-component 0.5.1に更新&lt;/p&gt;&lt;p&gt;decode-uri-component &amp;lt;= 0.5.0 → 0.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-118664&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; decode-uri-componentで二乗時間のDoS。HIGH&lt;br&gt;→ decode-uri-component 0.5.1に更新&lt;/p&gt;&lt;p&gt;decode-uri-component &amp;lt;= 0.5.0 → 0.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-118664&lt;/p&gt;</content>
 </entry>
 </feed>

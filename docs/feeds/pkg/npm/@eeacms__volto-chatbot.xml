@@ -7,10 +7,10 @@
 <updated>2026-10-29T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] npm: @eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy (HIGH)</title>
+<title>[要確認] npm: @eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-w9x9-j56r-h98r"/>
 <id>urn:bug-hou:GHSA-w9x9-j56r-h98r</id>
 <updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; volto-chatbotが認証なしでDanswer APIを中継。HIGH&lt;br&gt;→ @eeacms/volto-chatbot 2.0.4に更新&lt;/p&gt;&lt;p&gt;@eeacms/volto-chatbot &amp;lt;= 2.0.3 → 2.0.4&lt;/p&gt;&lt;p&gt;GHSA-w9x9-j56r-h98r&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; volto-chatbotが認証なしでDanswer APIを中継。HIGH&lt;br&gt;→ @eeacms/volto-chatbot 2.0.4に更新&lt;/p&gt;&lt;p&gt;@eeacms/volto-chatbot &amp;lt;= 2.0.3 → 2.0.4&lt;/p&gt;&lt;p&gt;GHSA-w9x9-j56r-h98r&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,17 +7,17 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths (HIGH)</title>
+<title>[要確認] npm: mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7w82-6f9j-v9jp"/>
 <id>urn:bug-hou:GHSA-7w82-6f9j-v9jp</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-7w82-6f9j-v9jp&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mcp-sanitizerのパス検査がホーム配下の絶対パスを許可。HIGH&lt;br&gt;→ mcp-sanitizer 1.4.0に更新&lt;/p&gt;&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-7w82-6f9j-v9jp&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6 (HIGH)</title>
+<title>[要確認] npm: mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6 (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4mfg-r38w-w8fg"/>
 <id>urn:bug-hou:GHSA-4mfg-r38w-w8fg</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-4mfg-r38w-w8fg&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mcp-sanitizerのURL検査をポート指定やIPv6で回避しSSRF。HIGH&lt;br&gt;→ mcp-sanitizer 1.4.0に更新&lt;/p&gt;&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-4mfg-r38w-w8fg&lt;/p&gt;</content>
 </entry>
 </feed>

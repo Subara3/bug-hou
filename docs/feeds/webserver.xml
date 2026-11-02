@@ -7,11 +7,11 @@
 <updated>2026-10-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-90800 8.1 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-90800 8.1 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-90800"/>
 <id>urn:bug-hou:CVE-2026-90800</id>
 <updated>2026-10-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; CouchDBの接頭辞付き_user等を認可なく読める。利用はまれ&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;Missing authorisation checks in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any request to read the full contents of a prefixed _user or _replicator database via an unauthorised API endpoint.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CouchDBの接頭辞付き_user等を認可なく読める。利用はまれ&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;Missing authorisation checks in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any request to read the full contents of a prefixed _user or _replicator database via an unauthorised API endpoint.
 
 
 The use of prefixed system databases is very rare.
@@ -19,28 +19,28 @@ The use of prefixed system databases is very rare.
 Users are recommended to upgrade to version 3.5.3, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-90799 1.3 LOW</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-90799 1.3 LOW</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-90799"/>
 <id>urn:bug-hou:CVE-2026-90799</id>
 <updated>2026-10-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; CouchDBで認証済み利用者がメモリ枯渇を起こす。LOW&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;Unsafe binary deserialisation in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows an authenticated user to cause a denial of service via memory exhaustion.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; CouchDBで認証済み利用者がメモリ枯渇を起こす。LOW&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;Unsafe binary deserialisation in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows an authenticated user to cause a denial of service via memory exhaustion.
 
 Users are recommended to upgrade to version 3.5.3, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-90797 7.7 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-90797 7.7 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-90797"/>
 <id>urn:bug-hou:CVE-2026-90797</id>
 <updated>2026-10-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; CouchDBのgzip展開無制限で認証なしDoS。HIGH&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;An unlimited gzip decompression routine in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any remote client to cause a denial of service via memory exhaustion.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CouchDBのgzip展開無制限で認証なしDoS。HIGH&lt;br&gt;→ CouchDB 3.5.3に更新&lt;/p&gt;&lt;p&gt;An unlimited gzip decompression routine in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any remote client to cause a denial of service via memory exhaustion.
 Users are recommended to upgrade to version 3.5.3, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-97629 8.3 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-97629 8.3 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-97629"/>
 <id>urn:bug-hou:CVE-2026-97629</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; ssl_session_cache shared使用でチケット鍵未指定時にセッション偽造&lt;br&gt;→ ssl_session_ticket_keyの設定を確認&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; ssl_session_cache shared使用でチケット鍵未指定時にセッション偽造&lt;br&gt;→ ssl_session_ticket_keyの設定を確認&lt;/p&gt;&lt;p&gt;Description
 When NGINX Plus or NGINX Open Source is configured with ssl_session_cache 
 
 shared:name:size
@@ -62,11 +62,11 @@ This vulnerability can lead to the exposure of resources or functionality to uni
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-97205 9.2 CRITICAL</title>
+<title>[要確認] Apache / nginx: CVE-2026-97205 9.2 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-97205"/>
 <id>urn:bug-hou:CVE-2026-97205</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; AIO有効時のSSI include virtualでUAF。特定設定のみ&lt;br&gt;→ AIOとSSIの併用がないか確認&lt;/p&gt;&lt;p&gt;NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AIO有効時のSSI include virtualでUAF。特定設定のみ&lt;br&gt;→ AIOとSSIの併用がないか確認&lt;/p&gt;&lt;p&gt;NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
 
 Impact:
 This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.
@@ -77,11 +77,11 @@ This vulnerability may allow remote attackers to cause a denial-of-service (DoS)
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-96615 7.1 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-96615 7.1 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-96615"/>
 <id>urn:bug-hou:CVE-2026-96615</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; NGINX Gateway Fabricで他名前空間のTLS秘密鍵を読める。認証済み&lt;br&gt;→ Gateway Fabricの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Gateway Fabricで他名前空間のTLS秘密鍵を読める。認証済み&lt;br&gt;→ Gateway Fabricの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
 NGINX Gateway Fabric has a vulnerability when it is configured with Gateway 
 
 Custom Resource Definition (CRD) and have an authenticated gRPC connection with NGINX Agent. A namespaced 
@@ -101,11 +101,11 @@ There is no data plane exposure; this is a control plane issue only.
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-95101 6.9 MEDIUM</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-95101 6.9 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-95101"/>
 <id>urn:bug-hou:CVE-2026-95101</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; HTTP/3とproxy_request_bufferingでデータ注入。MEDIUM&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; HTTP/3とproxy_request_bufferingでデータ注入。MEDIUM&lt;/p&gt;&lt;p&gt;Description
 NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with 
 
 proxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.
@@ -125,11 +125,11 @@ inject data in the proxied request.  There is no control plane exposure; this i
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-94197 8.7 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-94197 8.7 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-94197"/>
 <id>urn:bug-hou:CVE-2026-94197</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; NGINX Ingress ControllerのExternalAuthで認証・認可回避&lt;br&gt;→ Ingress Controllerの利用有無を確認&lt;/p&gt;&lt;p&gt;An authentication and authorization bypass vulnerability exists in F5 NGINX Kubernetes Ingress Controller (NIC) when configured with the `ExternalAuth` policy or Ingress external authentication. Client-supplied X-Forwarded-Prefix, X-Forwarded-URI, X-Original-URI, and X-Forwarded-Method routing and method headers are forwarded unsanitized into the internal authentication subrequest (handled by the NGINX auth_request directive). As a result, an unauthenticated, remote attacker may spoof request attributes evaluated by the external authentication provider. 
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Ingress ControllerのExternalAuthで認証・認可回避&lt;br&gt;→ Ingress Controllerの利用有無を確認&lt;/p&gt;&lt;p&gt;An authentication and authorization bypass vulnerability exists in F5 NGINX Kubernetes Ingress Controller (NIC) when configured with the `ExternalAuth` policy or Ingress external authentication. Client-supplied X-Forwarded-Prefix, X-Forwarded-URI, X-Original-URI, and X-Forwarded-Method routing and method headers are forwarded unsanitized into the internal authentication subrequest (handled by the NGINX auth_request directive). As a result, an unauthenticated, remote attacker may spoof request attributes evaluated by the external authentication provider. 
 
 Impact:
 This vulnerability may allow remote attackers 
@@ -146,11 +146,11 @@ paths. There is no control plane exposure; this is a data plane issue only.
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-93479 9.2 CRITICAL</title>
+<title>[要確認] Apache / nginx: CVE-2026-93479 9.2 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-93479"/>
 <id>urn:bug-hou:CVE-2026-93479</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mapの正規表現キャプチャをrootやログで先に参照する設定のみ&lt;br&gt;→ 該当するmap設定がないか確認&lt;/p&gt;&lt;p&gt;A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mapの正規表現キャプチャをrootやログで先に参照する設定のみ&lt;br&gt;→ 該当するmap設定がないか確認&lt;/p&gt;&lt;p&gt;A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
 
 Impact: 
 This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.
@@ -158,11 +158,11 @@ This vulnerability may allow remote attackers to cause a denial-of-service (DoS)
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-91184 8.7 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-91184 8.7 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-91184"/>
 <id>urn:bug-hou:CVE-2026-91184</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; NGINX Gateway Fabricのrealm値で設定注入。認証済み&lt;br&gt;→ Gateway Fabricの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Gateway Fabricのrealm値で設定注入。認証済み&lt;br&gt;→ Gateway Fabricの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
 
 NGINX Gateway Fabric has a vulnerability when it renders the spec.basic.realm (and spec.jwt.realm) field of a namespaced AuthenticationFilter verbatim, unescaped and unvalidated, into the shared data-plane nginx.conf as auth_basic "&amp;lt;realm&amp;gt;";. A namespaced authenticated attacker that configures AuthenticationFilter CRD to an HTTPRoute/GRPCRoute on a shared Gateway can craft a realm value that closes the quoted directive and the enclosing location {} block and injects arbitrary NGINX directives into that Gateway's data-plane config. 
 
@@ -178,11 +178,11 @@ A remote authenticated attacker can send crafted requests to configure NGINX Gat
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-15176 9.2 CRITICAL</title>
+<title>[要確認] Apache / nginx: CVE-2026-15176 9.2 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-15176"/>
 <id>urn:bug-hou:CVE-2026-15176</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; aliasとrewriteで$request_filenameを使う設定のnginxのみ影響&lt;br&gt;→ 該当する設定がないか確認&lt;/p&gt;&lt;p&gt;A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; aliasとrewriteで$request_filenameを使う設定のnginxのみ影響&lt;br&gt;→ 該当する設定がないか確認&lt;/p&gt;&lt;p&gt;A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
 
 Impact:
 This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.
@@ -193,11 +193,11 @@ This vulnerability may allow remote attackers to cause a denial-of-service (DoS)
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-104939 8.7 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-104939 8.7 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-104939"/>
 <id>urn:bug-hou:CVE-2026-104939</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; NGINX Ingress ControllerのexternalAuthで認証前に保護パスへ到達&lt;br&gt;→ Ingress Controllerの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Ingress ControllerのexternalAuthで認証前に保護パスへ到達&lt;br&gt;→ Ingress Controllerの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
 NGINX Ingress Controller has a vulnerability when implementing an externalAuth policy for ingress. NGINX Ingress Controller may mishandle the HTTP response from an OAuth IdP and allow an attacker to acquire unauthenticated access to protected paths before the proper external authentication can happen.
 
 
@@ -217,11 +217,11 @@ paths. There is no control plane exposure; this is a data plane issue only.
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-101025 6.9 MEDIUM</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-101025 6.9 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-101025"/>
 <id>urn:bug-hou:CVE-2026-101025</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; njsのxml.parse()失敗時にメモリリーク。MEDIUM&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; njsのxml.parse()失敗時にメモリリーク。MEDIUM&lt;/p&gt;&lt;p&gt;Description
 
 
 NGINX JavaScript (njs) has a vulnerability where the built-in njs engine leaks a libxml2 parser context when xml.parse() fails. The failure path did not register cleanup and the context was not released for the lifetime of the process. An unauthenticated attacker may send requests with malformed XML and can cause unbounded memory growth in long-lived NGINX worker processes.
@@ -236,11 +236,11 @@ This vulnerability may allow remote attackers to send requests that trigger repe
  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-101019 8.3 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-101019 8.3 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-101019"/>
 <id>urn:bug-hou:CVE-2026-101019</id>
 <updated>2026-10-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; njsのXMLモジュールで属性の扱いが不整合。njs利用時のみ&lt;br&gt;→ njsの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; njsのXMLモジュールで属性の扱いが不整合。njs利用時のみ&lt;br&gt;→ njsの利用有無を確認&lt;/p&gt;&lt;p&gt;Description
 NGINX JavaScript (njs) has a vulnerability where the njs XML module exposes entity-backed XML attributes inconsistently with libxml2 canonicalization. In both the built-in njs and QuickJS backends during the canonicalization process, the $attr$Name getter may return undefined for an explicitly present attribute containing an internal entity reference. The $attrs getter may return a value derived only from the first attribute child. This may allow an unauthenticated attacker that invests significant effort in obtaining a genuinely signed document to skip validation while signature verification succeeds. An nginx-saml deployment is a confirmed affected consumer when run with the built-in njs backend.
 
 Impact
@@ -251,171 +251,171 @@ In affected signed-XML consumers, an unauthenticated attacker can cause security
  Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-93546 8.8 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-93546 8.8 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-93546"/>
 <id>urn:bug-hou:CVE-2026-93546</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_dav_fsで書込権限を持つ利用者がDBを破損。HIGH&lt;br&gt;→ WebDAVの利用有無を確認&lt;/p&gt;&lt;p&gt;Integer overflow in mod_dav_fs in Apache HTTP Server through 2.4.68 allows an authenticated WebDAV client with write access to crash worker processes and persistently corrupt a directory's property database via PROPPATCH requests declaring many XML namespaces.&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_dav_fsで書込権限を持つ利用者がDBを破損。HIGH&lt;br&gt;→ WebDAVの利用有無を確認&lt;/p&gt;&lt;p&gt;Integer overflow in mod_dav_fs in Apache HTTP Server through 2.4.68 allows an authenticated WebDAV client with write access to crash worker processes and persistently corrupt a directory's property database via PROPPATCH requests declaring many XML namespaces.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-79768 5.3 MEDIUM</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-79768 5.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-79768"/>
 <id>urn:bug-hou:CVE-2026-79768</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; mod_userdirの特定設定でパス同値の問題。MEDIUM&lt;/p&gt;&lt;p&gt;Path equivalence: '/./' (single dot directory) vulnerability in Apache HTTP Server's mod_userdir module when configured with absolute non-wildcard UserDir directive (the 2nd form in https://httpd.apache.org/docs/2.4/mod/mod_userdir.html#userdir)
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; mod_userdirの特定設定でパス同値の問題。MEDIUM&lt;/p&gt;&lt;p&gt;Path equivalence: '/./' (single dot directory) vulnerability in Apache HTTP Server's mod_userdir module when configured with absolute non-wildcard UserDir directive (the 2nd form in https://httpd.apache.org/docs/2.4/mod/mod_userdir.html#userdir)
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-73637 7.3 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-73637 7.3 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-73637"/>
 <id>urn:bug-hou:CVE-2026-73637</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_auth_digestの同時要求でUAF。特定設定のみ&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Use after free in mod_auth_digest in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an unauthenticated remote client to cause authentication state corruption via concurrent Digest authentication requests when AuthDigestNcCheck is enabled or AuthDigestNonceLifetime is set to 0.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_auth_digestの同時要求でUAF。特定設定のみ&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Use after free in mod_auth_digest in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an unauthenticated remote client to cause authentication state corruption via concurrent Digest authentication requests when AuthDigestNcCheck is enabled or AuthDigestNonceLifetime is set to 0.
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-73636 8.1 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-73636 8.1 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-73636"/>
 <id>urn:bug-hou:CVE-2026-73636</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_auth_digestでNonceLifetime=0時にリプレイ。MITM前提&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Authentication bypass by capture-replay in mod_auth_digest in Apache Software Foundation Apache HTTP Server 2.4.x on all platforms allows a man-in-the-middle (MITM) attacker to replay captured digest authentication credentials via crafted requests that trigger garbage collection of the client's shared memory entry when AuthDigestNonceLifetime is set to 0.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_auth_digestでNonceLifetime=0時にリプレイ。MITM前提&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Authentication bypass by capture-replay in mod_auth_digest in Apache Software Foundation Apache HTTP Server 2.4.x on all platforms allows a man-in-the-middle (MITM) attacker to replay captured digest authentication credentials via crafted requests that trigger garbage collection of the client's shared memory entry when AuthDigestNonceLifetime is set to 0.
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-63718 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-63718 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-63718"/>
 <id>urn:bug-hou:CVE-2026-63718</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_proxy_uwsgiでレスポンススマグリング&lt;br&gt;→ mod_proxy_uwsgiの利用有無を確認&lt;/p&gt;&lt;p&gt;Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') response smuggling vulnerability in Apache HTTP Server via mod_proxy_uwsgi and a crafted uwsgi response with Transfer-Encoding.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_proxy_uwsgiでレスポンススマグリング&lt;br&gt;→ mod_proxy_uwsgiの利用有無を確認&lt;/p&gt;&lt;p&gt;Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') response smuggling vulnerability in Apache HTTP Server via mod_proxy_uwsgi and a crafted uwsgi response with Transfer-Encoding.
 
 
 
 This issue affects Apache HTTP Server: from 2.4.30 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-63686 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-63686 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-63686"/>
 <id>urn:bug-hou:CVE-2026-63686</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_xml2encで信頼できないバックエンドからDoS&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;A NULL pointer dereference in mod_xml2enc in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an untrusted backend server to cause a denial of service via a proxied response with a charset whose conversion partially succeeds then fails.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_xml2encで信頼できないバックエンドからDoS&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;A NULL pointer dereference in mod_xml2enc in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an untrusted backend server to cause a denial of service via a proxied response with a charset whose conversion partially succeeds then fails.
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-63292 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-63292 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-63292"/>
 <id>urn:bug-hou:CVE-2026-63292</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_vhost_aliasで上限を緩めた場合にスタック溢れ&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Stack-based buffer overflow in mod_vhost_alias in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows a remote client to cause a denial of service or potentially execute arbitrary code via an HTTP request with a Host header exceeding 8192 bytes when VirtualDocumentRoot uses a hostname format specifier and LimitRequestFieldSize is raised above the default.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_vhost_aliasで上限を緩めた場合にスタック溢れ&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Stack-based buffer overflow in mod_vhost_alias in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows a remote client to cause a denial of service or potentially execute arbitrary code via an HTTP request with a Host header exceeding 8192 bytes when VirtualDocumentRoot uses a hostname format specifier and LimitRequestFieldSize is raised above the default.
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-63045 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-63045 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-63045"/>
 <id>urn:bug-hou:CVE-2026-63045</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_proxy_ftpの前方プロキシ構成で任意ホストへ接続&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Improper validation of FTP PASV reply address in mod_proxy_ftp in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows, in forward proxy configurations, an untrusted FTP server to cause the proxy to open a data connection to an arbitrary third-party host via a crafted PASV response.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_proxy_ftpの前方プロキシ構成で任意ホストへ接続&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Improper validation of FTP PASV reply address in mod_proxy_ftp in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows, in forward proxy configurations, an untrusted FTP server to cause the proxy to open a data connection to an arbitrary third-party host via a crafted PASV response.
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-59797 9.8 CRITICAL</title>
+<title>[要確認] Apache / nginx: CVE-2026-59797 9.8 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-59797"/>
 <id>urn:bug-hou:CVE-2026-59797</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_sslのSSLRequireとファイル関連式で権限管理不備。CRITICAL&lt;br&gt;→ SSLRequireの使用有無を確認&lt;/p&gt;&lt;p&gt;Improper Privilege Management vulnerability in Apache HTTP Server's mod_ssl via SSLRequire and file-related expressions.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_sslのSSLRequireとファイル関連式で権限管理不備。CRITICAL&lt;br&gt;→ SSLRequireの使用有無を確認&lt;/p&gt;&lt;p&gt;Improper Privilege Management vulnerability in Apache HTTP Server's mod_ssl via SSLRequire and file-related expressions.
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-59685 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-59685 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-59685"/>
 <id>urn:bug-hou:CVE-2026-59685</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; Windows上のhttpdで8.3形式パスの境界外書込み&lt;br&gt;→ Windowsで運用していないか確認&lt;/p&gt;&lt;p&gt;Out-of-bounds Write vulnerability in Apache HTTP Server on Windows while processing paths with 8.3 names that may grow when expanded.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Windows上のhttpdで8.3形式パスの境界外書込み&lt;br&gt;→ Windowsで運用していないか確認&lt;/p&gt;&lt;p&gt;Out-of-bounds Write vulnerability in Apache HTTP Server on Windows while processing paths with 8.3 names that may grow when expanded.
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-58415 5.3 MEDIUM</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-58415 5.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-58415"/>
 <id>urn:bug-hou:CVE-2026-58415</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; mod_dav_fsで.DAV状態ディレクトリが読める。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Internal state files accessible to external parties in mod_dav_fs in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows a remote client to read WebDAV dead properties of resources it cannot author via a GET request for the .DAV state directory
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; mod_dav_fsで.DAV状態ディレクトリが読める。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Internal state files accessible to external parties in mod_dav_fs in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows a remote client to read WebDAV dead properties of resources it cannot author via a GET request for the .DAV state directory
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[対応が必要] Apache / nginx: CVE-2026-57941 9.8 CRITICAL</title>
+<title>[要対応] Apache / nginx: CVE-2026-57941 9.8 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-57941"/>
 <id>urn:bug-hou:CVE-2026-57941</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：対応が必要&lt;/b&gt; httpdのmod_http2でUAF。認証なし・CRITICAL&lt;br&gt;→ mod_http2の利用有無を確認しhttpdを更新&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session-&amp;gt;bbtmp re-entrancy
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; httpdのmod_http2でUAF。認証なし・CRITICAL&lt;br&gt;→ mod_http2の利用有無を確認しhttpdを更新&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session-&amp;gt;bbtmp re-entrancy
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-56449 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-56449 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-56449"/>
 <id>urn:bug-hou:CVE-2026-56449</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_proxy_htmlで細工レスポンスにより境界外書込み&lt;br&gt;→ mod_proxy_htmlの利用有無を確認&lt;/p&gt;&lt;p&gt;Out-of-bounds Write vulnerability in Apache HTTP Server's mod_proxy_html with crafted HTTP response bodies.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_proxy_htmlで細工レスポンスにより境界外書込み&lt;br&gt;→ mod_proxy_htmlの利用有無を確認&lt;/p&gt;&lt;p&gt;Out-of-bounds Write vulnerability in Apache HTTP Server's mod_proxy_html with crafted HTTP response bodies.
 
 
 
 This issue affects Apache HTTP Server version 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-56154 9.8 CRITICAL</title>
+<title>[要確認] Apache / nginx: CVE-2026-56154 9.8 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-56154"/>
 <id>urn:bug-hou:CVE-2026-56154</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_rewriteのLA-U先読み使用時にUAF。CRITICAL&lt;br&gt;→ %{LA-U:...}の使用有無を確認&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_rewrite when using lookahead (%{LA-U:HTTP:...})
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_rewriteのLA-U先読み使用時にUAF。CRITICAL&lt;br&gt;→ %{LA-U:...}の使用有無を確認&lt;/p&gt;&lt;p&gt;Use After Free vulnerability in Apache HTTP Server's mod_rewrite when using lookahead (%{LA-U:HTTP:...})
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-56153 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-56153 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-56153"/>
 <id>urn:bug-hou:CVE-2026-56153</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_charset_liteの境界外書込み。モジュール使用時のみ&lt;br&gt;→ mod_charset_liteの利用有無を確認&lt;/p&gt;&lt;p&gt;Out-of-bounds Write vulnerability in Apache HTTP Server's mod_charset_lite.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_charset_liteの境界外書込み。モジュール使用時のみ&lt;br&gt;→ mod_charset_liteの利用有無を確認&lt;/p&gt;&lt;p&gt;Out-of-bounds Write vulnerability in Apache HTTP Server's mod_charset_lite.
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-48005 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-48005 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-48005"/>
 <id>urn:bug-hou:CVE-2026-48005</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_auth_digestでAuthDigestNcCheck有効時に認証なしDoS&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Missing authentication checks in mod_auth_digest in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an unauthenticated remote client to cause a denial of service (forced re-authentication) via forged Authorization headers when Digest authentication is enabled with AuthDigestNcCheck .
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_auth_digestでAuthDigestNcCheck有効時に認証なしDoS&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;Missing authentication checks in mod_auth_digest in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an unauthenticated remote client to cause a denial of service (forced re-authentication) via forged Authorization headers when Digest authentication is enabled with AuthDigestNcCheck .
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-47360 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-47360 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-47360"/>
 <id>urn:bug-hou:CVE-2026-47360</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_session_cookieでセッションCookieがバックエンドに渡る&lt;br&gt;→ mod_session_cookieの利用有無を確認&lt;/p&gt;&lt;p&gt;Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache HTTP Server's mod_session_cookie module.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_session_cookieでセッションCookieがバックエンドに渡る&lt;br&gt;→ mod_session_cookieの利用有無を確認&lt;/p&gt;&lt;p&gt;Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache HTTP Server's mod_session_cookie module.
 
 
 
@@ -429,42 +429,42 @@ When SessionCookieRemove changes across internal redirects, the session cookie m
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-46729 7.5 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-46729 7.5 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-46729"/>
 <id>urn:bug-hou:CVE-2026-46729</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; mod_heartmonitorのNULL参照。モジュール使用時のみ&lt;br&gt;→ mod_heartmonitorの利用有無を確認&lt;/p&gt;&lt;p&gt;NULL Pointer Dereference vulnerability in Apache HTTP Servers mod_heartmonitor over unicast listener.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_heartmonitorのNULL参照。モジュール使用時のみ&lt;br&gt;→ mod_heartmonitorの利用有無を確認&lt;/p&gt;&lt;p&gt;NULL Pointer Dereference vulnerability in Apache HTTP Servers mod_heartmonitor over unicast listener.
 
 
 
 This issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-42528 4.3 MEDIUM</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-42528 4.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-42528"/>
 <id>urn:bug-hou:CVE-2026-42528</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; mod_davでロック作成権限者がプロセスを落とす。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;A memory calculation bug in mod_dav in Apache httpd 2.4.67 and earlier allows an attacker with permission to create WebDAV locks to crash server child processes.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; mod_davでロック作成権限者がプロセスを落とす。MEDIUM&lt;br&gt;→ httpd 2.4.69に更新&lt;/p&gt;&lt;p&gt;A memory calculation bug in mod_dav in Apache httpd 2.4.67 and earlier allows an attacker with permission to create WebDAV locks to crash server child processes.
 
 Users are recommended to upgrade to version 2.4.69, which fixes this issue&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-42356 3.7 LOW</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-42356 3.7 LOW</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-42356"/>
 <id>urn:bug-hou:CVE-2026-42356</id>
 <updated>2026-10-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; httpdのCGI内部リダイレクト先がCGIとして実行。LOW&lt;/p&gt;&lt;p&gt;Deployment of wrong handler vulnerability in Apache HTTP Server allows the target of some internal redirects from CGI programs to also be treated as CGI and executed. The target must already be in a directory enabled for CGI and have no other extension understood by mod_mime.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; httpdのCGI内部リダイレクト先がCGIとして実行。LOW&lt;/p&gt;&lt;p&gt;Deployment of wrong handler vulnerability in Apache HTTP Server allows the target of some internal redirects from CGI programs to also be treated as CGI and executed. The target must already be in a directory enabled for CGI and have no other extension understood by mod_mime.
 
 
 
 This issue affects Apache HTTP Server: from 2.4.60 through 2.4.68.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Apache / nginx: CVE-2026-90439 6.9 MEDIUM</title>
+<title>[様子見でよい] Apache / nginx: CVE-2026-90439 6.9 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-90439"/>
 <id>urn:bug-hou:CVE-2026-90439</id>
 <updated>2026-09-15T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; HTTP/3と古いOpenSSLの組合せでヒープ溢れ。MEDIUM&lt;/p&gt;&lt;p&gt;NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions &amp;lt;= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; HTTP/3と古いOpenSSLの組合せでヒープ溢れ。MEDIUM&lt;/p&gt;&lt;p&gt;NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions &amp;lt;= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.
 
 Impact:
 This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.
@@ -475,11 +475,11 @@ This vulnerability may allow remote attackers to cause a denial-of-service (DoS)
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-78689 9.2 CRITICAL</title>
+<title>[要確認] Apache / nginx: CVE-2026-78689 9.2 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-78689"/>
 <id>urn:bug-hou:CVE-2026-78689</id>
 <updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; njsのxml.exclusiveC14n()に外部入力を渡す設定で境界外書込み&lt;br&gt;→ njsのXMLモジュール利用有無を確認&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; njsのxml.exclusiveC14n()に外部入力を渡す設定で境界外書込み&lt;br&gt;→ njsのXMLモジュール利用有無を確認&lt;/p&gt;&lt;p&gt;Description
 
 
 NGINX JavaScript (njs) has a vulnerability in the XML module's namespace prefix list parser, reachable through the xml.exclusiveC14n() method. An unauthenticated remote attacker can trigger it when an affected NGINX configuration passes an externally controlled XML namespace prefix list to that method. Both the njs and the QuickJS (qjs) engines are affected. A crafted prefix list causes an out-of-bounds write past the end of a heap allocation. With the njs engine, which is the engine used when the js_engine directive is absent, this corrupts adjacent objects and crashes the NGINX worker. With the QuickJS engine, the same call additionally leaks the prefix list on every invocation, causing worker memory to grow across requests. The official nginxinc/nginx-saml reference implementation is affected during SAML signature verification. It reads InclusiveNamespaces/@PrefixList from an untrusted SAML message and passes it to xml.exclusiveC14n() before the signature has been verified, so a valid SAML signature is not required. A crafted SAML Response, Assertion, LogoutRequest, or LogoutResponse is sufficient. Code execution has not been demonstrated and cannot be ruled out for all platforms, as the effect of the out-of-bounds write depends on conditions beyond the attacker's control.  
@@ -504,11 +504,11 @@ This vulnerability allows remote attackers to cause a denial of service on the N
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-78222 8.7 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-78222 8.7 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-78222"/>
 <id>urn:bug-hou:CVE-2026-78222</id>
 <updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; njsのngx.fetch()で不正レスポンスによりワーカー停止&lt;br&gt;→ njsのngx.fetch()利用有無を確認&lt;/p&gt;&lt;p&gt;A vulnerability exists in NGINX JavaScript where a malformed HTTP response received by ngx.fetch() can crash an NGINX worker when trusted JavaScript reads Response.statusText. Exploitation requires control or influence over the fetched HTTP response.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; njsのngx.fetch()で不正レスポンスによりワーカー停止&lt;br&gt;→ njsのngx.fetch()利用有無を確認&lt;/p&gt;&lt;p&gt;A vulnerability exists in NGINX JavaScript where a malformed HTTP response received by ngx.fetch() can crash an NGINX worker when trusted JavaScript reads Response.statusText. Exploitation requires control or influence over the fetched HTTP response.
 
 Impact:
 This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.
@@ -519,11 +519,11 @@ This vulnerability may allow remote attackers to cause a denial-of-service (DoS)
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-77180 8.7 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-77180 8.7 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-77180"/>
 <id>urn:bug-hou:CVE-2026-77180</id>
 <updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; NGINX Ingress Controllerのアノテーションで設定注入。認証済み&lt;br&gt;→ Ingress Controllerの利用有無を確認&lt;/p&gt;&lt;p&gt;When NGINX Ingress Controller is configured with Ingress annotations, an injection vulnerability exists in the configuration generator of NGINX Ingress Controller. Multiple user-controllable fields are written into the generated NGINX configuration without sanitization. An authenticated attacker with permission to create or modify these annotations may craft values that inject arbitrary NGINX configuration directives. 
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Ingress Controllerのアノテーションで設定注入。認証済み&lt;br&gt;→ Ingress Controllerの利用有無を確認&lt;/p&gt;&lt;p&gt;When NGINX Ingress Controller is configured with Ingress annotations, an injection vulnerability exists in the configuration generator of NGINX Ingress Controller. Multiple user-controllable fields are written into the generated NGINX configuration without sanitization. An authenticated attacker with permission to create or modify these annotations may craft values that inject arbitrary NGINX configuration directives. 
 
 Impact:
 An authenticated attacker granted write access to NGINX Ingress Controller Ingress annotations through the Kubernetes API may be able to inject arbitrary NGINX configuration directives, create or delete files, or disable services. There is no data plane exposure; this is a control plane issue only.
@@ -531,22 +531,22 @@ An authenticated attacker granted write access to NGINX Ingress Controller Ingre
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-66362 8.6 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-66362 8.6 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-66362"/>
 <id>urn:bug-hou:CVE-2026-66362</id>
 <updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; NGINX Gateway Fabricの認証フィルターで設定注入。認証済み&lt;br&gt;→ Gateway Fabricの利用有無を確認&lt;/p&gt;&lt;p&gt;Description:
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Gateway Fabricの認証フィルターで設定注入。認証済み&lt;br&gt;→ Gateway Fabricの利用有無を確認&lt;/p&gt;&lt;p&gt;Description:
 When NGINX Plus is configured as the data plane for NGINX Gateway Fabric, an injection vulnerability exists in the NGINX configuration generator component of NGINX Gateway Fabric. User-supplied string values from the Authentication Filter Custom Resource Definition clientID or cookieName fields, or in the clientSecret field of a Secret referenced by an Authentication Filter, are rendered directly into NGINX configuration templates without sanitization or escaping. 
 
 Impact:
 An authenticated attacker with permission to create or modify these resources may craft values that inject arbitrary NGINX configuration directives. This is a control plane issue; there is no data plane exposure.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[確認しておく] Apache / nginx: CVE-2026-18329 8.8 HIGH</title>
+<title>[要確認] Apache / nginx: CVE-2026-18329 8.8 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-18329"/>
 <id>urn:bug-hou:CVE-2026-18329</id>
 <updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; njsのjs_accessで非同期処理の例外によりアクセス制御が崩れる&lt;br&gt;→ njsのjs_access利用有無を確認&lt;/p&gt;&lt;p&gt;Description
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; njsのjs_accessで非同期処理の例外によりアクセス制御が崩れる&lt;br&gt;→ njsのjs_access利用有無を確認&lt;/p&gt;&lt;p&gt;Description
 
 NGINX JavaScript (njs) and QuickJS (qjs) engines have a vulnerability when a js_access handler performs asynchronous request body processing and an exception is thrown during asynchronous access-control evaluation before an explicit access denial is returned. An unauthenticated attacker can exploit this vulnerability by sending a crafted HTTP request that triggers an error condition in the access validation logic. This may cause the js_access phase to fail open, allowing the request to proceed instead of being denied, resulting in an authentication or authorization bypass and unauthorized access to protected resources.
 

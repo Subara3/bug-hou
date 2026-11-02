@@ -7,10 +7,10 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] npm: Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
+<title>[様子見でよい] npm: Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9v7c-q64q-vv33"/>
 <id>urn:bug-hou:GHSA-9v7c-q64q-vv33</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxtでドットセグメントによりミドルウェア判定回避。MEDIUM&lt;br&gt;→ nuxt 4.6.3に更新&lt;/p&gt;&lt;p&gt;nuxt &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3, @nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119200&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Nuxtでドットセグメントによりミドルウェア判定回避。MEDIUM&lt;br&gt;→ nuxt 4.6.3に更新&lt;/p&gt;&lt;p&gt;nuxt &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3, @nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119200&lt;/p&gt;</content>
 </entry>
 </feed>

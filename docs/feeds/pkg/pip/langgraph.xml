@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] pip: LangGraph: Unencoded identifiers in LangGraph SDK v3 streaming can redirect authenticated GET requests (MEDIUM)</title>
+<title>[様子見でよい] pip: LangGraph: Unencoded identifiers in LangGraph SDK v3 streaming can redirect authenticated GET requests (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3fx2-cqw9-xr3c"/>
 <id>urn:bug-hou:GHSA-3fx2-cqw9-xr3c</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LangGraph SDKの識別子未エンコードでリクエスト先変更。MEDIUM&lt;br&gt;→ langgraph-sdk 0.4.6/langgraph 1.2.14に更新&lt;/p&gt;&lt;p&gt;langgraph-sdk &amp;gt;= 0.4.0, &amp;lt; 0.4.6 → 0.4.6, langgraph &amp;gt;= 1.2.3, &amp;lt; 1.2.14 → 1.2.14&lt;/p&gt;&lt;p&gt;CVE-2026-118667&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; LangGraph SDKの識別子未エンコードでリクエスト先変更。MEDIUM&lt;br&gt;→ langgraph-sdk 0.4.6/langgraph 1.2.14に更新&lt;/p&gt;&lt;p&gt;langgraph-sdk &amp;gt;= 0.4.0, &amp;lt; 0.4.6 → 0.4.6, langgraph &amp;gt;= 1.2.3, &amp;lt; 1.2.14 → 1.2.14&lt;/p&gt;&lt;p&gt;CVE-2026-118667&lt;/p&gt;</content>
 </entry>
 </feed>

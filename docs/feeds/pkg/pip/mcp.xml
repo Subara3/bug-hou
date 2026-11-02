@@ -7,24 +7,24 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas (MEDIUM)</title>
+<title>[様子見でよい] pip: Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rwrf-2pqf-9j8j"/>
 <id>urn:bug-hou:GHSA-rwrf-2pqf-9j8j</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116686&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; MCP Python SDKのクライアントがサーバー指定の$ref URLを取得。MEDIUM&lt;br&gt;→ mcp 1.30.0/2.2.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116686&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] pip: Model Context Protocol Python SDK: Server bearer-token authentication accepts tokens issued for a different resource server (MEDIUM)</title>
+<title>[様子見でよい] pip: Model Context Protocol Python SDK: Server bearer-token authentication accepts tokens issued for a different resource server (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-w4fh-qvv9-3v23"/>
 <id>urn:bug-hou:GHSA-w4fh-qvv9-3v23</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MCP Python SDKが別リソース向けトークンを受理。MEDIUM&lt;br&gt;→ mcp 2.2.0/1.30.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116684&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; MCP Python SDKが別リソース向けトークンを受理。MEDIUM&lt;br&gt;→ mcp 2.2.0/1.30.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116684&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] pip: Model Context Protocol Python SDK: HTTP client transports followed cross-origin redirects carrying custom headers and bodies (MEDIUM)</title>
+<title>[様子見でよい] pip: Model Context Protocol Python SDK: HTTP client transports followed cross-origin redirects carrying custom headers and bodies (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5h93-6whr-6q8j"/>
 <id>urn:bug-hou:GHSA-5h93-6whr-6q8j</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MCP Python SDKのクライアントが別オリジンにヘッダーを送る。MEDIUM&lt;br&gt;→ mcp 2.2.0/1.30.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.8.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116685&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; MCP Python SDKのクライアントが別オリジンにヘッダーを送る。MEDIUM&lt;br&gt;→ mcp 2.2.0/1.30.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.8.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116685&lt;/p&gt;</content>
 </entry>
 </feed>

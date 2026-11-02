@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Satori-generated SVG has improper escaping (MEDIUM)</title>
+<title>[様子見でよい] npm: Satori-generated SVG has improper escaping (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wx4j-mvgx-mqwp"/>
 <id>urn:bug-hou:GHSA-wx4j-mvgx-mqwp</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;satori &amp;gt;= 0.0.27, &amp;lt; 0.33.5 → 0.33.5&lt;/p&gt;&lt;p&gt;CVE-2026-94545&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Satoriが生成するSVGのエスケープが不適切。MEDIUM&lt;br&gt;→ satori 0.33.5に更新&lt;/p&gt;&lt;p&gt;satori &amp;gt;= 0.0.27, &amp;lt; 0.33.5 → 0.33.5&lt;/p&gt;&lt;p&gt;CVE-2026-94545&lt;/p&gt;</content>
 </entry>
 </feed>

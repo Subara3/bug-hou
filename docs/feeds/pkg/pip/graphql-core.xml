@@ -7,10 +7,10 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] pip: GraphQL-core has denial of service via memory leak in aborted validations (HIGH)</title>
+<title>[要確認] pip: GraphQL-core has denial of service via memory leak in aborted validations (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-mpqx-q82w-9x46"/>
 <id>urn:bug-hou:GHSA-mpqx-q82w-9x46</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; GraphQL-coreの中断した検証でメモリリーク。HIGH&lt;br&gt;→ graphql-core 3.3.1に更新&lt;/p&gt;&lt;p&gt;graphql-core &amp;gt;= 3.3.0a3, &amp;lt; 3.3.1 → 3.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-119286&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GraphQL-coreの中断した検証でメモリリーク。HIGH&lt;br&gt;→ graphql-core 3.3.1に更新&lt;/p&gt;&lt;p&gt;graphql-core &amp;gt;= 3.3.0a3, &amp;lt; 3.3.1 → 3.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-119286&lt;/p&gt;</content>
 </entry>
 </feed>

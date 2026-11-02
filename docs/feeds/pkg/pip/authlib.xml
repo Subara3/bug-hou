@@ -7,52 +7,52 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF (MEDIUM)</title>
+<title>[様子見でよい] pip: Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x4rv-c3wx-4cr8"/>
 <id>urn:bug-hou:GHSA-x4rv-c3wx-4cr8</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;authlib &amp;gt;= 1.6.0, &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114620&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; AuthlibのJARで未検証のrequest_uriを取得しSSRF。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.6.0, &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114620&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens (MEDIUM)</title>
+<title>[様子見でよい] pip: Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q686-2qmg-hqc7"/>
 <id>urn:bug-hou:GHSA-q686-2qmg-hqc7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114619&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; AuthlibのOpenIDインプリシットで許可外スコープでもIDトークン発行。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114619&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts (LOW)</title>
+<title>[様子見でよい] pip: Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts (LOW)</title>
 <link href="https://github.com/advisories/GHSA-jj7h-c3hg-m23x"/>
 <id>urn:bug-hou:GHSA-jj7h-c3hg-m23x</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;authlib &amp;lt;= 1.7.2 → 1.8.0&lt;/p&gt;&lt;p&gt;CVE-2026-114614&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; Authlibのループバック例外をuserinfoで回避し平文HTTP送信。LOW&lt;br&gt;→ authlib 1.8.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.7.2 → 1.8.0&lt;/p&gt;&lt;p&gt;CVE-2026-114614&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Authlib: Default JWT bearer grant accepts assertions for the wrong audience (MEDIUM)</title>
+<title>[様子見でよい] pip: Authlib: Default JWT bearer grant accepts assertions for the wrong audience (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-fch4-3c6x-j4gc"/>
 <id>urn:bug-hou:GHSA-fch4-3c6x-j4gc</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114618&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; AuthlibのJWT bearer grantが別audienceのアサーションを受理。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114618&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Authlib: ID token can disable its own nonce validation via the nonce_supported claim (MEDIUM)</title>
+<title>[様子見でよい] pip: Authlib: ID token can disable its own nonce validation via the nonce_supported claim (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-c5mf-xmp2-59rc"/>
 <id>urn:bug-hou:GHSA-c5mf-xmp2-59rc</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114617&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; AuthlibでIDトークン自身がnonce検証を無効化できる。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114617&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys (HIGH)</title>
+<title>[要確認] pip: Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7vr2-2fgp-9w7p"/>
 <id>urn:bug-hou:GHSA-7vr2-2fgp-9w7p</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;authlib &amp;gt;= 1.3.1, &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114615&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Authlibのアルゴリズム混同対策が不完全でHMAC署名を偽造可能。HIGH&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.3.1, &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114615&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
+<title>[要対応] pip: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-6v38-4h7w-rj9h"/>
 <id>urn:bug-hou:GHSA-6v38-4h7w-rj9h</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; AuthlibのJWS JSONデシリアライズで空の署名を検証通過。CRITICAL&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,10 +7,10 @@
 <updated>2026-10-15T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] composer: YOURLS: Unauthenticated File Inclusion (MEDIUM)</title>
+<title>[様子見でよい] composer: YOURLS: Unauthenticated File Inclusion (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-f8ff-652m-j5rx"/>
 <id>urn:bug-hou:GHSA-f8ff-652m-j5rx</id>
 <updated>2026-10-15T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; YOURLSの認証なしファイルインクルード。MEDIUM&lt;br&gt;→ YOURLS 1.10.5に更新&lt;/p&gt;&lt;p&gt;yourls/yourls &amp;lt;= 1.10.4 → 1.10.5&lt;/p&gt;&lt;p&gt;CVE-2026-62858&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見でよい&lt;/b&gt; YOURLSの認証なしファイルインクルード。MEDIUM&lt;br&gt;→ YOURLS 1.10.5に更新&lt;/p&gt;&lt;p&gt;yourls/yourls &amp;lt;= 1.10.4 → 1.10.5&lt;/p&gt;&lt;p&gt;CVE-2026-62858&lt;/p&gt;</content>
 </entry>
 </feed>

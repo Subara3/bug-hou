@@ -7,10 +7,10 @@
 <updated>2026-10-30T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[確認しておく] npm: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options (HIGH)</title>
+<title>[要確認] npm: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-qm8w-vx34-5j9j"/>
 <id>urn:bug-hou:GHSA-qm8w-vx34-5j9j</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：確認しておく&lt;/b&gt; @nx/maven・@nx/gradleでnx.json経由のコマンド注入。HIGH&lt;br&gt;→ 22.7.9/23.1.2に更新&lt;/p&gt;&lt;p&gt;@nx/maven &amp;gt;= 22.0.2, &amp;lt; 22.7.9 → 22.7.9, @nx/maven &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2, @nx/gradle &amp;gt;= 21.0.0, &amp;lt; 22.7.9 → 22.7.9, @nx/gradle &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-119282&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @nx/maven・@nx/gradleでnx.json経由のコマンド注入。HIGH&lt;br&gt;→ 22.7.9/23.1.2に更新&lt;/p&gt;&lt;p&gt;@nx/maven &amp;gt;= 22.0.2, &amp;lt; 22.7.9 → 22.7.9, @nx/maven &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2, @nx/gradle &amp;gt;= 21.0.0, &amp;lt; 22.7.9 → 22.7.9, @nx/gradle &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-119282&lt;/p&gt;</content>
 </entry>
 </feed>
