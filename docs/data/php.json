@@ -1,0 +1,1811 @@
+{
+ "id": "php",
+ "label": "PHP",
+ "note": "PHP本体とComposerパッケージ",
+ "kev": [
+  {
+   "cve": "CVE-2026-109618",
+   "vendor": "PHP Group",
+   "product": "PHP",
+   "name": "PHP Memory Corruption Vulnerability",
+   "added": "2026-10-26",
+   "due": "2026-10-29",
+   "ransomware": false,
+   "desc": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2026-109619",
+   "vendor": "PHP Group",
+   "product": "PHP",
+   "name": "PHP Stale Internal Request-State Vulnerability",
+   "added": "2026-10-26",
+   "due": "2026-10-29",
+   "ransomware": false,
+   "desc": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2025-54068",
+   "vendor": "Laravel",
+   "product": "Livewire",
+   "name": "Laravel Livewire Code Injection Vulnerability",
+   "added": "2026-03-20",
+   "due": "2026-04-03",
+   "ransomware": false,
+   "desc": "Laravel Livewire contain a code injection vulnerability that could allow unauthenticated attackers to achieve remote command execution in specific scenarios.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2016-10033",
+   "vendor": "PHP",
+   "product": "PHPMailer",
+   "name": "PHPMailer Command Injection Vulnerability",
+   "added": "2025-07-07",
+   "due": "2025-07-28",
+   "ransomware": false,
+   "desc": "PHPMailer contains a command injection vulnerability because it fails to sanitize user-supplied input. Specifically, this issue affects the 'mail()' function of 'class.phpmailer.php' script. An attacker can exploit this issue to execute arbitrary code within the context of the application. Failed exploit attempts will result in a denial-of-service condition.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2024-4577",
+   "vendor": "PHP Group",
+   "product": "PHP",
+   "name": "PHP-CGI OS Command Injection Vulnerability",
+   "added": "2024-06-12",
+   "due": "2024-07-03",
+   "ransomware": true,
+   "desc": "PHP, specifically Windows-based PHP used in CGI mode, contains an OS command injection vulnerability that allows for arbitrary code execution. This vulnerability is a patch bypass for CVE-2012-1823.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2018-15133",
+   "vendor": "Laravel",
+   "product": "Laravel Framework",
+   "name": "Laravel Deserialization of Untrusted Data Vulnerability",
+   "added": "2024-01-16",
+   "due": "2024-02-06",
+   "ransomware": false,
+   "desc": "Laravel Framework contains a deserialization of untrusted data vulnerability, allowing for remote command execution. This vulnerability may only be exploited if a malicious user has accessed the application encryption key (APP_KEY environment variable).",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2021-3129",
+   "vendor": "Laravel",
+   "product": "Ignition",
+   "name": "Laravel Ignition File Upload Vulnerability",
+   "added": "2023-09-18",
+   "due": "2023-10-09",
+   "ransomware": true,
+   "desc": "Laravel Ignition contains a file upload vulnerability that allows unauthenticated remote attackers to execute malicious code due to insecure usage of file_get_contents() and file_put_contents().",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2019-11043",
+   "vendor": "PHP",
+   "product": "FastCGI Process Manager (FPM)",
+   "name": "PHP FastCGI Process Manager (FPM) Buffer Overflow Vulnerability",
+   "added": "2022-03-25",
+   "due": "2022-04-15",
+   "ransomware": true,
+   "desc": "In some versions of PHP in certain configurations of FPM setup, it is possible to cause FPM module to write past allocated buffers allowing the possibility of remote code execution.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2012-1823",
+   "vendor": "PHP",
+   "product": "PHP",
+   "name": "PHP-CGI Query String Parameter Vulnerability",
+   "added": "2022-03-25",
+   "due": "2022-04-15",
+   "ransomware": false,
+   "desc": "sapi/cgi/cgi_main.c in PHP, when configured as a CGI script, does not properly handle query strings, which allows remote attackers to execute arbitrary code.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2009-1151",
+   "vendor": "phpMyAdmin",
+   "product": "phpMyAdmin",
+   "name": "phpMyAdmin Remote Code Execution Vulnerability",
+   "added": "2022-03-25",
+   "due": "2022-04-15",
+   "ransomware": false,
+   "desc": "Setup script used to generate configuration can be fooled using a crafted POST request to include arbitrary PHP code in generated configuration file.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2017-9841",
+   "vendor": "PHPUnit",
+   "product": "PHPUnit",
+   "name": "PHPUnit Command Injection Vulnerability",
+   "added": "2022-02-15",
+   "due": "2022-08-15",
+   "ransomware": false,
+   "desc": "PHPUnit allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2018-20062",
+   "vendor": "ThinkPHP",
+   "product": "noneCms",
+   "name": "ThinkPHP \"noneCms\" Remote Code Execution Vulnerability",
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "ransomware": false,
+   "desc": "ThinkPHP \"noneCms\" contains an unspecified vulnerability that allows for remote code execution through crafted use of the filter parameter.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2019-9082",
+   "vendor": "ThinkPHP",
+   "product": "ThinkPHP",
+   "name": "ThinkPHP Remote Code Execution Vulnerability",
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "ransomware": false,
+   "desc": "ThinkPHP contains an unspecified vulnerability that allows for remote code execution via public//?s=index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]= followed by the command.",
+   "first_seen": "0000-00-00"
+  }
+ ],
+ "cves": [
+  {
+   "id": "CVE-2026-109618",
+   "published": "2026-10-21",
+   "modified": "2026-10-30",
+   "status": "Undergoing Analysis",
+   "score": 9.2,
+   "severity": "CRITICAL",
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).",
+   "kev": true,
+   "cwe": [
+    "CWE-1325",
+    "CWE-416",
+    "CWE-755",
+    "CWE-824"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-109619",
+   "published": "2026-10-21",
+   "modified": "2026-10-30",
+   "status": "Undergoing Analysis",
+   "score": 9.2,
+   "severity": "CRITICAL",
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).",
+   "kev": true,
+   "cwe": [
+    "CWE-1325",
+    "CWE-416",
+    "CWE-755",
+    "CWE-824"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-93682",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 5.8,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "When the HTTP stream wrapper follows a redirect and the response carries a Location header with an empty value, the redirect code reads one byte past the end of the heap buffer holding the location. The value of that out-of-bounds byte decides which redirect target is built, so a malicious server controls whether the client is sent to the host root or to the current directory.",
+   "kev": false,
+   "cwe": [
+    "CWE-125"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2025-14181",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 6.5,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:H",
+   "cvss": "3.1",
+   "desc": "The SOAP HTTP client guards its response buffer growth with a check that relies on signed integer overflow, which is undefined behaviour and is not guaranteed to trigger. When the check is optimised away, a malicious SOAP server can make the client allocate a buffer far smaller than the data it then writes into it, producing a heap buffer overflow.",
+   "kev": false,
+   "cwe": [
+    "CWE-190"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2025-1218",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 5.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "cvss": "3.1",
+   "desc": "The mysqlnd wire protocol parser reads fields out of server packets before checking that the packet still holds enough bytes for them. A malicious or compromised MySQL server can send a truncated packet and make the client read past the end of the packet buffer, which is undefined behaviour and can crash the process.",
+   "kev": false,
+   "cwe": [
+    "CWE-122"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-17545",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 6.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "On Windows, PHP's filesystem and stream APIs do not reject reserved device names such as CON, PRN, AUX, NUL, COM1 to COM9, LPT1 to LPT9, CONIN$ and CONOUT$ when they appear as a component of a path. An attacker-controlled filename therefore reaches CreateFileW() and opens a device instead of the regular file the application expected, which can block or hang the request and exhaust worker processes.",
+   "kev": false,
+   "cwe": [
+    "CWE-67"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-6103",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 3.3,
+   "severity": "LOW",
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+   "cvss": "3.1",
+   "desc": "phar_tar_number() parses the octal size field of a TAR header into a uint32_t with no overflow check. The field is 11 octal digits wide and holds values up to 0x1FFFFFFFF, so a size above 0xFFFFFFFF silently wraps. The parser then skips the wrong number of data blocks and interprets attacker-controlled file content as the next TAR header, which lets a crafted archive inject entries that PharData reports and extracts as if they were genuine.",
+   "kev": false,
+   "cwe": [
+    "CWE-190"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-91765",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "cvss": "3.1",
+   "desc": "cleanup_xml_node() in the SOAP XML parser recurses once per XML nesting level with no depth limit. An unauthenticated attacker can post a SOAP request containing tens of thousands of nested elements to any SoapServer endpoint, exhaust the stack and crash the process. The same unbounded recursion exists in the SOAP value decoder and in the WSDL node search helper.",
+   "kev": false,
+   "cwe": [
+    "CWE-674"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-91766",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 5.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "When the http:// stream wrapper follows a redirect it forwards the user-supplied Authorization, Cookie and Proxy-Authorization headers unchanged, even when the redirect target is a different host, a different port, or a downgrade from HTTPS to HTTP. A server that can steer a redirect therefore receives credentials that were only meant for the original origin. This is the same class of issue that libcurl fixed in 7.58.0 ( CVE-2018-1000007 https://github.com/advisories/GHSA-g7x2-hrfp-pv5f ).",
+   "kev": false,
+   "cwe": [
+    "CWE-200",
+    "CWE-522"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-91767",
+   "published": "2026-09-25",
+   "modified": "2026-10-27",
+   "status": "Analyzed",
+   "score": 6.5,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "cvss": "3.1",
+   "desc": "php_openssl_matches_wildcard_name() in ext/openssl/xp_ssl.c underflows the length argument passed to memchr() when a TLS server certificate presents a wildcard name whose literal characters are together longer than the hostname being verified. A malicious server presenting such a certificate makes the PHP client read up to SIZE_MAX bytes past the end of a heap allocation. The path is reachable from any default client stream, because verify_peer_name is enabled by default.",
+   "kev": false,
+   "cwe": [
+    "CWE-122"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-91769",
+   "published": "2026-09-25",
+   "modified": "2026-10-23",
+   "status": "Analyzed",
+   "score": 4.3,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "PHP's OpenSSL stream peer verification checks the certificate's subjectAltName entries first and, whenever no entry matches, falls back to the Common Name. RFC 6125 requires the CN to be ignored once the certificate presents any service identity, so a certificate carrying a non-matching DNS SAN was still accepted when its CN matched the requested peer_name. A certificate trusted by the client for one name can therefore be used to impersonate another.",
+   "kev": false,
+   "cwe": [
+    "CWE-297"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-91768",
+   "published": "2026-09-25",
+   "modified": "2026-10-27",
+   "status": "Analyzed",
+   "score": 6.5,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "The IPv6 branch of the FastCGI client access check compares only the first 12 bytes of a 16-byte IPv6 address, so listen.allowed_clients matches on a /96 prefix instead of the exact address. An attacker who can source an address sharing the first 96 bits with an allowed one passes the check and reaches the FastCGI endpoint.",
+   "kev": false,
+   "cwe": [
+    "CWE-1023"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-92842",
+   "published": "2026-09-25",
+   "modified": "2026-10-27",
+   "status": "Analyzed",
+   "score": 5.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "The convert.base64-encode, convert.quoted-printable-encode and convert.quoted-printable-decode stream filters accept a line-break-chars option whose length is tracked separately from the string itself. The filter constructors duplicate the value with pestrdup(), which stops at the first NUL byte, while keeping the original length. When the filter later emits a line break it copies the recorded length out of the truncated allocation, reading past its end and placing adjacent heap bytes into the filter output.",
+   "kev": false,
+   "cwe": [
+    "CWE-122",
+    "CWE-125"
+   ],
+   "first_seen": "0000-00-00"
+  }
+ ],
+ "ghsa": [
+  {
+   "id": "GHSA-9vw2-f4vp-x7gf",
+   "cve": "CVE-2026-119193",
+   "summary": "PHPUnit vulnerable to code execution by other local users via shared temporary directory in PHPT code coverage handling",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-9vw2-f4vp-x7gf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "phpunit/phpunit",
+     "range": ">= 13.4.0, < 13.4.4",
+     "fixed": "13.4.4"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-p96f-p2p2-2g3h",
+   "cve": "CVE-2026-96634",
+   "summary": "AdminNeo SQLite: multi_query Incorrect Check of Function Return Value RCE",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-p96f-p2p2-2g3h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "adminneo-org/adminneo",
+     "range": "< 5.5.1",
+     "fixed": "5.5.1"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-6vfx-w7q3-42gq",
+   "cve": "CVE-2026-96633",
+   "summary": "AdminNeo SQLite Database-List Drop Arbitrary File Deletion",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-6vfx-w7q3-42gq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "adminneo-org/adminneo",
+     "range": "< 5.5.1",
+     "fixed": "5.5.1"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-79wv-8rh2-9vp2",
+   "cve": "CVE-2026-96631",
+   "summary": "AdminNeo has Cookie Attribute Injection via Unsanitized X-Forwarded-Prefix in Set-Cookie Headers",
+   "severity": "HIGH",
+   "score": 8.2,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-79wv-8rh2-9vp2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "adminneo-org/adminneo",
+     "range": ">= 4.6.0, < 5.5.1",
+     "fixed": "5.5.1"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-rx7m-wxwq-vxr9",
+   "cve": "CVE-2026-96632",
+   "summary": "AdminNeo Vulnerable to XSS via Rogue MySQL Server Version String (CSP Nonce Bypass)",
+   "severity": "HIGH",
+   "score": 8.2,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-rx7m-wxwq-vxr9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "adminneo-org/adminneo",
+     "range": "< 5.5.1",
+     "fixed": "5.5.1"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-q5mp-gfjf-cf2j",
+   "cve": "CVE-2026-96630",
+   "summary": "AdminNeo: RCE via SQLite VACUUM INTO (ATTACH Blocklist Bypass)",
+   "severity": "HIGH",
+   "score": 7.2,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-q5mp-gfjf-cf2j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "adminneo-org/adminneo",
+     "range": "< 5.5.1",
+     "fixed": "5.5.1"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-wm25-49w3-5qrg",
+   "cve": "CVE-2026-96629",
+   "summary": "AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-wm25-49w3-5qrg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "adminneo-org/adminneo",
+     "range": "< 5.5.1",
+     "fixed": "5.5.1"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-jm85-8cpp-9cjc",
+   "cve": "CVE-2026-59978",
+   "summary": "AdminNeo: version-cache array injection causes persistent denial of service",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-10-30",
+   "url": "https://github.com/advisories/GHSA-jm85-8cpp-9cjc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "adminneo-org/adminneo",
+     "range": ">= 4.6.2, < 5.5.0",
+     "fixed": "5.5.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-pg53-p7qp-65cv",
+   "cve": null,
+   "summary": "PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets",
+   "severity": "LOW",
+   "score": 2.3,
+   "published": "2026-10-29",
+   "url": "https://github.com/advisories/GHSA-pg53-p7qp-65cv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "pocketmine/pocketmine-mp",
+     "range": "< 5.44.2",
+     "fixed": "5.44.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-68wq-phq7-p2vg",
+   "cve": "CVE-2026-55186",
+   "summary": "MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow",
+   "severity": "MEDIUM",
+   "score": 4.2,
+   "published": "2026-10-29",
+   "url": "https://github.com/advisories/GHSA-68wq-phq7-p2vg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "silverstripe/mfa",
+     "range": "< 6.0.0",
+     "fixed": "6.0.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-mf2p-h6hf-fcwm",
+   "cve": "CVE-2026-116675",
+   "summary": "TinyMCE Cross-Site Scripting (XSS) vulnerability using media plugin `data-mce-object` serialization",
+   "severity": "HIGH",
+   "score": 8.5,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-mf2p-h6hf-fcwm",
+   "kev": false,
+   "packages": [
+    {
+     "name": "tinymce",
+     "range": ">= 8.5.1, < 8.9.3",
+     "fixed": "8.9.3"
+    },
+    {
+     "name": "TinyMCE",
+     "range": ">= 8.5.1, < 8.9.3",
+     "fixed": "8.9.3"
+    },
+    {
+     "name": "tinymce/tinymce",
+     "range": ">= 8.5.1, < 8.9.3",
+     "fixed": "8.9.3"
+    },
+    {
+     "name": "tinymce",
+     "range": "= 7.9.3",
+     "fixed": "7.9.4"
+    },
+    {
+     "name": "TinyMCE",
+     "range": "= 7.9.3",
+     "fixed": "7.9.4"
+    },
+    {
+     "name": "tinymce/tinymce",
+     "range": "= 7.9.3",
+     "fixed": "7.9.4"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-2v3c-qxhr-7vpv",
+   "cve": "CVE-2026-109413",
+   "summary": "Symfony: Unbounded Recursion in the YAML Inline Lexer Lets a Single Document Crash the Process",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-2v3c-qxhr-7vpv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "symfony/symfony",
+     "range": ">= 2.0.0, < 5.4.54",
+     "fixed": "5.4.54"
+    },
+    {
+     "name": "symfony/symfony",
+     "range": ">= 6.0.0, < 6.4.45",
+     "fixed": "6.4.45"
+    },
+    {
+     "name": "symfony/symfony",
+     "range": ">= 7.0.0, < 7.4.18",
+     "fixed": "7.4.18"
+    },
+    {
+     "name": "symfony/symfony",
+     "range": ">= 8.0.0, < 8.1.6",
+     "fixed": "8.1.6"
+    },
+    {
+     "name": "symfony/yaml",
+     "range": ">= 2.0.0, < 5.4.54",
+     "fixed": "5.4.54"
+    },
+    {
+     "name": "symfony/yaml",
+     "range": ">= 6.0.0, < 6.4.45",
+     "fixed": "6.4.45"
+    },
+    {
+     "name": "symfony/yaml",
+     "range": ">= 7.0.0, < 7.4.18",
+     "fixed": "7.4.18"
+    },
+    {
+     "name": "symfony/yaml",
+     "range": ">= 8.0.0, < 8.1.6",
+     "fixed": "8.1.6"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-r925-mgvr-h9cc",
+   "cve": "CVE-2026-108082",
+   "summary": "Symfony: ReDoS in HeaderUtils::split() Reachable Through the Cache-Control Request Header",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-r925-mgvr-h9cc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "symfony/http-foundation",
+     "range": ">= 6.0.1, < 6.4.46",
+     "fixed": "6.4.46"
+    },
+    {
+     "name": "symfony/http-foundation",
+     "range": ">= 7.0.0, < 7.4.19",
+     "fixed": "7.4.19"
+    },
+    {
+     "name": "symfony/http-foundation",
+     "range": ">= 8.0.0, < 8.1.7",
+     "fixed": "8.1.7"
+    },
+    {
+     "name": "symfony/symfony",
+     "range": ">= 6.0.1, < 6.4.46",
+     "fixed": "6.4.46"
+    },
+    {
+     "name": "symfony/symfony",
+     "range": ">= 7.0.0, < 7.4.19",
+     "fixed": "7.4.19"
+    },
+    {
+     "name": "symfony/symfony",
+     "range": ">= 8.0.0, < 8.1.7",
+     "fixed": "8.1.7"
+    },
+    {
+     "name": "symfony/http-foundation",
+     "range": ">= 4.1.0, < 5.4.54",
+     "fixed": "5.4.54"
+    },
+    {
+     "name": "symfony/symfony",
+     "range": ">= 4.1.0, < 5.4.54",
+     "fixed": "5.4.54"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-2phh-27fw-q4gc",
+   "cve": "CVE-2026-108360",
+   "summary": "PhpSpreadsheet: SSRF whitelist bypass via unre-validated HTTP redirect in Drawing::setPath external image loading",
+   "severity": "MEDIUM",
+   "score": 6.4,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-2phh-27fw-q4gc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 4.0.0, <= 5.9.0",
+     "fixed": "5.10.0"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 3.3.0, <= 3.10.7",
+     "fixed": "3.10.8"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 2.2.0, <= 2.4.7",
+     "fixed": "2.4.8"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 2.0.0, <= 2.1.18",
+     "fixed": "2.1.19"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": "<= 1.30.6",
+     "fixed": "1.30.7"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-j2w7-387v-m2rq",
+   "cve": "CVE-2026-108359",
+   "summary": "PhpSpreadsheet ODS Reader: Unbounded number-rows-repeated → CPU & Memory Exhaustion (DoS)",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-j2w7-387v-m2rq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 4.0.0, <= 5.9.0",
+     "fixed": "5.10.0"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 3.3.0, <= 3.10.7",
+     "fixed": "3.10.8"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 2.2.0, <= 2.4.7",
+     "fixed": "2.4.8"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 2.0.0, <= 2.1.18",
+     "fixed": "2.1.19"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": "<= 1.30.6",
+     "fixed": "1.30.7"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-3x94-m842-937c",
+   "cve": "CVE-2026-108358",
+   "summary": "PhpSpreadsheet: XmlScanner Bypass via ISO-2022 Escape Sequences Allows XXE and Denial of Service",
+   "severity": "HIGH",
+   "score": 8.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-3x94-m842-937c",
+   "kev": false,
+   "packages": [
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 4.0.0, <= 5.9.0",
+     "fixed": "5.10.0"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 3.3.0, <= 3.10.7",
+     "fixed": "3.10.8"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 2.2.0, <= 2.4.7",
+     "fixed": "2.4.8"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 2.0.0, <= 2.1.18",
+     "fixed": "2.1.19"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": "<= 1.30.6",
+     "fixed": "1.30.7"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-rxj4-h86g-25gc",
+   "cve": "CVE-2026-108357",
+   "summary": "PhpSpreadsheet: XmlScanner Bypass via Double-Encoded unentity() TOCTOU Allows XXE and Denial of Service",
+   "severity": "HIGH",
+   "score": 8.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-rxj4-h86g-25gc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 4.0.0, <= 5.9.0",
+     "fixed": "5.10.0"
+    },
+    {
+     "name": "phpoffice/phpspreadsheet",
+     "range": ">= 3.3.0, <= 3.10.7",
+     "fixed": "3.10.8"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-v5fq-cf5m-vwv7",
+   "cve": "CVE-2026-33944",
+   "summary": "Dolibarr has SQL Injection in societe/class/societe.class.php via localtax1_value parameter",
+   "severity": "HIGH",
+   "score": 8.8,
+   "published": "2026-10-27",
+   "url": "https://github.com/advisories/GHSA-v5fq-cf5m-vwv7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "dolibarr/dolibarr",
+     "range": "<= 23.0.0",
+     "fixed": null
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-f9x3-7vq9-cph6",
+   "cve": "CVE-2026-114509",
+   "summary": "Laravel TokenGuard authentication bypass through non-string API credentials",
+   "severity": "CRITICAL",
+   "score": 9.2,
+   "published": "2026-10-23",
+   "url": "https://github.com/advisories/GHSA-f9x3-7vq9-cph6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "laravel/framework",
+     "range": ">= 13.0.0, < 13.29.0",
+     "fixed": "13.29.0"
+    },
+    {
+     "name": "laravel/framework",
+     "range": "< 12.68.0",
+     "fixed": "12.68.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-5wcm-3v2w-8362",
+   "cve": "CVE-2026-114508",
+   "summary": "Laravel relationship inclusion can trigger unauthorized data destruction",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-23",
+   "url": "https://github.com/advisories/GHSA-5wcm-3v2w-8362",
+   "kev": false,
+   "packages": [
+    {
+     "name": "laravel/framework",
+     "range": ">= 12.45.0, < 12.68.0",
+     "fixed": "12.68.0"
+    },
+    {
+     "name": "laravel/framework",
+     "range": ">= 13.0.0, < 13.27.0",
+     "fixed": "13.27.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-mhf7-xp6r-6qrc",
+   "cve": null,
+   "summary": "Livewire: Authorization bypass in #[Authorize] via reordered parameter keys and #[Json] execution order",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-23",
+   "url": "https://github.com/advisories/GHSA-mhf7-xp6r-6qrc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "livewire/livewire",
+     "range": ">= 4.3.0, < 4.4.8",
+     "fixed": "4.4.8"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-x397-5hrv-j9m9",
+   "cve": "CVE-2026-113712",
+   "summary": "Cachet has Stored XSS in Incident Component",
+   "severity": "MEDIUM",
+   "score": 4.8,
+   "published": "2026-10-20",
+   "url": "https://github.com/advisories/GHSA-x397-5hrv-j9m9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "cachethq/cachet",
+     "range": "<= 2.4.1",
+     "fixed": null
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-54mm-6729-r5wp",
+   "cve": "CVE-2026-85990",
+   "summary": "Leantime: Any Authenticated User Can Self-Escalate to Admin via Unauthorized JSON-RPC Methods",
+   "severity": "HIGH",
+   "score": 8.8,
+   "published": "2026-10-15",
+   "url": "https://github.com/advisories/GHSA-54mm-6729-r5wp",
+   "kev": false,
+   "packages": [
+    {
+     "name": "leantime/leantime",
+     "range": "< 3.10.0",
+     "fixed": "3.10.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-f8ff-652m-j5rx",
+   "cve": "CVE-2026-62858",
+   "summary": "YOURLS: Unauthenticated File Inclusion",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "published": "2026-10-15",
+   "url": "https://github.com/advisories/GHSA-f8ff-652m-j5rx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "yourls/yourls",
+     "range": "<= 1.10.4",
+     "fixed": "1.10.5"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-g4f2-2pf3-2pwj",
+   "cve": "CVE-2026-104827",
+   "summary": "react/http: Unbounded HTTP Client Response Header Buffering Leads to Memory Exhaustion DoS",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-10-15",
+   "url": "https://github.com/advisories/GHSA-g4f2-2pf3-2pwj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "react/http",
+     "range": ">= 1.0.0, <= 1.11.0",
+     "fixed": "1.11.1"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-x2rp-9qf7-2fmq",
+   "cve": "CVE-2026-107842",
+   "summary": "Contao: Protected page content is disclosed to anonymous visitors after contao.search.index_protected is disabled",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "published": "2026-10-09",
+   "url": "https://github.com/advisories/GHSA-x2rp-9qf7-2fmq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 4.0.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-mfxh-vp55-7gc6",
+   "cve": "CVE-2026-107843",
+   "summary": "Contao: The registration module re-sends activation mails",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "published": "2026-10-09",
+   "url": "https://github.com/advisories/GHSA-mfxh-vp55-7gc6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 4.1.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-9ff2-p842-45wq",
+   "cve": "CVE-2026-107848",
+   "summary": "Contao: Cross-site request forgery in custom backend actions",
+   "severity": "LOW",
+   "score": 3.5,
+   "published": "2026-10-09",
+   "url": "https://github.com/advisories/GHSA-9ff2-p842-45wq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 4.0.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-mrvp-7wmx-5m4h",
+   "cve": "CVE-2026-107844",
+   "summary": "Contao: Path traversal in the images controller",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "published": "2026-10-09",
+   "url": "https://github.com/advisories/GHSA-mrvp-7wmx-5m4h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 4.1.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-628f-v4f6-p37r",
+   "cve": "CVE-2026-107845",
+   "summary": "Contao: Cross-site scripting in the comments bundle",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "published": "2026-10-09",
+   "url": "https://github.com/advisories/GHSA-628f-v4f6-p37r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/comments-bundle",
+     "range": ">= 4.0.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/comments-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-q6wp-fr43-gm9v",
+   "cve": "CVE-2026-107850",
+   "summary": "Contao: Improper access control in the preview links module",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "published": "2026-10-09",
+   "url": "https://github.com/advisories/GHSA-q6wp-fr43-gm9v",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.7.1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-5974-gfqc-wrcm",
+   "cve": "CVE-2026-107851",
+   "summary": "Contao: Improper access control in the table access voter",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "published": "2026-10-09",
+   "url": "https://github.com/advisories/GHSA-5974-gfqc-wrcm",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.7.0, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-9rjx-3jch-6vjf",
+   "cve": "CVE-2026-107380",
+   "summary": "enshrined/svg-sanitize: Stored XSS via DTD Entity / HTML5 Named Character Reference Collision",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "published": "2026-10-08",
+   "url": "https://github.com/advisories/GHSA-9rjx-3jch-6vjf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "enshrined/svg-sanitize",
+     "range": "<= 0.22.0",
+     "fixed": "1.0.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-m9xh-6747-9r6f",
+   "cve": "CVE-2026-107381",
+   "summary": "svg-sanitizer: Mixed-case xlink:HrEf skips the `<use>` nesting-DoS check in Resolver::processReferences",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-08",
+   "url": "https://github.com/advisories/GHSA-m9xh-6747-9r6f",
+   "kev": false,
+   "packages": [
+    {
+     "name": "enshrined/svg-sanitize",
+     "range": "<= 0.22.0",
+     "fixed": "1.0.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-v383-3rw5-q8rf",
+   "cve": "CVE-2026-107379",
+   "summary": "enshrined/svg-sanitize: Denial of Service via DTD Attribute Declaration Crash",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "published": "2026-10-08",
+   "url": "https://github.com/advisories/GHSA-v383-3rw5-q8rf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "enshrined/svg-sanitize",
+     "range": "<= 0.22.0",
+     "fixed": "1.0.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-p279-5wcv-45vq",
+   "cve": "CVE-2026-104890",
+   "summary": "Kunstmaan CMS: MediaBundle extension blacklist bypass allows authenticated administrators to upload executable PHP files leading to remote code execution",
+   "severity": "HIGH",
+   "score": 7.2,
+   "published": "2026-10-07",
+   "url": "https://github.com/advisories/GHSA-p279-5wcv-45vq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "kunstmaan/media-bundle",
+     "range": "< 7.3.2",
+     "fixed": "7.3.2"
+    },
+    {
+     "name": "kunstmaan/bundles-cms",
+     "range": "< 7.3.2",
+     "fixed": "7.3.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-7m6h-rg42-m449",
+   "cve": "CVE-2026-104181",
+   "summary": "Filament: Multi-factor authentication (app) management actions do not require password reauthentication",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "published": "2026-10-05",
+   "url": "https://github.com/advisories/GHSA-7m6h-rg42-m449",
+   "kev": false,
+   "packages": [
+    {
+     "name": "filament/filament",
+     "range": ">= 4.0.0, <= 4.13.2",
+     "fixed": "4.13.3"
+    },
+    {
+     "name": "filament/filament",
+     "range": ">= 5.0.0, <= 5.8.2",
+     "fixed": "5.8.3"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-8fxw-fmj8-xp7j",
+   "cve": "CVE-2026-88023",
+   "summary": "MongoDB: GridFS data disclosure and deletion via query-operator injection in file IDs",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-10-05",
+   "url": "https://github.com/advisories/GHSA-8fxw-fmj8-xp7j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mongodb/mongodb",
+     "range": ">= 1.1.0, < 1.21.5",
+     "fixed": "1.24.5"
+    },
+    {
+     "name": "mongodb/mongodb",
+     "range": ">= 2.0.0, < 2.4.2",
+     "fixed": "2.4.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-96h3-5x6v-m776",
+   "cve": "CVE-2026-59944",
+   "summary": "Composer: GHSA-gjfg-22fp-rrxx fix bypass via symlinked package bin path",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-10-02",
+   "url": "https://github.com/advisories/GHSA-96h3-5x6v-m776",
+   "kev": false,
+   "packages": [
+    {
+     "name": "composer/composer",
+     "range": ">= 2.3.0, < 2.10.3",
+     "fixed": "2.10.3"
+    },
+    {
+     "name": "composer/composer",
+     "range": ">= 1.0, < 2.2.30",
+     "fixed": "2.2.30"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-97jj-33gv-5xf9",
+   "cve": null,
+   "summary": "league/commonmark: DisallowedRawHtml bypassed when a disallowed tag name ends the raw-HTML literal",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "published": "2026-09-30",
+   "url": "https://github.com/advisories/GHSA-97jj-33gv-5xf9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "league/commonmark",
+     "range": ">= 1.3.0, <= 2.10.1",
+     "fixed": "2.10.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-3q6v-r5mr-hxv8",
+   "cve": null,
+   "summary": "league/commonmark: Quadratic-time denial of service in the GitHub Flavored Markdown Table extension block-start scan",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-09-30",
+   "url": "https://github.com/advisories/GHSA-3q6v-r5mr-hxv8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "league/commonmark",
+     "range": ">= 2.0.0, <= 2.10.1",
+     "fixed": "2.10.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-jh5r-qr3c-85q8",
+   "cve": "CVE-2026-102279",
+   "summary": "Laravel: XSS in Debug Page Information",
+   "severity": "LOW",
+   "score": 3.1,
+   "published": "2026-09-29",
+   "url": "https://github.com/advisories/GHSA-jh5r-qr3c-85q8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "laravel/framework",
+     "range": "< 12.69.0",
+     "fixed": "12.69.0"
+    },
+    {
+     "name": "laravel/framework",
+     "range": ">= 13.0.0, < 13.30.0",
+     "fixed": "13.30.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-cxf4-7mrp-vvpr",
+   "cve": "CVE-2026-102601",
+   "summary": "Flysystem: WhitespacePathNormalizer's control-character (CorruptedPathDetected) check is bypassed by malformed UTF-8 in the path, affecting every adapter",
+   "severity": "LOW",
+   "score": 3.5,
+   "published": "2026-09-29",
+   "url": "https://github.com/advisories/GHSA-cxf4-7mrp-vvpr",
+   "kev": false,
+   "packages": [
+    {
+     "name": "league/flysystem",
+     "range": "<= 3.35.2",
+     "fixed": "3.35.3"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-r6hr-vr92-vv28",
+   "cve": "CVE-2026-65954",
+   "summary": "PHPCSUtils: Remote code execution via eval() in AbstractArrayDeclarationSniff::getActualArrayKey()",
+   "severity": "HIGH",
+   "score": 8.6,
+   "published": "2026-09-29",
+   "url": "https://github.com/advisories/GHSA-r6hr-vr92-vv28",
+   "kev": false,
+   "packages": [
+    {
+     "name": "phpcsstandards/phpcsutils",
+     "range": ">= 1.0.0-alpha1, < 1.2.3",
+     "fixed": "1.2.3"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-g7vj-c29h-3h5m",
+   "cve": "CVE-2026-92161",
+   "summary": "FriendsOfFlarum OAuth: Unauthenticated account takeover via unverified email trust in Discord OAuth provider",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "published": "2026-09-25",
+   "url": "https://github.com/advisories/GHSA-g7vj-c29h-3h5m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fof/oauth",
+     "range": "< 1.7.4",
+     "fixed": "1.7.4"
+    },
+    {
+     "name": "fof/oauth",
+     "range": ">= 2.0.0-beta.1, < 2.0.0-beta.4",
+     "fixed": "2.0.0-beta.4"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-v65j-hff3-753c",
+   "cve": "CVE-2026-57440",
+   "summary": "Mediawiki EmbedVideo Extension has stored XSS via malformed src url with $wgEmbedVideoRequireConsent disabled",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-09-25",
+   "url": "https://github.com/advisories/GHSA-v65j-hff3-753c",
+   "kev": false,
+   "packages": [
+    {
+     "name": "starcitizenwiki/embedvideo",
+     "range": "<= 4.0.0",
+     "fixed": "4.1.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-qxg3-46rw-79j8",
+   "cve": "CVE-2026-61823",
+   "summary": "code16 Sharp vulnerable to stored XSS via iframe srcdoc Attribute",
+   "severity": "HIGH",
+   "score": 7.3,
+   "published": "2026-09-25",
+   "url": "https://github.com/advisories/GHSA-qxg3-46rw-79j8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "code16/sharp",
+     "range": "< 9.22.5",
+     "fixed": "9.22.5"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-vj3q-vp3g-j9c8",
+   "cve": "CVE-2026-61825",
+   "summary": "code16/sharp has a stored XSS via data-html-content Sanitizer Bypass",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-09-25",
+   "url": "https://github.com/advisories/GHSA-vj3q-vp3g-j9c8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "code16/sharp",
+     "range": "< 9.22.5",
+     "fixed": "9.22.5"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-87mg-5grr-rhwh",
+   "cve": "CVE-2026-57232",
+   "summary": "Contao: Server-Side Request Forgery (SSRF) via Unvalidated RSS Feed URL in Feed Reader Module",
+   "severity": "LOW",
+   "score": 3.1,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-87mg-5grr-rhwh",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/contao",
+     "range": ">= 5.3.35, < 5.3.48",
+     "fixed": "5.3.48"
+    },
+    {
+     "name": "contao/contao",
+     "range": ">= 5.4.0, < 5.7.9",
+     "fixed": "5.7.9"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.3.35, < 5.3.48",
+     "fixed": "5.3.48"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0, < 5.7.9",
+     "fixed": "5.7.9"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-36h5-qg4p-q2qf",
+   "cve": "CVE-2026-61815",
+   "summary": "zbateson/mail-mime-parser has CRLF header injection via attachment filename",
+   "severity": "HIGH",
+   "score": 7.2,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-36h5-qg4p-q2qf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "zbateson/mail-mime-parser",
+     "range": "< 3.0.6",
+     "fixed": "3.0.6"
+    },
+    {
+     "name": "zbateson/mail-mime-parser",
+     "range": ">= 4.0.0, < 4.0.2",
+     "fixed": "4.0.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-f6v3-2qmr-vfjx",
+   "cve": "CVE-2026-61816",
+   "summary": "zbateson/mail-mime-parser has uncontrolled resource consumption (CPU/memory DoS) parsing untrusted MIME",
+   "severity": "HIGH",
+   "score": 7.5,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-f6v3-2qmr-vfjx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "zbateson/mail-mime-parser",
+     "range": ">= 2.0.0, < 3.0.6",
+     "fixed": "3.0.6"
+    },
+    {
+     "name": "zbateson/mail-mime-parser",
+     "range": ">= 4.0.0, < 4.0.2",
+     "fixed": "4.0.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-rw77-vq4g-x3hp",
+   "cve": "CVE-2026-56738",
+   "summary": "phpMyFAQ has SQL Injection in `StopWords::add()` — Unescaped Stop Word Insertion",
+   "severity": "HIGH",
+   "score": 8.5,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-rw77-vq4g-x3hp",
+   "kev": false,
+   "packages": [
+    {
+     "name": "phpmyfaq/phpmyfaq",
+     "range": "<= 4.1.5",
+     "fixed": "4.1.6"
+    },
+    {
+     "name": "thorsten/phpmyfaq",
+     "range": "<= 4.1.5",
+     "fixed": "4.1.6"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-8gpw-xvpf-hvx5",
+   "cve": "CVE-2026-56737",
+   "summary": "phpMyFAQ's two-factor authentication login bypasses the password factor",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-8gpw-xvpf-hvx5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "thorsten/phpmyfaq",
+     "range": ">= 3.2.0, < 4.1.6",
+     "fixed": "4.1.6"
+    },
+    {
+     "name": "phpmyfaq/phpmyfaq",
+     "range": ">= 3.2.0, < 4.1.6",
+     "fixed": "4.1.6"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-pgwp-vc7q-cvj3",
+   "cve": "CVE-2026-56736",
+   "summary": "phpMyFAQ has Stored XSS in Admin FAQ Editor via HTML Entity Bypass in Frontend FAQ Submission",
+   "severity": "HIGH",
+   "score": 8.2,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-pgwp-vc7q-cvj3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "thorsten/phpmyfaq",
+     "range": "< 4.2.0-alpha",
+     "fixed": "4.2.0-alpha"
+    },
+    {
+     "name": "phpmyfaq/phpmyfaq",
+     "range": "< 4.2.0-alpha",
+     "fixed": "4.2.0-alpha"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-396x-xmvh-p563",
+   "cve": "CVE-2026-63498",
+   "summary": "Snipe-IT: Stored XSS via Inline XML Rendering in the Uploaded Files API",
+   "severity": "HIGH",
+   "score": 8.7,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-396x-xmvh-p563",
+   "kev": false,
+   "packages": [
+    {
+     "name": "snipe/snipe-it",
+     "range": "< 8.7.0",
+     "fixed": "8.7.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-p9h3-gvpq-5539",
+   "cve": "CVE-2026-62368",
+   "summary": "Snipe-IT: Stored XSS via Custom Field name in asset-list column headers",
+   "severity": "HIGH",
+   "score": 8.1,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-p9h3-gvpq-5539",
+   "kev": false,
+   "packages": [
+    {
+     "name": "snipe/snipe-it",
+     "range": "< 8.7.0",
+     "fixed": "8.7.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-hxcx-9h4f-42xx",
+   "cve": "CVE-2026-63493",
+   "summary": "Snipe-IT: 2FA bypass via the API token flow",
+   "severity": "HIGH",
+   "score": 8.6,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-hxcx-9h4f-42xx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "snipe/snipe-it",
+     "range": "< 8.7.0",
+     "fixed": "8.7.0"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-4f5f-j737-pm58",
+   "cve": "CVE-2026-62998",
+   "summary": "REDAXO: Unwhitelisted ORDER BY Column in rex_list Allows Authenticated Column Enumeration",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "published": "2026-09-24",
+   "url": "https://github.com/advisories/GHSA-4f5f-j737-pm58",
+   "kev": false,
+   "packages": [
+    {
+     "name": "redaxo/source",
+     "range": "<= 5.21.1",
+     "fixed": "5.21.2"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-9rg8-2wvr-fgjh",
+   "cve": "CVE-2026-76089",
+   "summary": "Formie: Missing authorization on sent notification resend modal exposes submission PII",
+   "severity": "HIGH",
+   "score": 7.7,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-9rg8-2wvr-fgjh",
+   "kev": false,
+   "packages": [
+    {
+     "name": "verbb/formie",
+     "range": ">= 3.0.0, < 3.1.31",
+     "fixed": "3.1.31"
+    },
+    {
+     "name": "verbb/formie",
+     "range": "< 2.2.23",
+     "fixed": "2.2.23"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "GHSA-584p-f93j-wpgc",
+   "cve": "CVE-2026-76087",
+   "summary": "Formie: Unauthenticated users can overwrite incomplete submissions via submit action",
+   "severity": "HIGH",
+   "score": 8.2,
+   "published": "2026-09-23",
+   "url": "https://github.com/advisories/GHSA-584p-f93j-wpgc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "verbb/formie",
+     "range": ">= 3.0.0, < 3.1.31",
+     "fixed": "3.1.31"
+    },
+    {
+     "name": "verbb/formie",
+     "range": "< 2.2.23",
+     "fixed": "2.2.23"
+    }
+   ],
+   "first_seen": "0000-00-00"
+  }
+ ],
+ "eol": {
+  "php": [
+   {
+    "cycle": "8.5",
+    "releaseDate": "2025-11-20",
+    "support": "2027-12-31",
+    "eol": "2029-12-31",
+    "latest": "8.5.12",
+    "latestReleaseDate": "2026-10-21",
+    "lts": false
+   },
+   {
+    "cycle": "8.4",
+    "releaseDate": "2024-11-21",
+    "support": "2026-12-31",
+    "eol": "2028-12-31",
+    "latest": "8.4.27",
+    "latestReleaseDate": "2026-10-21",
+    "lts": false
+   },
+   {
+    "cycle": "8.3",
+    "releaseDate": "2023-11-23",
+    "support": "2025-12-31",
+    "eol": "2027-12-31",
+    "latest": "8.3.36",
+    "latestReleaseDate": "2026-10-21",
+    "lts": false
+   },
+   {
+    "cycle": "8.2",
+    "releaseDate": "2022-12-08",
+    "support": "2024-12-31",
+    "eol": "2026-12-31",
+    "latest": "8.2.35",
+    "latestReleaseDate": "2026-10-21",
+    "lts": false
+   },
+   {
+    "cycle": "8.1",
+    "releaseDate": "2021-11-25",
+    "support": "2023-11-25",
+    "eol": "2025-12-31",
+    "latest": "8.1.34",
+    "latestReleaseDate": "2025-12-18",
+    "lts": false
+   },
+   {
+    "cycle": "8.0",
+    "releaseDate": "2020-11-26",
+    "support": "2022-11-26",
+    "eol": "2023-11-26",
+    "latest": "8.0.30",
+    "latestReleaseDate": "2023-08-03",
+    "lts": false
+   },
+   {
+    "cycle": "7.4",
+    "releaseDate": "2019-11-28",
+    "support": "2021-11-28",
+    "eol": "2022-11-28",
+    "latest": "7.4.33",
+    "latestReleaseDate": "2022-11-03",
+    "lts": false
+   },
+   {
+    "cycle": "7.3",
+    "releaseDate": "2018-12-06",
+    "support": "2020-12-06",
+    "eol": "2021-12-06",
+    "latest": "7.3.33",
+    "latestReleaseDate": "2021-11-18",
+    "lts": false
+   }
+  ]
+ },
+ "jvn": [
+  {
+   "id": "JVNVU#99905564",
+   "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+   "url": "https://jvn.jp/vu/JVNVU99905564/",
+   "desc": "The PHP Groupから、PHPの2件の脆弱性（CVE-2026-109618、CVE-2026-109619）に対してアドバイザリが公開されました。",
+   "date": "2026-10-28",
+   "first_seen": "0000-00-00"
+  }
+ ]
+}

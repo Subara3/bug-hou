@@ -1,0 +1,69 @@
+{
+  "days": 90,
+  "targets": [
+    {
+      "id": "php",
+      "label": "PHP",
+      "note": "PHP本体とComposerパッケージ",
+      "eol": ["php"],
+      "nvd": [
+        { "cpe": "cpe:2.3:a:php:php" },
+        { "source": "security@php.net" }
+      ],
+      "kev": "^php( group)?\\b|laravel|phpmyadmin|phpunit|thinkphp|symfony|composer",
+      "ghsa": "composer",
+      "jvn": "PHP|Laravel|phpMyAdmin|Composer"
+    },
+    {
+      "id": "wordpress",
+      "label": "WordPress",
+      "note": "WordPress本体（プラグインはNVDに大量にあるため除外）",
+      "eol": ["wordpress"],
+      "nvd": [
+        { "cpe": "cpe:2.3:a:wordpress:wordpress" }
+      ],
+      "kev": "wordpress",
+      "ghsa": null,
+      "jvn": "WordPress"
+    },
+    {
+      "id": "nodejs",
+      "label": "Node.js",
+      "note": "Node.js本体とnpmパッケージ",
+      "eol": ["nodejs"],
+      "nvd": [
+        { "cpe": "cpe:2.3:a:nodejs:node.js" }
+      ],
+      "kev": "node\\.?js|\\bnpm\\b",
+      "ghsa": "npm",
+      "jvn": "Node\\.js|npm"
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "note": "CPythonとPyPIパッケージ",
+      "eol": ["python"],
+      "nvd": [
+        { "cpe": "cpe:2.3:a:python:python" },
+        { "source": "cna@python.org" }
+      ],
+      "kev": "^python\\b|pypi",
+      "ghsa": "pip",
+      "jvn": "Python"
+    },
+    {
+      "id": "webserver",
+      "label": "Apache / nginx",
+      "note": "Apache HTTP Serverとnginx",
+      "eol": ["apache-http-server", "nginx"],
+      "nvd": [
+        { "cpe": "cpe:2.3:a:apache:http_server" },
+        { "source": "security@apache.org", "match": "Apache HTTP Server|httpd" },
+        { "source": "f5sirt@f5.com", "match": "nginx" }
+      ],
+      "kev": "apache.*http server|nginx",
+      "ghsa": null,
+      "jvn": "Apache HTTP|nginx"
+    }
+  ]
+}

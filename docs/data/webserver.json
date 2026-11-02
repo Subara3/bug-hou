@@ -1,0 +1,809 @@
+{
+ "id": "webserver",
+ "label": "Apache / nginx",
+ "note": "Apache HTTP Serverとnginx",
+ "kev": [
+  {
+   "cve": "CVE-2024-38475",
+   "vendor": "Apache",
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Improper Escaping of Output Vulnerability",
+   "added": "2025-05-01",
+   "due": "2025-05-22",
+   "ransomware": false,
+   "desc": "Apache HTTP Server contains an improper escaping of output vulnerability in mod_rewrite that allows an attacker to map URLs to filesystem locations that are permitted to be served by the server but are not intentionally/directly reachable by any URL, resulting in code execution or source code disclosure.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2021-42013",
+   "vendor": "Apache",
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Path Traversal Vulnerability",
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "ransomware": true,
+   "desc": "Apache HTTP Server contains a path traversal vulnerability that allows an attacker to perform remote code execution if files outside directories configured by Alias-like directives are not under default require all denied or if CGI scripts are enabled. This CVE ID resolves an incomplete patch for CVE-2021-41773.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2021-41773",
+   "vendor": "Apache",
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Path Traversal Vulnerability",
+   "added": "2021-11-03",
+   "due": "2021-11-17",
+   "ransomware": true,
+   "desc": "Apache HTTP Server contains a path traversal vulnerability that allows an attacker to perform remote code execution if files outside directories configured by Alias-like directives are not under default �require all denied� or if CGI scripts are enabled. The original patch issued under this CVE ID is insufficient, please review remediation information under CVE-2021-42013.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2019-0211",
+   "vendor": "Apache",
+   "product": "HTTP Server",
+   "name": "Apache HTTP Server Privilege Escalation Vulnerability",
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "ransomware": false,
+   "desc": "Apache HTTP Server, with MPM event, worker or prefork, code executing in less-privileged child processes or threads (including scripts executed by an in-process scripting interpreter) could execute code with the privileges of the parent process (usually root) by manipulating the scoreboard.",
+   "first_seen": "0000-00-00"
+  }
+ ],
+ "cves": [
+  {
+   "id": "CVE-2026-90797",
+   "published": "2026-10-20",
+   "modified": "2026-10-20",
+   "status": "Deferred",
+   "score": 7.7,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:H/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:Y/R:A/V:D/RE:M/U:Red",
+   "cvss": "4.0",
+   "desc": "An unlimited gzip decompression routine in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any remote client to cause a denial of service via memory exhaustion.\nUsers are recommended to upgrade to version 3.5.3, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-409"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-90799",
+   "published": "2026-10-20",
+   "modified": "2026-10-20",
+   "status": "Deferred",
+   "score": 1.3,
+   "severity": "LOW",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:L/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:Y/R:A/V:D/RE:M/U:Amber",
+   "cvss": "4.0",
+   "desc": "Unsafe binary deserialisation in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows an authenticated user to cause a denial of service via memory exhaustion.\n\nUsers are recommended to upgrade to version 3.5.3, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-502"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-90800",
+   "published": "2026-10-20",
+   "modified": "2026-10-20",
+   "status": "Deferred",
+   "score": 8.1,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:N/AU:Y/R:U/V:C/RE:M/U:Amber",
+   "cvss": "4.0",
+   "desc": "Missing authorisation checks in chttpd in Apache CouchDB 3.5.2 and below on all platforms allows any request to read the full contents of a prefixed _user or _replicator database via an unauthorised API endpoint.\n\n\nThe use of prefixed system databases is very rare.\n\nUsers are recommended to upgrade to version 3.5.3, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-862"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-101019",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 8.3,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\nNGINX JavaScript (njs) has a vulnerability where the njs XML module exposes entity-backed XML attributes inconsistently with libxml2 canonicalization. In both the built-in njs and QuickJS backends during the canonicalization process, the $attr$Name getter may return undefined for an explicitly present attribute containing an internal entity reference. The $attrs getter may return a value derived only from the first attribute child. This may allow an unauthenticated attacker that invests significant effort in obtaining a genuinely signed document to skip validation while signature verification succeeds. An nginx-saml deployment is a confirmed affected consumer when run with the built-in njs backend.\n\nImpact\nIn affected signed-XML consumers, an unauthenticated attacker can cause security-relevant attributes to appear absent or truncated while signature verification succeeds. In nginx-saml, this can bypass expiry, Destination, and request-correlation checks, enabling replay or acceptance of a response outside its intended context. It does not permit signature or identity forgery, or a direct availability impact. There is no control plane exposure; this is a data plane issue only.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-436"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-101025",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 6.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\n\n\nNGINX JavaScript (njs) has a vulnerability where the built-in njs engine leaks a libxml2 parser context when xml.parse() fails. The failure path did not register cleanup and the context was not released for the lifetime of the process. An unauthenticated attacker may send requests with malformed XML and can cause unbounded memory growth in long-lived NGINX worker processes.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to send requests that trigger repeated parsing of malformed XML and may lead to NGINX worker termination or denial of service. There is no control plane exposure; this is a data plane issue only.\n\n\n\n Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-401"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-104939",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 8.7,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\nNGINX Ingress Controller has a vulnerability when implementing an externalAuth policy for ingress. NGINX Ingress Controller may mishandle the HTTP response from an OAuth IdP and allow an attacker to acquire unauthenticated access to protected paths before the proper external authentication can happen.\n\n\n\nImpact\nThis vulnerability may allow remote attackers \n\nunauthenticated\n\n access to protected \n\npaths. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-303"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-15176",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 9.2,
+   "severity": "CRITICAL",
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "A vulnerability exists in NGINX Plus and NGINX Open Source when a location is configured that uses the alias directive together with rewrite and a set or return directive referencing the $request_filename variable. Alternatively, the same result could be achieved when the $request_filename variable is used in an access log format directive. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-122"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-91184",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 8.7,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\n\nNGINX Gateway Fabric has a vulnerability when it renders the spec.basic.realm (and spec.jwt.realm) field of a namespaced AuthenticationFilter verbatim, unescaped and unvalidated, into the shared data-plane nginx.conf as auth_basic \"<realm>\";. A namespaced authenticated attacker that configures AuthenticationFilter CRD to an HTTPRoute/GRPCRoute on a shared Gateway can craft a realm value that closes the quoted directive and the enclosing location {} block and injects arbitrary NGINX directives into that Gateway's data-plane config. \n\nImpact\n\nA remote authenticated attacker can send crafted requests to configure NGINX Gateway Fabric AuthenticationFilter CRD and may be able to read every co-located tenant's mounted secrets, SSRF via proxy_pass, reading the pod ServiceAccount token, or hijacking other tenants' routes. There is no data plane exposure; this is a control plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-76"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-93479",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 9.2,
+   "severity": "CRITICAL",
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "A vulnerability exists in NGINX Plus and NGINX Open Source when a map directive uses regex matching and the root directive or access log format references the map's regex capture variables before referencing the map output variable. Alternatively, the same result could be achieved by using a non-cacheable variable in a string expression under certain conditions. An unauthenticated attacker along with conditions beyond their control can exploit this vulnerability by sending crafted HTTP requests. This may cause a heap buffer overflow in the NGINX worker process leading to a restart. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact: \nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-122"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-94197",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 8.7,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "An authentication and authorization bypass vulnerability exists in F5 NGINX Kubernetes Ingress Controller (NIC) when configured with the `ExternalAuth` policy or Ingress external authentication. Client-supplied X-Forwarded-Prefix, X-Forwarded-URI, X-Original-URI, and X-Forwarded-Method routing and method headers are forwarded unsanitized into the internal authentication subrequest (handled by the NGINX auth_request directive). As a result, an unauthenticated, remote attacker may spoof request attributes evaluated by the external authentication provider. \n\nImpact:\nThis vulnerability may allow remote attackers \n\nunauthenticated\n\n access to protected \n\npaths. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-290"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-95101",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 6.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\nNGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with \n\nproxy_request_buffering on directive, an unauthenticated attacker may be able to inject data in the proxied request.\n\nImpact\n\n\nThis vulnerability may allow remote attackers to \n\ninject data in the proxied request.  There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-172"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-96615",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 7.1,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\nNGINX Gateway Fabric has a vulnerability when it is configured with Gateway \n\nCustom Resource Definition (CRD) and have an authenticated gRPC connection with NGINX Agent. A namespaced \n\n authenticated attacker with access to a service account may impersonate the authenticated NGINX Agent gRPC connection to read TLS private keys of Gateway deployments in another namespace. \n\nImpact\nA remote authenticated attacker may be able to read TLS private keys of Gateway deployments in another namespace. \n\nThere is no data plane exposure; this is a control plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-290"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-97205",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 9.2,
+   "severity": "CRITICAL",
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_core_module module. When asynchronous file I/O (AIO) is enabled in certain configurations, processing a Server Side Includes (SSI) page containing “include virtual” commands may trigger a Use-After-Free (UAF) in the NGINX worker process. This may cause memory corruption or a worker process crash. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system, corrupt its memory, or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-416"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-97629",
+   "published": "2026-10-14",
+   "modified": "2026-10-15",
+   "status": "Awaiting Analysis",
+   "score": 8.3,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\nWhen NGINX Plus or NGINX Open Source is configured with ssl_session_cache \n\nshared:name:size\n\nwithout an explicit ssl_session_ticket_key file directives to automatically rotate SSL session ticket keys, a remote unauthenticated attacker is able to forge client SSL sessions \n\nin a non-deterministic manner that is beyond the attacker's control. An attacker could leverage this vulnerability to bypass verification of client certificates.\n\nImpact\n\n\nThis vulnerability can lead to the exposure of resources or functionality to unintended actors, possibly providing attackers with access to sensitive information. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-908"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-42356",
+   "published": "2026-10-01",
+   "modified": "2026-10-06",
+   "status": "Analyzed",
+   "score": 3.7,
+   "severity": "LOW",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+   "cvss": "3.1",
+   "desc": "Deployment of wrong handler vulnerability in Apache HTTP Server allows the target of some internal redirects from CGI programs to also be treated as CGI and executed. The target must already be in a directory enabled for CGI and have no other extension understood by mod_mime.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.60 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-430"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-42528",
+   "published": "2026-10-01",
+   "modified": "2026-10-06",
+   "status": "Analyzed",
+   "score": 4.3,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+   "cvss": "3.1",
+   "desc": "A memory calculation bug in mod_dav in Apache httpd 2.4.67 and earlier allows an attacker with permission to create WebDAV locks to crash server child processes.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue",
+   "kev": false,
+   "cwe": [
+    "CWE-789"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-46729",
+   "published": "2026-10-01",
+   "modified": "2026-10-08",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "cvss": "3.1",
+   "desc": "NULL Pointer Dereference vulnerability in Apache HTTP Servers mod_heartmonitor over unicast listener.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-476"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-47360",
+   "published": "2026-10-01",
+   "modified": "2026-10-02",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache HTTP Server's mod_session_cookie module.\n\n\n\n   \nWhen SessionCookieRemove changes across internal redirects, the session cookie may still be passed to a backend server.\n\n\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-200"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-48005",
+   "published": "2026-10-01",
+   "modified": "2026-10-06",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "cvss": "3.1",
+   "desc": "Missing authentication checks in mod_auth_digest in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an unauthenticated remote client to cause a denial of service (forced re-authentication) via forged Authorization headers when Digest authentication is enabled with AuthDigestNcCheck .\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-306"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-56153",
+   "published": "2026-10-01",
+   "modified": "2026-10-02",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "Out-of-bounds Write vulnerability in Apache HTTP Server's mod_charset_lite.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-787"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-56154",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 9.8,
+   "severity": "CRITICAL",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "cvss": "3.1",
+   "desc": "Use After Free vulnerability in Apache HTTP Server's mod_rewrite when using lookahead (%{LA-U:HTTP:...})\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-416"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-56449",
+   "published": "2026-10-01",
+   "modified": "2026-10-21",
+   "status": "Modified",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "Out-of-bounds Write vulnerability in Apache HTTP Server's mod_proxy_html with crafted HTTP response bodies.\n\n\n\nThis issue affects Apache HTTP Server version 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-787"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-57941",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 9.8,
+   "severity": "CRITICAL",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "cvss": "3.1",
+   "desc": "Use After Free vulnerability in Apache HTTP Server's mod_http2 via shared session->bbtmp re-entrancy\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-416"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-58415",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 5.3,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "Internal state files accessible to external parties in mod_dav_fs in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows a remote client to read WebDAV dead properties of resources it cannot author via a GET request for the .DAV state directory\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-552"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-59685",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "Out-of-bounds Write vulnerability in Apache HTTP Server on Windows while processing paths with 8.3 names that may grow when expanded.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-787"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-59797",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 9.8,
+   "severity": "CRITICAL",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "cvss": "3.1",
+   "desc": "Improper Privilege Management vulnerability in Apache HTTP Server's mod_ssl via SSLRequire and file-related expressions.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-269"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-63045",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "Improper validation of FTP PASV reply address in mod_proxy_ftp in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows, in forward proxy configurations, an untrusted FTP server to cause the proxy to open a data connection to an arbitrary third-party host via a crafted PASV response.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-284"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-63292",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "cvss": "3.1",
+   "desc": "Stack-based buffer overflow in mod_vhost_alias in Apache Software Foundation Apache HTTP Server through 2.4.68 on all platforms allows a remote client to cause a denial of service or potentially execute arbitrary code via an HTTP request with a Host header exceeding 8192 bytes when VirtualDocumentRoot uses a hostname format specifier and LimitRequestFieldSize is raised above the default.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-121"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-63686",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "cvss": "3.1",
+   "desc": "A NULL pointer dereference in mod_xml2enc in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an untrusted backend server to cause a denial of service via a proxied response with a charset whose conversion partially succeeds then fails.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-476"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-63718",
+   "published": "2026-10-01",
+   "modified": "2026-10-06",
+   "status": "Analyzed",
+   "score": 7.5,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+   "cvss": "3.1",
+   "desc": "Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') response smuggling vulnerability in Apache HTTP Server via mod_proxy_uwsgi and a crafted uwsgi response with Transfer-Encoding.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.30 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-444"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-73636",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 8.1,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "cvss": "3.1",
+   "desc": "Authentication bypass by capture-replay in mod_auth_digest in Apache Software Foundation Apache HTTP Server 2.4.x on all platforms allows a man-in-the-middle (MITM) attacker to replay captured digest authentication credentials via crafted requests that trigger garbage collection of the client's shared memory entry when AuthDigestNonceLifetime is set to 0.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-294"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-73637",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 7.3,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+   "cvss": "3.1",
+   "desc": "Use after free in mod_auth_digest in Apache Software Foundation Apache HTTP Server before 2.4.69 on all platforms allows an unauthenticated remote client to cause authentication state corruption via concurrent Digest authentication requests when AuthDigestNcCheck is enabled or AuthDigestNonceLifetime is set to 0.\n\nUsers are recommended to upgrade to version 2.4.69, which fixes this issue.",
+   "kev": false,
+   "cwe": [
+    "CWE-416"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-79768",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 5.3,
+   "severity": "MEDIUM",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "cvss": "3.1",
+   "desc": "Path equivalence: '/./' (single dot directory) vulnerability in Apache HTTP Server's mod_userdir module when configured with absolute non-wildcard UserDir directive (the 2nd form in https://httpd.apache.org/docs/2.4/mod/mod_userdir.html#userdir)\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+   "kev": false,
+   "cwe": [
+    "CWE-55"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-93546",
+   "published": "2026-10-01",
+   "modified": "2026-10-05",
+   "status": "Analyzed",
+   "score": 8.8,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+   "cvss": "3.1",
+   "desc": "Integer overflow in mod_dav_fs in Apache HTTP Server through 2.4.68 allows an authenticated WebDAV client with write access to crash worker processes and persistently corrupt a directory's property database via PROPPATCH requests declaring many XML namespaces.",
+   "kev": false,
+   "cwe": [
+    "CWE-190"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-90439",
+   "published": "2026-09-15",
+   "modified": "2026-09-18",
+   "status": "Awaiting Analysis",
+   "score": 6.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_v3_module module. When using HTTP/3 with OpenSSL versions <= OpenSSL 3.5.0 under certain configurations, a limited heap buffer overflow could happen while processing a TLS handshake. This can happen in a non-deterministic manner that is beyond the attacker's control. This may cause a heap buffer overflow in the NGINX worker process leading to a restart and/or limited data corruption.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or limited data corruption. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-122"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-18329",
+   "published": "2026-09-02",
+   "modified": "2026-09-03",
+   "status": "Awaiting Analysis",
+   "score": 8.8,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\n\nNGINX JavaScript (njs) and QuickJS (qjs) engines have a vulnerability when a js_access handler performs asynchronous request body processing and an exception is thrown during asynchronous access-control evaluation before an explicit access denial is returned. An unauthenticated attacker can exploit this vulnerability by sending a crafted HTTP request that triggers an error condition in the access validation logic. This may cause the js_access phase to fail open, allowing the request to proceed instead of being denied, resulting in an authentication or authorization bypass and unauthorized access to protected resources.\n\nImpact\n\nThis vulnerability may allow remote attackers to bypass js_access controls. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-636"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-66362",
+   "published": "2026-09-02",
+   "modified": "2026-09-03",
+   "status": "Awaiting Analysis",
+   "score": 8.6,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description:\nWhen NGINX Plus is configured as the data plane for NGINX Gateway Fabric, an injection vulnerability exists in the NGINX configuration generator component of NGINX Gateway Fabric. User-supplied string values from the Authentication Filter Custom Resource Definition clientID or cookieName fields, or in the clientSecret field of a Secret referenced by an Authentication Filter, are rendered directly into NGINX configuration templates without sanitization or escaping. \n\nImpact:\nAn authenticated attacker with permission to create or modify these resources may craft values that inject arbitrary NGINX configuration directives. This is a control plane issue; there is no data plane exposure.",
+   "kev": false,
+   "cwe": [
+    "CWE-76"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-77180",
+   "published": "2026-09-02",
+   "modified": "2026-09-03",
+   "status": "Awaiting Analysis",
+   "score": 8.7,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "When NGINX Ingress Controller is configured with Ingress annotations, an injection vulnerability exists in the configuration generator of NGINX Ingress Controller. Multiple user-controllable fields are written into the generated NGINX configuration without sanitization. An authenticated attacker with permission to create or modify these annotations may craft values that inject arbitrary NGINX configuration directives. \n\nImpact:\nAn authenticated attacker granted write access to NGINX Ingress Controller Ingress annotations through the Kubernetes API may be able to inject arbitrary NGINX configuration directives, create or delete files, or disable services. There is no data plane exposure; this is a control plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-76"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-78222",
+   "published": "2026-09-02",
+   "modified": "2026-09-02",
+   "status": "Awaiting Analysis",
+   "score": 8.7,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "A vulnerability exists in NGINX JavaScript where a malformed HTTP response received by ngx.fetch() can crash an NGINX worker when trusted JavaScript reads Response.statusText. Exploitation requires control or influence over the fetched HTTP response.\n\nImpact:\nThis vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-476"
+   ],
+   "first_seen": "0000-00-00"
+  },
+  {
+   "id": "CVE-2026-78689",
+   "published": "2026-09-02",
+   "modified": "2026-09-03",
+   "status": "Awaiting Analysis",
+   "score": 9.2,
+   "severity": "CRITICAL",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "Description\n\n\nNGINX JavaScript (njs) has a vulnerability in the XML module's namespace prefix list parser, reachable through the xml.exclusiveC14n() method. An unauthenticated remote attacker can trigger it when an affected NGINX configuration passes an externally controlled XML namespace prefix list to that method. Both the njs and the QuickJS (qjs) engines are affected. A crafted prefix list causes an out-of-bounds write past the end of a heap allocation. With the njs engine, which is the engine used when the js_engine directive is absent, this corrupts adjacent objects and crashes the NGINX worker. With the QuickJS engine, the same call additionally leaks the prefix list on every invocation, causing worker memory to grow across requests. The official nginxinc/nginx-saml reference implementation is affected during SAML signature verification. It reads InclusiveNamespaces/@PrefixList from an untrusted SAML message and passes it to xml.exclusiveC14n() before the signature has been verified, so a valid SAML signature is not required. A crafted SAML Response, Assertion, LogoutRequest, or LogoutResponse is sufficient. Code execution has not been demonstrated and cannot be ruled out for all platforms, as the effect of the out-of-bounds write depends on conditions beyond the attacker's control.  \n\n\n\n\n\n\n\n\n Impact\n\n\nThis vulnerability allows remote attackers to cause a denial of service on the NGINX system, either through repeatable worker restarts or through worker memory growth or possibly trigger code execution. There is no control plane exposure; this is a data plane issue only.\n\n\n\n\n\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "cwe": [
+    "CWE-122"
+   ],
+   "first_seen": "0000-00-00"
+  }
+ ],
+ "ghsa": [],
+ "eol": {
+  "apache-http-server": [
+   {
+    "cycle": "2.4",
+    "releaseDate": "2012-02-21",
+    "support": null,
+    "eol": false,
+    "latest": "2.4.69",
+    "latestReleaseDate": "2026-10-01",
+    "lts": false
+   },
+   {
+    "cycle": "2.2",
+    "releaseDate": "2005-12-01",
+    "support": null,
+    "eol": "2017-07-11",
+    "latest": "2.2.34",
+    "latestReleaseDate": "2017-07-11",
+    "lts": false
+   },
+   {
+    "cycle": "2.0",
+    "releaseDate": "2002-04-05",
+    "support": null,
+    "eol": "2013-07-10",
+    "latest": "2.0.65",
+    "latestReleaseDate": "2013-07-09",
+    "lts": false
+   },
+   {
+    "cycle": "1.3",
+    "releaseDate": "1998-06-01",
+    "support": null,
+    "eol": "2010-02-03",
+    "latest": "1.3.42",
+    "latestReleaseDate": "2010-02-02",
+    "lts": false
+   }
+  ],
+  "nginx": [
+   {
+    "cycle": "1.31",
+    "releaseDate": "2026-05-13",
+    "support": null,
+    "eol": false,
+    "latest": "1.31.8",
+    "latestReleaseDate": "2026-10-21",
+    "lts": false
+   },
+   {
+    "cycle": "1.30",
+    "releaseDate": "2026-04-14",
+    "support": null,
+    "eol": false,
+    "latest": "1.30.6",
+    "latestReleaseDate": "2026-10-14",
+    "lts": false
+   },
+   {
+    "cycle": "1.29",
+    "releaseDate": "2025-06-24",
+    "support": null,
+    "eol": "2026-05-13",
+    "latest": "1.29.8",
+    "latestReleaseDate": "2026-04-07",
+    "lts": false
+   },
+   {
+    "cycle": "1.28",
+    "releaseDate": "2025-04-23",
+    "support": null,
+    "eol": "2026-04-14",
+    "latest": "1.28.3",
+    "latestReleaseDate": "2026-03-24",
+    "lts": false
+   },
+   {
+    "cycle": "1.27",
+    "releaseDate": "2024-05-28",
+    "support": null,
+    "eol": "2025-06-24",
+    "latest": "1.27.5",
+    "latestReleaseDate": "2025-04-16",
+    "lts": false
+   },
+   {
+    "cycle": "1.26",
+    "releaseDate": "2024-04-23",
+    "support": null,
+    "eol": "2025-04-23",
+    "latest": "1.26.3",
+    "latestReleaseDate": "2025-02-05",
+    "lts": false
+   },
+   {
+    "cycle": "1.25",
+    "releaseDate": "2023-05-23",
+    "support": null,
+    "eol": "2024-05-29",
+    "latest": "1.25.5",
+    "latestReleaseDate": "2024-04-16",
+    "lts": false
+   },
+   {
+    "cycle": "1.24",
+    "releaseDate": "2023-04-11",
+    "support": null,
+    "eol": "2024-04-23",
+    "latest": "1.24.0",
+    "latestReleaseDate": "2023-04-11",
+    "lts": false
+   }
+  ]
+ },
+ "jvn": []
+}

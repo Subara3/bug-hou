@@ -1,0 +1,180 @@
+{
+ "id": "wordpress",
+ "label": "WordPress",
+ "note": "WordPress本体（プラグインはNVDに大量にあるため除外）",
+ "kev": [
+  {
+   "cve": "CVE-2026-87902",
+   "vendor": "WordPress",
+   "product": "Core",
+   "name": "WordPress Core Remote File Inclusion Vulnerability",
+   "added": "2026-09-25",
+   "due": "2026-09-28",
+   "ransomware": false,
+   "desc": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the active theme directories, leading to remote code execution.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2026-60137",
+   "vendor": "WordPress",
+   "product": "Core",
+   "name": "WordPress Core SQL Injection Vulnerability",
+   "added": "2026-07-21",
+   "due": "2026-08-04",
+   "ransomware": false,
+   "desc": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2026-63030",
+   "vendor": "WordPress",
+   "product": "Core",
+   "name": "WordPress Core Interpretation Conflict Vulnerability",
+   "added": "2026-07-21",
+   "due": "2026-07-24",
+   "ransomware": false,
+   "desc": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2026-41940",
+   "vendor": "WebPros",
+   "product": "cPanel & WHM and WP2 (WordPress Squared)",
+   "name": "WebPros cPanel & WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability",
+   "added": "2026-04-30",
+   "due": "2026-05-03",
+   "ransomware": true,
+   "desc": "WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2020-25213",
+   "vendor": "WordPress",
+   "product": "File Manager Plugin",
+   "name": "WordPress File Manager Plugin Remote Code Execution Vulnerability",
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "ransomware": false,
+   "desc": "WordPress File Manager plugin contains a remote code execution vulnerability that allows unauthenticated users to execute PHP code and upload malicious files on a target site.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2020-11738",
+   "vendor": "WordPress",
+   "product": "Snap Creek Duplicator Plugin",
+   "name": "WordPress Snap Creek Duplicator Plugin File Download Vulnerability",
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "ransomware": false,
+   "desc": "WordPress Snap Creek Duplicator plugin contains a file download vulnerability when an administrator creates a new copy of their site that allows an attacker to download the generated files from their Wordpress dashboard. This vulnerability affects Duplicator and Dulplicator Pro.",
+   "first_seen": "0000-00-00"
+  },
+  {
+   "cve": "CVE-2019-9978",
+   "vendor": "WordPress",
+   "product": "Social Warfare Plugin",
+   "name": "WordPress Social Warfare Plugin Cross-Site Scripting (XSS) Vulnerability",
+   "added": "2021-11-03",
+   "due": "2022-05-03",
+   "ransomware": false,
+   "desc": "WordPress Social Warfare plugin contains a cross-site scripting (XSS) vulnerability that allows for remote code execution. This vulnerability affects Social Warfare and Social Warfare Pro.",
+   "first_seen": "0000-00-00"
+  }
+ ],
+ "cves": [
+  {
+   "id": "CVE-2026-87902",
+   "published": "2026-09-22",
+   "modified": "2026-09-28",
+   "status": "Analyzed",
+   "score": 8.1,
+   "severity": "HIGH",
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "cvss": "3.1",
+   "desc": "An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.",
+   "kev": true,
+   "cwe": [
+    "CWE-98"
+   ],
+   "first_seen": "0000-00-00"
+  }
+ ],
+ "ghsa": [],
+ "eol": {
+  "wordpress": [
+   {
+    "cycle": "7.1",
+    "releaseDate": "2026-08-19",
+    "support": true,
+    "eol": false,
+    "latest": "7.1.4",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   },
+   {
+    "cycle": "7.0",
+    "releaseDate": "2026-05-20",
+    "support": "2026-08-19",
+    "eol": false,
+    "latest": "7.0.8",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   },
+   {
+    "cycle": "6.9",
+    "releaseDate": "2025-12-02",
+    "support": "2026-05-20",
+    "eol": false,
+    "latest": "6.9.11",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   },
+   {
+    "cycle": "6.8",
+    "releaseDate": "2025-04-15",
+    "support": "2025-12-02",
+    "eol": false,
+    "latest": "6.8.12",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   },
+   {
+    "cycle": "6.7",
+    "releaseDate": "2024-11-12",
+    "support": "2025-04-15",
+    "eol": false,
+    "latest": "6.7.11",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   },
+   {
+    "cycle": "6.6",
+    "releaseDate": "2024-07-16",
+    "support": "2024-11-12",
+    "eol": false,
+    "latest": "6.6.11",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   },
+   {
+    "cycle": "6.5",
+    "releaseDate": "2024-04-02",
+    "support": "2024-07-16",
+    "eol": false,
+    "latest": "6.5.14",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   },
+   {
+    "cycle": "6.4",
+    "releaseDate": "2023-11-07",
+    "support": "2024-04-02",
+    "eol": false,
+    "latest": "6.4.14",
+    "latestReleaseDate": "2026-10-28",
+    "lts": false
+   }
+  ]
+ },
+ "jvn": []
+}

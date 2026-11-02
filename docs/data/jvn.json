@@ -1,0 +1,142 @@
+[
+ {
+  "id": "JVN#23328936",
+  "title": "Core TempのカーネルドライバにおけるIOCTLインタフェースに対するアクセス制御が不十分な脆弱性",
+  "url": "https://jvn.jp/jp/JVN23328936/",
+  "desc": "ALCPUが提供するCore Tempのカーネルドライバには、IOCTLインタフェースに対するアクセス制御が不十分な脆弱性が存在します。",
+  "date": "2026-11-02"
+ },
+ {
+  "id": "JVNVU#90141693",
+  "title": "Siemens製品に対するアップデート（2026年10月）",
+  "url": "https://jvn.jp/vu/JVNVU90141693/",
+  "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
+  "date": "2026-11-02"
+ },
+ {
+  "id": "JVNVU#93251594",
+  "title": "三菱電機製の複数製品における複数の脆弱性（2026-006）",
+  "url": "https://jvn.jp/vu/JVNVU93251594/",
+  "desc": "三菱電機株式会社が提供するGENESIS、GENESIS64、ICONICS Suite、Hyper Historian、AnalytiX、MobileHMI、IoTWorX、MC Works64、GENESIS32およびBizVizには、複数の脆弱性が存在します。",
+  "date": "2026-10-30"
+ },
+ {
+  "id": "JVNVU#95856220",
+  "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月29日）",
+  "url": "https://jvn.jp/vu/JVNVU95856220/",
+  "desc": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+  "date": "2026-10-30"
+ },
+ {
+  "id": "JVN#82782759",
+  "title": "Apache Struts 2 RESTプラグインにおける、@StrutsParameterの制限が@JsonAnySetterに適用されない問題",
+  "url": "https://jvn.jp/jp/JVN82782759/",
+  "desc": "The Apache Software Foundationが提供するApache Struts 2のRESTプラグインには、Jacksonの<code>@JsonAnySetter</code>が指定されたフィールドやメソッドに対して<code>@StrutsParameter</code>の制限が行われない問題が存在します。",
+  "date": "2026-10-29"
+ },
+ {
+  "id": "JVNVU#99905564",
+  "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+  "url": "https://jvn.jp/vu/JVNVU99905564/",
+  "desc": "The PHP Groupから、PHPの2件の脆弱性（CVE-2026-109618、CVE-2026-109619）に対してアドバイザリが公開されました。",
+  "date": "2026-10-28"
+ },
+ {
+  "id": "JVNVU#91027179",
+  "title": "ヤマハ製NWR100における複数の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU91027179/",
+  "desc": "ヤマハ株式会社が提供する無線LANルーターNWR100には、複数の脆弱性が存在します。",
+  "date": "2026-10-28"
+ },
+ {
+  "id": "JVN#23695234",
+  "title": "Yamaha LAN Monitor for WindowsのインストーラにおけるDLL読み込みに関する脆弱性",
+  "url": "https://jvn.jp/jp/JVN23695234/",
+  "desc": "ヤマハ株式会社が提供するYamaha LAN Monitor for Windowsのインストーラには、DLL読み込みに関する脆弱性が存在します。",
+  "date": "2026-10-28"
+ },
+ {
+  "id": "JVN#30675482",
+  "title": "ヤマハ製YMS-VPN8およびYMS-VPN8-CPにおける引用符で囲まれていないファイルパスの脆弱性",
+  "url": "https://jvn.jp/jp/JVN30675482/",
+  "desc": "ヤマハ株式会社が提供するYMS-VPN8およびYMS-VPN8-CPには、登録されるWindowsサービスプログラムのファイルパスが引用符で囲まれていない問題が存在します。",
+  "date": "2026-10-28"
+ },
+ {
+  "id": "JVNVU#96093239",
+  "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月27日）",
+  "url": "https://jvn.jp/vu/JVNVU96093239/",
+  "desc": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+  "date": "2026-10-28"
+ },
+ {
+  "id": "JVN#51223238",
+  "title": "GROWIにおける複数の脆弱性",
+  "url": "https://jvn.jp/jp/JVN51223238/",
+  "desc": "株式会社GROWIが提供するGROWIには、複数の脆弱性が存在します。",
+  "date": "2026-10-27"
+ },
+ {
+  "id": "JVN#90463048",
+  "title": "Sleipnir Mobile for Androidのユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性",
+  "url": "https://jvn.jp/jp/JVN90463048/",
+  "desc": "フェンリル株式会社が提供するSleipnir Mobile for Androidには、ユーザーインターフェースにおいて偽のアドレスバーなどを表示される脆弱性が存在します。",
+  "date": "2026-10-27"
+ },
+ {
+  "id": "JVNVU#90547696",
+  "title": "Fireblocks製mpc-libの強化導出（Hardened Derivation）処理における脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU90547696/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-10-27"
+ },
+ {
+  "id": "JVNVU#90363302",
+  "title": "COVESA vsomeipにおける過剰なメモリ割り当ての脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU90363302/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-10-27"
+ },
+ {
+  "id": "JVNVU#97400824",
+  "title": "BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）",
+  "url": "https://jvn.jp/vu/JVNVU97400824/",
+  "desc": "Googleのデータ圧縮アルゴリズムBrotliのC言語実装における脆弱性（<a href=\"https://www.cve.org/CVERecord?id=CVE-2026-111497\">CVE-2026-111497</a>）に対するアドバイザリが公開されました。<br />\n<br />\n本脆弱性は「HTTP2Shell」や「Node2Shell」とも呼ばれています。",
+  "date": "2026-10-26"
+ },
+ {
+  "id": "JVNVU#96549652",
+  "title": "富士電機製V-SFTにおける複数の脆弱性（2026年10月）",
+  "url": "https://jvn.jp/vu/JVNVU96549652/",
+  "desc": "富士電機株式会社が提供するV-SFTには、複数の脆弱性が存在します。",
+  "date": "2026-10-26"
+ },
+ {
+  "id": "JVN#75668103",
+  "title": "電子納品物検査支援システムにおけるインストール時の不適切なファイルアクセス権設定の脆弱性",
+  "url": "https://jvn.jp/jp/JVN75668103/",
+  "desc": "国土交通省が提供する電子納品物検査支援システムには、インストール時に不適切なファイルアクセス権設定が行われる脆弱性が存在します。",
+  "date": "2026-10-26"
+ },
+ {
+  "id": "JVN#82312317",
+  "title": "プリザンターのLDAP認証における認証不備の脆弱性",
+  "url": "https://jvn.jp/jp/JVN82312317/",
+  "desc": "株式会社インプリムが提供するプリザンターのLDAP認証には、認証不備の脆弱性が存在します。",
+  "date": "2026-10-23"
+ },
+ {
+  "id": "JVNVU#98747108",
+  "title": "CISA ICS Advisory / ICS Medical Advisory（2026年10月22日）",
+  "url": "https://jvn.jp/vu/JVNVU98747108/",
+  "desc": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+  "date": "2026-10-23"
+ },
+ {
+  "id": "JVNVU#91023667",
+  "title": "LIFF SDKにおけるクロスサイトスクリプティングの脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU91023667/",
+  "desc": "LINEヤフー株式会社が提供するLIFF SDKには、クロスサイトスクリプティングの脆弱性が存在します。",
+  "date": "2026-10-22"
+ }
+]

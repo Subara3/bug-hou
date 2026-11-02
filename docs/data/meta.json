@@ -1,0 +1,78 @@
+{
+ "fetched_at": "2026-11-02T04:04:05Z",
+ "days": 90,
+ "targets": [
+  {
+   "id": "php",
+   "label": "PHP",
+   "cves": 13,
+   "critical": 2,
+   "high": 1,
+   "kev_recent": 2,
+   "kev_total": 13,
+   "ghsa": 60,
+   "jvn": 1
+  },
+  {
+   "id": "wordpress",
+   "label": "WordPress",
+   "cves": 1,
+   "critical": 0,
+   "high": 1,
+   "kev_recent": 1,
+   "kev_total": 7,
+   "ghsa": 0,
+   "jvn": 0
+  },
+  {
+   "id": "nodejs",
+   "label": "Node.js",
+   "cves": 1,
+   "critical": 1,
+   "high": 0,
+   "kev_recent": 0,
+   "kev_total": 1,
+   "ghsa": 60,
+   "jvn": 0
+  },
+  {
+   "id": "python",
+   "label": "Python",
+   "cves": 14,
+   "critical": 2,
+   "high": 2,
+   "kev_recent": 0,
+   "kev_total": 0,
+   "ghsa": 60,
+   "jvn": 0
+  },
+  {
+   "id": "webserver",
+   "label": "Apache / nginx",
+   "cves": 40,
+   "critical": 7,
+   "high": 25,
+   "kev_recent": 0,
+   "kev_total": 4,
+   "ghsa": 0,
+   "jvn": 0
+  }
+ ],
+ "status": {
+  "kev": "ok",
+  "jvn": "ok",
+  "php.cves": "ok",
+  "php.ghsa": "ok",
+  "php.eol": "ok",
+  "wordpress.cves": "ok",
+  "wordpress.eol": "ok",
+  "nodejs.cves": "ok",
+  "nodejs.ghsa": "ok",
+  "nodejs.eol": "ok",
+  "python.cves": "ok",
+  "python.ghsa": "ok",
+  "python.eol": "ok",
+  "webserver.cves": "ok",
+  "webserver.eol": "ok"
+ }
+}
