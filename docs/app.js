@@ -82,15 +82,16 @@ function lampOf(t) {
 }
 
 function renderNav() {
-  $("#nav").innerHTML = mineNavLink() + meta.targets
-    .map(
-      (t) => `<a href="#${esc(t.id)}" data-id="${esc(t.id)}" aria-current="${t.id === current}">
-        <span class="lamp ${lampOf(t)}"></span>
-        <span class="t-name">${esc(t.label)}</span>
-        <span class="t-count">CVE <b>${t.cves}</b><br>KEV <b>${t.kev_recent}</b>/${t.kev_total}</span>
+  $("#nav").innerHTML =
+    meta.targets
+      .map(
+        (t) => `<a href="#${esc(t.id)}" aria-current="${t.id === current}" title="CVE ${t.cves}件・KEV ${t.kev_recent}件">
+        <span class="dot ${lampOf(t)}"></span>${esc(t.label)}<span class="count">${t.cves}</span>
       </a>`
-    )
-    .join("");
+      )
+      .join("") +
+    '<span class="sep"></span>' +
+    mineNavLink();
 }
 
 // ---------------- 01 バージョン
@@ -284,11 +285,7 @@ function renderHead(d, t) {
 }
 
 function replayAnimation() {
-  document.querySelectorAll(".block").forEach((b) => {
-    b.style.animation = "none";
-    void b.offsetWidth;
-    b.style.animation = "";
-  });
+  /* アニメーションはなし */
 }
 
 async function show(id) {

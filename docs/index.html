@@ -3,73 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>バグ報（ばくほう）｜脆弱性ウォッチャー</title>
+<title>バグ報｜脆弱性ウォッチャー</title>
+<link rel="alternate" type="application/atom+xml" title="バグ報｜対応が必要" href="feeds/action.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;800&family=Space+Grotesk:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="sheet">
-  <aside class="rail">
-    <header class="masthead">
-      <p class="stamp">WATCH LOG</p>
-      <h1><ruby>バグ報<rt>ばくほう</rt></ruby></h1>
-      <p class="sub">脆弱性ウォッチャー</p>
-      <p class="fetched" id="fetched">読み込み中</p>
-    </header>
-    <nav id="nav" class="board" aria-label="対象"></nav>
-    <dl class="legend">
-      <div><dt><span class="lamp red"></span></dt><dd>期間内にKEV（悪用確認）入り</dd></div>
-      <div><dt><span class="lamp amber"></span></dt><dd>直近30日にCRITICAL/HIGH</dd></div>
-      <div><dt><span class="lamp green"></span></dt><dd>上記なし</dd></div>
-    </dl>
-  </aside>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#php">バグ報<span>脆弱性ウォッチャー</span></a>
+    <p class="fetched" id="fetched">読み込み中</p>
+  </div>
+  <nav id="nav" class="nav" aria-label="対象"></nav>
+</header>
 
-  <main id="main" class="main">
-    <section id="mine" class="mine" hidden></section>
-    <div id="head"></div>
-    <section class="block" id="sec-eol">
-      <h2><span class="no">01</span>バージョンとサポート期限</h2>
-      <div id="eol"></div>
-    </section>
+<main id="main" class="main">
+  <section id="mine" class="mine" hidden></section>
+  <div id="head"></div>
 
-    <section class="block" id="sec-kev">
-      <h2><span class="no">02</span>悪用が確認された脆弱性 <small>CISA KEV</small></h2>
-      <div id="kev"></div>
-    </section>
+  <section class="block" id="sec-eol">
+    <h2>バージョンとサポート期限</h2>
+    <div id="eol"></div>
+  </section>
 
-    <div class="tabs" id="tabs" role="tablist" aria-label="Claudeの仕分け"></div>
-    <section class="block" id="sec-cve">
-      <h2><span class="no">03</span>新しいCVE <small>NVD・直近<span class="days"></span>日</small></h2>
-      <div class="filters" id="cve-filters"></div>
-      <div id="cves"></div>
-    </section>
+  <section class="block" id="sec-kev">
+    <h2>悪用が確認された脆弱性 <small>CISA KEV</small></h2>
+    <div id="kev"></div>
+  </section>
 
-    <section class="block" id="sec-ghsa">
-      <h2><span class="no">04</span>パッケージの脆弱性 <small>GitHub Advisory</small></h2>
-      <div id="ghsa"></div>
-    </section>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Claudeの仕分け"></div>
+  <section class="block" id="sec-cve">
+    <h2>新しいCVE <small>NVD・直近<span class="days"></span>日</small></h2>
+    <div class="filters" id="cve-filters"></div>
+    <div id="cves"></div>
+  </section>
 
-    <section class="block" id="sec-jvn">
-      <h2><span class="no">05</span>JVN新着 <small>日本語</small></h2>
-      <div id="jvn"></div>
-    </section>
+  <section class="block" id="sec-ghsa">
+    <h2>パッケージの脆弱性 <small>GitHub Advisory</small></h2>
+    <div id="ghsa"></div>
+  </section>
 
-    <footer class="colophon">
-      <p>取得元：
-        <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV</a> ／
-        <a href="https://nvd.nist.gov/">NVD</a> ／
-        <a href="https://github.com/advisories">GitHub Advisory Database</a> ／
-        <a href="https://endoflife.date/">endoflife.date</a> ／
-        <a href="https://jvn.jp/">JVN</a>
-      </p>
-      <p>フィード：<a href="feeds/action.xml">対応が必要（全体）</a> ／ 対象ごとは各ページの見張りリストから</p>
-      <p>This product uses the NVD API but is not endorsed or certified by the NVD.</p>
-      <div id="status"></div>
-    </footer>
-  </main>
-</div>
+  <section class="block" id="sec-jvn">
+    <h2>JVN新着 <small>日本語</small></h2>
+    <div id="jvn"></div>
+  </section>
+
+  <footer class="colophon">
+    <p>取得元：
+      <a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA KEV</a> ／
+      <a href="https://nvd.nist.gov/">NVD</a> ／
+      <a href="https://github.com/advisories">GitHub Advisory Database</a> ／
+      <a href="https://endoflife.date/">endoflife.date</a> ／
+      <a href="https://jvn.jp/">JVN</a>
+    </p>
+    <p>フィード：<a href="feeds/action.xml">対応が必要（全体）</a> ／ 対象ごと・パッケージごとはウォッチリストから</p>
+    <p>状態の色：<span class="dot red"></span>期間内にKEV入り　<span class="dot amber"></span>直近30日にCRITICAL/HIGH　<span class="dot green"></span>上記なし</p>
+    <p>This product uses the NVD API but is not endorsed or certified by the NVD.</p>
+    <div id="status"></div>
+  </footer>
+</main>
 <script src="app.js"></script>
 <script src="watch.js"></script>
 </body>

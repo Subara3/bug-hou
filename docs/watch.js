@@ -1,5 +1,5 @@
 "use strict";
-// 見張りリスト：このブラウザに登録した製品・パッケージに当てはまる脆弱性を拾う。
+// ウォッチリスト：このブラウザに登録した製品・パッケージに当てはまる脆弱性を拾う。
 // app.js の後に読み込む（meta / cache / triage / esc などを共有する）。
 
 const WKEY = "bughou.watch.v1";
@@ -183,16 +183,12 @@ function totalNew() {
 function mineNavLink() {
   const n = totalNew();
   const count = loadWatch().length;
-  return `<a href="#mine" class="mine-link" aria-current="${current === "mine"}">
-    <span class="eye" aria-hidden="true">◉</span>
-    <span class="t-name">見張りリスト</span>
-    <span class="t-count">${count}件${n ? `<br><b class="nb">新着 ${n}</b>` : ""}</span>
-  </a>`;
+  return `<a href="#mine" aria-current="${current === "mine"}">ウォッチリスト<span class="count${n ? " new" : ""}">${n ? `新着 ${n}` : count}</span></a>`;
 }
 
 function updateTitleBadge() {
   const n = totalNew();
-  const base = current === "mine" ? "見張りリスト｜バグ報" : document.title.replace(/^\(\d+\)\s*/, "");
+  const base = current === "mine" ? "ウォッチリスト｜バグ報" : document.title.replace(/^\(\d+\)\s*/, "");
   document.title = (n ? `(${n}) ` : "") + base;
 }
 
@@ -296,7 +292,7 @@ function formHtml() {
            <datalist id="w-names">${names.map((n) => `<option value="${esc(n)}">`).join("")}</datalist>`
     }
     <label>バージョン<input name="version" placeholder="${ui.kind === "product" ? "8.3.14" : "12.50.0"}（空欄なら全部）"></label>
-    <button class="chip add" type="submit">見張る</button>
+    <button class="chip add" type="submit">追加</button>
   </form>`;
 }
 
@@ -306,7 +302,7 @@ async function showMine() {
   renderNav();
   const list = loadWatch();
   const box = $("#mine");
-  box.innerHTML = `<div class="target-head"><h2>見張りリスト</h2><p>登録はこのブラウザに保存されます</p></div>
+  box.innerHTML = `<div class="target-head"><h2>ウォッチリスト</h2><p>登録はこのブラウザに保存されます</p></div>
     ${formHtml()}
     <p class="w-hint">「フィードURLをコピー」で取れるURLを、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a> など）に登録すると、新着がメールで届きます。
     全体の「対応が必要」だけを受け取るなら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/action.xml"))}">このフィード</button>。</p>
@@ -343,6 +339,7 @@ function setView(kind) {
 
 async function route() {
   const h = location.hash.slice(1);
+  window.scrollTo(0, 0);
   if (h === "mine") await showMine();
   else {
     setView("target");

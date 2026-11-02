@@ -30,9 +30,9 @@ This product uses the NVD API but is not endorsed or certified by the NVD.
 
 クラウドで動くClaude Code（スケジュール実行）が6時間ごとに [TRIAGE.md](TRIAGE.md) の手順で新着を「対応が必要／確認しておく／様子見」に分け、`docs/data/triage.json` に書きます。画面ではCVEとパッケージの欄がこの3つのタブに分かれます。
 
-## 見張りリストとフィード
+## ウォッチリストとフィード
 
-画面左の「見張りリスト」に、製品（PHP 8.3.14 など）やパッケージ（laravel/framework 12.50.0 など）を登録できます。登録はブラウザのlocalStorageに保存され、サーバーには送りません。
+画面左の「ウォッチリスト」に、製品（PHP 8.3.14 など）やパッケージ（laravel/framework 12.50.0 など）を登録できます。登録はブラウザのlocalStorageに保存され、サーバーには送りません。
 
 - 製品はNVDの影響バージョン範囲、パッケージはGitHub Advisoryの範囲で照合します。パッケージは表示のたびにGitHub APIにも問い合わせ、過去の分も拾います（6時間キャッシュ）
 - NVDで影響範囲がまだ登録されていないCVEは「バージョン情報なし（要確認）」に分けます
