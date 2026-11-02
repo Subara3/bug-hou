@@ -77,12 +77,32 @@ function readButton(id) {
 }
 const inTab = (id) => tab === "all" || levelOf(id) === tab;
 
+// Claudeの意見は吹き出しで出す（データから分かる事実と分けるため）
+const OPINION = {
+  action: '<b class="lv-action">要対応</b>だと思うよ',
+  check: '<b class="lv-check">要確認</b>だと思うよ',
+  watch: '<b class="lv-watch">様子見でいい</b>と思うよ',
+  read: '<b class="lv-action">要対応</b>だと思うよ（既読）',
+};
+// 線画の星（Claudeの色）。公式ロゴは使わない
+const CLAUDE_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="2.4" stroke-linecap="round">${[0, 45, 90, 135]
+  .map((r) => `<line x1="12" y1="3.5" x2="12" y2="20.5" transform="rotate(${r} 12 12)"/>`)
+  .join("")}</g></svg>`;
+
 function advice(id) {
   const t = triage.items[id];
   if (!t) return "";
   const lv = levelOf(id);
-  const label = lv === "read" ? "要対応・既読" : levelLabel(lv);
-  return `<div class="advice lv-${esc(lv)}"><span class="verdict lv-${esc(lv)}">${label}</span>${esc(t.reason)}${t.todo ? `<span class="todo">対処：${esc(t.todo)}</span>` : ""}${readButton(id)}</div>`;
+  const say = OPINION[lv] || "";
+  return `<div class="advice lv-${esc(lv)}">
+    <span class="claude-icon" title="Claudeの意見">${CLAUDE_ICON}</span>
+    <div class="bubble">
+      <p class="say"><span class="who">Claude</span>${say}</p>
+      <p class="why">${esc(t.reason)}</p>
+      ${t.todo ? `<p class="todo">対処：${esc(t.todo)}</p>` : ""}
+      ${readButton(id)}
+    </div>
+  </div>`;
 }
 
 function renderTabs(d) {
@@ -146,7 +166,7 @@ function renderNav() {
         (t) => {
           const act = cache[t.id] ? levelCounts(idsOf(cache[t.id])).action : 0;
           return `<a href="#${esc(t.id)}" aria-current="${t.id === current}">
-        <span class="dot ${lampOf(t)}"></span>${esc(t.label)}${act ? `<span class="count new">要対応 ${act}</span>` : ""}
+        <span class="dot ${lampOf(t)}"></span>${esc(t.label)}${act ? `<span class="count new">確認 ${act}件</span>` : ""}
       </a>`;
         }
       )
@@ -274,13 +294,13 @@ function renderCves(d) {
       <div class="body">
         <a class="id" href="https://nvd.nist.gov/vuln/detail/${encodeURIComponent(c.id)}" target="_blank" rel="noopener">${esc(c.id)}</a>
         ${c.kev ? '<span class="tag kev">KEV</span>' : ""}${newTag(c)}
-        ${advice(c.id)}
         <p class="desc clamp" title="クリックで全文">${esc(c.desc)}</p>
         <div class="meta">
           ${c.cvss ? `<span>CVSS ${esc(c.cvss)}</span>` : ""}
           ${c.cwe.length ? `<span>${c.cwe.map(esc).join(" ")}</span>` : ""}
           <span>${esc(c.status || "")}</span>
         </div>
+        ${advice(c.id)}
       </div>
     </div>`
   );
@@ -297,13 +317,13 @@ function renderGhsa(d) {
       <div class="body">
         <a class="id" href="${esc(safeUrl(a.url))}" target="_blank" rel="noopener">${esc(a.summary)}</a>
         ${a.kev ? '<span class="tag kev">KEV</span>' : ""}${newTag(a)}
-        ${advice(a.id)}
         <div class="meta">
           ${a.packages
             .map((p) => `<span><span class="pkg">${esc(p.name)}</span> ${esc(p.range || "")}${p.fixed ? ` → <span class="fix">${esc(p.fixed)}</span>` : ""}</span>`)
             .join("")}
           <span>${esc(a.cve || a.id)}</span>
         </div>
+        ${advice(a.id)}
       </div>
     </div>`;
   const list = d.ghsa.filter((a) => inTab(a.id));

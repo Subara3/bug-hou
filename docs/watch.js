@@ -234,8 +234,8 @@ function hitRow(h, isNew) {
       <div class="body">
         <a class="id" href="https://nvd.nist.gov/vuln/detail/${encodeURIComponent(x.id)}" target="_blank" rel="noopener">${esc(x.id)}</a>
         ${x.kev ? '<span class="tag kev">KEV</span>' : ""}${isNew ? '<span class="tag new">NEW</span>' : ""}
-        ${advice(x.id)}
         <p class="desc clamp" title="クリックで全文">${esc(x.desc)}</p>
+        ${advice(x.id)}
       </div>
     </div>`;
   }
@@ -248,8 +248,8 @@ function hitRow(h, isNew) {
     <div class="body">
       <a class="id" href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">${esc(x.summary)}</a>
       ${x.kev ? '<span class="tag kev">KEV</span>' : ""}${isNew ? '<span class="tag new">NEW</span>' : ""}
-      ${advice(x.id)}
       <div class="meta">${pk}<span>${esc(x.cve || x.id)}</span></div>
+      ${advice(x.id)}
     </div>
   </div>`;
 }

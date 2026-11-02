@@ -159,14 +159,21 @@ tr.dead .life i { background: var(--line-strong); }
 .tab.lv-action span { color: var(--critical); font-weight: 600; }
 .tab-note { margin-left: auto; padding-bottom: 8px; font-size: 12px; color: var(--text-sub); }
 
-.advice { margin: 6px 0 2px; padding: 6px 10px; background: var(--bg-sub); border-left: 3px solid var(--medium); border-radius: 0 4px 4px 0; }
-.advice b { margin-right: 8px; font-size: 12px; }
-.advice .todo { display: block; font-size: 13px; }
-.advice.lv-action { border-left-color: var(--critical); }
-.advice.lv-action b { color: var(--critical); }
-.advice.lv-check { border-left-color: var(--high); }
-.advice.lv-check b { color: #9a5208; }
-.advice.lv-watch b { color: var(--text-sub); }
+.advice { display: flex; align-items: flex-start; gap: 10px; margin: 8px 0 4px; }
+.claude-icon { flex: 0 0 28px; width: 28px; height: 28px; display: grid; place-items: center; border-radius: 50%; background: #fbeee8; color: #c96442; }
+.claude-icon svg { width: 16px; height: 16px; }
+.bubble { position: relative; flex: 1; min-width: 0; padding: 8px 12px; background: #fff; border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+.bubble::before, .bubble::after { content: ""; position: absolute; top: 9px; border: 6px solid transparent; }
+.bubble::before { left: -13px; border-right-color: var(--line); }
+.bubble::after { left: -11px; border-right-color: #fff; }
+.bubble p { margin: 0; }
+.bubble .say { font-size: 14px; }
+.bubble .who { margin-right: 8px; font-size: 11px; font-weight: 600; color: #c96442; }
+.bubble .why { color: var(--text); }
+.bubble .todo { margin-top: 2px; }
+.say b.lv-action { color: var(--critical); }
+.say b.lv-check { color: #9a5208; }
+.say b.lv-watch { color: var(--ok); }
 
 /* フィルタ・ボタン */
 .filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; align-items: center; }
@@ -250,7 +257,9 @@ details.more summary { cursor: pointer; color: var(--text-sub); font-size: 13px;
 .verdict.lv-check { background: #fcefe2; color: #9a5208; }
 .verdict.lv-watch, .verdict.lv-ok { background: #e7f3ec; color: var(--ok); }
 .verdict.lv-none, .verdict.lv-read { background: var(--bg-sub); color: var(--text-sub); }
-.advice.lv-read { border-left-color: var(--line); color: var(--text-sub); }
+.advice.lv-read .bubble { background: var(--bg-sub); color: var(--text-sub); }
+.advice.lv-read .bubble::after { border-right-color: var(--bg-sub); }
+.advice.lv-read .say b { color: var(--text-sub); }
 .read-btn { display: inline-block; margin-top: 6px; padding: 2px 10px; font-size: 12px; }
 .read-all { display: inline-block; margin-top: 10px; font-size: 12px; background: #fff; }
 

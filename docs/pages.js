@@ -104,6 +104,7 @@ function showAbout() {
         <li><b>要確認</b>：上に当てはまらないHIGH。特定の設定や拡張モジュールを使っているときだけ影響するもの。利用者の少ないパッケージのCRITICAL</li>
         <li><b>様子見でよい</b>：MEDIUM以下。ローカルからしか突けない、管理者権限が前提など、条件が厳しいもの</li>
       </ul>
+      <p>Claudeの判定は、各脆弱性の下にClaudeのアイコンと吹き出しで「要対応だと思うよ」のように出しています。吹き出しの外にあるのは、NVDなどの取得元のデータです。</p>
       <p>判断に迷うものは、一段階上（注意が必要な側）に入れています。基準の全文は<a href="https://github.com/Subara3/bug-hou/blob/main/TRIAGE.md" target="_blank" rel="noopener">TRIAGE.md</a>にあります。</p>
 
       <h3>色とスコア</h3>
