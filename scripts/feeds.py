@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
 OUT = ROOT / "docs" / "feeds"
 SITE = "https://subara3.github.io/bug-hou/"
-LEVEL_JA = {"action": "要対応", "check": "要確認", "watch": "様子見でよい"}
+LEVEL_JA = {"action": "要対応", "check": "要確認", "watch": "様子見"}
 MAX = 50
 
 

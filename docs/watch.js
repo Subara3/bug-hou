@@ -267,7 +267,7 @@ function entryBlock(w, m, liveNote) {
   else if (eolDead) v = ["check", "要確認（サポート終了の系列）"];
   else if (check) v = ["check", `要確認 ${check}件`];
   else if (m.unknown.length) v = ["check", "要確認（バージョン情報なし）"];
-  else v = ["ok", m.hit.length ? "様子見でよい" : "問題なし"];
+  else v = ["ok", m.hit.length ? "様子見" : "問題なし"];
   const kind = w.kind === "product" ? "本体" : ECOS[w.eco] || w.eco;
   const rows = m.hit.length
     ? m.hit.slice(0, 30).map((h) => hitRow(h, !seen.has(h.item.id))).join("") +

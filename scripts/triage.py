@@ -5,7 +5,7 @@
 
 判定ファイルの形（FILE）:
   [{"id": "CVE-2026-xxxx", "level": "action", "reason": "...", "todo": "..."}, ...]
-  level は action（要対応） / check（要確認） / watch（様子見でよい）
+  level は action（要対応） / check（要確認） / watch（様子見）
 """
 
 from __future__ import annotations

@@ -394,3 +394,4 @@ button.vbox:hover { background: var(--bg-sub); }
   .tl-date { position: static; margin-bottom: 6px; }
   .tl-item { grid-template-columns: 1fr; gap: 2px; }
 }
+.todo-head { display: block; margin-top: 8px; font: 600 11px var(--mono); letter-spacing: .12em; color: var(--text-sub); }

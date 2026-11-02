@@ -124,14 +124,14 @@ function evRow(e, wi) {
   </li>`;
 }
 
-// 様子見でよいものは数が多いので、日ごとにたたんでおく
+// 様子見ものは数が多いので、日ごとにたたんでおく
 const isQuiet = (e) => (e.src === "nvd" || e.src === "ghsa") && evLevel(e) === "watch";
 function dayItems(items, wi) {
   const loud = items.filter((e) => !isQuiet(e));
   const quiet = items.filter(isQuiet);
   const fold =
     quiet.length && !tl.mine
-      ? `<li class="tl-quiet"><details><summary>様子見でよいもの ${quiet.length}件</summary><ol class="tl-list">${quiet
+      ? `<li class="tl-quiet"><details><summary>様子見 ${quiet.length}件</summary><ol class="tl-list">${quiet
           .map((e) => evRow(e, wi))
           .join("")}</ol></details></li>`
       : quiet.map((e) => evRow(e, wi)).join("");

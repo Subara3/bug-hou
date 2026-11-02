@@ -19,7 +19,7 @@ let tab = "all";
 const LEVELS = [
   ["action", "要対応"],
   ["check", "要確認"],
-  ["watch", "様子見でよい"],
+  ["watch", "様子見"],
   ["read", "既読"],
   ["none", "未判定"],
   ["all", "すべて"],
@@ -83,7 +83,7 @@ const inTab = (id) => tab === "all" || levelOf(id) === tab;
 const OPINION = {
   action: '<b class="lv-action">要対応</b>だと思うよ',
   check: '<b class="lv-check">要確認</b>だと思うよ',
-  watch: '<b class="lv-watch">様子見でいい</b>と思うよ',
+  watch: '<b class="lv-watch">様子見</b>だと思うよ',
   read: '<b class="lv-action">要対応</b>だと思うよ（既読）',
 };
 // 線画の星（Claudeの色）。公式ロゴは使わない
@@ -386,7 +386,7 @@ function verdictLine(actions, readN = 0) {
     return readN
       ? `<p class="verdict-line ok"><b>要対応はすべて既読です。</b>既読にした${readN}件は「既読」のタブで見られます。</p>`
       : '<p class="verdict-line ok"><b>要対応はありません。</b>急いで更新が必要なものは出ていません。</p>';
-  return `<div class="verdict-line action"><b>要対応が${actions.length}件あります。</b>いまやること${todoList(actions)}
+  return `<div class="verdict-line action"><b>要対応が${actions.length}件あります。</b><span class="todo-head">TODO</span>${todoList(actions)}
     <button class="readcheck wide" data-read-all="${esc(actions.map((x) => x.id).join(" "))}"><span class="box">${CHECK_SVG}</span><span class="lbl">${actions.length}件とも既読にする</span></button></div>`;
 }
 

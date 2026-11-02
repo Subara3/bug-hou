@@ -39,7 +39,7 @@ function showSummary() {
     .join("");
 
   const table = `<table class="sum-table">
-    <thead><tr><th>対象</th><th>要対応</th><th>要確認</th><th>様子見でよい</th><th>既読</th><th>未判定</th><th>KEV追加（${meta.days}日）</th></tr></thead>
+    <thead><tr><th>対象</th><th>要対応</th><th>要確認</th><th>様子見</th><th>既読</th><th>未判定</th><th>KEV追加（${meta.days}日）</th></tr></thead>
     <tbody>${rows
       .map(
         (r) => `<tr>
@@ -102,7 +102,7 @@ function showAbout() {
       <ul>
         <li><b>要対応</b>：CISA KEV（悪用が確認された脆弱性の一覧）に載っているもの。本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性のうち、ログインなしで外から攻撃できるCRITICAL・HIGH。広く使われているパッケージ（Laravel、Symfony、express、Django、requestsなど）の脆弱性のうち、外から攻撃できるCRITICAL</li>
         <li><b>要確認</b>：上に当てはまらないHIGH。特定の設定や拡張モジュールを使っているときだけ影響するもの。利用者の少ないパッケージのCRITICAL</li>
-        <li><b>様子見でよい</b>：MEDIUM以下のもの。サーバーにログインできる人しか攻撃できない、管理者の権限が要るなど、攻撃の条件が厳しいもの</li>
+        <li><b>様子見</b>：MEDIUM以下のもの。サーバーにログインできる人しか攻撃できない、管理者の権限が要るなど、攻撃の条件が厳しいもの</li>
       </ul>
       <p>Claudeの判定は、各脆弱性の下にClaudeのアイコンをつけて「要対応だと思うよ」のように出しています。アイコンがついていない部分は、NVDなどの取得元のデータです。</p>
       <p>迷ったものは、重いほうの区分に入れています。基準の全文は<a href="https://github.com/Subara3/bug-hou/blob/main/TRIAGE.md" target="_blank" rel="noopener">TRIAGE.md</a>にあります。</p>
