@@ -55,7 +55,7 @@ def get(url: str, headers: dict | None = None, retries: int = 3) -> bytes:
     for i in range(retries):
         try:
             req = urllib.request.Request(url, headers=h)
-            with urllib.request.urlopen(req, timeout=60, context=SSL_CTX) as r:
+            with urllib.request.urlopen(req, timeout=120, context=SSL_CTX) as r:
                 return r.read()
         except urllib.error.HTTPError as e:
             last = e
@@ -63,9 +63,9 @@ def get(url: str, headers: dict | None = None, retries: int = 3) -> bytes:
                 time.sleep(10 * (i + 1))
                 continue
             raise
-        except urllib.error.URLError as e:
+        except (urllib.error.URLError, TimeoutError) as e:
             last = e
-            time.sleep(5 * (i + 1))
+            time.sleep(10 * (i + 1))
     raise RuntimeError(f"{url}: {last}")
 
 
