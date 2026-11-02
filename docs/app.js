@@ -140,7 +140,7 @@ function lampOf(t) {
 
 function renderNav() {
   $("#nav").innerHTML =
-    `<a href="#" aria-current="${current === "summary"}">まとめ</a><span class="sep"></span>` +
+    `<a href="#" aria-current="${current === "home"}">ホーム</a><a href="#summary" aria-current="${current === "summary"}">まとめ</a><span class="sep"></span>` +
     meta.targets
       .map(
         (t) => {
@@ -416,6 +416,7 @@ function refreshCves() {
 // 既読を切り替えたあと、スクロール位置とタブを保ったまま描き直す
 function rerender() {
   renderNav();
+  if (current === "home") return renderTimeline();
   if (current === "summary") return showSummary();
   if (current === "mine") return showMine();
   const d = cache[current];

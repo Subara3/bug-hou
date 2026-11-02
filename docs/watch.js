@@ -360,7 +360,8 @@ async function route() {
   const h = location.hash.slice(1);
   window.scrollTo(0, 0);
   if (h === "mine") await showMine();
-  else if (h === "" || h === "summary") showSummary();
+  else if (h === "") showTimeline();
+  else if (h === "summary") showSummary();
   else if (h === "about") showAbout();
   else {
     setView("target");
