@@ -236,8 +236,29 @@ function vulnInfo(v, dep) {
   return { id: v.id, cve, sev, fixed, url, tri, summary: v.summary || (v.details || "").slice(0, 160), published: (v.published || "").slice(0, 10) };
 }
 
+// パッケージの一覧をOSVに問い合わせて、脆弱性のあるものを返す
+async function scanDeps(deps, onProgress) {
+  onProgress(`${deps.length}個のパッケージをOSVに問い合わせています…`);
+  const hits = (await osvBatch(deps)).filter((x) => x.ids.length);
+  const ids = [...new Set(hits.flatMap((x) => x.ids))];
+  const det = await osvDetails(ids, (n, all) => onProgress(`脆弱性の詳しい内容を取っています（${n}／${all}）…`));
+  const pkgs = hits
+    .map((h) => {
+      const vulns = h.ids
+        .map((id) => det[id])
+        .filter((v) => v && !v.withdrawn)
+        .map((v) => vulnInfo(v, h.dep))
+        .sort((a, b) => SEV_ORDER.indexOf(a.sev) - SEV_ORDER.indexOf(b.sev));
+      return { dep: h.dep, vulns, top: vulns[0]?.sev || "" };
+    })
+    .filter((p) => p.vulns.length)
+    .sort((a, b) => SEV_ORDER.indexOf(a.top) - SEV_ORDER.indexOf(b.top) || a.dep.name.localeCompare(b.dep.name));
+  return { total: deps.length, pkgs };
+}
+
 // getDeps はパッケージの一覧を返す関数（ファイルを読むか、前回の一覧を使う）
 async function runLock(getDeps, name) {
+  const projName = (document.getElementById("lock-proj")?.value || "").trim();
   lockState.busy = true;
   lockState.error = "";
   lockState.result = null;
@@ -245,28 +266,60 @@ async function runLock(getDeps, name) {
   try {
     const deps = getDeps();
     if (!deps.length) throw new Error("パッケージが見つかりませんでした");
+    if (projName) {
+      // プロジェクトに保存して、そのプロジェクトの欄で結果を出す
+      addProjFile(projByName(projName, true), name, deps);
+      lockState.busy = false;
+      ui.proj = projName;
+      showMine();
+      return;
+    }
     localStorage.setItem(LKEY, JSON.stringify({ name, at: new Date().toISOString(), deps }));
-    renderLock(`${deps.length}個のパッケージをOSVに問い合わせています…`);
-    const hits = (await osvBatch(deps)).filter((x) => x.ids.length);
-    const ids = [...new Set(hits.flatMap((x) => x.ids))];
-    const det = await osvDetails(ids, (n, all) => renderLock(`脆弱性の詳しい内容を取っています（${n}／${all}）…`));
-    const pkgs = hits
-      .map((h) => {
-        const vulns = h.ids
-          .map((id) => det[id])
-          .filter((v) => v && !v.withdrawn)
-          .map((v) => vulnInfo(v, h.dep))
-          .sort((a, b) => SEV_ORDER.indexOf(a.sev) - SEV_ORDER.indexOf(b.sev));
-        return { dep: h.dep, vulns, top: vulns[0]?.sev || "" };
-      })
-      .filter((p) => p.vulns.length)
-      .sort((a, b) => SEV_ORDER.indexOf(a.top) - SEV_ORDER.indexOf(b.top) || a.dep.name.localeCompare(b.dep.name));
-    lockState.result = { name, total: deps.length, pkgs, at: new Date().toISOString() };
+    lockState.result = { name, ...(await scanDeps(deps, renderLock)) };
   } catch (e) {
     lockState.error = e.message;
   }
   lockState.busy = false;
   renderLock();
+}
+
+// seen を渡すと、そこにないものにNEWを付ける。watchBtn はウォッチリストに入れるボタンを出すか
+function pkgsHtml(pkgs, { seen = null, watchBtn = true } = {}) {
+  const listed = new Set(loadWatch().filter((w) => w.kind === "package").map((w) => `${w.eco}|${w.name.toLowerCase()}`));
+  return pkgs
+    .map((p) => {
+      const eco = OSV_ECO[p.dep.eco];
+      const inList = listed.has(`${eco}|${p.dep.name.toLowerCase()}`);
+      const fixTo = p.vulns.map((v) => v.fixed).filter(Boolean).sort(cmpVer).pop();
+      const btn = !watchBtn
+        ? ""
+        : inList
+          ? '<span class="w-kind">ウォッチ中</span>'
+          : `<button class="chip" data-lock-watch="${esc(eco)}|${esc(p.dep.name)}|${esc(p.dep.version)}">ウォッチリストに入れる</button>`;
+      return `<article class="lock-pkg">
+        <header>
+          <span class="pkg">${esc(p.dep.name)}</span><span class="mono">${esc(p.dep.version)}</span>
+          ${p.dep.dev ? '<span class="w-kind">開発用</span>' : ""}
+          ${fixTo ? `<span class="lock-fix">→ <b class="fix mono">${esc(fixTo)}</b> 以上に上げる</span>` : '<span class="lock-fix none">修正版なし</span>'}
+          ${btn}
+        </header>
+        ${p.vulns
+          .map(
+            (v) => `<div class="lock-v">
+            <span class="score ${SEV_CLASS[v.sev] || "na"}">${esc(v.sev === "MODERATE" ? "MEDIUM" : v.sev || "—")}</span>
+            <div>
+              <a class="id" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.id)}</a>
+              ${seen && !seen.has(v.id) ? '<span class="tag new">NEW</span>' : ""}
+              ${v.tri ? `<span class="verdict lv-${esc(v.tri.level)}">${levelLabel(v.tri.level)}</span>` : ""}
+              <span class="lock-meta">${esc(v.cve)}${v.published ? `　${esc(v.published)}` : ""}${v.fixed ? `　<span class="fix">${esc(v.fixed)}で修正</span>` : ""}</span>
+              <p>${esc(v.summary)}</p>
+            </div>
+          </div>`
+          )
+          .join("")}
+      </article>`;
+    })
+    .join("");
 }
 
 function lockResultHtml() {
@@ -276,36 +329,8 @@ function lockResultHtml() {
     return `<p class="lock-sum ok"><b>見つかりませんでした。</b>${esc(r.name)}の${r.total}個のパッケージに、いまのバージョンで当てはまる脆弱性はOSVに登録されていません。</p>`;
   }
   const nv = r.pkgs.reduce((n, p) => n + p.vulns.length, 0);
-  const listed = new Set(loadWatch().filter((w) => w.kind === "package").map((w) => `${w.eco}|${w.name.toLowerCase()}`));
   return `<p class="lock-sum"><b>${r.pkgs.length}個のパッケージに、脆弱性が${nv}件あります。</b>${esc(r.name)}の${r.total}個を調べました。修正版があるものは、そのバージョン以上に上げてください。</p>
-    ${r.pkgs
-      .map((p) => {
-        const eco = OSV_ECO[p.dep.eco];
-        const inList = listed.has(`${eco}|${p.dep.name.toLowerCase()}`);
-        const fixTo = p.vulns.map((v) => v.fixed).filter(Boolean).sort(cmpVer).pop();
-        return `<article class="lock-pkg">
-          <header>
-            <span class="pkg">${esc(p.dep.name)}</span><span class="mono">${esc(p.dep.version)}</span>
-            ${p.dep.dev ? '<span class="w-kind">開発用</span>' : ""}
-            ${fixTo ? `<span class="lock-fix">→ <b class="fix mono">${esc(fixTo)}</b> 以上に上げる</span>` : '<span class="lock-fix none">修正版なし</span>'}
-            ${inList ? '<span class="w-kind">ウォッチ中</span>' : `<button class="chip" data-lock-watch="${esc(eco)}|${esc(p.dep.name)}|${esc(p.dep.version)}">ウォッチリストに入れる</button>`}
-          </header>
-          ${p.vulns
-            .map(
-              (v) => `<div class="lock-v">
-              <span class="score ${SEV_CLASS[v.sev] || "na"}">${esc(v.sev === "MODERATE" ? "MEDIUM" : v.sev || "—")}</span>
-              <div>
-                <a class="id" href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.id)}</a>
-                ${v.tri ? `<span class="verdict lv-${esc(v.tri.level)}">${levelLabel(v.tri.level)}</span>` : ""}
-                <span class="lock-meta">${esc(v.cve)}${v.published ? `　${esc(v.published)}` : ""}${v.fixed ? `　<span class="fix">${esc(v.fixed)}で修正</span>` : ""}</span>
-                <p>${esc(v.summary)}</p>
-              </div>
-            </div>`
-            )
-            .join("")}
-        </article>`;
-      })
-      .join("")}`;
+    ${pkgsHtml(r.pkgs)}`;
 }
 
 function renderLock(progress) {
@@ -334,6 +359,8 @@ function lockBlock() {
       <span>ここにドラッグしても読めます</span>
       ${last ? `<button class="chip" id="lock-again">前回の${esc(last.name)}（${last.deps.length}個）をもう一度調べる</button>` : ""}
     </div>
+    <p class="lock-to"><label>読み込み先のプロジェクト<input id="lock-proj" list="w-projs" placeholder="空欄なら保存しない" value="${esc(ui.proj || "")}"></label>
+      <span>名前を入れると、そのプロジェクトに保存して、開くたびに調べ直します。lockファイルがないプロジェクトは、上のフォームで本体やパッケージを個別に入れてください。</span></p>
     <details class="lock-paste"><summary>中身を貼りつける</summary>
       <textarea id="lock-text" rows="6" placeholder="composer.lock などの中身"></textarea>
       <button class="chip" id="lock-run">調べる</button>
@@ -384,6 +411,237 @@ document.addEventListener("click", (e) => {
     list.push(entry);
     saveWatch(list);
     setSeen(entry.id, new Set(matchOf(entry).hit.map((h) => h.item.id)));
+    showMine();
+  }
+});
+
+// ================================================================ プロジェクト
+// lockファイルの一覧と、本体・パッケージの登録をプロジェクトごとにまとめる。
+// 保存したlockファイルは、ウォッチリストを開くたびにOSVへ問い合わせ直す（結果は6時間ためておく）。
+const PKEY = "bughou.proj.v1"; // [{id, name, files: [{name, at, deps}]}]
+const PLIVE = "bughou.live.p."; // + プロジェクトID → {at, sig, total, pkgs}
+const PSEEN = "p.";
+
+function loadProjs() {
+  try {
+    return JSON.parse(localStorage.getItem(PKEY)) || [];
+  } catch {
+    return [];
+  }
+}
+const saveProjs = (list) => localStorage.setItem(PKEY, JSON.stringify(list));
+
+function projByName(name, create) {
+  const list = loadProjs();
+  let p = list.find((x) => x.name === name);
+  if (!p && create) {
+    p = { id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, name, files: [] };
+    list.push(p);
+    saveProjs(list);
+  }
+  return p;
+}
+function updateProj(id, fn) {
+  const list = loadProjs();
+  const p = list.find((x) => x.id === id);
+  if (p) fn(p);
+  saveProjs(list);
+}
+
+function addProjFile(p, name, deps) {
+  updateProj(p.id, (x) => {
+    // 同じ名前のファイルは置き換える（読み直したとき）
+    x.files = x.files.filter((f) => f.name !== name);
+    x.files.push({ name, at: new Date().toISOString(), deps });
+  });
+}
+
+function projDeps(p) {
+  const m = new Map();
+  for (const f of p.files) for (const d of f.deps) m.set(`${d.eco}|${d.name.toLowerCase()}|${d.version}`, d);
+  return [...m.values()];
+}
+const depsSig = (deps) => deps.map((d) => `${d.eco}|${d.name}|${d.version}`).sort().join(",");
+
+function projCache(p, fresh) {
+  try {
+    const c = JSON.parse(localStorage.getItem(PLIVE + p.id) || "null");
+    if (!c || c.sig !== depsSig(projDeps(p))) return null;
+    if (fresh && Date.now() - c.at > LIVE_TTL) return null;
+    return c;
+  } catch {
+    return null;
+  }
+}
+const projIds = (res) => res.pkgs.flatMap((x) => x.vulns.map((v) => v.id));
+const hasSeen = (key) => localStorage.getItem(SEEN_PREFIX + key) !== null;
+
+function projNew(p) {
+  const c = projCache(p, false);
+  if (!c || !hasSeen(PSEEN + p.id)) return 0;
+  const seen = getSeen(PSEEN + p.id);
+  return projIds(c).filter((id) => !seen.has(id)).length;
+}
+const projNewTotal = () => loadProjs().reduce((n, p) => n + projNew(p), 0);
+
+function projDatalist() {
+  return `<datalist id="w-projs">${loadProjs().map((p) => `<option value="${esc(p.name)}">`).join("")}</datalist>`;
+}
+
+function moveSelect(w) {
+  const projs = loadProjs();
+  if (!projs.length) return "";
+  const opts = [
+    `<option value="">プロジェクトなし</option>`,
+    ...projs.map((p) => `<option value="${esc(p.id)}"${p.id === w.proj ? " selected" : ""}>${esc(p.name)}</option>`),
+  ];
+  return `<select class="w-move" data-wid="${esc(w.id)}" aria-label="プロジェクトを移す">${opts.join("")}</select>`;
+}
+
+function projSection(p, nEntries) {
+  const empty = !p.files.length && !nEntries;
+  return `<section class="proj" data-pid="${esc(p.id)}">
+    <header class="proj-head">
+      <h3>${esc(p.name)}</h3>
+      <span class="proj-n" id="pn-${esc(p.id)}"></span>
+      <span class="w-btns">
+        <label class="chip">lockファイルを足す<input type="file" class="proj-file" data-pid="${esc(p.id)}" accept=".lock,.json,.txt" hidden></label>
+        <button class="chip ghost" data-pact="rename">名前を変える</button>
+        <button class="chip ghost" data-pact="del">削除</button>
+      </span>
+    </header>
+    <div class="proj-lock" id="pl-${esc(p.id)}"></div>
+    <div class="proj-entries" data-pid="${esc(p.id)}"></div>
+    ${empty ? '<p class="empty">まだ何も入っていません。lockファイルを足すか、上のフォームでこのプロジェクト名を入れて本体やパッケージを追加してください。</p>' : ""}
+  </section>`;
+}
+
+function projFilesHtml(p) {
+  if (!p.files.length) return "";
+  return `<ul class="proj-files">${p.files
+    .map(
+      (f) => `<li><span class="mono">${esc(f.name)}</span><span>${f.deps.length}個</span><span class="mono">${esc(md(f.at.slice(0, 10)))}に読み込み</span>
+        <button class="linkish" data-pfile-del="${esc(f.name)}">外す</button></li>`
+    )
+    .join("")}</ul>`;
+}
+
+async function renderProjLock(p, force) {
+  const el = document.getElementById("pl-" + p.id);
+  if (!el) return;
+  const deps = projDeps(p);
+  const head = projFilesHtml(p);
+  if (!deps.length) {
+    el.innerHTML = head;
+    return;
+  }
+  let res = force ? null : projCache(p, true);
+  let note = "";
+  if (!res) {
+    try {
+      res = await scanDeps(deps, (msg) => (el.innerHTML = head + `<p class="lock-progress">${esc(msg)}</p>`));
+      res.at = Date.now();
+      res.sig = depsSig(deps);
+      localStorage.setItem(PLIVE + p.id, JSON.stringify(res));
+    } catch (e) {
+      res = projCache(p, false);
+      note = `OSVへの問い合わせに失敗しました（${e.message}）。${res ? "前回の結果を出しています" : ""}`;
+    }
+  }
+  if (!res) {
+    el.innerHTML = head + `<p class="lock-sum err">${esc(note)}</p>`;
+    return;
+  }
+  // 初めて調べたときに出たものは新着にしない（ウォッチリストの登録と同じ）
+  const key = PSEEN + p.id;
+  const ids = projIds(res);
+  const seen = hasSeen(key) ? getSeen(key) : new Set(ids);
+  const fresh = ids.filter((id) => !seen.has(id)).length;
+  const nv = ids.length;
+  const n = document.getElementById("pn-" + p.id);
+  if (n) {
+    const act = res.pkgs.flatMap((x) => x.vulns).filter((v) => levelOf(v.tri ? (triage.items[v.id] ? v.id : v.cve) : "") === "action").length;
+    n.innerHTML = nv
+      ? `${act ? `<span class="verdict lv-action">要対応 ${act}件</span>` : ""}<span class="verdict lv-check">ライブラリの脆弱性 ${nv}件</span>${fresh ? `<b class="nb">新着 ${fresh}</b>` : ""}`
+      : '<span class="verdict lv-ok">ライブラリは問題なし</span>';
+  }
+  const when = new Date(res.at).toLocaleString("ja-JP", { timeZone: "Asia/Tokyo", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  const again = `<button class="linkish" data-pact="rescan">いま調べ直す</button>`;
+  const sum = nv
+    ? `<p class="lock-sum"><b>${res.pkgs.length}個のパッケージに、脆弱性が${nv}件あります。</b>${res.total}個を${when}に調べました。${again}</p>`
+    : `<p class="lock-sum ok"><b>見つかりませんでした。</b>${res.total}個のパッケージを${when}に調べました。${again}</p>`;
+  const body = nv
+    ? `<details class="more proj-pkgs"${fresh || res.pkgs.length <= 5 ? " open" : ""}><summary class="mono">パッケージごとに見る（${res.pkgs.length}個）</summary>${pkgsHtml(res.pkgs, { seen, watchBtn: false })}</details>`
+    : "";
+  el.innerHTML = head + (note ? `<p class="w-note">${esc(note)}</p>` : "") + sum + body;
+  setSeen(key, new Set(ids));
+}
+
+document.addEventListener("change", async (e) => {
+  const t = e.target;
+  if (t.classList?.contains("proj-file")) {
+    const file = t.files[0];
+    if (!file) return;
+    const pid = t.dataset.pid;
+    try {
+      const deps = parseLock(await file.text());
+      if (!deps.length) throw new Error("パッケージが見つかりませんでした");
+      addProjFile({ id: pid }, file.name, deps);
+      showMine();
+    } catch (err) {
+      document.getElementById("pl-" + pid)?.insertAdjacentHTML("afterbegin", `<p class="lock-sum err">読み込めませんでした（${esc(err.message)}）</p>`);
+    }
+  } else if (t.classList?.contains("w-move")) {
+    const list = loadWatch();
+    const w = list.find((x) => x.id === t.dataset.wid);
+    if (!w) return;
+    if (t.value) w.proj = t.value;
+    else delete w.proj;
+    saveWatch(list);
+    showMine();
+  } else if (t.classList?.contains("proj-rename")) {
+    const name = t.value.trim();
+    const pid = t.closest("[data-pid]").dataset.pid;
+    if (name && !loadProjs().some((x) => x.name === name && x.id !== pid)) updateProj(pid, (x) => (x.name = name));
+    showMine();
+  }
+});
+
+document.addEventListener("click", (e) => {
+  const fd = e.target.closest("[data-pfile-del]");
+  const b = e.target.closest("[data-pact]");
+  const sec = (fd || b)?.closest("section.proj[data-pid]");
+  if (!sec) return;
+  const pid = sec.dataset.pid;
+  if (fd) {
+    updateProj(pid, (x) => (x.files = x.files.filter((f) => f.name !== fd.dataset.pfileDel)));
+    showMine();
+    return;
+  }
+  const act = b.dataset.pact;
+  if (act === "rescan") {
+    renderProjLock(loadProjs().find((x) => x.id === pid), true);
+  } else if (act === "rename") {
+    const h = sec.querySelector(".proj-head h3");
+    if (h.querySelector("input")) return;
+    h.innerHTML = `<input class="proj-rename" value="${esc(h.textContent)}" aria-label="プロジェクト名">`;
+    h.querySelector("input").select();
+  } else if (act === "del") {
+    // 中の登録ごと消えるので、2回押してもらう
+    if (!b.classList.contains("armed")) {
+      b.classList.add("armed");
+      b.textContent = "もう一度押すと、中の登録ごと消します";
+      return;
+    }
+    const all = loadWatch();
+    for (const w of all.filter((x) => x.proj === pid)) {
+      localStorage.removeItem(SEEN_PREFIX + w.id);
+      localStorage.removeItem(LIVE_PREFIX + w.id);
+    }
+    saveWatch(all.filter((x) => x.proj !== pid));
+    saveProjs(loadProjs().filter((x) => x.id !== pid));
+    localStorage.removeItem(PLIVE + pid);
+    localStorage.removeItem(SEEN_PREFIX + PSEEN + pid);
     showMine();
   }
 });

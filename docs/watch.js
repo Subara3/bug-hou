@@ -177,12 +177,12 @@ function newCount(w) {
   return matchOf(w).hit.filter((h) => !seen.has(h.item.id)).length;
 }
 function totalNew() {
-  return loadWatch().reduce((n, w) => n + newCount(w), 0);
+  return loadWatch().reduce((n, w) => n + newCount(w), 0) + projNewTotal();
 }
 
 function mineNavLink() {
   const n = totalNew();
-  const count = loadWatch().length;
+  const count = loadWatch().length + loadProjs().length;
   return `<a href="#mine" aria-current="${current === "mine"}">ウォッチリスト<span class="count${n ? " new" : ""}">${n ? `新着 ${n}` : count}</span></a>`;
 }
 
@@ -286,6 +286,7 @@ function entryBlock(w, m, liveNote) {
         ${fresh ? `<b class="nb">新着 ${fresh}</b>` : ""}
       </span>
       <span class="w-btns">
+        ${moveSelect(w)}
         <button class="chip" data-act="feed" data-url="${esc(absUrl(feedFor(w)))}">フィードURLをコピー</button>
         <button class="chip ghost" data-act="del">削除</button>
       </span>
@@ -313,6 +314,8 @@ function formHtml() {
            <datalist id="w-names">${names.map((n) => `<option value="${esc(n)}">`).join("")}</datalist>`
     }
     <label>バージョン<input name="version" placeholder="${ui.kind === "product" ? "8.3.14" : "12.50.0"}（空欄なら全部）"></label>
+    <label>プロジェクト<input name="proj" list="w-projs" placeholder="なし" value="${esc(ui.proj || "")}"></label>
+    ${projDatalist()}
     <button class="chip add" type="submit">追加</button>
   </form>`;
 }
@@ -322,19 +325,31 @@ async function showMine() {
   setView("mine");
   renderNav();
   const list = loadWatch();
+  const projs = loadProjs();
+  const pids = new Set(projs.map((p) => p.id));
   const box = $("#mine-view");
   box.innerHTML = `<div class="target-head"><h2>ウォッチリスト</h2><p>登録はこのブラウザに保存されます</p></div>
     ${formHtml()}
     <p class="w-hint">「フィードURLをコピー」で取ったURLをRSSのメール転送サービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a> など）に登録すると、新着がメールで届きます。
     全体の要対応なら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/action.xml"))}">要対応のフィード</button>、そのうち急ぎ度が今すぐのものだけなら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/now.xml"))}">今すぐのフィード</button>です。</p>
     ${lockBlock()}
-    <h3 class="w-title">登録したもの</h3>
-    <div id="w-list">${list.length ? "" : '<p class="empty">まだ登録がありません。上のフォームから製品やパッケージを追加してください。</p>'}</div>`;
+    <div id="w-list">${list.length || projs.length ? "" : '<p class="empty">まだ登録がありません。上のフォームから製品やパッケージを追加するか、lockファイルをプロジェクトとして読み込んでください。</p>'}</div>`;
 
   const holder = $("#w-list");
+  for (const p of projs) holder.insertAdjacentHTML("beforeend", projSection(p, list.filter((w) => w.proj === p.id).length));
+  const loose = list.filter((w) => !pids.has(w.proj));
+  if (loose.length) {
+    holder.insertAdjacentHTML(
+      "beforeend",
+      `<section class="proj"><h3 class="w-title">${projs.length ? "プロジェクトに入れていないもの" : "登録したもの"}</h3><div class="proj-entries" data-pid=""></div></section>`
+    );
+  }
+  // lockファイルの問い合わせは、個別の登録と並べて進める
+  const scans = projs.map((p) => renderProjLock(p));
   for (const w of list) {
+    const into = holder.querySelector(`.proj-entries[data-pid="${pids.has(w.proj) ? w.proj : ""}"]`);
     const div = document.createElement("div");
-    holder.appendChild(div);
+    into.appendChild(div);
     let note = "";
     if (w.kind === "package") {
       div.innerHTML = entryBlock(w, matchPackage(w, liveCached(w)), "GitHubに問い合わせ中…");
@@ -349,6 +364,7 @@ async function showMine() {
     // 表示した時点で既読にする（NEWの印は今回の表示には残る）
     setSeen(w.id, new Set(m.hit.map((h) => h.item.id)));
   }
+  await Promise.all(scans);
   holder.insertAdjacentHTML("afterend", backupBlock());
   renderNav();
   updateTitleBadge();
@@ -434,9 +450,11 @@ document.addEventListener("submit", async (e) => {
       ? { kind: "product", product: f.get("product"), version }
       : { kind: "package", eco: f.get("eco"), name: String(f.get("name") || "").trim(), version };
   if (w.kind === "package" && !w.name) return;
+  ui.proj = String(f.get("proj") || "").trim();
+  if (ui.proj) w.proj = projByName(ui.proj, true).id;
   w.id = `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`;
   const list = loadWatch();
-  if (list.some((x) => entryLabel(x) === entryLabel(w) && x.kind === w.kind && x.eco === w.eco)) return;
+  if (list.some((x) => entryLabel(x) === entryLabel(w) && x.kind === w.kind && x.eco === w.eco && (x.proj || "") === (w.proj || ""))) return;
   list.push(w);
   saveWatch(list);
   // 登録した時点で出ているものは既読扱いにして、以後に増えたものだけを新着にする

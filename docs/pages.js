@@ -158,6 +158,7 @@ function showAbout() {
 
       <h3>ウォッチリストとメール通知</h3>
       <p><a href="#mine">ウォッチリスト</a>に「PHP 8.3.14」や「laravel/framework 12.50.0」のように登録すると、そのバージョンに当てはまる脆弱性だけを表示します。あわせて、要対応・要確認・問題なしのどれに当たるかも出します。登録内容はこのブラウザのlocalStorageに保存され、サーバーには送りません。</p>
+      <p>登録はプロジェクトごとに分けられます。lockファイルがあるプロジェクトはそれを読み込んでおくと、ウォッチリストを開くたびにOSVへ問い合わせ直し、前回から増えたものに新着の印を付けます。lockファイルがないプロジェクト（WordPressのサイトやサーバーなど）は、本体やパッケージを個別に入れてください。lockファイルの中身は、パッケージ名とバージョンの一覧だけを保存します。</p>
       <p>メールで受け取りたい場合は、ウォッチリストの「フィードURLをコピー」でURLを取り、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a>など）に登録してください。全体の要対応なら <code>${esc(new URL("feeds/action.xml", location.href).href)}</code>、そのうち今すぐのものだけなら <code>${esc(new URL("feeds/now.xml", location.href).href)}</code> です。</p>
 
       <h3>知っておいてほしいこと</h3>

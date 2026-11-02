@@ -528,3 +528,28 @@ button.vbox:hover { background: var(--bg-sub); }
   .lock-v { padding-left: 0; }
 }
 .lock-v .score { min-width: 56px; font-size: 10px; }
+
+/* プロジェクト */
+.lock-to { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 6px 14px; margin: 12px 0 0; font-size: 12px; color: var(--text-sub); }
+.lock-to label { display: flex; flex-direction: column; gap: 4px; }
+.lock-to input, .w-move, .proj-rename {
+  font: 400 13px var(--sans, inherit); padding: 5px 8px; border: 1px solid var(--line-strong); border-radius: 4px; background: #fff; color: var(--text);
+}
+.lock-to input { width: 220px; }
+.lock-to span { flex: 1 1 300px; }
+.w-move { font-size: 12px; padding: 3px 6px; }
+.proj { margin: 0 0 44px; }
+.proj-head {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px;
+  margin: 0 0 12px; padding: 0 0 8px; border-bottom: 2px solid var(--text);
+}
+.proj-head h3 { margin: 0; font-size: 19px; font-weight: 700; }
+.proj-n { display: flex; gap: 8px; align-items: center; font-size: 12px; }
+.proj-files { list-style: none; margin: 0 0 4px; padding: 0; font-size: 13px; }
+.proj-files li { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; padding: 2px 0; color: var(--text-sub); }
+.proj-files .mono:first-child { color: var(--text); }
+.proj-lock .lock-sum { margin-top: 6px; }
+.proj-lock .lock-sum .linkish { margin-left: 8px; font-size: 12px; }
+.proj-pkgs { margin: 0 0 24px; }
+.proj-entries .w-entry { margin-left: 0; }
+.chip.armed { color: #fff; background: var(--critical); border-color: var(--critical); }
