@@ -13,14 +13,16 @@ function showSummary() {
       const all = [...d.cves, ...d.ghsa];
       return { t, d, all, c: levelCounts(all.map((x) => x.id)) };
     });
-  const total = { action: 0, check: 0, watch: 0, none: 0 };
+  const total = { action: 0, check: 0, watch: 0, read: 0, none: 0 };
   for (const r of rows) for (const k in total) total[k] += r.c[k];
 
   const lead = !triage.updated_at
     ? '<p class="verdict-line none">まだ仕分けていません</p>'
     : total.action
       ? `<p class="verdict-line action"><b>要対応が${total.action}件あります。</b>下の一覧の「対処」を確認してください。</p>`
-      : '<p class="verdict-line ok"><b>いま要対応のものはありません。</b>通常の更新で足ります。</p>';
+      : total.read
+        ? `<p class="verdict-line ok"><b>要対応はすべて既読です。</b>既読にした${total.read}件は、各対象の「既読」タブで見られます。</p>`
+        : '<p class="verdict-line ok"><b>いま要対応のものはありません。</b>通常の更新で足ります。</p>';
 
   const groups = rows
     .filter((r) => r.c.action)
@@ -37,7 +39,7 @@ function showSummary() {
     .join("");
 
   const table = `<table class="sum-table">
-    <thead><tr><th>対象</th><th>要対応</th><th>要確認</th><th>様子見でよい</th><th>未判定</th><th>KEV追加（${meta.days}日）</th></tr></thead>
+    <thead><tr><th>対象</th><th>要対応</th><th>要確認</th><th>様子見でよい</th><th>既読</th><th>未判定</th><th>KEV追加（${meta.days}日）</th></tr></thead>
     <tbody>${rows
       .map(
         (r) => `<tr>
@@ -45,6 +47,7 @@ function showSummary() {
         <td class="mono ${r.c.action ? "n-action" : "n-zero"}">${r.c.action}</td>
         <td class="mono ${r.c.check ? "n-check" : "n-zero"}">${r.c.check}</td>
         <td class="mono n-zero">${r.c.watch}</td>
+        <td class="mono n-zero">${r.c.read}</td>
         <td class="mono n-zero">${r.c.none}</td>
         <td class="mono">${r.t.kev_recent}</td>
       </tr>`
@@ -77,7 +80,7 @@ function showAbout() {
   current = "about";
   setView("page");
   renderNav();
-  const levelRows = ["action", "check", "watch", "none"]
+  const levelRows = ["action", "check", "watch", "read", "none"]
     .map((k) => `<tr><td><span class="verdict lv-${k}">${levelLabel(k)}</span></td><td>${esc(LEVEL_DESC[k])}</td></tr>`)
     .join("");
 
@@ -89,7 +92,7 @@ function showAbout() {
       <h3>見かた</h3>
       <ol>
         <li>最初に開く<a href="#">まとめ</a>で、要対応があるかを確認します。なければ、通常の更新で足ります。</li>
-        <li>要対応があれば、一覧の「対処」に書かれているバージョンに更新します。</li>
+        <li>要対応があれば、一覧の「対処」に書かれているバージョンに更新します。確認を終えたものは「既読にする」を押すと、このブラウザでは要対応の件数から外れます。</li>
         <li>自分が使っている製品やパッケージを<a href="#mine">ウォッチリスト</a>に登録しておくと、そのバージョンに当てはまるものだけを確認できます。</li>
       </ol>
 

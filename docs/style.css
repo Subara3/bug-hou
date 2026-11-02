@@ -249,7 +249,10 @@ details.more summary { cursor: pointer; color: var(--text-sub); font-size: 13px;
 .verdict.lv-action { background: var(--critical); color: #fff; }
 .verdict.lv-check { background: #fcefe2; color: #9a5208; }
 .verdict.lv-watch, .verdict.lv-ok { background: #e7f3ec; color: var(--ok); }
-.verdict.lv-none { background: var(--bg-sub); color: var(--text-sub); }
+.verdict.lv-none, .verdict.lv-read { background: var(--bg-sub); color: var(--text-sub); }
+.advice.lv-read { border-left-color: var(--line); color: var(--text-sub); }
+.read-btn { display: inline-block; margin-top: 6px; padding: 2px 10px; font-size: 12px; }
+.read-all { display: inline-block; margin-top: 10px; font-size: 12px; background: #fff; }
 
 .verdict-line { margin: 0 0 16px; padding: 12px 16px; border-radius: 6px; }
 .verdict-line b { margin-right: 6px; }

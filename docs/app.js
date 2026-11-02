@@ -20,6 +20,7 @@ const LEVELS = [
   ["action", "要対応"],
   ["check", "要確認"],
   ["watch", "様子見でよい"],
+  ["read", "既読"],
   ["none", "未判定"],
   ["all", "すべて"],
 ];
@@ -27,23 +28,61 @@ const LEVEL_DESC = {
   action: "悪用が確認された、または認証なしで外から突ける深刻なもの。早めに更新してください",
   check: "設定や使っている機能によって影響するもの。該当するか確かめてください",
   watch: "影響が小さい、または条件が厳しいもの。通常の更新で足ります",
+  read: "既読にした要対応。このブラウザでは要対応の件数に入りません。仕分けが変わると要対応に戻ります",
   none: "まだClaudeが仕分けていないもの。次の仕分け（最大6時間後）で決まります",
   all: "期間内のすべて",
 };
 const levelLabel = (k) => LEVELS.find(([x]) => x === k)?.[1] || "";
 function levelCounts(ids) {
-  const c = { action: 0, check: 0, watch: 0, none: 0 };
+  const c = { action: 0, check: 0, watch: 0, read: 0, none: 0 };
   for (const id of ids) c[levelOf(id)]++;
   return c;
 }
 const idsOf = (d) => [...d.cves.map((c) => c.id), ...d.ghsa.map((a) => a.id)];
-const levelOf = (id) => triage.items[id]?.level || "none";
+const levelOf = (id) => {
+  const lv = triage.items[id]?.level || "none";
+  return lv === "action" && isRead(id) ? "read" : lv;
+};
+
+// ---------------- 既読（このブラウザだけ。要対応を既読にすると件数から外す）
+const RKEY = "bughou.read.v1";
+let readMap = (() => {
+  try {
+    return JSON.parse(localStorage.getItem(RKEY)) || {};
+  } catch {
+    return {};
+  }
+})();
+// 仕分けをやり直したら（KEV入りなど）未読に戻すため、判定の日付とKEVを控えておく
+const readStamp = (id) => {
+  const t = triage.items[id];
+  return t ? `${t.at}/${t.kev ? 1 : 0}` : "";
+};
+const isRead = (id) => !!readMap[id] && readMap[id] === readStamp(id);
+function setRead(ids, on) {
+  for (const id of ids) {
+    if (on) readMap[id] = readStamp(id);
+    else delete readMap[id];
+  }
+  // 一覧から消えた項目は捨てる
+  const alive = new Set(Object.keys(triage.items));
+  for (const id of Object.keys(readMap)) if (!alive.has(id)) delete readMap[id];
+  localStorage.setItem(RKEY, JSON.stringify(readMap));
+}
+function readButton(id) {
+  const lv = levelOf(id);
+  if (lv === "action") return `<button class="chip read-btn" data-read="${esc(id)}">既読にする</button>`;
+  if (lv === "read") return `<button class="chip ghost read-btn" data-unread="${esc(id)}">未読に戻す</button>`;
+  return "";
+}
 const inTab = (id) => tab === "all" || levelOf(id) === tab;
 
 function advice(id) {
   const t = triage.items[id];
   if (!t) return "";
-  return `<p class="advice lv-${esc(t.level)}"><span class="verdict lv-${esc(t.level)}">${levelLabel(t.level)}</span>${esc(t.reason)}${t.todo ? `<span class="todo">対処：${esc(t.todo)}</span>` : ""}</p>`;
+  const lv = levelOf(id);
+  const label = lv === "read" ? "要対応・既読" : levelLabel(lv);
+  return `<div class="advice lv-${esc(lv)}"><span class="verdict lv-${esc(lv)}">${label}</span>${esc(t.reason)}${t.todo ? `<span class="todo">対処：${esc(t.todo)}</span>` : ""}${readButton(id)}</div>`;
 }
 
 function renderTabs(d) {
@@ -319,10 +358,14 @@ function verdictBoxes(c, linkable) {
     .join("")}</div>`;
 }
 
-function verdictLine(actions) {
+function verdictLine(actions, readN = 0) {
   if (!triage.updated_at) return '<p class="verdict-line none">まだ仕分けていません</p>';
-  if (!actions.length) return '<p class="verdict-line ok"><b>要対応はありません。</b>通常の更新で足ります。</p>';
-  return `<div class="verdict-line action"><b>要対応が${actions.length}件あります。</b>いまやること${todoList(actions)}</div>`;
+  if (!actions.length)
+    return readN
+      ? `<p class="verdict-line ok"><b>要対応はすべて既読です。</b>既読にした${readN}件は「既読」のタブで見られます。</p>`
+      : '<p class="verdict-line ok"><b>要対応はありません。</b>通常の更新で足ります。</p>';
+  return `<div class="verdict-line action"><b>要対応が${actions.length}件あります。</b>いまやること${todoList(actions)}
+    <button class="chip read-all" data-read-all="${esc(actions.map((x) => x.id).join(" "))}">${actions.length}件とも既読にする</button></div>`;
 }
 
 function renderHead(d, t) {
@@ -330,7 +373,7 @@ function renderHead(d, t) {
   const c = levelCounts(all.map((x) => x.id));
   const actions = all.filter((x) => levelOf(x.id) === "action");
   return `<div class="target-head"><h2>${esc(d.label)}</h2><p>${esc(d.note)}</p></div>
-    ${verdictLine(actions)}
+    ${verdictLine(actions, c.read)}
     ${verdictBoxes(c, true)}
     <p class="facts">直近${meta.days}日のCVE ${t.cves}件（CRITICAL ${t.critical}・HIGH ${t.high}）／KEV追加 ${t.kev_recent}件${d.ghsa.length ? `／パッケージ ${t.ghsa}件` : ""}</p>`;
 }
@@ -370,8 +413,29 @@ function refreshCves() {
   $("#cves").innerHTML = renderCves(d);
 }
 
+// 既読を切り替えたあと、スクロール位置とタブを保ったまま描き直す
+function rerender() {
+  renderNav();
+  if (current === "summary") return showSummary();
+  if (current === "mine") return showMine();
+  const d = cache[current];
+  if (!d) return;
+  const t = meta.targets.find((x) => x.id === current);
+  renderTabs(d);
+  $("#head").innerHTML = renderHead(d, t);
+  refreshCves();
+  $("#ghsa").innerHTML = renderGhsa(d);
+}
+
 // ---------------- イベント
 document.addEventListener("click", (e) => {
+  const rb = e.target.closest("[data-read], [data-unread], [data-read-all]");
+  if (rb) {
+    const ids = (rb.dataset.readAll || rb.dataset.read || rb.dataset.unread).split(" ");
+    setRead(ids, !rb.dataset.unread);
+    rerender();
+    return;
+  }
   const tb = e.target.closest("#tabs .tab, .verdicts button[data-tab]");
   if (tb) {
     tab = tb.dataset.tab;
