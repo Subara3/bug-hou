@@ -91,6 +91,16 @@ const CLAUDE_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="curr
   .map((r) => `<line x1="12" y1="3.5" x2="12" y2="20.5" transform="rotate(${r} 12 12)"/>`)
   .join("")}</g></svg>`;
 
+// 要対応の急ぎ度
+const URGENCY = {
+  now: { label: "今すぐ", say: "止めてでも、すぐ対応したほうがいいと思う" },
+  soon: { label: "今週中", say: "今週中には更新したいかな" },
+  later: { label: "手が空いたら", say: "急がないので、手が空いたときでいいと思う" },
+};
+const URG_ORDER = ["now", "soon", "later", ""];
+const urgOf = (id) => triage.items[id]?.urgency || "";
+const urgTag = (u) => (u ? `<span class="urg urg-${u}">${URGENCY[u].label}</span>` : "");
+
 function advice(id) {
   const t = triage.items[id];
   if (!t) return "";
@@ -100,6 +110,11 @@ function advice(id) {
     <span class="claude-icon" title="Claudeの意見">${CLAUDE_ICON}</span>
     <div class="opinion">
       <p class="say">${say}<span class="why">${esc(t.reason)}</span></p>
+      ${
+        t.urgency && URGENCY[t.urgency]
+          ? `<p class="urgency">${urgTag(t.urgency)}${esc(t.comment || URGENCY[t.urgency].say)}</p>`
+          : ""
+      }
       ${t.todo ? `<p class="todo"><span>対処</span>${esc(t.todo)}</p>` : ""}
     </div>
   </div>`;
@@ -356,15 +371,20 @@ function renderJvn(d) {
 // ---------------- 見出しと集計
 function todoList(items) {
   // 同じ対処はまとめる
+  // 急ぐものから並べる
+  const sorted = [...items].sort((a, b) => URG_ORDER.indexOf(urgOf(a.id)) - URG_ORDER.indexOf(urgOf(b.id)));
   const by = new Map();
-  for (const x of items) {
+  for (const x of sorted) {
     const t = triage.items[x.id];
-    const key = t?.todo || t?.reason || x.id;
+    const key = `${urgOf(x.id)}|${t?.todo || t?.reason || x.id}`;
     if (!by.has(key)) by.set(key, []);
     by.get(key).push(x.id);
   }
   return `<ul class="todo-list">${[...by]
-    .map(([todo, ids]) => `<li>${esc(todo)}<span class="mono">${ids.map(esc).join("、")}</span></li>`)
+    .map(([key, ids]) => {
+      const [u, todo] = [key.slice(0, key.indexOf("|")), key.slice(key.indexOf("|") + 1)];
+      return `<li>${urgTag(u)}${esc(todo)}<span class="mono">${ids.map(esc).join("、")}</span></li>`;
+    })
     .join("")}</ul>`;
 }
 

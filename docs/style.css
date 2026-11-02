@@ -395,3 +395,10 @@ button.vbox:hover { background: var(--bg-sub); }
   .tl-item { grid-template-columns: 1fr; gap: 2px; }
 }
 .todo-head { display: block; margin-top: 8px; font: 600 11px var(--mono); letter-spacing: .12em; color: var(--text-sub); }
+
+/* 要対応の急ぎ度 */
+.urg { display: inline-block; margin-right: 8px; padding: 0 7px; font-size: 11px; font-weight: 700; line-height: 18px; border-radius: 3px; white-space: nowrap; vertical-align: 1px; }
+.urg-now { background: var(--critical); color: #fff; }
+.urg-soon { background: #fcefe2; color: #9a5208; }
+.urg-later { background: var(--bg-sub); color: var(--text-sub); }
+.opinion .urgency { margin-top: 2px; font-size: 13px; }

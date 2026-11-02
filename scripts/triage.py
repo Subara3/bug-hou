@@ -6,6 +6,7 @@
 判定ファイルの形（FILE）:
   [{"id": "CVE-2026-xxxx", "level": "action", "reason": "...", "todo": "..."}, ...]
   level は action（要対応） / check（要確認） / watch（様子見）
+  要対応のときだけ urgency（now / soon / later）と comment を付ける
 """
 
 from __future__ import annotations
@@ -19,6 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
 TRIAGE = DATA / "triage.json"
 LEVELS = {"action", "check", "watch"}
+URGENCY = {"now", "soon", "later"}
 
 
 def load_triage() -> dict:
@@ -32,14 +34,20 @@ def targets() -> list[dict]:
     return [json.loads((DATA / f"{t['id']}.json").read_text(encoding="utf-8")) for t in meta["targets"]]
 
 
+def need_redo(prev: dict, item: dict) -> bool:
+    # KEV入りしたら判定をやり直す。要対応で急ぎ度がまだないものも出す
+    if item["kev"] and not prev.get("kev"):
+        return True
+    return prev.get("level") == "action" and not prev.get("urgency")
+
+
 def todo():
     done = load_triage()["items"]
     out = []
     for d in targets():
         for c in d["cves"]:
             prev = done.get(c["id"])
-            # KEV入りしたら判定をやり直す
-            if prev and not (c["kev"] and not prev.get("kev")):
+            if prev and not need_redo(prev, c):
                 continue
             out.append(
                 {
@@ -57,7 +65,7 @@ def todo():
             )
         for a in d["ghsa"]:
             prev = done.get(a["id"])
-            if prev and not (a["kev"] and not prev.get("kev")):
+            if prev and not need_redo(prev, a):
                 continue
             out.append(
                 {
@@ -91,13 +99,17 @@ def apply(path: str):
         if r.get("level") not in LEVELS or not r.get("id"):
             bad += 1
             continue
-        tri["items"][r["id"]] = {
+        row = {
             "level": r["level"],
             "reason": str(r.get("reason", ""))[:200],
             "todo": str(r.get("todo", ""))[:200],
             "kev": r["id"] in kev_ids,
             "at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         }
+        if r["level"] == "action":
+            row["urgency"] = r.get("urgency") if r.get("urgency") in URGENCY else "soon"
+            row["comment"] = str(r.get("comment", ""))[:200]
+        tri["items"][r["id"]] = row
     # 一覧から消えた項目の判定は捨てる
     alive = {x["id"] for d in targets() for x in d["cves"] + d["ghsa"]}
     tri["items"] = {k: v for k, v in sorted(tri["items"].items()) if k in alive}
