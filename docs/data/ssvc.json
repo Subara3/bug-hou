@@ -331,12 +331,20 @@
   },
   "checked": "2026-11-02"
  },
+ "CVE-2026-112908": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
  "CVE-2026-112909": {
   "ssvc": {
    "exploitation": "poc",
    "automatable": "no",
    "impact": "partial"
   },
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-112910": {
+  "ssvc": null,
   "checked": "2026-11-02"
  },
  "CVE-2026-112911": {
@@ -393,6 +401,10 @@
    "automatable": "no",
    "impact": "partial"
   },
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-112938": {
+  "ssvc": null,
   "checked": "2026-11-02"
  },
  "CVE-2026-112939": {
@@ -1431,6 +1443,10 @@
   },
   "checked": "2026-11-02"
  },
+ "CVE-2026-33944": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
  "CVE-2026-35002": {
   "ssvc": {
    "exploitation": "none",
@@ -1463,6 +1479,10 @@
   },
   "checked": "2026-11-02"
  },
+ "CVE-2026-46350": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
  "CVE-2026-46729": {
   "ssvc": {
    "exploitation": "none",
@@ -1485,6 +1505,18 @@
    "automatable": "yes",
    "impact": "partial"
   },
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-48705": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-49272": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-55186": {
+  "ssvc": null,
   "checked": "2026-11-02"
  },
  "CVE-2026-56153": {
@@ -1557,6 +1589,10 @@
    "automatable": "yes",
    "impact": "total"
   },
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-58273": {
+  "ssvc": null,
   "checked": "2026-11-02"
  },
  "CVE-2026-58415": {
@@ -2321,6 +2357,30 @@
    "automatable": "no",
    "impact": "partial"
   },
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-96629": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-96630": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-96631": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-96632": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-96633": {
+  "ssvc": null,
+  "checked": "2026-11-02"
+ },
+ "CVE-2026-96634": {
+  "ssvc": null,
   "checked": "2026-11-02"
  },
  "CVE-2026-96760": {
