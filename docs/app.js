@@ -25,11 +25,11 @@ const LEVELS = [
   ["all", "すべて"],
 ];
 const LEVEL_DESC = {
-  action: "悪用が確認された、または認証なしで外から突ける深刻なもの。早めに更新してください",
-  check: "設定や使っている機能によって影響するもの。該当するか確かめてください",
-  watch: "影響が小さい、または条件が厳しいもの。通常の更新で足ります",
-  read: "既読にした要対応。このブラウザでは要対応の件数に入りません。仕分けが変わると要対応に戻ります",
-  none: "まだClaudeが仕分けていないもの。次の仕分け（最大6時間後）で決まります",
+  action: "すでに悪用されているか、ログインなしで外から攻撃できる深刻なもの。早めに更新してください",
+  check: "特定の設定や機能を使っているときだけ影響するもの。自分の環境に当てはまるか確かめてください",
+  watch: "影響が小さいか、攻撃される条件が厳しいもの。急ぎではないので、いつもの更新のときに上げれば大丈夫です",
+  read: "既読にした要対応です。このブラウザでは要対応の件数に入りません。Claudeの判定が変わると要対応に戻ります",
+  none: "まだClaudeが判定していないもの。6時間以内に判定されます",
   all: "期間内のすべて",
 };
 const levelLabel = (k) => LEVELS.find(([x]) => x === k)?.[1] || "";
@@ -69,11 +69,13 @@ function setRead(ids, on) {
   for (const id of Object.keys(readMap)) if (!alive.has(id)) delete readMap[id];
   localStorage.setItem(RKEY, JSON.stringify(readMap));
 }
+const CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 function readButton(id) {
   const lv = levelOf(id);
-  if (lv === "action") return `<button class="chip read-btn" data-read="${esc(id)}">既読にする</button>`;
-  if (lv === "read") return `<button class="chip ghost read-btn" data-unread="${esc(id)}">未読に戻す</button>`;
-  return "";
+  if (lv !== "action" && lv !== "read") return "";
+  const on = lv === "read";
+  return `<button class="readcheck" ${on ? "data-unread" : "data-read"}="${esc(id)}" aria-pressed="${on}" title="${on ? "押すと未読に戻ります" : "確認したら押してください"}">
+    <span class="box">${CHECK_SVG}</span><span class="lbl">${on ? "既読" : "既読にする"}</span></button>`;
 }
 const inTab = (id) => tab === "all" || levelOf(id) === tab;
 
@@ -96,11 +98,9 @@ function advice(id) {
   const say = OPINION[lv] || "";
   return `<div class="advice lv-${esc(lv)}">
     <span class="claude-icon" title="Claudeの意見">${CLAUDE_ICON}</span>
-    <div class="bubble">
-      <p class="say"><span class="who">Claude</span>${say}</p>
-      <p class="why">${esc(t.reason)}</p>
-      ${t.todo ? `<p class="todo">対処：${esc(t.todo)}</p>` : ""}
-      ${readButton(id)}
+    <div class="opinion">
+      <p class="say">${say}<span class="why">${esc(t.reason)}</span></p>
+      ${t.todo ? `<p class="todo"><span>対処</span>${esc(t.todo)}</p>` : ""}
     </div>
   </div>`;
 }
@@ -302,6 +302,7 @@ function renderCves(d) {
         </div>
         ${advice(c.id)}
       </div>
+      ${readButton(c.id)}
     </div>`
   );
   const rest = list.length - cveState.shown;
@@ -325,6 +326,7 @@ function renderGhsa(d) {
         </div>
         ${advice(a.id)}
       </div>
+      ${readButton(a.id)}
     </div>`;
   const list = d.ghsa.filter((a) => inTab(a.id));
   if (!list.length) return '<p class="empty">該当なし</p>';
@@ -383,9 +385,9 @@ function verdictLine(actions, readN = 0) {
   if (!actions.length)
     return readN
       ? `<p class="verdict-line ok"><b>要対応はすべて既読です。</b>既読にした${readN}件は「既読」のタブで見られます。</p>`
-      : '<p class="verdict-line ok"><b>要対応はありません。</b>通常の更新で足ります。</p>';
+      : '<p class="verdict-line ok"><b>要対応はありません。</b>急いで更新が必要なものは出ていません。</p>';
   return `<div class="verdict-line action"><b>要対応が${actions.length}件あります。</b>いまやること${todoList(actions)}
-    <button class="chip read-all" data-read-all="${esc(actions.map((x) => x.id).join(" "))}">${actions.length}件とも既読にする</button></div>`;
+    <button class="readcheck wide" data-read-all="${esc(actions.map((x) => x.id).join(" "))}"><span class="box">${CHECK_SVG}</span><span class="lbl">${actions.length}件とも既読にする</span></button></div>`;
 }
 
 function renderHead(d, t) {

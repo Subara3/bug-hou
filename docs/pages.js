@@ -22,7 +22,7 @@ function showSummary() {
       ? `<p class="verdict-line action"><b>要対応が${total.action}件あります。</b>下の一覧の「対処」を確認してください。</p>`
       : total.read
         ? `<p class="verdict-line ok"><b>要対応はすべて既読です。</b>既読にした${total.read}件は、各対象の「既読」タブで見られます。</p>`
-        : '<p class="verdict-line ok"><b>いま要対応のものはありません。</b>通常の更新で足ります。</p>';
+        : '<p class="verdict-line ok"><b>いま要対応のものはありません。</b>急いで更新が必要なものは出ていません。</p>';
 
   const groups = rows
     .filter((r) => r.c.action)
@@ -91,7 +91,7 @@ function showAbout() {
 
       <h3>見かた</h3>
       <ol>
-        <li><a href="#summary">まとめ</a>で、要対応があるかを確認します。なければ、通常の更新で足ります。新しく何が出たかは、最初に開く<a href="#">ホーム</a>のタイムラインで日付順に見られます。</li>
+        <li><a href="#summary">まとめ</a>で、要対応があるかを確認します。なければ急ぎの作業はありません。新しく何が出たかは、最初に開く<a href="#">ホーム</a>のタイムラインで日付順に見られます。</li>
         <li>要対応があれば、一覧の「対処」に書かれているバージョンに更新します。確認を終えたものは「既読にする」を押すと、このブラウザでは要対応の件数から外れます。</li>
         <li>自分が使っている製品やパッケージを<a href="#mine">ウォッチリスト</a>に登録しておくと、そのバージョンに当てはまるものだけを確認できます。</li>
       </ol>
@@ -100,12 +100,12 @@ function showAbout() {
       <table class="doc-table"><tbody>${levelRows}</tbody></table>
       <p>仕分けはClaude（Anthropic社のAI）が行っています。各脆弱性の説明文・CVSSスコア・悪用の有無を見て、次の基準で判定します。</p>
       <ul>
-        <li><b>要対応</b>：CISA KEV（悪用が確認された脆弱性の一覧）に載っているもの。本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性で、ネットワーク越しに認証なしで突けるCRITICAL・HIGH。広く使われているパッケージ（Laravel、Symfony、express、Django、requestsなど）の、リモートから突けるCRITICAL</li>
+        <li><b>要対応</b>：CISA KEV（悪用が確認された脆弱性の一覧）に載っているもの。本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性のうち、ログインなしで外から攻撃できるCRITICAL・HIGH。広く使われているパッケージ（Laravel、Symfony、express、Django、requestsなど）の脆弱性のうち、外から攻撃できるCRITICAL</li>
         <li><b>要確認</b>：上に当てはまらないHIGH。特定の設定や拡張モジュールを使っているときだけ影響するもの。利用者の少ないパッケージのCRITICAL</li>
-        <li><b>様子見でよい</b>：MEDIUM以下。ローカルからしか突けない、管理者権限が前提など、条件が厳しいもの</li>
+        <li><b>様子見でよい</b>：MEDIUM以下のもの。サーバーにログインできる人しか攻撃できない、管理者の権限が要るなど、攻撃の条件が厳しいもの</li>
       </ul>
-      <p>Claudeの判定は、各脆弱性の下にClaudeのアイコンと吹き出しで「要対応だと思うよ」のように出しています。吹き出しの外にあるのは、NVDなどの取得元のデータです。</p>
-      <p>判断に迷うものは、一段階上（注意が必要な側）に入れています。基準の全文は<a href="https://github.com/Subara3/bug-hou/blob/main/TRIAGE.md" target="_blank" rel="noopener">TRIAGE.md</a>にあります。</p>
+      <p>Claudeの判定は、各脆弱性の下にClaudeのアイコンをつけて「要対応だと思うよ」のように出しています。アイコンがついていない部分は、NVDなどの取得元のデータです。</p>
+      <p>迷ったものは、重いほうの区分に入れています。基準の全文は<a href="https://github.com/Subara3/bug-hou/blob/main/TRIAGE.md" target="_blank" rel="noopener">TRIAGE.md</a>にあります。</p>
 
       <h3>色とスコア</h3>
       <table class="doc-table"><tbody>
@@ -137,7 +137,7 @@ function showAbout() {
 
       <h3>知っておいてほしいこと</h3>
       <ul>
-        <li>表示しているのは直近${meta.days}日に公開されたCVEです。それより前の脆弱性は、ウォッチリストでパッケージを照合したときだけ表示します</li>
+        <li>表示しているのは直近${meta.days}日に公開されたCVEです。それより前のものは、ウォッチリストに登録したパッケージの分だけ表示します</li>
         <li>NVDの分析が済んでいないCVEは、影響するバージョンの範囲がまだありません。ウォッチリストでは「バージョン情報なし（要確認）」に分けています</li>
         <li>新しく出たものは、次の仕分けまで最大6時間「未判定」になります</li>
         <li>仕分けは説明文とスコアからの自動判定です。自分の環境で使っていない機能の脆弱性が要対応に入ることもあります</li>

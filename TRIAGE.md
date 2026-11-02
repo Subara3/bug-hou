@@ -29,8 +29,8 @@
 
 **action（要対応）**
 - KEVに載っている（`kev: true`）
-- 本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性で、ネットワーク越しに認証なしで突けて、CRITICALまたはHIGH
-- 広く使われているパッケージ（Laravel、Symfony、Guzzle、Monolog、PHPUnit、express、next、axios、lodash、Django、Flask、requests、urllib3、Jinja2、Pillow など）の、リモートから突けるCRITICAL
+- 本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性で、ログインなしで外から攻撃できて、CRITICALまたはHIGH
+- 広く使われているパッケージ（Laravel、Symfony、Guzzle、Monolog、PHPUnit、express、next、axios、lodash、Django、Flask、requests、urllib3、Jinja2、Pillow など）の、外から攻撃できるCRITICAL
 
 **check（要確認）**
 - 上に当てはまらないHIGH
@@ -39,12 +39,13 @@
 
 **watch（様子見でよい）**
 - MEDIUM以下
-- ローカルからしか突けない、管理者権限が前提、など条件が厳しいもの
+- サーバーにログインできる人しか攻撃できない、管理者の権限が要る、など条件が厳しいもの
 - 未採点で説明からも深刻さが読み取れないもの
 
-迷ったら一段階上（より注意が必要な側）にする。
+迷ったら重いほうの区分にする。
 
 ## 文体
 
 - reasonとtodoは「です・ます」を使わず短く書く（例: 「SOAP拡張を使う場合のみ影響」「8.4.28に更新」）
 - 説明文にない事実（攻撃の有無、修正版の番号など）を推測で書かない
+- 「足りる」「突ける」「担保」などの硬い言い方や業界の言い回しを使わず、ふだんの言葉で書く

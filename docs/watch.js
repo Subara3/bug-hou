@@ -237,6 +237,7 @@ function hitRow(h, isNew) {
         <p class="desc clamp" title="クリックで全文">${esc(x.desc)}</p>
         ${advice(x.id)}
       </div>
+      ${readButton(x.id)}
     </div>`;
   }
   const pk = (x.packages || [])
@@ -251,6 +252,7 @@ function hitRow(h, isNew) {
       <div class="meta">${pk}<span>${esc(x.cve || x.id)}</span></div>
       ${advice(x.id)}
     </div>
+    ${readButton(x.id)}
   </div>`;
 }
 
@@ -337,7 +339,7 @@ async function showMine() {
       try {
         await fetchLive(w);
       } catch (e) {
-        note = `過去分の問い合わせに失敗しました（${e.message}）。直近180日分だけで照合しています`;
+        note = `過去分の問い合わせに失敗しました（${e.message}）。直近180日分だけで調べています`;
       }
     }
     const m = w.kind === "package" ? matchPackage(w, liveCached(w)) : matchProduct(w);
