@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T06:48:04Z",
+ "updated_at": "2026-11-02T08:33:42Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -45,24 +45,30 @@
   },
   "CVE-2026-109618": {
    "level": "action",
-   "reason": "PHP本体のOOM処理の不備でRCE。KEV掲載",
-   "todo": "PHPを修正済みのパッチ版に更新",
+   "reason": "PHP本体のメモリ不足時の処理の不備でRCE。KEV掲載",
+   "todo": "PHPを修正済みの版に更新",
    "kev": true,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "now",
+   "comment": "外に公開しているなら、更新するまで止めることも考えたほうがいい"
   },
   "CVE-2026-109619": {
    "level": "action",
-   "reason": "PHP本体のグローバル状態が解放済みメモリを参照しRCE。KEV掲載",
-   "todo": "PHPを修正済みのパッチ版に更新",
+   "reason": "PHP本体でリクエスト間の古いメモリ参照によりRCE。KEV掲載",
+   "todo": "PHPを修正済みの版に更新",
    "kev": true,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "now",
+   "comment": "外に公開しているなら、更新するまで止めることも考えたほうがいい"
   },
   "CVE-2026-111497": {
    "level": "action",
-   "reason": "Brotliデコーダーのバッファオーバーフロー。KEV掲載",
-   "todo": "Brotliを1.0.10/1.1.1/1.2.1に更新",
+   "reason": "Brotliの展開処理でバッファあふれ。認証なしで外から攻撃でき、KEV掲載",
+   "todo": "Brotliを1.0.10 / 1.1.1 / 1.2.1 に更新",
    "kev": true,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "now",
+   "comment": "圧縮データを外から受け取るなら、すぐ更新したほうがいい"
   },
   "CVE-2026-114583": {
    "level": "watch",
@@ -73,10 +79,12 @@
   },
   "CVE-2026-115557": {
    "level": "action",
-   "reason": "CPythonのsslに既知の侵害証明書の拒否リストを追加。CRITICAL",
-   "todo": "CPythonを修正済みの版に更新",
+   "reason": "CPythonのsslに漏えい済み証明書を拒否する仕組みを追加。CRITICAL",
+   "todo": "Pythonを修正済みの版に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "止めるほどではないが、数日のうちに更新したい"
   },
   "CVE-2026-116566": {
    "level": "watch",
@@ -220,10 +228,12 @@
   },
   "CVE-2026-57941": {
    "level": "action",
-   "reason": "httpdのmod_http2でUAF。認証なし・CRITICAL",
-   "todo": "mod_http2の利用有無を確認しhttpdを更新",
+   "reason": "httpdのmod_http2で解放後のメモリ使用。CRITICAL",
+   "todo": "mod_http2を使っているなら2.4.68より新しい版に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "HTTP/2を有効にしているなら数日のうちに更新したい"
   },
   "CVE-2026-58415": {
    "level": "watch",
@@ -339,10 +349,12 @@
   },
   "CVE-2026-87902": {
    "level": "action",
-   "reason": "WordPress本体で認証なしにローカルPHPを読込、条件次第でRCE。KEV掲載",
+   "reason": "WordPress本体で認証なしにローカルのPHPを読み込み、条件次第でRCE。KEV掲載",
    "todo": "WordPressを修正済みの版に更新",
    "kev": true,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "サーバーとテーマに条件があるが、悪用されているので早めに更新"
   },
   "CVE-2026-87910": {
    "level": "watch",
@@ -514,10 +526,12 @@
   },
   "GHSA-26p8-2jq9-3vq9": {
    "level": "action",
-   "reason": "認証なしMLflowサーバーでスコアラーのデシリアライズからRCE。CRITICAL",
-   "todo": "mlflow 3.17.0に更新",
+   "reason": "MLflowで認証なしのサーバーにRCE",
+   "todo": "mlflowを3.17.0以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "MLflowのサーバーを外に出しているなら急いで更新したい"
   },
   "GHSA-2m5v-pch6-74hx": {
    "level": "check",
@@ -1046,10 +1060,12 @@
   },
   "GHSA-6v38-4h7w-rj9h": {
    "level": "action",
-   "reason": "AuthlibのJWS JSONデシリアライズで空の署名を検証通過。CRITICAL",
-   "todo": "authlib 1.9.0に更新",
+   "reason": "AuthlibのJWS JSONの読み込みで空の署名の検証に不備",
+   "todo": "authlibを1.9.0以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "JWSの署名確認に使っているなら数日のうちに更新したい"
   },
   "GHSA-6vfx-w7q3-42gq": {
    "level": "check",
@@ -1256,10 +1272,12 @@
   },
   "GHSA-965c-763c-88jm": {
    "level": "action",
-   "reason": "better-authでOAuth stateをマジックリンクとして使い他人としてサインイン。CRITICAL",
-   "todo": "better-auth 1.7.7に更新",
+   "reason": "better-authでOAuthのstateをマジックリンクに使い、別人としてログインできる",
+   "todo": "better-authを1.7.7以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "ログインに使っているなら数日のうちに更新したい"
   },
   "GHSA-96h3-5x6v-m776": {
    "level": "watch",
@@ -1522,10 +1540,12 @@
   },
   "GHSA-f9x3-7vq9-cph6": {
    "level": "action",
-   "reason": "LaravelのTokenGuardで認証回避。CRITICAL",
-   "todo": "laravel/framework 13.29.0/12.68.0に更新",
+   "reason": "LaravelのTokenGuardで文字列以外のAPI認証情報により認証回避",
+   "todo": "laravel/frameworkを13.29.0 / 12.68.0 以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "APIトークン認証を使っているなら数日のうちに更新したい"
   },
   "GHSA-fch4-3c6x-j4gc": {
    "level": "watch",
@@ -2369,10 +2389,12 @@
   },
   "GHSA-vjqc-q4mp-2rvf": {
    "level": "action",
-   "reason": "CakePHPのFunctionsBuilderの複数メソッドでSQL注入。CRITICAL",
-   "todo": "cakephp 4.5.12/database 4.6.5/5.1.9/5.2.14/5.3.7に更新",
+   "reason": "CakePHPのFunctionsBuilderの複数のメソッドにSQLインジェクション",
+   "todo": "4.5.12 / 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7 以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-02",
+   "urgency": "soon",
+   "comment": "CakePHPで動かしているなら今週中に更新したい"
   },
   "GHSA-vpp8-g58w-m8mp": {
    "level": "check",
