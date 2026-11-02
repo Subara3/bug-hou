@@ -3068,5 +3068,43 @@
    "date": "2026-10-28",
    "first_seen": "0000-00-00"
   }
+ ],
+ "alerts": [
+  {
+   "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+   "org": "IPA",
+   "title": "PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)",
+   "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+   "date": "2026-11-02",
+   "updated": true,
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first": "2026-10-22"
+  },
+  {
+   "id": "https://www.jpcert.or.jp/at/2026/at260033.html",
+   "org": "JPCERT/CC",
+   "title": "PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
+   "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+   "date": "2026-10-29",
+   "updated": true,
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first": "2026-10-29"
+  },
+  {
+   "id": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
+   "org": "IPA",
+   "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について",
+   "url": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
+   "date": "2026-10-21",
+   "updated": false,
+   "cves": [],
+   "first": "2026-10-21"
+  }
  ]
 }

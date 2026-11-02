@@ -120,6 +120,15 @@ def apply(path: str):
         if r["level"] == "action":
             row["urgency"] = pri.get(r["id"], {}).get("u", "")
             row["comment"] = str(r.get("comment", ""))[:200]
+        # 判定が変わったら、前の判定を残す（画面に「変更の記録」として出す）
+        prev = tri["items"].get(r["id"])
+        if prev:
+            hist = list(prev.get("hist", []))
+            if prev.get("level") != row["level"]:
+                hist.append({"at": row["at"], "from": prev.get("level"), "to": row["level"],
+                             "kev": row["kev"] and not prev.get("kev")})
+            if hist:
+                row["hist"] = hist[-5:]
         tri["items"][r["id"]] = row
     # 一覧から消えた項目の判定は捨てる
     alive = {x["id"] for d in targets() for x in d["cves"] + d["ghsa"]}

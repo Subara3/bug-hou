@@ -1,6 +1,7 @@
 """docs/data/ から Atom フィードを書き出す。
 
   docs/feeds/action.xml               Claudeが「要対応」とした項目（全対象）
+  docs/feeds/now.xml                  要対応のうち、急ぎ度が「今すぐ」のものだけ
   docs/feeds/{対象}.xml                対象ごとのCVE・KEV・パッケージ
   docs/feeds/eco/{エコシステム}.xml     composer / npm / pip の新着
   docs/feeds/pkg/{エコシステム}/{名前}.xml  パッケージごと（過去180日に脆弱性が出たもの）
@@ -124,6 +125,7 @@ def entry_kev(k, label, seen):
 def main():
     meta = load("meta.json", {"targets": []})
     tri = load("triage.json", {"items": {}})["items"]
+    pri = load("priority.json", {"items": {}})["items"]
     seen = load("first_seen.json", {})
     action = []
     eco: dict[str, list] = {}
@@ -149,6 +151,8 @@ def main():
 
     dedup = {e["id"]: e for e in action}
     write_feed(OUT / "action.xml", "バグ報｜要対応", SITE, list(dedup.values()))
+    now = [e for e in dedup.values() if pri.get(e["id"], {}).get("u") == "now"]
+    write_feed(OUT / "now.xml", "バグ報｜今すぐ対応", SITE, now)
 
     for name, entries in eco.items():
         write_feed(OUT / "eco" / f"{name}.xml", f"バグ報｜{name} の新着", SITE, list({e["id"]: e for e in entries}.values()))
@@ -169,7 +173,7 @@ def main():
     (OUT / "index.json").write_text(
         json.dumps(index, ensure_ascii=False, sort_keys=True, indent=0) + "\n", encoding="utf-8"
     )
-    print(f"フィード：対象{len(meta['targets'])}・要対応{len(dedup)}件・パッケージ{len(pkgs)}個")
+    print(f"フィード：対象{len(meta['targets'])}・要対応{len(dedup)}件（今すぐ{len(now)}件）・パッケージ{len(pkgs)}個")
 
 
 if __name__ == "__main__":

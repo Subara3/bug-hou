@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜今すぐ対応</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/now.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/now.xml</id>
+<updated>2026-10-22T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>[要対応] Node.js: CVE-2026-111497 9.2 CRITICAL ⚠KEV</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-111497"/>
+<id>urn:bug-hou:CVE-2026-111497</id>
+<updated>2026-10-22T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Brotliの展開処理でバッファあふれ。認証なしで外から攻撃でき、KEV掲載&lt;br&gt;→ Brotliを1.0.10 / 1.1.1 / 1.2.1 に更新&lt;/p&gt;&lt;p&gt;A buffer overflow vulnerability in the Brotli decoder (c/dec/decode.c) in Google Brotli versions 1.0.3 through 1.2.0 on all platforms allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denial of service, or potentially execute arbitrary code using a crafted Brotli-compressed stream.
+
+
+
+
+
+Users need to update any Brotli libraries or binaries between 1.0.3 through 1.2.0 to the latest available version: 1.0.10 or 1.1.1 or 1.2.1.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[要対応] PHP: CVE-2026-109619 9.2 CRITICAL ⚠KEV</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-109619"/>
+<id>urn:bug-hou:CVE-2026-109619</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体でリクエスト間の古いメモリ参照によりRCE。KEV掲載&lt;br&gt;→ PHPを修正済みの版に更新&lt;/p&gt;&lt;p&gt;PHP has various global state that temporarily points into request memory. In some scenarios, global state may not be correctly reset, or may be repopulated after being reset. The global state may then refer to request memory even after it has been freed. Subsequent requests may read or branch on this stale state before it is fully initialized. Multiple strategies can trigger this condition and produce remote code execution (RCE).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[要対応] PHP: CVE-2026-109618 9.2 CRITICAL ⚠KEV</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-109618"/>
+<id>urn:bug-hou:CVE-2026-109618</id>
+<updated>2026-10-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体のメモリ不足時の処理の不備でRCE。KEV掲載&lt;br&gt;→ PHPを修正済みの版に更新&lt;/p&gt;&lt;p&gt;PHP uses longjmp() for out-of-memory (OOM) errors to exit the current context and abort handling of the request. Some contexts may not properly account for this scenario and leave request memory in an uninitialized state before performing an allocation. The subsequent request cleanup procedure may read or branch on this memory. Multiple OOM strategies can consistently trigger this condition and lead to remote code execution (RCE).&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[要対応] WordPress: CVE-2026-87902 8.1 HIGH ⚠KEV</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-87902"/>
+<id>urn:bug-hou:CVE-2026-87902</id>
+<updated>2026-09-22T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; WordPress本体でログインなしにローカルのPHPを読み込ませられる。KEV掲載&lt;br&gt;→ WordPressを修正済みの最新版に更新&lt;/p&gt;&lt;p&gt;An unauthenticated attacker can make `get_page_template()` page-template resolution include a chosen readable local `.php` file outside the active theme directories. If relevant pre-conditions for both the server and the active theme are met, this can lead to RCE.&lt;/p&gt;</content>
+</entry>
+</feed>

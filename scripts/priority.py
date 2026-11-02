@@ -182,6 +182,23 @@ def main():
         out[x["id"]] = row
 
     old = load("priority.json", {})
+    # 急ぎ度が変わったら、いつ・何が理由で変わったかを残す（画面に「変更の記録」として出す）
+    for id_, row in out.items():
+        prev = old.get("items", {}).get(id_)
+        if not prev:
+            continue
+        hist = list(prev.get("hist", []))
+        if prev.get("u") != row["u"]:
+            why = [
+                f"{k}:{prev.get(k)}>{row[k]}"
+                for k in ("exp", "auto", "imp")
+                if prev.get(k) != row[k]
+            ]
+            hist.append({"at": TODAY, "from": prev.get("u"), "to": row["u"], "why": why,
+                         "src": row["exp_src"] if prev.get("exp") != row["exp"] else ""})
+        if hist:
+            row["hist"] = hist[-5:]
+
     # 中身が変わらなければ書き換えない（コミットを増やさないため）
     if old.get("items") != out:
         save("priority.json", {"updated_at": NOW.strftime("%Y-%m-%dT%H:%M:%SZ"), "items": dict(sorted(out.items()))})

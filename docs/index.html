@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>バグ報｜脆弱性ウォッチャー</title>
 <link rel="alternate" type="application/atom+xml" title="バグ報｜要対応" href="feeds/action.xml">
+<link rel="alternate" type="application/atom+xml" title="バグ報｜今すぐ対応" href="feeds/now.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -29,6 +30,11 @@
   <section class="block" id="sec-eol">
     <h2>バージョンとサポート期限</h2>
     <div id="eol"></div>
+  </section>
+
+  <section class="block" id="sec-alert" hidden>
+    <h2>公的機関の注意喚起 <small>JPCERT/CC・IPA</small></h2>
+    <div id="alerts"></div>
   </section>
 
   <section class="block" id="sec-kev">
@@ -59,9 +65,12 @@
       <a href="https://nvd.nist.gov/">NVD</a> ／
       <a href="https://github.com/advisories">GitHub Advisory Database</a> ／
       <a href="https://endoflife.date/">endoflife.date</a> ／
-      <a href="https://jvn.jp/">JVN</a>
+      <a href="https://jvn.jp/">JVN</a> ／
+      <a href="https://www.jpcert.or.jp/">JPCERT/CC</a> ／
+      <a href="https://www.ipa.go.jp/security/">IPA</a> ／
+      <a href="https://osv.dev/">OSV</a>（lockファイルを調べるとき）
     </p>
-    <p>フィード：<a href="feeds/action.xml">要対応（全体）</a> ／ 対象ごと・パッケージごとはウォッチリストから</p>
+    <p>フィード：<a href="feeds/now.xml">今すぐ対応だけ</a> ／ <a href="feeds/action.xml">要対応（全体）</a> ／ 対象ごと・パッケージごとはウォッチリストから</p>
     <p>状態の色：<span class="dot red"></span>要対応あり　<span class="dot amber"></span>要確認あり　<span class="dot green"></span>どちらもなし　／　<a href="#about">このサイトについて</a></p>
     <p>This product uses the NVD API but is not endorsed or certified by the NVD.</p>
     <div id="status"></div>
@@ -71,5 +80,6 @@
 <script src="watch.js"></script>
 <script src="pages.js"></script>
 <script src="timeline.js"></script>
+<script src="work.js"></script>
 </body>
 </html>

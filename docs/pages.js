@@ -21,7 +21,7 @@ function showSummary() {
     : total.action
       ? `<p class="verdict-line action"><b>要対応が${total.action}件あります。</b>下の一覧の「対処」を確認してください。</p>`
       : total.read
-        ? `<p class="verdict-line ok"><b>要対応はすべて既読です。</b>既読にした${total.read}件は、各対象の「既読」タブで見られます。</p>`
+        ? `<p class="verdict-line ok"><b>要対応はすべて確認済みです。</b>確認済みにした${total.read}件は、各対象の「確認済み」タブで見られます。</p>`
         : '<p class="verdict-line ok"><b>いま要対応のものはありません。</b>急いで更新が必要なものは出ていません。</p>';
 
   const groups = rows
@@ -39,7 +39,7 @@ function showSummary() {
     .join("");
 
   const table = `<table class="sum-table">
-    <thead><tr><th>対象</th><th>要対応</th><th>要確認</th><th>様子見</th><th>既読</th><th>未判定</th><th>KEV追加（${meta.days}日）</th></tr></thead>
+    <thead><tr><th>対象</th><th>要対応</th><th>要確認</th><th>様子見</th><th>確認済み</th><th>未判定</th><th>KEV追加（${meta.days}日）</th></tr></thead>
     <tbody>${rows
       .map(
         (r) => `<tr>
@@ -63,6 +63,8 @@ function showSummary() {
     ${lead}
     ${verdictBoxes(total, false)}
     <p class="facts">Claudeの仕分け ${esc(when)}　／　区分の基準は<a href="#about">このサイトについて</a></p>
+
+    ${reportBlock()}
 
     <section class="block">
       <h2>対象ごとの件数</h2>
@@ -92,8 +94,9 @@ function showAbout() {
       <h3>見かた</h3>
       <ol>
         <li><a href="#summary">まとめ</a>で、要対応があるかを確認します。なければ急ぎの作業はありません。新しく何が出たかは、最初に開く<a href="#">ホーム</a>のタイムラインで日付順に見られます。</li>
-        <li>要対応があれば、一覧の「対処」に書かれているバージョンに更新します。確認を終えたものは「既読にする」を押すと、このブラウザでは要対応の件数から外れます。</li>
-        <li>自分が使っている製品やパッケージを<a href="#mine">ウォッチリスト</a>に登録しておくと、そのバージョンに当てはまるものだけを確認できます。</li>
+        <li>要対応があれば、一覧の「対処」に書かれているバージョンに更新します。終わったものには「対応済み」、自分の環境に関係ないものには「該当なし」を付けると、このブラウザでは件数から外れます。メモも残せます。</li>
+        <li>付けた状態とメモは、まとめの「対応の記録」からMarkdownやCSVで書き出せます。報告やチケットに貼るときに使ってください。</li>
+        <li>自分が使っている製品やパッケージを<a href="#mine">ウォッチリスト</a>に登録しておくと、そのバージョンに当てはまるものだけを確認できます。<code>composer.lock</code>などを読ませて、まとめて調べることもできます。</li>
       </ol>
 
       <h3>3つの区分</h3>
@@ -106,6 +109,7 @@ function showAbout() {
       </ul>
       <p>Claudeの判定は、各脆弱性の下にClaudeのアイコンをつけて「要対応だと思うよ」のように出しています。アイコンがついていない部分は、NVDなどの取得元のデータです。</p>
       <p>迷ったものは、重いほうの区分に入れています。基準の全文は<a href="https://github.com/Subara3/bug-hou/blob/main/TRIAGE.md" target="_blank" rel="noopener">TRIAGE.md</a>にあります。</p>
+      <p>判定や急ぎ度が変わったときは、その項目に「変更の記録」として、いつ・何が理由で変わったかを出します。判定がおかしいと思ったら、各項目の「判定がおかしい？」からGitHubのissueで知らせてください。</p>
 
       <h3 id="about-urgency">要対応の急ぎ度</h3>
       <p>要対応には、どれくらい急ぐかを<span class="urg urg-now">今すぐ</span><span class="urg urg-soon">今週中</span><span class="urg urg-later">手が空いたら</span>の3つで付けています。急ぎ度はClaudeではなく、データから機械的に決めています。同じデータなら、いつも同じ結果になります。</p>
@@ -146,11 +150,15 @@ function showAbout() {
         <tr><td><a href="https://github.com/advisories" target="_blank" rel="noopener">GitHub Advisory Database</a></td><td>Composer・npm・PyPIパッケージの脆弱性と修正版</td></tr>
         <tr><td><a href="https://endoflife.date/" target="_blank" rel="noopener">endoflife.date</a></td><td>バージョンごとのサポート期限と最新版</td></tr>
         <tr><td><a href="https://jvn.jp/" target="_blank" rel="noopener">JVN</a></td><td>日本の脆弱性情報（新着）</td></tr>
+        <tr><td><a href="https://www.jpcert.or.jp/" target="_blank" rel="noopener">JPCERT/CC</a></td><td>注意喚起。国内で特に対応を急いでほしいものに出ます（Weekly Reportは入れていません）</td></tr>
+        <tr><td><a href="https://www.ipa.go.jp/security/" target="_blank" rel="noopener">IPA</a></td><td>重要なセキュリティ情報（緊急対策情報・注意喚起）</td></tr>
+        <tr><td><a href="https://www.cve.org/" target="_blank" rel="noopener">CVE.org</a>・<a href="https://www.first.org/epss/" target="_blank" rel="noopener">FIRST EPSS</a></td><td>急ぎ度に使うCISAの評価と、悪用される確率の予測</td></tr>
+        <tr><td><a href="https://osv.dev/" target="_blank" rel="noopener">OSV</a></td><td>ウォッチリストでlockファイルを調べるときだけ、ブラウザから直接問い合わせます</td></tr>
       </tbody></table>
 
       <h3>ウォッチリストとメール通知</h3>
       <p><a href="#mine">ウォッチリスト</a>に「PHP 8.3.14」や「laravel/framework 12.50.0」のように登録すると、そのバージョンに当てはまる脆弱性だけを表示します。あわせて、要対応・要確認・問題なしのどれに当たるかも出します。登録内容はこのブラウザのlocalStorageに保存され、サーバーには送りません。</p>
-      <p>メールで受け取りたい場合は、ウォッチリストの「フィードURLをコピー」でURLを取り、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a>など）に登録してください。全体の要対応だけなら <code>${esc(new URL("feeds/action.xml", location.href).href)}</code> です。</p>
+      <p>メールで受け取りたい場合は、ウォッチリストの「フィードURLをコピー」でURLを取り、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a>など）に登録してください。全体の要対応なら <code>${esc(new URL("feeds/action.xml", location.href).href)}</code>、そのうち今すぐのものだけなら <code>${esc(new URL("feeds/now.xml", location.href).href)}</code> です。</p>
 
       <h3>知っておいてほしいこと</h3>
       <ul>
@@ -216,7 +224,9 @@ function showGuide() {
         <dt>社内だけで使っている</dt>
         <dd>外から直接攻撃されることはありませんが、社内の誰かのパソコンが乗っ取られると、そこから攻撃されます。外に公開しているものより後回しにしてもかまいませんが、更新はしてください。</dd>
         <dt>対応が終わったら</dt>
-        <dd>各項目の右にある丸いチェックを押すと既読になり、このブラウザでは要対応の件数から外れます。</dd>
+        <dd>各項目の下の「状態」で「対応済み」を押してください。このブラウザでは件数から外れます。どのバージョンに上げたかなどはメモに書いておけます。確認だけしたときは、右の丸いチェック（既読）でもかまいません。</dd>
+        <dt>上司やチームに報告したい</dt>
+        <dd><a href="#summary">まとめ</a>の「対応の記録」から、状態とメモを付けた一覧をMarkdownでコピーするか、CSVで保存できます。</dd>
       </dl>
 
     </div>`;

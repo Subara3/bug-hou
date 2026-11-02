@@ -2,6 +2,7 @@
 // ホーム：すべての取得元の動きを日付順に並べる。app.js・watch.js・pages.js の後に読み込む。
 
 const SOURCES = {
+  alert: { label: "注意喚起", desc: "JPCERT/CC・IPA" },
   kev: { label: "KEV", desc: "悪用を確認" },
   nvd: { label: "NVD", desc: "CVE公開" },
   ghsa: { label: "GitHub", desc: "パッケージ" },
@@ -24,8 +25,17 @@ function collectEvents() {
   const put = (key, e) => {
     const old = ev.get(key);
     if (old) old.targets.add(e.target);
-    else ev.set(key, { ...e, targets: new Set([e.target]) });
+    else ev.set(key, { ...e, key, targets: new Set([e.target]) });
   };
+  // 注意喚起は対象に当たらないものも出す（公的機関が出すほどのものなので）
+  for (const x of alerts) {
+    const ts = meta.targets.filter((t) => (cache[t.id]?.alerts || []).some((a) => a.id === x.id)).map((t) => t.id);
+    ev.set(`alert:${x.id}`, {
+      key: `alert:${x.id}`, src: "alert", date: x.date, id: x.id, item: null, alert: x,
+      title: x.title, sub: `${x.org}${x.updated ? "・更新" : ""}${x.first && x.first !== x.date ? `（初出 ${x.first}）` : ""}`,
+      href: safeUrl(x.url), targets: new Set(ts),
+    });
+  }
   const lastDay = today();
   for (const t of meta.targets) {
     const d = cache[t.id];
@@ -97,6 +107,7 @@ function watchIndex() {
 }
 function onWatch(e, wi) {
   if (e.src === "release" || e.src === "eol") return wi.slugs.has(e.slug);
+  if (e.src === "alert") return (e.alert.cves || []).some((c) => wi.ids.has(c)) || wi.rxs.some((r) => r.test(e.title));
   if (e.src === "jvn") return [...(e.title.match(/CVE-\d+-\d+/g) || [])].some((c) => wi.ids.has(c)) || wi.rxs.some((r) => r.test(e.title));
   return wi.ids.has(e.id) || (e.item?.cve && wi.ids.has(e.item.cve));
 }
@@ -107,19 +118,58 @@ const evLevel = (e) => {
   return "";
 };
 
+// ---------------- 前回から増えたもの
+// ページを開いたとき（タブを開き直したとき）に、前回開いたときにあったものと比べる
+const VKEY = "bughou.visit.v1";
+function visit(all) {
+  let v = null;
+  try {
+    v = JSON.parse(localStorage.getItem(VKEY));
+  } catch {
+    /* 壊れていたら作り直す */
+  }
+  if (!sessionStorage.getItem("bughou.session")) {
+    sessionStorage.setItem("bughou.session", "1");
+    const keys = all.map((e) => e.key);
+    v = { known: keys, base: v?.known || null, baseAt: v?.at || null, at: new Date().toISOString() };
+    localStorage.setItem(VKEY, JSON.stringify(v));
+  }
+  return v;
+}
+const IMPORTANCE = (e) =>
+  e.src === "alert" ? 0 : e.src === "kev" ? 1 : evLevel(e) === "action" ? 2 : evLevel(e) === "check" ? 3 : e.src === "eol" ? 4 : e.src === "release" ? 5 : 6;
+function sinceBlock(all, wi) {
+  const v = visit(all);
+  if (!v?.base) return "";
+  const base = new Set(v.base);
+  const fresh = all.filter((e) => !base.has(e.key)).sort((a, b) => IMPORTANCE(a) - IMPORTANCE(b) || b.date.localeCompare(a.date));
+  const when = v.baseAt ? fmtAt(v.baseAt) : null;
+  const head = `前回${when ? `（${esc(when.t)}）` : ""}から増えたもの`;
+  if (!fresh.length) return `<section class="since none"><h3>${head}</h3><p>増えたものはありません。</p></section>`;
+  const loud = fresh.filter((e) => !isQuiet(e));
+  const quiet = fresh.length - loud.length;
+  const shown = loud.slice(0, 20);
+  return `<section class="since">
+    <h3>${head}<b>${fresh.length}件</b></h3>
+    ${shown.length ? `<ol class="tl-list since-list">${shown.map((e) => evRow(e, wi, true)).join("")}</ol>` : ""}
+    <p class="since-foot">${loud.length > 20 ? `ほか${loud.length - 20}件。` : ""}${quiet ? `様子見${quiet}件は下のタイムラインにたたんであります。` : ""}
+      <button class="chip" id="since-ok">確認した</button></p>
+  </section>`;
+}
+
 // ---------------- 描画
-function evRow(e, wi) {
+function evRow(e, wi, withDate) {
   const lv = evLevel(e);
-  const pill = lv && lv !== "none" ? `<span class="verdict lv-${lv}">${lv === "read" ? "要対応・既読" : levelLabel(lv)}</span>` : "";
+  const pill = lv && lv !== "none" ? `<span class="verdict lv-${lv}">${levelLabel(lv)}</span>` : "";
   const score = e.item?.score ? `<span class="tl-score ${esc(e.item.severity)}">${esc(e.item.score)}</span>` : "";
   const names = [...e.targets].map((id) => cache[id]?.label || id).join("・");
   const mine = !wi.empty && onWatch(e, wi) ? '<span class="tag mine">ウォッチ中</span>' : "";
   return `<li class="tl-item src-${e.src}${e.date > today() ? " future" : ""}">
-    <span class="tl-src">${SOURCES[e.src].label}</span>
+    <span class="tl-src">${SOURCES[e.src].label}${withDate ? `<small>${esc(md(e.date))}</small>` : ""}</span>
     <div class="tl-body">
       <p class="tl-title">${pill}${score}<a href="${esc(e.href)}" target="_blank" rel="noopener">${esc(e.title)}</a>${e.item ? newTag(e.item) : ""}${mine}</p>
       <p class="tl-sub">${esc(e.sub)}</p>
-      <p class="tl-meta"><a href="#${esc([...e.targets][0])}">${esc(names)}</a></p>
+      ${e.targets.size ? `<p class="tl-meta"><a href="#${esc([...e.targets][0])}">${esc(names)}</a></p>` : ""}
     </div>
   </li>`;
 }
@@ -144,7 +194,7 @@ function filtered(all, wi) {
       tl.src.has(e.src) &&
       (tl.target === "all" || e.targets.has(tl.target)) &&
       (!tl.mine || onWatch(e, wi)) &&
-      (!tl.serious || ["action", "check"].includes(evLevel(e)) || e.src === "eol")
+      (!tl.serious || ["action", "check"].includes(evLevel(e)) || e.src === "eol" || e.src === "alert")
   );
 }
 
@@ -176,12 +226,13 @@ function renderTimeline() {
     .join("");
 
   $("#page-view").innerHTML = `
-    <div class="target-head"><h2>タイムライン</h2><p>CISA KEV・NVD・GitHub Advisory・JVN・endoflife.dateの動きを日付順に並べています</p></div>
+    <div class="target-head"><h2>タイムライン</h2><p>JPCERT/CC・IPA・CISA KEV・NVD・GitHub Advisory・JVN・endoflife.dateの動きを日付順に並べています</p></div>
     <div class="tl-stats">
       <div><span class="tl-k">今日（${esc(fmtDay(day))}）</span><span class="tl-n">${r1.length}</span><span class="tl-d">KEV ${cnt(r1, "kev")}・CVE ${cnt(r1, "nvd")}・パッケージ ${cnt(r1, "ghsa")}</span></div>
       <div><span class="tl-k">7日間</span><span class="tl-n">${r7.length}</span><span class="tl-d">KEV ${cnt(r7, "kev")}・CVE ${cnt(r7, "nvd")}・パッケージ ${cnt(r7, "ghsa")}</span></div>
-      <div><span class="tl-k">要対応（未読）</span><span class="tl-n ${all.some((e) => evLevel(e) === "action" && e.src !== "kev") ? "hot" : ""}">${all.filter((e) => e.src !== "kev" && evLevel(e) === "action").length}</span><span class="tl-d"><a href="#summary">まとめを見る</a></span></div>
+      <div><span class="tl-k">要対応（未対応）</span><span class="tl-n ${all.some((e) => evLevel(e) === "action" && e.src !== "kev") ? "hot" : ""}">${all.filter((e) => e.src !== "kev" && evLevel(e) === "action").length}</span><span class="tl-d"><a href="#summary">まとめを見る</a></span></div>
     </div>
+    ${sinceBlock(all, wi)}
     <div class="tl-filters">
       <div class="tl-chips">${srcChips}</div>
       <div class="tl-opts">
@@ -229,6 +280,12 @@ document.addEventListener("click", (e) => {
     else tl.src.add(k);
     if (!tl.src.size) tl.src = new Set(Object.keys(SOURCES));
     tl.shown = TL_STEP;
+    renderTimeline();
+  } else if (e.target.id === "since-ok") {
+    const v = JSON.parse(localStorage.getItem(VKEY) || "{}");
+    v.base = v.known;
+    v.baseAt = v.at;
+    localStorage.setItem(VKEY, JSON.stringify(v));
     renderTimeline();
   } else if (e.target.id === "tl-more") {
     tl.shown += TL_STEP;

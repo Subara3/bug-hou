@@ -14,13 +14,14 @@ const cache = {};
 const cveState = { sev: "ALL", q: "", shown: PAGE };
 let triage = { updated_at: null, items: {} };
 let tab = "all";
+let alerts = [];
 
 // ---------------- Claudeの仕分け
 const LEVELS = [
   ["action", "要対応"],
   ["check", "要確認"],
   ["watch", "様子見"],
-  ["read", "既読"],
+  ["read", "確認済み"],
   ["none", "未判定"],
   ["all", "すべて"],
 ];
@@ -28,7 +29,7 @@ const LEVEL_DESC = {
   action: "すでに悪用されているか、ログインなしで外から攻撃できる深刻なもの。早めに更新してください",
   check: "特定の設定や機能を使っているときだけ影響するもの。自分の環境に当てはまるか確かめてください",
   watch: "影響が小さいか、攻撃される条件が厳しいもの。急ぎではないので、いつもの更新のときに上げれば大丈夫です",
-  read: "既読にした要対応です。このブラウザでは要対応の件数に入りません。Claudeの判定が変わると要対応に戻ります",
+  read: "既読・対応済み・該当なしにした要対応と要確認です。このブラウザでは件数に入りません。Claudeの判定が変わると元に戻ります",
   none: "まだClaudeが判定していないもの。6時間以内に判定されます",
   all: "期間内のすべて",
 };
@@ -41,50 +42,103 @@ function levelCounts(ids) {
 const idsOf = (d) => [...d.cves.map((c) => c.id), ...d.ghsa.map((a) => a.id)];
 const levelOf = (id) => {
   const lv = triage.items[id]?.level || "none";
-  return lv === "action" && isRead(id) ? "read" : lv;
+  return (lv === "action" || lv === "check") && isRead(id) ? "read" : lv;
 };
 
-// ---------------- 既読（このブラウザだけ。要対応を既読にすると件数から外す）
-const RKEY = "bughou.read.v1";
-let readMap = (() => {
+// ---------------- 状態とメモ（このブラウザだけ）
+// 要対応・要確認に「既読」「対応済み」「該当なし」「保留」とメモを付けられる。
+// 保留以外を付けると、要対応・要確認の件数から外れる。
+const SKEY = "bughou.state.v1";
+const STATES = { read: "既読", done: "対応済み", na: "該当なし", hold: "保留" };
+let stateMap = (() => {
   try {
-    return JSON.parse(localStorage.getItem(RKEY)) || {};
+    const m = JSON.parse(localStorage.getItem(SKEY));
+    if (m) return m;
+    // 前の版の既読（bughou.read.v1）を引き継ぐ
+    const old = JSON.parse(localStorage.getItem("bughou.read.v1")) || {};
+    const out = {};
+    for (const [id, stamp] of Object.entries(old)) out[id] = { s: "read", stamp, at: "" };
+    return out;
   } catch {
     return {};
   }
 })();
-// 仕分けをやり直したら（KEV入りなど）未読に戻すため、判定の日付とKEVを控えておく
+// Claudeが判定をやり直したら（KEV入りなど）未対応に戻すため、判定の日付とKEVを控えておく
 const readStamp = (id) => {
   const t = triage.items[id];
   return t ? `${t.at}/${t.kev ? 1 : 0}` : "";
 };
-const isRead = (id) => !!readMap[id] && readMap[id] === readStamp(id);
-function setRead(ids, on) {
-  for (const id of ids) {
-    if (on) readMap[id] = readStamp(id);
-    else delete readMap[id];
-  }
-  // 一覧から消えた項目は捨てる
+const stateOf = (id) => stateMap[id] || null;
+// 付けたあとに判定が変わったか
+const stateStale = (id) => !!stateMap[id]?.s && stateMap[id].stamp !== readStamp(id);
+const isRead = (id) => {
+  const x = stateMap[id];
+  return !!x && x.s && x.s !== "hold" && x.stamp === readStamp(id);
+};
+const todayJST = () => new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Tokyo" });
+function saveState() {
+  // 一覧から消えて半年たったものは捨てる
   const alive = new Set(Object.keys(triage.items));
-  for (const id of Object.keys(readMap)) if (!alive.has(id)) delete readMap[id];
-  localStorage.setItem(RKEY, JSON.stringify(readMap));
+  const cut = new Date(Date.now() - 180 * 86400000).toLocaleDateString("sv-SE");
+  for (const [id, x] of Object.entries(stateMap)) {
+    if (!x.s && !x.memo) delete stateMap[id];
+    else if (!alive.has(id) && (x.at || "") < cut) delete stateMap[id];
+  }
+  localStorage.setItem(SKEY, JSON.stringify(stateMap));
 }
+function setState(ids, s) {
+  for (const id of ids) {
+    const x = stateMap[id] || {};
+    if (s) Object.assign(x, { s, stamp: readStamp(id), at: todayJST() });
+    else delete x.s;
+    stateMap[id] = x;
+  }
+  saveState();
+}
+function setMemo(id, memo) {
+  const x = stateMap[id] || {};
+  x.memo = memo.trim().slice(0, 500);
+  if (!x.at) x.at = todayJST();
+  stateMap[id] = x;
+  saveState();
+}
+const setRead = (ids, on) => setState(ids, on ? "read" : null);
 const CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const baseLevel = (id) => triage.items[id]?.level || "none";
+const markable = (id) => ["action", "check"].includes(baseLevel(id));
 function readButton(id) {
-  const lv = levelOf(id);
-  if (lv !== "action" && lv !== "read") return "";
-  const on = lv === "read";
-  return `<button class="readcheck" ${on ? "data-unread" : "data-read"}="${esc(id)}" aria-pressed="${on}" title="${on ? "押すと未読に戻ります" : "確認したら押してください"}">
-    <span class="box">${CHECK_SVG}</span><span class="lbl">${on ? "既読" : "既読にする"}</span></button>`;
+  if (!markable(id)) return "";
+  const on = isRead(id);
+  const label = on ? STATES[stateMap[id].s] : "既読にする";
+  return `<button class="readcheck" ${on ? "data-unread" : "data-read"}="${esc(id)}" aria-pressed="${on}" title="${on ? "押すと未対応に戻ります" : "確認したら押してください"}">
+    <span class="box">${CHECK_SVG}</span><span class="lbl">${label}</span></button>`;
 }
-const inTab = (id) => tab === "all" || levelOf(id) === tab;
+// 状態のボタンとメモ欄
+function stateBar(id) {
+  if (!markable(id)) return "";
+  const x = stateOf(id) || {};
+  const cur = x.s && (x.s === "hold" || isRead(id)) ? x.s : "";
+  const btns = ["done", "na", "hold"]
+    .map((k) => `<button class="st st-${k}" data-st="${k}" aria-pressed="${cur === k}">${STATES[k]}</button>`)
+    .join("");
+  const stale = stateStale(id) && x.s !== "hold"
+    ? `<span class="st-stale">${esc(x.at)}に「${STATES[x.s]}」にしましたが、そのあとClaudeの判定が変わったので未対応に戻しました</span>`
+    : "";
+  return `<div class="state" data-sid="${esc(id)}">
+    <span class="st-k">状態</span>${btns}
+    <input class="memo" maxlength="500" placeholder="メモ（例：本番は8.3.15に更新済み）" value="${esc(x.memo || "")}">
+    ${cur && x.at ? `<span class="st-at">${esc(x.at)}</span>` : ""}${stale}
+  </div>`;
+}
+// 状態を変えた項目は、タブを切り替えるまでその場に残す（続けてメモを書けるように）
+const justChanged = new Set();
+const inTab = (id) => tab === "all" || levelOf(id) === tab || justChanged.has(id);
 
-// Claudeの意見は吹き出しで出す（データから分かる事実と分けるため）
+// Claudeの意見はアイコンをつけて出す（データから分かる事実と分けるため）
 const OPINION = {
   action: '<b class="lv-action">要対応</b>だと思うよ',
   check: '<b class="lv-check">要確認</b>だと思うよ',
   watch: '<b class="lv-watch">様子見</b>だと思うよ',
-  read: '<b class="lv-action">要対応</b>だと思うよ（既読）',
 };
 // 線画の星（Claudeの色）。公式ロゴは使わない
 const CLAUDE_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="currentColor" stroke-width="2.4" stroke-linecap="round">${[0, 45, 90, 135]
@@ -108,7 +162,7 @@ const SRC_JA = { KEV: "CISA KEV", CISA: "CISAの評価", CVSS: "CVSSから推定
 function prioLine(id) {
   const lv = levelOf(id);
   const p = priority[id];
-  if (!p || (lv !== "action" && lv !== "read")) return "";
+  if (!p || baseLevel(id) !== "action") return "";
   const part = (k) => {
     const v = p[k];
     const label = v ? SSVC_JA[k][v] : { exp: "", auto: "自動化は不明", imp: "被害の大きさは不明" }[k];
@@ -124,19 +178,58 @@ function prioLine(id) {
   return `<p class="prio"><span class="prio-k">急ぎ度</span>${urgTag(p.u)}${part("exp")}${part("auto")}${part("imp")}${ep}<a class="prio-how" href="#about-urgency">決め方</a><a class="prio-how" href="#guide-${p.u}">やること</a></p>${now}`;
 }
 
+// 判定と急ぎ度がいつ・なぜ変わったか
+const md = (s) => (s ? `${Number(s.slice(5, 7))}/${Number(s.slice(8, 10))}` : "");
+function histLine(id) {
+  const out = [];
+  for (const h of triage.items[id]?.hist || []) {
+    out.push({ at: h.at, html: `Claudeの判定 ${levelLabel(h.from) || "未判定"} → ${levelLabel(h.to)}${h.kev ? "（CISA KEVに載ったため）" : ""}` });
+  }
+  for (const h of priority[id]?.hist || []) {
+    const why = (h.why || [])
+      .map((w) => {
+        const [k, v] = w.split(":");
+        const to = v.split(">")[1];
+        return SSVC_JA[k]?.[to] || "";
+      })
+      .filter(Boolean)
+      .join("・");
+    out.push({ at: h.at, html: `急ぎ度 ${URGENCY[h.from] || "なし"} → ${URGENCY[h.to]}${why ? `（${why}${h.src ? `：${SRC_JA[h.src] || h.src}` : ""}）` : ""}` });
+  }
+  if (!out.length) return "";
+  out.sort((a, b) => a.at.localeCompare(b.at));
+  return `<p class="hist"><span>変更の記録</span>${out.map((x) => `<span class="h"><i>${md(x.at)}</i>${esc(x.html)}</span>`).join("")}</p>`;
+}
+
+// 判定への異議はGitHubのissueで受ける
+const REPO = "https://github.com/Subara3/bug-hou";
+function disputeLink(id) {
+  const t = triage.items[id];
+  const body = [
+    `対象：${id}`,
+    `いまの判定：${levelLabel(t.level)}（${t.at}）`,
+    `理由：${t.reason}`,
+    "",
+    "どこがおかしいか：",
+    "",
+  ].join("\n");
+  const q = new URLSearchParams({ title: `判定の見直し：${id}`, body });
+  return `<a class="dispute" href="${REPO}/issues/new?${q}" target="_blank" rel="noopener">判定がおかしい？</a>`;
+}
+
 function advice(id) {
   const t = triage.items[id];
   if (!t) return "";
-  const lv = levelOf(id);
-  const say = OPINION[lv] || "";
-  return `${prioLine(id)}<div class="advice lv-${esc(lv)}">
+  const base = t.level;
+  const done = levelOf(id) === "read";
+  return `${prioLine(id)}<div class="advice lv-${esc(base)}${done ? " is-done" : ""}">
     <span class="claude-icon" title="Claudeの意見">${CLAUDE_ICON}</span>
     <div class="opinion">
-      <p class="say">${say}<span class="why">${esc(t.reason)}</span></p>
-      ${t.comment && (lv === "action" || lv === "read") ? `<p class="urgency">${esc(t.comment)}</p>` : ""}
+      <p class="say">${OPINION[base] || ""}<span class="why">${esc(t.reason)}</span>${disputeLink(id)}</p>
+      ${t.comment && base === "action" ? `<p class="urgency">${esc(t.comment)}</p>` : ""}
       ${t.todo ? `<p class="todo"><span>対処</span>${esc(t.todo)}</p>` : ""}
     </div>
-  </div>`;
+  </div>${histLine(id)}${stateBar(id)}`;
 }
 
 function renderTabs(d) {
@@ -369,6 +462,22 @@ function renderGhsa(d) {
   return head + (rest.length ? `<details class="more"><summary class="mono">残り${rest.length}件</summary>${rest.map(row).join("")}</details>` : "");
 }
 
+// ---------------- 注意喚起（JPCERT/CC・IPA）
+function alertRow(x) {
+  return `<div class="row">
+      <div class="date">${esc(x.date)}</div>
+      <div><span class="score alert">${x.org === "IPA" ? "IPA" : "JPCERT"}</span></div>
+      <div class="body">
+        <a class="id plain" href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener">${esc(x.title)}</a>
+        ${x.updated ? '<span class="tag upd">更新</span>' : ""}
+        <div class="meta"><span>${esc(x.org)}</span>${x.first && x.first !== x.date ? `<span>初出 ${esc(x.first)}</span>` : ""}${(x.cves || []).map((c) => `<span>${esc(c)}</span>`).join("")}</div>
+      </div>
+    </div>`;
+}
+function renderAlerts(d) {
+  return (d.alerts || []).map(alertRow).join("");
+}
+
 // ---------------- 05 JVN
 function renderJvn(d) {
   if (!d.jvn.length) return '<p class="empty">該当なし</p>';
@@ -402,7 +511,8 @@ function todoList(items) {
   return `<ul class="todo-list">${[...by]
     .map(([key, ids]) => {
       const [u, todo] = [key.slice(0, key.indexOf("|")), key.slice(key.indexOf("|") + 1)];
-      return `<li>${urgTag(u)}${esc(todo)}<span class="mono">${ids.map(esc).join("、")}</span></li>`;
+      const idl = ids.map((i) => esc(i) + (stateOf(i)?.s === "hold" ? '<span class="st-tag">保留</span>' : "")).join("、");
+      return `<li>${urgTag(u)}${esc(todo)}<span class="mono">${idl}</span></li>`;
     })
     .join("")}</ul>`;
 }
@@ -423,7 +533,7 @@ function verdictLine(actions, readN = 0) {
   if (!triage.updated_at) return '<p class="verdict-line none">まだ仕分けていません</p>';
   if (!actions.length)
     return readN
-      ? `<p class="verdict-line ok"><b>要対応はすべて既読です。</b>既読にした${readN}件は「既読」のタブで見られます。</p>`
+      ? `<p class="verdict-line ok"><b>要対応はすべて確認済みです。</b>確認済みにした${readN}件は「確認済み」のタブで見られます。</p>`
       : '<p class="verdict-line ok"><b>要対応はありません。</b>急いで更新が必要なものは出ていません。</p>';
   return `<div class="verdict-line action"><b>要対応が${actions.length}件あります。</b><span class="todo-head">TODO</span>${todoList(actions)}
     <button class="readcheck wide" data-read-all="${esc(actions.map((x) => x.id).join(" "))}"><span class="box">${CHECK_SVG}</span><span class="lbl">${actions.length}件とも既読にする</span></button></div>`;
@@ -451,6 +561,7 @@ async function show(id) {
   cveState.sev = "ALL";
   cveState.q = "";
   cveState.shown = PAGE;
+  justChanged.clear();
   const hasAction = [...d.cves, ...d.ghsa].some((x) => levelOf(x.id) === "action");
   tab = triage.updated_at ? (hasAction ? "action" : "check") : "all";
 
@@ -463,7 +574,9 @@ async function show(id) {
   $("#cves").innerHTML = renderCves(d);
   $("#ghsa").innerHTML = renderGhsa(d);
   $("#jvn").innerHTML = renderJvn(d);
+  $("#alerts").innerHTML = renderAlerts(d);
   $("#sec-ghsa").hidden = !d.ghsa.length;
+  $("#sec-alert").hidden = !(d.alerts || []).length;
   replayAnimation();
   document.title = `${d.label}｜バグ報`;
 }
@@ -513,12 +626,22 @@ document.addEventListener("click", (e) => {
   if (rb) {
     const ids = (rb.dataset.readAll || rb.dataset.read || rb.dataset.unread).split(" ");
     setRead(ids, !rb.dataset.unread);
+    if (!rb.dataset.readAll) justChanged.add(ids[0]);
+    rerender();
+    return;
+  }
+  const st = e.target.closest(".state [data-st]");
+  if (st) {
+    const id = st.closest("[data-sid]").dataset.sid;
+    setState([id], st.getAttribute("aria-pressed") === "true" ? null : st.dataset.st);
+    justChanged.add(id);
     rerender();
     return;
   }
   const tb = e.target.closest("#tabs .tab, .verdicts button[data-tab]");
   if (tb) {
     tab = tb.dataset.tab;
+    justChanged.clear();
     cveState.sev = "ALL";
     cveState.shown = PAGE;
     const d = cache[current];
@@ -545,6 +668,14 @@ document.addEventListener("click", (e) => {
     desc.classList.toggle("clamp");
     desc.classList.toggle("open");
   }
+});
+
+// メモは書き終えたとき（フォーカスが外れたとき）に保存する。描き直さない
+document.addEventListener("change", (e) => {
+  if (!e.target.matches(".state .memo")) return;
+  setMemo(e.target.closest("[data-sid]").dataset.sid, e.target.value);
+  e.target.classList.add("saved");
+  setTimeout(() => e.target.classList.remove("saved"), 1200);
 });
 
 document.addEventListener("input", (e) => {
@@ -582,6 +713,7 @@ window.addEventListener("hashchange", () => route());
     /* まだ仕分けていない */
   }
   showUpdated();
+  alerts = await loadJSON("alerts.json").catch(() => []);
 
   // ランプを正確にするため全対象を先に読む（小さいファイルなので）
   await Promise.all(meta.targets.map(async (t) => (cache[t.id] = await loadJSON(`${t.id}.json`).catch(() => null))));

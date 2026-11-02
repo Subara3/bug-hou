@@ -6,6 +6,7 @@
   - GitHub Advisory Database (パッケージの脆弱性)
   - endoflife.date (バージョンごとのサポート期限)
   - JVN 新着RSS (日本語の脆弱性情報。直近分しか載らないので貯めていく)
+  - JPCERT/CC 注意喚起、IPA 重要なセキュリティ情報 (RSS。同じく貯めていく)
 
 環境変数:
   NVD_API_KEY   あればNVDの待ち時間が短くなる
@@ -307,6 +308,40 @@ def fetch_jvn() -> list[dict]:
     return out
 
 
+# ---------------------------------------------------------------- 注意喚起（JPCERT/CC・IPA）
+def fetch_alerts() -> list[dict]:
+    """JPCERT/CCの注意喚起とIPAの重要なセキュリティ情報。どちらもRSS 1.0。
+
+    JPCERT/CCのRSSにはWeekly Reportも混ざるので、注意喚起（/at/）だけを残す。
+    IPAは更新のたびに同じページが流れてくるので、URLでまとめて最新の日付を使う。
+    """
+    ns = {"rss": "http://purl.org/rss/1.0/", "dc": "http://purl.org/dc/elements/1.1/"}
+    out: dict[str, dict] = {}
+    for org, url in (
+        ("JPCERT/CC", "https://www.jpcert.or.jp/rss/jpcert.rdf"),
+        ("IPA", "https://www.ipa.go.jp/security/alert-rss.rdf"),
+    ):
+        root = ET.fromstring(get(url))
+        for it in root.findall("rss:item", ns):
+            link = it.findtext("rss:link", "", ns).strip()
+            if org == "JPCERT/CC" and "/at/" not in link:
+                continue
+            title = it.findtext("rss:title", "", ns).strip()
+            title = re.sub(r"^注意喚起:\s*", "", title)
+            updated = bool(re.search(r"^更新：|（更新）|\(更新\)\s*$", title))
+            title = re.sub(r"^更新：|\s*[（(](公開|更新)[)）]\s*$", "", title).strip()
+            date = it.findtext("dc:date", "", ns)[:10]
+            x = {"id": link, "org": org, "title": title, "url": link, "date": date, "updated": updated,
+                 "cves": sorted(set(re.findall(r"CVE-\d{4}-\d+", title)))}
+            if link not in out or out[link]["date"] < date:
+                # 最初に出た日を残しておく
+                first = min(date, out[link]["first"]) if link in out else date
+                out[link] = {**x, "first": first}
+            else:
+                out[link]["first"] = min(out[link]["first"], date)
+    return list(out.values())
+
+
 # ---------------------------------------------------------------- main
 def main():
     cfg = json.loads((ROOT / "targets.json").read_text(encoding="utf-8"))
@@ -342,6 +377,24 @@ def main():
     )
     save("jvn.json", jvn_list)
 
+    # 注意喚起もRSSには直近分しか出ないので貯めていく
+    alert_all = {x["id"]: x for x in load("alerts.json", [])}
+    try:
+        for x in fetch_alerts():
+            old = alert_all.get(x["id"])
+            if old:
+                x["first"] = min(old.get("first", old["date"]), x["first"])
+                x["date"] = max(old["date"], x["date"])
+            alert_all[x["id"]] = x
+        status["alerts"] = "ok"
+    except Exception as e:  # noqa: BLE001
+        log("注意喚起失敗", e)
+        status["alerts"] = f"error: {e}"
+    alerts = sorted(
+        (x for x in alert_all.values() if x["date"] >= cutoff), key=lambda x: x["date"], reverse=True
+    )
+    save("alerts.json", alerts)
+
     summary = []
     current: set[str] = set()
     for t in cfg["targets"]:
@@ -370,6 +423,11 @@ def main():
 
         rx = re.compile(t["jvn"], re.I) if t.get("jvn") else None
         data["jvn"] = [x for x in jvn_list if rx and rx.search(x["title"] + x["desc"])]
+        # 注意喚起は、名前が当たるか、この対象のCVEを含むものを入れる
+        own = {c["id"] for c in data["cves"]} | {a.get("cve") for a in data["ghsa"]}
+        data["alerts"] = [
+            x for x in alerts if (rx and rx.search(x["title"])) or own.intersection(x["cves"])
+        ]
 
         # 初めて見た日を記録して、画面で「新着」を出せるようにする
         for key, idf in (("cves", "id"), ("ghsa", "id"), ("kev", "cve"), ("jvn", "url")):

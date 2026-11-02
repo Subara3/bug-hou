@@ -1,0 +1,178 @@
+[
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+  "org": "IPA",
+  "title": "PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
+  "date": "2026-11-02",
+  "updated": true,
+  "cves": [
+   "CVE-2026-109618",
+   "CVE-2026-109619"
+  ],
+  "first": "2026-10-22"
+ },
+ {
+  "id": "https://www.jpcert.or.jp/at/2026/at260033.html",
+  "org": "JPCERT/CC",
+  "title": "PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
+  "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+  "date": "2026-10-29",
+  "updated": true,
+  "cves": [
+   "CVE-2026-109618",
+   "CVE-2026-109619"
+  ],
+  "first": "2026-10-29"
+ },
+ {
+  "id": "https://www.jpcert.or.jp/at/2026/at260034.html",
+  "org": "JPCERT/CC",
+  "title": "BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起",
+  "url": "https://www.jpcert.or.jp/at/2026/at260034.html",
+  "date": "2026-10-26",
+  "updated": false,
+  "cves": [
+   "CVE-2026-111497"
+  ],
+  "first": "2026-10-26"
+ },
+ {
+  "id": "https://www.jpcert.or.jp/at/2026/at260030.html",
+  "org": "JPCERT/CC",
+  "title": "直近で相次いでいる国内組織における不正アクセスに関する注意喚起",
+  "url": "https://www.jpcert.or.jp/at/2026/at260030.html",
+  "date": "2026-10-23",
+  "updated": true,
+  "cves": [],
+  "first": "2026-10-23"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
+  "org": "IPA",
+  "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",
+  "date": "2026-10-21",
+  "updated": false,
+  "cves": [],
+  "first": "2026-10-21"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/1021-jre.html",
+  "org": "IPA",
+  "title": "Oracle Java の脆弱性対策について(2026年10月)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/1021-jre.html",
+  "date": "2026-10-21",
+  "updated": false,
+  "cves": [],
+  "first": "2026-10-21"
+ },
+ {
+  "id": "https://www.jpcert.or.jp/at/2026/at260032.html",
+  "org": "JPCERT/CC",
+  "title": "SiteGuard Server EditionにおけるOSコマンドインジェクションの脆弱性（CVE-2026-106931）に関する注意喚起",
+  "url": "https://www.jpcert.or.jp/at/2026/at260032.html",
+  "date": "2026-10-14",
+  "updated": false,
+  "cves": [
+   "CVE-2026-106931"
+  ],
+  "first": "2026-10-14"
+ },
+ {
+  "id": "https://www.jpcert.or.jp/at/2026/at260031.html",
+  "org": "JPCERT/CC",
+  "title": "2026年10月マイクロソフトセキュリティ更新プログラムに関する注意喚起",
+  "url": "https://www.jpcert.or.jp/at/2026/at260031.html",
+  "date": "2026-10-14",
+  "updated": false,
+  "cves": [],
+  "first": "2026-10-14"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/1014-ms.html",
+  "org": "IPA",
+  "title": "Microsoft 製品の脆弱性対策について(2026年10月)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/1014-ms.html",
+  "date": "2026-10-14",
+  "updated": false,
+  "cves": [],
+  "first": "2026-10-14"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html",
+  "org": "IPA",
+  "title": "不正アクセスによる漏えい等の事案を踏まえ、速やかに実施すべき対策等について",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261009.html",
+  "date": "2026-10-09",
+  "updated": false,
+  "cves": [],
+  "first": "2026-10-09"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/20261007-jvn.html",
+  "org": "IPA",
+  "title": "「Movable Type」における複数の脆弱性について（JVN#91153973）",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/20261007-jvn.html",
+  "date": "2026-10-07",
+  "updated": false,
+  "cves": [],
+  "first": "2026-10-07"
+ },
+ {
+  "id": "https://www.jpcert.or.jp/at/2026/at260029.html",
+  "org": "JPCERT/CC",
+  "title": "NetScaler ADCおよびNetScaler Gatewayにおける複数の脆弱性（CVE-2026-88771、CVE-2026-88772等）に関する注意喚起",
+  "url": "https://www.jpcert.or.jp/at/2026/at260029.html",
+  "date": "2026-10-02",
+  "updated": true,
+  "cves": [
+   "CVE-2026-88771",
+   "CVE-2026-88772"
+  ],
+  "first": "2026-10-02"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20260928.html",
+  "org": "IPA",
+  "title": "NetScaler ADCおよびNetScaler Gatewayの脆弱性について(CVE-2026-88771、CVE-2026-88772等)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20260928.html",
+  "date": "2026-09-28",
+  "updated": false,
+  "cves": [
+   "CVE-2026-88771",
+   "CVE-2026-88772"
+  ],
+  "first": "2026-09-28"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/0909-ms.html",
+  "org": "IPA",
+  "title": "Microsoft 製品の脆弱性対策について(2026年9月)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/0909-ms.html",
+  "date": "2026-09-09",
+  "updated": false,
+  "cves": [],
+  "first": "2026-09-09"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/0909-adobereader.html",
+  "org": "IPA",
+  "title": "Adobe Acrobat および Reader の脆弱性対策について(2026年9月)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/0909-adobereader.html",
+  "date": "2026-09-09",
+  "updated": false,
+  "cves": [],
+  "first": "2026-09-09"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/0812-ms.html",
+  "org": "IPA",
+  "title": "Microsoft 製品の脆弱性対策について(2026年8月)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/0812-ms.html",
+  "date": "2026-08-12",
+  "updated": false,
+  "cves": [],
+  "first": "2026-08-12"
+ }
+]

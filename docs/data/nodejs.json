@@ -2618,5 +2618,19 @@
    }
   ]
  },
- "jvn": []
+ "jvn": [],
+ "alerts": [
+  {
+   "id": "https://www.jpcert.or.jp/at/2026/at260034.html",
+   "org": "JPCERT/CC",
+   "title": "BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起",
+   "url": "https://www.jpcert.or.jp/at/2026/at260034.html",
+   "date": "2026-10-26",
+   "updated": false,
+   "cves": [
+    "CVE-2026-111497"
+   ],
+   "first": "2026-10-26"
+  }
+ ]
 }

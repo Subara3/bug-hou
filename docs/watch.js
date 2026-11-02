@@ -326,7 +326,9 @@ async function showMine() {
   box.innerHTML = `<div class="target-head"><h2>ウォッチリスト</h2><p>登録はこのブラウザに保存されます</p></div>
     ${formHtml()}
     <p class="w-hint">「フィードURLをコピー」で取ったURLをRSSのメール転送サービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a> など）に登録すると、新着がメールで届きます。
-    全体の「要対応」だけを受け取るなら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/action.xml"))}">このフィード</button>。</p>
+    全体の要対応なら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/action.xml"))}">要対応のフィード</button>、そのうち急ぎ度が今すぐのものだけなら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/now.xml"))}">今すぐのフィード</button>です。</p>
+    ${lockBlock()}
+    <h3 class="w-title">登録したもの</h3>
     <div id="w-list">${list.length ? "" : '<p class="empty">まだ登録がありません。上のフォームから製品やパッケージを追加してください。</p>'}</div>`;
 
   const holder = $("#w-list");
@@ -347,6 +349,7 @@ async function showMine() {
     // 表示した時点で既読にする（NEWの印は今回の表示には残る）
     setSeen(w.id, new Set(m.hit.map((h) => h.item.id)));
   }
+  holder.insertAdjacentHTML("afterend", backupBlock());
   renderNav();
   updateTitleBadge();
   replayAnimation();
