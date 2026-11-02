@@ -261,6 +261,7 @@ def ghsa_for(ecosystem: str, kev_ids: set[str], limit: int = 100) -> list[dict]:
                 "summary": a.get("summary", ""),
                 "severity": (a.get("severity") or "").upper(),
                 "score": score or None,
+                "vector": (cs.get("cvss_v4") or {}).get("vector_string") or (cs.get("cvss_v3") or {}).get("vector_string"),
                 "published": (a.get("published_at") or "")[:10],
                 "url": a["html_url"],
                 "kev": bool(a.get("cve_id")) and a["cve_id"] in kev_ids,

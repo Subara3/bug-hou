@@ -91,30 +91,45 @@ const CLAUDE_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="curr
   .map((r) => `<line x1="12" y1="3.5" x2="12" y2="20.5" transform="rotate(${r} 12 12)"/>`)
   .join("")}</g></svg>`;
 
-// 要対応の急ぎ度
-const URGENCY = {
-  now: { label: "今すぐ", say: "止めてでも、すぐ対応したほうがいいと思う" },
-  soon: { label: "今週中", say: "今週中には更新したいかな" },
-  later: { label: "手が空いたら", say: "急がないので、手が空いたときでいいと思う" },
-};
+// 要対応の急ぎ度（scripts/priority.py がCISAのSSVCの考え方でデータから決めたもの）
+let priority = {};
+const URGENCY = { now: "今すぐ", soon: "今週中", later: "手が空いたら" };
 const URG_ORDER = ["now", "soon", "later", ""];
-const urgOf = (id) => triage.items[id]?.urgency || "";
-const urgTag = (u) => (u ? `<span class="urg urg-${u}">${URGENCY[u].label}</span>` : "");
+const urgOf = (id) => priority[id]?.u || "";
+const urgTag = (u) => (u ? `<span class="urg urg-${u}">${URGENCY[u]}</span>` : "");
+const SSVC_JA = {
+  exp: { active: "悪用されている", poc: "攻撃コードが公開されている", none: "悪用の報告なし" },
+  auto: { yes: "自動で攻撃できる", no: "自動では攻撃できない" },
+  imp: { total: "被害は全面的", partial: "被害は一部" },
+};
+const SRC_JA = { KEV: "CISA KEV", CISA: "CISAの評価", CVSS: "CVSSから推定" };
+
+// 急ぎ度とその根拠。要対応のものだけに出す
+function prioLine(id) {
+  const lv = levelOf(id);
+  const p = priority[id];
+  if (!p || (lv !== "action" && lv !== "read")) return "";
+  const part = (k) => {
+    const v = p[k];
+    const label = v ? SSVC_JA[k][v] : { exp: "", auto: "自動化は不明", imp: "被害の大きさは不明" }[k];
+    if (!label) return "";
+    const src = p[`${k}_src`];
+    return `<span class="ssvc ${v === "active" || v === "yes" || v === "total" ? "hot" : ""}">${label}${src ? `<small>${SRC_JA[src]}</small>` : ""}</span>`;
+  };
+  const ep = p.epss != null ? `<span class="ssvc ep" title="FIRSTのEPSS。30日以内に悪用される確率の予測（参考）">EPSS ${p.epss >= 0.999 ? "99.9%以上" : (p.epss * 100).toFixed(p.epss < 0.1 ? 1 : 0) + "%"}</span>` : "";
+  return `<p class="prio"><span class="prio-k">急ぎ度</span>${urgTag(p.u)}${part("exp")}${part("auto")}${part("imp")}${ep}<a class="prio-how" href="#about-urgency">決め方</a></p>`;
+}
 
 function advice(id) {
   const t = triage.items[id];
   if (!t) return "";
   const lv = levelOf(id);
   const say = OPINION[lv] || "";
-  return `<div class="advice lv-${esc(lv)}">
+  return `${prioLine(id)}<div class="advice lv-${esc(lv)}">
     <span class="claude-icon" title="Claudeの意見">${CLAUDE_ICON}</span>
     <div class="opinion">
       <p class="say">${say}<span class="why">${esc(t.reason)}</span></p>
-      ${
-        t.urgency && URGENCY[t.urgency]
-          ? `<p class="urgency">${urgTag(t.urgency)}${esc(t.comment || URGENCY[t.urgency].say)}</p>`
-          : ""
-      }
+      ${t.comment && (lv === "action" || lv === "read") ? `<p class="urgency">${esc(t.comment)}</p>` : ""}
       ${t.todo ? `<p class="todo"><span>対処</span>${esc(t.todo)}</p>` : ""}
     </div>
   </div>`;
@@ -535,6 +550,11 @@ window.addEventListener("hashchange", () => route());
     ? errs.map(([k, v]) => `<p class="err">取得失敗 ${esc(k)}：${esc(v.slice(0, 160))}</p>`).join("")
     : "";
 
+  try {
+    priority = (await loadJSON("priority.json")).items || {};
+  } catch {
+    /* まだ作っていない */
+  }
   try {
     triage = await loadJSON("triage.json");
   } catch {

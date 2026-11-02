@@ -6,7 +6,7 @@
 判定ファイルの形（FILE）:
   [{"id": "CVE-2026-xxxx", "level": "action", "reason": "...", "todo": "..."}, ...]
   level は action（要対応） / check（要確認） / watch（様子見）
-  要対応のときだけ urgency（now / soon / later）と comment を付ける
+  要対応のときだけ comment を付ける。急ぎ度（urgency）は scripts/priority.py がデータから決めたものを使う
 """
 
 from __future__ import annotations
@@ -20,7 +20,13 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
 TRIAGE = DATA / "triage.json"
 LEVELS = {"action", "check", "watch"}
-URGENCY = {"now", "soon", "later"}
+PRIORITY = DATA / "priority.json"
+
+
+def load_priority() -> dict:
+    if PRIORITY.exists():
+        return json.loads(PRIORITY.read_text(encoding="utf-8")).get("items", {})
+    return {}
 
 
 def load_triage() -> dict:
@@ -34,20 +40,22 @@ def targets() -> list[dict]:
     return [json.loads((DATA / f"{t['id']}.json").read_text(encoding="utf-8")) for t in meta["targets"]]
 
 
-def need_redo(prev: dict, item: dict) -> bool:
-    # KEV入りしたら判定をやり直す。要対応で急ぎ度がまだないものも出す
+def need_redo(prev: dict, item: dict, pri: dict) -> bool:
+    # KEV入りしたら判定をやり直す。要対応で、ひとことを書いたときと急ぎ度が変わったものも出す
     if item["kev"] and not prev.get("kev"):
         return True
-    return prev.get("level") == "action" and not prev.get("urgency")
+    u = pri.get(item["id"], {}).get("u")
+    return prev.get("level") == "action" and bool(u) and prev.get("urgency") != u
 
 
 def todo():
     done = load_triage()["items"]
+    pri = load_priority()
     out = []
     for d in targets():
         for c in d["cves"]:
             prev = done.get(c["id"])
-            if prev and not need_redo(prev, c):
+            if prev and not need_redo(prev, c, pri):
                 continue
             out.append(
                 {
@@ -61,11 +69,12 @@ def todo():
                     "kev": c["kev"],
                     "cwe": c["cwe"],
                     "desc": c["desc"][:700],
+                    "priority": pri.get(c["id"]),
                 }
             )
         for a in d["ghsa"]:
             prev = done.get(a["id"])
-            if prev and not need_redo(prev, a):
+            if prev and not need_redo(prev, a, pri):
                 continue
             out.append(
                 {
@@ -79,6 +88,7 @@ def todo():
                     "cve": a["cve"],
                     "summary": a["summary"],
                     "packages": a["packages"][:5],
+                    "priority": pri.get(a["id"]),
                 }
             )
     json.dump(out, sys.stdout, ensure_ascii=False, indent=1)
@@ -94,6 +104,7 @@ def apply(path: str):
         if x.get("kev")
     }
     tri = load_triage()
+    pri = load_priority()
     bad = 0
     for r in rows:
         if r.get("level") not in LEVELS or not r.get("id"):
@@ -107,7 +118,7 @@ def apply(path: str):
             "at": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         }
         if r["level"] == "action":
-            row["urgency"] = r.get("urgency") if r.get("urgency") in URGENCY else "soon"
+            row["urgency"] = pri.get(r["id"], {}).get("u", "")
             row["comment"] = str(r.get("comment", ""))[:200]
         tri["items"][r["id"]] = row
     # 一覧から消えた項目の判定は捨てる

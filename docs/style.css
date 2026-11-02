@@ -402,3 +402,14 @@ button.vbox:hover { background: var(--bg-sub); }
 .urg-soon { background: #fcefe2; color: #9a5208; }
 .urg-later { background: var(--bg-sub); color: var(--text-sub); }
 .opinion .urgency { margin-top: 2px; font-size: 13px; }
+
+/* 急ぎ度の根拠 */
+.prio { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 10px 0 0; font-size: 12px; }
+.prio .urg { margin-right: 4px; font-size: 12px; line-height: 20px; }
+.prio-k { margin-right: 4px; font-size: 11px; font-weight: 600; letter-spacing: .08em; color: var(--text-sub); }
+.ssvc { display: inline-flex; align-items: baseline; gap: 5px; padding: 0 8px; line-height: 20px; border: 1px solid var(--line); border-radius: 10px; color: var(--text-sub); background: #fff; }
+.ssvc.hot { color: var(--text); border-color: var(--line-strong); }
+.ssvc small { font-size: 10px; color: var(--text-sub); }
+.ssvc.ep { font-family: var(--mono); }
+.prio-how { margin-left: 4px; font-size: 11px; }
+.doc .urg { margin-right: 4px; }

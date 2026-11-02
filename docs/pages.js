@@ -102,11 +102,27 @@ function showAbout() {
       <ul>
         <li><b>要対応</b>：CISA KEV（悪用が確認された脆弱性の一覧）に載っているもの。本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性のうち、ログインなしで外から攻撃できるCRITICAL・HIGH。広く使われているパッケージ（Laravel、Symfony、express、Django、requestsなど）の脆弱性のうち、外から攻撃できるCRITICAL</li>
         <li><b>要確認</b>：上に当てはまらないHIGH。特定の設定や拡張モジュールを使っているときだけ影響するもの。利用者の少ないパッケージのCRITICAL</li>
-        <li><b>要対応</b>には、急ぎ度も付けています。<span class="urg urg-now">今すぐ</span>は更新できるまでサービスを止めることも考えたほうがいいもの、<span class="urg urg-soon">今週中</span>は数日のうちに更新したいもの、<span class="urg urg-later">手が空いたら</span>は次の定期更新で間に合うものです</li>
         <li><b>様子見</b>：MEDIUM以下のもの。サーバーにログインできる人しか攻撃できない、管理者の権限が要るなど、攻撃の条件が厳しいもの</li>
       </ul>
       <p>Claudeの判定は、各脆弱性の下にClaudeのアイコンをつけて「要対応だと思うよ」のように出しています。アイコンがついていない部分は、NVDなどの取得元のデータです。</p>
       <p>迷ったものは、重いほうの区分に入れています。基準の全文は<a href="https://github.com/Subara3/bug-hou/blob/main/TRIAGE.md" target="_blank" rel="noopener">TRIAGE.md</a>にあります。</p>
+
+      <h3 id="about-urgency">要対応の急ぎ度</h3>
+      <p>要対応には、どれくらい急ぐかを<span class="urg urg-now">今すぐ</span><span class="urg urg-soon">今週中</span><span class="urg urg-later">手が空いたら</span>の3つで付けています。急ぎ度はClaudeではなく、データから機械的に決めています。同じデータなら、いつも同じ結果になります。</p>
+      <p>使っているのは、米国CISAが公開している優先度づけの手順<a href="https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc" target="_blank" rel="noopener">SSVC</a>の3つの観点です。</p>
+      <table class="doc-table"><thead><tr><th>観点</th><th>値</th><th>どこから取るか</th></tr></thead><tbody>
+        <tr><td>悪用されているか</td><td>悪用されている／攻撃コードが公開されている／悪用の報告なし</td><td>CISA KEVに載っていれば「悪用されている」。なければCISAがCVEごとに付けている評価（Vulnrichment）</td></tr>
+        <tr><td>自動で攻撃できるか</td><td>できる／できない</td><td>CISAの評価。なければCVSSから推定（ネットワーク越し・攻撃が簡単・ログイン不要・ユーザーの操作不要がすべてそろえば「できる」）</td></tr>
+        <tr><td>被害の大きさ</td><td>全面的／一部</td><td>CISAの評価。なければCVSSから推定（情報の漏えいと改ざんがどちらも「高」なら「全面的」）</td></tr>
+      </tbody></table>
+      <p>3つの組み合わせから、次の表で急ぎ度を決めます。この表はSSVCをもとに、このサイトで決めたものです。SSVC自体は「何日以内」といった期間を決めていません。</p>
+      <table class="doc-table"><tbody>
+        <tr><td><span class="urg urg-now">今すぐ</span></td><td>悪用されていて、自動で攻撃できるか、被害が全面的なもの。外に公開しているなら、更新できるまで止めることも考えてください</td></tr>
+        <tr><td><span class="urg urg-soon">今週中</span></td><td>悪用されている（上に当てはまらないもの）。攻撃コードが公開されていて、自動で攻撃できるか被害が全面的なもの。悪用の報告はないが、自動で攻撃できて被害も全面的なもの</td></tr>
+        <tr><td><span class="urg urg-later">手が空いたら</span></td><td>それ以外</td></tr>
+      </tbody></table>
+      <p>参考として、FIRSTが出しているEPSS（30日以内に悪用される確率の予測）も表示しています。EPSSは急ぎ度の判定には使っていません。</p>
+      <p>Claudeは急ぎ度を決めません。急ぎ度を見たうえで「社内だけで使っているなら次の更新で大丈夫」のように、どんな環境なら止めるべきかのひとことを書いています。</p>
 
       <h3>色とスコア</h3>
       <table class="doc-table"><tbody>

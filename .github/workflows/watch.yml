@@ -29,6 +29,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/fetch.py
 
+      - name: 急ぎ度（CISAのSSVCとEPSS）
+        run: python scripts/priority.py
+
       - name: フィード
         run: python scripts/feeds.py
 
