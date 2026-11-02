@@ -17,20 +17,33 @@ let tab = "all";
 
 // ---------------- Claudeの仕分け
 const LEVELS = [
-  ["action", "対応が必要"],
-  ["check", "確認しておく"],
-  ["watch", "様子見"],
+  ["action", "要対応"],
+  ["check", "要確認"],
+  ["watch", "様子見でよい"],
   ["none", "未判定"],
   ["all", "すべて"],
 ];
+const LEVEL_DESC = {
+  action: "悪用が確認された、または認証なしで外から突ける深刻なもの。早めに更新してください",
+  check: "設定や使っている機能によって影響するもの。該当するか確かめてください",
+  watch: "影響が小さい、または条件が厳しいもの。通常の更新で足ります",
+  none: "まだClaudeが仕分けていないもの。次の仕分け（最大6時間後）で決まります",
+  all: "期間内のすべて",
+};
+const levelLabel = (k) => LEVELS.find(([x]) => x === k)?.[1] || "";
+function levelCounts(ids) {
+  const c = { action: 0, check: 0, watch: 0, none: 0 };
+  for (const id of ids) c[levelOf(id)]++;
+  return c;
+}
+const idsOf = (d) => [...d.cves.map((c) => c.id), ...d.ghsa.map((a) => a.id)];
 const levelOf = (id) => triage.items[id]?.level || "none";
 const inTab = (id) => tab === "all" || levelOf(id) === tab;
 
 function advice(id) {
   const t = triage.items[id];
   if (!t) return "";
-  const label = LEVELS.find(([k]) => k === t.level)?.[1] || "";
-  return `<p class="advice lv-${esc(t.level)}"><b>${label}</b>${esc(t.reason)}${t.todo ? `<span class="todo">→ ${esc(t.todo)}</span>` : ""}</p>`;
+  return `<p class="advice lv-${esc(t.level)}"><span class="verdict lv-${esc(t.level)}">${levelLabel(t.level)}</span>${esc(t.reason)}${t.todo ? `<span class="todo">対処：${esc(t.todo)}</span>` : ""}</p>`;
 }
 
 function renderTabs(d) {
@@ -45,7 +58,7 @@ function renderTabs(d) {
         ([k, label]) =>
           `<button class="tab lv-${k}" data-tab="${k}" aria-selected="${tab === k}" role="tab">${label}<span>${count(k)}</span></button>`
       )
-      .join("") + `<span class="tab-note">${when}</span>`;
+      .join("") + `<span class="tab-note">${when}</span><p class="tab-desc">${esc(LEVEL_DESC[tab])}</p>`;
 }
 
 function daysBetween(a, b) {
@@ -70,6 +83,11 @@ async function loadJSON(name) {
 
 // ---------------- ランプの色
 function lampOf(t) {
+  const d0 = cache[t.id];
+  if (triage.updated_at && d0) {
+    const c = levelCounts(idsOf(d0));
+    return c.action ? "red" : c.check ? "amber" : "green";
+  }
   if (t.kev_recent > 0) return "red";
   const d = cache[t.id];
   if (d) {
@@ -83,11 +101,15 @@ function lampOf(t) {
 
 function renderNav() {
   $("#nav").innerHTML =
+    `<a href="#" aria-current="${current === "summary"}">まとめ</a><span class="sep"></span>` +
     meta.targets
       .map(
-        (t) => `<a href="#${esc(t.id)}" aria-current="${t.id === current}" title="CVE ${t.cves}件・KEV ${t.kev_recent}件">
-        <span class="dot ${lampOf(t)}"></span>${esc(t.label)}<span class="count">${t.cves}</span>
-      </a>`
+        (t) => {
+          const act = cache[t.id] ? levelCounts(idsOf(cache[t.id])).action : 0;
+          return `<a href="#${esc(t.id)}" aria-current="${t.id === current}">
+        <span class="dot ${lampOf(t)}"></span>${esc(t.label)}${act ? `<span class="count new">要対応 ${act}</span>` : ""}
+      </a>`;
+        }
       )
       .join("") +
     '<span class="sep"></span>' +
@@ -271,17 +293,46 @@ function renderJvn(d) {
 }
 
 // ---------------- 見出しと集計
+function todoList(items) {
+  // 同じ対処はまとめる
+  const by = new Map();
+  for (const x of items) {
+    const t = triage.items[x.id];
+    const key = t?.todo || t?.reason || x.id;
+    if (!by.has(key)) by.set(key, []);
+    by.get(key).push(x.id);
+  }
+  return `<ul class="todo-list">${[...by]
+    .map(([todo, ids]) => `<li>${esc(todo)}<span class="mono">${ids.map(esc).join("、")}</span></li>`)
+    .join("")}</ul>`;
+}
+
+function verdictBoxes(c, linkable) {
+  const tag = linkable ? "button" : "div";
+  return `<div class="verdicts">${["action", "check", "watch"]
+    .map(
+      (k) => `<${tag} ${linkable ? `data-tab="${k}"` : ""} class="vbox lv-${k}${c[k] ? "" : " zero"}">
+        <span class="vlabel">${levelLabel(k)}</span><span class="vnum">${c[k]}</span>
+        <span class="vdesc">${esc(LEVEL_DESC[k])}</span>
+      </${tag}>`
+    )
+    .join("")}</div>`;
+}
+
+function verdictLine(actions) {
+  if (!triage.updated_at) return '<p class="verdict-line none">まだ仕分けていません</p>';
+  if (!actions.length) return '<p class="verdict-line ok"><b>要対応はありません。</b>通常の更新で足ります。</p>';
+  return `<div class="verdict-line action"><b>要対応が${actions.length}件あります。</b>いまやること${todoList(actions)}</div>`;
+}
+
 function renderHead(d, t) {
-  const kevCve = d.cves.filter((c) => c.kev).length;
+  const all = [...d.cves, ...d.ghsa];
+  const c = levelCounts(all.map((x) => x.id));
+  const actions = all.filter((x) => levelOf(x.id) === "action");
   return `<div class="target-head"><h2>${esc(d.label)}</h2><p>${esc(d.note)}</p></div>
-    <dl class="tally">
-      <div class="${t.kev_recent ? "hot" : ""}"><dt>KEV（${meta.days}日）</dt><dd>${t.kev_recent}</dd></div>
-      <div class="${t.critical ? "hot" : ""}"><dt>CRITICAL</dt><dd>${t.critical}</dd></div>
-      <div><dt>HIGH</dt><dd>${t.high}</dd></div>
-      <div><dt>CVE（${meta.days}日）</dt><dd>${t.cves}</dd></div>
-      <div><dt>うちKEV</dt><dd>${kevCve}</dd></div>
-      ${d.ghsa.length ? `<div><dt>パッケージ</dt><dd>${t.ghsa}</dd></div>` : ""}
-    </dl>`;
+    ${verdictLine(actions)}
+    ${verdictBoxes(c, true)}
+    <p class="facts">直近${meta.days}日のCVE ${t.cves}件（CRITICAL ${t.critical}・HIGH ${t.high}）／KEV追加 ${t.kev_recent}件${d.ghsa.length ? `／パッケージ ${t.ghsa}件` : ""}</p>`;
 }
 
 function replayAnimation() {
@@ -321,7 +372,7 @@ function refreshCves() {
 
 // ---------------- イベント
 document.addEventListener("click", (e) => {
-  const tb = e.target.closest("#tabs .tab");
+  const tb = e.target.closest("#tabs .tab, .verdicts button[data-tab]");
   if (tb) {
     tab = tb.dataset.tab;
     cveState.sev = "ALL";
@@ -330,6 +381,7 @@ document.addEventListener("click", (e) => {
     renderTabs(d);
     refreshCves();
     $("#ghsa").innerHTML = renderGhsa(d);
+    if (tb.closest(".verdicts")) $("#tabs").scrollIntoView({ behavior: "smooth", block: "start" });
     return;
   }
   const chip = e.target.closest("#cve-filters .chip");

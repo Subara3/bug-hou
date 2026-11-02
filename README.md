@@ -28,7 +28,7 @@ This product uses the NVD API but is not endorsed or certified by the NVD.
 
 ## Claudeの仕分け
 
-クラウドで動くClaude Code（スケジュール実行）が6時間ごとに [TRIAGE.md](TRIAGE.md) の手順で新着を「対応が必要／確認しておく／様子見」に分け、`docs/data/triage.json` に書きます。画面ではCVEとパッケージの欄がこの3つのタブに分かれます。
+クラウドで動くClaude Code（スケジュール実行）が6時間ごとに [TRIAGE.md](TRIAGE.md) の手順で新着を「要対応／要確認／様子見でよい」に分け、`docs/data/triage.json` に書きます。画面ではCVEとパッケージの欄がこの3つのタブに分かれます。
 
 ## ウォッチリストとフィード
 
@@ -42,7 +42,7 @@ Atomフィードも出しています。RSSをメールに転送するサービ�
 
 | フィード | 内容 |
 |---|---|
-| `feeds/action.xml` | Claudeが「対応が必要」とした項目 |
+| `feeds/action.xml` | Claudeが「要対応」とした項目 |
 | `feeds/{対象}.xml` | 対象ごと（php / wordpress / nodejs / python / webserver） |
 | `feeds/eco/{composer,npm,pip}.xml` | エコシステムごとの新着 |
 | `feeds/pkg/{エコシステム}/{パッケージ}.xml` | パッケージごと（過去180日に脆弱性が出たもの） |

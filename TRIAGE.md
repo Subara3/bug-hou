@@ -27,17 +27,17 @@
 
 ## 判定の基準
 
-**action（対応が必要）**
+**action（要対応）**
 - KEVに載っている（`kev: true`）
 - 本体（PHP、WordPress、Node.js、CPython、Apache httpd、nginx）の脆弱性で、ネットワーク越しに認証なしで突けて、CRITICALまたはHIGH
 - 広く使われているパッケージ（Laravel、Symfony、Guzzle、Monolog、PHPUnit、express、next、axios、lodash、Django、Flask、requests、urllib3、Jinja2、Pillow など）の、リモートから突けるCRITICAL
 
-**check（確認しておく）**
+**check（要確認）**
 - 上に当てはまらないHIGH
 - 特定の設定や拡張モジュールを使っているときだけ影響するCRITICAL・HIGH
 - 利用者の少ないパッケージのCRITICAL
 
-**watch（様子見）**
+**watch（様子見でよい）**
 - MEDIUM以下
 - ローカルからしか突けない、管理者権限が前提、など条件が厳しいもの
 - 未採点で説明からも深刻さが読み取れないもの

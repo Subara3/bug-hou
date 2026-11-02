@@ -1,6 +1,6 @@
 """docs/data/ から Atom フィードを書き出す。
 
-  docs/feeds/action.xml               Claudeが「対応が必要」とした項目（全対象）
+  docs/feeds/action.xml               Claudeが「要対応」とした項目（全対象）
   docs/feeds/{対象}.xml                対象ごとのCVE・KEV・パッケージ
   docs/feeds/eco/{エコシステム}.xml     composer / npm / pip の新着
   docs/feeds/pkg/{エコシステム}/{名前}.xml  パッケージごと（過去180日に脆弱性が出たもの）
@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "docs" / "data"
 OUT = ROOT / "docs" / "feeds"
 SITE = "https://subara3.github.io/bug-hou/"
-LEVEL_JA = {"action": "対応が必要", "check": "確認しておく", "watch": "様子見"}
+LEVEL_JA = {"action": "要対応", "check": "要確認", "watch": "様子見でよい"}
 MAX = 50
 
 
@@ -148,7 +148,7 @@ def main():
         write_feed(OUT / f"{t['id']}.xml", f"バグ報｜{d['label']}", f"{SITE}#{t['id']}", entries)
 
     dedup = {e["id"]: e for e in action}
-    write_feed(OUT / "action.xml", "バグ報｜対応が必要", SITE, list(dedup.values()))
+    write_feed(OUT / "action.xml", "バグ報｜要対応", SITE, list(dedup.values()))
 
     for name, entries in eco.items():
         write_feed(OUT / "eco" / f"{name}.xml", f"バグ報｜{name} の新着", SITE, list({e["id"]: e for e in entries}.values()))
@@ -169,7 +169,7 @@ def main():
     (OUT / "index.json").write_text(
         json.dumps(index, ensure_ascii=False, sort_keys=True, indent=0) + "\n", encoding="utf-8"
     )
-    print(f"フィード：対象{len(meta['targets'])}・対応が必要{len(dedup)}件・パッケージ{len(pkgs)}個")
+    print(f"フィード：対象{len(meta['targets'])}・要対応{len(dedup)}件・パッケージ{len(pkgs)}個")
 
 
 if __name__ == "__main__":

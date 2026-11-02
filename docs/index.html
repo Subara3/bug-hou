@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>バグ報｜脆弱性ウォッチャー</title>
-<link rel="alternate" type="application/atom+xml" title="バグ報｜対応が必要" href="feeds/action.xml">
+<link rel="alternate" type="application/atom+xml" title="バグ報｜要対応" href="feeds/action.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -13,14 +13,16 @@
 <body>
 <header class="topbar">
   <div class="topbar-inner">
-    <a class="brand" href="#php">バグ報<span>脆弱性ウォッチャー</span></a>
+    <a class="brand" href="#">バグ報<span>脆弱性ウォッチャー</span></a>
     <p class="fetched" id="fetched">読み込み中</p>
+    <a class="about-link" href="#about">このサイトについて</a>
   </div>
   <nav id="nav" class="nav" aria-label="対象"></nav>
 </header>
 
 <main id="main" class="main">
-  <section id="mine" class="mine" hidden></section>
+  <section id="mine-view" class="mine" hidden></section>
+  <section id="page-view" class="page" hidden></section>
   <div id="head"></div>
 
   <section class="block" id="sec-eol">
@@ -58,13 +60,14 @@
       <a href="https://endoflife.date/">endoflife.date</a> ／
       <a href="https://jvn.jp/">JVN</a>
     </p>
-    <p>フィード：<a href="feeds/action.xml">対応が必要（全体）</a> ／ 対象ごと・パッケージごとはウォッチリストから</p>
-    <p>状態の色：<span class="dot red"></span>期間内にKEV入り　<span class="dot amber"></span>直近30日にCRITICAL/HIGH　<span class="dot green"></span>上記なし</p>
+    <p>フィード：<a href="feeds/action.xml">要対応（全体）</a> ／ 対象ごと・パッケージごとはウォッチリストから</p>
+    <p>状態の色：<span class="dot red"></span>要対応あり　<span class="dot amber"></span>要確認あり　<span class="dot green"></span>どちらもなし　／　<a href="#about">このサイトについて</a></p>
     <p>This product uses the NVD API but is not endorsed or certified by the NVD.</p>
     <div id="status"></div>
   </footer>
 </main>
 <script src="app.js"></script>
 <script src="watch.js"></script>
+<script src="pages.js"></script>
 </body>
 </html>

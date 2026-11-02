@@ -201,6 +201,17 @@ function feedFor(w) {
 const absUrl = (rel) => new URL(rel, location.href).href;
 
 // ---------------- 描画
+function eolRow(w) {
+  if (w.kind !== "product" || !w.version) return null;
+  const p = PRODUCTS[w.product];
+  const rows = cache[p.target]?.eol?.[p.eol] || [];
+  return rows.find((x) => w.version === String(x.cycle) || w.version.startsWith(x.cycle + ".")) || null;
+}
+function isEolSeries(w) {
+  const r = eolRow(w);
+  return !!r && eolStatus(r)[0] === "eol";
+}
+
 function eolLine(w) {
   if (w.kind !== "product" || !w.version) return "";
   const p = PRODUCTS[w.product];
@@ -247,6 +258,14 @@ function entryBlock(w, m, liveNote) {
   const seen = getSeen(w.id);
   const fresh = m.hit.filter((h) => !seen.has(h.item.id)).length;
   const action = m.hit.filter((h) => levelOf(h.item.id) === "action").length;
+  const check = m.hit.filter((h) => levelOf(h.item.id) === "check").length;
+  const eolDead = isEolSeries(w);
+  let v;
+  if (action) v = ["action", `要対応 ${action}件`];
+  else if (eolDead) v = ["check", "要確認（サポート終了の系列）"];
+  else if (check) v = ["check", `要確認 ${check}件`];
+  else if (m.unknown.length) v = ["check", "要確認（バージョン情報なし）"];
+  else v = ["ok", m.hit.length ? "様子見でよい" : "問題なし"];
   const kind = w.kind === "product" ? "本体" : ECOS[w.eco] || w.eco;
   const rows = m.hit.length
     ? m.hit.slice(0, 30).map((h) => hitRow(h, !seen.has(h.item.id))).join("") +
@@ -259,9 +278,9 @@ function entryBlock(w, m, liveNote) {
     <header class="w-head">
       <span class="w-kind">${esc(kind)}</span>
       <h3>${esc(entryLabel(w))}</h3>
+      <span class="verdict lv-${v[0]}">${esc(v[1])}</span>
       <span class="w-stat">
-        <b class="${m.hit.length ? "hot" : ""}">該当 ${m.hit.length}</b>
-        ${action ? `<b class="hot">対応が必要 ${action}</b>` : ""}
+        <span>該当 ${m.hit.length}</span>
         ${fresh ? `<b class="nb">新着 ${fresh}</b>` : ""}
       </span>
       <span class="w-btns">
@@ -301,11 +320,11 @@ async function showMine() {
   setView("mine");
   renderNav();
   const list = loadWatch();
-  const box = $("#mine");
+  const box = $("#mine-view");
   box.innerHTML = `<div class="target-head"><h2>ウォッチリスト</h2><p>登録はこのブラウザに保存されます</p></div>
     ${formHtml()}
     <p class="w-hint">「フィードURLをコピー」で取れるURLを、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a> など）に登録すると、新着がメールで届きます。
-    全体の「対応が必要」だけを受け取るなら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/action.xml"))}">このフィード</button>。</p>
+    全体の「要対応」だけを受け取るなら <button class="linkish" data-act="feed" data-url="${esc(absUrl("feeds/action.xml"))}">このフィード</button>。</p>
     <div id="w-list">${list.length ? "" : '<p class="empty">まだ登録がありません。上のフォームから製品やパッケージを追加してください。</p>'}</div>`;
 
   const holder = $("#w-list");
@@ -332,15 +351,17 @@ async function showMine() {
 }
 
 function setView(kind) {
-  const mine = kind === "mine";
-  $("#mine").hidden = !mine;
-  for (const el of document.querySelectorAll("#head, #tabs, .main > section.block")) el.hidden = mine;
+  $("#mine-view").hidden = kind !== "mine";
+  $("#page-view").hidden = kind !== "page";
+  for (const el of document.querySelectorAll("#head, #tabs, .main > section.block")) el.hidden = kind !== "target";
 }
 
 async function route() {
   const h = location.hash.slice(1);
   window.scrollTo(0, 0);
   if (h === "mine") await showMine();
+  else if (h === "" || h === "summary") showSummary();
+  else if (h === "about") showAbout();
   else {
     setView("target");
     await show(h);
@@ -357,7 +378,7 @@ document.addEventListener("click", async (e) => {
     return;
   }
   const btn = e.target.closest("[data-act]");
-  if (!btn || !btn.closest("#mine")) return;
+  if (!btn || !btn.closest("#mine-view")) return;
   if (btn.dataset.act === "feed") {
     try {
       await navigator.clipboard.writeText(btn.dataset.url);
