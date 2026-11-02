@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T09:16:14Z",
+ "updated_at": "2026-11-02T18:46:22Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -526,12 +526,12 @@
   },
   "GHSA-26p8-2jq9-3vq9": {
    "level": "action",
-   "reason": "MLflowで認証なしのサーバーにリモートからコードを実行される",
-   "todo": "mlflow を 3.17.0 以降に上げる",
+   "reason": "MLflowのCRITICAL。認証なしのサーバーなら外から任意のコードを実行される",
+   "todo": "mlflowを3.17.0以降に更新",
    "kev": false,
    "at": "2026-11-02",
-   "urgency": "later",
-   "comment": "MLflowサーバーを認証なしで外に出していなければ次の更新で大丈夫"
+   "urgency": "soon",
+   "comment": "認証なしのMLflowサーバーを外に出しているなら今週中に更新を。使っていなければ関係なし"
   },
   "GHSA-2m5v-pch6-74hx": {
    "level": "check",
