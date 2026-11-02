@@ -40,7 +40,8 @@ a:hover { text-decoration: underline; }
 .brand { font-size: 18px; font-weight: 700; color: var(--text); }
 .brand:hover { text-decoration: none; }
 .brand span { margin-left: 10px; font-size: 12px; font-weight: 400; color: var(--text-sub); }
-.fetched { margin: 0 0 0 auto; font-size: 12px; color: var(--text-sub); }
+.fetched { margin: 0 0 0 auto; font-size: 12px; color: var(--text-sub); display: flex; flex-wrap: wrap; gap: 0 14px; }
+.fetched .stale { color: var(--critical); font-weight: 600; }
 
 .nav {
   max-width: 1200px; margin: 0 auto; padding: 0 24px;

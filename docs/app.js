@@ -489,6 +489,24 @@ function rerender() {
   $("#ghsa").innerHTML = renderGhsa(d);
 }
 
+// ---------------- 最終更新
+function fmtAt(iso) {
+  const d = new Date(iso);
+  const t = d.toLocaleString("ja-JP", { timeZone: "Asia/Tokyo", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+  const min = Math.round((Date.now() - d) / 60000);
+  const ago = min < 60 ? `${Math.max(min, 0)}分前` : min < 48 * 60 ? `${Math.round(min / 60)}時間前` : `${Math.round(min / 1440)}日前`;
+  return { t, ago, hours: min / 60 };
+}
+function showUpdated() {
+  const f = fmtAt(meta.fetched_at);
+  // 6時間ごとに取るので、12時間を超えたら取得が止まっている
+  const stale = f.hours > 12 ? ' class="stale" title="6時間ごとの取得が止まっています"' : "";
+  const tri = triage.updated_at ? fmtAt(triage.updated_at) : null;
+  $("#fetched").innerHTML =
+    `<span${stale}>データ取得 ${f.t}（${f.ago}）</span>` +
+    (tri ? `<span>Claudeの判定 ${tri.t}（${tri.ago}）</span>` : "");
+}
+
 // ---------------- イベント
 document.addEventListener("click", (e) => {
   const rb = e.target.closest("[data-read], [data-unread], [data-read-all]");
@@ -545,8 +563,7 @@ window.addEventListener("hashchange", () => route());
     $("#fetched").textContent = "データがありません。scripts/fetch.py を実行してください";
     return;
   }
-  const at = new Date(meta.fetched_at);
-  $("#fetched").textContent = `最終取得 ${at.toLocaleString("ja-JP", { timeZone: "Asia/Tokyo" })}`;
+
   document.querySelectorAll(".days").forEach((el) => (el.textContent = meta.days));
 
   const errs = Object.entries(meta.status).filter(([, v]) => v !== "ok");
@@ -564,6 +581,7 @@ window.addEventListener("hashchange", () => route());
   } catch {
     /* まだ仕分けていない */
   }
+  showUpdated();
 
   // ランプを正確にするため全対象を先に読む（小さいファイルなので）
   await Promise.all(meta.targets.map(async (t) => (cache[t.id] = await loadJSON(`${t.id}.json`).catch(() => null))));
