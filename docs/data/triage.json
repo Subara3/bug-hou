@@ -1,0 +1,1741 @@
+{
+ "updated_at": "2026-11-02T04:27:23Z",
+ "items": {
+  "CVE-2025-1218": {
+   "level": "watch",
+   "reason": "悪意あるMySQLサーバー接続時の境界外読み。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2025-14181": {
+   "level": "watch",
+   "reason": "悪意あるSOAPサーバー接続時のヒープオーバーフロー。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-101019": {
+   "level": "check",
+   "reason": "njsのXMLモジュールで属性の扱いが不整合。njs利用時のみ",
+   "todo": "njsの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-101025": {
+   "level": "watch",
+   "reason": "njsのxml.parse()失敗時にメモリリーク。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-103995": {
+   "level": "watch",
+   "reason": "HTTPレスポンスのチャンク解析の不備。LOW",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-104939": {
+   "level": "check",
+   "reason": "NGINX Ingress ControllerのexternalAuthで認証前に保護パスへ到達",
+   "todo": "Ingress Controllerの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-109618": {
+   "level": "action",
+   "reason": "PHP本体のOOM処理の不備でRCE。KEV掲載",
+   "todo": "PHPを修正済みのパッチ版に更新",
+   "kev": true,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-109619": {
+   "level": "action",
+   "reason": "PHP本体のグローバル状態が解放済みメモリを参照しRCE。KEV掲載",
+   "todo": "PHPを修正済みのパッチ版に更新",
+   "kev": true,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-111497": {
+   "level": "action",
+   "reason": "Brotliデコーダーのバッファオーバーフロー。KEV掲載",
+   "todo": "Brotliを1.0.10/1.1.1/1.2.1に更新",
+   "kev": true,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-114583": {
+   "level": "watch",
+   "reason": "tarfileのtar_filterを細工リンクで回避。ローカル・MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-115557": {
+   "level": "action",
+   "reason": "CPythonのsslに既知の侵害証明書の拒否リストを追加。CRITICAL",
+   "todo": "CPythonを修正済みの版に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-116566": {
+   "level": "watch",
+   "reason": "getaddrinfoがNULバイトを受け入れ値が切り詰め。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-12345": {
+   "level": "watch",
+   "reason": "TemporaryDirectory削除時の競合。ローカル・MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-15176": {
+   "level": "check",
+   "reason": "aliasとrewriteで$request_filenameを使う設定のnginxのみ影響",
+   "todo": "該当する設定がないか確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-15310": {
+   "level": "watch",
+   "reason": "細工zipの展開でメモリ枯渇。LOW",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-15806": {
+   "level": "watch",
+   "reason": "urllibのHTTPPasswordMgrがhttpsの資格情報をhttpにも使う。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-17084": {
+   "level": "watch",
+   "reason": "stringprepのUnicode表の扱いの誤り。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-17545": {
+   "level": "watch",
+   "reason": "Windows上のPHPのみ。予約デバイス名でハング。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-18329": {
+   "level": "check",
+   "reason": "njsのjs_accessで非同期処理の例外によりアクセス制御が崩れる",
+   "todo": "njsのjs_access利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-18503": {
+   "level": "watch",
+   "reason": "csv.Sniffer.sniff()でCPU消費。LOW",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-19445": {
+   "level": "check",
+   "reason": "sni_callbackでSSLContextを差し替えるTLSサーバーのみ影響",
+   "todo": "sni_callbackを持つSSLContextの参照を保持",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-19553": {
+   "level": "check",
+   "reason": "wrap_bio()でserver_hostname未指定時にホスト名検証が飛ばされる",
+   "todo": "wrap_bio()にserver_hostnameを渡しているか確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-19672": {
+   "level": "watch",
+   "reason": "tarfileのフィルターで展開先外に空ディレクトリ作成。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-42356": {
+   "level": "watch",
+   "reason": "httpdのCGI内部リダイレクト先がCGIとして実行。LOW",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-42528": {
+   "level": "watch",
+   "reason": "mod_davでロック作成権限者がプロセスを落とす。MEDIUM",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-46729": {
+   "level": "check",
+   "reason": "mod_heartmonitorのNULL参照。モジュール使用時のみ",
+   "todo": "mod_heartmonitorの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-47360": {
+   "level": "check",
+   "reason": "mod_session_cookieでセッションCookieがバックエンドに渡る",
+   "todo": "mod_session_cookieの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-48005": {
+   "level": "check",
+   "reason": "mod_auth_digestでAuthDigestNcCheck有効時に認証なしDoS",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-56153": {
+   "level": "check",
+   "reason": "mod_charset_liteの境界外書込み。モジュール使用時のみ",
+   "todo": "mod_charset_liteの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-56154": {
+   "level": "check",
+   "reason": "mod_rewriteのLA-U先読み使用時にUAF。CRITICAL",
+   "todo": "%{LA-U:...}の使用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-56449": {
+   "level": "check",
+   "reason": "mod_proxy_htmlで細工レスポンスにより境界外書込み",
+   "todo": "mod_proxy_htmlの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-57941": {
+   "level": "action",
+   "reason": "httpdのmod_http2でUAF。認証なし・CRITICAL",
+   "todo": "mod_http2の利用有無を確認しhttpdを更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-58415": {
+   "level": "watch",
+   "reason": "mod_dav_fsで.DAV状態ディレクトリが読める。MEDIUM",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-59685": {
+   "level": "check",
+   "reason": "Windows上のhttpdで8.3形式パスの境界外書込み",
+   "todo": "Windowsで運用していないか確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-59797": {
+   "level": "check",
+   "reason": "mod_sslのSSLRequireとファイル関連式で権限管理不備。CRITICAL",
+   "todo": "SSLRequireの使用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-6103": {
+   "level": "watch",
+   "reason": "PharのTARサイズ解析の桁あふれ。ローカル・LOW",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-63045": {
+   "level": "check",
+   "reason": "mod_proxy_ftpの前方プロキシ構成で任意ホストへ接続",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-63292": {
+   "level": "check",
+   "reason": "mod_vhost_aliasで上限を緩めた場合にスタック溢れ",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-63686": {
+   "level": "check",
+   "reason": "mod_xml2encで信頼できないバックエンドからDoS",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-63718": {
+   "level": "check",
+   "reason": "mod_proxy_uwsgiでレスポンススマグリング",
+   "todo": "mod_proxy_uwsgiの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-66362": {
+   "level": "check",
+   "reason": "NGINX Gateway Fabricの認証フィルターで設定注入。認証済み",
+   "todo": "Gateway Fabricの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-73636": {
+   "level": "check",
+   "reason": "mod_auth_digestでNonceLifetime=0時にリプレイ。MITM前提",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-73637": {
+   "level": "check",
+   "reason": "mod_auth_digestの同時要求でUAF。特定設定のみ",
+   "todo": "httpd 2.4.69に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-77180": {
+   "level": "check",
+   "reason": "NGINX Ingress Controllerのアノテーションで設定注入。認証済み",
+   "todo": "Ingress Controllerの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-78222": {
+   "level": "check",
+   "reason": "njsのngx.fetch()で不正レスポンスによりワーカー停止",
+   "todo": "njsのngx.fetch()利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-78689": {
+   "level": "check",
+   "reason": "njsのxml.exclusiveC14n()に外部入力を渡す設定で境界外書込み",
+   "todo": "njsのXMLモジュール利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-79768": {
+   "level": "watch",
+   "reason": "mod_userdirの特定設定でパス同値の問題。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-82049": {
+   "level": "check",
+   "reason": "tarfileの展開フィルターを細工アーカイブで回避。HIGHだがローカル",
+   "todo": "アップロードされたtarを展開しているか確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-87902": {
+   "level": "action",
+   "reason": "WordPress本体で認証なしにローカルPHPを読込、条件次第でRCE。KEV掲載",
+   "todo": "WordPressを修正済みの版に更新",
+   "kev": true,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-87910": {
+   "level": "watch",
+   "reason": "リンク非対応環境でtarfileのフィルター戻り値が無視。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-90439": {
+   "level": "watch",
+   "reason": "HTTP/3と古いOpenSSLの組合せでヒープ溢れ。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-90797": {
+   "level": "check",
+   "reason": "CouchDBのgzip展開無制限で認証なしDoS。HIGH",
+   "todo": "CouchDB 3.5.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-90799": {
+   "level": "watch",
+   "reason": "CouchDBで認証済み利用者がメモリ枯渇を起こす。LOW",
+   "todo": "CouchDB 3.5.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-90800": {
+   "level": "check",
+   "reason": "CouchDBの接頭辞付き_user等を認可なく読める。利用はまれ",
+   "todo": "CouchDB 3.5.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-91184": {
+   "level": "check",
+   "reason": "NGINX Gateway Fabricのrealm値で設定注入。認証済み",
+   "todo": "Gateway Fabricの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-91765": {
+   "level": "check",
+   "reason": "SoapServerに認証なしで深いXMLを送りクラッシュ。SOAP利用時のみ",
+   "todo": "SOAP拡張の利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-91766": {
+   "level": "watch",
+   "reason": "http://ラッパーがリダイレクト先に認証ヘッダーを送る。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-91767": {
+   "level": "watch",
+   "reason": "TLSワイルドカード証明書検証の境界外読み。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-91768": {
+   "level": "watch",
+   "reason": "FPMのIPv6許可判定が/96単位になる。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-91769": {
+   "level": "watch",
+   "reason": "証明書検証でSAN不一致時にCNを使う。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-92842": {
+   "level": "watch",
+   "reason": "ストリームフィルターのオプションで境界外読み。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-93479": {
+   "level": "check",
+   "reason": "mapの正規表現キャプチャをrootやログで先に参照する設定のみ",
+   "todo": "該当するmap設定がないか確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-93546": {
+   "level": "check",
+   "reason": "mod_dav_fsで書込権限を持つ利用者がDBを破損。HIGH",
+   "todo": "WebDAVの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-93682": {
+   "level": "watch",
+   "reason": "HTTPストリームのリダイレクト処理の境界外読み。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-94197": {
+   "level": "check",
+   "reason": "NGINX Ingress ControllerのExternalAuthで認証・認可回避",
+   "todo": "Ingress Controllerの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-95101": {
+   "level": "watch",
+   "reason": "HTTP/3とproxy_request_bufferingでデータ注入。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-96615": {
+   "level": "check",
+   "reason": "NGINX Gateway Fabricで他名前空間のTLS秘密鍵を読める。認証済み",
+   "todo": "Gateway Fabricの利用有無を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-97205": {
+   "level": "check",
+   "reason": "AIO有効時のSSI include virtualでUAF。特定設定のみ",
+   "todo": "AIOとSSIの併用がないか確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "CVE-2026-97629": {
+   "level": "check",
+   "reason": "ssl_session_cache shared使用でチケット鍵未指定時にセッション偽造",
+   "todo": "ssl_session_ticket_keyの設定を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-26mh-57q7-jfvr": {
+   "level": "check",
+   "reason": "PraisonAIのASTサンドボックス破りでRCE。HIGH",
+   "todo": "praisonai 4.6.78に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-26p8-2jq9-3vq9": {
+   "level": "action",
+   "reason": "認証なしMLflowサーバーでスコアラーのデシリアライズからRCE。CRITICAL",
+   "todo": "mlflow 3.17.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-2phh-27fw-q4gc": {
+   "level": "watch",
+   "reason": "PhpSpreadsheetの外部画像読込でSSRF許可リスト回避。MEDIUM",
+   "todo": "PhpSpreadsheet 5.10.0などに更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-2qm8-x737-gmw5": {
+   "level": "check",
+   "reason": "pyasn1のBIT STRINGデコードで二乗時間のCPU消費。HIGH",
+   "todo": "pyasn1 0.6.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-2v3c-qxhr-7vpv": {
+   "level": "check",
+   "reason": "Symfony YAMLの再帰でプロセスがクラッシュ。HIGH",
+   "todo": "symfony/yaml 5.4.54/6.4.45/7.4.18/8.1.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-35rr-xwfh-x789": {
+   "level": "check",
+   "reason": "Highchartsのbreadcrumbs.styleがSVGイベント属性になる。HIGH",
+   "todo": "highcharts 11.4.9/12.6.1/13.1.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-36h5-qg4p-q2qf": {
+   "level": "check",
+   "reason": "mail-mime-parserの添付ファイル名でCRLFヘッダー注入。HIGH",
+   "todo": "mail-mime-parser 3.0.6/4.0.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-396x-xmvh-p563": {
+   "level": "check",
+   "reason": "Snipe-ITのアップロードファイルAPIで格納型XSS。HIGH",
+   "todo": "Snipe-IT 8.7.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-3cmx-xjww-583x": {
+   "level": "watch",
+   "reason": "i18next-http-backendのlngでクエリ注入。LOW",
+   "todo": "i18next-http-backend 4.0.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-3f7j-7jwc-fxfj": {
+   "level": "check",
+   "reason": "systeminformationのWindowsでコマンド注入。HIGH",
+   "todo": "systeminformation 5.33.16に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-3fx2-cqw9-xr3c": {
+   "level": "watch",
+   "reason": "LangGraph SDKの識別子未エンコードでリクエスト先変更。MEDIUM",
+   "todo": "langgraph-sdk 0.4.6/langgraph 1.2.14に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-3g3m-2fjr-6pw4": {
+   "level": "watch",
+   "reason": "globのAbortSignal中断が効かない。MEDIUM",
+   "todo": "glob 14.0.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-3q6v-r5mr-hxv8": {
+   "level": "check",
+   "reason": "league/commonmarkのGFM表で二乗時間のDoS。HIGH",
+   "todo": "league/commonmark 2.10.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-3x94-m842-937c": {
+   "level": "check",
+   "reason": "PhpSpreadsheetのXmlScanner回避でXXE。HIGH",
+   "todo": "PhpSpreadsheet 5.10.0/3.10.8などに更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-3xf4-9g3c-4h4w": {
+   "level": "watch",
+   "reason": "Nuxt開発サーバーでappSecretが露出。MEDIUM",
+   "todo": "@nuxt/vite-builder 4.6.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-42gh-23hr-vphw": {
+   "level": "check",
+   "reason": "pypdfのページラベル取得で長時間処理。HIGH",
+   "todo": "pypdf 6.21.3以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-434m-5hcj-pxf3": {
+   "level": "check",
+   "reason": "GraphQL ToolsのWebSocket認証情報が他の利用者に残る。HIGH",
+   "todo": "executor-legacy-ws 1.1.36に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4487-j8r4-4g2f": {
+   "level": "watch",
+   "reason": "node-forgeの証明書チェーン検証でCA削除。LOW",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4528-x5fx-h6hg": {
+   "level": "check",
+   "reason": "joiのemail(multiple)で二乗時間のDoS。HIGH",
+   "todo": "joi 17.13.9/18.3.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4642-5mcj-2rqw": {
+   "level": "watch",
+   "reason": "node-forgeのOID変換の切り詰め。LOW",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-48m4-24cq-37qf": {
+   "level": "watch",
+   "reason": "ONNXのRNN系形状推論で境界外読み。MEDIUM",
+   "todo": "onnx 1.22.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4f5f-j737-pm58": {
+   "level": "watch",
+   "reason": "REDAXOで認証済み利用者がカラムを列挙。MEDIUM",
+   "todo": "REDAXO 5.21.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4hm6-w6qq-w73v": {
+   "level": "check",
+   "reason": "LangGraphのカスタム認証で他ユーザーのStoreに触れる。HIGH",
+   "todo": "langgraph-api 0.15.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4vjg-vx72-qq4g": {
+   "level": "watch",
+   "reason": "systeminformationのLinuxでシンボリックリンク経由の読取。LOW",
+   "todo": "systeminformation 5.33.14に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4vqv-7265-gm2w": {
+   "level": "check",
+   "reason": "pypdfのstrictモードの例外で大量メモリ消費。HIGH",
+   "todo": "pypdf 6.21.3以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-4xm8-rg9h-jhq2": {
+   "level": "check",
+   "reason": "Signal Kのパストラバーサルで秘密鍵漏洩・RCE。利用者の少ないCRITICAL",
+   "todo": "signalk-server 2.34.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-525v-9gp9-w22h": {
+   "level": "watch",
+   "reason": "node-forgeのTLSクライアントがクラッシュ。MEDIUM",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5324-3w58-qpp2": {
+   "level": "watch",
+   "reason": "Mem0でテナント間の会話漏洩。MEDIUM",
+   "todo": "mem0ai 2.0.18/3.1.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-542m-9234-8gvf": {
+   "level": "watch",
+   "reason": "vLLMのchat_template描画でスレッドプール枯渇。MEDIUM",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-54mm-6729-r5wp": {
+   "level": "check",
+   "reason": "Leantimeで認証済み利用者が管理者に昇格。HIGH",
+   "todo": "Leantime 3.10.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5793-x2q3-c3q7": {
+   "level": "check",
+   "reason": "Highchartsのcredits.hrefでjavascript: URL実行。HIGH",
+   "todo": "highcharts 11.4.9/12.6.1/13.1.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5849-834g-hvw5": {
+   "level": "check",
+   "reason": "pypdfのxref探索で無限ループ。HIGH",
+   "todo": "pypdf 6.21.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-584p-f93j-wpgc": {
+   "level": "check",
+   "reason": "Formieで認証なしに未完了の送信を上書き。HIGH",
+   "todo": "Formie 3.1.31/2.2.23に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-58g7-7f52-h92c": {
+   "level": "check",
+   "reason": "Highcharts Dashboardsの全画面ラベルをHTML解析。HIGH",
+   "todo": "@highcharts/dashboards 4.2.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5974-gfqc-wrcm": {
+   "level": "watch",
+   "reason": "Contaoのテーブルアクセス判定の不備。MEDIUM",
+   "todo": "core-bundle 5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5cwg-6vw7-rj6p": {
+   "level": "watch",
+   "reason": "node-forgeのAES-GCMタグ長未検証。MEDIUM",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5fpq-26gf-qwcr": {
+   "level": "watch",
+   "reason": "Happy DOMのCookieドメイン照合の不備。MEDIUM",
+   "todo": "happy-dom 20.14.6以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5h93-6whr-6q8j": {
+   "level": "watch",
+   "reason": "MCP Python SDKのクライアントが別オリジンにヘッダーを送る。MEDIUM",
+   "todo": "mcp 2.2.0/1.30.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5j9r-fx4x-rpvg": {
+   "level": "check",
+   "reason": "rucioのURL署名APIで認可回避。HIGH",
+   "todo": "rucio 35.9.0/38.6.0/41.0.0rc1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5wcm-3v2w-8362": {
+   "level": "watch",
+   "reason": "Laravelのリレーション指定で意図しないデータ削除。MEDIUM",
+   "todo": "laravel/framework 12.68.0/13.27.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-5x38-2vff-x55p": {
+   "level": "check",
+   "reason": "node-forgeの証明書検証でbasicConstraints回避。HIGH",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-628f-v4f6-p37r": {
+   "level": "check",
+   "reason": "Contaoのコメント機能でXSS。利用者の少ないCMSのCRITICAL",
+   "todo": "comments-bundle 5.3.50/5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-62m5-6wh8-28x7": {
+   "level": "check",
+   "reason": "pypdfの暗号化PDFで長時間処理・大量メモリ。HIGH",
+   "todo": "pypdf 6.21.3以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-648h-gw55-m2g7": {
+   "level": "watch",
+   "reason": "Nuxt開発サーバーで非公開設定が露出。MEDIUM",
+   "todo": "@nuxt/vite-builder 4.6.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-6627-m3xw-93mp": {
+   "level": "watch",
+   "reason": "filelockのディレクトリ権限不備。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-6757-hggm-hp2w": {
+   "level": "check",
+   "reason": "vLLMのSHMハンドル偽造でpickle.loads()に到達。HIGH",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-68wq-phq7-p2vg": {
+   "level": "watch",
+   "reason": "SilverStripe MFAがパスワードリセットで回避可能。MEDIUM",
+   "todo": "silverstripe/mfa 6.0.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-69hj-f68j-2879": {
+   "level": "watch",
+   "reason": "filelockが差し替えられたファイルを切り詰め。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-6hgp-fmhr-mrg4": {
+   "level": "check",
+   "reason": "Highcharts Gridのcredits.hrefでjavascript: URL実行。HIGH",
+   "todo": "dashboards 4.0.0/grid-pro 3.2.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-6jp4-8v48-cc5v": {
+   "level": "check",
+   "reason": "Electrumで悪意あるサーバーが送信直後の取引を差替え。利用者の少ないCRITICAL",
+   "todo": "electrum 4.8.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-6pwm-x34p-fvj2": {
+   "level": "watch",
+   "reason": "ONNXのConvTranspose形状推論で境界外読み。MEDIUM",
+   "todo": "onnx 1.22.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-6vfx-w7q3-42gq": {
+   "level": "check",
+   "reason": "AdminNeoのSQLite一覧から任意ファイル削除。HIGH",
+   "todo": "AdminNeo 5.5.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-6wvx-3r32-xmcg": {
+   "level": "watch",
+   "reason": "node-forgeのforge.httpでプロトタイプ汚染。MEDIUM",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-7648-jmwf-vw7j": {
+   "level": "watch",
+   "reason": "systeminformationのnetworkStatsでプロトタイプ汚染。MEDIUM",
+   "todo": "systeminformation 5.33.13に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-7984-qgvg-3j9c": {
+   "level": "check",
+   "reason": "OAuthLibで別クライアントのclient_idで認可される。HIGH",
+   "todo": "oauthlib 4.0.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-79wv-8rh2-9vp2": {
+   "level": "check",
+   "reason": "AdminNeoのX-Forwarded-PrefixでCookie属性注入。HIGH",
+   "todo": "AdminNeo 5.5.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-7m6h-rg42-m449": {
+   "level": "watch",
+   "reason": "FilamentのMFA管理操作で再認証なし。MEDIUM",
+   "todo": "Filament 4.13.3/5.8.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-7rv5-mrxv-xcr9": {
+   "level": "check",
+   "reason": "Serovalのデシリアライズで任意の関数を呼ばせる。HIGH",
+   "todo": "seroval 1.6.8に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-7wch-p9px-956x": {
+   "level": "check",
+   "reason": "node-forgeのPEMデコードでReDoS。HIGH",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-7wpf-ch8f-5f4x": {
+   "level": "watch",
+   "reason": "signalk-serverのアイコン取得でSSRF。MEDIUM",
+   "todo": "signalk-server 2.34.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8397-8qf6-f2gm": {
+   "level": "watch",
+   "reason": "vLLMのPhi-4音声エンコーダーでOOM。MEDIUM",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-83rm-6c8r-g728": {
+   "level": "check",
+   "reason": "Vue I18nのescapeParameterでsrcdoc経由XSS。HIGH",
+   "todo": "vue-i18n 11.4.14/12.0.0-alpha.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8494-f6mr-cjpv": {
+   "level": "check",
+   "reason": "@hapi/contentのContent-Disposition解析でDoS。HIGH",
+   "todo": "@hapi/content 6.0.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-87mg-5grr-rhwh": {
+   "level": "watch",
+   "reason": "ContaoのRSSリーダーでSSRF。LOW",
+   "todo": "5.3.48/5.7.9に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8fxw-fmj8-xp7j": {
+   "level": "watch",
+   "reason": "MongoDB PHPライブラリのGridFSで演算子注入。MEDIUM",
+   "todo": "mongodb/mongodb 1.24.5/2.4.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8g5g-mxqh-grgj": {
+   "level": "watch",
+   "reason": "Viteのserver.fs.denyをクエリで回避。MEDIUM",
+   "todo": "vite 6.4.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8gpw-xvpf-hvx5": {
+   "level": "check",
+   "reason": "phpMyFAQの二要素ログインでパスワード確認を回避。HIGH",
+   "todo": "phpMyFAQ 4.1.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8hrf-8g6f-7xwp": {
+   "level": "check",
+   "reason": "node-forgeのTLSレコード処理でDoS。HIGH",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8mx5-7m5m-r77g": {
+   "level": "watch",
+   "reason": "filelockのWindowsでmode無視。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8prr-f582-jqq3": {
+   "level": "watch",
+   "reason": "LangGraph CLIの詳細出力にpushトークンが出る。MEDIUM",
+   "todo": "langgraph-cli 0.4.32に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-8rc2-428q-7ww3": {
+   "level": "watch",
+   "reason": "Vue I18nのescapeParameterが名前付き値を逃す。LOW",
+   "todo": "vue-i18n 11.4.14に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-96h3-5x6v-m776": {
+   "level": "watch",
+   "reason": "Composerの既存修正をシンボリックリンクで回避。MEDIUM",
+   "todo": "Composer 2.10.3/2.2.30に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-97jj-33gv-5xf9": {
+   "level": "watch",
+   "reason": "league/commonmarkのDisallowedRawHtml回避。MEDIUM",
+   "todo": "league/commonmark 2.10.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-97r2-qh9m-474h": {
+   "level": "check",
+   "reason": "SerovalのfromJSONで認証なしDoS。HIGH",
+   "todo": "seroval 1.6.8に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9c4x-gm8v-wgc4": {
+   "level": "watch",
+   "reason": "filelockで他ユーザー作成のディレクトリを採用。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9ff2-p842-45wq": {
+   "level": "watch",
+   "reason": "Contaoのバックエンド操作でCSRF。LOW",
+   "todo": "core-bundle 5.3.50/5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9gh4-xw24-9xh5": {
+   "level": "watch",
+   "reason": "OpenWISPのCRL APIが組織で絞られない。MEDIUM",
+   "todo": "openwisp-controller 1.3.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9j6q-wvj5-jgjg": {
+   "level": "watch",
+   "reason": "filelockのシンボリックリンク差替えで情報漏れ。ローカル・LOW",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9jhj-wvmw-cfx5": {
+   "level": "watch",
+   "reason": "i18next-http-backendのnsでプロトコル相対URL。LOW",
+   "todo": "i18next-http-backend 4.0.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9m75-vc3g-4x39": {
+   "level": "check",
+   "reason": "pyasn1の構造化文字列デコードで二乗時間のDoS。HIGH",
+   "todo": "pyasn1 0.6.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9pg5-8c7x-5hfx": {
+   "level": "watch",
+   "reason": "joserfcのJWSサイズ確認前にメモリ確保。MEDIUM",
+   "todo": "joserfc 1.7.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9rg8-2wvr-fgjh": {
+   "level": "check",
+   "reason": "Formieの通知再送で認可なく個人情報が見える。HIGH",
+   "todo": "Formie 3.1.31/2.2.23に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9rjx-3jch-6vjf": {
+   "level": "watch",
+   "reason": "svg-sanitizeの回避で格納型XSS。MEDIUM",
+   "todo": "svg-sanitize 1.0.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9v7c-q64q-vv33": {
+   "level": "watch",
+   "reason": "Nuxtでドットセグメントによりミドルウェア判定回避。MEDIUM",
+   "todo": "nuxt 4.6.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9vw2-f4vp-x7gf": {
+   "level": "watch",
+   "reason": "共有一時ディレクトリ経由のローカル攻撃。MEDIUM",
+   "todo": "PHPUnit 13.4.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-9wx9-5pv9-3349": {
+   "level": "watch",
+   "reason": "SerovalのRegExpでスクリプト注入。MEDIUM",
+   "todo": "seroval 1.6.10に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-c33x-vcv4-vg3g": {
+   "level": "watch",
+   "reason": "Cedarのテンプレート検証漏れ。LOW",
+   "todo": "cedar 4.11.1/3.4.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-c73q-w75p-j82v": {
+   "level": "check",
+   "reason": "AuthlibのRFC 7592の例でトークンとクライアントの紐付けが欠落。HIGH",
+   "todo": "Authlib 1.9.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-c8p4-j97h-3vg8": {
+   "level": "check",
+   "reason": "Happy DOMで信頼できないHTML解析時にSSRF。HIGH",
+   "todo": "happy-dom 21.0.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-cggf-277g-3q54": {
+   "level": "check",
+   "reason": "pypdfのページツリー解析で大量メモリ消費。HIGH",
+   "todo": "pypdf 6.21.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-cwqr-hh33-gh44": {
+   "level": "watch",
+   "reason": "filelockの細工DBで取得が停止。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-cxf4-7mrp-vvpr": {
+   "level": "watch",
+   "reason": "Flysystemのパス制御文字チェック回避。LOW",
+   "todo": "league/flysystem 3.35.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-f5m9-jfrj-jjj7": {
+   "level": "watch",
+   "reason": "OpenTelemetryのJaeger baggageで無制限メモリ確保。MEDIUM",
+   "todo": "propagator-jaeger 1.45.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-f6v3-2qmr-vfjx": {
+   "level": "check",
+   "reason": "mail-mime-parserの細工MIMEでCPU・メモリ枯渇。HIGH",
+   "todo": "mail-mime-parser 3.0.6/4.0.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-f86p-h4j2-7qgj": {
+   "level": "watch",
+   "reason": "Serovalの型付き配列でコード注入。MEDIUM",
+   "todo": "seroval 1.6.11に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-f8ff-652m-j5rx": {
+   "level": "watch",
+   "reason": "YOURLSの認証なしファイルインクルード。MEDIUM",
+   "todo": "YOURLS 1.10.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-f9x3-7vq9-cph6": {
+   "level": "action",
+   "reason": "LaravelのTokenGuardで認証回避。CRITICAL",
+   "todo": "laravel/framework 13.29.0/12.68.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-fj95-fr6c-h845": {
+   "level": "watch",
+   "reason": "filelockのSoftReadWriteLockがハードリンク経由で書込。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-fm9c-5rcf-2q5p": {
+   "level": "check",
+   "reason": "pyasn1のスキーマなしコンテナデコードで二乗時間。HIGH",
+   "todo": "pyasn1 0.6.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-fq56-3cx3-fjxp": {
+   "level": "watch",
+   "reason": "filelockの古いロック解除で2者が同時保持。MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-g3hv-75wg-m249": {
+   "level": "watch",
+   "reason": "minimatchのパターン展開でDoS。MEDIUM",
+   "todo": "minimatch 11.0.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-g4f2-2pf3-2pwj": {
+   "level": "check",
+   "reason": "react/httpクライアントのヘッダー無制限バッファでDoS。HIGH",
+   "todo": "react/http 1.11.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-g7vj-c29h-3h5m": {
+   "level": "check",
+   "reason": "Flarum OAuthのDiscord連携で認証なし乗っ取り。利用者の少ない拡張のCRITICAL",
+   "todo": "fof/oauth 1.7.4/2.0.0-beta.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-gfvx-2c2g-38wq": {
+   "level": "check",
+   "reason": "Highchartsの系列列構築でプロトタイプ汚染。HIGH",
+   "todo": "highcharts 13.1.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-gg6h-894w-4m9c": {
+   "level": "check",
+   "reason": "RE2JSの後読みで二乗時間のDoS。HIGH",
+   "todo": "re2js 2.8.7に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-gq5q-89c7-vhvx": {
+   "level": "watch",
+   "reason": "vLLMのDeepSeek-OCR画像処理でDoS。MEDIUM",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-h2r5-x5m7-3935": {
+   "level": "watch",
+   "reason": "Python Social AuthのOIDC nonceがセッションに紐付かない。MEDIUM",
+   "todo": "social-auth-core 6.2.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-h3rc-j82p-2c3h": {
+   "level": "check",
+   "reason": "vLLMで信頼できないEPS入力からGhostscript RCE。HIGH",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-h6cr-wjv9-3cpp": {
+   "level": "watch",
+   "reason": "node-forgeのmodInverseで無限ループ。LOW",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-hqq3-7jhf-c5jx": {
+   "level": "check",
+   "reason": "node-forgeのTLSレコード処理でスタック枯渇。HIGH",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-hxcx-9h4f-42xx": {
+   "level": "check",
+   "reason": "Snipe-ITのAPIトークン経由で2FA回避。HIGH",
+   "todo": "Snipe-IT 8.7.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-j2w7-387v-m2rq": {
+   "level": "check",
+   "reason": "PhpSpreadsheetのODS読込でCPU・メモリ枯渇。HIGH",
+   "todo": "PhpSpreadsheet 5.10.0/3.10.8などに更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-j63v-mwhm-56jx": {
+   "level": "check",
+   "reason": "@sigstore/ociが別ホストに認証ヘッダーを送る。HIGH",
+   "todo": "@sigstore/oci 0.7.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-j7qq-vr8c-xvw3": {
+   "level": "watch",
+   "reason": "MLflowのCrewAI自動記録にAPIキーが残る。MEDIUM",
+   "todo": "mlflow 3.17.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-j8f7-rjxc-mr56": {
+   "level": "watch",
+   "reason": "filelockのReadWriteLockがシンボリックリンクを追う。ローカル・MEDIUM",
+   "todo": "filelock 4.0.9以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-jc66-7q78-782g": {
+   "level": "check",
+   "reason": "node-forgeのPKCS#12でMAC偽造。HIGH",
+   "todo": "node-forge 1.4.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-jf75-q64q-g65r": {
+   "level": "watch",
+   "reason": "Walineのログインで非文字列emailが全件一致。MEDIUM",
+   "todo": "@waline/vercel 1.41.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-jh5r-qr3c-85q8": {
+   "level": "watch",
+   "reason": "Laravelのデバッグページ情報でXSS。LOW",
+   "todo": "laravel/framework 12.69.0/13.30.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-jm85-8cpp-9cjc": {
+   "level": "check",
+   "reason": "AdminNeoのバージョンキャッシュで持続的DoS。HIGH",
+   "todo": "AdminNeo 5.5.0以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-jpxq-7h8p-2q76": {
+   "level": "check",
+   "reason": "joserfcのJWE recipients無制限でCPU枯渇。HIGH",
+   "todo": "joserfc 1.7.5以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-m462-7rxw-wvpg": {
+   "level": "watch",
+   "reason": "filelockのStrictSoftFileLockがリンクを追う。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-m4pr-6v3c-6fgr": {
+   "level": "watch",
+   "reason": "ONNXのScan推論でNULL参照。MEDIUM",
+   "todo": "onnx 1.22.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-m65p-9j7q-6w33": {
+   "level": "check",
+   "reason": "認証なしMLflowサーバーで任意ファイル読取。HIGH",
+   "todo": "mlflow 3.17.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-m9xh-6747-9r6f": {
+   "level": "watch",
+   "reason": "svg-sanitizeのuse入れ子DoS対策回避。MEDIUM",
+   "todo": "svg-sanitize 1.0.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mf2p-h6hf-fcwm": {
+   "level": "check",
+   "reason": "TinyMCEのmediaプラグインでXSS。HIGH",
+   "todo": "TinyMCE 8.9.3または7.9.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mfr5-77xh-9j7h": {
+   "level": "check",
+   "reason": "pypdfの辞書複製で無限ループ。HIGH",
+   "todo": "pypdf 6.21.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mfxh-vp55-7gc6": {
+   "level": "watch",
+   "reason": "Contaoの登録モジュールが有効化メールを再送。MEDIUM",
+   "todo": "core-bundle 5.3.50/5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mhf7-xp6r-6qrc": {
+   "level": "watch",
+   "reason": "Livewireの#[Authorize]回避。MEDIUM",
+   "todo": "livewire 4.4.8に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mm57-4v3p-rchx": {
+   "level": "check",
+   "reason": "pyasn1のREALデコードで二乗時間のDoS。HIGH",
+   "todo": "pyasn1 0.6.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mp66-8ww2-pcwm": {
+   "level": "watch",
+   "reason": "GraphQL Toolsの購読結果が別の呼出元に届く。MEDIUM",
+   "todo": "executor-legacy-ws 1.1.36に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mpqx-q82w-9x46": {
+   "level": "check",
+   "reason": "GraphQL-coreの中断した検証でメモリリーク。HIGH",
+   "todo": "graphql-core 3.3.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mrvp-7wmx-5m4h": {
+   "level": "watch",
+   "reason": "Contaoの画像コントローラーでパストラバーサル。MEDIUM",
+   "todo": "core-bundle 5.3.50/5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-mrwp-f3q8-3g9p": {
+   "level": "check",
+   "reason": "follow-redirectsで資格情報がリダイレクト先に送られる。HIGH",
+   "todo": "follow-redirects 1.16.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-p279-5wcv-45vq": {
+   "level": "watch",
+   "reason": "Kunstmaan CMSで管理者がPHPをアップロードしRCE。管理者権限前提",
+   "todo": "media-bundle 7.3.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-p96f-p2p2-2g3h": {
+   "level": "watch",
+   "reason": "AdminNeoのSQLite関連RCE。MEDIUM",
+   "todo": "AdminNeo 5.5.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-p9h3-gvpq-5539": {
+   "level": "check",
+   "reason": "Snipe-ITのカスタムフィールド名で格納型XSS。HIGH",
+   "todo": "Snipe-IT 8.7.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-pcg2-g6cj-q92c": {
+   "level": "watch",
+   "reason": "Tornadoのヘッダー折り返し解析で二乗時間。MEDIUM",
+   "todo": "tornado 6.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-pg53-p7qp-65cv": {
+   "level": "watch",
+   "reason": "PocketMine-MPの繰り返しパケットによる負荷。LOW",
+   "todo": "5.44.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-pgwp-vc7q-cvj3": {
+   "level": "check",
+   "reason": "phpMyFAQの管理画面で格納型XSS。HIGH",
+   "todo": "phpMyFAQ 4.2.0-alpha以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-pjh6-c8mg-3x7m": {
+   "level": "watch",
+   "reason": "Autobahnのbrotli展開がサイズ確認前に行われる。MEDIUM",
+   "todo": "autobahn 26.10.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-pw9p-v7r6-gx4p": {
+   "level": "watch",
+   "reason": "TornadoのRedirectHandlerでオープンリダイレクト。LOW",
+   "todo": "tornado 6.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-q344-5v34-gm84": {
+   "level": "check",
+   "reason": "pdf-reader-mcpがAPIキー設定時も認証なしで受付。HIGH",
+   "todo": "@sylphx/pdf-reader-mcp 3.0.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-q5mp-gfjf-cf2j": {
+   "level": "check",
+   "reason": "AdminNeoでSQLiteのVACUUM INTOによるRCE。HIGH",
+   "todo": "AdminNeo 5.5.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-q69g-f4f5-v8m7": {
+   "level": "watch",
+   "reason": "ONNXのサブバイトテンソル展開でDoS。MEDIUM",
+   "todo": "onnx 1.22.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-q6wp-fr43-gm9v": {
+   "level": "watch",
+   "reason": "Contaoのプレビューリンクのアクセス制御不備。MEDIUM",
+   "todo": "core-bundle 5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-q97c-p368-75c4": {
+   "level": "watch",
+   "reason": "vLLMで語彙外トークンIDによりエンジン停止。MEDIUM",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-qm8w-vx34-5j9j": {
+   "level": "check",
+   "reason": "@nx/maven・@nx/gradleでnx.json経由のコマンド注入。HIGH",
+   "todo": "22.7.9/23.1.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-qr28-fpjm-wq7f": {
+   "level": "check",
+   "reason": "decode-uri-componentで二乗時間のDoS。HIGH",
+   "todo": "decode-uri-component 0.5.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-qxg3-46rw-79j8": {
+   "level": "check",
+   "reason": "code16 Sharpのiframe srcdocで格納型XSS。HIGH",
+   "todo": "code16/sharp 9.22.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-r4j5-9xpp-3985": {
+   "level": "watch",
+   "reason": "Tornadoの細かいチャンクでイベントループ停止。MEDIUM",
+   "todo": "tornado 6.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-r5wg-q8fc-p6w2": {
+   "level": "check",
+   "reason": "Highcharts Gridのページ送り文言をHTMLとして解析。HIGH",
+   "todo": "grid-lite/grid-pro 3.2.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-r6hr-vr92-vv28": {
+   "level": "check",
+   "reason": "PHPCSUtilsのeval()でRCE。HIGH",
+   "todo": "phpcsutils 1.2.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-r899-h629-j84r": {
+   "level": "watch",
+   "reason": "Parse Serverのアップロード拡張子判定回避でXSS。LOW",
+   "todo": "parse-server 9.10.0-alpha.2/8.6.84に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-r925-mgvr-h9cc": {
+   "level": "check",
+   "reason": "SymfonyのCache-ControlヘッダーでReDoS。HIGH",
+   "todo": "http-foundation 6.4.46/7.4.19/8.1.7に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-rcqf-f6h2-ccg9": {
+   "level": "check",
+   "reason": "Highcharts DashboardsのサイドバーラベルをHTML解析。HIGH",
+   "todo": "@highcharts/dashboards 4.2.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-rfpc-qcw5-3pc4": {
+   "level": "watch",
+   "reason": "filelockでPID偽造により保持者のマーカー削除。ローカル・MEDIUM",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-rmqc-xvr3-v46c": {
+   "level": "check",
+   "reason": "Highchartsのseries.keysでプロトタイプ汚染。HIGH",
+   "todo": "highcharts 11.4.9/12.6.1/13.1.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-rmxm-3fg6-px4f": {
+   "level": "watch",
+   "reason": "@hono/node-serverのserveStaticで二重デコード。MEDIUM",
+   "todo": "@hono/node-server 2.1.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-rw77-vq4g-x3hp": {
+   "level": "check",
+   "reason": "phpMyFAQのStopWords::add()でSQLインジェクション。HIGH",
+   "todo": "phpMyFAQ 4.1.6に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-rx7m-wxwq-vxr9": {
+   "level": "check",
+   "reason": "AdminNeoで不正MySQLサーバーのバージョン文字列からXSS。HIGH",
+   "todo": "AdminNeo 5.5.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-rxj4-h86g-25gc": {
+   "level": "check",
+   "reason": "PhpSpreadsheetのXmlScanner回避でXXE。HIGH",
+   "todo": "PhpSpreadsheet 5.10.0/3.10.8に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-v383-3rw5-q8rf": {
+   "level": "watch",
+   "reason": "svg-sanitizeのDTD属性宣言でクラッシュ。MEDIUM",
+   "todo": "svg-sanitize 1.0.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-v5fq-cf5m-vwv7": {
+   "level": "check",
+   "reason": "DolibarrのSQLインジェクション。HIGH",
+   "todo": "修正版なし。更新情報を確認",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-v65j-hff3-753c": {
+   "level": "check",
+   "reason": "MediaWiki EmbedVideoで格納型XSS。同意設定無効時。HIGH",
+   "todo": "embedvideo 4.1.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-vj3q-vp3g-j9c8": {
+   "level": "check",
+   "reason": "code16 Sharpのサニタイザー回避で格納型XSS。HIGH",
+   "todo": "code16/sharp 9.22.5に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-vpp8-g58w-m8mp": {
+   "level": "check",
+   "reason": "TwistedのHTTP/2サーバーで認証なしDoS。HIGH",
+   "todo": "Twisted 26.10.0rc1以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-vvpg-rrww-wpmh": {
+   "level": "watch",
+   "reason": "vLLMの既定CORSが緩い。LOW",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-w4fh-qvv9-3v23": {
+   "level": "watch",
+   "reason": "MCP Python SDKが別リソース向けトークンを受理。MEDIUM",
+   "todo": "mcp 2.2.0/1.30.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-w658-mh9p-ww8f": {
+   "level": "watch",
+   "reason": "Backstageのカタログ規則をエンコードで回避。MEDIUM",
+   "todo": "plugin-catalog-backend 3.9.2/4.0.2に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-w9x9-j56r-h98r": {
+   "level": "check",
+   "reason": "volto-chatbotが認証なしでDanswer APIを中継。HIGH",
+   "todo": "@eeacms/volto-chatbot 2.0.4に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-wfhq-q4j2-c37m": {
+   "level": "watch",
+   "reason": "filelockのSoftReadWriteLockの差替え追従。ローカル・LOW",
+   "todo": "filelock 4.2.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-wm25-49w3-5qrg": {
+   "level": "watch",
+   "reason": "AdminNeoのCSRFトークン秘密が推測可能。MEDIUM",
+   "todo": "AdminNeo 5.5.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-wp97-x4hv-qvhp": {
+   "level": "check",
+   "reason": "SerovalのfromJSONで配列長未検証によるDoS。HIGH",
+   "todo": "seroval 1.6.8に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-x287-wcfc-q46c": {
+   "level": "watch",
+   "reason": "Nuxt開発サーバーで任意ファイル読取。MEDIUM",
+   "todo": "@nuxt/vite-builder 4.6.3に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-x2rp-9qf7-2fmq": {
+   "level": "watch",
+   "reason": "Contaoの保護ページ内容が匿名に表示。MEDIUM",
+   "todo": "core-bundle 5.3.50/5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-x397-5hrv-j9m9": {
+   "level": "watch",
+   "reason": "Cachetの格納型XSS。MEDIUM",
+   "todo": "修正版なし",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-x3rh-gjgm-fmqc": {
+   "level": "check",
+   "reason": "pypdfの相互参照ストリーム解析で大量メモリ。HIGH",
+   "todo": "pypdf 6.21.3以降に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-x567-49g5-p4cf": {
+   "level": "watch",
+   "reason": "vLLMのResponses APIでチャットテンプレート制限回避。MEDIUM",
+   "todo": "vllm 0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  },
+  "GHSA-x8rm-f576-gq67": {
+   "level": "check",
+   "reason": "graphql-scalarsのPhoneNumberでReDoS。HIGH",
+   "todo": "graphql-scalars 2.0.1に更新",
+   "kev": false,
+   "at": "2026-11-02"
+  }
+ }
+}
