@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-02T04:04:05Z",
+ "fetched_at": "2026-11-02T04:20:53Z",
  "days": 90,
  "targets": [
   {
@@ -72,7 +72,7 @@
   "python.cves": "ok",
   "python.ghsa": "ok",
   "python.eol": "ok",
-  "webserver.cves": "ok",
+  "webserver.cves": "error: The read operation timed out",
   "webserver.eol": "ok"
  }
 }
