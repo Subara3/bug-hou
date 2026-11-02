@@ -364,7 +364,10 @@ async function route() {
   if (h === "mine") await showMine();
   else if (h === "") showTimeline();
   else if (h === "summary") showSummary();
-  else if (h === "about" || h.startsWith("about-")) {
+  else if (h === "guide" || h.startsWith("guide-")) {
+    showGuide();
+    if (h !== "guide") document.getElementById(h)?.scrollIntoView();
+  } else if (h === "about" || h.startsWith("about-")) {
     showAbout();
     if (h !== "about") document.getElementById(h)?.scrollIntoView();
   }

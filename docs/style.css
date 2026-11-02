@@ -413,3 +413,15 @@ button.vbox:hover { background: var(--bg-sub); }
 .ssvc.ep { font-family: var(--mono); }
 .prio-how { margin-left: 4px; font-size: 11px; }
 .doc .urg { margin-right: 4px; }
+
+/* 対応のしかた */
+.prio-now { margin: 6px 0 0; padding: 0; font-size: 13px; font-weight: 600; color: var(--critical); }
+.prio-now a { margin-left: 8px; font-weight: 400; }
+.doc h3 .urg { font-size: 13px; vertical-align: 2px; }
+.doc-table td .verdict, .doc-table td .urg { margin: 2px 4px 2px 0; }
+.steps { padding-left: 22px; }
+.steps li { margin: 8px 0; }
+.steps b { margin-right: 6px; }
+.faq dt { margin-top: 14px; font-weight: 700; }
+.faq dd { margin: 4px 0 0; }
+.doc h3[id] { scroll-margin-top: 120px; }

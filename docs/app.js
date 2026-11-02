@@ -117,7 +117,11 @@ function prioLine(id) {
     return `<span class="ssvc ${v === "active" || v === "yes" || v === "total" ? "hot" : ""}">${label}${src ? `<small>${SRC_JA[src]}</small>` : ""}</span>`;
   };
   const ep = p.epss != null ? `<span class="ssvc ep" title="FIRSTのEPSS。30日以内に悪用される確率の予測（参考）">EPSS ${p.epss >= 0.999 ? "99.9%以上" : (p.epss * 100).toFixed(p.epss < 0.1 ? 1 : 0) + "%"}</span>` : "";
-  return `<p class="prio"><span class="prio-k">急ぎ度</span>${urgTag(p.u)}${part("exp")}${part("auto")}${part("imp")}${ep}<a class="prio-how" href="#about-urgency">決め方</a></p>`;
+  const now =
+    p.u === "now" && lv === "action"
+      ? `<p class="prio-now">すぐ更新してください。更新できないなら、機能を切るか外からのアクセスを塞いでください。それもできないなら、更新できるまでサービスを止めてください。<a href="#guide-now">対応のしかた</a></p>`
+      : "";
+  return `<p class="prio"><span class="prio-k">急ぎ度</span>${urgTag(p.u)}${part("exp")}${part("auto")}${part("imp")}${ep}<a class="prio-how" href="#about-urgency">決め方</a><a class="prio-how" href="#guide-${p.u}">やること</a></p>${now}`;
 }
 
 function advice(id) {
