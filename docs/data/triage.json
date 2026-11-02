@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T08:33:42Z",
+ "updated_at": "2026-11-02T09:16:14Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -79,12 +79,12 @@
   },
   "CVE-2026-115557": {
    "level": "action",
-   "reason": "CPythonのsslに漏えい済み証明書を拒否する仕組みを追加。CRITICAL",
-   "todo": "Pythonを修正済みの版に更新",
+   "reason": "Python本体のsslで侵害された証明書を拒否できない問題。CRITICAL",
+   "todo": "証明書の拒否リストが入ったPythonに更新",
    "kev": false,
    "at": "2026-11-02",
-   "urgency": "soon",
-   "comment": "止めるほどではないが、数日のうちに更新したい"
+   "urgency": "later",
+   "comment": "悪用の報告はないので、次の更新でまとめて上げれば大丈夫"
   },
   "CVE-2026-116566": {
    "level": "watch",
@@ -349,12 +349,12 @@
   },
   "CVE-2026-87902": {
    "level": "action",
-   "reason": "WordPress本体で認証なしにローカルのPHPを読み込み、条件次第でRCE。KEV掲載",
-   "todo": "WordPressを修正済みの版に更新",
+   "reason": "WordPress本体でログインなしにローカルのPHPを読み込ませられる。KEV掲載",
+   "todo": "WordPressを修正済みの最新版に更新",
    "kev": true,
    "at": "2026-11-02",
-   "urgency": "soon",
-   "comment": "サーバーとテーマに条件があるが、悪用されているので早めに更新"
+   "urgency": "now",
+   "comment": "悪用されているので、外に公開しているサイトはすぐ更新して"
   },
   "CVE-2026-87910": {
    "level": "watch",
@@ -526,12 +526,12 @@
   },
   "GHSA-26p8-2jq9-3vq9": {
    "level": "action",
-   "reason": "MLflowで認証なしのサーバーにRCE",
-   "todo": "mlflowを3.17.0以降に更新",
+   "reason": "MLflowで認証なしのサーバーにリモートからコードを実行される",
+   "todo": "mlflow を 3.17.0 以降に上げる",
    "kev": false,
    "at": "2026-11-02",
-   "urgency": "soon",
-   "comment": "MLflowのサーバーを外に出しているなら急いで更新したい"
+   "urgency": "later",
+   "comment": "MLflowサーバーを認証なしで外に出していなければ次の更新で大丈夫"
   },
   "GHSA-2m5v-pch6-74hx": {
    "level": "check",
@@ -1540,12 +1540,12 @@
   },
   "GHSA-f9x3-7vq9-cph6": {
    "level": "action",
-   "reason": "LaravelのTokenGuardで文字列以外のAPI認証情報により認証回避",
-   "todo": "laravel/frameworkを13.29.0 / 12.68.0 以降に更新",
+   "reason": "LaravelのTokenGuardで認証をすり抜けられるCRITICAL",
+   "todo": "laravel/framework を 13.29.0 / 12.68.0 以降に上げる",
    "kev": false,
    "at": "2026-11-02",
-   "urgency": "soon",
-   "comment": "APIトークン認証を使っているなら数日のうちに更新したい"
+   "urgency": "later",
+   "comment": "APIトークン認証を使っていなければ次の更新で大丈夫"
   },
   "GHSA-fch4-3c6x-j4gc": {
    "level": "watch",
@@ -2388,13 +2388,11 @@
    "at": "2026-11-02"
   },
   "GHSA-vjqc-q4mp-2rvf": {
-   "level": "action",
-   "reason": "CakePHPのFunctionsBuilderの複数のメソッドにSQLインジェクション",
-   "todo": "4.5.12 / 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7 以降に更新",
+   "level": "check",
+   "reason": "CakePHPのFunctionsBuilderのSQLインジェクション。使っている場合に影響",
+   "todo": "cakephp/database 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7、cakephp 4.5.12 に更新",
    "kev": false,
-   "at": "2026-11-02",
-   "urgency": "soon",
-   "comment": "CakePHPで動かしているなら今週中に更新したい"
+   "at": "2026-11-02"
   },
   "GHSA-vpp8-g58w-m8mp": {
    "level": "check",
