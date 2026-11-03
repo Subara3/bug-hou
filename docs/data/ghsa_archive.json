@@ -1,5 +1,48 @@
 [
  {
+  "id": "GHSA-j656-3hf2-fvjc",
+  "ecosystem": "npm",
+  "cve": null,
+  "summary": "DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation",
+  "severity": "MEDIUM",
+  "score": 6.1,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-02",
+  "url": "https://github.com/advisories/GHSA-j656-3hf2-fvjc",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@bytebase/dbhub",
+    "range": "< 0.22.6",
+    "fixed": "0.22.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-f9j6-8p6x-r9j6",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-62374",
+  "summary": "SD JWT JS: Tampered disclosures silently dropped instead of rejected",
+  "severity": "HIGH",
+  "score": 7.1,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-02",
+  "url": "https://github.com/advisories/GHSA-f9j6-8p6x-r9j6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@sd-jwt/decode",
+    "range": "<= 0.19.0",
+    "fixed": null
+   },
+   {
+    "name": "@sd-jwt/core",
+    "range": "<= 0.19.0",
+    "fixed": "0.20.0"
+   }
+  ]
+ },
+ {
   "id": "GHSA-9vw2-f4vp-x7gf",
   "ecosystem": "composer",
   "cve": "CVE-2026-119193",

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-02T15:57:08Z",
+ "fetched_at": "2026-11-03T00:59:18Z",
  "days": 90,
  "targets": [
   {
@@ -61,6 +61,7 @@
  "status": {
   "kev": "ok",
   "jvn": "ok",
+  "alerts": "ok",
   "php.cves": "ok",
   "php.ghsa": "ok",
   "php.eol": "ok",

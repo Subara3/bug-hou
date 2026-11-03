@@ -52,6 +52,51 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-j656-3hf2-fvjc",
+   "ecosystem": "npm",
+   "cve": null,
+   "summary": "DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-02",
+   "url": "https://github.com/advisories/GHSA-j656-3hf2-fvjc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@bytebase/dbhub",
+     "range": "< 0.22.6",
+     "fixed": "0.22.6"
+    }
+   ],
+   "first_seen": "2026-11-03"
+  },
+  {
+   "id": "GHSA-f9j6-8p6x-r9j6",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-62374",
+   "summary": "SD JWT JS: Tampered disclosures silently dropped instead of rejected",
+   "severity": "HIGH",
+   "score": 7.1,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-02",
+   "url": "https://github.com/advisories/GHSA-f9j6-8p6x-r9j6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@sd-jwt/decode",
+     "range": "<= 0.19.0",
+     "fixed": null
+    },
+    {
+     "name": "@sd-jwt/core",
+     "range": "<= 0.19.0",
+     "fixed": "0.20.0"
+    }
+   ],
+   "first_seen": "2026-11-03"
+  },
+  {
    "id": "GHSA-4528-x5fx-h6hg",
    "ecosystem": "npm",
    "cve": "CVE-2026-118772",
@@ -2462,81 +2507,6 @@
      "name": "happy-dom",
      "range": ">= 17.0.0, <= 21.0.3",
      "fixed": "21.0.4"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-h4fr-cmh5-qr62",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "Fallow: A `.*` glob segment let an analyzed repository make Fallow test paths in the parent of the project root",
-   "severity": "LOW",
-   "score": 3.3,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
-   "published": "2026-10-23",
-   "url": "https://github.com/advisories/GHSA-h4fr-cmh5-qr62",
-   "kev": false,
-   "packages": [
-    {
-     "name": "fallow",
-     "range": "< 3.34.0",
-     "fixed": "3.34.0"
-    },
-    {
-     "name": "@fallow-cli/fallow-node",
-     "range": "< 3.34.0",
-     "fixed": "3.34.0"
-    },
-    {
-     "name": "fallow-cli",
-     "range": "< 3.34.0",
-     "fixed": "3.34.0"
-    },
-    {
-     "name": "fallow-config",
-     "range": "< 3.34.0",
-     "fixed": "3.34.0"
-    },
-    {
-     "name": "fallow-core",
-     "range": "< 3.34.0",
-     "fixed": "3.34.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-jfwm-3p3c-6hx5",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-115569",
-   "summary": "Fallow: Jest and Vitest `projects` entries let an analyzed repository make Fallow read files outside the project root",
-   "severity": "LOW",
-   "score": 3.3,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
-   "published": "2026-10-23",
-   "url": "https://github.com/advisories/GHSA-jfwm-3p3c-6hx5",
-   "kev": false,
-   "packages": [
-    {
-     "name": "fallow",
-     "range": ">= 2.68.0, < 3.34.0",
-     "fixed": "3.34.0"
-    },
-    {
-     "name": "@fallow-cli/fallow-node",
-     "range": ">= 2.68.0, < 3.34.0",
-     "fixed": "3.34.0"
-    },
-    {
-     "name": "fallow-cli",
-     "range": ">= 2.68.0, < 3.34.0",
-     "fixed": "3.34.0"
-    },
-    {
-     "name": "fallow-core",
-     "range": ">= 2.68.0, < 3.34.0",
-     "fixed": "3.34.0"
     }
    ],
    "first_seen": "2026-11-02"
