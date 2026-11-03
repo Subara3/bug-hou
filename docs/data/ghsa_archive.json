@@ -1,5 +1,81 @@
 [
  {
+  "id": "GHSA-33r5-xmm8-v6x5",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-44267",
+  "summary": "Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-03",
+  "url": "https://github.com/advisories/GHSA-33r5-xmm8-v6x5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@enspirit/elo",
+    "range": "<= 1.0.0",
+    "fixed": "1.0.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7w38-ggh5-v542",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-44266",
+  "summary": "Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-03",
+  "url": "https://github.com/advisories/GHSA-7w38-ggh5-v542",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@enspirit/elo",
+    "range": "<= 1.0.0",
+    "fixed": "1.0.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-x9rp-7wh3-2rj5",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-44265",
+  "summary": "Elo backends have code injection via unvalidated emission of programmatic AST fields",
+  "severity": "HIGH",
+  "score": 7.4,
+  "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-03",
+  "url": "https://github.com/advisories/GHSA-x9rp-7wh3-2rj5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@enspirit/elo",
+    "range": "<= 1.0.0",
+    "fixed": "1.0.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-gh9r-c94j-cmp5",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-115878",
+  "summary": "Stanza: RCE via pickle deserialization in the lemmatizer",
+  "severity": "HIGH",
+  "score": 7.8,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-03",
+  "url": "https://github.com/advisories/GHSA-gh9r-c94j-cmp5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "stanza",
+    "range": "= 1.14.0",
+    "fixed": "1.15.0"
+   }
+  ]
+ },
+ {
   "id": "GHSA-j656-3hf2-fvjc",
   "ecosystem": "npm",
   "cve": null,

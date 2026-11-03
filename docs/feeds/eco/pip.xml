@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/pip.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/pip.xml</id>
-<updated>2026-11-02T00:00:00Z</updated>
+<updated>2026-11-03T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: Stanza: RCE via pickle deserialization in the lemmatizer (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-gh9r-c94j-cmp5"/>
+<id>urn:bug-hou:GHSA-gh9r-c94j-cmp5</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;stanza = 1.14.0 → 1.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-115878&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Python: Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x4rv-c3wx-4cr8"/>
@@ -96,13 +103,6 @@
 <id>urn:bug-hou:GHSA-m4w4-3r8h-jw98</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AgnoのFunctionCallでfield_typeのeval()により任意コード実行。CRITICAL&lt;br&gt;→ agno 2.3.24に更新&lt;/p&gt;&lt;p&gt;agno &amp;lt; 2.3.24 → 2.3.24&lt;/p&gt;&lt;p&gt;CVE-2026-35002&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: filelock: ReadWriteLock on the hard-link route deletes any directory another user renames onto its .filelock-* link directory name (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-jqc4-5cvw-7w85"/>
-<id>urn:bug-hou:GHSA-jqc4-5cvw-7w85</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; filelockのReadWriteLockで他ユーザーがリネームしたディレクトリを削除。MEDIUM&lt;br&gt;→ filelock 4.2.1に更新&lt;/p&gt;&lt;p&gt;filelock &amp;gt;= 4.1.0, &amp;lt;= 4.2.0 → 4.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-112937&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts (LOW)</title>

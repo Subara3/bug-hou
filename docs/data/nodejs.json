@@ -19,8 +19,8 @@
   {
    "id": "CVE-2026-111497",
    "published": "2026-10-22",
-   "modified": "2026-10-30",
-   "status": "Analyzed",
+   "modified": "2026-11-03",
+   "status": "Modified",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -51,6 +51,66 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-33r5-xmm8-v6x5",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-44267",
+   "summary": "Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-03",
+   "url": "https://github.com/advisories/GHSA-33r5-xmm8-v6x5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@enspirit/elo",
+     "range": "<= 1.0.0",
+     "fixed": "1.0.1"
+    }
+   ],
+   "first_seen": "2026-11-03"
+  },
+  {
+   "id": "GHSA-7w38-ggh5-v542",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-44266",
+   "summary": "Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-03",
+   "url": "https://github.com/advisories/GHSA-7w38-ggh5-v542",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@enspirit/elo",
+     "range": "<= 1.0.0",
+     "fixed": "1.0.1"
+    }
+   ],
+   "first_seen": "2026-11-03"
+  },
+  {
+   "id": "GHSA-x9rp-7wh3-2rj5",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-44265",
+   "summary": "Elo backends have code injection via unvalidated emission of programmatic AST fields",
+   "severity": "HIGH",
+   "score": 7.4,
+   "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-03",
+   "url": "https://github.com/advisories/GHSA-x9rp-7wh3-2rj5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@enspirit/elo",
+     "range": "<= 1.0.0",
+     "fixed": "1.0.1"
+    }
+   ],
+   "first_seen": "2026-11-03"
+  },
   {
    "id": "GHSA-j656-3hf2-fvjc",
    "ecosystem": "npm",
@@ -2447,66 +2507,6 @@
      "name": "undici",
      "range": ">= 8.0.0, < 8.12.2",
      "fixed": "8.12.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-m5mm-p8h7-m29v",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-115897",
-   "summary": "Serialize JavaScript: Cross-site scripting (XSS) via unescaped </script at the end of a serialized function body",
-   "severity": "LOW",
-   "score": 2.1,
-   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-23",
-   "url": "https://github.com/advisories/GHSA-m5mm-p8h7-m29v",
-   "kev": false,
-   "packages": [
-    {
-     "name": "serialize-javascript",
-     "range": "< 7.1.3",
-     "fixed": "7.1.3"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-q7qp-rjg7-q26m",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-113872",
-   "summary": "multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-23",
-   "url": "https://github.com/advisories/GHSA-q7qp-rjg7-q26m",
-   "kev": false,
-   "packages": [
-    {
-     "name": "multer",
-     "range": ">= 2.0.0, < 2.5.0",
-     "fixed": "2.5.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-834v-8h66-3h79",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-115895",
-   "summary": "Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution",
-   "severity": "HIGH",
-   "score": 8.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-   "published": "2026-10-23",
-   "url": "https://github.com/advisories/GHSA-834v-8h66-3h79",
-   "kev": false,
-   "packages": [
-    {
-     "name": "happy-dom",
-     "range": ">= 17.0.0, <= 21.0.3",
-     "fixed": "21.0.4"
     }
    ],
    "first_seen": "2026-11-02"

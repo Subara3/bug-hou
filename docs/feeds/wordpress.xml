@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/#wordpress"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/wordpress.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/wordpress.xml</id>
-<updated>2026-09-25T00:00:00Z</updated>
+<updated>2026-11-03T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>[悪用確認] WordPress: CVE-2026-119977 WordPress WordPress Core</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-119977"/>
+<id>urn:bug-hou:kev:CVE-2026-119977</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability&lt;/p&gt;&lt;p&gt;WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. This is due to predictable, web-accessible staging paths used during full-package core upgrades.&lt;/p&gt;&lt;p&gt;対応期限 2026-11-06&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[悪用確認] WordPress: CVE-2026-87902 WordPress Core</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-87902"/>

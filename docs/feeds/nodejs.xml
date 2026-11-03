@@ -7,6 +7,13 @@
 <updated>2026-11-03T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
+<title>Node.js: Elo backends have code injection via unvalidated emission of programmatic AST fields (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-x9rp-7wh3-2rj5"/>
+<id>urn:bug-hou:GHSA-x9rp-7wh3-2rj5</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44265&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Node.js: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-j656-3hf2-fvjc"/>
 <id>urn:bug-hou:GHSA-j656-3hf2-fvjc</id>
@@ -19,6 +26,20 @@
 <id>urn:bug-hou:GHSA-f9j6-8p6x-r9j6</id>
 <updated>2026-11-03T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。改ざんされたdisclosureがエラーにならず黙って捨てられる&lt;br&gt;→ @sd-jwt/coreを0.20.0に更新。@sd-jwt/decodeは修正版の記載なし&lt;/p&gt;&lt;p&gt;@sd-jwt/decode &amp;lt;= 0.19.0, @sd-jwt/core &amp;lt;= 0.19.0 → 0.20.0&lt;/p&gt;&lt;p&gt;CVE-2026-62374&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-7w38-ggh5-v542"/>
+<id>urn:bug-hou:GHSA-7w38-ggh5-v542</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44266&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-33r5-xmm8-v6x5"/>
+<id>urn:bug-hou:GHSA-33r5-xmm8-v6x5</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
@@ -98,13 +119,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; better-authのデバイスログイン承認で要求元や権限が表示されない。HIGH&lt;br&gt;→ better-auth 1.7.0-rc.3に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Node.js: multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-q7qp-rjg7-q26m"/>
-<id>urn:bug-hou:GHSA-q7qp-rjg7-q26m</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; multerで非同期fileFilterが切断後も保留しDoS。HIGH&lt;br&gt;→ multer 2.5.0に更新&lt;/p&gt;&lt;p&gt;multer &amp;gt;= 2.0.0, &amp;lt; 2.5.0 → 2.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-113872&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Node.js: dcmjs: DS/IS VALUE REPRESENTATION INPUT VALIDATION BYPASS (LOW)</title>
 <link href="https://github.com/advisories/GHSA-px68-xx5g-48q5"/>
 <id>urn:bug-hou:GHSA-px68-xx5g-48q5</id>
@@ -117,13 +131,6 @@
 <id>urn:bug-hou:GHSA-mw4f-gj5x-6xr4</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highchartsでxlink:hrefのjavascript: URLが書き出しに残る。HIGH&lt;br&gt;→ highcharts 11.4.9/12.6.2/13.1.1に更新&lt;/p&gt;&lt;p&gt;highcharts &amp;gt;= 10.3.2, &amp;lt; 11.4.9 → 11.4.9, highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.2 → 12.6.2, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.1.0 → 13.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-116796&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Serialize JavaScript: Cross-site scripting (XSS) via unescaped &lt;/script at the end of a serialized function body (LOW)</title>
-<link href="https://github.com/advisories/GHSA-m5mm-p8h7-m29v"/>
-<id>urn:bug-hou:GHSA-m5mm-p8h7-m29v</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; serialize-javascriptで関数本体末尾の&amp;lt;/scriptによりXSS。LOW&lt;br&gt;→ serialize-javascript 7.1.3に更新&lt;/p&gt;&lt;p&gt;serialize-javascript &amp;lt; 7.1.3 → 7.1.3&lt;/p&gt;&lt;p&gt;CVE-2026-115897&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Highcharts Dashboards: `__proto__` data table id writes sync listeners to `Object.prototype` (MEDIUM)</title>
@@ -180,13 +187,6 @@
 <id>urn:bug-hou:GHSA-965c-763c-88jm</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; better-authでOAuthのstateをマジックリンクに使い、別人としてログインできる&lt;br&gt;→ better-authを1.7.7以降に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-834v-8h66-3h79"/>
-<id>urn:bug-hou:GHSA-834v-8h66-3h79</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Happy DOMで未サニタイズのimport別名からホスト上でコード実行。HIGH&lt;br&gt;→ happy-dom 21.0.4に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;gt;= 17.0.0, &amp;lt;= 21.0.3 → 21.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-115895&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths (HIGH)</title>

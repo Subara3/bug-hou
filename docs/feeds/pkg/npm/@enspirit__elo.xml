@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@enspirit/elo（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@enspirit__elo.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@enspirit__elo.xml</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: Elo backends have code injection via unvalidated emission of programmatic AST fields (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-x9rp-7wh3-2rj5"/>
+<id>urn:bug-hou:GHSA-x9rp-7wh3-2rj5</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44265&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-7w38-ggh5-v542"/>
+<id>urn:bug-hou:GHSA-7w38-ggh5-v542</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44266&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-33r5-xmm8-v6x5"/>
+<id>urn:bug-hou:GHSA-33r5-xmm8-v6x5</id>
+<updated>2026-11-03T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
+</entry>
+</feed>
