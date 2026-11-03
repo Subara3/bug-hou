@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-02T18:46:22Z",
+ "updated_at": "2026-11-03T06:46:25Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -1538,6 +1538,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-f9j6-8p6x-r9j6": {
+   "level": "check",
+   "reason": "HIGH。改ざんされたdisclosureがエラーにならず黙って捨てられる",
+   "todo": "@sd-jwt/coreを0.20.0に更新。@sd-jwt/decodeは修正版の記載なし",
+   "kev": false,
+   "at": "2026-11-03"
+  },
   "GHSA-f9x3-7vq9-cph6": {
    "level": "action",
    "reason": "LaravelのTokenGuardで認証をすり抜けられるCRITICAL",
@@ -1701,13 +1708,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-h4fr-cmh5-qr62": {
-   "level": "watch",
-   "reason": "Fallowの.*グロブでプロジェクト外の親ディレクトリを検査。LOW",
-   "todo": "fallow 3.34.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-h6cr-wjv9-3cpp": {
    "level": "watch",
    "reason": "node-forgeのmodInverseで無限ループ。LOW",
@@ -1778,6 +1778,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-j656-3hf2-fvjc": {
+   "level": "watch",
+   "reason": "MEDIUM。MySQL・MariaDBのコメントで読み取り専用のSQLチェックをすり抜けられる",
+   "todo": "@bytebase/dbhubを使っていれば0.22.6に更新",
+   "kev": false,
+   "at": "2026-11-03"
+  },
   "GHSA-j7qq-vr8c-xvw3": {
    "level": "watch",
    "reason": "MLflowのCrewAI自動記録にAPIキーが残る。MEDIUM",
@@ -1803,13 +1810,6 @@
    "level": "watch",
    "reason": "Walineのログインで非文字列emailが全件一致。MEDIUM",
    "todo": "@waline/vercel 1.41.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-jfwm-3p3c-6hx5": {
-   "level": "watch",
-   "reason": "FallowのJest/Vitest projects指定でプロジェクト外を読み取り。LOW",
-   "todo": "fallow 3.34.0に更新",
    "kev": false,
    "at": "2026-11-02"
   },
