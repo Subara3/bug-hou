@@ -7,17 +7,17 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] npm: Fallow: Jest and Vitest `projects` entries let an analyzed repository make Fallow read files outside the project root (LOW)</title>
+<title>npm: Fallow: Jest and Vitest `projects` entries let an analyzed repository make Fallow read files outside the project root (LOW)</title>
 <link href="https://github.com/advisories/GHSA-jfwm-3p3c-6hx5"/>
 <id>urn:bug-hou:GHSA-jfwm-3p3c-6hx5</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; FallowのJest/Vitest projects指定でプロジェクト外を読み取り。LOW&lt;br&gt;→ fallow 3.34.0に更新&lt;/p&gt;&lt;p&gt;fallow &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, @fallow-cli/fallow-node &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, fallow-cli &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, fallow-core &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0&lt;/p&gt;&lt;p&gt;CVE-2026-115569&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;fallow &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, @fallow-cli/fallow-node &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, fallow-cli &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0, fallow-core &amp;gt;= 2.68.0, &amp;lt; 3.34.0 → 3.34.0&lt;/p&gt;&lt;p&gt;CVE-2026-115569&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] npm: Fallow: A `.*` glob segment let an analyzed repository make Fallow test paths in the parent of the project root (LOW)</title>
+<title>npm: Fallow: A `.*` glob segment let an analyzed repository make Fallow test paths in the parent of the project root (LOW)</title>
 <link href="https://github.com/advisories/GHSA-h4fr-cmh5-qr62"/>
 <id>urn:bug-hou:GHSA-h4fr-cmh5-qr62</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Fallowの.*グロブでプロジェクト外の親ディレクトリを検査。LOW&lt;br&gt;→ fallow 3.34.0に更新&lt;/p&gt;&lt;p&gt;fallow &amp;lt; 3.34.0 → 3.34.0, @fallow-cli/fallow-node &amp;lt; 3.34.0 → 3.34.0, fallow-cli &amp;lt; 3.34.0 → 3.34.0, fallow-config &amp;lt; 3.34.0 → 3.34.0, fallow-core &amp;lt; 3.34.0 → 3.34.0&lt;/p&gt;&lt;p&gt;GHSA-h4fr-cmh5-qr62&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;fallow &amp;lt; 3.34.0 → 3.34.0, @fallow-cli/fallow-node &amp;lt; 3.34.0 → 3.34.0, fallow-cli &amp;lt; 3.34.0 → 3.34.0, fallow-config &amp;lt; 3.34.0 → 3.34.0, fallow-core &amp;lt; 3.34.0 → 3.34.0&lt;/p&gt;&lt;p&gt;GHSA-h4fr-cmh5-qr62&lt;/p&gt;</content>
 </entry>
 </feed>

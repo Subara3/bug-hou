@@ -7,18 +7,18 @@
 <updated>2026-11-03T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation (MEDIUM)</title>
+<title>[様子見] Node.js: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-j656-3hf2-fvjc"/>
 <id>urn:bug-hou:GHSA-j656-3hf2-fvjc</id>
 <updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@bytebase/dbhub &amp;lt; 0.22.6 → 0.22.6&lt;/p&gt;&lt;p&gt;GHSA-j656-3hf2-fvjc&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。MySQL・MariaDBのコメントで読み取り専用のSQLチェックをすり抜けられる&lt;br&gt;→ @bytebase/dbhubを使っていれば0.22.6に更新&lt;/p&gt;&lt;p&gt;@bytebase/dbhub &amp;lt; 0.22.6 → 0.22.6&lt;/p&gt;&lt;p&gt;GHSA-j656-3hf2-fvjc&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: SD JWT JS: Tampered disclosures silently dropped instead of rejected (HIGH)</title>
+<title>[要確認] Node.js: SD JWT JS: Tampered disclosures silently dropped instead of rejected (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-f9j6-8p6x-r9j6"/>
 <id>urn:bug-hou:GHSA-f9j6-8p6x-r9j6</id>
 <updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@sd-jwt/decode &amp;lt;= 0.19.0, @sd-jwt/core &amp;lt;= 0.19.0 → 0.20.0&lt;/p&gt;&lt;p&gt;CVE-2026-62374&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。改ざんされたdisclosureがエラーにならず黙って捨てられる&lt;br&gt;→ @sd-jwt/coreを0.20.0に更新。@sd-jwt/decodeは修正版の記載なし&lt;/p&gt;&lt;p&gt;@sd-jwt/decode &amp;lt;= 0.19.0, @sd-jwt/core &amp;lt;= 0.19.0 → 0.20.0&lt;/p&gt;&lt;p&gt;CVE-2026-62374&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
