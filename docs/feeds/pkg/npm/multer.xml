@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] npm: multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown (HIGH)</title>
+<title>npm: multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-q7qp-rjg7-q26m"/>
 <id>urn:bug-hou:GHSA-q7qp-rjg7-q26m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; multerで非同期fileFilterが切断後も保留しDoS。HIGH&lt;br&gt;→ multer 2.5.0に更新&lt;/p&gt;&lt;p&gt;multer &amp;gt;= 2.0.0, &amp;lt; 2.5.0 → 2.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-113872&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;multer &amp;gt;= 2.0.0, &amp;lt; 2.5.0 → 2.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-113872&lt;/p&gt;</content>
 </entry>
 </feed>

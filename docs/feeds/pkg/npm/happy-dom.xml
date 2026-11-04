@@ -7,11 +7,11 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] npm: Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution (HIGH)</title>
+<title>npm: Happy DOM: Incomplete fix for CVE-2026-33943: unsanitized import alias leads to host code execution (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-834v-8h66-3h79"/>
 <id>urn:bug-hou:GHSA-834v-8h66-3h79</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Happy DOMで未サニタイズのimport別名からホスト上でコード実行。HIGH&lt;br&gt;→ happy-dom 21.0.4に更新&lt;/p&gt;&lt;p&gt;happy-dom &amp;gt;= 17.0.0, &amp;lt;= 21.0.3 → 21.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-115895&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;happy-dom &amp;gt;= 17.0.0, &amp;lt;= 21.0.3 → 21.0.4&lt;/p&gt;&lt;p&gt;CVE-2026-115895&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: Happy DOM: SSRF via iframe and link stylesheet when parsing untrusted HTML (HIGH)</title>

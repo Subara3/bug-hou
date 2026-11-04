@@ -7,11 +7,11 @@
 <updated>2026-11-03T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: Elo backends have code injection via unvalidated emission of programmatic AST fields (HIGH)</title>
+<title>[要確認] Node.js: Elo backends have code injection via unvalidated emission of programmatic AST fields (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-x9rp-7wh3-2rj5"/>
 <id>urn:bug-hou:GHSA-x9rp-7wh3-2rj5</id>
 <updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44265&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @enspirit/eloのHIGH。プログラムで作ったASTの値がそのまま出力されコードを埋め込める&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44265&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation (MEDIUM)</title>
@@ -28,18 +28,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。改ざんされたdisclosureがエラーにならず黙って捨てられる&lt;br&gt;→ @sd-jwt/coreを0.20.0に更新。@sd-jwt/decodeは修正版の記載なし&lt;/p&gt;&lt;p&gt;@sd-jwt/decode &amp;lt;= 0.19.0, @sd-jwt/core &amp;lt;= 0.19.0 → 0.20.0&lt;/p&gt;&lt;p&gt;CVE-2026-62374&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels (CRITICAL)</title>
+<title>[要確認] Node.js: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-7w38-ggh5-v542"/>
 <id>urn:bug-hou:GHSA-7w38-ggh5-v542</id>
 <updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44266&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないパッケージ@enspirit/eloのCRITICAL。Ruby出力の文字列埋め込みでコード実行&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44266&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access (CRITICAL)</title>
+<title>[要確認] Node.js: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-33r5-xmm8-v6x5"/>
 <id>urn:bug-hou:GHSA-33r5-xmm8-v6x5</id>
 <updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないパッケージ@enspirit/eloのCRITICAL。JS出力でサンドボックスを抜けてコード実行&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
