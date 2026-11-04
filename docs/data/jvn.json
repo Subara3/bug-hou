@@ -1,5 +1,40 @@
 [
  {
+  "id": "JVN#12040144",
+  "title": "Airbyteにおける任意のコードが実行可能な脆弱性",
+  "url": "https://jvn.jp/jp/JVN12040144/",
+  "desc": "Airbyteには、不適切なクラスロードにより想定外のコンポーネントを読み込むことができるため、任意のコード実行が可能となる脆弱性が存在します。",
+  "date": "2026-11-04"
+ },
+ {
+  "id": "JVN#44272550",
+  "title": "複数のAkeeba製品におけるクロスサイトリクエストフォージェリの脆弱性",
+  "url": "https://jvn.jp/jp/JVN44272550/",
+  "desc": "Akeeba Ltd.が提供する複数の製品には、クロスサイトリクエストフォージェリの脆弱性が存在します。",
+  "date": "2026-11-04"
+ },
+ {
+  "id": "JVNVU#99859918",
+  "title": "INFINITT Healthcare製INFINITT PACS System Managerにおける複数の任意コード実行の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU99859918/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-04"
+ },
+ {
+  "id": "JVNVU#92281274",
+  "title": "Androidアプリ「BaseChat - Audio Dating App」における複数の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU92281274/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-04"
+ },
+ {
+  "id": "JVNVU#91151184",
+  "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月03日）",
+  "url": "https://jvn.jp/vu/JVNVU91151184/",
+  "desc": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+  "date": "2026-11-04"
+ },
+ {
   "id": "JVN#23328936",
   "title": "Core TempのカーネルドライバにおけるIOCTLインタフェースに対するアクセス制御が不十分な脆弱性",
   "url": "https://jvn.jp/jp/JVN23328936/",
