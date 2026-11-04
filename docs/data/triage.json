@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-03T06:46:25Z",
+ "updated_at": "2026-11-04T00:46:35Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -560,6 +560,13 @@
    "todo": "symfony/yaml 5.4.54/6.4.45/7.4.18/8.1.6に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-33r5-xmm8-v6x5": {
+   "level": "check",
+   "reason": "利用者の少ないパッケージ@enspirit/eloのCRITICAL。JS出力でサンドボックスを抜けてコード実行",
+   "todo": "@enspirit/eloを使っていれば1.0.1に更新",
+   "kev": false,
+   "at": "2026-11-04"
   },
   "GHSA-35rr-xwfh-x789": {
    "level": "check",
@@ -1144,6 +1151,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-7w38-ggh5-v542": {
+   "level": "check",
+   "reason": "利用者の少ないパッケージ@enspirit/eloのCRITICAL。Ruby出力の文字列埋め込みでコード実行",
+   "todo": "@enspirit/eloを使っていれば1.0.1に更新",
+   "kev": false,
+   "at": "2026-11-04"
+  },
   "GHSA-7w82-6f9j-v9jp": {
    "level": "check",
    "reason": "mcp-sanitizerのパス検査がホーム配下の絶対パスを許可。HIGH",
@@ -1169,13 +1183,6 @@
    "level": "watch",
    "reason": "Semantic MediaWikiのSpecial:Askのsepで反射型XSS。MEDIUM",
    "todo": "semantic-media-wiki 7.2.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-834v-8h66-3h79": {
-   "level": "check",
-   "reason": "Happy DOMで未サニタイズのimport別名からホスト上でコード実行。HIGH",
-   "todo": "happy-dom 21.0.4に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1659,6 +1666,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-gh9r-c94j-cmp5": {
+   "level": "check",
+   "reason": "stanzaのHIGH。lemmatizerのpickle読み込みでコード実行",
+   "todo": "stanza 1.14.0を使っていれば1.15.0に更新",
+   "kev": false,
+   "at": "2026-11-04"
+  },
   "GHSA-gq48-pqfc-9p58": {
    "level": "watch",
    "reason": "GitPythonのSubmodule.move()がシンボリックリンクで作業ツリー外へ。MEDIUM",
@@ -1862,13 +1876,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-jqc4-5cvw-7w85": {
-   "level": "watch",
-   "reason": "filelockのReadWriteLockで他ユーザーがリネームしたディレクトリを削除。MEDIUM",
-   "todo": "filelock 4.2.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-jqgh-w3cc-7jqw": {
    "level": "watch",
    "reason": "Dashboardsで__proto__のidでObject.prototypeに書込。MEDIUM",
@@ -1901,13 +1908,6 @@
    "level": "check",
    "reason": "AgnoのFunctionCallでfield_typeのeval()により任意コード実行。CRITICAL",
    "todo": "agno 2.3.24に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-m5mm-p8h7-m29v": {
-   "level": "watch",
-   "reason": "serialize-javascriptで関数本体末尾の</scriptによりXSS。LOW",
-   "todo": "serialize-javascript 7.1.3に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2139,13 +2139,6 @@
    "level": "watch",
    "reason": "Contaoのプレビューリンクのアクセス制御不備。MEDIUM",
    "todo": "core-bundle 5.7.12に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-q7qp-rjg7-q26m": {
-   "level": "check",
-   "reason": "multerで非同期fileFilterが切断後も保留しDoS。HIGH",
-   "todo": "multer 2.5.0に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2561,6 +2554,13 @@
    "todo": "dd-trace 5.131.1/6.20.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-x9rp-7wh3-2rj5": {
+   "level": "check",
+   "reason": "@enspirit/eloのHIGH。プログラムで作ったASTの値がそのまま出力されコードを埋め込める",
+   "todo": "@enspirit/eloを使っていれば1.0.1に更新",
+   "kev": false,
+   "at": "2026-11-04"
   },
   "GHSA-xcx6-jx8p-x3h5": {
    "level": "check",
