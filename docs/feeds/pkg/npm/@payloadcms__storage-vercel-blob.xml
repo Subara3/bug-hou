@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@payloadcms/storage-vercel-blob（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@payloadcms__storage-vercel-blob.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@payloadcms__storage-vercel-blob.xml</id>
+<updated>2026-11-04T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-mc8m-rr6c-r5qr"/>
+<id>urn:bug-hou:GHSA-mc8m-rr6c-r5qr</id>
+<updated>2026-11-04T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@payloadcms/storage-vercel-blob &amp;gt;= 3.25.0, &amp;lt; 3.90.0 → 3.90.0, @payloadcms/storage-vercel-blob &amp;gt;= 4.0.0-canary.0, &amp;lt; 4.0.0-canary.34 → 4.0.0-canary.34&lt;/p&gt;&lt;p&gt;CVE-2026-93363&lt;/p&gt;</content>
+</entry>
+</feed>

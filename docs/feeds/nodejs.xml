@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/#nodejs"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/nodejs.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/nodejs.xml</id>
-<updated>2026-11-03T00:00:00Z</updated>
+<updated>2026-11-04T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-mc8m-rr6c-r5qr"/>
+<id>urn:bug-hou:GHSA-mc8m-rr6c-r5qr</id>
+<updated>2026-11-04T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@payloadcms/storage-vercel-blob &amp;gt;= 3.25.0, &amp;lt; 3.90.0 → 3.90.0, @payloadcms/storage-vercel-blob &amp;gt;= 4.0.0-canary.0, &amp;lt; 4.0.0-canary.34 → 4.0.0-canary.34&lt;/p&gt;&lt;p&gt;CVE-2026-93363&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3cgg-c5pp-57h6"/>
+<id>urn:bug-hou:GHSA-3cgg-c5pp-57h6</id>
+<updated>2026-11-04T00:00:00Z</updated>
+<content type="html">&lt;p&gt;odf-kit &amp;gt;= 0.6.0, &amp;lt; 0.14.2 → 0.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-113787&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] Node.js: Elo backends have code injection via unvalidated emission of programmatic AST fields (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-x9rp-7wh3-2rj5"/>
@@ -161,13 +175,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MCP TypeScript SDKのHTTPトランスポートで本文サイズやバッチ長が無制限。HIGH&lt;br&gt;→ @modelcontextprotocol/sdk 1.30.1などに更新&lt;/p&gt;&lt;p&gt;@modelcontextprotocol/sdk &amp;gt;= 1.10.0, &amp;lt; 1.30.1 → 1.30.1, @modelcontextprotocol/server &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/node &amp;gt;= 2.0.0, &amp;lt; 2.1.0 → 2.1.0, @modelcontextprotocol/hono &amp;gt;= 2.0.0, &amp;lt; 2.0.1 → 2.0.1&lt;/p&gt;&lt;p&gt;GHSA-f897-62hf-6gxq&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Node.js: undici vulnerable to Subresource Integrity bypass via non-lowercase algorithm tokens (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-f72v-6w45-q472"/>
-<id>urn:bug-hou:GHSA-f72v-6w45-q472</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; undiciで大文字を含むアルゴリズム名によりSRI検証を回避。MEDIUM&lt;br&gt;→ undici 7.30.1/8.12.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 7.15.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109841&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Node.js: Highcharts Dashboards / Grid Pro: `DataTable.setCell` and column writers treat `__proto__` as an existing column. (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-c75x-9x9h-28rm"/>
 <id>urn:bug-hou:GHSA-c75x-9x9h-28rm</id>
@@ -236,13 +243,6 @@
 <id>urn:bug-hou:GHSA-4w7w-5xrc-9h26</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; undiciでクロスオリジンのリダイレクトによりキャッシュ汚染と他利用者の情報漏洩。HIGH&lt;br&gt;→ undici 7.30.1/8.12.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109829&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: undici vulnerable to Denial of Service via unbounded memory in the EventSource parser (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-4qv8-2p9j-2685"/>
-<id>urn:bug-hou:GHSA-4qv8-2p9j-2685</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; undiciのEventSource解析でメモリ無制限消費によりDoS。MEDIUM&lt;br&gt;→ undici 6.29.1/7.30.1/8.12.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 6.5.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109924&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6 (HIGH)</title>
@@ -333,7 +333,7 @@
 <link href="https://github.com/advisories/GHSA-g3hv-75wg-m249"/>
 <id>urn:bug-hou:GHSA-g3hv-75wg-m249</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; minimatchのパターン展開でDoS。MEDIUM&lt;br&gt;→ minimatch 11.0.1に更新&lt;/p&gt;&lt;p&gt;minimatch &amp;lt; 11.0.1 → 11.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-118764&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; minimatchのパターン展開でDoS。MEDIUM&lt;br&gt;→ minimatch 11.0.1に更新&lt;/p&gt;&lt;p&gt;minimatch &amp;gt;= 7.0.0, &amp;lt; 11.0.1 → 11.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-118764&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>

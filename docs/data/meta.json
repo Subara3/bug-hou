@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-04T06:26:05Z",
+ "fetched_at": "2026-11-04T19:47:28Z",
  "days": 90,
  "targets": [
   {
@@ -16,9 +16,9 @@
   {
    "id": "wordpress",
    "label": "WordPress",
-   "cves": 1,
+   "cves": 2,
    "critical": 0,
-   "high": 1,
+   "high": 2,
    "kev_recent": 2,
    "kev_total": 8,
    "ghsa": 0,
