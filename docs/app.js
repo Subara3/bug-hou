@@ -147,9 +147,61 @@ const CLAUDE_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><g stroke="curr
 
 // 要対応の急ぎ度（scripts/priority.py がCISAのSSVCの考え方でデータから決めたもの）
 let priority = {};
-const URGENCY = { now: "今すぐ", soon: "今週中", later: "手が空いたら" };
-const URG_ORDER = ["now", "soon", "later", ""];
-const urgOf = (id) => priority[id]?.u || "";
+const URGENCY = { stop: "止めて", now: "今すぐ", soon: "今週中", later: "手が空いたら" };
+const URG_ORDER = ["stop", "now", "soon", "later", ""];
+
+// 止めて：今すぐのうち、公的機関がいくつも警告を出しているもの。
+// 数えるのは CISA（KEV）・JPCERT/CC・IPA の3つ。何機関から「止めて」にするかは画面で切り替えられる
+const STOP_KEY = "bughou.stop.v1";
+const AGENCIES = ["CISA", "JPCERT/CC", "IPA"];
+let stopMin = Number(localStorage.getItem(STOP_KEY)) === 3 ? 3 : 2;
+function setStopMin(n) {
+  stopMin = n === 3 ? 3 : 2;
+  localStorage.setItem(STOP_KEY, String(stopMin));
+}
+let agencyMemo = { key: "", map: new Map() };
+function agencyMap() {
+  const key = `${meta?.fetched_at}|${alerts.length}|${Object.keys(cache).length}`;
+  if (agencyMemo.key === key) return agencyMemo.map;
+  const byCve = new Map();
+  const add = (cve, org) => {
+    if (!cve) return;
+    if (!byCve.has(cve)) byCve.set(cve, new Set());
+    byCve.get(cve).add(org);
+  };
+  for (const d of Object.values(cache)) {
+    for (const c of d.cves) if (c.kev) add(c.id, "CISA");
+    for (const a of d.ghsa) if (a.kev) add(a.cve, "CISA");
+    for (const k of d.kev || []) add(k.cve, "CISA");
+  }
+  for (const a of alerts || []) for (const c of a.cves || []) if (AGENCIES.includes(a.org)) add(c, a.org);
+  // GHSAはCVEの番号で引く
+  const map = new Map();
+  for (const d of Object.values(cache)) {
+    for (const c of d.cves) if (byCve.has(c.id)) map.set(c.id, byCve.get(c.id));
+    for (const a of d.ghsa) if (a.cve && byCve.has(a.cve)) map.set(a.id, byCve.get(a.cve));
+  }
+  agencyMemo = { key, map };
+  return map;
+}
+const agenciesOf = (id) => AGENCIES.filter((o) => agencyMap().get(id)?.has(o));
+const urgOf = (id) => {
+  const u = priority[id]?.u || "";
+  return u === "now" && agenciesOf(id).length >= stopMin ? "stop" : u;
+};
+function stopSwitch() {
+  return `<span class="stop-switch" role="radiogroup" aria-label="止めてにする基準">
+    <button class="chip" data-stop="2" aria-pressed="${stopMin === 2}">2機関以上</button>
+    <button class="chip" data-stop="3" aria-pressed="${stopMin === 3}">3機関すべて</button>
+  </span>`;
+}
+document.addEventListener("click", (e) => {
+  const b = e.target.closest("[data-stop]");
+  if (!b) return;
+  setStopMin(Number(b.dataset.stop));
+  const y = window.scrollY;
+  Promise.resolve(route()).then(() => window.scrollTo(0, y));
+});
 const urgTag = (u) => (u ? `<span class="urg urg-${u}">${URGENCY[u]}</span>` : "");
 const SSVC_JA = {
   exp: { active: "悪用されている", poc: "攻撃コードが公開されている", none: "悪用の報告なし" },
@@ -171,11 +223,20 @@ function prioLine(id) {
     return `<span class="ssvc ${v === "active" || v === "yes" || v === "total" ? "hot" : ""}">${label}${src ? `<small>${SRC_JA[src]}</small>` : ""}</span>`;
   };
   const ep = p.epss != null ? `<span class="ssvc ep" title="FIRSTのEPSS。30日以内に悪用される確率の予測（参考）">EPSS ${p.epss >= 0.999 ? "99.9%以上" : (p.epss * 100).toFixed(p.epss < 0.1 ? 1 : 0) + "%"}</span>` : "";
+  const u = urgOf(id);
+  const ag = agenciesOf(id);
+  const agTag = ag.length
+    ? `<span class="ssvc ${ag.length >= 2 ? "hot" : ""}" title="CISA（KEV）・JPCERT/CC・IPAのうち、警告を出した機関">警告 ${ag.length}機関<small>${ag.join("・")}</small></span>`
+    : "";
   const now =
-    p.u === "now" && lv === "action"
-      ? `<p class="prio-now">すぐ更新してください。更新できないなら、機能を切るか外からのアクセスを塞いでください。それもできないなら、更新できるまでサービスを止めてください。<a href="#guide-now">対応のしかた</a></p>`
-      : "";
-  return `<p class="prio"><span class="prio-k">急ぎ度</span>${urgTag(p.u)}${part("exp")}${part("auto")}${part("imp")}${ep}<a class="prio-how" href="#about-urgency">決め方</a><a class="prio-how" href="#guide-${p.u}">やること</a></p>${now}`;
+    lv !== "action"
+      ? ""
+      : u === "stop"
+        ? `<p class="prio-now">${ag.join("・")}がそろって警告しています。外に公開しているなら、更新が終わるまでサービスを止めてください。止められないなら、外からのアクセスを塞いでください。<a href="#guide-stop">対応のしかた</a></p>`
+        : u === "now"
+          ? `<p class="prio-now">すぐ更新してください。更新できないなら、機能を切るか外からのアクセスを塞いでください。それもできないなら、更新できるまでサービスを止めてください。<a href="#guide-now">対応のしかた</a></p>`
+          : "";
+  return `<p class="prio"><span class="prio-k">急ぎ度</span>${urgTag(u)}${agTag}${part("exp")}${part("auto")}${part("imp")}${ep}<a class="prio-how" href="#about-urgency">決め方</a><a class="prio-how" href="#guide-${u}">やること</a></p>${now}`;
 }
 
 // 判定と急ぎ度がいつ・なぜ変わったか

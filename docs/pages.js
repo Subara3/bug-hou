@@ -112,7 +112,7 @@ function showAbout() {
       <p>判定や急ぎ度が変わったときは、その項目に「変更の記録」として、いつ・何が理由で変わったかを出します。判定がおかしいと思ったら、各項目の「判定がおかしい？」からGitHubのissueで知らせてください。</p>
 
       <h3 id="about-urgency">要対応の急ぎ度</h3>
-      <p>要対応には、どれくらい急ぐかを<span class="urg urg-now">今すぐ</span><span class="urg urg-soon">今週中</span><span class="urg urg-later">手が空いたら</span>の3つで付けています。急ぎ度はClaudeではなく、データから機械的に決めています。同じデータなら、いつも同じ結果になります。</p>
+      <p>要対応には、どれくらい急ぐかを<span class="urg urg-stop">止めて</span><span class="urg urg-now">今すぐ</span><span class="urg urg-soon">今週中</span><span class="urg urg-later">手が空いたら</span>の4つで付けています。急ぎ度はClaudeではなく、データから機械的に決めています。同じデータなら、いつも同じ結果になります。</p>
       <p>使っているのは、米国CISAが公開している優先度づけの手順<a href="https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc" target="_blank" rel="noopener">SSVC</a>の3つの観点です。</p>
       <table class="doc-table"><thead><tr><th>観点</th><th>値</th><th>どこから取るか</th></tr></thead><tbody>
         <tr><td>悪用されているか</td><td>悪用されている／攻撃コードが公開されている／悪用の報告なし</td><td>CISA KEVに載っていれば「悪用されている」。なければCISAがCVEごとに付けている評価（Vulnrichment）</td></tr>
@@ -127,6 +127,11 @@ function showAbout() {
       </tbody></table>
       <p>参考として、FIRSTが出しているEPSS（30日以内に悪用される確率の予測）も表示しています。EPSSは急ぎ度の判定には使っていません。</p>
       <p>Claudeは急ぎ度を決めません。急ぎ度を見たうえで「社内だけで使っているなら次の更新で大丈夫」のように、どんな環境なら止めるべきかのひとことを書いています。</p>
+
+      <h3 id="about-stop"><span class="urg urg-stop">止めて</span>の決め方</h3>
+      <p>今すぐのうち、公的機関がいくつも警告を出しているものを止めてにします。数えるのは、米国CISA（KEVに載せたか）、JPCERT/CC（注意喚起を出したか）、IPA（重要なセキュリティ情報を出したか）の3つです。どれもその機関が自分で決めて出すものなので、このサイトやClaudeの考えは入りません。</p>
+      <p>何機関から止めてにするかは、ここで切り替えられます。切り替えはこのブラウザに保存されます。${stopSwitch()}</p>
+      <p>CISAはKEVに入れるときに対応の期限を付けていて、以前は期限の短さで急ぎ具合が分かりました。2026年の半ばからは大半が3日になっていて、差がつかないので使っていません。</p>
 
       <h3>色とスコア</h3>
       <table class="doc-table"><tbody>
@@ -189,9 +194,17 @@ function showGuide() {
       <p>このサイトでは、脆弱性に2つの印を付けています。</p>
       <table class="doc-table"><tbody>
         <tr><td><span class="verdict lv-action">要対応</span><span class="verdict lv-check">要確認</span><span class="verdict lv-watch">様子見</span></td><td><b>区分</b>：よくある使い方で影響が出るかどうか。Claudeが説明文を読んで決めています</td></tr>
-        <tr><td><span class="urg urg-now">今すぐ</span><span class="urg urg-soon">今週中</span><span class="urg urg-later">手が空いたら</span></td><td><b>急ぎ度</b>：どれくらい危ないか。悪用されているか・自動で攻撃できるか・被害の大きさから、データで決めています（<a href="#about-urgency">決め方</a>）。要対応のものにだけ付けています</td></tr>
+        <tr><td><span class="urg urg-stop">止めて</span><span class="urg urg-now">今すぐ</span><span class="urg urg-soon">今週中</span><span class="urg urg-later">手が空いたら</span></td><td><b>急ぎ度</b>：どれくらい危ないか。悪用されているか・自動で攻撃できるか・被害の大きさから、データで決めています（<a href="#about-urgency">決め方</a>）。要対応のものにだけ付けています</td></tr>
       </tbody></table>
       <p>まず要対応を見て、その中で急ぎ度の高いものから片付けてください。</p>
+
+      <h3 id="guide-stop"><span class="urg urg-stop">止めて</span>のとき</h3>
+      <p>今すぐのうち、公的機関がいくつもそろって警告を出しているものです（<a href="#about-stop">決め方</a>）。</p>
+      <ol class="steps">
+        <li><b>外に公開しているなら、まず止める</b>　更新の準備をしているあいだも攻撃されます。止められないなら、外からのアクセスを塞いでください。</li>
+        <li><b>修正版に更新する</b>　更新が終わったら、サービスを戻してください。</li>
+        <li><b>入られていないか確かめる</b>　ログに不審なアクセスがないか、知らないファイルやアカウントが増えていないかを見てください。注意喚起に調べ方が書かれていることがあります。</li>
+      </ol>
 
       <h3 id="guide-now"><span class="urg urg-now">今すぐ</span>のとき</h3>
       <p>すでに悪用されていて、被害も大きいものです。上から順に、できるところまでやってください。</p>

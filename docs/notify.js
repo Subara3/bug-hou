@@ -40,7 +40,7 @@ function notifyCandidates() {
       if (priority[x.id]?.u !== "now" || levelOf(x.id) === "read") continue;
       out.push({
         key: `now:${x.id}`,
-        title: `今すぐ：${x.id}（${d.label}）`,
+        title: `${URGENCY[urgOf(x.id)]}：${x.id}（${d.label}）`,
         body: triage.items[x.id]?.comment || triage.items[x.id]?.todo || x.text,
         hash: t.id,
       });
