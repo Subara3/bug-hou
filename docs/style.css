@@ -309,7 +309,7 @@ button.vbox:hover { background: var(--bg-sub); }
 
 .tab-desc { flex-basis: 100%; margin: 0; padding: 6px 2px 8px; font-size: 12px; color: var(--text-sub); }
 
-.about-link { font-size: 12px; }
+.about-link { font-size: 12px; white-space: nowrap; }
 
 /* まとめ */
 .sum-table td .dot { margin-right: 4px; }
@@ -553,3 +553,8 @@ button.vbox:hover { background: var(--bg-sub); }
 .proj-pkgs { margin: 0 0 24px; }
 .proj-entries .w-entry { margin-left: 0; }
 .chip.armed { color: #fff; background: var(--critical); border-color: var(--critical); }
+
+/* デスクトップ通知 */
+.notify-btn { font: inherit; font-size: 12px; color: var(--text-sub); background: none; border: 1px solid var(--line-strong); border-radius: 12px; padding: 1px 10px; cursor: pointer; }
+.notify-btn.on { color: var(--accent); border-color: var(--accent); }
+#reload-hint { margin-left: 12px; font-size: 12px; }

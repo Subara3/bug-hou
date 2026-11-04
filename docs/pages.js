@@ -161,6 +161,8 @@ function showAbout() {
       <p>登録はプロジェクトごとに分けられます。lockファイルがあるプロジェクトはそれを読み込んでおくと、ウォッチリストを開くたびにOSVへ問い合わせ直し、前回から増えたものに新着の印を付けます。lockファイルがないプロジェクト（WordPressのサイトやサーバーなど）は、本体やパッケージを個別に入れてください。lockファイルの中身は、パッケージ名とバージョンの一覧だけを保存します。</p>
       <p>メールで受け取りたい場合は、ウォッチリストの「フィードURLをコピー」でURLを取り、RSSをメールに転送するサービス（<a href="https://blogtrottr.com/" target="_blank" rel="noopener">Blogtrottr</a>、<a href="https://feedrabbit.com/" target="_blank" rel="noopener">FeedRabbit</a>など）に登録してください。全体の要対応なら <code>${esc(new URL("feeds/action.xml", location.href).href)}</code>、そのうち今すぐのものだけなら <code>${esc(new URL("feeds/now.xml", location.href).href)}</code> です。</p>
 
+      <p>右上の「通知オフ」を押して通知を許可すると、このタブを開いているあいだ、30分おきに新しいデータがないか確かめます。今すぐ、KEV入り、公的機関の注意喚起、ウォッチリストの新着が増えたら、デスクトップに通知を出します。タブを閉じているあいだに増えたものは、次に開いたときに通知します。</p>
+
       <h3>知っておいてほしいこと</h3>
       <ul>
         <li>表示しているのは直近${meta.days}日に公開されたCVEです。それより前のものは、ウォッチリストに登録したパッケージの分だけ表示します</li>
