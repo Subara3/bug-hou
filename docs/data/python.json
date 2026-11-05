@@ -247,6 +247,26 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-64vx-6h2c-rjh7",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-61536",
+   "summary": "Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-05",
+   "url": "https://github.com/advisories/GHSA-64vx-6h2c-rjh7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "banks",
+     "range": "<= 2.4.2",
+     "fixed": "2.4.3"
+    }
+   ],
+   "first_seen": "2026-11-05"
+  },
+  {
    "id": "GHSA-gh9r-c94j-cmp5",
    "ecosystem": "pip",
    "cve": "CVE-2026-115878",
@@ -2287,26 +2307,6 @@
      "name": "monai",
      "range": "< 1.6.1",
      "fixed": "1.6.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-vcw3-r3fx-j444",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-27975",
-   "summary": "Ajenti has potential Remote Code Execution",
-   "severity": "HIGH",
-   "score": 8.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:U",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-vcw3-r3fx-j444",
-   "kev": false,
-   "packages": [
-    {
-     "name": "aj",
-     "range": "< 2.2.13",
-     "fixed": "2.2.13"
     }
    ],
    "first_seen": "2026-11-02"

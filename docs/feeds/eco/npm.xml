@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-04T00:00:00Z</updated>
+<updated>2026-11-05T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: filecoin-pin: Unbounded DAG pinning can exhaust server resources (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-m5ph-mmg5-6w5h"/>
+<id>urn:bug-hou:GHSA-m5ph-mmg5-6w5h</id>
+<updated>2026-11-05T00:00:00Z</updated>
+<content type="html">&lt;p&gt;filecoin-pin &amp;lt;= 1.1.0 → 1.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-62300&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mc8m-rr6c-r5qr"/>
@@ -54,13 +61,6 @@
 <id>urn:bug-hou:GHSA-33r5-xmm8-v6x5</id>
 <updated>2026-11-03T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないパッケージ@enspirit/eloのCRITICAL。JS出力でサンドボックスを抜けてコード実行&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-xjj6-f33q-929c"/>
-<id>urn:bug-hou:GHSA-xjj6-f33q-929c</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; undiciで過剰なcontent-encodingの未処理エラーによりDoS。HIGH&lt;br&gt;→ undici 6.29.1/7.30.1/8.12.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 6.23.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.18.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109869&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint (HIGH)</title>

@@ -1,5 +1,43 @@
 [
  {
+  "id": "GHSA-m5ph-mmg5-6w5h",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-62300",
+  "summary": "filecoin-pin: Unbounded DAG pinning can exhaust server resources",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-05",
+  "url": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h",
+  "kev": false,
+  "packages": [
+   {
+    "name": "filecoin-pin",
+    "range": "<= 1.1.0",
+    "fixed": "1.1.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-64vx-6h2c-rjh7",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-61536",
+  "summary": "Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-05",
+  "url": "https://github.com/advisories/GHSA-64vx-6h2c-rjh7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "banks",
+    "range": "<= 2.4.2",
+    "fixed": "2.4.3"
+   }
+  ]
+ },
+ {
   "id": "GHSA-mc8m-rr6c-r5qr",
   "ecosystem": "npm",
   "cve": "CVE-2026-93363",

@@ -52,6 +52,26 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-m5ph-mmg5-6w5h",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-62300",
+   "summary": "filecoin-pin: Unbounded DAG pinning can exhaust server resources",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-05",
+   "url": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "filecoin-pin",
+     "range": "<= 1.1.0",
+     "fixed": "1.1.1"
+    }
+   ],
+   "first_seen": "2026-11-05"
+  },
+  {
    "id": "GHSA-mc8m-rr6c-r5qr",
    "ecosystem": "npm",
    "cve": "CVE-2026-93363",
@@ -2467,36 +2487,6 @@
      "name": "@azure/msal-node",
      "range": ">= 5.0.0-beta.0, < 7.1.0",
      "fixed": "7.1.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-xjj6-f33q-929c",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-109869",
-   "summary": "undici vulnerable to Denial of Service via unhandled error on excessive content-encodings",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-23",
-   "url": "https://github.com/advisories/GHSA-xjj6-f33q-929c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "undici",
-     "range": ">= 6.23.0, < 6.29.1",
-     "fixed": "6.29.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 7.18.0, < 7.30.1",
-     "fixed": "7.30.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 8.0.0, < 8.12.2",
-     "fixed": "8.12.2"
     }
    ],
    "first_seen": "2026-11-02"
