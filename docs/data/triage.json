@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T00:46:35Z",
+ "updated_at": "2026-11-05T00:45:59Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -92,6 +92,15 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "CVE-2026-119977": {
+   "level": "action",
+   "reason": "WordPress本体のRCEでKEV掲載。本体の更新中にログインなしでコードを実行される",
+   "todo": "4.7〜7.1.3が影響。修正版に更新する",
+   "kev": true,
+   "at": "2026-11-05",
+   "urgency": "now",
+   "comment": "外に公開しているサイトはすぐ対応して。更新作業の最中が狙われるので、作業中は外から見えないようにしたい"
   },
   "CVE-2026-12345": {
    "level": "watch",
@@ -603,6 +612,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-3cgg-c5pp-57h6": {
+   "level": "watch",
+   "reason": "MEDIUM。odf-kitのHTML変換でstyle属性が無害化されずXSSになる",
+   "todo": "使っていれば0.14.2以降に更新",
+   "kev": false,
+   "at": "2026-11-05"
+  },
   "GHSA-3cmx-xjww-583x": {
    "level": "watch",
    "reason": "i18next-http-backendのlngでクエリ注入。LOW",
@@ -775,13 +791,6 @@
    "level": "check",
    "reason": "mcp-sanitizerのURL検査をポート指定やIPv6で回避しSSRF。HIGH",
    "todo": "mcp-sanitizer 1.4.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-4qv8-2p9j-2685": {
-   "level": "watch",
-   "reason": "undiciのEventSource解析でメモリ無制限消費によりDoS。MEDIUM",
-   "todo": "undici 6.29.1/7.30.1/8.12.2に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1503,13 +1512,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-f72v-6w45-q472": {
-   "level": "watch",
-   "reason": "undiciで大文字を含むアルゴリズム名によりSRI検証を回避。MEDIUM",
-   "todo": "undici 7.30.1/8.12.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-f86p-h4j2-7qgj": {
    "level": "watch",
    "reason": "Serovalの型付き配列でコード注入。MEDIUM",
@@ -1938,6 +1940,13 @@
    "todo": "svg-sanitize 1.0.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-mc8m-rr6c-r5qr": {
+   "level": "watch",
+   "reason": "MEDIUM。Vercel Blob用ストレージ連携でアップロードのアクセス制限を回避できる",
+   "todo": "使っていれば3.90.0以降に更新",
+   "kev": false,
+   "at": "2026-11-05"
   },
   "GHSA-mf2p-h6hf-fcwm": {
    "level": "check",
