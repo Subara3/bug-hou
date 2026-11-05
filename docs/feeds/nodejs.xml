@@ -7,18 +7,18 @@
 <updated>2026-11-04T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter (MEDIUM)</title>
+<title>[様子見] Node.js: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mc8m-rr6c-r5qr"/>
 <id>urn:bug-hou:GHSA-mc8m-rr6c-r5qr</id>
 <updated>2026-11-04T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@payloadcms/storage-vercel-blob &amp;gt;= 3.25.0, &amp;lt; 3.90.0 → 3.90.0, @payloadcms/storage-vercel-blob &amp;gt;= 4.0.0-canary.0, &amp;lt; 4.0.0-canary.34 → 4.0.0-canary.34&lt;/p&gt;&lt;p&gt;CVE-2026-93363&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。Vercel Blob用ストレージ連携でアップロードのアクセス制限を回避できる&lt;br&gt;→ 使っていれば3.90.0以降に更新&lt;/p&gt;&lt;p&gt;@payloadcms/storage-vercel-blob &amp;gt;= 3.25.0, &amp;lt; 3.90.0 → 3.90.0, @payloadcms/storage-vercel-blob &amp;gt;= 4.0.0-canary.0, &amp;lt; 4.0.0-canary.34 → 4.0.0-canary.34&lt;/p&gt;&lt;p&gt;CVE-2026-93363&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values (MEDIUM)</title>
+<title>[様子見] Node.js: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3cgg-c5pp-57h6"/>
 <id>urn:bug-hou:GHSA-3cgg-c5pp-57h6</id>
 <updated>2026-11-04T00:00:00Z</updated>
-<content type="html">&lt;p&gt;odf-kit &amp;gt;= 0.6.0, &amp;lt; 0.14.2 → 0.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-113787&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。odf-kitのHTML変換でstyle属性が無害化されずXSSになる&lt;br&gt;→ 使っていれば0.14.2以降に更新&lt;/p&gt;&lt;p&gt;odf-kit &amp;gt;= 0.6.0, &amp;lt; 0.14.2 → 0.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-113787&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: Elo backends have code injection via unvalidated emission of programmatic AST fields (HIGH)</title>
