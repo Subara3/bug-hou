@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T19:49:10Z",
+ "updated_at": "2026-11-05T06:51:03Z",
  "items": {
   "CVE-2025-1218": {
    "u": "later",
@@ -48,11 +48,11 @@
   "CVE-2026-103995": {
    "u": "later",
    "exp": "none",
-   "exp_src": "",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0036,
    "pct": 0.2992
   },
