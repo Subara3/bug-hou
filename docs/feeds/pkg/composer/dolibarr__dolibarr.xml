@@ -11,6 +11,6 @@
 <link href="https://github.com/advisories/GHSA-v5fq-cf5m-vwv7"/>
 <id>urn:bug-hou:GHSA-v5fq-cf5m-vwv7</id>
 <updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; DolibarrのSQLインジェクション。HIGH&lt;br&gt;→ 修正版なし。更新情報を確認&lt;/p&gt;&lt;p&gt;dolibarr/dolibarr &amp;lt;= 23.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-33944&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; DolibarrのSQLインジェクション。HIGH&lt;br&gt;→ 修正版なし。更新情報を確認&lt;/p&gt;&lt;p&gt;dolibarr/dolibarr &amp;lt; 22.0.5 → 22.0.5, dolibarr/dolibarr &amp;gt;= 23.0.0, &amp;lt; 23.0.2 → 23.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-33944&lt;/p&gt;</content>
 </entry>
 </feed>

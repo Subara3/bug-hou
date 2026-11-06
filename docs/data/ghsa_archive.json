@@ -3334,8 +3334,13 @@
   "packages": [
    {
     "name": "dolibarr/dolibarr",
-    "range": "<= 23.0.0",
-    "fixed": null
+    "range": "< 22.0.5",
+    "fixed": "22.0.5"
+   },
+   {
+    "name": "dolibarr/dolibarr",
+    "range": ">= 23.0.0, < 23.0.2",
+    "fixed": "23.0.2"
    }
   ]
  },
@@ -4695,8 +4700,8 @@
   "packages": [
    {
     "name": "oauthlib",
-    "range": ">= 3.3.0, < 4.0.0",
-    "fixed": "4.0.0"
+    "range": ">= 3.3.0, < 4.0.1",
+    "fixed": "4.0.1"
    }
   ]
  },

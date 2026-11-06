@@ -1,16 +1,23 @@
 [
  {
-  "id": "JVN#55454512",
-  "title": "SHIRASAGIにおける複数の脆弱性",
-  "url": "https://jvn.jp/jp/JVN55454512/",
-  "desc": "SHIRASAGI Projectが提供するSHIRASAGIには、複数の脆弱性が存在します。",
-  "date": "2026-11-05"
- },
- {
   "id": "JVNVU#98354779",
   "title": "Siemens製品に対するアップデート（2026年11月）",
   "url": "https://jvn.jp/vu/JVNVU98354779/",
   "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
+  "date": "2026-11-06"
+ },
+ {
+  "id": "JVNVU#90841469",
+  "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月05日）",
+  "url": "https://jvn.jp/vu/JVNVU90841469/",
+  "desc": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+  "date": "2026-11-06"
+ },
+ {
+  "id": "JVN#55454512",
+  "title": "SHIRASAGIにおける複数の脆弱性",
+  "url": "https://jvn.jp/jp/JVN55454512/",
+  "desc": "SHIRASAGI Projectが提供するSHIRASAGIには、複数の脆弱性が存在します。",
   "date": "2026-11-05"
  },
  {

@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T19:59:58Z",
+ "updated_at": "2026-11-06T06:51:35Z",
  "items": {
   "CVE-2025-1218": {
    "u": "later",
@@ -1024,12 +1024,12 @@
   },
   "GHSA-3jp2-3mrg-2vxc": {
    "u": "later",
-   "exp": "none",
-   "exp_src": "",
+   "exp": "poc",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS"
+   "imp_src": "CISA"
   },
   "GHSA-3jp5-3h47-28qf": {
    "u": "later",
@@ -1641,13 +1641,24 @@
    "pct": 0.2862
   },
   "GHSA-6hp3-vr39-rqw8": {
-   "u": "later",
-   "exp": "none",
-   "exp_src": "",
+   "u": "soon",
+   "exp": "poc",
+   "exp_src": "CISA",
    "auto": "yes",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS"
+   "imp_src": "CISA",
+   "hist": [
+    {
+     "at": "2026-11-06",
+     "from": "later",
+     "to": "soon",
+     "why": [
+      "exp:none>poc"
+     ],
+     "src": "CISA"
+    }
+   ]
   },
   "GHSA-6jp4-8v48-cc5v": {
    "u": "soon",

@@ -2285,8 +2285,8 @@
    "packages": [
     {
      "name": "oauthlib",
-     "range": ">= 3.3.0, < 4.0.0",
-     "fixed": "4.0.0"
+     "range": ">= 3.3.0, < 4.0.1",
+     "fixed": "4.0.1"
     }
    ],
    "first_seen": "2026-11-02"
