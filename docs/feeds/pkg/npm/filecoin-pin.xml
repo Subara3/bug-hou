@@ -7,10 +7,10 @@
 <updated>2026-11-05T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: filecoin-pin: Unbounded DAG pinning can exhaust server resources (MEDIUM)</title>
+<title>[様子見] npm: filecoin-pin: Unbounded DAG pinning can exhaust server resources (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-m5ph-mmg5-6w5h"/>
 <id>urn:bug-hou:GHSA-m5ph-mmg5-6w5h</id>
 <updated>2026-11-05T00:00:00Z</updated>
-<content type="html">&lt;p&gt;filecoin-pin &amp;lt;= 1.1.0 → 1.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-62300&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。上限のないDAGのピン留めでサーバーの資源を使い切られるおそれ&lt;br&gt;→ filecoin-pinを使っているなら1.1.1に更新&lt;/p&gt;&lt;p&gt;filecoin-pin &amp;lt;= 1.1.0 → 1.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-62300&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,11 +7,11 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] npm: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
+<title>npm: undici vulnerable to Denial of Service via unhandled error on excessive content-encodings (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xjj6-f33q-929c"/>
 <id>urn:bug-hou:GHSA-xjj6-f33q-929c</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; undiciで過剰なcontent-encodingの未処理エラーによりDoS。HIGH&lt;br&gt;→ undici 6.29.1/7.30.1/8.12.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 6.23.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.18.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109869&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;undici &amp;gt;= 6.23.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.18.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109869&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation (HIGH)</title>

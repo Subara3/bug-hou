@@ -7,11 +7,11 @@
 <updated>2026-11-05T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE (HIGH)</title>
+<title>[要確認] Python: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-64vx-6h2c-rjh7"/>
 <id>urn:bug-hou:GHSA-64vx-6h2c-rjh7</id>
 <updated>2026-11-05T00:00:00Z</updated>
-<content type="html">&lt;p&gt;banks &amp;lt;= 2.4.2 → 2.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-61536&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。CompletionExtensionで外から渡したimport_pathを読み込みRCEになる&lt;br&gt;→ banksを使っているなら2.4.3に更新&lt;/p&gt;&lt;p&gt;banks &amp;lt;= 2.4.2 → 2.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-61536&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: Stanza: RCE via pickle deserialization in the lemmatizer (HIGH)</title>

@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] pip: Ajenti has potential Remote Code Execution (HIGH)</title>
+<title>pip: Ajenti has potential Remote Code Execution (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-vcw3-r3fx-j444"/>
 <id>urn:bug-hou:GHSA-vcw3-r3fx-j444</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AjentiにRCEのおそれ。HIGH&lt;br&gt;→ aj 2.2.13に更新&lt;/p&gt;&lt;p&gt;aj &amp;lt; 2.2.13 → 2.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-27975&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;aj &amp;lt; 2.2.13 → 2.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-27975&lt;/p&gt;</content>
 </entry>
 </feed>
