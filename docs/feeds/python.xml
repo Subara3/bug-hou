@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/#python"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/python.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/python.xml</id>
-<updated>2026-11-05T00:00:00Z</updated>
+<updated>2026-11-06T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: CVE-2026-119170 8.2 HIGH</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-119170"/>
+<id>urn:bug-hou:CVE-2026-119170</id>
+<updated>2026-11-06T00:00:00Z</updated>
+<content type="html">&lt;p&gt;There was a regression in how FIPS algorithms were enforced for the hashlib module. Only users that are using OpenSSL in FIPS mode are affected. Only Python 3.14.10 is affected, all other Python versions are unaffected.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] Python: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-64vx-6h2c-rjh7"/>
@@ -348,12 +355,5 @@
 <id>urn:bug-hou:GHSA-9pg5-8c7x-5hfx</id>
 <updated>2026-10-30T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; joserfcのJWSサイズ確認前にメモリ確保。MEDIUM&lt;br&gt;→ joserfc 1.7.6に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.6 → 1.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-119284&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-9m75-vc3g-4x39"/>
-<id>urn:bug-hou:GHSA-9m75-vc3g-4x39</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pyasn1の構造化文字列デコードで二乗時間のDoS。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;lt;= 0.6.4 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119195&lt;/p&gt;</content>
 </entry>
 </feed>

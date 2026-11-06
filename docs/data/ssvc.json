@@ -1291,6 +1291,14 @@
   },
   "checked": "2026-11-04"
  },
+ "CVE-2026-119170": {
+  "ssvc": {
+   "exploitation": "none",
+   "automatable": "no",
+   "impact": "total"
+  },
+  "checked": "2026-11-06"
+ },
  "CVE-2026-119186": {
   "ssvc": {
    "exploitation": "poc",

@@ -5,6 +5,23 @@
  "kev": [],
  "cves": [
   {
+   "id": "CVE-2026-119170",
+   "published": "2026-11-06",
+   "modified": "2026-11-06",
+   "status": "Awaiting Analysis",
+   "score": 8.2,
+   "severity": "HIGH",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "There was a regression in how FIPS algorithms were enforced for the hashlib module. Only users that are using OpenSSL in FIPS mode are affected. Only Python 3.14.10 is affected, all other Python versions are unaffected.",
+   "kev": false,
+   "affects": [],
+   "cwe": [
+    "CWE-693"
+   ],
+   "first_seen": "2026-11-06"
+  },
+  {
    "id": "CVE-2026-116566",
    "published": "2026-10-29",
    "modified": "2026-10-30",
