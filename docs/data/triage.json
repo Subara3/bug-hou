@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-05T00:45:59Z",
+ "updated_at": "2026-11-06T00:45:51Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -990,6 +990,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-64vx-6h2c-rjh7": {
+   "level": "check",
+   "reason": "HIGH。CompletionExtensionで外から渡したimport_pathを読み込みRCEになる",
+   "todo": "banksを使っているなら2.4.3に更新",
+   "kev": false,
+   "at": "2026-11-06"
+  },
   "GHSA-65hg-cf3f-5m39": {
    "level": "check",
    "reason": "Highchartsの印刷時にフィルタなしのinnerHTMLへ戻る。HIGH",
@@ -1913,6 +1920,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-m5ph-mmg5-6w5h": {
+   "level": "watch",
+   "reason": "MEDIUM。上限のないDAGのピン留めでサーバーの資源を使い切られるおそれ",
+   "todo": "filecoin-pinを使っているなら1.1.1に更新",
+   "kev": false,
+   "at": "2026-11-06"
+  },
   "GHSA-m64x-33q8-m5h7": {
    "level": "check",
    "reason": "GitPythonのparse_actor_and_date()で二乗時間のバックトラック。HIGH",
@@ -2368,13 +2382,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-vcw3-r3fx-j444": {
-   "level": "check",
-   "reason": "AjentiにRCEのおそれ。HIGH",
-   "todo": "aj 2.2.13に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-vfmf-q6x9-cw96": {
    "level": "check",
    "reason": "GravのdetectXss回避で格納型XSS。CRITICAL",
@@ -2582,13 +2589,6 @@
    "level": "check",
    "reason": "Gravでadmin.users権限者がスーパー管理者に昇格。HIGH",
    "todo": "getgrav/grav 2.0.14に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-xjj6-f33q-929c": {
-   "level": "check",
-   "reason": "undiciで過剰なcontent-encodingの未処理エラーによりDoS。HIGH",
-   "todo": "undici 6.29.1/7.30.1/8.12.2に更新",
    "kev": false,
    "at": "2026-11-02"
   },
