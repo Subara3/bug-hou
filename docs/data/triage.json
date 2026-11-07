@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-06T00:45:51Z",
+ "updated_at": "2026-11-07T00:45:59Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -92,6 +92,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "CVE-2026-119170": {
+   "level": "check",
+   "reason": "OpenSSLをFIPSモードで使うPython 3.14.10だけが影響。hashlibの制限が効かなくなる",
+   "todo": "3.14.10をFIPSモードで使っているか確認する",
+   "kev": false,
+   "at": "2026-11-07"
   },
   "CVE-2026-119977": {
    "level": "action",
