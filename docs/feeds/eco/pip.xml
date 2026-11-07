@@ -4,8 +4,29 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/pip.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/pip.xml</id>
-<updated>2026-11-05T00:00:00Z</updated>
+<updated>2026-11-07T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: GeoNode has Stored XSS in Documents metadata abstract field (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r4hm-p9f9-fj9v"/>
+<id>urn:bug-hou:GHSA-r4hm-p9f9-fj9v</id>
+<updated>2026-11-07T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GeoNode &amp;lt; 5.0.3 → 5.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-55649&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GeoNode has Unrestricted File Upload (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-fqpv-mq26-pr4j"/>
+<id>urn:bug-hou:GHSA-fqpv-mq26-pr4j</id>
+<updated>2026-11-07T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GeoNode &amp;lt;= 5.0.2 → 5.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-46429&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GeoNode has OS command injection via uploaded file layer name (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9fpx-fr6j-2vh6"/>
+<id>urn:bug-hou:GHSA-9fpx-fr6j-2vh6</id>
+<updated>2026-11-07T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GeoNode &amp;lt; 5.1.0 → 5.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-33050&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] Python: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-64vx-6h2c-rjh7"/>
@@ -96,13 +117,6 @@
 <id>urn:bug-hou:GHSA-m64x-33q8-m5h7</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのparse_actor_and_date()で二乗時間のバックトラック。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-m64x-33q8-m5h7&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Agno: Arbitrary code execution via `eval()` on `field_type` in `FunctionCall` (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-m4w4-3r8h-jw98"/>
-<id>urn:bug-hou:GHSA-m4w4-3r8h-jw98</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AgnoのFunctionCallでfield_typeのeval()により任意コード実行。CRITICAL&lt;br&gt;→ agno 2.3.24に更新&lt;/p&gt;&lt;p&gt;agno &amp;lt; 2.3.24 → 2.3.24&lt;/p&gt;&lt;p&gt;CVE-2026-35002&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts (LOW)</title>
@@ -238,13 +252,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; AuthlibのJWS JSONの読み込みで空の署名の検証に不備&lt;br&gt;→ authlibを1.9.0以降に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Python: MONAILabel Server Crash and Silent Inference Corruption via Crafted DICOM (pydicom DS/IS Validation Bypass) (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-6hp3-vr39-rqw8"/>
-<id>urn:bug-hou:GHSA-6hp3-vr39-rqw8</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MONAILabelで細工DICOMによりサーバー停止と推論結果の改ざん。CRITICAL&lt;br&gt;→ monai 1.6.1に更新&lt;/p&gt;&lt;p&gt;monai &amp;lt; 1.6.1 → 1.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-48705&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] Python: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-45c3-73f7-pv4m"/>
 <id>urn:bug-hou:GHSA-45c3-73f7-pv4m</id>
@@ -257,13 +264,6 @@
 <id>urn:bug-hou:GHSA-3w55-933p-8pv5</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Strands Agentsのセッション保存でシンボリックリンクによるローカル権限昇格&lt;br&gt;→ strands-agents 1.48.0に更新&lt;/p&gt;&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-3w55-933p-8pv5&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: OAuthLib: Bearer token can be retrieved as long as client knows a valid client ID for device workflow (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-3jp2-3mrg-2vxc"/>
-<id>urn:bug-hou:GHSA-3jp2-3mrg-2vxc</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; OAuthLibのデバイスフローで有効なクライアントIDだけでトークン取得。HIGH&lt;br&gt;→ oauthlib 4.0.0に更新&lt;/p&gt;&lt;p&gt;oauthlib &amp;gt;= 3.3.0, &amp;lt; 4.0.1 → 4.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-49272&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: Datadog dd-trace-py: ReDoS in URL query string obfuscation (HIGH)</title>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜GeoNode（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/geonode.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/geonode.xml</id>
+<updated>2026-11-07T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: GeoNode has Stored XSS in Documents metadata abstract field (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r4hm-p9f9-fj9v"/>
+<id>urn:bug-hou:GHSA-r4hm-p9f9-fj9v</id>
+<updated>2026-11-07T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GeoNode &amp;lt; 5.0.3 → 5.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-55649&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: GeoNode has Unrestricted File Upload (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-fqpv-mq26-pr4j"/>
+<id>urn:bug-hou:GHSA-fqpv-mq26-pr4j</id>
+<updated>2026-11-07T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GeoNode &amp;lt;= 5.0.2 → 5.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-46429&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: GeoNode has OS command injection via uploaded file layer name (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9fpx-fr6j-2vh6"/>
+<id>urn:bug-hou:GHSA-9fpx-fr6j-2vh6</id>
+<updated>2026-11-07T00:00:00Z</updated>
+<content type="html">&lt;p&gt;GeoNode &amp;lt; 5.1.0 → 5.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-33050&lt;/p&gt;</content>
+</entry>
+</feed>

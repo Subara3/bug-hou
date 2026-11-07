@@ -1,5 +1,62 @@
 [
  {
+  "id": "GHSA-r4hm-p9f9-fj9v",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-55649",
+  "summary": "GeoNode has Stored XSS in Documents metadata abstract field",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:N",
+  "published": "2026-11-06",
+  "url": "https://github.com/advisories/GHSA-r4hm-p9f9-fj9v",
+  "kev": false,
+  "packages": [
+   {
+    "name": "GeoNode",
+    "range": "< 5.0.3",
+    "fixed": "5.0.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-fqpv-mq26-pr4j",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-46429",
+  "summary": "GeoNode has Unrestricted File Upload",
+  "severity": "MEDIUM",
+  "score": 5.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L",
+  "published": "2026-11-06",
+  "url": "https://github.com/advisories/GHSA-fqpv-mq26-pr4j",
+  "kev": false,
+  "packages": [
+   {
+    "name": "GeoNode",
+    "range": "<= 5.0.2",
+    "fixed": "5.0.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9fpx-fr6j-2vh6",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-33050",
+  "summary": "GeoNode has OS command injection via uploaded file layer name",
+  "severity": "HIGH",
+  "score": 8.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-06",
+  "url": "https://github.com/advisories/GHSA-9fpx-fr6j-2vh6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "GeoNode",
+    "range": "< 5.1.0",
+    "fixed": "5.1.0"
+   }
+  ]
+ },
+ {
   "id": "GHSA-m5ph-mmg5-6w5h",
   "ecosystem": "npm",
   "cve": "CVE-2026-62300",

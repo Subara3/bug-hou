@@ -137,6 +137,7 @@
 "filelock": "pkg/pip/filelock.xml",
 "flexible-graphrag": "pkg/pip/flexible-graphrag.xml",
 "fpdf2": "pkg/pip/fpdf2.xml",
+"geonode": "pkg/pip/geonode.xml",
 "gitpython": "pkg/pip/gitpython.xml",
 "graphql-core": "pkg/pip/graphql-core.xml",
 "hydra-core": "pkg/pip/hydra-core.xml",

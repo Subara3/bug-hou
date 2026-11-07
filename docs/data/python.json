@@ -7,7 +7,7 @@
   {
    "id": "CVE-2026-119170",
    "published": "2026-11-06",
-   "modified": "2026-11-06",
+   "modified": "2026-11-07",
    "status": "Awaiting Analysis",
    "score": 8.2,
    "severity": "HIGH",
@@ -263,6 +263,66 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-r4hm-p9f9-fj9v",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-55649",
+   "summary": "GeoNode has Stored XSS in Documents metadata abstract field",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:L/A:N",
+   "published": "2026-11-06",
+   "url": "https://github.com/advisories/GHSA-r4hm-p9f9-fj9v",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GeoNode",
+     "range": "< 5.0.3",
+     "fixed": "5.0.3"
+    }
+   ],
+   "first_seen": "2026-11-07"
+  },
+  {
+   "id": "GHSA-fqpv-mq26-pr4j",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-46429",
+   "summary": "GeoNode has Unrestricted File Upload",
+   "severity": "MEDIUM",
+   "score": 5.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L",
+   "published": "2026-11-06",
+   "url": "https://github.com/advisories/GHSA-fqpv-mq26-pr4j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GeoNode",
+     "range": "<= 5.0.2",
+     "fixed": "5.0.3"
+    }
+   ],
+   "first_seen": "2026-11-07"
+  },
+  {
+   "id": "GHSA-9fpx-fr6j-2vh6",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-33050",
+   "summary": "GeoNode has OS command injection via uploaded file layer name",
+   "severity": "HIGH",
+   "score": 8.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-06",
+   "url": "https://github.com/advisories/GHSA-9fpx-fr6j-2vh6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "GeoNode",
+     "range": "< 5.1.0",
+     "fixed": "5.1.0"
+    }
+   ],
+   "first_seen": "2026-11-07"
+  },
   {
    "id": "GHSA-64vx-6h2c-rjh7",
    "ecosystem": "pip",
@@ -2264,66 +2324,6 @@
      "name": "fpdf2",
      "range": "<= 2.8.7",
      "fixed": "2.8.8"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-m4w4-3r8h-jw98",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-35002",
-   "summary": "Agno: Arbitrary code execution via `eval()` on `field_type` in `FunctionCall`",
-   "severity": "CRITICAL",
-   "score": 9.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-m4w4-3r8h-jw98",
-   "kev": false,
-   "packages": [
-    {
-     "name": "agno",
-     "range": "< 2.3.24",
-     "fixed": "2.3.24"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-3jp2-3mrg-2vxc",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-49272",
-   "summary": "OAuthLib: Bearer token can be retrieved as long as client knows a valid client ID for device workflow",
-   "severity": "HIGH",
-   "score": 8.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-3jp2-3mrg-2vxc",
-   "kev": false,
-   "packages": [
-    {
-     "name": "oauthlib",
-     "range": ">= 3.3.0, < 4.0.1",
-     "fixed": "4.0.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-6hp3-vr39-rqw8",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-48705",
-   "summary": "MONAILabel Server Crash and Silent Inference Corruption via Crafted DICOM (pydicom DS/IS Validation Bypass)",
-   "severity": "CRITICAL",
-   "score": 9.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:L",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-6hp3-vr39-rqw8",
-   "kev": false,
-   "packages": [
-    {
-     "name": "monai",
-     "range": "< 1.6.1",
-     "fixed": "1.6.1"
     }
    ],
    "first_seen": "2026-11-02"
