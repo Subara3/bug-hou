@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-07T00:45:59Z",
+ "updated_at": "2026-11-07T06:46:19Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -661,13 +661,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-3jp2-3mrg-2vxc": {
-   "level": "check",
-   "reason": "OAuthLibのデバイスフローで有効なクライアントIDだけでトークン取得。HIGH",
-   "todo": "oauthlib 4.0.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-3jp5-3h47-28qf": {
    "level": "watch",
    "reason": "Semantic MediaWikiのSpecial:Ask表ヘッダーで反射型XSS。MEDIUM",
@@ -1053,13 +1046,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-6hp3-vr39-rqw8": {
-   "level": "check",
-   "reason": "MONAILabelで細工DICOMによりサーバー停止と推論結果の改ざん。CRITICAL",
-   "todo": "monai 1.6.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-6jp4-8v48-cc5v": {
    "level": "check",
    "reason": "Electrumで悪意あるサーバーが送信直後の取引を差替え。利用者の少ないCRITICAL",
@@ -1365,6 +1351,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-9fpx-fr6j-2vh6": {
+   "level": "check",
+   "reason": "GeoNodeでアップロードしたファイルのレイヤー名からOSコマンドを実行されるHIGH",
+   "todo": "GeoNodeを5.1.0以降に更新",
+   "kev": false,
+   "at": "2026-11-07"
+  },
   "GHSA-9gh4-xw24-9xh5": {
    "level": "watch",
    "reason": "OpenWISPのCRL APIが組織で絞られない。MEDIUM",
@@ -1611,6 +1604,13 @@
    "todo": "filelock 4.2.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-fqpv-mq26-pr4j": {
+   "level": "watch",
+   "reason": "GeoNodeのファイルアップロード制限不備でMEDIUM",
+   "todo": "GeoNodeを5.0.3以降に更新",
+   "kev": false,
+   "at": "2026-11-07"
   },
   "GHSA-frvg-qw88-hww9": {
    "level": "watch",
@@ -1917,13 +1917,6 @@
    "level": "watch",
    "reason": "ONNXのScan推論でNULL参照。MEDIUM",
    "todo": "onnx 1.22.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-m4w4-3r8h-jw98": {
-   "level": "check",
-   "reason": "AgnoのFunctionCallでfield_typeのeval()により任意コード実行。CRITICAL",
-   "todo": "agno 2.3.24に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2234,6 +2227,13 @@
    "todo": "code16/sharp 9.22.5に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-r4hm-p9f9-fj9v": {
+   "level": "watch",
+   "reason": "GeoNodeの文書メタデータ概要欄の保存型XSSでMEDIUM",
+   "todo": "GeoNodeを5.0.3以降に更新",
+   "kev": false,
+   "at": "2026-11-07"
   },
   "GHSA-r4j5-9xpp-3985": {
    "level": "watch",
