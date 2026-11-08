@@ -1563,14 +1563,6 @@
   },
   "checked": "2026-11-02"
  },
- "CVE-2026-18503": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "no",
-   "impact": "partial"
-  },
-  "checked": "2026-11-02"
- },
  "CVE-2026-19445": {
   "ssvc": null,
   "checked": "2026-11-08"

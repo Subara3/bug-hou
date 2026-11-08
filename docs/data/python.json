@@ -243,23 +243,6 @@
     "CWE-522"
    ],
    "first_seen": "0000-00-00"
-  },
-  {
-   "id": "CVE-2026-18503",
-   "published": "2026-08-10",
-   "modified": "2026-10-23",
-   "status": "Awaiting Analysis",
-   "score": 2.4,
-   "severity": "LOW",
-   "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-   "cvss": "4.0",
-   "desc": "Attacker-controlled CSV samples can trigger super-linear \nregular-expression work during dialect sniffing and consume significant \nCPU when applications pass unbounded input to csv.Sniffer.sniff().",
-   "kev": false,
-   "affects": [],
-   "cwe": [
-    "CWE-1176"
-   ],
-   "first_seen": "0000-00-00"
   }
  ],
  "ghsa": [
