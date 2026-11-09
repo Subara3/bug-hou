@@ -653,6 +653,46 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-44r8-3p76-84mw",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-94619",
+   "summary": "FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:L/A:L",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-44r8-3p76-84mw",
+   "kev": false,
+   "packages": [
+    {
+     "name": "filegator/filegator",
+     "range": "<= 7.14.4",
+     "fixed": "7.15.0"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-f74m-x83r-c4v4",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-94618",
+   "summary": "FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:L",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-f74m-x83r-c4v4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "filegator/filegator",
+     "range": "<= 7.14.4",
+     "fixed": "7.15.0"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
    "id": "GHSA-9vw2-f4vp-x7gf",
    "ecosystem": "composer",
    "cve": "CVE-2026-119193",
@@ -1617,7 +1657,7 @@
     {
      "name": "mongodb/mongodb",
      "range": ">= 1.1.0, < 1.21.5",
-     "fixed": "1.24.5"
+     "fixed": "1.21.5"
     },
     {
      "name": "mongodb/mongodb",
@@ -2943,46 +2983,6 @@
      "name": "getgrav/grav",
      "range": ">= 1.7.0, < 2.0.9",
      "fixed": "2.0.9"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-8h9x-89f2-m7x3",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-61449",
-   "summary": "Grav: Decompression-bomb size cap bypassed by forged ZIP size in ZipArchiver/Installer",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-8h9x-89f2-m7x3",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": "= 2.0.1",
-     "fixed": "2.0.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-ffmg-hfvg-jhg9",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-58657",
-   "summary": "Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav",
-   "severity": "MEDIUM",
-   "score": 4.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-16",
-   "url": "https://github.com/advisories/GHSA-ffmg-hfvg-jhg9",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": "= 2.0.0-rc.9",
-     "fixed": "2.0.0"
     }
    ],
    "first_seen": "2026-11-02"

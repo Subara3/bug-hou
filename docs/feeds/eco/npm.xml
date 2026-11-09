@@ -4,8 +4,57 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-05T00:00:00Z</updated>
+<updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h7c4-q426-7jh9"/>
+<id>urn:bug-hou:GHSA-h7c4-q426-7jh9</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.2 → 4.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-76893&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-cw2g-2vwq-88w6"/>
+<id>urn:bug-hou:GHSA-cw2g-2vwq-88w6</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63478&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9qw7-j9xw-fv9c"/>
+<id>urn:bug-hou:GHSA-9qw7-j9xw-fv9c</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63395&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-96wc-2m84-2cj7"/>
+<id>urn:bug-hou:GHSA-96wc-2m84-2cj7</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-6w3r-6hpr-hp6p"/>
+<id>urn:bug-hou:GHSA-6w3r-6hpr-hp6p</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ag-psd &amp;lt;= 31.0.0 → 31.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-63501&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4p8p-pjpq-2w7h"/>
+<id>urn:bug-hou:GHSA-4p8p-pjpq-2w7h</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt;= 4.3.0 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-76892&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-447x-qqwf-m7xq"/>
+<id>urn:bug-hou:GHSA-447x-qqwf-m7xq</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-63655&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: filecoin-pin: Unbounded DAG pinning can exhaust server resources (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-m5ph-mmg5-6w5h"/>
@@ -63,25 +112,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないパッケージ@enspirit/eloのCRITICAL。JS出力でサンドボックスを抜けてコード実行&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Node.js: MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-xcx6-jx8p-x3h5"/>
-<id>urn:bug-hou:GHSA-xcx6-jx8p-x3h5</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MSAL Nodeの認可コードフローでパラメータが攻撃者の宛先に漏洩。HIGH&lt;br&gt;→ @azure/msal-node 7.1.0に更新&lt;/p&gt;&lt;p&gt;@azure/msal-node &amp;gt;= 5.0.0-beta.0, &amp;lt; 7.1.0 → 7.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-109461&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] Node.js: dd-trace: ReDOS in URL query string obfuscation (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-x94g-w73q-hpcw"/>
 <id>urn:bug-hou:GHSA-x94g-w73q-hpcw</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dd-traceのURLクエリ難読化処理でReDoS。HIGH&lt;br&gt;→ dd-trace 5.131.1/6.20.1に更新&lt;/p&gt;&lt;p&gt;dd-trace &amp;gt;= 2.0.0, &amp;lt; 5.131.1 → 5.131.1, dd-trace &amp;gt;= 6.0.0, &amp;lt; 6.20.1 → 6.20.1&lt;/p&gt;&lt;p&gt;CVE-2026-116693&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Satori-generated SVG has improper escaping (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-wx4j-mvgx-mqwp"/>
-<id>urn:bug-hou:GHSA-wx4j-mvgx-mqwp</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Satoriが生成するSVGのエスケープが不適切。MEDIUM&lt;br&gt;→ satori 0.33.5に更新&lt;/p&gt;&lt;p&gt;satori &amp;gt;= 0.0.27, &amp;lt; 0.33.5 → 0.33.5&lt;/p&gt;&lt;p&gt;CVE-2026-94545&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: CKEditor: Cross-site scripting (XSS) in the engine package (LOW)</title>
@@ -112,32 +147,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; undiciでTLS 1.2の証明書変更を伴う再ネゴシエーションによりDoS。HIGH&lt;br&gt;→ undici 6.29.1/7.30.1/8.12.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 4.2.1, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-87018&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Node.js: Ghost: Authorization Bypass in Comment Like Feature (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-qrh6-cwg3-343x"/>
-<id>urn:bug-hou:GHSA-qrh6-cwg3-343x</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Ghostのコメントいいね機能で認可回避。MEDIUM&lt;br&gt;→ ghost 6.44.1に更新&lt;/p&gt;&lt;p&gt;ghost &amp;gt;= 5.9.0, &amp;lt; 6.44.1 → 6.44.1&lt;/p&gt;&lt;p&gt;CVE-2026-103288&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] Node.js: undici WebSocket client vulnerable to Denial of Service via failed HTTP/2 handshake (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-qq8j-7v2v-3rwp"/>
 <id>urn:bug-hou:GHSA-qq8j-7v2v-3rwp</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; undiciのWebSocketクライアントでHTTP/2ハンドシェイク失敗によりDoS。HIGH&lt;br&gt;→ undici 8.11.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 8.11.0, &amp;lt; 8.11.2 → 8.11.2&lt;/p&gt;&lt;p&gt;CVE-2026-109855&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: better-auth: Device login approval does not show the requesting client or permissions (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-q84f-53jg-9ppm"/>
-<id>urn:bug-hou:GHSA-q84f-53jg-9ppm</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; better-authのデバイスログイン承認で要求元や権限が表示されない。HIGH&lt;br&gt;→ better-auth 1.7.0-rc.3に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: dcmjs: DS/IS VALUE REPRESENTATION INPUT VALIDATION BYPASS (LOW)</title>
-<link href="https://github.com/advisories/GHSA-px68-xx5g-48q5"/>
-<id>urn:bug-hou:GHSA-px68-xx5g-48q5</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; dcmjsのDS/IS値の入力検証を回避。LOW&lt;br&gt;→ dcmjs 0.52.0に更新&lt;/p&gt;&lt;p&gt;dcmjs &amp;lt; 0.52.0 → 0.52.0&lt;/p&gt;&lt;p&gt;CVE-2026-46350&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: Highcharts Core: `javascript:` URL in an `xlink:href` attribute survives text filtering and reaches exported charts (HIGH)</title>
@@ -159,13 +173,6 @@
 <id>urn:bug-hou:GHSA-grj7-r4jv-pw9j</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highcharts DashboardsのchartConstructorが未検査の参照。HIGH&lt;br&gt;→ @highcharts/dashboards 4.2.2に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-118245&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Nodemailer: RFC 5322 comment inside an angle-bracket address is never stripped (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-g73g-hqqh-jr95"/>
-<id>urn:bug-hou:GHSA-g73g-hqqh-jr95</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nodemailerで山括弧内のRFC 5322コメントが除去されない。MEDIUM&lt;br&gt;→ nodemailer 10.0.13に更新&lt;/p&gt;&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-g73g-hqqh-jr95&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: MCP TypeScript SDK: HTTP server transports and handlers did not limit request body size or JSON-RPC batch length (HIGH)</title>
@@ -250,13 +257,6 @@
 <id>urn:bug-hou:GHSA-4mfg-r38w-w8fg</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mcp-sanitizerのURL検査をポート指定やIPv6で回避しSSRF。HIGH&lt;br&gt;→ mcp-sanitizer 1.4.0に更新&lt;/p&gt;&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-4mfg-r38w-w8fg&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Nodemailer: Quadratic (O(n^2)) SMTP client reply parsing lets a malicious server or MITM cause a pre-auth remote denial of service (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-4g23-2xm8-66gc"/>
-<id>urn:bug-hou:GHSA-4g23-2xm8-66gc</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; NodemailerのSMTP応答解析が二乗時間で悪意あるサーバーからDoS。MEDIUM&lt;br&gt;→ nodemailer 10.0.10に更新&lt;/p&gt;&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.9 → 10.0.10&lt;/p&gt;&lt;p&gt;GHSA-4g23-2xm8-66gc&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Nodemailer: Quadratic backtracking in SMTP AUTH mechanism detection regexes allows pre-auth remote denial of service (MEDIUM)</title>

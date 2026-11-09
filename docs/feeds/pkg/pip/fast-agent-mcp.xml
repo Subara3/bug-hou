@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜fast-agent-mcp（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/fast-agent-mcp.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/fast-agent-mcp.xml</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9vhv-g5hf-m7m7"/>
+<id>urn:bug-hou:GHSA-9vhv-g5hf-m7m7</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fast-agent-mcp &amp;lt;= 0.7.20 → 0.7.21&lt;/p&gt;&lt;p&gt;CVE-2026-102610&lt;/p&gt;</content>
+</entry>
+</feed>

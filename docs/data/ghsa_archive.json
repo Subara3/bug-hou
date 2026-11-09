@@ -1,5 +1,366 @@
 [
  {
+  "id": "GHSA-44r8-3p76-84mw",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-94619",
+  "summary": "FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:L/A:L",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-44r8-3p76-84mw",
+  "kev": false,
+  "packages": [
+   {
+    "name": "filegator/filegator",
+    "range": "<= 7.14.4",
+    "fixed": "7.15.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-f74m-x83r-c4v4",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-94618",
+  "summary": "FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive",
+  "severity": "MEDIUM",
+  "score": 5.4,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:L",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-f74m-x83r-c4v4",
+  "kev": false,
+  "packages": [
+   {
+    "name": "filegator/filegator",
+    "range": "<= 7.14.4",
+    "fixed": "7.15.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h7c4-q426-7jh9",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-76893",
+  "summary": "tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients",
+  "severity": "MEDIUM",
+  "score": 6.9,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-h7c4-q426-7jh9",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@tsparticles/mcp-server",
+    "range": "< 4.3.2",
+    "fixed": "4.3.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4p8p-pjpq-2w7h",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-76892",
+  "summary": "tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-4p8p-pjpq-2w7h",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@tsparticles/mcp-server",
+    "range": "<= 4.3.0",
+    "fixed": "4.3.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-447x-qqwf-m7xq",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63655",
+  "summary": "tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-447x-qqwf-m7xq",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@tsparticles/mcp-server",
+    "range": "< 4.3.1",
+    "fixed": "4.3.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6w3r-6hpr-hp6p",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63501",
+  "summary": "ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass)",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-6w3r-6hpr-hp6p",
+  "kev": false,
+  "packages": [
+   {
+    "name": "ag-psd",
+    "range": "<= 31.0.0",
+    "fixed": "31.0.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-cw2g-2vwq-88w6",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63478",
+  "summary": "isomorphic-git: Path traversal via a \"..\" tree-entry name writes files outside the working directory on clone/checkout",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-cw2g-2vwq-88w6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "isomorphic-git",
+    "range": "<= 1.38.5",
+    "fixed": "1.38.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-96wc-2m84-2cj7",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63475",
+  "summary": "isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS)",
+  "severity": "MEDIUM",
+  "score": 4.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-96wc-2m84-2cj7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "isomorphic-git",
+    "range": "<= 1.38.5",
+    "fixed": "1.38.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9qw7-j9xw-fv9c",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63395",
+  "summary": "isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE)",
+  "severity": "HIGH",
+  "score": 8.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-9qw7-j9xw-fv9c",
+  "kev": false,
+  "packages": [
+   {
+    "name": "isomorphic-git",
+    "range": "<= 1.38.5",
+    "fixed": "1.38.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-85gg-2gfq-q95m",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-87008",
+  "summary": "Code Graph RAG structural tools follow out-of-root symlinks",
+  "severity": "HIGH",
+  "score": 7.1,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-85gg-2gfq-q95m",
+  "kev": false,
+  "packages": [
+   {
+    "name": "code-graph-rag",
+    "range": "<= 0.0.586",
+    "fixed": "0.0.587"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-gj9m-f8ph-pmhr",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-102895",
+  "summary": "GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-gj9m-f8ph-pmhr",
+  "kev": true,
+  "packages": [
+   {
+    "name": "gpustack",
+    "range": "< 2.2.0",
+    "fixed": "2.2.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-cp25-j9x5-p5xm",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-103022",
+  "summary": "Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS)",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-cp25-j9x5-p5xm",
+  "kev": false,
+  "packages": [
+   {
+    "name": "urwid",
+    "range": "<= 4.0.6",
+    "fixed": "4.0.7"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9vhv-g5hf-m7m7",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-102610",
+  "summary": "fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution",
+  "severity": "MEDIUM",
+  "score": 6.4,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-9vhv-g5hf-m7m7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "fast-agent-mcp",
+    "range": "<= 0.7.20",
+    "fixed": "0.7.21"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-f42p-wjw5-97qh",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-102289",
+  "summary": "zizmor: Debug logging prints available GitHub credentials in cleartext",
+  "severity": "HIGH",
+  "score": 7.0,
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:N/VA:N/SC:H/SI:H/SA:H",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-f42p-wjw5-97qh",
+  "kev": false,
+  "packages": [
+   {
+    "name": "zizmor",
+    "range": "= 1.27.0",
+    "fixed": "1.28.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-vvr2-h2jp-838m",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77604",
+  "summary": "Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-vvr2-h2jp-838m",
+  "kev": false,
+  "packages": [
+   {
+    "name": "code-graph-rag",
+    "range": "< 0.0.345",
+    "fixed": "0.0.345"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-p2mm-64f6-gmpp",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-63471",
+  "summary": "fastapi-code-generator: Import-time RCE via route path -> unescaped @app.get('...') decorator",
+  "severity": "CRITICAL",
+  "score": 9.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-p2mm-64f6-gmpp",
+  "kev": false,
+  "packages": [
+   {
+    "name": "fastapi-code-generator",
+    "range": "< 0.8.1",
+    "fixed": "0.8.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6xmv-cjr5-w3q8",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-63469",
+  "summary": "fastapi-code-generator: Import-time RCE via response status-code key -> unescaped @app.get(..., responses={...}) dict",
+  "severity": "CRITICAL",
+  "score": 9.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-6xmv-cjr5-w3q8",
+  "kev": false,
+  "packages": [
+   {
+    "name": "fastapi-code-generator",
+    "range": "< 0.8.1",
+    "fixed": "0.8.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h667-4jj2-cgv4",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-63470",
+  "summary": "fastapi-code-generator: Call-time RCE via operation summary -> unescaped route-handler docstring",
+  "severity": "CRITICAL",
+  "score": 9.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-h667-4jj2-cgv4",
+  "kev": false,
+  "packages": [
+   {
+    "name": "fastapi-code-generator",
+    "range": "< 0.8.1",
+    "fixed": "0.8.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-w7qv-268h-9h3f",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-63417",
+  "summary": "Logging Redactor: PII data in str/repr of non primitive objects was not being redacted",
+  "severity": "HIGH",
+  "score": 8.2,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-w7qv-268h-9h3f",
+  "kev": false,
+  "packages": [
+   {
+    "name": "loggingredactor",
+    "range": "< 0.0.7",
+    "fixed": "0.0.7"
+   }
+  ]
+ },
+ {
   "id": "GHSA-r4hm-p9f9-fj9v",
   "ecosystem": "pip",
   "cve": "CVE-2026-55649",
@@ -849,7 +1210,7 @@
  {
   "id": "GHSA-4xm8-rg9h-jhq2",
   "ecosystem": "npm",
-  "cve": null,
+  "cve": "CVE-2026-123807",
   "summary": "Signal K resources API path traversal can disclose the JWT signing secret and enable remote code execution",
   "severity": "CRITICAL",
   "score": 9.8,
@@ -5471,7 +5832,7 @@
    {
     "name": "mongodb/mongodb",
     "range": ">= 1.1.0, < 1.21.5",
-    "fixed": "1.24.5"
+    "fixed": "1.21.5"
    },
    {
     "name": "mongodb/mongodb",

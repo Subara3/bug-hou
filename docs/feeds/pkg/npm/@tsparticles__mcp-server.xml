@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@tsparticles/mcp-server（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@tsparticles__mcp-server.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@tsparticles__mcp-server.xml</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h7c4-q426-7jh9"/>
+<id>urn:bug-hou:GHSA-h7c4-q426-7jh9</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.2 → 4.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-76893&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4p8p-pjpq-2w7h"/>
+<id>urn:bug-hou:GHSA-4p8p-pjpq-2w7h</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt;= 4.3.0 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-76892&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-447x-qqwf-m7xq"/>
+<id>urn:bug-hou:GHSA-447x-qqwf-m7xq</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-63655&lt;/p&gt;</content>
+</entry>
+</feed>

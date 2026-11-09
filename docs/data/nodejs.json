@@ -52,6 +52,146 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-h7c4-q426-7jh9",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-76893",
+   "summary": "tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-h7c4-q426-7jh9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@tsparticles/mcp-server",
+     "range": "< 4.3.2",
+     "fixed": "4.3.2"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-4p8p-pjpq-2w7h",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-76892",
+   "summary": "tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-4p8p-pjpq-2w7h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@tsparticles/mcp-server",
+     "range": "<= 4.3.0",
+     "fixed": "4.3.1"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-447x-qqwf-m7xq",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63655",
+   "summary": "tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-447x-qqwf-m7xq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@tsparticles/mcp-server",
+     "range": "< 4.3.1",
+     "fixed": "4.3.1"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-6w3r-6hpr-hp6p",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63501",
+   "summary": "ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass)",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-6w3r-6hpr-hp6p",
+   "kev": false,
+   "packages": [
+    {
+     "name": "ag-psd",
+     "range": "<= 31.0.0",
+     "fixed": "31.0.1"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-cw2g-2vwq-88w6",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63478",
+   "summary": "isomorphic-git: Path traversal via a \"..\" tree-entry name writes files outside the working directory on clone/checkout",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-cw2g-2vwq-88w6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "isomorphic-git",
+     "range": "<= 1.38.5",
+     "fixed": "1.38.6"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-96wc-2m84-2cj7",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63475",
+   "summary": "isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS)",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-96wc-2m84-2cj7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "isomorphic-git",
+     "range": "<= 1.38.5",
+     "fixed": "1.38.6"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-9qw7-j9xw-fv9c",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63395",
+   "summary": "isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE)",
+   "severity": "HIGH",
+   "score": 8.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-9qw7-j9xw-fv9c",
+   "kev": false,
+   "packages": [
+    {
+     "name": "isomorphic-git",
+     "range": "<= 1.38.5",
+     "fixed": "1.38.6"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
    "id": "GHSA-m5ph-mmg5-6w5h",
    "ecosystem": "npm",
    "cve": "CVE-2026-62300",
@@ -684,7 +824,7 @@
   {
    "id": "GHSA-4xm8-rg9h-jhq2",
    "ecosystem": "npm",
-   "cve": null,
+   "cve": "CVE-2026-123807",
    "summary": "Signal K resources API path traversal can disclose the JWT signing secret and enable remote code execution",
    "severity": "CRITICAL",
    "score": 9.8,
@@ -2347,146 +2487,6 @@
      "name": "nodemailer",
      "range": ">= 3.0.0, <= 10.0.12",
      "fixed": "10.0.13"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-g73g-hqqh-jr95",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "Nodemailer: RFC 5322 comment inside an angle-bracket address is never stripped",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-g73g-hqqh-jr95",
-   "kev": false,
-   "packages": [
-    {
-     "name": "nodemailer",
-     "range": ">= 3.0.0, <= 10.0.12",
-     "fixed": "10.0.13"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-4g23-2xm8-66gc",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "Nodemailer: Quadratic (O(n^2)) SMTP client reply parsing lets a malicious server or MITM cause a pre-auth remote denial of service",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-4g23-2xm8-66gc",
-   "kev": false,
-   "packages": [
-    {
-     "name": "nodemailer",
-     "range": ">= 3.0.0, <= 10.0.9",
-     "fixed": "10.0.10"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-q84f-53jg-9ppm",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "better-auth: Device login approval does not show the requesting client or permissions",
-   "severity": "HIGH",
-   "score": 8.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-q84f-53jg-9ppm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "better-auth",
-     "range": ">= 1.3.8-beta.3, < 1.7.0-rc.3",
-     "fixed": "1.7.0-rc.3"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-wx4j-mvgx-mqwp",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-94545",
-   "summary": "Satori-generated SVG has improper escaping",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-wx4j-mvgx-mqwp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "satori",
-     "range": ">= 0.0.27, < 0.33.5",
-     "fixed": "0.33.5"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-qrh6-cwg3-343x",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-103288",
-   "summary": "Ghost: Authorization Bypass in Comment Like Feature",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-qrh6-cwg3-343x",
-   "kev": false,
-   "packages": [
-    {
-     "name": "ghost",
-     "range": ">= 5.9.0, < 6.44.1",
-     "fixed": "6.44.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-px68-xx5g-48q5",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-46350",
-   "summary": "dcmjs: DS/IS VALUE REPRESENTATION INPUT VALIDATION BYPASS",
-   "severity": "LOW",
-   "score": null,
-   "vector": null,
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-px68-xx5g-48q5",
-   "kev": false,
-   "packages": [
-    {
-     "name": "dcmjs",
-     "range": "< 0.52.0",
-     "fixed": "0.52.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-xcx6-jx8p-x3h5",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-109461",
-   "summary": "MSAL Node authorization code flow may disclose parameters to an attacker-controlled endpoint",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-23",
-   "url": "https://github.com/advisories/GHSA-xcx6-jx8p-x3h5",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@azure/msal-node",
-     "range": ">= 5.0.0-beta.0, < 7.1.0",
-     "fixed": "7.1.0"
     }
    ],
    "first_seen": "2026-11-02"

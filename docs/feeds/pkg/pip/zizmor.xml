@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜zizmor（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/zizmor.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/zizmor.xml</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: zizmor: Debug logging prints available GitHub credentials in cleartext (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-f42p-wjw5-97qh"/>
+<id>urn:bug-hou:GHSA-f42p-wjw5-97qh</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;zizmor = 1.27.0 → 1.28.0&lt;/p&gt;&lt;p&gt;CVE-2026-102289&lt;/p&gt;</content>
+</entry>
+</feed>

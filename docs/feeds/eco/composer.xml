@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/composer.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/composer.xml</id>
-<updated>2026-11-02T00:00:00Z</updated>
+<updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-f74m-x83r-c4v4"/>
+<id>urn:bug-hou:GHSA-f74m-x83r-c4v4</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94618&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-44r8-3p76-84mw"/>
+<id>urn:bug-hou:GHSA-44r8-3p76-84mw</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] PHP: Grav: config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xjw5-q542-3vmr"/>
@@ -154,13 +168,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Chamilo LMSのCStudioアップロードで認証なしRCE。CRITICAL&lt;br&gt;→ chamilo-lms 2.0.1に更新&lt;/p&gt;&lt;p&gt;chamilo/chamilo-lms &amp;lt;= 2.0.0 → 2.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-45140&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] PHP: Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-ffmg-hfvg-jhg9"/>
-<id>urn:bug-hou:GHSA-ffmg-hfvg-jhg9</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Gravの画像resize()で格納型CSS注入。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.0に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.0-rc.9 → 2.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-58657&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] PHP: Grav: Blueprint dynamic-data bare-function branch is denylist-gated and omits error_log, giving arbitrary file write (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-f8wv-xp27-6gq7"/>
 <id>urn:bug-hou:GHSA-f8wv-xp27-6gq7</id>
@@ -194,13 +201,6 @@
 <id>urn:bug-hou:GHSA-9ccq-2jfg-qw33</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GravのUri::referrer()で前方一致によるOrigin検証回避。LOW&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72702&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Grav: Decompression-bomb size cap bypassed by forged ZIP size in ZipArchiver/Installer (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-8h9x-89f2-m7x3"/>
-<id>urn:bug-hou:GHSA-8h9x-89f2-m7x3</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GravのZIP展開で偽装サイズにより解凍爆弾の上限を回避。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.2に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.1 → 2.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-61449&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Semantic MediaWiki affected by Special:Ask table `sep` parameter reflected XSS (MEDIUM)</title>

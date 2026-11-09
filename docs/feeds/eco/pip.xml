@@ -4,8 +4,78 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/pip.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/pip.xml</id>
-<updated>2026-11-07T00:00:00Z</updated>
+<updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: Logging Redactor: PII data in str/repr of non primitive objects was not being redacted (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-w7qv-268h-9h3f"/>
+<id>urn:bug-hou:GHSA-w7qv-268h-9h3f</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;loggingredactor &amp;lt; 0.0.7 → 0.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-63417&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-vvr2-h2jp-838m"/>
+<id>urn:bug-hou:GHSA-vvr2-h2jp-838m</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;code-graph-rag &amp;lt; 0.0.345 → 0.0.345&lt;/p&gt;&lt;p&gt;CVE-2026-77604&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: fastapi-code-generator: Import-time RCE via route path -&gt; unescaped @app.get('...') decorator (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-p2mm-64f6-gmpp"/>
+<id>urn:bug-hou:GHSA-p2mm-64f6-gmpp</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63471&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: fastapi-code-generator: Call-time RCE via operation summary -&gt; unescaped route-handler docstring (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-h667-4jj2-cgv4"/>
+<id>urn:bug-hou:GHSA-h667-4jj2-cgv4</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63470&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin (CRITICAL) ⚠KEV</title>
+<link href="https://github.com/advisories/GHSA-gj9m-f8ph-pmhr"/>
+<id>urn:bug-hou:GHSA-gj9m-f8ph-pmhr</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;gpustack &amp;lt; 2.2.0 → 2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-102895&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: zizmor: Debug logging prints available GitHub credentials in cleartext (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-f42p-wjw5-97qh"/>
+<id>urn:bug-hou:GHSA-f42p-wjw5-97qh</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;zizmor = 1.27.0 → 1.28.0&lt;/p&gt;&lt;p&gt;CVE-2026-102289&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-cp25-j9x5-p5xm"/>
+<id>urn:bug-hou:GHSA-cp25-j9x5-p5xm</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;urwid &amp;lt;= 4.0.6 → 4.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-103022&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9vhv-g5hf-m7m7"/>
+<id>urn:bug-hou:GHSA-9vhv-g5hf-m7m7</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fast-agent-mcp &amp;lt;= 0.7.20 → 0.7.21&lt;/p&gt;&lt;p&gt;CVE-2026-102610&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Code Graph RAG structural tools follow out-of-root symlinks (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-85gg-2gfq-q95m"/>
+<id>urn:bug-hou:GHSA-85gg-2gfq-q95m</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;code-graph-rag &amp;lt;= 0.0.586 → 0.0.587&lt;/p&gt;&lt;p&gt;CVE-2026-87008&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: fastapi-code-generator: Import-time RCE via response status-code key -&gt; unescaped @app.get(..., responses={...}) dict (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-6xmv-cjr5-w3q8"/>
+<id>urn:bug-hou:GHSA-6xmv-cjr5-w3q8</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63469&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Python: GeoNode has Stored XSS in Documents metadata abstract field (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r4hm-p9f9-fj9v"/>
@@ -49,13 +119,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibのJARで未検証のrequest_uriを取得しSSRF。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.6.0, &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114620&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Python: fpdf2: Exponential SVG '&lt;use&gt;' expansion causes CPU and memory exhaustion in 'FPDF.image()' (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-wqw6-wpr3-45rh"/>
-<id>urn:bug-hou:GHSA-wqw6-wpr3-45rh</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; fpdf2のSVG &amp;lt;use&amp;gt;の指数的展開でCPU・メモリ枯渇。MEDIUM&lt;br&gt;→ fpdf2 2.8.8に更新&lt;/p&gt;&lt;p&gt;fpdf2 &amp;gt;= 2.5.0, &amp;lt; 2.8.8 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114610&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] Python: Hydra legacy target blacklist permits unsafe PyYAML loading (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-wf6j-7hvr-gr93"/>
 <id>urn:bug-hou:GHSA-wf6j-7hvr-gr93</id>
@@ -84,20 +147,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MCP Python SDKのクライアントがサーバー指定の$ref URLを取得。MEDIUM&lt;br&gt;→ mcp 1.30.0/2.2.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116686&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Python: fpdf2 implicitly loads external URLs and local image paths when rendering attacker-controlled content (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-rw7v-4hrq-x6r9"/>
-<id>urn:bug-hou:GHSA-rw7v-4hrq-x6r9</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; fpdf2が攻撃者のコンテンツから外部URLやローカル画像を読込。MEDIUM&lt;br&gt;→ fpdf2 2.8.8に更新&lt;/p&gt;&lt;p&gt;fpdf2 &amp;lt;= 2.8.7 → 2.8.8&lt;/p&gt;&lt;p&gt;CVE-2026-114609&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Rembg: Unauthenticated SAM model injection permits local-file disclosure through malicious ONNX graphs (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-qr6x-7v33-6qmg"/>
-<id>urn:bug-hou:GHSA-qr6x-7v33-6qmg</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Rembgで認証なしのSAMモデル注入からローカルファイル漏洩。HIGH&lt;br&gt;→ rembg 2.0.82に更新&lt;/p&gt;&lt;p&gt;rembg &amp;lt; 2.0.82 → 2.0.82&lt;/p&gt;&lt;p&gt;CVE-2026-115924&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Python: Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q686-2qmg-hqc7"/>
 <id>urn:bug-hou:GHSA-q686-2qmg-hqc7</id>
@@ -124,27 +173,6 @@
 <id>urn:bug-hou:GHSA-jj7h-c3hg-m23x</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Authlibのループバック例外をuserinfoで回避し平文HTTP送信。LOW&lt;br&gt;→ authlib 1.8.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.7.2 → 1.8.0&lt;/p&gt;&lt;p&gt;CVE-2026-114614&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: Twisted: DNS Response Spoofing in twisted.names Due to Missing Source Address Validation (LOW)</title>
-<link href="https://github.com/advisories/GHSA-jj36-9pvh-vj5r"/>
-<id>urn:bug-hou:GHSA-jj36-9pvh-vj5r</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Twistedのtwisted.namesで送信元未検証によりDNS応答を偽装。LOW&lt;br&gt;→ Twisted 26.10.0rc1に更新&lt;/p&gt;&lt;p&gt;Twisted &amp;lt;= 26.4.0 → 26.10.0rc1&lt;/p&gt;&lt;p&gt;CVE-2026-83813&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: MessagePack: Unbounded memory leak in msgpack C extension on strict_map_key validation failure (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-j586-36cw-2gc2"/>
-<id>urn:bug-hou:GHSA-j586-36cw-2gc2</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; msgpackのC拡張でstrict_map_key検証失敗時にメモリリーク。HIGH&lt;br&gt;→ msgpack 1.2.3に更新&lt;/p&gt;&lt;p&gt;msgpack &amp;lt; 1.2.3 → 1.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-114613&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: NLTK: WekaClassifier passes an unvalidated caller-controlled model path to the weka JVM, bypassing nltk.pathsec containment (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-j456-xh4h-cpf2"/>
-<id>urn:bug-hou:GHSA-j456-xh4h-cpf2</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NLTKのWekaClassifierが未検証のモデルパスを渡しpathsecを回避。HIGH&lt;br&gt;→ nltk 3.10.4に更新&lt;/p&gt;&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-j456-xh4h-cpf2&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: LiteLLM vulnerable to reflected XSS in /sso/debug/callback (MEDIUM)</title>
@@ -180,13 +208,6 @@
 <id>urn:bug-hou:GHSA-fx3j-rwgx-fr94</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GitPythonで細工した.gitmodulesから環境変数が漏洩。MEDIUM&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-fx3j-rwgx-fr94&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: vllm p2p never connected zmq_exhaustion (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-frvg-qw88-hww9"/>
-<id>urn:bug-hou:GHSA-frvg-qw88-hww9</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMのp2p接続でzmqが枯渇。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-94624&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: Authlib: Default JWT bearer grant accepts assertions for the wrong audience (MEDIUM)</title>
@@ -231,25 +252,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Authlibのアルゴリズム混同対策が不完全でHMAC署名を偽造可能。HIGH&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.3.1, &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114615&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Python: LiteLLM: Privilege Escalation to Proxy Admin via Cross-Domain Reuse of the Salt Key (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-7hp6-4w63-5g45"/>
-<id>urn:bug-hou:GHSA-7hp6-4w63-5g45</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; LiteLLMでソルト鍵の流用によりプロキシ管理者に権限昇格。HIGH&lt;br&gt;→ litellm 1.100.4などに更新&lt;/p&gt;&lt;p&gt;litellm &amp;gt;= 1.91.0, &amp;lt; 1.100.4 → 1.100.4, litellm &amp;gt;= 1.101.0, &amp;lt; 1.101.3 → 1.101.3, litellm &amp;gt;= 1.102.0, &amp;lt; 1.102.2 → 1.102.2, litellm &amp;gt;= 1.103.0, &amp;lt; 1.103.1 → 1.103.1, litellm &amp;gt;= 1.104.0rc1, &amp;lt; 1.104.0rc2 → 1.104.0rc2&lt;/p&gt;&lt;p&gt;CVE-2026-114612&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Python: Strands Agents: Default FileSessionManager storage is world-readable on shared systems (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-763v-5pjm-fx36"/>
 <id>urn:bug-hou:GHSA-763v-5pjm-fx36</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Strands Agentsのセッション保存が共有環境で全員に読取可能。MEDIUM&lt;br&gt;→ strands-agents 1.48.0に更新&lt;/p&gt;&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-763v-5pjm-fx36&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要対応] Python: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-6v38-4h7w-rj9h"/>
-<id>urn:bug-hou:GHSA-6v38-4h7w-rj9h</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; AuthlibのJWS JSONの読み込みで空の署名の検証に不備&lt;br&gt;→ authlibを1.9.0以降に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>
@@ -278,13 +285,6 @@
 <id>urn:bug-hou:GHSA-23mf-xhv8-69c2</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのcheckout()でブランチ名から任意ファイル読取。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-23mf-xhv8-69c2&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: Pylint: Arbitrary code execution via pickle deserialization of the stats cache in PYLINT_HOME (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-22qq-2fwx-7p67"/>
-<id>urn:bug-hou:GHSA-22qq-2fwx-7p67</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Pylintの統計キャッシュのpickle読込で任意コード実行。MEDIUM&lt;br&gt;→ pylint 4.0.9に更新&lt;/p&gt;&lt;p&gt;pylint &amp;lt; 4.0.9 → 4.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-114608&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: pypdf has possible large memory usage when parsing cross-reference streams (HIGH)</title>

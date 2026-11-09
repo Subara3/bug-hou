@@ -47,6 +47,10 @@
   },
   "checked": "2026-11-09"
  },
+ "CVE-2026-102289": {
+  "ssvc": null,
+  "checked": "2026-11-09"
+ },
  "CVE-2026-102601": {
   "ssvc": {
    "exploitation": "poc",
@@ -55,12 +59,20 @@
   },
   "checked": "2026-11-09"
  },
- "CVE-2026-103288": {
+ "CVE-2026-102610": {
+  "ssvc": null,
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-102895": {
   "ssvc": {
-   "exploitation": "none",
-   "automatable": "no",
-   "impact": "partial"
+   "exploitation": "active",
+   "automatable": "yes",
+   "impact": "total"
   },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-103022": {
+  "ssvc": null,
   "checked": "2026-11-09"
  },
  "CVE-2026-103995": {
@@ -243,14 +255,6 @@
   "ssvc": {
    "exploitation": "none",
    "automatable": "yes",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
- },
- "CVE-2026-109461": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "no",
    "impact": "partial"
   },
   "checked": "2026-11-09"
@@ -467,46 +471,6 @@
   },
   "checked": "2026-11-09"
  },
- "CVE-2026-114608": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "no",
-   "impact": "total"
-  },
-  "checked": "2026-11-09"
- },
- "CVE-2026-114609": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "yes",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
- },
- "CVE-2026-114610": {
-  "ssvc": {
-   "exploitation": "poc",
-   "automatable": "no",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
- },
- "CVE-2026-114612": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "no",
-   "impact": "total"
-  },
-  "checked": "2026-11-09"
- },
- "CVE-2026-114613": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "yes",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
- },
  "CVE-2026-114614": {
   "ssvc": {
    "exploitation": "poc",
@@ -714,14 +678,6 @@
    "impact": "partial"
   },
   "checked": "2026-11-03"
- },
- "CVE-2026-115924": {
-  "ssvc": {
-   "exploitation": "poc",
-   "automatable": "yes",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
  },
  "CVE-2026-115927": {
   "ssvc": {
@@ -1515,6 +1471,14 @@
   },
   "checked": "2026-11-09"
  },
+ "CVE-2026-123807": {
+  "ssvc": null,
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-124249": {
+  "ssvc": null,
+  "checked": "2026-11-09"
+ },
  "CVE-2026-15176": {
   "ssvc": {
    "exploitation": "none",
@@ -1564,6 +1528,10 @@
   "checked": "2026-11-09"
  },
  "CVE-2026-19445": {
+  "ssvc": null,
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-19552": {
   "ssvc": null,
   "checked": "2026-11-09"
  },
@@ -1633,10 +1601,6 @@
    "automatable": "yes",
    "impact": "total"
   },
-  "checked": "2026-11-09"
- },
- "CVE-2026-46350": {
-  "ssvc": null,
   "checked": "2026-11-09"
  },
  "CVE-2026-46429": {
@@ -1767,14 +1731,6 @@
   },
   "checked": "2026-11-09"
  },
- "CVE-2026-58657": {
-  "ssvc": {
-   "exploitation": "poc",
-   "automatable": "no",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
- },
  "CVE-2026-59685": {
   "ssvc": {
    "exploitation": "none",
@@ -1826,14 +1782,6 @@
  "CVE-2026-61448": {
   "ssvc": {
    "exploitation": "none",
-   "automatable": "no",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
- },
- "CVE-2026-61449": {
-  "ssvc": {
-   "exploitation": "poc",
    "automatable": "no",
    "impact": "partial"
   },
@@ -1967,6 +1915,62 @@
   },
   "checked": "2026-11-09"
  },
+ "CVE-2026-63395": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "no",
+   "impact": "total"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63417": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "no",
+   "impact": "partial"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63469": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "yes",
+   "impact": "total"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63470": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "yes",
+   "impact": "total"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63471": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "yes",
+   "impact": "total"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63475": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "no",
+   "impact": "partial"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63478": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "no",
+   "impact": "partial"
+  },
+  "checked": "2026-11-09"
+ },
  "CVE-2026-63493": {
   "ssvc": {
    "exploitation": "none",
@@ -1980,6 +1984,22 @@
    "exploitation": "poc",
    "automatable": "no",
    "impact": "total"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63501": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "yes",
+   "impact": "partial"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-63655": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "yes",
+   "impact": "partial"
   },
   "checked": "2026-11-09"
  },
@@ -2215,12 +2235,32 @@
   },
   "checked": "2026-11-09"
  },
+ "CVE-2026-76892": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "yes",
+   "impact": "partial"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-76893": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "yes",
+   "impact": "partial"
+  },
+  "checked": "2026-11-09"
+ },
  "CVE-2026-77180": {
   "ssvc": {
    "exploitation": "none",
    "automatable": "no",
    "impact": "total"
   },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-77604": {
+  "ssvc": null,
   "checked": "2026-11-09"
  },
  "CVE-2026-77606": {
@@ -2311,14 +2351,6 @@
   },
   "checked": "2026-11-09"
  },
- "CVE-2026-83813": {
-  "ssvc": {
-   "exploitation": "poc",
-   "automatable": "no",
-   "impact": "partial"
-  },
-  "checked": "2026-11-09"
- },
  "CVE-2026-84997": {
   "ssvc": {
    "exploitation": "poc",
@@ -2328,6 +2360,14 @@
   "checked": "2026-11-09"
  },
  "CVE-2026-85990": {
+  "ssvc": {
+   "exploitation": "poc",
+   "automatable": "no",
+   "impact": "total"
+  },
+  "checked": "2026-11-09"
+ },
+ "CVE-2026-87008": {
   "ssvc": {
    "exploitation": "poc",
    "automatable": "no",
@@ -2527,18 +2567,14 @@
   },
   "checked": "2026-11-09"
  },
- "CVE-2026-94545": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "no",
-   "impact": "partial"
-  },
+ "CVE-2026-94618": {
+  "ssvc": null,
   "checked": "2026-11-09"
  },
- "CVE-2026-94624": {
+ "CVE-2026-94619": {
   "ssvc": {
-   "exploitation": "none",
-   "automatable": "yes",
+   "exploitation": "poc",
+   "automatable": "no",
    "impact": "partial"
   },
   "checked": "2026-11-09"
@@ -2581,14 +2617,6 @@
  },
  "CVE-2026-96634": {
   "ssvc": null,
-  "checked": "2026-11-09"
- },
- "CVE-2026-96760": {
-  "ssvc": {
-   "exploitation": "none",
-   "automatable": "yes",
-   "impact": "total"
-  },
   "checked": "2026-11-09"
  },
  "CVE-2026-97205": {

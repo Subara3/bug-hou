@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜filegator/filegator（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/filegator__filegator.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/filegator__filegator.xml</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-f74m-x83r-c4v4"/>
+<id>urn:bug-hou:GHSA-f74m-x83r-c4v4</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94618&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-44r8-3p76-84mw"/>
+<id>urn:bug-hou:GHSA-44r8-3p76-84mw</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
+</entry>
+</feed>

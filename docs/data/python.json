@@ -5,6 +5,38 @@
  "kev": [],
  "cves": [
   {
+   "id": "CVE-2026-124249",
+   "published": "2026-11-09",
+   "modified": "2026-11-09",
+   "status": "Awaiting Analysis",
+   "score": 6.3,
+   "severity": "MEDIUM",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "http.cookiejar.CookieJar deleted a stored cookie when a response carried an\nalready expired Set-Cookie header for it, using the Domain and Path\nattributes from the header without consulting the cookie policy. A server\ncould therefore delete cookies belonging to other domains from a shared\ncookie jar, such as the one used by urllib's HTTPCookieProcessor. The fix\nconsults the cookie policy before an expired cookie may delete an existing\none, as required by RFC 6265 section 5.3.",
+   "kev": false,
+   "affects": [],
+   "cwe": [
+    "CWE-346"
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "CVE-2026-19552",
+   "published": "2026-11-09",
+   "modified": "2026-11-09",
+   "status": "Awaiting Analysis",
+   "score": 0.0,
+   "severity": "NONE",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "When ca_certs parameter was supplied to ssl.get_server_certificate() function, the identity of the certificate is not checked.",
+   "kev": false,
+   "affects": [],
+   "cwe": [],
+   "first_seen": "2026-11-09"
+  },
+  {
    "id": "CVE-2026-119170",
    "published": "2026-11-06",
    "modified": "2026-11-07",
@@ -92,7 +124,7 @@
   {
    "id": "CVE-2026-19445",
    "published": "2026-09-30",
-   "modified": "2026-10-03",
+   "modified": "2026-11-09",
    "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -246,6 +278,206 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-85gg-2gfq-q95m",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-87008",
+   "summary": "Code Graph RAG structural tools follow out-of-root symlinks",
+   "severity": "HIGH",
+   "score": 7.1,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-85gg-2gfq-q95m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "code-graph-rag",
+     "range": "<= 0.0.586",
+     "fixed": "0.0.587"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-gj9m-f8ph-pmhr",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-102895",
+   "summary": "GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-gj9m-f8ph-pmhr",
+   "kev": true,
+   "packages": [
+    {
+     "name": "gpustack",
+     "range": "< 2.2.0",
+     "fixed": "2.2.0"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-cp25-j9x5-p5xm",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-103022",
+   "summary": "Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS)",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-cp25-j9x5-p5xm",
+   "kev": false,
+   "packages": [
+    {
+     "name": "urwid",
+     "range": "<= 4.0.6",
+     "fixed": "4.0.7"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-9vhv-g5hf-m7m7",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-102610",
+   "summary": "fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution",
+   "severity": "MEDIUM",
+   "score": 6.4,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-9vhv-g5hf-m7m7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fast-agent-mcp",
+     "range": "<= 0.7.20",
+     "fixed": "0.7.21"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-f42p-wjw5-97qh",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-102289",
+   "summary": "zizmor: Debug logging prints available GitHub credentials in cleartext",
+   "severity": "HIGH",
+   "score": 7.0,
+   "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:N/UI:A/VC:H/VI:N/VA:N/SC:H/SI:H/SA:H",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-f42p-wjw5-97qh",
+   "kev": false,
+   "packages": [
+    {
+     "name": "zizmor",
+     "range": "= 1.27.0",
+     "fixed": "1.28.0"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-vvr2-h2jp-838m",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-77604",
+   "summary": "Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-vvr2-h2jp-838m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "code-graph-rag",
+     "range": "< 0.0.345",
+     "fixed": "0.0.345"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-p2mm-64f6-gmpp",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-63471",
+   "summary": "fastapi-code-generator: Import-time RCE via route path -> unescaped @app.get('...') decorator",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-p2mm-64f6-gmpp",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fastapi-code-generator",
+     "range": "< 0.8.1",
+     "fixed": "0.8.1"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-6xmv-cjr5-w3q8",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-63469",
+   "summary": "fastapi-code-generator: Import-time RCE via response status-code key -> unescaped @app.get(..., responses={...}) dict",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-6xmv-cjr5-w3q8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fastapi-code-generator",
+     "range": "< 0.8.1",
+     "fixed": "0.8.1"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-h667-4jj2-cgv4",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-63470",
+   "summary": "fastapi-code-generator: Call-time RCE via operation summary -> unescaped route-handler docstring",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-h667-4jj2-cgv4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fastapi-code-generator",
+     "range": "< 0.8.1",
+     "fixed": "0.8.1"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
+  {
+   "id": "GHSA-w7qv-268h-9h3f",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-63417",
+   "summary": "Logging Redactor: PII data in str/repr of non primitive objects was not being redacted",
+   "severity": "HIGH",
+   "score": 8.2,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-09",
+   "url": "https://github.com/advisories/GHSA-w7qv-268h-9h3f",
+   "kev": false,
+   "packages": [
+    {
+     "name": "loggingredactor",
+     "range": "< 0.0.7",
+     "fixed": "0.0.7"
+    }
+   ],
+   "first_seen": "2026-11-09"
+  },
   {
    "id": "GHSA-r4hm-p9f9-fj9v",
    "ecosystem": "pip",
@@ -2087,226 +2319,6 @@
      "name": "GitPython",
      "range": "<= 3.1.62",
      "fixed": "3.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-7hp6-4w63-5g45",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-114612",
-   "summary": "LiteLLM: Privilege Escalation to Proxy Admin via Cross-Domain Reuse of the Salt Key",
-   "severity": "HIGH",
-   "score": 7.7,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-7hp6-4w63-5g45",
-   "kev": false,
-   "packages": [
-    {
-     "name": "litellm",
-     "range": ">= 1.91.0, < 1.100.4",
-     "fixed": "1.100.4"
-    },
-    {
-     "name": "litellm",
-     "range": ">= 1.101.0, < 1.101.3",
-     "fixed": "1.101.3"
-    },
-    {
-     "name": "litellm",
-     "range": ">= 1.102.0, < 1.102.2",
-     "fixed": "1.102.2"
-    },
-    {
-     "name": "litellm",
-     "range": ">= 1.103.0, < 1.103.1",
-     "fixed": "1.103.1"
-    },
-    {
-     "name": "litellm",
-     "range": ">= 1.104.0rc1, < 1.104.0rc2",
-     "fixed": "1.104.0rc2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-j586-36cw-2gc2",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-114613",
-   "summary": "MessagePack: Unbounded memory leak in msgpack C extension on strict_map_key validation failure",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-j586-36cw-2gc2",
-   "kev": false,
-   "packages": [
-    {
-     "name": "msgpack",
-     "range": "< 1.2.3",
-     "fixed": "1.2.3"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-j456-xh4h-cpf2",
-   "ecosystem": "pip",
-   "cve": null,
-   "summary": "NLTK: WekaClassifier passes an unvalidated caller-controlled model path to the weka JVM, bypassing nltk.pathsec containment",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-j456-xh4h-cpf2",
-   "kev": false,
-   "packages": [
-    {
-     "name": "nltk",
-     "range": "<= 3.10.3",
-     "fixed": "3.10.4"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-6v38-4h7w-rj9h",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-96760",
-   "summary": "Authlib: empty signatures validation in JWS JSON deserialization",
-   "severity": "CRITICAL",
-   "score": 9.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-6v38-4h7w-rj9h",
-   "kev": false,
-   "packages": [
-    {
-     "name": "authlib",
-     "range": "<= 1.8.0",
-     "fixed": "1.9.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-22qq-2fwx-7p67",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-114608",
-   "summary": "Pylint: Arbitrary code execution via pickle deserialization of the stats cache in PYLINT_HOME",
-   "severity": "MEDIUM",
-   "score": 5.4,
-   "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-22qq-2fwx-7p67",
-   "kev": false,
-   "packages": [
-    {
-     "name": "pylint",
-     "range": "< 4.0.9",
-     "fixed": "4.0.9"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-frvg-qw88-hww9",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-94624",
-   "summary": "vllm p2p never connected zmq_exhaustion",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-frvg-qw88-hww9",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": "< 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-qr6x-7v33-6qmg",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115924",
-   "summary": "Rembg: Unauthenticated SAM model injection permits local-file disclosure through malicious ONNX graphs",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-qr6x-7v33-6qmg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "rembg",
-     "range": "< 2.0.82",
-     "fixed": "2.0.82"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-jj36-9pvh-vj5r",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-83813",
-   "summary": "Twisted: DNS Response Spoofing in twisted.names Due to Missing Source Address Validation",
-   "severity": "LOW",
-   "score": 3.1,
-   "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-jj36-9pvh-vj5r",
-   "kev": false,
-   "packages": [
-    {
-     "name": "Twisted",
-     "range": "<= 26.4.0",
-     "fixed": "26.10.0rc1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-wqw6-wpr3-45rh",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-114610",
-   "summary": "fpdf2: Exponential SVG '<use>' expansion causes CPU and memory exhaustion in 'FPDF.image()'",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-wqw6-wpr3-45rh",
-   "kev": false,
-   "packages": [
-    {
-     "name": "fpdf2",
-     "range": ">= 2.5.0, < 2.8.8",
-     "fixed": "2.8.8"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-rw7v-4hrq-x6r9",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-114609",
-   "summary": "fpdf2 implicitly loads external URLs and local image paths when rendering attacker-controlled content",
-   "severity": "MEDIUM",
-   "score": 5.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-rw7v-4hrq-x6r9",
-   "kev": false,
-   "packages": [
-    {
-     "name": "fpdf2",
-     "range": "<= 2.8.7",
-     "fixed": "2.8.8"
     }
    ],
    "first_seen": "2026-11-02"

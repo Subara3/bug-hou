@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜loggingredactor（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/loggingredactor.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/loggingredactor.xml</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Logging Redactor: PII data in str/repr of non primitive objects was not being redacted (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-w7qv-268h-9h3f"/>
+<id>urn:bug-hou:GHSA-w7qv-268h-9h3f</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;loggingredactor &amp;lt; 0.0.7 → 0.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-63417&lt;/p&gt;</content>
+</entry>
+</feed>

@@ -21,13 +21,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; better-authでOAuthのstateをマジックリンクに使い、別人としてログインできる&lt;br&gt;→ better-authを1.7.7以降に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要対応] Python: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-6v38-4h7w-rj9h"/>
-<id>urn:bug-hou:GHSA-6v38-4h7w-rj9h</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; AuthlibのJWS JSONの読み込みで空の署名の検証に不備&lt;br&gt;→ authlibを1.9.0以降に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要対応] Python: MLflow vulnerable to remote code execution on unauthenticated servers via third-party scorer deserialization importing caller-placed artifact modules (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-26p8-2jq9-3vq9"/>
 <id>urn:bug-hou:GHSA-26p8-2jq9-3vq9</id>

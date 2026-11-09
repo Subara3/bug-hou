@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜urwid（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/urwid.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/urwid.xml</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-cp25-j9x5-p5xm"/>
+<id>urn:bug-hou:GHSA-cp25-j9x5-p5xm</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;urwid &amp;lt;= 4.0.6 → 4.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-103022&lt;/p&gt;</content>
+</entry>
+</feed>

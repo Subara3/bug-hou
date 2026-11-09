@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜code-graph-rag（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/code-graph-rag.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/code-graph-rag.xml</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-vvr2-h2jp-838m"/>
+<id>urn:bug-hou:GHSA-vvr2-h2jp-838m</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;code-graph-rag &amp;lt; 0.0.345 → 0.0.345&lt;/p&gt;&lt;p&gt;CVE-2026-77604&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Code Graph RAG structural tools follow out-of-root symlinks (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-85gg-2gfq-q95m"/>
+<id>urn:bug-hou:GHSA-85gg-2gfq-q95m</id>
+<updated>2026-11-09T00:00:00Z</updated>
+<content type="html">&lt;p&gt;code-graph-rag &amp;lt;= 0.0.586 → 0.0.587&lt;/p&gt;&lt;p&gt;CVE-2026-87008&lt;/p&gt;</content>
+</entry>
+</feed>
