@@ -4,7 +4,49 @@
   "title": "Siemens製品に対するアップデート（2026年11月）",
   "url": "https://jvn.jp/vu/JVNVU98354779/",
   "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
-  "date": "2026-11-06"
+  "date": "2026-11-09"
+ },
+ {
+  "id": "JVN#76179675",
+  "title": "SS1／SS1クラウドおよびそのODM製品rocoeyesにおける複数の脆弱性",
+  "url": "https://jvn.jp/jp/JVN76179675/",
+  "desc": "株式会社ディー・オー・エスが提供するSS1／SS1クラウドおよび、株式会社ロココが提供するrocoeyesには複数の脆弱性が存在します。",
+  "date": "2026-11-09"
+ },
+ {
+  "id": "JVN#89009783",
+  "title": "WebSAM WinShareにおける複数の脆弱性",
+  "url": "https://jvn.jp/jp/JVN89009783/",
+  "desc": "日本電気株式会社が提供するWebSAM WinShareには、複数の脆弱性が存在します。",
+  "date": "2026-11-09"
+ },
+ {
+  "id": "JVN#56286875",
+  "title": "Effekseerにおける入力データ検証不備の脆弱性",
+  "url": "https://jvn.jp/jp/JVN56286875/",
+  "desc": "パーティクルエフェクト編集ツールEffekseerには、入力データ検証不備の脆弱性が存在します。",
+  "date": "2026-11-09"
+ },
+ {
+  "id": "JVNVU#92635551",
+  "title": "KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU92635551/",
+  "desc": "GMOプライム・ストラテジー株式会社が提供するKUSANAGIには、HTTPヘッダーインジェクションの脆弱性が存在します。",
+  "date": "2026-11-09"
+ },
+ {
+  "id": "JVNVU#93403064",
+  "title": "Webtop Media Transcoderにおける異なる領域間での不適切なリソースの移動の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU93403064/",
+  "desc": "オープンウェーブメッセージング株式会社が提供するWebtop Media Transcoderには、異なる領域間での不適切なリソースの移動の脆弱性が存在します。",
+  "date": "2026-11-09"
+ },
+ {
+  "id": "JVN#42011956",
+  "title": "Zabbix agentにおけるDLL読み込みに関する脆弱性",
+  "url": "https://jvn.jp/jp/JVN42011956/",
+  "desc": "Zabbix LLCが提供するZabbix agentにはDLL読み込みに関する脆弱性が存在します。",
+  "date": "2026-11-09"
  },
  {
   "id": "JVNVU#90841469",
