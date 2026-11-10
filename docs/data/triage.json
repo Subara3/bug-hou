@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-07T06:46:19Z",
+ "updated_at": "2026-11-10T00:45:59Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -116,6 +116,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "CVE-2026-124249": {
+   "level": "watch",
+   "reason": "MEDIUM。共有のCookieJarで他のドメインのクッキーを消される",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "CVE-2026-15176": {
    "level": "check",
    "reason": "aliasとrewriteで$request_filenameを使う設定のnginxのみ影響",
@@ -158,19 +165,19 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "CVE-2026-18503": {
-   "level": "watch",
-   "reason": "csv.Sniffer.sniff()でCPU消費。LOW",
-   "todo": "",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "CVE-2026-19445": {
    "level": "check",
    "reason": "sni_callbackでSSLContextを差し替えるTLSサーバーのみ影響",
    "todo": "sni_callbackを持つSSLContextの参照を保持",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "CVE-2026-19552": {
+   "level": "check",
+   "reason": "未採点だが、ssl.get_server_certificate()でca_certs指定時に証明書の相手を確かめない",
+   "todo": "この関数で相手を確かめているか確認",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "CVE-2026-19553": {
    "level": "check",
@@ -512,13 +519,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-22qq-2fwx-7p67": {
-   "level": "watch",
-   "reason": "Pylintの統計キャッシュのpickle読込で任意コード実行。MEDIUM",
-   "todo": "pylint 4.0.9に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-23mf-xhv8-69c2": {
    "level": "check",
    "reason": "GitPythonのcheckout()でブランチ名から任意ファイル読取。HIGH",
@@ -710,6 +710,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-447x-qqwf-m7xq": {
+   "level": "check",
+   "reason": "HIGH。MCPサーバーがリクエスト本文を際限なくため込み、外から止められる",
+   "todo": "@tsparticles/mcp-server を 4.3.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-4487-j8r4-4g2f": {
    "level": "watch",
    "reason": "node-forgeの証明書チェーン検証でCA削除。LOW",
@@ -723,6 +730,13 @@
    "todo": "better-auth 1.7.7に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-44r8-3p76-84mw": {
+   "level": "watch",
+   "reason": "MEDIUM。FileGatorで他の利用者の一時ファイルを読めたり消せたりする",
+   "todo": "filegator/filegator を 7.15.0 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-4528-x5fx-h6hg": {
    "level": "check",
@@ -773,13 +787,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-4g23-2xm8-66gc": {
-   "level": "watch",
-   "reason": "NodemailerのSMTP応答解析が二乗時間で悪意あるサーバーからDoS。MEDIUM",
-   "todo": "nodemailer 10.0.10に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-4hm6-w6qq-w73v": {
    "level": "check",
    "reason": "LangGraphのカスタム認証で他ユーザーのStoreに触れる。HIGH",
@@ -793,6 +800,13 @@
    "todo": "mcp-sanitizer 1.4.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-4p8p-pjpq-2w7h": {
+   "level": "check",
+   "reason": "HIGH。壊れたJSONを送るとMCPサーバーのHTTPプロセスが落ちる",
+   "todo": "@tsparticles/mcp-server を 4.3.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-4v9q-p283-qc2m": {
    "level": "check",
@@ -1074,15 +1088,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-6v38-4h7w-rj9h": {
-   "level": "action",
-   "reason": "AuthlibのJWS JSONの読み込みで空の署名の検証に不備",
-   "todo": "authlibを1.9.0以降に更新",
-   "kev": false,
-   "at": "2026-11-02",
-   "urgency": "soon",
-   "comment": "JWSの署名確認に使っているなら数日のうちに更新したい"
-  },
   "GHSA-6vfx-w7q3-42gq": {
    "level": "check",
    "reason": "AdminNeoのSQLite一覧から任意ファイル削除。HIGH",
@@ -1090,12 +1095,26 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-6w3r-6hpr-hp6p": {
+   "level": "check",
+   "reason": "HIGH。PSDのレイヤー読み込みでメモリ上限をすり抜け、大量に使われる",
+   "todo": "ag-psd を 31.0.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-6wvx-3r32-xmcg": {
    "level": "watch",
    "reason": "node-forgeのforge.httpでプロトタイプ汚染。MEDIUM",
    "todo": "node-forge 1.4.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-6xmv-cjr5-w3q8": {
+   "level": "check",
+   "reason": "CRITICALだが利用者の少ないパッケージ。応答コードのキー経由で生成コードにコードを仕込まれる",
+   "todo": "fastapi-code-generator を 0.8.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-763v-5pjm-fx36": {
    "level": "watch",
@@ -1122,13 +1141,6 @@
    "level": "check",
    "reason": "AdminNeoのX-Forwarded-PrefixでCookie属性注入。HIGH",
    "todo": "AdminNeo 5.5.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-7hp6-4w63-5g45": {
-   "level": "check",
-   "reason": "LiteLLMでソルト鍵の流用によりプロキシ管理者に権限昇格。HIGH",
-   "todo": "litellm 1.100.4などに更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1216,6 +1228,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-85gg-2gfq-q95m": {
+   "level": "check",
+   "reason": "HIGH。構造解析ツールがルート外へのシンボリックリンクをたどる",
+   "todo": "code-graph-rag を 0.0.587 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-87mg-5grr-rhwh": {
    "level": "watch",
    "reason": "ContaoのRSSリーダーでSSRF。LOW",
@@ -1241,13 +1260,6 @@
    "level": "check",
    "reason": "phpMyFAQの二要素ログインでパスワード確認を回避。HIGH",
    "todo": "phpMyFAQ 4.1.6に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-8h9x-89f2-m7x3": {
-   "level": "watch",
-   "reason": "GravのZIP展開で偽装サイズにより解凍爆弾の上限を回避。MEDIUM",
-   "todo": "getgrav/grav 2.0.2に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1301,6 +1313,13 @@
    "todo": "Composer 2.10.3/2.2.30に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-96wc-2m84-2cj7": {
+   "level": "watch",
+   "reason": "MEDIUM。循環するシンボリック参照で処理が終わらなくなる",
+   "todo": "isomorphic-git を 1.38.6 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-97jj-33gv-5xf9": {
    "level": "watch",
@@ -1393,6 +1412,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-9qw7-j9xw-fv9c": {
+   "level": "check",
+   "reason": "HIGH。checkout時にディレクトリのシンボリックリンク経由で外にファイルを書かれる",
+   "todo": "isomorphic-git を 1.38.6 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-9rcc-pmj8-ffhr": {
    "level": "watch",
    "reason": "Semantic MediaWikiのFacetedSearchで反射型XSS。MEDIUM",
@@ -1420,6 +1446,13 @@
    "todo": "nuxt 4.6.3に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-9vhv-g5hf-m7m7": {
+   "level": "check",
+   "reason": "MEDIUMだが、初期設定で認証なしに外へ公開し、--shell付きだと外からコマンドを実行される",
+   "todo": "fast-agent-mcp を 0.7.21 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-9vw2-f4vp-x7gf": {
    "level": "watch",
@@ -1484,6 +1517,20 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-cp25-j9x5-p5xm": {
+   "level": "watch",
+   "reason": "MEDIUM。非ASCIIのPOST本文で処理が落ちる",
+   "todo": "urwid を 4.0.7 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
+  "GHSA-cw2g-2vwq-88w6": {
+   "level": "watch",
+   "reason": "MEDIUM。cloneやcheckoutで作業ディレクトリの外にファイルを書かれる",
+   "todo": "isomorphic-git を 1.38.6 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-cwqr-hh33-gh44": {
    "level": "watch",
    "reason": "filelockの細工DBで取得が停止。ローカル・MEDIUM",
@@ -1505,6 +1552,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-f42p-wjw5-97qh": {
+   "level": "check",
+   "reason": "HIGH。デバッグログにGitHubの認証情報がそのまま出る",
+   "todo": "zizmor を 1.28.0 に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-f5m9-jfrj-jjj7": {
    "level": "watch",
    "reason": "OpenTelemetryのJaeger baggageで無制限メモリ確保。MEDIUM",
@@ -1518,6 +1572,13 @@
    "todo": "mail-mime-parser 3.0.6/4.0.2に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-f74m-x83r-c4v4": {
+   "level": "watch",
+   "reason": "MEDIUM。FileGatorで他の利用者のまとめてダウンロードを取得できる",
+   "todo": "filegator/filegator を 7.15.0 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-f86p-h4j2-7qgj": {
    "level": "watch",
@@ -1577,13 +1638,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-ffmg-hfvg-jhg9": {
-   "level": "watch",
-   "reason": "Gravの画像resize()で格納型CSS注入。MEDIUM",
-   "todo": "getgrav/grav 2.0.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-fj95-fr6c-h845": {
    "level": "watch",
    "reason": "filelockのSoftReadWriteLockがハードリンク経由で書込。ローカル・MEDIUM",
@@ -1611,13 +1665,6 @@
    "todo": "GeoNodeを5.0.3以降に更新",
    "kev": false,
    "at": "2026-11-07"
-  },
-  "GHSA-frvg-qw88-hww9": {
-   "level": "watch",
-   "reason": "vLLMのp2p接続でzmqが枯渇。MEDIUM",
-   "todo": "vllm 0.32.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-fx3j-rwgx-fr94": {
    "level": "watch",
@@ -1654,13 +1701,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-g73g-hqqh-jr95": {
-   "level": "watch",
-   "reason": "Nodemailerで山括弧内のRFC 5322コメントが除去されない。MEDIUM",
-   "todo": "nodemailer 10.0.13に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-g7vj-c29h-3h5m": {
    "level": "check",
    "reason": "Flarum OAuthのDiscord連携で認証なし乗っ取り。利用者の少ない拡張のCRITICAL",
@@ -1688,6 +1728,15 @@
    "todo": "stanza 1.14.0を使っていれば1.15.0に更新",
    "kev": false,
    "at": "2026-11-04"
+  },
+  "GHSA-gj9m-f8ph-pmhr": {
+   "level": "action",
+   "reason": "KEV掲載。GPUStackで送信元の判定をだまし、ログインなしで管理者になれる",
+   "todo": "gpustack を 2.2.0 以降に更新",
+   "kev": true,
+   "at": "2026-11-10",
+   "urgency": "now",
+   "comment": "GPUStackを外から届く所で動かしているなら、更新するまで止めて"
   },
   "GHSA-gq48-pqfc-9p58": {
    "level": "watch",
@@ -1738,12 +1787,26 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-h667-4jj2-cgv4": {
+   "level": "check",
+   "reason": "CRITICALだが利用者の少ないパッケージ。summary経由で生成コードにコードを仕込まれる",
+   "todo": "fastapi-code-generator を 0.8.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-h6cr-wjv9-3cpp": {
    "level": "watch",
    "reason": "node-forgeのmodInverseで無限ループ。LOW",
    "todo": "node-forge 1.4.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-h7c4-q426-7jh9": {
+   "level": "watch",
+   "reason": "MEDIUM。MCPサーバーのHTTPモードを1つの接続が独占し、新しい接続を断れる",
+   "todo": "@tsparticles/mcp-server を 4.3.2 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-hg8h-557g-q8pp": {
    "level": "check",
@@ -1784,20 +1847,6 @@
    "level": "check",
    "reason": "PhpSpreadsheetのODS読込でCPU・メモリ枯渇。HIGH",
    "todo": "PhpSpreadsheet 5.10.0/3.10.8などに更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-j456-xh4h-cpf2": {
-   "level": "check",
-   "reason": "NLTKのWekaClassifierが未検証のモデルパスを渡しpathsecを回避。HIGH",
-   "todo": "nltk 3.10.4に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-j586-36cw-2gc2": {
-   "level": "check",
-   "reason": "msgpackのC拡張でstrict_map_key検証失敗時にメモリリーク。HIGH",
-   "todo": "msgpack 1.2.3に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1854,13 +1903,6 @@
    "level": "watch",
    "reason": "Laravelのデバッグページ情報でXSS。LOW",
    "todo": "laravel/framework 12.69.0/13.30.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-jj36-9pvh-vj5r": {
-   "level": "watch",
-   "reason": "Twistedのtwisted.namesで送信元未検証によりDNS応答を偽装。LOW",
-   "todo": "Twisted 26.10.0rc1に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2046,6 +2088,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-p2mm-64f6-gmpp": {
+   "level": "check",
+   "reason": "CRITICALだが利用者の少ないパッケージ。ルートのパス経由で生成コードにコードを仕込まれる",
+   "todo": "fastapi-code-generator を 0.8.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-p3m5-h5v9-vqj6": {
    "level": "check",
    "reason": "dd-trace-pyのIAST計装でアプリがDoS。IAST利用時のみ",
@@ -2109,13 +2158,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-px68-xx5g-48q5": {
-   "level": "watch",
-   "reason": "dcmjsのDS/IS値の入力検証を回避。LOW",
-   "todo": "dcmjs 0.52.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-q2j8-x8hf-63ch": {
    "level": "watch",
    "reason": "Gravで不正UTF-8の1バイトによりdetectXssを回避。MEDIUM",
@@ -2165,13 +2207,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-q84f-53jg-9ppm": {
-   "level": "check",
-   "reason": "better-authのデバイスログイン承認で要求元や権限が表示されない。HIGH",
-   "todo": "better-auth 1.7.0-rc.3に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-q97c-p368-75c4": {
    "level": "watch",
    "reason": "vLLMで語彙外トークンIDによりエンジン停止。MEDIUM",
@@ -2197,20 +2232,6 @@
    "level": "check",
    "reason": "decode-uri-componentで二乗時間のDoS。HIGH",
    "todo": "decode-uri-component 0.5.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-qr6x-7v33-6qmg": {
-   "level": "check",
-   "reason": "Rembgで認証なしのSAMモデル注入からローカルファイル漏洩。HIGH",
-   "todo": "rembg 2.0.82に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-qrh6-cwg3-343x": {
-   "level": "watch",
-   "reason": "Ghostのコメントいいね機能で認可回避。MEDIUM",
-   "todo": "ghost 6.44.1に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2326,13 +2347,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-rw7v-4hrq-x6r9": {
-   "level": "watch",
-   "reason": "fpdf2が攻撃者のコンテンツから外部URLやローカル画像を読込。MEDIUM",
-   "todo": "fpdf2 2.8.8に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-rwrf-2pqf-9j8j": {
    "level": "watch",
    "reason": "MCP Python SDKのクライアントがサーバー指定の$ref URLを取得。MEDIUM",
@@ -2431,6 +2445,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-vvr2-h2jp-838m": {
+   "level": "check",
+   "reason": "HIGH。MCPのread_fileで任意のファイルを読まれる",
+   "todo": "code-graph-rag を 0.0.345 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-w3f4-8pj2-599w": {
    "level": "check",
    "reason": "Gravのwatermark()でパストラバーサルし任意ファイル漏洩。HIGH",
@@ -2451,6 +2472,13 @@
    "todo": "plugin-catalog-backend 3.9.2/4.0.2に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-w7qv-268h-9h3f": {
+   "level": "check",
+   "reason": "HIGH。オブジェクトの文字列表現に含まれる個人情報が伏せられずログに出る",
+   "todo": "loggingredactor を 0.0.7 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-w8jc-g24h-crhw": {
    "level": "check",
@@ -2498,20 +2526,6 @@
    "level": "check",
    "reason": "SerovalのfromJSONで配列長未検証によるDoS。HIGH",
    "todo": "seroval 1.6.8に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-wqw6-wpr3-45rh": {
-   "level": "watch",
-   "reason": "fpdf2のSVG <use>の指数的展開でCPU・メモリ枯渇。MEDIUM",
-   "todo": "fpdf2 2.8.8に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-wx4j-mvgx-mqwp": {
-   "level": "watch",
-   "reason": "Satoriが生成するSVGのエスケープが不適切。MEDIUM",
-   "todo": "satori 0.33.5に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2584,13 +2598,6 @@
    "todo": "@enspirit/eloを使っていれば1.0.1に更新",
    "kev": false,
    "at": "2026-11-04"
-  },
-  "GHSA-xcx6-jx8p-x3h5": {
-   "level": "check",
-   "reason": "MSAL Nodeの認可コードフローでパラメータが攻撃者の宛先に漏洩。HIGH",
-   "todo": "@azure/msal-node 7.1.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-xhfv-7758-r9hx": {
    "level": "check",
