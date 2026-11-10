@@ -7,24 +7,24 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: fastapi-code-generator: Import-time RCE via route path -&gt; unescaped @app.get('...') decorator (CRITICAL)</title>
+<title>[要確認] pip: fastapi-code-generator: Import-time RCE via route path -&gt; unescaped @app.get('...') decorator (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-p2mm-64f6-gmpp"/>
 <id>urn:bug-hou:GHSA-p2mm-64f6-gmpp</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63471&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICALだが利用者の少ないパッケージ。ルートのパス経由で生成コードにコードを仕込まれる&lt;br&gt;→ fastapi-code-generator を 0.8.1 以降に更新&lt;/p&gt;&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63471&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: fastapi-code-generator: Call-time RCE via operation summary -&gt; unescaped route-handler docstring (CRITICAL)</title>
+<title>[要確認] pip: fastapi-code-generator: Call-time RCE via operation summary -&gt; unescaped route-handler docstring (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-h667-4jj2-cgv4"/>
 <id>urn:bug-hou:GHSA-h667-4jj2-cgv4</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63470&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICALだが利用者の少ないパッケージ。summary経由で生成コードにコードを仕込まれる&lt;br&gt;→ fastapi-code-generator を 0.8.1 以降に更新&lt;/p&gt;&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63470&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: fastapi-code-generator: Import-time RCE via response status-code key -&gt; unescaped @app.get(..., responses={...}) dict (CRITICAL)</title>
+<title>[要確認] pip: fastapi-code-generator: Import-time RCE via response status-code key -&gt; unescaped @app.get(..., responses={...}) dict (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-6xmv-cjr5-w3q8"/>
 <id>urn:bug-hou:GHSA-6xmv-cjr5-w3q8</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63469&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICALだが利用者の少ないパッケージ。応答コードのキー経由で生成コードにコードを仕込まれる&lt;br&gt;→ fastapi-code-generator を 0.8.1 以降に更新&lt;/p&gt;&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63469&lt;/p&gt;</content>
 </entry>
 </feed>

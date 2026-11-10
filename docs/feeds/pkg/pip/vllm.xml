@@ -14,11 +14,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; vLLMでリクエスト中のcode_revisionからRCE。HIGH&lt;br&gt;→ vllm 0.31.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.7.3, &amp;lt; 0.31.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-114053&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] pip: vllm p2p never connected zmq_exhaustion (MEDIUM)</title>
+<title>pip: vllm p2p never connected zmq_exhaustion (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-frvg-qw88-hww9"/>
 <id>urn:bug-hou:GHSA-frvg-qw88-hww9</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; vLLMのp2p接続でzmqが枯渇。MEDIUM&lt;br&gt;→ vllm 0.32.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-94624&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;vllm &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-94624&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] pip: vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs (MEDIUM)</title>

@@ -7,74 +7,74 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: Logging Redactor: PII data in str/repr of non primitive objects was not being redacted (HIGH)</title>
+<title>[要確認] Python: Logging Redactor: PII data in str/repr of non primitive objects was not being redacted (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-w7qv-268h-9h3f"/>
 <id>urn:bug-hou:GHSA-w7qv-268h-9h3f</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;loggingredactor &amp;lt; 0.0.7 → 0.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-63417&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。オブジェクトの文字列表現に含まれる個人情報が伏せられずログに出る&lt;br&gt;→ loggingredactor を 0.0.7 以降に更新&lt;/p&gt;&lt;p&gt;loggingredactor &amp;lt; 0.0.7 → 0.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-63417&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read (HIGH)</title>
+<title>[要確認] Python: Code Graph RAG: MCP paginated read_file path traversal / arbitrary file read (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-vvr2-h2jp-838m"/>
 <id>urn:bug-hou:GHSA-vvr2-h2jp-838m</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;code-graph-rag &amp;lt; 0.0.345 → 0.0.345&lt;/p&gt;&lt;p&gt;CVE-2026-77604&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。MCPのread_fileで任意のファイルを読まれる&lt;br&gt;→ code-graph-rag を 0.0.345 以降に更新&lt;/p&gt;&lt;p&gt;code-graph-rag &amp;lt; 0.0.345 → 0.0.345&lt;/p&gt;&lt;p&gt;CVE-2026-77604&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: fastapi-code-generator: Import-time RCE via route path -&gt; unescaped @app.get('...') decorator (CRITICAL)</title>
+<title>[要確認] Python: fastapi-code-generator: Import-time RCE via route path -&gt; unescaped @app.get('...') decorator (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-p2mm-64f6-gmpp"/>
 <id>urn:bug-hou:GHSA-p2mm-64f6-gmpp</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63471&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICALだが利用者の少ないパッケージ。ルートのパス経由で生成コードにコードを仕込まれる&lt;br&gt;→ fastapi-code-generator を 0.8.1 以降に更新&lt;/p&gt;&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63471&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: fastapi-code-generator: Call-time RCE via operation summary -&gt; unescaped route-handler docstring (CRITICAL)</title>
+<title>[要確認] Python: fastapi-code-generator: Call-time RCE via operation summary -&gt; unescaped route-handler docstring (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-h667-4jj2-cgv4"/>
 <id>urn:bug-hou:GHSA-h667-4jj2-cgv4</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63470&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICALだが利用者の少ないパッケージ。summary経由で生成コードにコードを仕込まれる&lt;br&gt;→ fastapi-code-generator を 0.8.1 以降に更新&lt;/p&gt;&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63470&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin (CRITICAL) ⚠KEV</title>
+<title>[要対応] Python: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin (CRITICAL) ⚠KEV</title>
 <link href="https://github.com/advisories/GHSA-gj9m-f8ph-pmhr"/>
 <id>urn:bug-hou:GHSA-gj9m-f8ph-pmhr</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;gpustack &amp;lt; 2.2.0 → 2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-102895&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; KEV掲載。GPUStackで送信元の判定をだまし、ログインなしで管理者になれる&lt;br&gt;→ gpustack を 2.2.0 以降に更新&lt;/p&gt;&lt;p&gt;gpustack &amp;lt; 2.2.0 → 2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-102895&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: zizmor: Debug logging prints available GitHub credentials in cleartext (HIGH)</title>
+<title>[要確認] Python: zizmor: Debug logging prints available GitHub credentials in cleartext (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-f42p-wjw5-97qh"/>
 <id>urn:bug-hou:GHSA-f42p-wjw5-97qh</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;zizmor = 1.27.0 → 1.28.0&lt;/p&gt;&lt;p&gt;CVE-2026-102289&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。デバッグログにGitHubの認証情報がそのまま出る&lt;br&gt;→ zizmor を 1.28.0 に更新&lt;/p&gt;&lt;p&gt;zizmor = 1.27.0 → 1.28.0&lt;/p&gt;&lt;p&gt;CVE-2026-102289&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS) (MEDIUM)</title>
+<title>[様子見] Python: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cp25-j9x5-p5xm"/>
 <id>urn:bug-hou:GHSA-cp25-j9x5-p5xm</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;urwid &amp;lt;= 4.0.6 → 4.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-103022&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。非ASCIIのPOST本文で処理が落ちる&lt;br&gt;→ urwid を 4.0.7 以降に更新&lt;/p&gt;&lt;p&gt;urwid &amp;lt;= 4.0.6 → 4.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-103022&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution (MEDIUM)</title>
+<title>[要確認] Python: fast-agent: `fast-agent serve` binds HTTP to 0.0.0.0 with no authentication by default; with --shell this is unauthenticated remote command execution (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9vhv-g5hf-m7m7"/>
 <id>urn:bug-hou:GHSA-9vhv-g5hf-m7m7</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fast-agent-mcp &amp;lt;= 0.7.20 → 0.7.21&lt;/p&gt;&lt;p&gt;CVE-2026-102610&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MEDIUMだが、初期設定で認証なしに外へ公開し、--shell付きだと外からコマンドを実行される&lt;br&gt;→ fast-agent-mcp を 0.7.21 以降に更新&lt;/p&gt;&lt;p&gt;fast-agent-mcp &amp;lt;= 0.7.20 → 0.7.21&lt;/p&gt;&lt;p&gt;CVE-2026-102610&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Code Graph RAG structural tools follow out-of-root symlinks (HIGH)</title>
+<title>[要確認] Python: Code Graph RAG structural tools follow out-of-root symlinks (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-85gg-2gfq-q95m"/>
 <id>urn:bug-hou:GHSA-85gg-2gfq-q95m</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;code-graph-rag &amp;lt;= 0.0.586 → 0.0.587&lt;/p&gt;&lt;p&gt;CVE-2026-87008&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。構造解析ツールがルート外へのシンボリックリンクをたどる&lt;br&gt;→ code-graph-rag を 0.0.587 以降に更新&lt;/p&gt;&lt;p&gt;code-graph-rag &amp;lt;= 0.0.586 → 0.0.587&lt;/p&gt;&lt;p&gt;CVE-2026-87008&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: fastapi-code-generator: Import-time RCE via response status-code key -&gt; unescaped @app.get(..., responses={...}) dict (CRITICAL)</title>
+<title>[要確認] Python: fastapi-code-generator: Import-time RCE via response status-code key -&gt; unescaped @app.get(..., responses={...}) dict (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-6xmv-cjr5-w3q8"/>
 <id>urn:bug-hou:GHSA-6xmv-cjr5-w3q8</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63469&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICALだが利用者の少ないパッケージ。応答コードのキー経由で生成コードにコードを仕込まれる&lt;br&gt;→ fastapi-code-generator を 0.8.1 以降に更新&lt;/p&gt;&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63469&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: GeoNode has Stored XSS in Documents metadata abstract field (MEDIUM)</title>

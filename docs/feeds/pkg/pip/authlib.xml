@@ -49,10 +49,10 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Authlibのアルゴリズム混同対策が不完全でHMAC署名を偽造可能。HIGH&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.3.1, &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114615&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要対応] pip: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
+<title>pip: Authlib: empty signatures validation in JWS JSON deserialization (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-6v38-4h7w-rj9h"/>
 <id>urn:bug-hou:GHSA-6v38-4h7w-rj9h</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; AuthlibのJWS JSONの読み込みで空の署名の検証に不備&lt;br&gt;→ authlibを1.9.0以降に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-96760&lt;/p&gt;</content>
 </entry>
 </feed>

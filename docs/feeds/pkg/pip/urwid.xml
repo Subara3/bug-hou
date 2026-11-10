@@ -7,10 +7,10 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS) (MEDIUM)</title>
+<title>[様子見] pip: Urwid: handle_short_request() crashes on non-ASCII POST body (UnicodeEncodeError DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cp25-j9x5-p5xm"/>
 <id>urn:bug-hou:GHSA-cp25-j9x5-p5xm</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;urwid &amp;lt;= 4.0.6 → 4.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-103022&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。非ASCIIのPOST本文で処理が落ちる&lt;br&gt;→ urwid を 4.0.7 以降に更新&lt;/p&gt;&lt;p&gt;urwid &amp;lt;= 4.0.6 → 4.0.7&lt;/p&gt;&lt;p&gt;CVE-2026-103022&lt;/p&gt;</content>
 </entry>
 </feed>

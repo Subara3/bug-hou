@@ -7,10 +7,10 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin (CRITICAL) ⚠KEV</title>
+<title>[要対応] pip: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin (CRITICAL) ⚠KEV</title>
 <link href="https://github.com/advisories/GHSA-gj9m-f8ph-pmhr"/>
 <id>urn:bug-hou:GHSA-gj9m-f8ph-pmhr</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;gpustack &amp;lt; 2.2.0 → 2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-102895&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; KEV掲載。GPUStackで送信元の判定をだまし、ログインなしで管理者になれる&lt;br&gt;→ gpustack を 2.2.0 以降に更新&lt;/p&gt;&lt;p&gt;gpustack &amp;lt; 2.2.0 → 2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-102895&lt;/p&gt;</content>
 </entry>
 </feed>

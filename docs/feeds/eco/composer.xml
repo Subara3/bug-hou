@@ -7,18 +7,18 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>PHP: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive (MEDIUM)</title>
+<title>[様子見] PHP: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-f74m-x83r-c4v4"/>
 <id>urn:bug-hou:GHSA-f74m-x83r-c4v4</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94618&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。FileGatorで他の利用者のまとめてダウンロードを取得できる&lt;br&gt;→ filegator/filegator を 7.15.0 以降に更新&lt;/p&gt;&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94618&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files (MEDIUM)</title>
+<title>[様子見] PHP: FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-44r8-3p76-84mw"/>
 <id>urn:bug-hou:GHSA-44r8-3p76-84mw</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。FileGatorで他の利用者の一時ファイルを読めたり消せたりする&lt;br&gt;→ filegator/filegator を 7.15.0 以降に更新&lt;/p&gt;&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] PHP: Grav: config_denied_paths default list omits `system`, exposing real secrets (e.g. system.cache.redis.password) via the Twig sandbox when config_access is enabled (HIGH)</title>

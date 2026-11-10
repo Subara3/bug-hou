@@ -7,10 +7,10 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass) (HIGH)</title>
+<title>[要確認] npm: ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-6w3r-6hpr-hp6p"/>
 <id>urn:bug-hou:GHSA-6w3r-6hpr-hp6p</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;ag-psd &amp;lt;= 31.0.0 → 31.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-63501&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。PSDのレイヤー読み込みでメモリ上限をすり抜け、大量に使われる&lt;br&gt;→ ag-psd を 31.0.1 以降に更新&lt;/p&gt;&lt;p&gt;ag-psd &amp;lt;= 31.0.0 → 31.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-63501&lt;/p&gt;</content>
 </entry>
 </feed>

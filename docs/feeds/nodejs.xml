@@ -7,53 +7,53 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients (MEDIUM)</title>
+<title>[様子見] Node.js: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-h7c4-q426-7jh9"/>
 <id>urn:bug-hou:GHSA-h7c4-q426-7jh9</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.2 → 4.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-76893&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。MCPサーバーのHTTPモードを1つの接続が独占し、新しい接続を断れる&lt;br&gt;→ @tsparticles/mcp-server を 4.3.2 以降に更新&lt;/p&gt;&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.2 → 4.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-76893&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout (MEDIUM)</title>
+<title>[様子見] Node.js: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cw2g-2vwq-88w6"/>
 <id>urn:bug-hou:GHSA-cw2g-2vwq-88w6</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63478&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。cloneやcheckoutで作業ディレクトリの外にファイルを書かれる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63478&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE) (HIGH)</title>
+<title>[要確認] Node.js: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-9qw7-j9xw-fv9c"/>
 <id>urn:bug-hou:GHSA-9qw7-j9xw-fv9c</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63395&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。checkout時にディレクトリのシンボリックリンク経由で外にファイルを書かれる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63395&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS) (MEDIUM)</title>
+<title>[様子見] Node.js: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-96wc-2m84-2cj7"/>
 <id>urn:bug-hou:GHSA-96wc-2m84-2cj7</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。循環するシンボリック参照で処理が終わらなくなる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass) (HIGH)</title>
+<title>[要確認] Node.js: ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-6w3r-6hpr-hp6p"/>
 <id>urn:bug-hou:GHSA-6w3r-6hpr-hp6p</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;ag-psd &amp;lt;= 31.0.0 → 31.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-63501&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。PSDのレイヤー読み込みでメモリ上限をすり抜け、大量に使われる&lt;br&gt;→ ag-psd を 31.0.1 以降に更新&lt;/p&gt;&lt;p&gt;ag-psd &amp;lt;= 31.0.0 → 31.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-63501&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process (HIGH)</title>
+<title>[要確認] Node.js: tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4p8p-pjpq-2w7h"/>
 <id>urn:bug-hou:GHSA-4p8p-pjpq-2w7h</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt;= 4.3.0 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-76892&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。壊れたJSONを送るとMCPサーバーのHTTPプロセスが落ちる&lt;br&gt;→ @tsparticles/mcp-server を 4.3.1 以降に更新&lt;/p&gt;&lt;p&gt;@tsparticles/mcp-server &amp;lt;= 4.3.0 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-76892&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS (HIGH)</title>
+<title>[要確認] Node.js: tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-447x-qqwf-m7xq"/>
 <id>urn:bug-hou:GHSA-447x-qqwf-m7xq</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-63655&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。MCPサーバーがリクエスト本文を際限なくため込み、外から止められる&lt;br&gt;→ @tsparticles/mcp-server を 4.3.1 以降に更新&lt;/p&gt;&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-63655&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: filecoin-pin: Unbounded DAG pinning can exhaust server resources (MEDIUM)</title>

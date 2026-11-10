@@ -7,24 +7,24 @@
 <updated>2026-11-09T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout (MEDIUM)</title>
+<title>[様子見] npm: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cw2g-2vwq-88w6"/>
 <id>urn:bug-hou:GHSA-cw2g-2vwq-88w6</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63478&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。cloneやcheckoutで作業ディレクトリの外にファイルを書かれる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63478&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE) (HIGH)</title>
+<title>[要確認] npm: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-9qw7-j9xw-fv9c"/>
 <id>urn:bug-hou:GHSA-9qw7-j9xw-fv9c</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63395&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。checkout時にディレクトリのシンボリックリンク経由で外にファイルを書かれる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63395&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS) (MEDIUM)</title>
+<title>[様子見] npm: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-96wc-2m84-2cj7"/>
 <id>urn:bug-hou:GHSA-96wc-2m84-2cj7</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。循環するシンボリック参照で処理が終わらなくなる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,11 +7,11 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] pip: Twisted: DNS Response Spoofing in twisted.names Due to Missing Source Address Validation (LOW)</title>
+<title>pip: Twisted: DNS Response Spoofing in twisted.names Due to Missing Source Address Validation (LOW)</title>
 <link href="https://github.com/advisories/GHSA-jj36-9pvh-vj5r"/>
 <id>urn:bug-hou:GHSA-jj36-9pvh-vj5r</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Twistedのtwisted.namesで送信元未検証によりDNS応答を偽装。LOW&lt;br&gt;→ Twisted 26.10.0rc1に更新&lt;/p&gt;&lt;p&gt;Twisted &amp;lt;= 26.4.0 → 26.10.0rc1&lt;/p&gt;&lt;p&gt;CVE-2026-83813&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;Twisted &amp;lt;= 26.4.0 → 26.10.0rc1&lt;/p&gt;&lt;p&gt;CVE-2026-83813&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] pip: Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset (HIGH)</title>

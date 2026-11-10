@@ -14,11 +14,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; better-authのOAuth Proxyで他人としてサインイン可能。HIGH&lt;br&gt;→ better-auth 1.7.7に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.5.0-beta.12, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;GHSA-r4xp-prcw-77qf&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: better-auth: Device login approval does not show the requesting client or permissions (HIGH)</title>
+<title>npm: better-auth: Device login approval does not show the requesting client or permissions (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-q84f-53jg-9ppm"/>
 <id>urn:bug-hou:GHSA-q84f-53jg-9ppm</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; better-authのデバイスログイン承認で要求元や権限が表示されない。HIGH&lt;br&gt;→ better-auth 1.7.0-rc.3に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] npm: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
