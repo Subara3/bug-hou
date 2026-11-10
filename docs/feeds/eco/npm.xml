@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-09T00:00:00Z</updated>
+<updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-h89v-g948-47vp"/>
+<id>urn:bug-hou:GHSA-h89v-g948-47vp</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;moleculer &amp;gt;= 0.15.0-beta1, &amp;lt; 0.15.2 → 0.15.2, moleculer &amp;lt; 0.14.36 → 0.14.36&lt;/p&gt;&lt;p&gt;CVE-2026-97705&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-5xjx-9qx6-jcrv"/>
+<id>urn:bug-hou:GHSA-5xjx-9qx6-jcrv</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@anthropic-ai/claude-code &amp;lt; 2.1.251 → 2.1.251&lt;/p&gt;&lt;p&gt;CVE-2026-88968&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-h7c4-q426-7jh9"/>
@@ -196,13 +210,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; undiciのWebSocketクライアントでPONGの無制限バッファによりDoS。MEDIUM&lt;br&gt;→ undici 6.29.1/7.30.1/8.12.2に更新&lt;/p&gt;&lt;p&gt;undici &amp;gt;= 5.15.0, &amp;lt; 6.29.1 → 6.29.1, undici &amp;gt;= 7.0.0, &amp;lt; 7.30.1 → 7.30.1, undici &amp;gt;= 8.0.0, &amp;lt; 8.12.2 → 8.12.2&lt;/p&gt;&lt;p&gt;CVE-2026-109932&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要対応] Node.js: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-965c-763c-88jm"/>
-<id>urn:bug-hou:GHSA-965c-763c-88jm</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; better-authでOAuthのstateをマジックリンクに使い、別人としてログインできる&lt;br&gt;→ better-authを1.7.7以降に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] Node.js: mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7w82-6f9j-v9jp"/>
 <id>urn:bug-hou:GHSA-7w82-6f9j-v9jp</id>
@@ -257,13 +264,6 @@
 <id>urn:bug-hou:GHSA-4mfg-r38w-w8fg</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mcp-sanitizerのURL検査をポート指定やIPv6で回避しSSRF。HIGH&lt;br&gt;→ mcp-sanitizer 1.4.0に更新&lt;/p&gt;&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-4mfg-r38w-w8fg&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Nodemailer: Quadratic backtracking in SMTP AUTH mechanism detection regexes allows pre-auth remote denial of service (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-4ffr-jq9g-5ffx"/>
-<id>urn:bug-hou:GHSA-4ffr-jq9g-5ffx</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; NodemailerのSMTP AUTH判定の正規表現で認証前DoS。MEDIUM&lt;br&gt;→ nodemailer 10.0.13に更新&lt;/p&gt;&lt;p&gt;nodemailer &amp;gt;= 3.0.0, &amp;lt;= 10.0.12 → 10.0.13&lt;/p&gt;&lt;p&gt;GHSA-4ffr-jq9g-5ffx&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: @better-auth/drizzle-adapter: Concurrent requests can exceed rate limits on PostgreSQL (LOW)</title>

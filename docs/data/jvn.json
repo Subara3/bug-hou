@@ -1,5 +1,26 @@
 [
  {
+  "id": "JVN#12040144",
+  "title": "Airbyteにおける任意のコードが実行可能な脆弱性",
+  "url": "https://jvn.jp/jp/JVN12040144/",
+  "desc": "Airbyteには、不適切なクラスロードにより想定外のコンポーネントを読み込むことができるため、任意のコード実行が可能となる脆弱性が存在します。",
+  "date": "2026-11-10"
+ },
+ {
+  "id": "JVNVU#96830794",
+  "title": "FrodoBots EarthRover Mini+における複数の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU96830794/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-10"
+ },
+ {
+  "id": "JVNVU#98836795",
+  "title": "PrestaShopのPerformance DebugモードにおけるPHPコードインジェクションの脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU98836795/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-10"
+ },
+ {
   "id": "JVNVU#98354779",
   "title": "Siemens製品に対するアップデート（2026年11月）",
   "url": "https://jvn.jp/vu/JVNVU98354779/",
@@ -61,13 +82,6 @@
   "url": "https://jvn.jp/jp/JVN55454512/",
   "desc": "SHIRASAGI Projectが提供するSHIRASAGIには、複数の脆弱性が存在します。",
   "date": "2026-11-05"
- },
- {
-  "id": "JVN#12040144",
-  "title": "Airbyteにおける任意のコードが実行可能な脆弱性",
-  "url": "https://jvn.jp/jp/JVN12040144/",
-  "desc": "Airbyteには、不適切なクラスロードにより想定外のコンポーネントを読み込むことができるため、任意のコード実行が可能となる脆弱性が存在します。",
-  "date": "2026-11-04"
  },
  {
   "id": "JVN#44272550",

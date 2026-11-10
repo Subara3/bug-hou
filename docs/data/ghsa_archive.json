@@ -361,6 +361,68 @@
   ]
  },
  {
+  "id": "GHSA-5xjx-9qx6-jcrv",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-88968",
+  "summary": "Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace",
+  "severity": "HIGH",
+  "score": 7.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-5xjx-9qx6-jcrv",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@anthropic-ai/claude-code",
+    "range": "< 2.1.251",
+    "fixed": "2.1.251"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h89v-g948-47vp",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-97705",
+  "summary": "Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-h89v-g948-47vp",
+  "kev": false,
+  "packages": [
+   {
+    "name": "moleculer",
+    "range": ">= 0.15.0-beta1, < 0.15.2",
+    "fixed": "0.15.2"
+   },
+   {
+    "name": "moleculer",
+    "range": "< 0.14.36",
+    "fixed": "0.14.36"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-gcwf-c25f-p9rv",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77433",
+  "summary": "Kiwi TCMS account confirmation open redirect through protocol-relative URLs",
+  "severity": "MEDIUM",
+  "score": 6.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+  "published": "2026-11-09",
+  "url": "https://github.com/advisories/GHSA-gcwf-c25f-p9rv",
+  "kev": false,
+  "packages": [
+   {
+    "name": "kiwitcms",
+    "range": "<= 12.4",
+    "fixed": null
+   }
+  ]
+ },
+ {
   "id": "GHSA-r4hm-p9f9-fj9v",
   "ecosystem": "pip",
   "cve": "CVE-2026-55649",

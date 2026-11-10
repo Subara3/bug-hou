@@ -3066,6 +3066,14 @@
  },
  "jvn": [
   {
+   "id": "JVNVU#98836795",
+   "title": "PrestaShopのPerformance DebugモードにおけるPHPコードインジェクションの脆弱性",
+   "url": "https://jvn.jp/vu/JVNVU98836795/",
+   "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+   "date": "2026-11-10",
+   "first_seen": "2026-11-10"
+  },
+  {
    "id": "JVNVU#99905564",
    "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
    "url": "https://jvn.jp/vu/JVNVU99905564/",

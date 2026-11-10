@@ -48,6 +48,7 @@
 "zbateson/mail-mime-parser": "pkg/composer/zbateson__mail-mime-parser.xml"
 },
 "npm": {
+"@anthropic-ai/claude-code": "pkg/npm/@anthropic-ai__claude-code.xml",
 "@azure/msal-node": "pkg/npm/@azure__msal-node.xml",
 "@backstage/plugin-catalog-backend": "pkg/npm/@backstage__plugin-catalog-backend.xml",
 "@better-auth/drizzle-adapter": "pkg/npm/@better-auth__drizzle-adapter.xml",
@@ -109,6 +110,7 @@
 "joi": "pkg/npm/joi.xml",
 "mcp-sanitizer": "pkg/npm/mcp-sanitizer.xml",
 "minimatch": "pkg/npm/minimatch.xml",
+"moleculer": "pkg/npm/moleculer.xml",
 "multer": "pkg/npm/multer.xml",
 "node-forge": "pkg/npm/node-forge.xml",
 "nodemailer": "pkg/npm/nodemailer.xml",
@@ -150,6 +152,7 @@
 "graphql-core": "pkg/pip/graphql-core.xml",
 "hydra-core": "pkg/pip/hydra-core.xml",
 "joserfc": "pkg/pip/joserfc.xml",
+"kiwitcms": "pkg/pip/kiwitcms.xml",
 "langgraph": "pkg/pip/langgraph.xml",
 "langgraph-api": "pkg/pip/langgraph-api.xml",
 "langgraph-cli": "pkg/pip/langgraph-cli.xml",

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-09T22:23:01Z",
+ "fetched_at": "2026-11-10T07:21:16Z",
  "days": 90,
  "targets": [
   {
@@ -11,7 +11,7 @@
    "kev_recent": 2,
    "kev_total": 13,
    "ghsa": 100,
-   "jvn": 1
+   "jvn": 2
   },
   {
    "id": "wordpress",
