@@ -14,11 +14,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのコマンドラッパーが危険なプロトコルやオプションを未検査。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-w8jc-g24h-crhw&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] pip: GitPython parse_actor_and_date() is vulnerable to quadratic backtracking on malformed identity lines (HIGH)</title>
+<title>pip: GitPython parse_actor_and_date() is vulnerable to quadratic backtracking on malformed identity lines (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-m64x-33q8-m5h7"/>
 <id>urn:bug-hou:GHSA-m64x-33q8-m5h7</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのparse_actor_and_date()で二乗時間のバックトラック。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-m64x-33q8-m5h7&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-m64x-33q8-m5h7&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] pip: GitPython: Submodule.move() follows an attacker-committed intermediate symlink outside the worktree (MEDIUM)</title>

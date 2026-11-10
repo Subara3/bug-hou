@@ -21,11 +21,11 @@
 <content type="html">&lt;p&gt;better-auth &amp;gt;= 1.3.8-beta.3, &amp;lt; 1.7.0-rc.3 → 1.7.0-rc.3&lt;/p&gt;&lt;p&gt;GHSA-q84f-53jg-9ppm&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要対応] npm: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
+<title>npm: better-auth: OAuth state can be used as a Magic Link to sign in as another user (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-965c-763c-88jm"/>
 <id>urn:bug-hou:GHSA-965c-763c-88jm</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; better-authでOAuthのstateをマジックリンクに使い、別人としてログインできる&lt;br&gt;→ better-authを1.7.7以降に更新&lt;/p&gt;&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;better-auth &amp;gt;= 1.4.0-beta.18, &amp;lt; 1.7.7 → 1.7.7&lt;/p&gt;&lt;p&gt;CVE-2026-114607&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: @better-auth/drizzle-adapter: Concurrent requests can exceed rate limits on PostgreSQL (LOW)</title>

@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Kiwi TCMS account confirmation open redirect through protocol-relative URLs (MEDIUM)</title>
+<title>[様子見] pip: Kiwi TCMS account confirmation open redirect through protocol-relative URLs (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gcwf-c25f-p9rv"/>
 <id>urn:bug-hou:GHSA-gcwf-c25f-p9rv</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;kiwitcms &amp;lt;= 12.4&lt;/p&gt;&lt;p&gt;CVE-2026-77433&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Kiwi TCMSのアカウント確認でオープンリダイレクト。MEDIUM&lt;/p&gt;&lt;p&gt;kiwitcms &amp;lt;= 12.4&lt;/p&gt;&lt;p&gt;CVE-2026-77433&lt;/p&gt;</content>
 </entry>
 </feed>

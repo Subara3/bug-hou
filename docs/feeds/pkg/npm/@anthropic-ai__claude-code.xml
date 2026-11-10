@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace (HIGH)</title>
+<title>[要確認] npm: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-5xjx-9qx6-jcrv"/>
 <id>urn:bug-hou:GHSA-5xjx-9qx6-jcrv</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@anthropic-ai/claude-code &amp;lt; 2.1.251 → 2.1.251&lt;/p&gt;&lt;p&gt;CVE-2026-88968&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Claude Codeの編集機能の競合でワークスペース外に書き込める。HIGH&lt;br&gt;→ @anthropic-ai/claude-code 2.1.251以降に更新&lt;/p&gt;&lt;p&gt;@anthropic-ai/claude-code &amp;lt; 2.1.251 → 2.1.251&lt;/p&gt;&lt;p&gt;CVE-2026-88968&lt;/p&gt;</content>
 </entry>
 </feed>

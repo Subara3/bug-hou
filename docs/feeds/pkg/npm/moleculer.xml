@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser (HIGH)</title>
+<title>[要確認] npm: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-h89v-g948-47vp"/>
 <id>urn:bug-hou:GHSA-h89v-g948-47vp</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;moleculer &amp;gt;= 0.15.0-beta1, &amp;lt; 0.15.2 → 0.15.2, moleculer &amp;lt; 0.14.36 → 0.14.36&lt;/p&gt;&lt;p&gt;CVE-2026-97705&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MoleculerのTCPトランスポーター使用時にログインなしでDoS。HIGH&lt;br&gt;→ moleculer 0.15.2 / 0.14.36 以降に更新&lt;/p&gt;&lt;p&gt;moleculer &amp;gt;= 0.15.0-beta1, &amp;lt; 0.15.2 → 0.15.2, moleculer &amp;lt; 0.14.36 → 0.14.36&lt;/p&gt;&lt;p&gt;CVE-2026-97705&lt;/p&gt;</content>
 </entry>
 </feed>

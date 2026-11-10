@@ -7,18 +7,18 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser (HIGH)</title>
+<title>[要確認] Node.js: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-h89v-g948-47vp"/>
 <id>urn:bug-hou:GHSA-h89v-g948-47vp</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;moleculer &amp;gt;= 0.15.0-beta1, &amp;lt; 0.15.2 → 0.15.2, moleculer &amp;lt; 0.14.36 → 0.14.36&lt;/p&gt;&lt;p&gt;CVE-2026-97705&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MoleculerのTCPトランスポーター使用時にログインなしでDoS。HIGH&lt;br&gt;→ moleculer 0.15.2 / 0.14.36 以降に更新&lt;/p&gt;&lt;p&gt;moleculer &amp;gt;= 0.15.0-beta1, &amp;lt; 0.15.2 → 0.15.2, moleculer &amp;lt; 0.14.36 → 0.14.36&lt;/p&gt;&lt;p&gt;CVE-2026-97705&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace (HIGH)</title>
+<title>[要確認] Node.js: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-5xjx-9qx6-jcrv"/>
 <id>urn:bug-hou:GHSA-5xjx-9qx6-jcrv</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@anthropic-ai/claude-code &amp;lt; 2.1.251 → 2.1.251&lt;/p&gt;&lt;p&gt;CVE-2026-88968&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Claude Codeの編集機能の競合でワークスペース外に書き込める。HIGH&lt;br&gt;→ @anthropic-ai/claude-code 2.1.251以降に更新&lt;/p&gt;&lt;p&gt;@anthropic-ai/claude-code &amp;lt; 2.1.251 → 2.1.251&lt;/p&gt;&lt;p&gt;CVE-2026-88968&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients (MEDIUM)</title>
