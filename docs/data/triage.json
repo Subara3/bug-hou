@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T00:45:59Z",
+ "updated_at": "2026-11-10T12:45:53Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -780,13 +780,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-4ffr-jq9g-5ffx": {
-   "level": "watch",
-   "reason": "NodemailerのSMTP AUTH判定の正規表現で認証前DoS。MEDIUM",
-   "todo": "nodemailer 10.0.13に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-4hm6-w6qq-w73v": {
    "level": "check",
    "reason": "LangGraphのカスタム認証で他ユーザーのStoreに触れる。HIGH",
@@ -982,6 +975,13 @@
    "todo": "node-forge 1.4.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-5xjx-9qx6-jcrv": {
+   "level": "check",
+   "reason": "Claude Codeの編集機能の競合でワークスペース外に書き込める。HIGH",
+   "todo": "@anthropic-ai/claude-code 2.1.251以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
   },
   "GHSA-628f-v4f6-p37r": {
    "level": "check",
@@ -1297,15 +1297,6 @@
    "todo": "vue-i18n 11.4.14に更新",
    "kev": false,
    "at": "2026-11-02"
-  },
-  "GHSA-965c-763c-88jm": {
-   "level": "action",
-   "reason": "better-authでOAuthのstateをマジックリンクに使い、別人としてログインできる",
-   "todo": "better-authを1.7.7以降に更新",
-   "kev": false,
-   "at": "2026-11-02",
-   "urgency": "soon",
-   "comment": "ログインに使っているなら数日のうちに更新したい"
   },
   "GHSA-96h3-5x6v-m776": {
    "level": "watch",
@@ -1708,6 +1699,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-gcwf-c25f-p9rv": {
+   "level": "watch",
+   "reason": "Kiwi TCMSのアカウント確認でオープンリダイレクト。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-10"
+  },
   "GHSA-gfvx-2c2g-38wq": {
    "level": "check",
    "reason": "Highchartsの系列列構築でプロトタイプ汚染。HIGH",
@@ -1805,6 +1803,13 @@
    "level": "watch",
    "reason": "MEDIUM。MCPサーバーのHTTPモードを1つの接続が独占し、新しい接続を断れる",
    "todo": "@tsparticles/mcp-server を 4.3.2 以降に更新",
+   "kev": false,
+   "at": "2026-11-10"
+  },
+  "GHSA-h89v-g948-47vp": {
+   "level": "check",
+   "reason": "MoleculerのTCPトランスポーター使用時にログインなしでDoS。HIGH",
+   "todo": "moleculer 0.15.2 / 0.14.36 以降に更新",
    "kev": false,
    "at": "2026-11-10"
   },
@@ -1968,13 +1973,6 @@
    "todo": "filecoin-pinを使っているなら1.1.1に更新",
    "kev": false,
    "at": "2026-11-06"
-  },
-  "GHSA-m64x-33q8-m5h7": {
-   "level": "check",
-   "reason": "GitPythonのparse_actor_and_date()で二乗時間のバックトラック。HIGH",
-   "todo": "GitPython 3.2.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-m65p-9j7q-6w33": {
    "level": "check",
