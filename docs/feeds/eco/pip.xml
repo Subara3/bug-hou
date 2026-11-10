@@ -7,11 +7,95 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
+<title>Python: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output (LOW)</title>
+<link href="https://github.com/advisories/GHSA-whr6-fgpq-fpv9"/>
+<id>urn:bug-hou:GHSA-whr6-fgpq-fpv9</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0, tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0&lt;/p&gt;&lt;p&gt;CVE-2026-123373&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env` (LOW)</title>
+<link href="https://github.com/advisories/GHSA-rm8w-w798-g545"/>
+<id>urn:bug-hou:GHSA-rm8w-w798-g545</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint = 0.32.0 → 0.33.0, tmatens/compose-lint = 0.32.0 → 0.33.0&lt;/p&gt;&lt;p&gt;CVE-2026-123796&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r7j4-crjv-h467"/>
+<id>urn:bug-hou:GHSA-r7j4-crjv-h467</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.31.0, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125121&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: OctoPrint: Stored XSS via saved connection parameters (LOW)</title>
+<link href="https://github.com/advisories/GHSA-p623-mxf7-qxjm"/>
+<id>urn:bug-hou:GHSA-p623-mxf7-qxjm</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;OctoPrint &amp;gt;= 2.0.0rc1, &amp;lt;= 2.0.0rc6 → 2.0.0rc7&lt;/p&gt;&lt;p&gt;CVE-2026-123364&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings (LOW)</title>
+<link href="https://github.com/advisories/GHSA-jf3h-8jvx-vcrg"/>
+<id>urn:bug-hou:GHSA-jf3h-8jvx-vcrg</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.31.0 → 0.32.0, tmatens/compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-123372&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Python: Kiwi TCMS account confirmation open redirect through protocol-relative URLs (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gcwf-c25f-p9rv"/>
 <id>urn:bug-hou:GHSA-gcwf-c25f-p9rv</id>
 <updated>2026-11-10T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Kiwi TCMSのアカウント確認でオープンリダイレクト。MEDIUM&lt;/p&gt;&lt;p&gt;kiwitcms &amp;lt;= 12.4&lt;/p&gt;&lt;p&gt;CVE-2026-77433&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target (LOW)</title>
+<link href="https://github.com/advisories/GHSA-88f4-frh5-gmcr"/>
+<id>urn:bug-hou:GHSA-88f4-frh5-gmcr</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.31.0 → 0.32.0, tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-123371&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: .env read through a symlink outside the project can expose the CI job's environment (LOW)</title>
+<link href="https://github.com/advisories/GHSA-6wcv-rj3c-mhv3"/>
+<id>urn:bug-hou:GHSA-6wcv-rj3c-mhv3</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.30.0 → 0.31.0, tmatens/compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.30.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-123368&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6f4g-xm8v-pgv6"/>
+<id>urn:bug-hou:GHSA-6f4g-xm8v-pgv6</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.30.0 → 0.31.0, compose-lint &amp;lt;= 0.30.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-123369&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: `fix --apply` can delete a line the user did not select, including a security setting (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-65v8-q222-64xx"/>
+<id>urn:bug-hou:GHSA-65v8-q222-64xx</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.9.0, &amp;lt;= 0.17.0 → 0.18.0&lt;/p&gt;&lt;p&gt;CVE-2026-123370&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-62m9-f875-rqw6"/>
+<id>urn:bug-hou:GHSA-62m9-f875-rqw6</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;gpustack &amp;gt;= 0.7.1, &amp;lt; 2.2.2 → 2.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-102894&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3hch-x692-6qj3"/>
+<id>urn:bug-hou:GHSA-3hch-x692-6qj3</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;gpustack &amp;gt;= 2.2.0, &amp;lt; 2.2.2 → 2.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-103002&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2h4w-29cv-2cmv"/>
+<id>urn:bug-hou:GHSA-2h4w-29cv-2cmv</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ag2 &amp;gt;= 0.13.2, &amp;lt; 1.1.1 → 1.1.1, autogen &amp;gt;= 0.13.2, &amp;lt;= 0.14.1&lt;/p&gt;&lt;p&gt;CVE-2026-113663&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: Logging Redactor: PII data in str/repr of non primitive objects was not being redacted (HIGH)</title>
@@ -133,20 +217,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Hydraの旧ターゲット拒否リストで安全でないPyYAML読込を許す。HIGH&lt;br&gt;→ hydra-core 1.3.8/1.4.0rc3に更新&lt;/p&gt;&lt;p&gt;hydra-core &amp;gt;= 1.3.6, &amp;lt; 1.3.8 → 1.3.8, hydra-core &amp;gt;= 1.4.0.dev9, &amp;lt; 1.4.0rc3 → 1.4.0rc3&lt;/p&gt;&lt;p&gt;GHSA-wf6j-7hvr-gr93&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Python: GitPython command wrappers omit unsafe protocol and option checks (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-w8jc-g24h-crhw"/>
-<id>urn:bug-hou:GHSA-w8jc-g24h-crhw</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのコマンドラッパーが危険なプロトコルやオプションを未検査。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-w8jc-g24h-crhw&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Flexible GraphRAG: Cypher/Graph Injection via broken string-escaping in FalkorDB adapter (_escape()) - full graph wipe from ingested-document content (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-vqrg-773h-4wxc"/>
-<id>urn:bug-hou:GHSA-vqrg-773h-4wxc</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Flexible GraphRAGのFalkorDBアダプタでCypher注入しグラフ全消去。HIGH&lt;br&gt;→ flexible-graphrag 0.8.2に更新&lt;/p&gt;&lt;p&gt;flexible-graphrag &amp;gt;= 0.6.0, &amp;lt; 0.8.2 → 0.8.2&lt;/p&gt;&lt;p&gt;CVE-2026-114510&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Python: Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rwrf-2pqf-9j8j"/>
 <id>urn:bug-hou:GHSA-rwrf-2pqf-9j8j</id>
@@ -175,41 +245,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Authlibのループバック例外をuserinfoで回避し平文HTTP送信。LOW&lt;br&gt;→ authlib 1.8.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.7.2 → 1.8.0&lt;/p&gt;&lt;p&gt;CVE-2026-114614&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Python: LiteLLM vulnerable to reflected XSS in /sso/debug/callback (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-hhww-mrg2-969h"/>
-<id>urn:bug-hou:GHSA-hhww-mrg2-969h</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LiteLLMの/sso/debug/callbackで反射型XSS。MEDIUM&lt;br&gt;→ litellm 1.85.0に更新&lt;/p&gt;&lt;p&gt;litellm &amp;gt;= 1.65.5, &amp;lt; 1.85.0 → 1.85.0&lt;/p&gt;&lt;p&gt;GHSA-hhww-mrg2-969h&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: vLLM: Request-controlled mm_processor_kwargs.code_revision allows remote code execution (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-h3rc-6mm3-gc2m"/>
-<id>urn:bug-hou:GHSA-h3rc-6mm3-gc2m</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; vLLMでリクエスト中のcode_revisionからRCE。HIGH&lt;br&gt;→ vllm 0.31.0に更新&lt;/p&gt;&lt;p&gt;vllm &amp;gt;= 0.7.3, &amp;lt; 0.31.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-114053&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: GitPython: Submodule.move() follows an attacker-committed intermediate symlink outside the worktree (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-gq48-pqfc-9p58"/>
-<id>urn:bug-hou:GHSA-gq48-pqfc-9p58</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GitPythonのSubmodule.move()がシンボリックリンクで作業ツリー外へ。MEDIUM&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-gq48-pqfc-9p58&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: LiteLLM: internal_user_viewer arbitrary local file read via `vertex_ai_credentials` (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-g5ff-637f-6q2m"/>
-<id>urn:bug-hou:GHSA-g5ff-637f-6q2m</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; LiteLLMでinternal_user_viewerが任意のローカルファイルを読取。HIGH&lt;br&gt;→ litellm 1.95.0に更新&lt;/p&gt;&lt;p&gt;litellm &amp;lt; 1.95.0 → 1.95.0&lt;/p&gt;&lt;p&gt;GHSA-g5ff-637f-6q2m&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: GitPython: separate_git_dir leaks env vars via crafted .gitmodules submodule name (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-fx3j-rwgx-fr94"/>
-<id>urn:bug-hou:GHSA-fx3j-rwgx-fr94</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GitPythonで細工した.gitmodulesから環境変数が漏洩。MEDIUM&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-fx3j-rwgx-fr94&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Python: Authlib: Default JWT bearer grant accepts assertions for the wrong audience (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-fch4-3c6x-j4gc"/>
 <id>urn:bug-hou:GHSA-fch4-3c6x-j4gc</id>
@@ -217,25 +252,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibのJWT bearer grantが別audienceのアサーションを受理。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114618&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Python: GitPython Remote.pull() refspec bypasses the --upload-pack unsafe-option guard, enabling arbitrary command execution (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-f9j4-qggq-h239"/>
-<id>urn:bug-hou:GHSA-f9j4-qggq-h239</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのRemote.pull()でrefspecから任意コマンド実行。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;gt;= 3.1.30, &amp;lt; 3.2.0 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-f9j4-qggq-h239&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Python: Authlib: ID token can disable its own nonce validation via the nonce_supported claim (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-c5mf-xmp2-59rc"/>
 <id>urn:bug-hou:GHSA-c5mf-xmp2-59rc</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibでIDトークン自身がnonce検証を無効化できる。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114617&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: MongoDB Python Driver: Out-of-bounds read in BSON decoding via a malformed Regex element (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-98qm-wvgf-w4cf"/>
-<id>urn:bug-hou:GHSA-98qm-wvgf-w4cf</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; PyMongoのBSONデコードで不正Regex要素により境界外読み。HIGH&lt;br&gt;→ pymongo 4.18.3に更新&lt;/p&gt;&lt;p&gt;pymongo &amp;gt;= 3.9.0, &amp;lt;= 4.18.2 → 4.18.3&lt;/p&gt;&lt;p&gt;CVE-2026-106435&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: Authlib accepts an empty HMAC key, allowing JWS/JWT signature forgery (HS256/HS384/HS512) (HIGH)</title>
@@ -252,13 +273,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Authlibのアルゴリズム混同対策が不完全でHMAC署名を偽造可能。HIGH&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.3.1, &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114615&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Python: Strands Agents: Default FileSessionManager storage is world-readable on shared systems (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-763v-5pjm-fx36"/>
-<id>urn:bug-hou:GHSA-763v-5pjm-fx36</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Strands Agentsのセッション保存が共有環境で全員に読取可能。MEDIUM&lt;br&gt;→ strands-agents 1.48.0に更新&lt;/p&gt;&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-763v-5pjm-fx36&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] Python: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-45c3-73f7-pv4m"/>
 <id>urn:bug-hou:GHSA-45c3-73f7-pv4m</id>
@@ -266,25 +280,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dnspythonのfrom_wire_parser()でCPUを過剰消費。HIGH&lt;br&gt;→ dnspython 2.9.0に更新&lt;/p&gt;&lt;p&gt;dnspython &amp;lt; 2.9.0 → 2.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114605&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Python: Strands Agents: Local Privilege Escalation via Symlink Attack in Default Session File Storage (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-3w55-933p-8pv5"/>
-<id>urn:bug-hou:GHSA-3w55-933p-8pv5</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Strands Agentsのセッション保存でシンボリックリンクによるローカル権限昇格&lt;br&gt;→ strands-agents 1.48.0に更新&lt;/p&gt;&lt;p&gt;strands-agents &amp;lt; 1.48.0 → 1.48.0&lt;/p&gt;&lt;p&gt;GHSA-3w55-933p-8pv5&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] Python: Datadog dd-trace-py: ReDoS in URL query string obfuscation (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3633-r77q-h3v3"/>
 <id>urn:bug-hou:GHSA-3633-r77q-h3v3</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dd-trace-pyのURLクエリ難読化処理でReDoS。HIGH&lt;br&gt;→ ddtrace 3.19.9/4.15.6に更新&lt;/p&gt;&lt;p&gt;ddtrace &amp;gt;= 1.5.0, &amp;lt; 3.19.9 → 3.19.9, ddtrace &amp;gt;= 4.0.0, &amp;lt; 4.15.6 → 4.15.6&lt;/p&gt;&lt;p&gt;CVE-2026-116588&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: GitPython: arbitrary file read via attacker-controlled branch name in `Head.checkout()` (incomplete fix of CVE-2026-78679) (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-23mf-xhv8-69c2"/>
-<id>urn:bug-hou:GHSA-23mf-xhv8-69c2</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GitPythonのcheckout()でブランチ名から任意ファイル読取。HIGH&lt;br&gt;→ GitPython 3.2.0に更新&lt;/p&gt;&lt;p&gt;GitPython &amp;lt;= 3.1.62 → 3.2.0&lt;/p&gt;&lt;p&gt;GHSA-23mf-xhv8-69c2&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: pypdf has possible large memory usage when parsing cross-reference streams (HIGH)</title>

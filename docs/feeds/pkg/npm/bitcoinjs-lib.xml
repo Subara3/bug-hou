@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜bitcoinjs-lib（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/bitcoinjs-lib.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/bitcoinjs-lib.xml</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-8vv3-6qpc-gpw6"/>
+<id>urn:bug-hou:GHSA-8vv3-6qpc-gpw6</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;bitcoinjs-lib &amp;gt;= 2.3.0, &amp;lt; 5.2.1 → 5.2.1, bitcoinjs-lib &amp;gt;= 6.0.0, &amp;lt; 6.1.8 → 6.1.8, bitcoinjs-lib &amp;gt;= 7.0.0-rc.0, &amp;lt; 7.0.2 → 7.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-107846&lt;/p&gt;</content>
+</entry>
+</feed>

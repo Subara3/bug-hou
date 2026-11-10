@@ -19,8 +19,8 @@
   {
    "id": "CVE-2026-111497",
    "published": "2026-10-22",
-   "modified": "2026-11-06",
-   "status": "Analyzed",
+   "modified": "2026-11-10",
+   "status": "Undergoing Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -51,6 +51,336 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-pcrw-h46h-c93h",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125120",
+   "summary": "Mongoose: sanitizeFilter not applied on countDocuments",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-pcrw-h46h-c93h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mongoose",
+     "range": "< 6.13.11",
+     "fixed": "6.13.11"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 7.0.0, < 7.8.12",
+     "fixed": "7.8.12"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 8.0.0, < 8.24.3",
+     "fixed": "8.24.3"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 9.0.0, < 9.9.2",
+     "fixed": "9.9.2"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-wrr5-j383-f7h2",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-79914",
+   "summary": "NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-wrr5-j383-f7h2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@nocobase/plugin-action-custom-request",
+     "range": ">= 2.1.0-alpha.8, < 2.1.15",
+     "fixed": "2.1.15"
+    },
+    {
+     "name": "@nocobase/plugin-action-custom-request",
+     "range": ">= 2.2.0-alpha.1, < 2.2.0-alpha.4",
+     "fixed": "2.2.0-alpha.4"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-xwgp-w3pj-q5h3",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-118670",
+   "summary": "OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document",
+   "severity": "HIGH",
+   "score": 8.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:L",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-xwgp-w3pj-q5h3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@ohif/extension-dicom-pdf",
+     "range": ">= 3.5.0-beta.0, < 3.12.18",
+     "fixed": "3.12.18"
+    },
+    {
+     "name": "@ohif/extension-dicom-pdf",
+     "range": ">= 3.13.0-beta.0, < 3.13.10",
+     "fixed": "3.13.10"
+    },
+    {
+     "name": "@ohif/extension-dicom-pdf",
+     "range": ">= 3.14.0-beta.0, < 3.14.0-beta.36",
+     "fixed": "3.14.0-beta.36"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-9wg5-mj3p-v49q",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-118774",
+   "summary": "Forge: Certificate signature verified with the issuer's RSA signature scheme",
+   "severity": "LOW",
+   "score": 3.7,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-9wg5-mj3p-v49q",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.0",
+     "fixed": "1.4.1"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-2vgq-wchc-25w7",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-118776",
+   "summary": "Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption",
+   "severity": "LOW",
+   "score": 3.7,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-2vgq-wchc-25w7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.0",
+     "fixed": "1.4.1"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-h46v-rmh6-fq4f",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119189",
+   "summary": "Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-h46v-rmh6-fq4f",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.0",
+     "fixed": "1.4.1"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-rhr8-3pm8-cq29",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119191",
+   "summary": "Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-rhr8-3pm8-cq29",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.0",
+     "fixed": "1.4.1"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-6qrw-m8cv-hcxf",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119192",
+   "summary": "Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-6qrw-m8cv-hcxf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.0",
+     "fixed": "1.4.1"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-chp3-j5qr-2vfr",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-115779",
+   "summary": "Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie()",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-chp3-j5qr-2vfr",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@effect/platform",
+     "range": ">= 0.1.0, < 0.97.1",
+     "fixed": "0.97.1"
+    },
+    {
+     "name": "effect",
+     "range": ">= 4.0.0-beta.0, < 4.0.0-beta.103",
+     "fixed": "4.0.0-beta.103"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-752m-7p75-49gf",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-110802",
+   "summary": "Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-752m-7p75-49gf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "altair-static",
+     "range": ">= 7.2.4, < 8.5.8",
+     "fixed": "8.5.8"
+    },
+    {
+     "name": "altair-express-middleware",
+     "range": ">= 7.2.4, < 8.5.8",
+     "fixed": "8.5.8"
+    },
+    {
+     "name": "altair-koa-middleware",
+     "range": ">= 7.2.4, < 8.5.8",
+     "fixed": "8.5.8"
+    },
+    {
+     "name": "altair-fastify-plugin",
+     "range": ">= 7.2.4, < 8.5.8",
+     "fixed": "8.5.8"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-8vv3-6qpc-gpw6",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-107846",
+   "summary": "bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:H/SA:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-8vv3-6qpc-gpw6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "bitcoinjs-lib",
+     "range": ">= 2.3.0, < 5.2.1",
+     "fixed": "5.2.1"
+    },
+    {
+     "name": "bitcoinjs-lib",
+     "range": ">= 6.0.0, < 6.1.8",
+     "fixed": "6.1.8"
+    },
+    {
+     "name": "bitcoinjs-lib",
+     "range": ">= 7.0.0-rc.0, < 7.0.2",
+     "fixed": "7.0.2"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-xxrh-5hgg-gj4h",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-102650",
+   "summary": "Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-xxrh-5hgg-gj4h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@nuxt/content",
+     "range": ">= 3.0.0, < 3.15.2",
+     "fixed": "3.15.2"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
+  {
+   "id": "GHSA-xggf-m53x-jc3f",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-95860",
+   "summary": "node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions",
+   "severity": "CRITICAL",
+   "score": 9.1,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-xggf-m53x-jc3f",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-opcua",
+     "range": ">= 2.42.0, < 2.180.0",
+     "fixed": "2.180.0"
+    },
+    {
+     "name": "node-opcua-address-space",
+     "range": ">= 2.42.0, < 2.180.0",
+     "fixed": "2.180.0"
+    },
+    {
+     "name": "node-opcua-server",
+     "range": ">= 2.42.0, < 2.180.0",
+     "fixed": "2.180.0"
+    }
+   ],
+   "first_seen": "2026-11-10"
+  },
   {
    "id": "GHSA-5xjx-9qx6-jcrv",
    "ecosystem": "npm",
@@ -2112,386 +2442,6 @@
      "name": "dd-trace",
      "range": ">= 6.0.0, < 6.20.1",
      "fixed": "6.20.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-mf2p-h6hf-fcwm",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116675",
-   "summary": "TinyMCE Cross-Site Scripting (XSS) vulnerability using media plugin `data-mce-object` serialization",
-   "severity": "HIGH",
-   "score": 8.5,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-mf2p-h6hf-fcwm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "tinymce",
-     "range": ">= 8.5.1, < 8.9.3",
-     "fixed": "8.9.3"
-    },
-    {
-     "name": "TinyMCE",
-     "range": ">= 8.5.1, < 8.9.3",
-     "fixed": "8.9.3"
-    },
-    {
-     "name": "tinymce/tinymce",
-     "range": ">= 8.5.1, < 8.9.3",
-     "fixed": "8.9.3"
-    },
-    {
-     "name": "tinymce",
-     "range": "= 7.9.3",
-     "fixed": "7.9.4"
-    },
-    {
-     "name": "TinyMCE",
-     "range": "= 7.9.3",
-     "fixed": "7.9.4"
-    },
-    {
-     "name": "tinymce/tinymce",
-     "range": "= 7.9.3",
-     "fixed": "7.9.4"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-v6mg-96c6-gmpq",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116687",
-   "summary": "CKEditor: Cross-site scripting (XSS) in the engine package",
-   "severity": "LOW",
-   "score": 3.1,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-v6mg-96c6-gmpq",
-   "kev": false,
-   "packages": [
-    {
-     "name": "ckeditor5",
-     "range": ">= 29.0.0, < 47.7.4",
-     "fixed": "47.7.4"
-    },
-    {
-     "name": "@ckeditor/ckeditor5-engine",
-     "range": ">= 29.0.0, < 47.7.4",
-     "fixed": "47.7.4"
-    },
-    {
-     "name": "ckeditor5",
-     "range": ">= 48.0.0, < 48.5.1",
-     "fixed": "48.5.1"
-    },
-    {
-     "name": "@ckeditor/ckeditor5-engine",
-     "range": ">= 48.0.0, < 48.5.1",
-     "fixed": "48.5.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-rh54-vffm-5fvp",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116688",
-   "summary": "CKEditor: Cross-site scripting (XSS) in the engine package",
-   "severity": "HIGH",
-   "score": 8.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-rh54-vffm-5fvp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "ckeditor5",
-     "range": ">= 45.0.0, < 47.7.4",
-     "fixed": "47.7.4"
-    },
-    {
-     "name": "@ckeditor/ckeditor5-engine",
-     "range": ">= 45.0.0, < 47.7.4",
-     "fixed": "47.7.4"
-    },
-    {
-     "name": "ckeditor5",
-     "range": ">= 48.0.0, < 48.5.1",
-     "fixed": "48.5.1"
-    },
-    {
-     "name": "@ckeditor/ckeditor5-engine",
-     "range": ">= 48.0.0, < 48.5.1",
-     "fixed": "48.5.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-4w7w-5xrc-9h26",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-109829",
-   "summary": "undici vulnerable to cache poisoning and cross-user disclosure via cross-origin redirects",
-   "severity": "HIGH",
-   "score": 7.4,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-4w7w-5xrc-9h26",
-   "kev": false,
-   "packages": [
-    {
-     "name": "undici",
-     "range": ">= 7.0.0, < 7.30.1",
-     "fixed": "7.30.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 8.0.0, < 8.12.2",
-     "fixed": "8.12.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-2m5v-pch6-74hx",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-109383",
-   "summary": "undici vulnerable to TLS certificate validation bypass via dropped tls options in Agent",
-   "severity": "HIGH",
-   "score": 7.4,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-2m5v-pch6-74hx",
-   "kev": false,
-   "packages": [
-    {
-     "name": "undici",
-     "range": ">= 4.0.0, < 6.29.1",
-     "fixed": "6.29.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 7.0.0, < 7.30.1",
-     "fixed": "7.30.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 8.0.0, < 8.12.2",
-     "fixed": "8.12.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-qrxm-fqhp-jwvm",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-87018",
-   "summary": "undici vulnerable to Denial of Service via TLS 1.2 certificate-changing renegotiation",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-qrxm-fqhp-jwvm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "undici",
-     "range": ">= 4.2.1, < 6.29.1",
-     "fixed": "6.29.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 7.0.0, < 7.30.1",
-     "fixed": "7.30.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 8.0.0, < 8.12.2",
-     "fixed": "8.12.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-9fm3-97px-rjf6",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-109932",
-   "summary": "undici WebSocket client vulnerable to Denial of Service via unbounded automatic PONG buffering",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-9fm3-97px-rjf6",
-   "kev": false,
-   "packages": [
-    {
-     "name": "undici",
-     "range": ">= 5.15.0, < 6.29.1",
-     "fixed": "6.29.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 7.0.0, < 7.30.1",
-     "fixed": "7.30.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 8.0.0, < 8.12.2",
-     "fixed": "8.12.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-55wc-3pg8-jfw6",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-87029",
-   "summary": "undici vulnerable to Denial of Service via unhandled exception in the decompress interceptor",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-55wc-3pg8-jfw6",
-   "kev": false,
-   "packages": [
-    {
-     "name": "undici",
-     "range": ">= 7.15.0, < 7.30.1",
-     "fixed": "7.30.1"
-    },
-    {
-     "name": "undici",
-     "range": ">= 8.0.0, < 8.12.2",
-     "fixed": "8.12.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-f897-62hf-6gxq",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "MCP TypeScript SDK: HTTP server transports and handlers did not limit request body size or JSON-RPC batch length",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-f897-62hf-6gxq",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@modelcontextprotocol/sdk",
-     "range": ">= 1.10.0, < 1.30.1",
-     "fixed": "1.30.1"
-    },
-    {
-     "name": "@modelcontextprotocol/server",
-     "range": ">= 2.0.0, < 2.1.0",
-     "fixed": "2.1.0"
-    },
-    {
-     "name": "@modelcontextprotocol/node",
-     "range": ">= 2.0.0, < 2.1.0",
-     "fixed": "2.1.0"
-    },
-    {
-     "name": "@modelcontextprotocol/hono",
-     "range": ">= 2.0.0, < 2.0.1",
-     "fixed": "2.0.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-6pq8-jhm2-2vcw",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-110816",
-   "summary": "qs : qs.stringify with arrayFormat 'comma' throws an uncaught TypeError on array elements carrying a non-callable own toString (DoS)",
-   "severity": "MEDIUM",
-   "score": 6.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-6pq8-jhm2-2vcw",
-   "kev": false,
-   "packages": [
-    {
-     "name": "qs",
-     "range": ">= 6.7.0, <= 6.16.0",
-     "fixed": "6.16.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-qq8j-7v2v-3rwp",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-109855",
-   "summary": "undici WebSocket client vulnerable to Denial of Service via failed HTTP/2 handshake",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-qq8j-7v2v-3rwp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "undici",
-     "range": ">= 8.11.0, < 8.11.2",
-     "fixed": "8.11.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-44jh-23m7-hpcf",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "@better-auth/drizzle-adapter: Concurrent requests can exceed rate limits on PostgreSQL",
-   "severity": "LOW",
-   "score": 3.7,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-44jh-23m7-hpcf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@better-auth/drizzle-adapter",
-     "range": ">= 1.6.17, < 1.7.7",
-     "fixed": "1.7.7"
-    },
-    {
-     "name": "@better-auth/kysely-adapter",
-     "range": ">= 1.6.17, < 1.7.0",
-     "fixed": "1.7.0"
-    },
-    {
-     "name": "better-auth",
-     "range": ">= 1.6.17, < 1.7.7",
-     "fixed": "1.7.7"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-r4xp-prcw-77qf",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "better-auth: OAuth Proxy lets an attacker sign in as another user",
-   "severity": "HIGH",
-   "score": 7.4,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-r4xp-prcw-77qf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "better-auth",
-     "range": ">= 1.5.0-beta.12, < 1.7.7",
-     "fixed": "1.7.7"
     }
    ],
    "first_seen": "2026-11-02"

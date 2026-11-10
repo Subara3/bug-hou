@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-10T07:21:16Z",
+ "fetched_at": "2026-11-10T19:45:49Z",
  "days": 90,
  "targets": [
   {
@@ -38,7 +38,7 @@
   {
    "id": "python",
    "label": "Python",
-   "cves": 16,
+   "cves": 18,
    "critical": 2,
    "high": 3,
    "kev_recent": 0,

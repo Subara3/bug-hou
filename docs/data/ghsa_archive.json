@@ -1,5 +1,585 @@
 [
  {
+  "id": "GHSA-pcrw-h46h-c93h",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125120",
+  "summary": "Mongoose: sanitizeFilter not applied on countDocuments",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-pcrw-h46h-c93h",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mongoose",
+    "range": "< 6.13.11",
+    "fixed": "6.13.11"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 7.0.0, < 7.8.12",
+    "fixed": "7.8.12"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 8.0.0, < 8.24.3",
+    "fixed": "8.24.3"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 9.0.0, < 9.9.2",
+    "fixed": "9.9.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-wrr5-j383-f7h2",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-79914",
+  "summary": "NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides",
+  "severity": "MEDIUM",
+  "score": 4.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-wrr5-j383-f7h2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@nocobase/plugin-action-custom-request",
+    "range": ">= 2.1.0-alpha.8, < 2.1.15",
+    "fixed": "2.1.15"
+   },
+   {
+    "name": "@nocobase/plugin-action-custom-request",
+    "range": ">= 2.2.0-alpha.1, < 2.2.0-alpha.4",
+    "fixed": "2.2.0-alpha.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xwgp-w3pj-q5h3",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-118670",
+  "summary": "OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document",
+  "severity": "HIGH",
+  "score": 8.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:L",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-xwgp-w3pj-q5h3",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@ohif/extension-dicom-pdf",
+    "range": ">= 3.5.0-beta.0, < 3.12.18",
+    "fixed": "3.12.18"
+   },
+   {
+    "name": "@ohif/extension-dicom-pdf",
+    "range": ">= 3.13.0-beta.0, < 3.13.10",
+    "fixed": "3.13.10"
+   },
+   {
+    "name": "@ohif/extension-dicom-pdf",
+    "range": ">= 3.14.0-beta.0, < 3.14.0-beta.36",
+    "fixed": "3.14.0-beta.36"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9wg5-mj3p-v49q",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-118774",
+  "summary": "Forge: Certificate signature verified with the issuer's RSA signature scheme",
+  "severity": "LOW",
+  "score": 3.7,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-9wg5-mj3p-v49q",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.0",
+    "fixed": "1.4.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-2vgq-wchc-25w7",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-118776",
+  "summary": "Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption",
+  "severity": "LOW",
+  "score": 3.7,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-2vgq-wchc-25w7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.0",
+    "fixed": "1.4.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h46v-rmh6-fq4f",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119189",
+  "summary": "Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-h46v-rmh6-fq4f",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.0",
+    "fixed": "1.4.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rhr8-3pm8-cq29",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119191",
+  "summary": "Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-rhr8-3pm8-cq29",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.0",
+    "fixed": "1.4.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6qrw-m8cv-hcxf",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119192",
+  "summary": "Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-6qrw-m8cv-hcxf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.0",
+    "fixed": "1.4.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-chp3-j5qr-2vfr",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-115779",
+  "summary": "Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie()",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-chp3-j5qr-2vfr",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@effect/platform",
+    "range": ">= 0.1.0, < 0.97.1",
+    "fixed": "0.97.1"
+   },
+   {
+    "name": "effect",
+    "range": ">= 4.0.0-beta.0, < 4.0.0-beta.103",
+    "fixed": "4.0.0-beta.103"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-752m-7p75-49gf",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-110802",
+  "summary": "Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox",
+  "severity": "MEDIUM",
+  "score": 6.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-752m-7p75-49gf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "altair-static",
+    "range": ">= 7.2.4, < 8.5.8",
+    "fixed": "8.5.8"
+   },
+   {
+    "name": "altair-express-middleware",
+    "range": ">= 7.2.4, < 8.5.8",
+    "fixed": "8.5.8"
+   },
+   {
+    "name": "altair-koa-middleware",
+    "range": ">= 7.2.4, < 8.5.8",
+    "fixed": "8.5.8"
+   },
+   {
+    "name": "altair-fastify-plugin",
+    "range": ">= 7.2.4, < 8.5.8",
+    "fixed": "8.5.8"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8vv3-6qpc-gpw6",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-107846",
+  "summary": "bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list",
+  "severity": "CRITICAL",
+  "score": 9.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:L/SC:N/SI:H/SA:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-8vv3-6qpc-gpw6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "bitcoinjs-lib",
+    "range": ">= 2.3.0, < 5.2.1",
+    "fixed": "5.2.1"
+   },
+   {
+    "name": "bitcoinjs-lib",
+    "range": ">= 6.0.0, < 6.1.8",
+    "fixed": "6.1.8"
+   },
+   {
+    "name": "bitcoinjs-lib",
+    "range": ">= 7.0.0-rc.0, < 7.0.2",
+    "fixed": "7.0.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xxrh-5hgg-gj4h",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-102650",
+  "summary": "Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-xxrh-5hgg-gj4h",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@nuxt/content",
+    "range": ">= 3.0.0, < 3.15.2",
+    "fixed": "3.15.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xggf-m53x-jc3f",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-95860",
+  "summary": "node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions",
+  "severity": "CRITICAL",
+  "score": 9.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-xggf-m53x-jc3f",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-opcua",
+    "range": ">= 2.42.0, < 2.180.0",
+    "fixed": "2.180.0"
+   },
+   {
+    "name": "node-opcua-address-space",
+    "range": ">= 2.42.0, < 2.180.0",
+    "fixed": "2.180.0"
+   },
+   {
+    "name": "node-opcua-server",
+    "range": ">= 2.42.0, < 2.180.0",
+    "fixed": "2.180.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-r7j4-crjv-h467",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-125121",
+  "summary": "compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-r7j4-crjv-h467",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": ">= 0.31.0, < 0.32.0",
+    "fixed": "0.32.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-p623-mxf7-qxjm",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123364",
+  "summary": "OctoPrint: Stored XSS via saved connection parameters",
+  "severity": "LOW",
+  "score": 2.4,
+  "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:L/SC:L/SI:L/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-p623-mxf7-qxjm",
+  "kev": false,
+  "packages": [
+   {
+    "name": "OctoPrint",
+    "range": ">= 2.0.0rc1, <= 2.0.0rc6",
+    "fixed": "2.0.0rc7"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rm8w-w798-g545",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123796",
+  "summary": "compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env`",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-rm8w-w798-g545",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": "= 0.32.0",
+    "fixed": "0.33.0"
+   },
+   {
+    "name": "tmatens/compose-lint",
+    "range": "= 0.32.0",
+    "fixed": "0.33.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3hch-x692-6qj3",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-103002",
+  "summary": "GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover",
+  "severity": "HIGH",
+  "score": 8.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-3hch-x692-6qj3",
+  "kev": false,
+  "packages": [
+   {
+    "name": "gpustack",
+    "range": ">= 2.2.0, < 2.2.2",
+    "fixed": "2.2.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-2h4w-29cv-2cmv",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-113663",
+  "summary": "AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution",
+  "severity": "HIGH",
+  "score": 8.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-2h4w-29cv-2cmv",
+  "kev": false,
+  "packages": [
+   {
+    "name": "ag2",
+    "range": ">= 0.13.2, < 1.1.1",
+    "fixed": "1.1.1"
+   },
+   {
+    "name": "autogen",
+    "range": ">= 0.13.2, <= 0.14.1",
+    "fixed": null
+   }
+  ]
+ },
+ {
+  "id": "GHSA-62m9-f875-rqw6",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-102894",
+  "summary": "GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover",
+  "severity": "CRITICAL",
+  "score": 9.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-62m9-f875-rqw6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "gpustack",
+    "range": ">= 0.7.1, < 2.2.2",
+    "fixed": "2.2.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-whr6-fgpq-fpv9",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123373",
+  "summary": "compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-whr6-fgpq-fpv9",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": ">= 0.2.0, <= 0.24.0",
+    "fixed": "0.25.0"
+   },
+   {
+    "name": "tmatens/compose-lint",
+    "range": ">= 0.2.0, <= 0.24.0",
+    "fixed": "0.25.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-88f4-frh5-gmcr",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123371",
+  "summary": "compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-88f4-frh5-gmcr",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": ">= 0.2.0, <= 0.31.0",
+    "fixed": "0.32.0"
+   },
+   {
+    "name": "tmatens/compose-lint",
+    "range": ">= 0.2.0, <= 0.31.0",
+    "fixed": "0.32.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-jf3h-8jvx-vcrg",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123372",
+  "summary": "compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-jf3h-8jvx-vcrg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": ">= 0.22.0, <= 0.31.0",
+    "fixed": "0.32.0"
+   },
+   {
+    "name": "tmatens/compose-lint",
+    "range": ">= 0.22.0, <= 0.31.0",
+    "fixed": "0.32.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-65v8-q222-64xx",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123370",
+  "summary": "compose-lint: `fix --apply` can delete a line the user did not select, including a security setting",
+  "severity": "MEDIUM",
+  "score": 5.1,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-65v8-q222-64xx",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": ">= 0.9.0, <= 0.17.0",
+    "fixed": "0.18.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6f4g-xm8v-pgv6",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123369",
+  "summary": "compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-6f4g-xm8v-pgv6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "tmatens/compose-lint",
+    "range": ">= 0.2.0, <= 0.30.0",
+    "fixed": "0.31.0"
+   },
+   {
+    "name": "compose-lint",
+    "range": "<= 0.30.0",
+    "fixed": "0.31.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6wcv-rj3c-mhv3",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-123368",
+  "summary": "compose-lint: .env read through a symlink outside the project can expose the CI job's environment",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-6wcv-rj3c-mhv3",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": ">= 0.22.0, <= 0.30.0",
+    "fixed": "0.31.0"
+   },
+   {
+    "name": "tmatens/compose-lint",
+    "range": ">= 0.22.0, <= 0.30.0",
+    "fixed": "0.31.0"
+   }
+  ]
+ },
+ {
   "id": "GHSA-44r8-3p76-84mw",
   "ecosystem": "composer",
   "cve": "CVE-2026-94619",
@@ -3509,7 +4089,7 @@
  },
  {
   "id": "GHSA-mf2p-h6hf-fcwm",
-  "ecosystem": "npm",
+  "ecosystem": "composer",
   "cve": "CVE-2026-116675",
   "summary": "TinyMCE Cross-Site Scripting (XSS) vulnerability using media plugin `data-mce-object` serialization",
   "severity": "HIGH",
@@ -5237,13 +5817,23 @@
   "packages": [
    {
     "name": "laravel/framework",
-    "range": ">= 13.0.0, < 13.29.0",
-    "fixed": "13.29.0"
+    "range": ">= 13.0.0, < 13.27.0",
+    "fixed": "13.27.0"
    },
    {
     "name": "laravel/framework",
-    "range": "< 12.68.0",
+    "range": ">= 12.0.0, < 12.68.0",
     "fixed": "12.68.0"
+   },
+   {
+    "name": "laravel/framework",
+    "range": ">= 11.0.0, < 11.56.1",
+    "fixed": "11.56.1"
+   },
+   {
+    "name": "laravel/framework",
+    "range": "< 10.50.4",
+    "fixed": "10.50.4"
    }
   ]
  },

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜autogen（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/autogen.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/autogen.xml</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: AG2: Newline injection in SandboxShellTool bypasses allowed=[...] and readonly=True, enabling arbitrary command execution (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2h4w-29cv-2cmv"/>
+<id>urn:bug-hou:GHSA-2h4w-29cv-2cmv</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ag2 &amp;gt;= 0.13.2, &amp;lt; 1.1.1 → 1.1.1, autogen &amp;gt;= 0.13.2, &amp;lt;= 0.14.1&lt;/p&gt;&lt;p&gt;CVE-2026-113663&lt;/p&gt;</content>
+</entry>
+</feed>

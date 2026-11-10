@@ -4,8 +4,43 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/node-forge.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/npm/node-forge.xml</id>
-<updated>2026-10-30T00:00:00Z</updated>
+<updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>npm: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rhr8-3pm8-cq29"/>
+<id>urn:bug-hou:GHSA-rhr8-3pm8-cq29</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119191&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h46v-rmh6-fq4f"/>
+<id>urn:bug-hou:GHSA-h46v-rmh6-fq4f</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119189&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Forge: Certificate signature verified with the issuer's RSA signature scheme (LOW)</title>
+<link href="https://github.com/advisories/GHSA-9wg5-mj3p-v49q"/>
+<id>urn:bug-hou:GHSA-9wg5-mj3p-v49q</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118774&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-6qrw-m8cv-hcxf"/>
+<id>urn:bug-hou:GHSA-6qrw-m8cv-hcxf</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119192&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption (LOW)</title>
+<link href="https://github.com/advisories/GHSA-2vgq-wchc-25w7"/>
+<id>urn:bug-hou:GHSA-2vgq-wchc-25w7</id>
+<updated>2026-11-10T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118776&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] npm: Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jc66-7q78-782g"/>
