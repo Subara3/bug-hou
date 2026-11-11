@@ -4,8 +4,92 @@
 <link href="https://subara3.github.io/bug-hou/#nodejs"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/nodejs.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/nodejs.xml</id>
-<updated>2026-11-10T00:00:00Z</updated>
+<updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"/>
+<id>urn:bug-hou:GHSA-xqc2-xf4c-x3h3</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;react-server-dom-parcel &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-parcel &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-parcel &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-parcel &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-turbopack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-turbopack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-turbopack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-turbopack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-webpack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-webpack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-webpack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-webpack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-126187&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wr5m-5jph-8m96"/>
+<id>urn:bug-hou:GHSA-wr5m-5jph-8m96</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125116&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Forge: TLS client crash on an unsupported ServerHello compression method (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-w4xr-hqv8-ch44"/>
+<id>urn:bug-hou:GHSA-w4xr-hqv8-ch44</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125332&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-q6jf-24jf-m3cg"/>
+<id>urn:bug-hou:GHSA-q6jf-24jf-m3cg</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120792&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-m63f-xhvm-6mv5"/>
+<id>urn:bug-hou:GHSA-m63f-xhvm-6mv5</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120778&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Forge: TLS client crash on a handshake record received without a session (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-j8rw-jp99-435v"/>
+<id>urn:bug-hou:GHSA-j8rw-jp99-435v</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125334&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Mongoose: Connection-level sanitizeFilter not applied (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-gg4r-jv3p-qx3c"/>
+<id>urn:bug-hou:GHSA-gg4r-jv3p-qx3c</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;gt;= 6.0.0, &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125119&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8332-j7wj-wjw4"/>
+<id>urn:bug-hou:GHSA-8332-j7wj-wjw4</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125117&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Forge: ReDoS in forge.http response header and cookie trimming (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6cv4-p8m7-4r25"/>
+<id>urn:bug-hou:GHSA-6cv4-p8m7-4r25</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;gt;= 0.1.2, &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125333&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Mongoose: Prototype pollution via Schema.prototype.virtual() (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6972-9mcm-vhwj"/>
+<id>urn:bug-hou:GHSA-6972-9mcm-vhwj</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125118&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Forge: Ed25519 signature verification accepts small-order public keys (LOW)</title>
+<link href="https://github.com/advisories/GHSA-6889-vf6x-f3g5"/>
+<id>urn:bug-hou:GHSA-6889-vf6x-f3g5</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125335&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags (LOW)</title>
+<link href="https://github.com/advisories/GHSA-474x-hrwr-fgx4"/>
+<id>urn:bug-hou:GHSA-474x-hrwr-fgx4</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;fast-xml-parser &amp;lt;= 5.11.2 → 5.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-126066&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] Node.js: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xxrh-5hgg-gj4h"/>
@@ -217,76 +301,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないパッケージ@enspirit/eloのCRITICAL。JS出力でサンドボックスを抜けてコード実行&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Node.js: dd-trace: ReDOS in URL query string obfuscation (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-x94g-w73q-hpcw"/>
-<id>urn:bug-hou:GHSA-x94g-w73q-hpcw</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dd-traceのURLクエリ難読化処理でReDoS。HIGH&lt;br&gt;→ dd-trace 5.131.1/6.20.1に更新&lt;/p&gt;&lt;p&gt;dd-trace &amp;gt;= 2.0.0, &amp;lt; 5.131.1 → 5.131.1, dd-trace &amp;gt;= 6.0.0, &amp;lt; 6.20.1 → 6.20.1&lt;/p&gt;&lt;p&gt;CVE-2026-116693&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Highcharts Core: `javascript:` URL in an `xlink:href` attribute survives text filtering and reaches exported charts (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-mw4f-gj5x-6xr4"/>
-<id>urn:bug-hou:GHSA-mw4f-gj5x-6xr4</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highchartsでxlink:hrefのjavascript: URLが書き出しに残る。HIGH&lt;br&gt;→ highcharts 11.4.9/12.6.2/13.1.1に更新&lt;/p&gt;&lt;p&gt;highcharts &amp;gt;= 10.3.2, &amp;lt; 11.4.9 → 11.4.9, highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.2 → 12.6.2, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.1.0 → 13.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-116796&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Highcharts Dashboards: `__proto__` data table id writes sync listeners to `Object.prototype` (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-jqgh-w3cc-7jqw"/>
-<id>urn:bug-hou:GHSA-jqgh-w3cc-7jqw</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Dashboardsで__proto__のidでObject.prototypeに書込。MEDIUM&lt;br&gt;→ @highcharts/dashboards 4.2.2に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-118243&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Highcharts Dashboards: `chartConstructor` is an unchecked lookup into the Highcharts namespace (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-grj7-r4jv-pw9j"/>
-<id>urn:bug-hou:GHSA-grj7-r4jv-pw9j</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highcharts DashboardsのchartConstructorが未検査の参照。HIGH&lt;br&gt;→ @highcharts/dashboards 4.2.2に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-118245&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Highcharts Dashboards / Grid Pro: `DataTable.setCell` and column writers treat `__proto__` as an existing column. (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-c75x-9x9h-28rm"/>
-<id>urn:bug-hou:GHSA-c75x-9x9h-28rm</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Highcharts DataTableで__proto__を既存列として扱う。MEDIUM&lt;br&gt;→ dashboards 4.2.2/grid-pro 3.2.0に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 1.0.0, &amp;lt;= 4.2.1 → 4.2.2, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118247&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-7w82-6f9j-v9jp"/>
-<id>urn:bug-hou:GHSA-7w82-6f9j-v9jp</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mcp-sanitizerのパス検査がホーム配下の絶対パスを許可。HIGH&lt;br&gt;→ mcp-sanitizer 1.4.0に更新&lt;/p&gt;&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-7w82-6f9j-v9jp&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Highcharts Grid: custom icon definition objects written with raw `setAttribute` on `&lt;path&gt;` (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-6g3c-p4fg-xv47"/>
-<id>urn:bug-hou:GHSA-6g3c-p4fg-xv47</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highcharts Gridのカスタムアイコン定義が無検査でsetAttribute。HIGH&lt;br&gt;→ grid-lite/grid-pro 3.2.0に更新&lt;/p&gt;&lt;p&gt;@highcharts/grid-lite &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/grid-pro &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118242&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Highcharts Core: HTML text parsing falls back to unfiltered `innerHTML` during printing (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-65hg-cf3f-5m39"/>
-<id>urn:bug-hou:GHSA-65hg-cf3f-5m39</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highchartsの印刷時にフィルタなしのinnerHTMLへ戻る。HIGH&lt;br&gt;→ highcharts 12.6.1/13.1.0に更新&lt;/p&gt;&lt;p&gt;highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.1 → 12.6.1, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.0.2 → 13.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-118244&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Highcharts Grid Pro: cell-renderer `attributes` map written with raw `setAttribute` (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-5ghw-9mgr-jvx2"/>
-<id>urn:bug-hou:GHSA-5ghw-9mgr-jvx2</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highcharts Grid Proのセル描画attributesが無検査でsetAttribute。HIGH&lt;br&gt;→ grid-pro 3.2.0/dashboards 4.0.0に更新&lt;/p&gt;&lt;p&gt;@highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/dashboards = 3.6.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116797&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6 (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-4mfg-r38w-w8fg"/>
-<id>urn:bug-hou:GHSA-4mfg-r38w-w8fg</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mcp-sanitizerのURL検査をポート指定やIPv6で回避しSSRF。HIGH&lt;br&gt;→ mcp-sanitizer 1.4.0に更新&lt;/p&gt;&lt;p&gt;mcp-sanitizer &amp;lt; 1.4.0 → 1.4.0&lt;/p&gt;&lt;p&gt;GHSA-4mfg-r38w-w8fg&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Node.js: Nuxt dev server arbitrary file read through client error reports (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x287-wcfc-q46c"/>
 <id>urn:bug-hou:GHSA-x287-wcfc-q46c</id>
@@ -341,19 +355,5 @@
 <id>urn:bug-hou:GHSA-g3hv-75wg-m249</id>
 <updated>2026-10-30T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; minimatchのパターン展開でDoS。MEDIUM&lt;br&gt;→ minimatch 11.0.1に更新&lt;/p&gt;&lt;p&gt;minimatch &amp;gt;= 7.0.0, &amp;lt; 11.0.1 → 11.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-118764&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-9v7c-q64q-vv33"/>
-<id>urn:bug-hou:GHSA-9v7c-q64q-vv33</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxtでドットセグメントによりミドルウェア判定回避。MEDIUM&lt;br&gt;→ nuxt 4.6.3に更新&lt;/p&gt;&lt;p&gt;nuxt &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3, @nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119200&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-8hrf-8g6f-7xwp"/>
-<id>urn:bug-hou:GHSA-8hrf-8g6f-7xwp</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのTLSレコード処理でDoS。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119188&lt;/p&gt;</content>
 </entry>
 </feed>

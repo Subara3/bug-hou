@@ -4,8 +4,36 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/node-forge.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/npm/node-forge.xml</id>
-<updated>2026-11-10T00:00:00Z</updated>
+<updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>npm: Forge: TLS client crash on an unsupported ServerHello compression method (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-w4xr-hqv8-ch44"/>
+<id>urn:bug-hou:GHSA-w4xr-hqv8-ch44</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125332&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Forge: TLS client crash on a handshake record received without a session (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-j8rw-jp99-435v"/>
+<id>urn:bug-hou:GHSA-j8rw-jp99-435v</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125334&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Forge: ReDoS in forge.http response header and cookie trimming (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6cv4-p8m7-4r25"/>
+<id>urn:bug-hou:GHSA-6cv4-p8m7-4r25</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;gt;= 0.1.2, &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125333&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Forge: Ed25519 signature verification accepts small-order public keys (LOW)</title>
+<link href="https://github.com/advisories/GHSA-6889-vf6x-f3g5"/>
+<id>urn:bug-hou:GHSA-6889-vf6x-f3g5</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125335&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] npm: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rhr8-3pm8-cq29"/>

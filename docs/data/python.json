@@ -7,7 +7,7 @@
   {
    "id": "CVE-2026-115791",
    "published": "2026-11-10",
-   "modified": "2026-11-10",
+   "modified": "2026-11-11",
    "status": "Awaiting Analysis",
    "score": 5.3,
    "severity": "MEDIUM",
@@ -39,7 +39,7 @@
   {
    "id": "CVE-2026-124249",
    "published": "2026-11-09",
-   "modified": "2026-11-10",
+   "modified": "2026-11-11",
    "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
@@ -56,7 +56,7 @@
   {
    "id": "CVE-2026-19552",
    "published": "2026-11-09",
-   "modified": "2026-11-10",
+   "modified": "2026-11-11",
    "status": "Awaiting Analysis",
    "score": 0.0,
    "severity": "NONE",
@@ -310,6 +310,46 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-8v59-qmwv-4p6q",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-125123",
+   "summary": "compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages ",
+   "severity": "LOW",
+   "score": 2.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-8v59-qmwv-4p6q",
+   "kev": false,
+   "packages": [
+    {
+     "name": "compose-lint",
+     "range": "= 0.31.0",
+     "fixed": "0.32.0"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-hr4h-4c45-v4q4",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-125122",
+   "summary": "compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout",
+   "severity": "LOW",
+   "score": 2.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-hr4h-4c45-v4q4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "compose-lint",
+     "range": "= 0.31.0",
+     "fixed": "0.32.0"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
   {
    "id": "GHSA-r7j4-crjv-h467",
    "ecosystem": "pip",
@@ -2341,51 +2381,6 @@
      "name": "dnspython",
      "range": "< 2.9.0",
      "fixed": "2.9.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-3633-r77q-h3v3",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116588",
-   "summary": "Datadog dd-trace-py: ReDoS in URL query string obfuscation",
-   "severity": "HIGH",
-   "score": 8.7,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-3633-r77q-h3v3",
-   "kev": false,
-   "packages": [
-    {
-     "name": "ddtrace",
-     "range": ">= 1.5.0, < 3.19.9",
-     "fixed": "3.19.9"
-    },
-    {
-     "name": "ddtrace",
-     "range": ">= 4.0.0, < 4.15.6",
-     "fixed": "4.15.6"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-p3m5-h5v9-vqj6",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116589",
-   "summary": "Datadog dd-trace-py: IAST instrumentation can lead to application DOS",
-   "severity": "HIGH",
-   "score": 8.2,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-p3m5-h5v9-vqj6",
-   "kev": false,
-   "packages": [
-    {
-     "name": "ddtrace",
-     "range": ">= 3.13.0, < 4.15.5",
-     "fixed": "4.15.5"
     }
    ],
    "first_seen": "2026-11-02"

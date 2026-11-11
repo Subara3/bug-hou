@@ -20,7 +20,7 @@
    "id": "CVE-2026-111497",
    "published": "2026-10-22",
    "modified": "2026-11-10",
-   "status": "Undergoing Analysis",
+   "status": "Analyzed",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -51,6 +51,471 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-q6jf-24jf-m3cg",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-120792",
+   "summary": "Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
+   "severity": "HIGH",
+   "score": 7.3,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:L",
+   "published": "2026-11-11",
+   "url": "https://github.com/advisories/GHSA-q6jf-24jf-m3cg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "Aspire.Cli",
+     "range": ">= 13.2.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.linux-x64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.linux-arm64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.linux-musl-x64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.osx-x64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.osx-arm64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-linux-x64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-linux-arm64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-linux-musl-x64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-osx-x64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-osx-arm64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-m63f-xhvm-6mv5",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-120778",
+   "summary": "Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
+   "severity": "HIGH",
+   "score": 7.3,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+   "published": "2026-11-11",
+   "url": "https://github.com/advisories/GHSA-m63f-xhvm-6mv5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "Aspire.Cli",
+     "range": ">= 13.2.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.linux-x64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.linux-arm64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.linux-musl-x64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.osx-x64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "Aspire.Cli.osx-arm64",
+     "range": ">= 13.3.0, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-linux-x64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-linux-arm64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-linux-musl-x64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-osx-x64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    },
+    {
+     "name": "@microsoft/aspire-cli-osx-arm64",
+     "range": ">= 13.4.2, < 13.6.5",
+     "fixed": "13.6.5"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-xqc2-xf4c-x3h3",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126187",
+   "summary": "React: Unauthenticated Remote Code Execution in React Server Components",
+   "severity": "CRITICAL",
+   "score": 9.5,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-xqc2-xf4c-x3h3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "react-server-dom-parcel",
+     "range": ">= 19.0.0, < 19.0.9",
+     "fixed": "19.0.9"
+    },
+    {
+     "name": "react-server-dom-parcel",
+     "range": ">= 19.1.0, < 19.1.10",
+     "fixed": "19.1.10"
+    },
+    {
+     "name": "react-server-dom-parcel",
+     "range": ">= 19.2.0, < 19.2.9",
+     "fixed": "19.2.9"
+    },
+    {
+     "name": "react-server-dom-parcel",
+     "range": ">= 19.3.0, < 19.3.1",
+     "fixed": "19.3.1"
+    },
+    {
+     "name": "react-server-dom-turbopack",
+     "range": ">= 19.0.0, < 19.0.9",
+     "fixed": "19.0.9"
+    },
+    {
+     "name": "react-server-dom-turbopack",
+     "range": ">= 19.1.0, < 19.1.10",
+     "fixed": "19.1.10"
+    },
+    {
+     "name": "react-server-dom-turbopack",
+     "range": ">= 19.2.0, < 19.2.9",
+     "fixed": "19.2.9"
+    },
+    {
+     "name": "react-server-dom-turbopack",
+     "range": ">= 19.3.0, < 19.3.1",
+     "fixed": "19.3.1"
+    },
+    {
+     "name": "react-server-dom-webpack",
+     "range": ">= 19.0.0, < 19.0.9",
+     "fixed": "19.0.9"
+    },
+    {
+     "name": "react-server-dom-webpack",
+     "range": ">= 19.1.0, < 19.1.10",
+     "fixed": "19.1.10"
+    },
+    {
+     "name": "react-server-dom-webpack",
+     "range": ">= 19.2.0, < 19.2.9",
+     "fixed": "19.2.9"
+    },
+    {
+     "name": "react-server-dom-webpack",
+     "range": ">= 19.3.0, < 19.3.1",
+     "fixed": "19.3.1"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-6889-vf6x-f3g5",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125335",
+   "summary": "Forge: Ed25519 signature verification accepts small-order public keys",
+   "severity": "LOW",
+   "score": 3.7,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-6889-vf6x-f3g5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.2",
+     "fixed": "1.4.3"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-w4xr-hqv8-ch44",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125332",
+   "summary": "Forge: TLS client crash on an unsupported ServerHello compression method",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-w4xr-hqv8-ch44",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.2",
+     "fixed": "1.4.3"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-6cv4-p8m7-4r25",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125333",
+   "summary": "Forge: ReDoS in forge.http response header and cookie trimming",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-6cv4-p8m7-4r25",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": ">= 0.1.2, <= 1.4.2",
+     "fixed": "1.4.3"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-j8rw-jp99-435v",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125334",
+   "summary": "Forge: TLS client crash on a handshake record received without a session",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-j8rw-jp99-435v",
+   "kev": false,
+   "packages": [
+    {
+     "name": "node-forge",
+     "range": "<= 1.4.2",
+     "fixed": "1.4.3"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-474x-hrwr-fgx4",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126066",
+   "summary": "fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags",
+   "severity": "LOW",
+   "score": 3.7,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-474x-hrwr-fgx4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "fast-xml-parser",
+     "range": "<= 5.11.2",
+     "fixed": "5.12.0"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-wr5m-5jph-8m96",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125116",
+   "summary": "Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections",
+   "severity": "MEDIUM",
+   "score": 4.8,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-wr5m-5jph-8m96",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mongoose",
+     "range": "< 6.13.12",
+     "fixed": "6.13.12"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 7.0.0, < 7.8.13",
+     "fixed": "7.8.13"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 8.0.0, < 8.24.7",
+     "fixed": "8.24.7"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 9.0.0, < 9.11.4",
+     "fixed": "9.11.4"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-8332-j7wj-wjw4",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125117",
+   "summary": "Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state",
+   "severity": "HIGH",
+   "score": 8.2,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-8332-j7wj-wjw4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mongoose",
+     "range": "< 6.13.12",
+     "fixed": "6.13.12"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 7.0.0, < 7.8.13",
+     "fixed": "7.8.13"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 8.0.0, < 8.24.7",
+     "fixed": "8.24.7"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 9.0.0, < 9.11.4",
+     "fixed": "9.11.4"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-6972-9mcm-vhwj",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125118",
+   "summary": "Mongoose: Prototype pollution via Schema.prototype.virtual()",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-6972-9mcm-vhwj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mongoose",
+     "range": "< 6.13.12",
+     "fixed": "6.13.12"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 7.0.0, < 7.8.13",
+     "fixed": "7.8.13"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 8.0.0, < 8.24.7",
+     "fixed": "8.24.7"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 9.0.0, < 9.11.4",
+     "fixed": "9.11.4"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
+  {
+   "id": "GHSA-gg4r-jv3p-qx3c",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-125119",
+   "summary": "Mongoose: Connection-level sanitizeFilter not applied",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-10",
+   "url": "https://github.com/advisories/GHSA-gg4r-jv3p-qx3c",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mongoose",
+     "range": ">= 6.0.0, < 6.13.12",
+     "fixed": "6.13.12"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 7.0.0, < 7.8.13",
+     "fixed": "7.8.13"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 8.0.0, < 8.24.7",
+     "fixed": "8.24.7"
+    },
+    {
+     "name": "mongoose",
+     "range": ">= 9.0.0, < 9.11.4",
+     "fixed": "9.11.4"
+    }
+   ],
+   "first_seen": "2026-11-11"
+  },
   {
    "id": "GHSA-pcrw-h46h-c93h",
    "ecosystem": "npm",
@@ -2160,291 +2625,6 @@
     }
    ],
    "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-gfvx-2c2g-38wq",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118249",
-   "summary": "Highcharts: series column construction writes to Object.prototype",
-   "severity": "HIGH",
-   "score": 7.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:H/SC:L/SI:L/SA:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-gfvx-2c2g-38wq",
-   "kev": false,
-   "packages": [
-    {
-     "name": "highcharts",
-     "range": ">= 13.0.0, <= 13.0.2",
-     "fixed": "13.1.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-35rr-xwfh-x789",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118246",
-   "summary": "Highcharts Core: `breadcrumbs.style` keys become SVG event-handler attributes",
-   "severity": "HIGH",
-   "score": 8.4,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-35rr-xwfh-x789",
-   "kev": false,
-   "packages": [
-    {
-     "name": "highcharts",
-     "range": ">= 10.0.0, < 11.4.9",
-     "fixed": "11.4.9"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 12.0.0, < 12.6.1",
-     "fixed": "12.6.1"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 13.0.0, <= 13.0.2",
-     "fixed": "13.1.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-5ghw-9mgr-jvx2",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116797",
-   "summary": "Highcharts Grid Pro: cell-renderer `attributes` map written with raw `setAttribute`",
-   "severity": "HIGH",
-   "score": 8.5,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-5ghw-9mgr-jvx2",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/grid-pro",
-     "range": ">= 2.0.0, <= 3.1.0",
-     "fixed": "3.2.0"
-    },
-    {
-     "name": "@highcharts/dashboards",
-     "range": "= 3.6.0",
-     "fixed": "4.0.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-6g3c-p4fg-xv47",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118242",
-   "summary": "Highcharts Grid: custom icon definition objects written with raw `setAttribute` on `<path>`",
-   "severity": "HIGH",
-   "score": 8.5,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-6g3c-p4fg-xv47",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/grid-lite",
-     "range": ">= 2.3.0, <= 3.1.0",
-     "fixed": "3.2.0"
-    },
-    {
-     "name": "@highcharts/grid-pro",
-     "range": ">= 2.3.0, <= 3.1.0",
-     "fixed": "3.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-grj7-r4jv-pw9j",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118245",
-   "summary": "Highcharts Dashboards: `chartConstructor` is an unchecked lookup into the Highcharts namespace",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-grj7-r4jv-pw9j",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/dashboards",
-     "range": ">= 1.0.0, <= 4.2.1",
-     "fixed": "4.2.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-c75x-9x9h-28rm",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118247",
-   "summary": "Highcharts Dashboards / Grid Pro: `DataTable.setCell` and column writers treat `__proto__` as an existing column.",
-   "severity": "MEDIUM",
-   "score": 6.9,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:N/VI:L/VA:H/SC:L/SI:L/SA:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-c75x-9x9h-28rm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/dashboards",
-     "range": ">= 1.0.0, <= 4.2.1",
-     "fixed": "4.2.2"
-    },
-    {
-     "name": "@highcharts/grid-pro",
-     "range": ">= 2.0.0, <= 3.1.0",
-     "fixed": "3.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-jqgh-w3cc-7jqw",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118243",
-   "summary": "Highcharts Dashboards: `__proto__` data table id writes sync listeners to `Object.prototype`",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:L/SC:L/SI:L/SA:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-jqgh-w3cc-7jqw",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/dashboards",
-     "range": ">= 1.0.0, <= 4.2.1",
-     "fixed": "4.2.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-65hg-cf3f-5m39",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118244",
-   "summary": "Highcharts Core: HTML text parsing falls back to unfiltered `innerHTML` during printing",
-   "severity": "HIGH",
-   "score": 7.2,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-65hg-cf3f-5m39",
-   "kev": false,
-   "packages": [
-    {
-     "name": "highcharts",
-     "range": ">= 12.0.0, < 12.6.1",
-     "fixed": "12.6.1"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 13.0.0, <= 13.0.2",
-     "fixed": "13.1.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-mw4f-gj5x-6xr4",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116796",
-   "summary": "Highcharts Core: `javascript:` URL in an `xlink:href` attribute survives text filtering and reaches exported charts",
-   "severity": "HIGH",
-   "score": 7.2,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-mw4f-gj5x-6xr4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "highcharts",
-     "range": ">= 10.3.2, < 11.4.9",
-     "fixed": "11.4.9"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 12.0.0, < 12.6.2",
-     "fixed": "12.6.2"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 13.0.0, <= 13.1.0",
-     "fixed": "13.1.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-4mfg-r38w-w8fg",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "mcp-sanitizer: URL sanitizer allows localhost/IPv6 loopback SSRF bypass via explicit port or bracketed IPv6",
-   "severity": "HIGH",
-   "score": 8.2,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-4mfg-r38w-w8fg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mcp-sanitizer",
-     "range": "< 1.4.0",
-     "fixed": "1.4.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-7w82-6f9j-v9jp",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "mcp-sanitizer: File Path Sanitizer Permits Arbitrary User-Home Absolute Paths",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-7w82-6f9j-v9jp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mcp-sanitizer",
-     "range": "< 1.4.0",
-     "fixed": "1.4.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-x94g-w73q-hpcw",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116693",
-   "summary": "dd-trace: ReDOS in URL query string obfuscation",
-   "severity": "HIGH",
-   "score": 8.7,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-x94g-w73q-hpcw",
-   "kev": false,
-   "packages": [
-    {
-     "name": "dd-trace",
-     "range": ">= 2.0.0, < 5.131.1",
-     "fixed": "5.131.1"
-    },
-    {
-     "name": "dd-trace",
-     "range": ">= 6.0.0, < 6.20.1",
-     "fixed": "6.20.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
   }
  ],
  "eol": {

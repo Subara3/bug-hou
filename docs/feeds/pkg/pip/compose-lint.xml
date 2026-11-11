@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/compose-lint.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/pip/compose-lint.xml</id>
-<updated>2026-11-10T00:00:00Z</updated>
+<updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>pip: compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout (LOW)</title>
+<link href="https://github.com/advisories/GHSA-hr4h-4c45-v4q4"/>
+<id>urn:bug-hou:GHSA-hr4h-4c45-v4q4</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125122&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages  (LOW)</title>
+<link href="https://github.com/advisories/GHSA-8v59-qmwv-4p6q"/>
+<id>urn:bug-hou:GHSA-8v59-qmwv-4p6q</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125123&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] pip: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output (LOW)</title>
 <link href="https://github.com/advisories/GHSA-whr6-fgpq-fpv9"/>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@microsoft/aspire-cli（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@microsoft__aspire-cli.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@microsoft__aspire-cli.xml</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-q6jf-24jf-m3cg"/>
+<id>urn:bug-hou:GHSA-q6jf-24jf-m3cg</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120792&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-m63f-xhvm-6mv5"/>
+<id>urn:bug-hou:GHSA-m63f-xhvm-6mv5</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120778&lt;/p&gt;</content>
+</entry>
+</feed>

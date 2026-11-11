@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/pip.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/pip.xml</id>
-<updated>2026-11-10T00:00:00Z</updated>
+<updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout (LOW)</title>
+<link href="https://github.com/advisories/GHSA-hr4h-4c45-v4q4"/>
+<id>urn:bug-hou:GHSA-hr4h-4c45-v4q4</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125122&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages  (LOW)</title>
+<link href="https://github.com/advisories/GHSA-8v59-qmwv-4p6q"/>
+<id>urn:bug-hou:GHSA-8v59-qmwv-4p6q</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125123&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Python: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output (LOW)</title>
 <link href="https://github.com/advisories/GHSA-whr6-fgpq-fpv9"/>
@@ -231,13 +245,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibのOpenIDインプリシットで許可外スコープでもIDトークン発行。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114619&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Python: Datadog dd-trace-py: IAST instrumentation can lead to application DOS (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-p3m5-h5v9-vqj6"/>
-<id>urn:bug-hou:GHSA-p3m5-h5v9-vqj6</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dd-trace-pyのIAST計装でアプリがDoS。IAST利用時のみ&lt;br&gt;→ ddtrace 4.15.5に更新&lt;/p&gt;&lt;p&gt;ddtrace &amp;gt;= 3.13.0, &amp;lt; 4.15.5 → 4.15.5&lt;/p&gt;&lt;p&gt;CVE-2026-116589&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Python: Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts (LOW)</title>
 <link href="https://github.com/advisories/GHSA-jj7h-c3hg-m23x"/>
 <id>urn:bug-hou:GHSA-jj7h-c3hg-m23x</id>
@@ -278,13 +285,6 @@
 <id>urn:bug-hou:GHSA-45c3-73f7-pv4m</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dnspythonのfrom_wire_parser()でCPUを過剰消費。HIGH&lt;br&gt;→ dnspython 2.9.0に更新&lt;/p&gt;&lt;p&gt;dnspython &amp;lt; 2.9.0 → 2.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114605&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Datadog dd-trace-py: ReDoS in URL query string obfuscation (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-3633-r77q-h3v3"/>
-<id>urn:bug-hou:GHSA-3633-r77q-h3v3</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dd-trace-pyのURLクエリ難読化処理でReDoS。HIGH&lt;br&gt;→ ddtrace 3.19.9/4.15.6に更新&lt;/p&gt;&lt;p&gt;ddtrace &amp;gt;= 1.5.0, &amp;lt; 3.19.9 → 3.19.9, ddtrace &amp;gt;= 4.0.0, &amp;lt; 4.15.6 → 4.15.6&lt;/p&gt;&lt;p&gt;CVE-2026-116588&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: pypdf has possible large memory usage when parsing cross-reference streams (HIGH)</title>

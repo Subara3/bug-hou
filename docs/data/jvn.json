@@ -1,5 +1,47 @@
 [
  {
+  "id": "JVNVU#98354779",
+  "title": "Siemens製品に対するアップデート（2026年11月）",
+  "url": "https://jvn.jp/vu/JVNVU98354779/",
+  "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
+  "date": "2026-11-11"
+ },
+ {
+  "id": "JVNVU#99905564",
+  "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
+  "url": "https://jvn.jp/vu/JVNVU99905564/",
+  "desc": "The PHP Groupから、PHPの2件の脆弱性（CVE-2026-109618、CVE-2026-109619）に対してアドバイザリが公開されました。",
+  "date": "2026-11-11"
+ },
+ {
+  "id": "JVNVU#93337738",
+  "title": "Intel製品に対するアップデート（2026年11月）",
+  "url": "https://jvn.jp/vu/JVNVU93337738/",
+  "desc": "Intelから各製品向けのアドバイザリが公表されました。",
+  "date": "2026-11-11"
+ },
+ {
+  "id": "JVNVU#93068550",
+  "title": "Sleipnir Mobile for iPhone / iPadにおける不適切な証明書検証の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU93068550/",
+  "desc": "フェンリル株式会社が提供するSleipnir Mobile for iPhone / iPadおよびSleipnir Mobile for iPhone / iPad Black Editionには、不適切な証明書検証の脆弱性が存在します。",
+  "date": "2026-11-11"
+ },
+ {
+  "id": "JVN#11786640",
+  "title": "Movable Typeにおけるコードインジェクションの脆弱性",
+  "url": "https://jvn.jp/jp/JVN11786640/",
+  "desc": "シックス・アパート株式会社が提供するMovable Typeには、ダイナミックパブリッシング機能にコードインジェクションの脆弱性が存在します。",
+  "date": "2026-11-11"
+ },
+ {
+  "id": "JVNVU#92618679",
+  "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月10日）",
+  "url": "https://jvn.jp/vu/JVNVU92618679/",
+  "desc": "OpenSSL ProjectからOpenSSL Security Advisory [10th November 2026]が公開されました。",
+  "date": "2026-11-11"
+ },
+ {
   "id": "JVN#12040144",
   "title": "Airbyteにおける任意のコードが実行可能な脆弱性",
   "url": "https://jvn.jp/jp/JVN12040144/",
@@ -19,13 +61,6 @@
   "url": "https://jvn.jp/vu/JVNVU98836795/",
   "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
   "date": "2026-11-10"
- },
- {
-  "id": "JVNVU#98354779",
-  "title": "Siemens製品に対するアップデート（2026年11月）",
-  "url": "https://jvn.jp/vu/JVNVU98354779/",
-  "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
-  "date": "2026-11-09"
  },
  {
   "id": "JVN#76179675",
@@ -152,13 +187,6 @@
   "url": "https://jvn.jp/jp/JVN82782759/",
   "desc": "The Apache Software Foundationが提供するApache Struts 2のRESTプラグインには、Jacksonの<code>@JsonAnySetter</code>が指定されたフィールドやメソッドに対して<code>@StrutsParameter</code>の制限が行われない問題が存在します。",
   "date": "2026-10-29"
- },
- {
-  "id": "JVNVU#99905564",
-  "title": "PHPにおける複数の任意のコードが実行可能な脆弱性（CVE-2026-109618、CVE-2026-109619）",
-  "url": "https://jvn.jp/vu/JVNVU99905564/",
-  "desc": "The PHP Groupから、PHPの2件の脆弱性（CVE-2026-109618、CVE-2026-109619）に対してアドバイザリが公開されました。",
-  "date": "2026-10-28"
  },
  {
   "id": "JVNVU#91027179",

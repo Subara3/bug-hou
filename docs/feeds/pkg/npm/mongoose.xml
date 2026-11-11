@@ -4,8 +4,36 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/mongoose.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/npm/mongoose.xml</id>
-<updated>2026-11-10T00:00:00Z</updated>
+<updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>npm: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wr5m-5jph-8m96"/>
+<id>urn:bug-hou:GHSA-wr5m-5jph-8m96</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125116&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Mongoose: Connection-level sanitizeFilter not applied (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-gg4r-jv3p-qx3c"/>
+<id>urn:bug-hou:GHSA-gg4r-jv3p-qx3c</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;gt;= 6.0.0, &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125119&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8332-j7wj-wjw4"/>
+<id>urn:bug-hou:GHSA-8332-j7wj-wjw4</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125117&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Mongoose: Prototype pollution via Schema.prototype.virtual() (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6972-9mcm-vhwj"/>
+<id>urn:bug-hou:GHSA-6972-9mcm-vhwj</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125118&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] npm: Mongoose: sanitizeFilter not applied on countDocuments (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-pcrw-h46h-c93h"/>

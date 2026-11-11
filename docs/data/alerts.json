@@ -1,5 +1,25 @@
 [
  {
+  "id": "https://www.jpcert.or.jp/at/2026/at260035.html",
+  "org": "JPCERT/CC",
+  "title": "2026年11月マイクロソフトセキュリティ更新プログラムに関する注意喚起",
+  "url": "https://www.jpcert.or.jp/at/2026/at260035.html",
+  "date": "2026-11-11",
+  "updated": false,
+  "cves": [],
+  "first": "2026-11-11"
+ },
+ {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/1111-ms.html",
+  "org": "IPA",
+  "title": "Microsoft 製品の脆弱性対策について(2026年11月)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/1111-ms.html",
+  "date": "2026-11-11",
+  "updated": false,
+  "cves": [],
+  "first": "2026-11-11"
+ },
+ {
   "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20261022.html",
   "org": "IPA",
   "title": "PHPの脆弱性対策について(CVE-2026-109618、CVE-2026-109619：PHP2shell)",
@@ -164,15 +184,5 @@
   "updated": false,
   "cves": [],
   "first": "2026-09-09"
- },
- {
-  "id": "https://www.ipa.go.jp/security/security-alert/2026/0812-ms.html",
-  "org": "IPA",
-  "title": "Microsoft 製品の脆弱性対策について(2026年8月)",
-  "url": "https://www.ipa.go.jp/security/security-alert/2026/0812-ms.html",
-  "date": "2026-08-12",
-  "updated": false,
-  "cves": [],
-  "first": "2026-08-12"
  }
 ]

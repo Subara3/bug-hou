@@ -1,5 +1,153 @@
 [
  {
+  "id": "GHSA-q6jf-24jf-m3cg",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-120792",
+  "summary": "Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability",
+  "severity": "HIGH",
+  "score": 7.3,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:L/A:L",
+  "published": "2026-11-11",
+  "url": "https://github.com/advisories/GHSA-q6jf-24jf-m3cg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "Aspire.Cli",
+    "range": ">= 13.2.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.linux-x64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.linux-arm64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.linux-musl-x64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.osx-x64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.osx-arm64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-linux-x64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-linux-arm64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-linux-musl-x64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-osx-x64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-osx-arm64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-m63f-xhvm-6mv5",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-120778",
+  "summary": "Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability",
+  "severity": "HIGH",
+  "score": 7.3,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-11",
+  "url": "https://github.com/advisories/GHSA-m63f-xhvm-6mv5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "Aspire.Cli",
+    "range": ">= 13.2.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.linux-x64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.linux-arm64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.linux-musl-x64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.osx-x64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "Aspire.Cli.osx-arm64",
+    "range": ">= 13.3.0, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-linux-x64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-linux-arm64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-linux-musl-x64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-osx-x64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   },
+   {
+    "name": "@microsoft/aspire-cli-osx-arm64",
+    "range": ">= 13.4.2, < 13.6.5",
+    "fixed": "13.6.5"
+   }
+  ]
+ },
+ {
   "id": "GHSA-pcrw-h46h-c93h",
   "ecosystem": "npm",
   "cve": "CVE-2026-125120",
@@ -576,6 +724,349 @@
     "name": "tmatens/compose-lint",
     "range": ">= 0.22.0, <= 0.30.0",
     "fixed": "0.31.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xqc2-xf4c-x3h3",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126187",
+  "summary": "React: Unauthenticated Remote Code Execution in React Server Components",
+  "severity": "CRITICAL",
+  "score": 9.5,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-xqc2-xf4c-x3h3",
+  "kev": false,
+  "packages": [
+   {
+    "name": "react-server-dom-parcel",
+    "range": ">= 19.0.0, < 19.0.9",
+    "fixed": "19.0.9"
+   },
+   {
+    "name": "react-server-dom-parcel",
+    "range": ">= 19.1.0, < 19.1.10",
+    "fixed": "19.1.10"
+   },
+   {
+    "name": "react-server-dom-parcel",
+    "range": ">= 19.2.0, < 19.2.9",
+    "fixed": "19.2.9"
+   },
+   {
+    "name": "react-server-dom-parcel",
+    "range": ">= 19.3.0, < 19.3.1",
+    "fixed": "19.3.1"
+   },
+   {
+    "name": "react-server-dom-turbopack",
+    "range": ">= 19.0.0, < 19.0.9",
+    "fixed": "19.0.9"
+   },
+   {
+    "name": "react-server-dom-turbopack",
+    "range": ">= 19.1.0, < 19.1.10",
+    "fixed": "19.1.10"
+   },
+   {
+    "name": "react-server-dom-turbopack",
+    "range": ">= 19.2.0, < 19.2.9",
+    "fixed": "19.2.9"
+   },
+   {
+    "name": "react-server-dom-turbopack",
+    "range": ">= 19.3.0, < 19.3.1",
+    "fixed": "19.3.1"
+   },
+   {
+    "name": "react-server-dom-webpack",
+    "range": ">= 19.0.0, < 19.0.9",
+    "fixed": "19.0.9"
+   },
+   {
+    "name": "react-server-dom-webpack",
+    "range": ">= 19.1.0, < 19.1.10",
+    "fixed": "19.1.10"
+   },
+   {
+    "name": "react-server-dom-webpack",
+    "range": ">= 19.2.0, < 19.2.9",
+    "fixed": "19.2.9"
+   },
+   {
+    "name": "react-server-dom-webpack",
+    "range": ">= 19.3.0, < 19.3.1",
+    "fixed": "19.3.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6889-vf6x-f3g5",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125335",
+  "summary": "Forge: Ed25519 signature verification accepts small-order public keys",
+  "severity": "LOW",
+  "score": 3.7,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-6889-vf6x-f3g5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.2",
+    "fixed": "1.4.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-w4xr-hqv8-ch44",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125332",
+  "summary": "Forge: TLS client crash on an unsupported ServerHello compression method",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-w4xr-hqv8-ch44",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.2",
+    "fixed": "1.4.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6cv4-p8m7-4r25",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125333",
+  "summary": "Forge: ReDoS in forge.http response header and cookie trimming",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-6cv4-p8m7-4r25",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": ">= 0.1.2, <= 1.4.2",
+    "fixed": "1.4.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-j8rw-jp99-435v",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125334",
+  "summary": "Forge: TLS client crash on a handshake record received without a session",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-j8rw-jp99-435v",
+  "kev": false,
+  "packages": [
+   {
+    "name": "node-forge",
+    "range": "<= 1.4.2",
+    "fixed": "1.4.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-474x-hrwr-fgx4",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126066",
+  "summary": "fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags",
+  "severity": "LOW",
+  "score": 3.7,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-474x-hrwr-fgx4",
+  "kev": false,
+  "packages": [
+   {
+    "name": "fast-xml-parser",
+    "range": "<= 5.11.2",
+    "fixed": "5.12.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-wr5m-5jph-8m96",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125116",
+  "summary": "Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections",
+  "severity": "MEDIUM",
+  "score": 4.8,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-wr5m-5jph-8m96",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mongoose",
+    "range": "< 6.13.12",
+    "fixed": "6.13.12"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 7.0.0, < 7.8.13",
+    "fixed": "7.8.13"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 8.0.0, < 8.24.7",
+    "fixed": "8.24.7"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 9.0.0, < 9.11.4",
+    "fixed": "9.11.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8332-j7wj-wjw4",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125117",
+  "summary": "Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state",
+  "severity": "HIGH",
+  "score": 8.2,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-8332-j7wj-wjw4",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mongoose",
+    "range": "< 6.13.12",
+    "fixed": "6.13.12"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 7.0.0, < 7.8.13",
+    "fixed": "7.8.13"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 8.0.0, < 8.24.7",
+    "fixed": "8.24.7"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 9.0.0, < 9.11.4",
+    "fixed": "9.11.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6972-9mcm-vhwj",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125118",
+  "summary": "Mongoose: Prototype pollution via Schema.prototype.virtual()",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-6972-9mcm-vhwj",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mongoose",
+    "range": "< 6.13.12",
+    "fixed": "6.13.12"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 7.0.0, < 7.8.13",
+    "fixed": "7.8.13"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 8.0.0, < 8.24.7",
+    "fixed": "8.24.7"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 9.0.0, < 9.11.4",
+    "fixed": "9.11.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-gg4r-jv3p-qx3c",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-125119",
+  "summary": "Mongoose: Connection-level sanitizeFilter not applied",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-gg4r-jv3p-qx3c",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mongoose",
+    "range": ">= 6.0.0, < 6.13.12",
+    "fixed": "6.13.12"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 7.0.0, < 7.8.13",
+    "fixed": "7.8.13"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 8.0.0, < 8.24.7",
+    "fixed": "8.24.7"
+   },
+   {
+    "name": "mongoose",
+    "range": ">= 9.0.0, < 9.11.4",
+    "fixed": "9.11.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8v59-qmwv-4p6q",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-125123",
+  "summary": "compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages ",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-8v59-qmwv-4p6q",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": "= 0.31.0",
+    "fixed": "0.32.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-hr4h-4c45-v4q4",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-125122",
+  "summary": "compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+  "published": "2026-11-10",
+  "url": "https://github.com/advisories/GHSA-hr4h-4c45-v4q4",
+  "kev": false,
+  "packages": [
+   {
+    "name": "compose-lint",
+    "range": "= 0.31.0",
+    "fixed": "0.32.0"
    }
   ]
  },
