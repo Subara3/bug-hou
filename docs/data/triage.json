@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T00:46:40Z",
+ "updated_at": "2026-11-11T06:46:06Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -598,20 +598,6 @@
    "kev": false,
    "at": "2026-11-04"
   },
-  "GHSA-35rr-xwfh-x789": {
-   "level": "check",
-   "reason": "Highchartsのbreadcrumbs.styleがSVGイベント属性になる。HIGH",
-   "todo": "highcharts 11.4.9/12.6.1/13.1.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-3633-r77q-h3v3": {
-   "level": "check",
-   "reason": "dd-trace-pyのURLクエリ難読化処理でReDoS。HIGH",
-   "todo": "ddtrace 3.19.9/4.15.6に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-36h5-qg4p-q2qf": {
    "level": "check",
    "reason": "mail-mime-parserの添付ファイル名でCRLFヘッダー注入。HIGH",
@@ -766,6 +752,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-474x-hrwr-fgx4": {
+   "level": "watch",
+   "reason": "fast-xml-parserで閉じていないタグの処理が遅くなる。LOW",
+   "todo": "fast-xml-parserを5.12.0に更新",
+   "kev": false,
+   "at": "2026-11-11"
+  },
   "GHSA-47ch-6w46-6xm7": {
    "level": "check",
    "reason": "Gravのmedia_directory()でパストラバーサルとファイル内容漏洩。HIGH",
@@ -791,13 +784,6 @@
    "level": "check",
    "reason": "LangGraphのカスタム認証で他ユーザーのStoreに触れる。HIGH",
    "todo": "langgraph-api 0.15.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-4mfg-r38w-w8fg": {
-   "level": "check",
-   "reason": "mcp-sanitizerのURL検査をポート指定やIPv6で回避しSSRF。HIGH",
-   "todo": "mcp-sanitizer 1.4.0に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -920,13 +906,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-5ghw-9mgr-jvx2": {
-   "level": "check",
-   "reason": "Highcharts Grid Proのセル描画attributesが無検査でsetAttribute。HIGH",
-   "todo": "grid-pro 3.2.0/dashboards 4.0.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-5gmm-hjfj-8ff7": {
    "level": "watch",
    "reason": "Paymenterのダウングレード処理で返金の二重取り競合。MEDIUM",
@@ -1011,13 +990,6 @@
    "kev": false,
    "at": "2026-11-06"
   },
-  "GHSA-65hg-cf3f-5m39": {
-   "level": "check",
-   "reason": "Highchartsの印刷時にフィルタなしのinnerHTMLへ戻る。HIGH",
-   "todo": "highcharts 12.6.1/13.1.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-65v8-q222-64xx": {
    "level": "watch",
    "reason": "MEDIUM。compose-lintのfix --applyが別の行を消すことがある",
@@ -1039,12 +1011,26 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-6889-vf6x-f3g5": {
+   "level": "watch",
+   "reason": "node-forgeのEd25519署名検証の不備。LOW",
+   "todo": "node-forgeを1.4.3に更新",
+   "kev": false,
+   "at": "2026-11-11"
+  },
   "GHSA-68wq-phq7-p2vg": {
    "level": "watch",
    "reason": "SilverStripe MFAがパスワードリセットで回避可能。MEDIUM",
    "todo": "silverstripe/mfa 6.0.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-6972-9mcm-vhwj": {
+   "level": "watch",
+   "reason": "MongooseのSchema.prototype.virtual()でプロトタイプ汚染。MEDIUM",
+   "todo": "mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新",
+   "kev": false,
+   "at": "2026-11-11"
   },
   "GHSA-69hj-f68j-2879": {
    "level": "watch",
@@ -1053,19 +1039,19 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-6cv4-p8m7-4r25": {
+   "level": "watch",
+   "reason": "node-forgeのforge.httpでヘッダー処理が極端に遅くなる。MEDIUM",
+   "todo": "node-forgeを1.4.3に更新",
+   "kev": false,
+   "at": "2026-11-11"
+  },
   "GHSA-6f4g-xm8v-pgv6": {
    "level": "watch",
    "reason": "MEDIUM。compose-lintのActionでGitHub Actionsのコマンドを出せる",
    "todo": "0.31.0 以降に更新",
    "kev": false,
    "at": "2026-11-11"
-  },
-  "GHSA-6g3c-p4fg-xv47": {
-   "level": "check",
-   "reason": "Highcharts Gridのカスタムアイコン定義が無検査でsetAttribute。HIGH",
-   "todo": "grid-lite/grid-pro 3.2.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-6hgp-fmhr-mrg4": {
    "level": "check",
@@ -1200,13 +1186,6 @@
    "kev": false,
    "at": "2026-11-04"
   },
-  "GHSA-7w82-6f9j-v9jp": {
-   "level": "check",
-   "reason": "mcp-sanitizerのパス検査がホーム配下の絶対パスを許可。HIGH",
-   "todo": "mcp-sanitizer 1.4.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-7wch-p9px-956x": {
    "level": "check",
    "reason": "node-forgeのPEMデコードでReDoS。HIGH",
@@ -1227,6 +1206,13 @@
    "todo": "semantic-media-wiki 7.2.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-8332-j7wj-wjw4": {
+   "level": "check",
+   "reason": "Mongooseが継承プロパティまで書き換え、サービス停止などが起きる。HIGH",
+   "todo": "mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新",
+   "kev": false,
+   "at": "2026-11-11"
   },
   "GHSA-8397-8qf6-f2gm": {
    "level": "watch",
@@ -1325,6 +1311,13 @@
    "todo": "vue-i18n 11.4.14に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-8v59-qmwv-4p6q": {
+   "level": "watch",
+   "reason": "compose-lintのエラー出力経由でCIにコマンドを差し込める。LOW",
+   "todo": "compose-lintを0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-11"
   },
   "GHSA-8vv3-6qpc-gpw6": {
    "level": "check",
@@ -1512,13 +1505,6 @@
    "level": "check",
    "reason": "AuthlibのRFC 7592の例でトークンとクライアントの紐付けが欠落。HIGH",
    "todo": "Authlib 1.9.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-c75x-9x9h-28rm": {
-   "level": "watch",
-   "reason": "Highcharts DataTableで__proto__を既存列として扱う。MEDIUM",
-   "todo": "dashboards 4.2.2/grid-pro 3.2.0に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1713,12 +1699,12 @@
    "kev": false,
    "at": "2026-11-10"
   },
-  "GHSA-gfvx-2c2g-38wq": {
+  "GHSA-gg4r-jv3p-qx3c": {
    "level": "check",
-   "reason": "Highchartsの系列列構築でプロトタイプ汚染。HIGH",
-   "todo": "highcharts 13.1.0に更新",
+   "reason": "Mongooseで接続単位のsanitizeFilterが効かない。設定している場合に影響",
+   "todo": "sanitizeFilterの設定を確認し、6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-11"
   },
   "GHSA-gg6h-894w-4m9c": {
    "level": "check",
@@ -1747,13 +1733,6 @@
    "level": "watch",
    "reason": "vLLMのDeepSeek-OCR画像処理でDoS。MEDIUM",
    "todo": "vllm 0.32.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-grj7-r4jv-pw9j": {
-   "level": "check",
-   "reason": "Highcharts DashboardsのchartConstructorが未検査の参照。HIGH",
-   "todo": "@highcharts/dashboards 4.2.2に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1827,6 +1806,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-hr4h-4c45-v4q4": {
+   "level": "watch",
+   "reason": "compose-lintのJSON・SARIF出力経由でCIにコマンドを差し込める。LOW",
+   "todo": "compose-lintを0.32.0に更新",
+   "kev": false,
+   "at": "2026-11-11"
+  },
   "GHSA-hw3m-8j5x-94ff": {
    "level": "watch",
    "reason": "Semantic MediaWikiのURIResolverでオープンリダイレクト。MEDIUM",
@@ -1875,6 +1861,13 @@
    "todo": "filelock 4.0.9以降に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-j8rw-jp99-435v": {
+   "level": "watch",
+   "reason": "node-forgeのTLSクライアントがセッションなしの受信で落ちる。MEDIUM",
+   "todo": "node-forgeを1.4.3に更新",
+   "kev": false,
+   "at": "2026-11-11"
   },
   "GHSA-jc66-7q78-782g": {
    "level": "check",
@@ -1939,13 +1932,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-jqgh-w3cc-7jqw": {
-   "level": "watch",
-   "reason": "Dashboardsで__proto__のidでObject.prototypeに書込。MEDIUM",
-   "todo": "@highcharts/dashboards 4.2.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-jr78-w6w5-m8f8": {
    "level": "check",
    "reason": "Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH",
@@ -1973,6 +1959,13 @@
    "todo": "filecoin-pinを使っているなら1.1.1に更新",
    "kev": false,
    "at": "2026-11-06"
+  },
+  "GHSA-m63f-xhvm-6mv5": {
+   "level": "check",
+   "reason": "Aspire CLIの権限昇格。HIGH",
+   "todo": "Aspire.Cliの利用有無を確認し、13.6.5に更新",
+   "kev": false,
+   "at": "2026-11-11"
   },
   "GHSA-m65p-9j7q-6w33": {
    "level": "check",
@@ -2072,13 +2065,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-mw4f-gj5x-6xr4": {
-   "level": "check",
-   "reason": "Highchartsでxlink:hrefのjavascript: URLが書き出しに残る。HIGH",
-   "todo": "highcharts 11.4.9/12.6.2/13.1.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-p279-5wcv-45vq": {
    "level": "watch",
    "reason": "Kunstmaan CMSで管理者がPHPをアップロードしRCE。管理者権限前提",
@@ -2092,13 +2078,6 @@
    "todo": "fastapi-code-generator を 0.8.1 以降に更新",
    "kev": false,
    "at": "2026-11-10"
-  },
-  "GHSA-p3m5-h5v9-vqj6": {
-   "level": "check",
-   "reason": "dd-trace-pyのIAST計装でアプリがDoS。IAST利用時のみ",
-   "todo": "ddtrace 4.15.5に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-p597-crqc-m349": {
    "level": "check",
@@ -2211,6 +2190,13 @@
    "todo": "onnx 1.22.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-q6jf-24jf-m3cg": {
+   "level": "check",
+   "reason": "Aspire CLIの情報漏えい。HIGH",
+   "todo": "Aspire.Cliの利用有無を確認し、13.6.5に更新",
+   "kev": false,
+   "at": "2026-11-11"
   },
   "GHSA-q6wp-fr43-gm9v": {
    "level": "watch",
@@ -2457,6 +2443,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-w4xr-hqv8-ch44": {
+   "level": "watch",
+   "reason": "node-forgeのTLSクライアントが特定の応答で落ちる。MEDIUM",
+   "todo": "node-forgeを1.4.3に更新",
+   "kev": false,
+   "at": "2026-11-11"
+  },
   "GHSA-w658-mh9p-ww8f": {
    "level": "watch",
    "reason": "Backstageのカタログ規則をエンコードで回避。MEDIUM",
@@ -2519,6 +2512,13 @@
    "todo": "seroval 1.6.8に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-wr5m-5jph-8m96": {
+   "level": "watch",
+   "reason": "Mongooseのdiscriminatorキーで型変換をすり抜けられる。MEDIUM",
+   "todo": "mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新",
+   "kev": false,
+   "at": "2026-11-11"
   },
   "GHSA-wrr5-j383-f7h2": {
    "level": "watch",
@@ -2583,13 +2583,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-x94g-w73q-hpcw": {
-   "level": "check",
-   "reason": "dd-traceのURLクエリ難読化処理でReDoS。HIGH",
-   "todo": "dd-trace 5.131.1/6.20.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-x9rp-7wh3-2rj5": {
    "level": "check",
    "reason": "@enspirit/eloのHIGH。プログラムで作ったASTの値がそのまま出力されコードを埋め込める",
@@ -2617,6 +2610,15 @@
    "todo": "getgrav/grav 2.0.16に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-xqc2-xf4c-x3h3": {
+   "level": "action",
+   "reason": "React Server Componentsでログインなしに外からRCE。CRITICAL",
+   "todo": "react-server-dom-*を19.0.9 / 19.1.10 / 19.2.9 / 19.3.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-11",
+   "urgency": "later",
+   "comment": "データ上は手が空いたらだが、Server Componentsを外に公開しているなら早めに"
   },
   "GHSA-xwgp-w3pj-q5h3": {
    "level": "check",
