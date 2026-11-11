@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-11T06:25:10Z",
+ "fetched_at": "2026-11-11T19:37:31Z",
  "days": 90,
  "targets": [
   {
@@ -49,7 +49,7 @@
   {
    "id": "webserver",
    "label": "Apache / nginx",
-   "cves": 40,
+   "cves": 43,
    "critical": 7,
    "high": 25,
    "kev_recent": 0,
