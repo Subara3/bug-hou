@@ -7,18 +7,18 @@
 <updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout (LOW)</title>
+<title>[様子見] Python: compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout (LOW)</title>
 <link href="https://github.com/advisories/GHSA-hr4h-4c45-v4q4"/>
 <id>urn:bug-hou:GHSA-hr4h-4c45-v4q4</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125122&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; compose-lintのJSON・SARIF出力経由でCIにコマンドを差し込める。LOW&lt;br&gt;→ compose-lintを0.32.0に更新&lt;/p&gt;&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125122&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages  (LOW)</title>
+<title>[様子見] Python: compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages  (LOW)</title>
 <link href="https://github.com/advisories/GHSA-8v59-qmwv-4p6q"/>
 <id>urn:bug-hou:GHSA-8v59-qmwv-4p6q</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125123&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; compose-lintのエラー出力経由でCIにコマンドを差し込める。LOW&lt;br&gt;→ compose-lintを0.32.0に更新&lt;/p&gt;&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125123&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output (LOW)</title>

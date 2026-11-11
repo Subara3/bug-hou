@@ -7,10 +7,10 @@
 <updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags (LOW)</title>
+<title>[様子見] npm: fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags (LOW)</title>
 <link href="https://github.com/advisories/GHSA-474x-hrwr-fgx4"/>
 <id>urn:bug-hou:GHSA-474x-hrwr-fgx4</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fast-xml-parser &amp;lt;= 5.11.2 → 5.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-126066&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; fast-xml-parserで閉じていないタグの処理が遅くなる。LOW&lt;br&gt;→ fast-xml-parserを5.12.0に更新&lt;/p&gt;&lt;p&gt;fast-xml-parser &amp;lt;= 5.11.2 → 5.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-126066&lt;/p&gt;</content>
 </entry>
 </feed>

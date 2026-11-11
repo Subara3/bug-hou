@@ -7,88 +7,88 @@
 <updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>
+<title>[要対応] Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"/>
 <id>urn:bug-hou:GHSA-xqc2-xf4c-x3h3</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;react-server-dom-parcel &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-parcel &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-parcel &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-parcel &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-turbopack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-turbopack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-turbopack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-turbopack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-webpack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-webpack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-webpack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-webpack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-126187&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; React Server Componentsでログインなしに外からRCE。CRITICAL&lt;br&gt;→ react-server-dom-*を19.0.9 / 19.1.10 / 19.2.9 / 19.3.1 以降に更新&lt;/p&gt;&lt;p&gt;react-server-dom-parcel &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-parcel &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-parcel &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-parcel &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-turbopack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-turbopack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-turbopack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-turbopack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-webpack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-webpack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-webpack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-webpack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-126187&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections (MEDIUM)</title>
+<title>[様子見] Node.js: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wr5m-5jph-8m96"/>
 <id>urn:bug-hou:GHSA-wr5m-5jph-8m96</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125116&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Mongooseのdiscriminatorキーで型変換をすり抜けられる。MEDIUM&lt;br&gt;→ mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125116&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: TLS client crash on an unsupported ServerHello compression method (MEDIUM)</title>
+<title>[様子見] Node.js: Forge: TLS client crash on an unsupported ServerHello compression method (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-w4xr-hqv8-ch44"/>
 <id>urn:bug-hou:GHSA-w4xr-hqv8-ch44</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125332&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのTLSクライアントが特定の応答で落ちる。MEDIUM&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125332&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability (HIGH)</title>
+<title>[要確認] Node.js: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-q6jf-24jf-m3cg"/>
 <id>urn:bug-hou:GHSA-q6jf-24jf-m3cg</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120792&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Aspire CLIの情報漏えい。HIGH&lt;br&gt;→ Aspire.Cliの利用有無を確認し、13.6.5に更新&lt;/p&gt;&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120792&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability (HIGH)</title>
+<title>[要確認] Node.js: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-m63f-xhvm-6mv5"/>
 <id>urn:bug-hou:GHSA-m63f-xhvm-6mv5</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120778&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Aspire CLIの権限昇格。HIGH&lt;br&gt;→ Aspire.Cliの利用有無を確認し、13.6.5に更新&lt;/p&gt;&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120778&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: TLS client crash on a handshake record received without a session (MEDIUM)</title>
+<title>[様子見] Node.js: Forge: TLS client crash on a handshake record received without a session (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-j8rw-jp99-435v"/>
 <id>urn:bug-hou:GHSA-j8rw-jp99-435v</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125334&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのTLSクライアントがセッションなしの受信で落ちる。MEDIUM&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125334&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Mongoose: Connection-level sanitizeFilter not applied (HIGH)</title>
+<title>[要確認] Node.js: Mongoose: Connection-level sanitizeFilter not applied (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-gg4r-jv3p-qx3c"/>
 <id>urn:bug-hou:GHSA-gg4r-jv3p-qx3c</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mongoose &amp;gt;= 6.0.0, &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125119&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Mongooseで接続単位のsanitizeFilterが効かない。設定している場合に影響&lt;br&gt;→ sanitizeFilterの設定を確認し、6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;gt;= 6.0.0, &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125119&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state (HIGH)</title>
+<title>[要確認] Node.js: Mongoose walks into inherited properties when hydrating, setting, and merging, allowing overwrites of built-in functions (denial of service) and shared schema state (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-8332-j7wj-wjw4"/>
 <id>urn:bug-hou:GHSA-8332-j7wj-wjw4</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125117&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Mongooseが継承プロパティまで書き換え、サービス停止などが起きる。HIGH&lt;br&gt;→ mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125117&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: ReDoS in forge.http response header and cookie trimming (MEDIUM)</title>
+<title>[様子見] Node.js: Forge: ReDoS in forge.http response header and cookie trimming (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6cv4-p8m7-4r25"/>
 <id>urn:bug-hou:GHSA-6cv4-p8m7-4r25</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;gt;= 0.1.2, &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125333&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのforge.httpでヘッダー処理が極端に遅くなる。MEDIUM&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;gt;= 0.1.2, &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125333&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Mongoose: Prototype pollution via Schema.prototype.virtual() (MEDIUM)</title>
+<title>[様子見] Node.js: Mongoose: Prototype pollution via Schema.prototype.virtual() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6972-9mcm-vhwj"/>
 <id>urn:bug-hou:GHSA-6972-9mcm-vhwj</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125118&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MongooseのSchema.prototype.virtual()でプロトタイプ汚染。MEDIUM&lt;br&gt;→ mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125118&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: Ed25519 signature verification accepts small-order public keys (LOW)</title>
+<title>[様子見] Node.js: Forge: Ed25519 signature verification accepts small-order public keys (LOW)</title>
 <link href="https://github.com/advisories/GHSA-6889-vf6x-f3g5"/>
 <id>urn:bug-hou:GHSA-6889-vf6x-f3g5</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125335&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのEd25519署名検証の不備。LOW&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125335&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags (LOW)</title>
+<title>[様子見] Node.js: fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags (LOW)</title>
 <link href="https://github.com/advisories/GHSA-474x-hrwr-fgx4"/>
 <id>urn:bug-hou:GHSA-474x-hrwr-fgx4</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;fast-xml-parser &amp;lt;= 5.11.2 → 5.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-126066&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; fast-xml-parserで閉じていないタグの処理が遅くなる。LOW&lt;br&gt;→ fast-xml-parserを5.12.0に更新&lt;/p&gt;&lt;p&gt;fast-xml-parser &amp;lt;= 5.11.2 → 5.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-126066&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API (HIGH)</title>

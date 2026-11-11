@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/action.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/action.xml</id>
-<updated>2026-11-09T00:00:00Z</updated>
+<updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>[要対応] Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"/>
+<id>urn:bug-hou:GHSA-xqc2-xf4c-x3h3</id>
+<updated>2026-11-11T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; React Server Componentsでログインなしに外からRCE。CRITICAL&lt;br&gt;→ react-server-dom-*を19.0.9 / 19.1.10 / 19.2.9 / 19.3.1 以降に更新&lt;/p&gt;&lt;p&gt;react-server-dom-parcel &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-parcel &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-parcel &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-parcel &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-turbopack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-turbopack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-turbopack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-turbopack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-webpack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-webpack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-webpack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-webpack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-126187&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要対応] Python: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin (CRITICAL) ⚠KEV</title>
 <link href="https://github.com/advisories/GHSA-gj9m-f8ph-pmhr"/>

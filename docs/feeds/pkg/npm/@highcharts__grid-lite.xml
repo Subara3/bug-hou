@@ -7,11 +7,11 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] npm: Highcharts Grid: custom icon definition objects written with raw `setAttribute` on `&lt;path&gt;` (HIGH)</title>
+<title>npm: Highcharts Grid: custom icon definition objects written with raw `setAttribute` on `&lt;path&gt;` (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-6g3c-p4fg-xv47"/>
 <id>urn:bug-hou:GHSA-6g3c-p4fg-xv47</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highcharts Gridのカスタムアイコン定義が無検査でsetAttribute。HIGH&lt;br&gt;→ grid-lite/grid-pro 3.2.0に更新&lt;/p&gt;&lt;p&gt;@highcharts/grid-lite &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/grid-pro &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118242&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;@highcharts/grid-lite &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/grid-pro &amp;gt;= 2.3.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118242&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: Highcharts Grid parses pagination language options as HTML (HIGH)</title>
