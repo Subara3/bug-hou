@@ -7,18 +7,18 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover (CRITICAL)</title>
+<title>[要確認] pip: GPUStack: SAML callback trusts an unverified SAMLResponse, allowing authentication bypass and account takeover (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-62m9-f875-rqw6"/>
 <id>urn:bug-hou:GHSA-62m9-f875-rqw6</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;gpustack &amp;gt;= 0.7.1, &amp;lt; 2.2.2 → 2.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-102894&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないGPUStackのCRITICAL。SAML使用時に認証を回避される&lt;br&gt;→ 2.2.2 以降に更新&lt;/p&gt;&lt;p&gt;gpustack &amp;gt;= 0.7.1, &amp;lt; 2.2.2 → 2.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-102894&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover (HIGH)</title>
+<title>[要確認] pip: GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3hch-x692-6qj3"/>
 <id>urn:bug-hou:GHSA-3hch-x692-6qj3</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;gpustack &amp;gt;= 2.2.0, &amp;lt; 2.2.2 → 2.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-103002&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GPUStackで認可の確認が抜けていて他の利用者の資源を触れるHIGH&lt;br&gt;→ 2.2.2 以降に更新&lt;/p&gt;&lt;p&gt;gpustack &amp;gt;= 2.2.0, &amp;lt; 2.2.2 → 2.2.2&lt;/p&gt;&lt;p&gt;CVE-2026-103002&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] pip: GPUStack: Authentication bypass via trusted loopback source (reverse-proxy TCP peer or X-GPUStack-Real-IP header) grants unauthenticated admin (CRITICAL) ⚠KEV</title>

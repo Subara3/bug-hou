@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API (HIGH)</title>
+<title>[要確認] npm: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xxrh-5hgg-gj4h"/>
 <id>urn:bug-hou:GHSA-xxrh-5hgg-gj4h</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nuxt/content &amp;gt;= 3.0.0, &amp;lt; 3.15.2 → 3.15.2&lt;/p&gt;&lt;p&gt;CVE-2026-102650&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Nuxt Contentでログインなしでサービスを止められるHIGH&lt;br&gt;→ 3.15.2 以降に更新&lt;/p&gt;&lt;p&gt;@nuxt/content &amp;gt;= 3.0.0, &amp;lt; 3.15.2 → 3.15.2&lt;/p&gt;&lt;p&gt;CVE-2026-102650&lt;/p&gt;</content>
 </entry>
 </feed>

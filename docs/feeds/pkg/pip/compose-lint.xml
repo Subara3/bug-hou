@@ -7,59 +7,59 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output (LOW)</title>
+<title>[様子見] pip: compose-lint: A committed symlink makes compose-lint quote a file from outside the project into its output (LOW)</title>
 <link href="https://github.com/advisories/GHSA-whr6-fgpq-fpv9"/>
 <id>urn:bug-hou:GHSA-whr6-fgpq-fpv9</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0, tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0&lt;/p&gt;&lt;p&gt;CVE-2026-123373&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。compose-lintがシンボリックリンク先のファイルを出力に含める&lt;br&gt;→ 0.25.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0, tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0&lt;/p&gt;&lt;p&gt;CVE-2026-123373&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env` (LOW)</title>
+<title>[様子見] pip: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env` (LOW)</title>
 <link href="https://github.com/advisories/GHSA-rm8w-w798-g545"/>
 <id>urn:bug-hou:GHSA-rm8w-w798-g545</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint = 0.32.0 → 0.33.0, tmatens/compose-lint = 0.32.0 → 0.33.0&lt;/p&gt;&lt;p&gt;CVE-2026-123796&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。compose-lintが.envの秘密情報を出力に含める&lt;br&gt;→ 0.33.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint = 0.32.0 → 0.33.0, tmatens/compose-lint = 0.32.0 → 0.33.0&lt;/p&gt;&lt;p&gt;CVE-2026-123796&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output (MEDIUM)</title>
+<title>[様子見] pip: compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r7j4-crjv-h467"/>
 <id>urn:bug-hou:GHSA-r7j4-crjv-h467</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.31.0, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125121&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。compose-lintの出力からCIのコマンドを出せる&lt;br&gt;→ 0.32.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint &amp;gt;= 0.31.0, &amp;lt; 0.32.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125121&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings (LOW)</title>
+<title>[様子見] pip: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings (LOW)</title>
 <link href="https://github.com/advisories/GHSA-jf3h-8jvx-vcrg"/>
 <id>urn:bug-hou:GHSA-jf3h-8jvx-vcrg</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.31.0 → 0.32.0, tmatens/compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-123372&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。compose-lintが.envの秘密情報を出力に含める&lt;br&gt;→ 0.32.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.31.0 → 0.32.0, tmatens/compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-123372&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target (LOW)</title>
+<title>[様子見] pip: compose-lint: A `.compose-lint.yml` symlinked outside the project is read, and a parse error quotes part of the target (LOW)</title>
 <link href="https://github.com/advisories/GHSA-88f4-frh5-gmcr"/>
 <id>urn:bug-hou:GHSA-88f4-frh5-gmcr</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.31.0 → 0.32.0, tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-123371&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。compose-lintが外を指す設定ファイルを読んでしまう&lt;br&gt;→ 0.32.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.31.0 → 0.32.0, tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-123371&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: compose-lint: .env read through a symlink outside the project can expose the CI job's environment (LOW)</title>
+<title>[様子見] pip: compose-lint: .env read through a symlink outside the project can expose the CI job's environment (LOW)</title>
 <link href="https://github.com/advisories/GHSA-6wcv-rj3c-mhv3"/>
 <id>urn:bug-hou:GHSA-6wcv-rj3c-mhv3</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.30.0 → 0.31.0, tmatens/compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.30.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-123368&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。compose-lintがリンク先の.envを読みCIの環境が漏れる&lt;br&gt;→ 0.31.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.30.0 → 0.31.0, tmatens/compose-lint &amp;gt;= 0.22.0, &amp;lt;= 0.30.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-123368&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action (MEDIUM)</title>
+<title>[様子見] pip: compose-lint: Compose file text can issue GitHub Actions workflow commands through the compose-lint Action (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6f4g-xm8v-pgv6"/>
 <id>urn:bug-hou:GHSA-6f4g-xm8v-pgv6</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.30.0 → 0.31.0, compose-lint &amp;lt;= 0.30.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-123369&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。compose-lintのActionでGitHub Actionsのコマンドを出せる&lt;br&gt;→ 0.31.0 以降に更新&lt;/p&gt;&lt;p&gt;tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.30.0 → 0.31.0, compose-lint &amp;lt;= 0.30.0 → 0.31.0&lt;/p&gt;&lt;p&gt;CVE-2026-123369&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: compose-lint: `fix --apply` can delete a line the user did not select, including a security setting (MEDIUM)</title>
+<title>[様子見] pip: compose-lint: `fix --apply` can delete a line the user did not select, including a security setting (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-65v8-q222-64xx"/>
 <id>urn:bug-hou:GHSA-65v8-q222-64xx</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.9.0, &amp;lt;= 0.17.0 → 0.18.0&lt;/p&gt;&lt;p&gt;CVE-2026-123370&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。compose-lintのfix --applyが別の行を消すことがある&lt;br&gt;→ 0.18.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint &amp;gt;= 0.9.0, &amp;lt;= 0.17.0 → 0.18.0&lt;/p&gt;&lt;p&gt;CVE-2026-123370&lt;/p&gt;</content>
 </entry>
 </feed>

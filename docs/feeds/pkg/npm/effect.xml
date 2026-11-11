@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie() (MEDIUM)</title>
+<title>[様子見] npm: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-chp3-j5qr-2vfr"/>
 <id>urn:bug-hou:GHSA-chp3-j5qr-2vfr</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@effect/platform &amp;gt;= 0.1.0, &amp;lt; 0.97.1 → 0.97.1, effect &amp;gt;= 4.0.0-beta.0, &amp;lt; 4.0.0-beta.103 → 4.0.0-beta.103&lt;/p&gt;&lt;p&gt;CVE-2026-115779&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。@effect/platformのCookie属性の注入&lt;br&gt;→ @effect/platform 0.97.1 以降に更新&lt;/p&gt;&lt;p&gt;@effect/platform &amp;gt;= 0.1.0, &amp;lt; 0.97.1 → 0.97.1, effect &amp;gt;= 4.0.0-beta.0, &amp;lt; 4.0.0-beta.103 → 4.0.0-beta.103&lt;/p&gt;&lt;p&gt;CVE-2026-115779&lt;/p&gt;</content>
 </entry>
 </feed>

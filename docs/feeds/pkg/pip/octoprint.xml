@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: OctoPrint: Stored XSS via saved connection parameters (LOW)</title>
+<title>[様子見] pip: OctoPrint: Stored XSS via saved connection parameters (LOW)</title>
 <link href="https://github.com/advisories/GHSA-p623-mxf7-qxjm"/>
 <id>urn:bug-hou:GHSA-p623-mxf7-qxjm</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;OctoPrint &amp;gt;= 2.0.0rc1, &amp;lt;= 2.0.0rc6 → 2.0.0rc7&lt;/p&gt;&lt;p&gt;CVE-2026-123364&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。OctoPrintの接続設定での保存型XSS&lt;br&gt;→ 2.0.0rc7 以降に更新&lt;/p&gt;&lt;p&gt;OctoPrint &amp;gt;= 2.0.0rc1, &amp;lt;= 2.0.0rc6 → 2.0.0rc7&lt;/p&gt;&lt;p&gt;CVE-2026-123364&lt;/p&gt;</content>
 </entry>
 </feed>

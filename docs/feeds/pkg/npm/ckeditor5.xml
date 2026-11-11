@@ -7,17 +7,17 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] npm: CKEditor: Cross-site scripting (XSS) in the engine package (LOW)</title>
+<title>npm: CKEditor: Cross-site scripting (XSS) in the engine package (LOW)</title>
 <link href="https://github.com/advisories/GHSA-v6mg-96c6-gmpq"/>
 <id>urn:bug-hou:GHSA-v6mg-96c6-gmpq</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; CKEditorのengineパッケージでXSS。LOW&lt;br&gt;→ ckeditor5 47.7.4/48.5.1に更新&lt;/p&gt;&lt;p&gt;ckeditor5 &amp;gt;= 29.0.0, &amp;lt; 47.7.4 → 47.7.4, @ckeditor/ckeditor5-engine &amp;gt;= 29.0.0, &amp;lt; 47.7.4 → 47.7.4, ckeditor5 &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1, @ckeditor/ckeditor5-engine &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-116687&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;ckeditor5 &amp;gt;= 29.0.0, &amp;lt; 47.7.4 → 47.7.4, @ckeditor/ckeditor5-engine &amp;gt;= 29.0.0, &amp;lt; 47.7.4 → 47.7.4, ckeditor5 &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1, @ckeditor/ckeditor5-engine &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-116687&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: CKEditor: Cross-site scripting (XSS) in the engine package (HIGH)</title>
+<title>npm: CKEditor: Cross-site scripting (XSS) in the engine package (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rh54-vffm-5fvp"/>
 <id>urn:bug-hou:GHSA-rh54-vffm-5fvp</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CKEditorのengineパッケージでXSS。HIGH&lt;br&gt;→ ckeditor5 47.7.4/48.5.1に更新&lt;/p&gt;&lt;p&gt;ckeditor5 &amp;gt;= 45.0.0, &amp;lt; 47.7.4 → 47.7.4, @ckeditor/ckeditor5-engine &amp;gt;= 45.0.0, &amp;lt; 47.7.4 → 47.7.4, ckeditor5 &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1, @ckeditor/ckeditor5-engine &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-116688&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;ckeditor5 &amp;gt;= 45.0.0, &amp;lt; 47.7.4 → 47.7.4, @ckeditor/ckeditor5-engine &amp;gt;= 45.0.0, &amp;lt; 47.7.4 → 47.7.4, ckeditor5 &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1, @ckeditor/ckeditor5-engine &amp;gt;= 48.0.0, &amp;lt; 48.5.1 → 48.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-116688&lt;/p&gt;</content>
 </entry>
 </feed>

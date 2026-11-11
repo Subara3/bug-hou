@@ -7,18 +7,18 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] pip: LiteLLM vulnerable to reflected XSS in /sso/debug/callback (MEDIUM)</title>
+<title>pip: LiteLLM vulnerable to reflected XSS in /sso/debug/callback (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-hhww-mrg2-969h"/>
 <id>urn:bug-hou:GHSA-hhww-mrg2-969h</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LiteLLMの/sso/debug/callbackで反射型XSS。MEDIUM&lt;br&gt;→ litellm 1.85.0に更新&lt;/p&gt;&lt;p&gt;litellm &amp;gt;= 1.65.5, &amp;lt; 1.85.0 → 1.85.0&lt;/p&gt;&lt;p&gt;GHSA-hhww-mrg2-969h&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;litellm &amp;gt;= 1.65.5, &amp;lt; 1.85.0 → 1.85.0&lt;/p&gt;&lt;p&gt;GHSA-hhww-mrg2-969h&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] pip: LiteLLM: internal_user_viewer arbitrary local file read via `vertex_ai_credentials` (HIGH)</title>
+<title>pip: LiteLLM: internal_user_viewer arbitrary local file read via `vertex_ai_credentials` (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-g5ff-637f-6q2m"/>
 <id>urn:bug-hou:GHSA-g5ff-637f-6q2m</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; LiteLLMでinternal_user_viewerが任意のローカルファイルを読取。HIGH&lt;br&gt;→ litellm 1.95.0に更新&lt;/p&gt;&lt;p&gt;litellm &amp;lt; 1.95.0 → 1.95.0&lt;/p&gt;&lt;p&gt;GHSA-g5ff-637f-6q2m&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;litellm &amp;lt; 1.95.0 → 1.95.0&lt;/p&gt;&lt;p&gt;GHSA-g5ff-637f-6q2m&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>pip: LiteLLM: Privilege Escalation to Proxy Admin via Cross-Domain Reuse of the Salt Key (HIGH)</title>

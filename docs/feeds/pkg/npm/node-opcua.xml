@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions (CRITICAL)</title>
+<title>[要確認] npm: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-xggf-m53x-jc3f"/>
 <id>urn:bug-hou:GHSA-xggf-m53x-jc3f</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-opcua &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-address-space &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-server &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0&lt;/p&gt;&lt;p&gt;CVE-2026-95860&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないnode-opcuaのCRITICAL。匿名で書き込みや呼び出しができる&lt;br&gt;→ 2.180.0 以降に更新&lt;/p&gt;&lt;p&gt;node-opcua &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-address-space &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-server &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0&lt;/p&gt;&lt;p&gt;CVE-2026-95860&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides (MEDIUM)</title>
+<title>[様子見] npm: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wrr5-j383-f7h2"/>
 <id>urn:bug-hou:GHSA-wrr5-j383-f7h2</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nocobase/plugin-action-custom-request &amp;gt;= 2.1.0-alpha.8, &amp;lt; 2.1.15 → 2.1.15, @nocobase/plugin-action-custom-request &amp;gt;= 2.2.0-alpha.1, &amp;lt; 2.2.0-alpha.4 → 2.2.0-alpha.4&lt;/p&gt;&lt;p&gt;CVE-2026-79914&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。NocoBaseのカスタムリクエスト拡張でのSSRF&lt;br&gt;→ 2.1.15 以降に更新&lt;/p&gt;&lt;p&gt;@nocobase/plugin-action-custom-request &amp;gt;= 2.1.0-alpha.8, &amp;lt; 2.1.15 → 2.1.15, @nocobase/plugin-action-custom-request &amp;gt;= 2.2.0-alpha.1, &amp;lt; 2.2.0-alpha.4 → 2.2.0-alpha.4&lt;/p&gt;&lt;p&gt;CVE-2026-79914&lt;/p&gt;</content>
 </entry>
 </feed>

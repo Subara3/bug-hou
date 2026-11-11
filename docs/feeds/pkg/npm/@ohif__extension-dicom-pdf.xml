@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document (HIGH)</title>
+<title>[要確認] npm: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xwgp-w3pj-q5h3"/>
 <id>urn:bug-hou:GHSA-xwgp-w3pj-q5h3</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@ohif/extension-dicom-pdf &amp;gt;= 3.5.0-beta.0, &amp;lt; 3.12.18 → 3.12.18, @ohif/extension-dicom-pdf &amp;gt;= 3.13.0-beta.0, &amp;lt; 3.13.10 → 3.13.10, @ohif/extension-dicom-pdf &amp;gt;= 3.14.0-beta.0, &amp;lt; 3.14.0-beta.36 → 3.14.0-beta.36&lt;/p&gt;&lt;p&gt;CVE-2026-118670&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; OHIF ViewersのPDF拡張でのXSS。HIGHだが対象が限られる&lt;br&gt;→ 3.12.18 / 3.13.10 以降に更新&lt;/p&gt;&lt;p&gt;@ohif/extension-dicom-pdf &amp;gt;= 3.5.0-beta.0, &amp;lt; 3.12.18 → 3.12.18, @ohif/extension-dicom-pdf &amp;gt;= 3.13.0-beta.0, &amp;lt; 3.13.10 → 3.13.10, @ohif/extension-dicom-pdf &amp;gt;= 3.14.0-beta.0, &amp;lt; 3.14.0-beta.36 → 3.14.0-beta.36&lt;/p&gt;&lt;p&gt;CVE-2026-118670&lt;/p&gt;</content>
 </entry>
 </feed>

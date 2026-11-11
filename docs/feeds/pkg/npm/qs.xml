@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] npm: qs : qs.stringify with arrayFormat 'comma' throws an uncaught TypeError on array elements carrying a non-callable own toString (DoS) (MEDIUM)</title>
+<title>npm: qs : qs.stringify with arrayFormat 'comma' throws an uncaught TypeError on array elements carrying a non-callable own toString (DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6pq8-jhm2-2vcw"/>
 <id>urn:bug-hou:GHSA-6pq8-jhm2-2vcw</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; qs.stringifyのcomma形式で未捕捉TypeErrorによりDoS。MEDIUM&lt;br&gt;→ qs 6.16.1に更新&lt;/p&gt;&lt;p&gt;qs &amp;gt;= 6.7.0, &amp;lt;= 6.16.0 → 6.16.1&lt;/p&gt;&lt;p&gt;CVE-2026-110816&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;qs &amp;gt;= 6.7.0, &amp;lt;= 6.16.0 → 6.16.1&lt;/p&gt;&lt;p&gt;CVE-2026-110816&lt;/p&gt;</content>
 </entry>
 </feed>

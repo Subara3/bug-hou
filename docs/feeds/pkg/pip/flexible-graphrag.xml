@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] pip: Flexible GraphRAG: Cypher/Graph Injection via broken string-escaping in FalkorDB adapter (_escape()) - full graph wipe from ingested-document content (HIGH)</title>
+<title>pip: Flexible GraphRAG: Cypher/Graph Injection via broken string-escaping in FalkorDB adapter (_escape()) - full graph wipe from ingested-document content (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-vqrg-773h-4wxc"/>
 <id>urn:bug-hou:GHSA-vqrg-773h-4wxc</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Flexible GraphRAGのFalkorDBアダプタでCypher注入しグラフ全消去。HIGH&lt;br&gt;→ flexible-graphrag 0.8.2に更新&lt;/p&gt;&lt;p&gt;flexible-graphrag &amp;gt;= 0.6.0, &amp;lt; 0.8.2 → 0.8.2&lt;/p&gt;&lt;p&gt;CVE-2026-114510&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;flexible-graphrag &amp;gt;= 0.6.0, &amp;lt; 0.8.2 → 0.8.2&lt;/p&gt;&lt;p&gt;CVE-2026-114510&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,10 +7,10 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list (CRITICAL)</title>
+<title>[要確認] npm: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-8vv3-6qpc-gpw6"/>
 <id>urn:bug-hou:GHSA-8vv3-6qpc-gpw6</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;bitcoinjs-lib &amp;gt;= 2.3.0, &amp;lt; 5.2.1 → 5.2.1, bitcoinjs-lib &amp;gt;= 6.0.0, &amp;lt; 6.1.8 → 6.1.8, bitcoinjs-lib &amp;gt;= 7.0.0-rc.0, &amp;lt; 7.0.2 → 7.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-107846&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないbitcoinjs-libのCRITICAL。偽の取引一覧が通る&lt;br&gt;→ 5.2.1 / 6.1.8 / 7.0.2 以降に更新&lt;/p&gt;&lt;p&gt;bitcoinjs-lib &amp;gt;= 2.3.0, &amp;lt; 5.2.1 → 5.2.1, bitcoinjs-lib &amp;gt;= 6.0.0, &amp;lt; 6.1.8 → 6.1.8, bitcoinjs-lib &amp;gt;= 7.0.0-rc.0, &amp;lt; 7.0.2 → 7.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-107846&lt;/p&gt;</content>
 </entry>
 </feed>

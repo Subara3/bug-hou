@@ -7,46 +7,46 @@
 <updated>2026-11-10T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API (HIGH)</title>
+<title>[要確認] Node.js: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xxrh-5hgg-gj4h"/>
 <id>urn:bug-hou:GHSA-xxrh-5hgg-gj4h</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nuxt/content &amp;gt;= 3.0.0, &amp;lt; 3.15.2 → 3.15.2&lt;/p&gt;&lt;p&gt;CVE-2026-102650&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Nuxt Contentでログインなしでサービスを止められるHIGH&lt;br&gt;→ 3.15.2 以降に更新&lt;/p&gt;&lt;p&gt;@nuxt/content &amp;gt;= 3.0.0, &amp;lt; 3.15.2 → 3.15.2&lt;/p&gt;&lt;p&gt;CVE-2026-102650&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document (HIGH)</title>
+<title>[要確認] Node.js: OHIF Viewers: DOM-Based Cross Site Scripting (XSS) through MIME type of document (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xwgp-w3pj-q5h3"/>
 <id>urn:bug-hou:GHSA-xwgp-w3pj-q5h3</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@ohif/extension-dicom-pdf &amp;gt;= 3.5.0-beta.0, &amp;lt; 3.12.18 → 3.12.18, @ohif/extension-dicom-pdf &amp;gt;= 3.13.0-beta.0, &amp;lt; 3.13.10 → 3.13.10, @ohif/extension-dicom-pdf &amp;gt;= 3.14.0-beta.0, &amp;lt; 3.14.0-beta.36 → 3.14.0-beta.36&lt;/p&gt;&lt;p&gt;CVE-2026-118670&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; OHIF ViewersのPDF拡張でのXSS。HIGHだが対象が限られる&lt;br&gt;→ 3.12.18 / 3.13.10 以降に更新&lt;/p&gt;&lt;p&gt;@ohif/extension-dicom-pdf &amp;gt;= 3.5.0-beta.0, &amp;lt; 3.12.18 → 3.12.18, @ohif/extension-dicom-pdf &amp;gt;= 3.13.0-beta.0, &amp;lt; 3.13.10 → 3.13.10, @ohif/extension-dicom-pdf &amp;gt;= 3.14.0-beta.0, &amp;lt; 3.14.0-beta.36 → 3.14.0-beta.36&lt;/p&gt;&lt;p&gt;CVE-2026-118670&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions (CRITICAL)</title>
+<title>[要確認] Node.js: node-opcua: Namespace-Level RBAC Fail-Open - Anonymous Write/Call Bypass via Unbound `DefaultRolePermissions (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-xggf-m53x-jc3f"/>
 <id>urn:bug-hou:GHSA-xggf-m53x-jc3f</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-opcua &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-address-space &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-server &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0&lt;/p&gt;&lt;p&gt;CVE-2026-95860&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないnode-opcuaのCRITICAL。匿名で書き込みや呼び出しができる&lt;br&gt;→ 2.180.0 以降に更新&lt;/p&gt;&lt;p&gt;node-opcua &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-address-space &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0, node-opcua-server &amp;gt;= 2.42.0, &amp;lt; 2.180.0 → 2.180.0&lt;/p&gt;&lt;p&gt;CVE-2026-95860&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides (MEDIUM)</title>
+<title>[様子見] Node.js: NocoBase: @nocobase/plugin-action-custom-request allows server-side request forgery through runtime URL overrides (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wrr5-j383-f7h2"/>
 <id>urn:bug-hou:GHSA-wrr5-j383-f7h2</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nocobase/plugin-action-custom-request &amp;gt;= 2.1.0-alpha.8, &amp;lt; 2.1.15 → 2.1.15, @nocobase/plugin-action-custom-request &amp;gt;= 2.2.0-alpha.1, &amp;lt; 2.2.0-alpha.4 → 2.2.0-alpha.4&lt;/p&gt;&lt;p&gt;CVE-2026-79914&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。NocoBaseのカスタムリクエスト拡張でのSSRF&lt;br&gt;→ 2.1.15 以降に更新&lt;/p&gt;&lt;p&gt;@nocobase/plugin-action-custom-request &amp;gt;= 2.1.0-alpha.8, &amp;lt; 2.1.15 → 2.1.15, @nocobase/plugin-action-custom-request &amp;gt;= 2.2.0-alpha.1, &amp;lt; 2.2.0-alpha.4 → 2.2.0-alpha.4&lt;/p&gt;&lt;p&gt;CVE-2026-79914&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer (HIGH)</title>
+<title>[要確認] Node.js: Forge: ASN.1 resource exhaustion via BIT STRING decoding in asn1.fromDer (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rhr8-3pm8-cq29"/>
 <id>urn:bug-hou:GHSA-rhr8-3pm8-cq29</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119191&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのASN.1読み込みで資源を使い果たすHIGH&lt;br&gt;→ 1.4.1 に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119191&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Mongoose: sanitizeFilter not applied on countDocuments (CRITICAL)</title>
+<title>[要確認] Node.js: Mongoose: sanitizeFilter not applied on countDocuments (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-pcrw-h46h-c93h"/>
 <id>urn:bug-hou:GHSA-pcrw-h46h-c93h</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mongoose &amp;lt; 6.13.11 → 6.13.11, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.12 → 7.8.12, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.3 → 8.24.3, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.9.2 → 9.9.2&lt;/p&gt;&lt;p&gt;CVE-2026-125120&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MongooseのsanitizeFilterがcountDocumentsで効かない。この設定に頼る場合のみ影響&lt;br&gt;→ 6.13.11 / 7.8.12 / 8.24.3 / 9.9.2 以降に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;lt; 6.13.11 → 6.13.11, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.12 → 7.8.12, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.3 → 8.24.3, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.9.2 → 9.9.2&lt;/p&gt;&lt;p&gt;CVE-2026-125120&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: Moleculer: Unauthenticated Denial of Service via negative length field in the TCP transporter packet parser (HIGH)</title>
@@ -56,46 +56,46 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MoleculerのTCPトランスポーター使用時にログインなしでDoS。HIGH&lt;br&gt;→ moleculer 0.15.2 / 0.14.36 以降に更新&lt;/p&gt;&lt;p&gt;moleculer &amp;gt;= 0.15.0-beta1, &amp;lt; 0.15.2 → 0.15.2, moleculer &amp;lt; 0.14.36 → 0.14.36&lt;/p&gt;&lt;p&gt;CVE-2026-97705&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage (MEDIUM)</title>
+<title>[様子見] Node.js: Forge: X.509 pathLenConstraint not enforced by verifyCertificateChain() for CA certificates without keyUsage (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-h46v-rmh6-fq4f"/>
 <id>urn:bug-hou:GHSA-h46v-rmh6-fq4f</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119189&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。node-forgeの証明書チェーン検証で制約が効かない&lt;br&gt;→ 1.4.1 に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119189&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie() (MEDIUM)</title>
+<title>[様子見] Node.js: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-chp3-j5qr-2vfr"/>
 <id>urn:bug-hou:GHSA-chp3-j5qr-2vfr</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@effect/platform &amp;gt;= 0.1.0, &amp;lt; 0.97.1 → 0.97.1, effect &amp;gt;= 4.0.0-beta.0, &amp;lt; 4.0.0-beta.103 → 4.0.0-beta.103&lt;/p&gt;&lt;p&gt;CVE-2026-115779&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。@effect/platformのCookie属性の注入&lt;br&gt;→ @effect/platform 0.97.1 以降に更新&lt;/p&gt;&lt;p&gt;@effect/platform &amp;gt;= 0.1.0, &amp;lt; 0.97.1 → 0.97.1, effect &amp;gt;= 4.0.0-beta.0, &amp;lt; 4.0.0-beta.103 → 4.0.0-beta.103&lt;/p&gt;&lt;p&gt;CVE-2026-115779&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: Certificate signature verified with the issuer's RSA signature scheme (LOW)</title>
+<title>[様子見] Node.js: Forge: Certificate signature verified with the issuer's RSA signature scheme (LOW)</title>
 <link href="https://github.com/advisories/GHSA-9wg5-mj3p-v49q"/>
 <id>urn:bug-hou:GHSA-9wg5-mj3p-v49q</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118774&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。node-forgeの証明書署名の検証の不備&lt;br&gt;→ 1.4.1 に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118774&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list (CRITICAL)</title>
+<title>[要確認] Node.js: bitcoinjs-lib: Undetected merkle node duplication in block root computation validates a forged transaction list (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-8vv3-6qpc-gpw6"/>
 <id>urn:bug-hou:GHSA-8vv3-6qpc-gpw6</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;bitcoinjs-lib &amp;gt;= 2.3.0, &amp;lt; 5.2.1 → 5.2.1, bitcoinjs-lib &amp;gt;= 6.0.0, &amp;lt; 6.1.8 → 6.1.8, bitcoinjs-lib &amp;gt;= 7.0.0-rc.0, &amp;lt; 7.0.2 → 7.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-107846&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないbitcoinjs-libのCRITICAL。偽の取引一覧が通る&lt;br&gt;→ 5.2.1 / 6.1.8 / 7.0.2 以降に更新&lt;/p&gt;&lt;p&gt;bitcoinjs-lib &amp;gt;= 2.3.0, &amp;lt; 5.2.1 → 5.2.1, bitcoinjs-lib &amp;gt;= 6.0.0, &amp;lt; 6.1.8 → 6.1.8, bitcoinjs-lib &amp;gt;= 7.0.0-rc.0, &amp;lt; 7.0.2 → 7.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-107846&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox (MEDIUM)</title>
+<title>[様子見] Node.js: Altair: DOM-based XSS via attacker-controlled script URLs in the iframe sandbox (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-752m-7p75-49gf"/>
 <id>urn:bug-hou:GHSA-752m-7p75-49gf</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;altair-static &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8, altair-express-middleware &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8, altair-koa-middleware &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8, altair-fastify-plugin &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8&lt;/p&gt;&lt;p&gt;CVE-2026-110802&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。AltairのiframeでのXSS&lt;br&gt;→ 8.5.8 以降に更新&lt;/p&gt;&lt;p&gt;altair-static &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8, altair-express-middleware &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8, altair-koa-middleware &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8, altair-fastify-plugin &amp;gt;= 7.2.4, &amp;lt; 8.5.8 → 8.5.8&lt;/p&gt;&lt;p&gt;CVE-2026-110802&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding (HIGH)</title>
+<title>[要確認] Node.js: Forge: RSA PKCS#1 v1.5 signature forgery via non-canonical DigestInfo encoding (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-6qrw-m8cv-hcxf"/>
 <id>urn:bug-hou:GHSA-6qrw-m8cv-hcxf</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119192&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeでRSA署名を偽造できるHIGH。署名検証に使う場合に影響&lt;br&gt;→ 1.4.1 に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119192&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: Claude Code: TOCTOU Race in Edit Tool Allows File Writes Outside the Workspace (HIGH)</title>
@@ -105,11 +105,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Claude Codeの編集機能の競合でワークスペース外に書き込める。HIGH&lt;br&gt;→ @anthropic-ai/claude-code 2.1.251以降に更新&lt;/p&gt;&lt;p&gt;@anthropic-ai/claude-code &amp;lt; 2.1.251 → 2.1.251&lt;/p&gt;&lt;p&gt;CVE-2026-88968&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption (LOW)</title>
+<title>[様子見] Node.js: Forge: Incomplete PKCS#7 padding validation in AES/DES CBC and ECB decryption (LOW)</title>
 <link href="https://github.com/advisories/GHSA-2vgq-wchc-25w7"/>
 <id>urn:bug-hou:GHSA-2vgq-wchc-25w7</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118776&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。node-forgeの復号時のパディング確認の不備&lt;br&gt;→ 1.4.1 に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118776&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: tsParticles: A single anonymous MCP session can monopolize HTTP mode and deny new clients (MEDIUM)</title>
