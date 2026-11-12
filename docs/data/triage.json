@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-11T06:46:06Z",
+ "updated_at": "2026-11-12T00:46:18Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -42,6 +42,20 @@
    "todo": "Ingress Controllerの利用有無を確認",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "CVE-2026-106023": {
+   "level": "check",
+   "reason": "mod_mdを使っている場合のみ影響。リクエスト処理中にNULL参照が起きる",
+   "todo": "mod_mdを使っているか確認し、2.4.69より後の版に更新",
+   "kev": false,
+   "at": "2026-11-12"
+  },
+  "CVE-2026-109163": {
+   "level": "check",
+   "reason": "mod_vhost_aliasを使っている場合のみ影響するスタックバッファオーバーフロー",
+   "todo": "mod_vhost_aliasを使っているか確認し、2.4.69より後の版に更新",
+   "kev": false,
+   "at": "2026-11-12"
   },
   "CVE-2026-109618": {
    "level": "action",
@@ -113,6 +127,15 @@
    "todo": "3.14.10をFIPSモードで使っているか確認する",
    "kev": false,
    "at": "2026-11-07"
+  },
+  "CVE-2026-119618": {
+   "level": "action",
+   "reason": "Apache本体のmod_http2の不具合で、RCEにつながると説明にある",
+   "todo": "2.4.70より後の版に更新。単体のmod_h2は2.0.42より後の版に",
+   "kev": false,
+   "at": "2026-11-12",
+   "urgency": "later",
+   "comment": "データ上は手が空いたらだが、HTTP/2を有効にして外に公開しているなら早めに"
   },
   "CVE-2026-119977": {
    "level": "action",
