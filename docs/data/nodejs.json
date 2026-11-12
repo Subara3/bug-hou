@@ -52,6 +52,26 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-7m8x-x364-m26j",
+   "ecosystem": "npm",
+   "cve": null,
+   "summary": "Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-7m8x-x364-m26j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "signalk-server",
+     "range": "< 2.31.0-beta.1",
+     "fixed": "2.31.0-beta.1"
+    }
+   ],
+   "first_seen": "2026-11-12"
+  },
+  {
    "id": "GHSA-q6jf-24jf-m3cg",
    "ecosystem": "npm",
    "cve": "CVE-2026-120792",
@@ -2592,36 +2612,6 @@
      "name": "highcharts",
      "range": ">= 13.0.0, <= 13.0.2",
      "fixed": "13.1.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-rmqc-xvr3-v46c",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118250",
-   "summary": "Highcharts: dotted series.keys paths write to Object.prototype",
-   "severity": "HIGH",
-   "score": 7.2,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:H/VA:H/SC:L/SI:L/SA:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-rmqc-xvr3-v46c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "highcharts",
-     "range": ">= 12.0.0, < 12.6.1",
-     "fixed": "12.6.1"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 13.0.0, <= 13.0.2",
-     "fixed": "13.1.0"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 6.1.0, < 11.4.9",
-     "fixed": "11.4.9"
     }
    ],
    "first_seen": "0000-00-00"

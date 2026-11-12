@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/#php"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/php.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/php.xml</id>
-<updated>2026-11-09T00:00:00Z</updated>
+<updated>2026-11-12T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: code16/sharp: Arbitrary class instantiation through the embed_key API parameter (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h24v-f482-8cwf"/>
+<id>urn:bug-hou:GHSA-h24v-f482-8cwf</id>
+<updated>2026-11-12T00:00:00Z</updated>
+<content type="html">&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84974&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-g6f8-c3x9-jv7f"/>
+<id>urn:bug-hou:GHSA-g6f8-c3x9-jv7f</id>
+<updated>2026-11-12T00:00:00Z</updated>
+<content type="html">&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84987&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] PHP: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-f74m-x83r-c4v4"/>
@@ -182,13 +196,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSpecial:Askで偽造トークンの反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 7.0.0, &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77616&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] PHP: Grav: FlexDirectory::dynamicDataField() executes arbitrary callables from blueprint data with no validation (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-c4wf-2xxc-68qm"/>
-<id>urn:bug-hou:GHSA-c4wf-2xxc-68qm</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdynamicDataField()が検証なしに任意のcallableを実行。HIGH&lt;br&gt;→ getgrav/grav 2.0.9に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 1.7.0, &amp;lt; 2.0.9 → 2.0.9&lt;/p&gt;&lt;p&gt;CVE-2026-65608&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] PHP: Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9rcc-pmj8-ffhr"/>
 <id>urn:bug-hou:GHSA-9rcc-pmj8-ffhr</id>
@@ -208,13 +215,6 @@
 <id>urn:bug-hou:GHSA-7xv3-gf2g-498h</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSpecial:Askのsepで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77607&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Grav: Incomplete callable validation in blueprint dynamic fields allows arbitrary static method invocation and file disclosure (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-7pgq-cr25-xvc8"/>
-<id>urn:bug-hou:GHSA-7pgq-cr25-xvc8</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのブループリント動的フィールドで任意の静的メソッド呼出。HIGH&lt;br&gt;→ getgrav/grav 2.0.11に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;gt;= 2.0.7, &amp;lt;= 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69088&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Grav: Stored XSS via Markdown audio/video media &lt;source&gt; URL (MEDIUM)</title>

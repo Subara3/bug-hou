@@ -1,5 +1,72 @@
 [
  {
+  "id": "GHSA-g6f8-c3x9-jv7f",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-84987",
+  "summary": "code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check",
+  "severity": "MEDIUM",
+  "score": 5.4,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-g6f8-c3x9-jv7f",
+  "kev": false,
+  "packages": [
+   {
+    "name": "code16/sharp",
+    "range": "< 9.23.0",
+    "fixed": "9.23.0"
+   },
+   {
+    "name": "code16/sharp",
+    "range": ">= 10.0.0-beta.1, < 10.0.0-beta.4",
+    "fixed": "10.0.0-beta.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h24v-f482-8cwf",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-84974",
+  "summary": "code16/sharp: Arbitrary class instantiation through the embed_key API parameter",
+  "severity": "MEDIUM",
+  "score": 5.4,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-h24v-f482-8cwf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "code16/sharp",
+    "range": "< 9.23.0",
+    "fixed": "9.23.0"
+   },
+   {
+    "name": "code16/sharp",
+    "range": ">= 10.0.0-beta.1, < 10.0.0-beta.4",
+    "fixed": "10.0.0-beta.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7m8x-x364-m26j",
+  "ecosystem": "npm",
+  "cve": null,
+  "summary": "Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-7m8x-x364-m26j",
+  "kev": false,
+  "packages": [
+   {
+    "name": "signalk-server",
+    "range": "< 2.31.0-beta.1",
+    "fixed": "2.31.0-beta.1"
+   }
+  ]
+ },
+ {
   "id": "GHSA-q6jf-24jf-m3cg",
   "ecosystem": "npm",
   "cve": "CVE-2026-120792",

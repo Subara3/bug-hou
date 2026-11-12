@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-11T00:00:00Z</updated>
+<updated>2026-11-12T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-7m8x-x364-m26j"/>
+<id>urn:bug-hou:GHSA-7m8x-x364-m26j</id>
+<updated>2026-11-12T00:00:00Z</updated>
+<content type="html">&lt;p&gt;signalk-server &amp;lt; 2.31.0-beta.1 → 2.31.0-beta.1&lt;/p&gt;&lt;p&gt;GHSA-7m8x-x364-m26j&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要対応] Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"/>
@@ -348,12 +355,5 @@
 <id>urn:bug-hou:GHSA-h6cr-wjv9-3cpp</id>
 <updated>2026-10-30T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのmodInverseで無限ループ。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118781&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: minimatch has potential denial of service via globparts amplification (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-g3hv-75wg-m249"/>
-<id>urn:bug-hou:GHSA-g3hv-75wg-m249</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; minimatchのパターン展開でDoS。MEDIUM&lt;br&gt;→ minimatch 11.0.1に更新&lt;/p&gt;&lt;p&gt;minimatch &amp;gt;= 7.0.0, &amp;lt; 11.0.1 → 11.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-118764&lt;/p&gt;</content>
 </entry>
 </feed>

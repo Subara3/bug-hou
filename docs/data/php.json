@@ -653,6 +653,56 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-g6f8-c3x9-jv7f",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-84987",
+   "summary": "code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-g6f8-c3x9-jv7f",
+   "kev": false,
+   "packages": [
+    {
+     "name": "code16/sharp",
+     "range": "< 9.23.0",
+     "fixed": "9.23.0"
+    },
+    {
+     "name": "code16/sharp",
+     "range": ">= 10.0.0-beta.1, < 10.0.0-beta.4",
+     "fixed": "10.0.0-beta.4"
+    }
+   ],
+   "first_seen": "2026-11-12"
+  },
+  {
+   "id": "GHSA-h24v-f482-8cwf",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-84974",
+   "summary": "code16/sharp: Arbitrary class instantiation through the embed_key API parameter",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-h24v-f482-8cwf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "code16/sharp",
+     "range": "< 9.23.0",
+     "fixed": "9.23.0"
+    },
+    {
+     "name": "code16/sharp",
+     "range": ">= 10.0.0-beta.1, < 10.0.0-beta.4",
+     "fixed": "10.0.0-beta.4"
+    }
+   ],
+   "first_seen": "2026-11-12"
+  },
+  {
    "id": "GHSA-44r8-3p76-84mw",
    "ecosystem": "composer",
    "cve": "CVE-2026-94619",
@@ -2953,46 +3003,6 @@
      "name": "getgrav/grav",
      "range": "= 2.0.10",
      "fixed": "2.0.11"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-7pgq-cr25-xvc8",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-69088",
-   "summary": "Grav: Incomplete callable validation in blueprint dynamic fields allows arbitrary static method invocation and file disclosure",
-   "severity": "HIGH",
-   "score": 8.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-7pgq-cr25-xvc8",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": ">= 2.0.7, <= 2.0.10",
-     "fixed": "2.0.11"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-c4wf-2xxc-68qm",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-65608",
-   "summary": "Grav: FlexDirectory::dynamicDataField() executes arbitrary callables from blueprint data with no validation",
-   "severity": "HIGH",
-   "score": 8.7,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-c4wf-2xxc-68qm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": ">= 1.7.0, < 2.0.9",
-     "fixed": "2.0.9"
     }
    ],
    "first_seen": "2026-11-02"

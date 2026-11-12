@@ -5,6 +5,23 @@
  "kev": [],
  "cves": [
   {
+   "id": "CVE-2026-16052",
+   "published": "2026-11-12",
+   "modified": "2026-11-12",
+   "status": "Awaiting Analysis",
+   "score": 2.3,
+   "severity": "LOW",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "The http.cookies.Morsel class allows separator semicolons in attribute\nvalues\nand includes them verbatim in all output formats. An attacker who can\ncontrol\nthese values could use this to relax the cookie's Domain or SameSite\nrestrictions.",
+   "kev": false,
+   "affects": [],
+   "cwe": [
+    "CWE-74"
+   ],
+   "first_seen": "2026-11-12"
+  },
+  {
    "id": "CVE-2026-115791",
    "published": "2026-11-10",
    "modified": "2026-11-11",
@@ -39,7 +56,7 @@
   {
    "id": "CVE-2026-124249",
    "published": "2026-11-09",
-   "modified": "2026-11-11",
+   "modified": "2026-11-12",
    "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
@@ -56,7 +73,7 @@
   {
    "id": "CVE-2026-19552",
    "published": "2026-11-09",
-   "modified": "2026-11-11",
+   "modified": "2026-11-12",
    "status": "Awaiting Analysis",
    "score": 0.0,
    "severity": "NONE",
@@ -65,7 +82,9 @@
    "desc": "When ca_certs parameter was supplied to ssl.get_server_certificate() function, the identity of the certificate is not checked.",
    "kev": false,
    "affects": [],
-   "cwe": [],
+   "cwe": [
+    "CWE-295"
+   ],
    "first_seen": "2026-11-09"
   },
   {
