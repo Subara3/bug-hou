@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-11T19:37:31Z",
+ "fetched_at": "2026-11-12T07:13:05Z",
  "days": 90,
  "targets": [
   {
@@ -55,7 +55,7 @@
    "kev_recent": 0,
    "kev_total": 4,
    "ghsa": 0,
-   "jvn": 0
+   "jvn": 1
   }
  ],
  "status": {

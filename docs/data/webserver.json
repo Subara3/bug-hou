@@ -1015,6 +1015,15 @@
    }
   ]
  },
- "jvn": [],
+ "jvn": [
+  {
+   "id": "JVNVU#90805396",
+   "title": "Apache HTTP Server 2.4における複数の脆弱性に対するアップデート（2026年11月11日）",
+   "url": "https://jvn.jp/vu/JVNVU90805396/",
+   "desc": "The Apache Software Foundationから、Apache HTTP Server 2.4系における複数の脆弱性に対応したApache HTTP Server 2.4.71が公開されました。",
+   "date": "2026-11-12",
+   "first_seen": "2026-11-12"
+  }
+ ],
  "alerts": []
 }

@@ -1,5 +1,40 @@
 [
  {
+  "id": "JVNVU#92635551",
+  "title": "KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU92635551/",
+  "desc": "GMOプライム・ストラテジー株式会社が提供するKUSANAGIには、HTTPヘッダーインジェクションの脆弱性が存在します。",
+  "date": "2026-11-12"
+ },
+ {
+  "id": "JVNVU#97400824",
+  "title": "BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）",
+  "url": "https://jvn.jp/vu/JVNVU97400824/",
+  "desc": "Googleのデータ圧縮アルゴリズムBrotliのC言語実装における脆弱性（<a href=\"https://www.cve.org/CVERecord?id=CVE-2026-111497\">CVE-2026-111497</a>）に対するアドバイザリが公開されました。<br />\n<br />\n本脆弱性は「HTTP2Shell」や「Node2Shell」とも呼ばれています。",
+  "date": "2026-11-12"
+ },
+ {
+  "id": "JVNVU#95523788",
+  "title": "三菱電機数値制御装置におけるサービス運用妨害（DoS）の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU95523788/",
+  "desc": "三菱電機数値制御装置（CNC）には、入力値インデックス、位置、またはオフセットの不適切な検証に起因するサービス運用妨害（DoS）の脆弱性が存在します。",
+  "date": "2026-11-12"
+ },
+ {
+  "id": "JVN#64740097",
+  "title": "SoftBank製Airターミナル6におけるOSコマンドインジェクションの脆弱性",
+  "url": "https://jvn.jp/jp/JVN64740097/",
+  "desc": "ソフトバンク株式会社が提供するAirターミナル6には、OSコマンドインジェクションの脆弱性が存在します。",
+  "date": "2026-11-12"
+ },
+ {
+  "id": "JVNVU#90805396",
+  "title": "Apache HTTP Server 2.4における複数の脆弱性に対するアップデート（2026年11月11日）",
+  "url": "https://jvn.jp/vu/JVNVU90805396/",
+  "desc": "The Apache Software Foundationから、Apache HTTP Server 2.4系における複数の脆弱性に対応したApache HTTP Server 2.4.71が公開されました。",
+  "date": "2026-11-12"
+ },
+ {
   "id": "JVNVU#98354779",
   "title": "Siemens製品に対するアップデート（2026年11月）",
   "url": "https://jvn.jp/vu/JVNVU98354779/",
@@ -81,13 +116,6 @@
   "title": "Effekseerにおける入力データ検証不備の脆弱性",
   "url": "https://jvn.jp/jp/JVN56286875/",
   "desc": "パーティクルエフェクト編集ツールEffekseerには、入力データ検証不備の脆弱性が存在します。",
-  "date": "2026-11-09"
- },
- {
-  "id": "JVNVU#92635551",
-  "title": "KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性",
-  "url": "https://jvn.jp/vu/JVNVU92635551/",
-  "desc": "GMOプライム・ストラテジー株式会社が提供するKUSANAGIには、HTTPヘッダーインジェクションの脆弱性が存在します。",
   "date": "2026-11-09"
  },
  {
@@ -243,13 +271,6 @@
   "url": "https://jvn.jp/vu/JVNVU90363302/",
   "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
   "date": "2026-10-27"
- },
- {
-  "id": "JVNVU#97400824",
-  "title": "BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）",
-  "url": "https://jvn.jp/vu/JVNVU97400824/",
-  "desc": "Googleのデータ圧縮アルゴリズムBrotliのC言語実装における脆弱性（<a href=\"https://www.cve.org/CVERecord?id=CVE-2026-111497\">CVE-2026-111497</a>）に対するアドバイザリが公開されました。<br />\n<br />\n本脆弱性は「HTTP2Shell」や「Node2Shell」とも呼ばれています。",
-  "date": "2026-10-26"
  },
  {
   "id": "JVNVU#96549652",
