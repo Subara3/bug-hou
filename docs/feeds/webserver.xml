@@ -7,32 +7,32 @@
 <updated>2026-11-11T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Apache / nginx: CVE-2026-119618</title>
+<title>[要対応] Apache / nginx: CVE-2026-119618</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-119618"/>
 <id>urn:bug-hou:CVE-2026-119618</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Apache本体のmod_http2の不具合で、RCEにつながると説明にある&lt;br&gt;→ 2.4.70より後の版に更新。単体のmod_h2は2.0.42より後の版に&lt;/p&gt;&lt;p&gt;Concurrent Execution using Shared Resource with Improper Synchronization vulnerability in Apache HTTP Server's mod_http2 in assign_headers() can lead to RCE.
 
 This issue affects Apache HTTP Server: from 2.4.55 through 2.4.70.
 Affected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Apache / nginx: CVE-2026-109163</title>
+<title>[要確認] Apache / nginx: CVE-2026-109163</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-109163"/>
 <id>urn:bug-hou:CVE-2026-109163</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Stack-based buffer overflow vulnerability in Apache HTTP Server's mod_vhost_alias (after CVE-2026-63292)
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_vhost_aliasを使っている場合のみ影響するスタックバッファオーバーフロー&lt;br&gt;→ mod_vhost_aliasを使っているか確認し、2.4.69より後の版に更新&lt;/p&gt;&lt;p&gt;Stack-based buffer overflow vulnerability in Apache HTTP Server's mod_vhost_alias (after CVE-2026-63292)
 
 
 
 This issue affects Apache HTTP Server: 2.4.69.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Apache / nginx: CVE-2026-106023</title>
+<title>[要確認] Apache / nginx: CVE-2026-106023</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-106023"/>
 <id>urn:bug-hou:CVE-2026-106023</id>
 <updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;NULL pointer dereference vulnerability in Apache HTTP Server's mod_md during HTTP request processing.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mod_mdを使っている場合のみ影響。リクエスト処理中にNULL参照が起きる&lt;br&gt;→ mod_mdを使っているか確認し、2.4.69より後の版に更新&lt;/p&gt;&lt;p&gt;NULL pointer dereference vulnerability in Apache HTTP Server's mod_md during HTTP request processing.
 
 
 
