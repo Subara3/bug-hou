@@ -7,11 +7,11 @@
 <updated>2026-11-12T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients (MEDIUM)</title>
+<title>[様子見] Node.js: Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7m8x-x364-m26j"/>
 <id>urn:bug-hou:GHSA-7m8x-x364-m26j</id>
 <updated>2026-11-12T00:00:00Z</updated>
-<content type="html">&lt;p&gt;signalk-server &amp;lt; 2.31.0-beta.1 → 2.31.0-beta.1&lt;/p&gt;&lt;p&gt;GHSA-7m8x-x364-m26j&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。Signal K Serverのログが未認証のWebSocketに見える&lt;br&gt;→ signalk-serverを2.31.0-beta.1以降に更新&lt;/p&gt;&lt;p&gt;signalk-server &amp;lt; 2.31.0-beta.1 → 2.31.0-beta.1&lt;/p&gt;&lt;p&gt;GHSA-7m8x-x364-m26j&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要対応] Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>

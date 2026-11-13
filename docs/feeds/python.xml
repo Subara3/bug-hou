@@ -7,11 +7,11 @@
 <updated>2026-11-12T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: CVE-2026-16052 2.3 LOW</title>
+<title>[様子見] Python: CVE-2026-16052 2.3 LOW</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-16052"/>
 <id>urn:bug-hou:CVE-2026-16052</id>
 <updated>2026-11-12T00:00:00Z</updated>
-<content type="html">&lt;p&gt;The http.cookies.Morsel class allows separator semicolons in attribute
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。http.cookies.Morselで属性値のセミコロンがそのまま出力される&lt;/p&gt;&lt;p&gt;The http.cookies.Morsel class allows separator semicolons in attribute
 values
 and includes them verbatim in all output formats. An attacker who can
 control

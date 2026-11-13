@@ -7,18 +7,18 @@
 <updated>2026-11-12T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: code16/sharp: Arbitrary class instantiation through the embed_key API parameter (MEDIUM)</title>
+<title>[様子見] composer: code16/sharp: Arbitrary class instantiation through the embed_key API parameter (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-h24v-f482-8cwf"/>
 <id>urn:bug-hou:GHSA-h24v-f482-8cwf</id>
 <updated>2026-11-12T00:00:00Z</updated>
-<content type="html">&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84974&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。code16/sharpのembed_keyで任意クラスを生成できる&lt;br&gt;→ code16/sharpを9.23.0（10系は10.0.0-beta.4）以降に更新&lt;/p&gt;&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84974&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check (MEDIUM)</title>
+<title>[様子見] composer: code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-g6f8-c3x9-jv7f"/>
 <id>urn:bug-hou:GHSA-g6f8-c3x9-jv7f</id>
 <updated>2026-11-12T00:00:00Z</updated>
-<content type="html">&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84987&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。code16/sharpのautocomplete経由のSSRF&lt;br&gt;→ code16/sharpを9.23.0（10系は10.0.0-beta.4）以降に更新&lt;/p&gt;&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84987&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] composer: code16/sharp has a stored XSS via data-html-content Sanitizer Bypass (HIGH)</title>

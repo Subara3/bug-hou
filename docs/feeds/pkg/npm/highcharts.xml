@@ -21,11 +21,11 @@
 <content type="html">&lt;p&gt;highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.1 → 12.6.1, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.0.2 → 13.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-118244&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: Highcharts: dotted series.keys paths write to Object.prototype (HIGH)</title>
+<title>npm: Highcharts: dotted series.keys paths write to Object.prototype (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rmqc-xvr3-v46c"/>
 <id>urn:bug-hou:GHSA-rmqc-xvr3-v46c</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highchartsのseries.keysでプロトタイプ汚染。HIGH&lt;br&gt;→ highcharts 11.4.9/12.6.1/13.1.0に更新&lt;/p&gt;&lt;p&gt;highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.1 → 12.6.1, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.0.2 → 13.1.0, highcharts &amp;gt;= 6.1.0, &amp;lt; 11.4.9 → 11.4.9&lt;/p&gt;&lt;p&gt;CVE-2026-118250&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;highcharts &amp;gt;= 12.0.0, &amp;lt; 12.6.1 → 12.6.1, highcharts &amp;gt;= 13.0.0, &amp;lt;= 13.0.2 → 13.1.0, highcharts &amp;gt;= 6.1.0, &amp;lt; 11.4.9 → 11.4.9&lt;/p&gt;&lt;p&gt;CVE-2026-118250&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>npm: Highcharts: series column construction writes to Object.prototype (HIGH)</title>
