@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T00:45:28Z",
+ "updated_at": "2026-11-13T12:46:19Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -684,6 +684,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-3gg2-335m-rxc6": {
+   "level": "watch",
+   "reason": "LOW。cssヘルパーで閉じタグが分かれているとHTMLを埋め込まれる",
+   "todo": "hono 4.13.16 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
   "GHSA-3hch-x692-6qj3": {
    "level": "check",
    "reason": "GPUStackで認可の確認が抜けていて他の利用者の資源を触れるHIGH",
@@ -733,13 +740,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-434m-5hcj-pxf3": {
-   "level": "check",
-   "reason": "GraphQL ToolsのWebSocket認証情報が他の利用者に残る。HIGH",
-   "todo": "executor-legacy-ws 1.1.36に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-447x-qqwf-m7xq": {
    "level": "check",
    "reason": "HIGH。MCPサーバーがリクエスト本文を際限なくため込み、外から止められる",
@@ -768,19 +768,19 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-45c3-73f7-pv4m": {
-   "level": "check",
-   "reason": "dnspythonのfrom_wire_parser()でCPUを過剰消費。HIGH",
-   "todo": "dnspython 2.9.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-4642-5mcj-2rqw": {
    "level": "watch",
    "reason": "node-forgeのOID変換の切り詰め。LOW",
    "todo": "node-forge 1.4.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-46wx-v44x-9hh2": {
+   "level": "watch",
+   "reason": "MEDIUM。csrf()がハイパーリンク監査(text/ping)の送信を確認しない",
+   "todo": "hono 4.13.16 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-474x-hrwr-fgx4": {
    "level": "watch",
@@ -810,12 +810,33 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-4h7h-rv7c-7m2v": {
+   "level": "watch",
+   "reason": "MEDIUM。multipart送信で余分な項目があるとフォームの検証が飛ばされる",
+   "todo": "hono 4.13.16 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
   "GHSA-4hm6-w6qq-w73v": {
    "level": "check",
    "reason": "LangGraphのカスタム認証で他ユーザーのStoreに触れる。HIGH",
    "todo": "langgraph-api 0.15.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-4j63-6c4x-wfg4": {
+   "level": "watch",
+   "reason": "MEDIUM。:has()内の兄弟セレクタで外部のHTMLの処理に時間がかかる",
+   "todo": "soupsieve 2.10.0 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
+  "GHSA-4m76-xfj5-7975": {
+   "level": "watch",
+   "reason": "MEDIUM。mount()の中に置いたミドルウェアを通らないパスがある",
+   "todo": "hono 4.13.16 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-4p8p-pjpq-2w7h": {
    "level": "check",
@@ -880,13 +901,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-5793-x2q3-c3q7": {
-   "level": "check",
-   "reason": "Highchartsのcredits.hrefでjavascript: URL実行。HIGH",
-   "todo": "highcharts 11.4.9/12.6.1/13.1.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-5849-834g-hvw5": {
    "level": "check",
    "reason": "pypdfのxref探索で無限ループ。HIGH",
@@ -898,13 +912,6 @@
    "level": "check",
    "reason": "Formieで認証なしに未完了の送信を上書き。HIGH",
    "todo": "Formie 3.1.31/2.2.23に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-58g7-7f52-h92c": {
-   "level": "check",
-   "reason": "Highcharts Dashboardsの全画面ラベルをHTML解析。HIGH",
-   "todo": "@highcharts/dashboards 4.2.3に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -926,13 +933,6 @@
    "level": "watch",
    "reason": "node-forgeのAES-GCMタグ長未検証。MEDIUM",
    "todo": "node-forge 1.4.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-5fpq-26gf-qwcr": {
-   "level": "watch",
-   "reason": "Happy DOMのCookieドメイン照合の不備。MEDIUM",
-   "todo": "happy-dom 20.14.6以降に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -963,6 +963,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-5pm8-86m8-9m6r": {
+   "level": "watch",
+   "reason": "MEDIUM。MLSD一覧の__proto__でClient.list()が落ちる",
+   "todo": "basic-ftp 6.2.4 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-5wcm-3v2w-8362": {
    "level": "watch",
@@ -1083,13 +1090,6 @@
    "kev": false,
    "at": "2026-11-11"
   },
-  "GHSA-6hgp-fmhr-mrg4": {
-   "level": "check",
-   "reason": "Highcharts Gridのcredits.hrefでjavascript: URL実行。HIGH",
-   "todo": "dashboards 4.0.0/grid-pro 3.2.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-6jp4-8v48-cc5v": {
    "level": "check",
    "reason": "Electrumで悪意あるサーバーが送信直後の取引を差替え。利用者の少ないCRITICAL",
@@ -1202,13 +1202,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-7vr2-2fgp-9w7p": {
-   "level": "check",
-   "reason": "Authlibのアルゴリズム混同対策が不完全でHMAC署名を偽造可能。HIGH",
-   "todo": "authlib 1.9.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-7w38-ggh5-v542": {
    "level": "check",
    "reason": "利用者の少ないパッケージ@enspirit/eloのCRITICAL。Ruby出力の文字列埋め込みでコード実行",
@@ -1248,13 +1241,6 @@
    "level": "watch",
    "reason": "vLLMのPhi-4音声エンコーダーでOOM。MEDIUM",
    "todo": "vllm 0.32.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-83rm-6c8r-g728": {
-   "level": "check",
-   "reason": "Vue I18nのescapeParameterでsrcdoc経由XSS。HIGH",
-   "todo": "vue-i18n 11.4.14/12.0.0-alpha.5に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1332,13 +1318,6 @@
    "level": "watch",
    "reason": "LangGraph CLIの詳細出力にpushトークンが出る。MEDIUM",
    "todo": "langgraph-cli 0.4.32に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-8rc2-428q-7ww3": {
-   "level": "watch",
-   "reason": "Vue I18nのescapeParameterが名前付き値を逃す。LOW",
-   "todo": "vue-i18n 11.4.14に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1423,13 +1402,6 @@
    "level": "watch",
    "reason": "filelockのシンボリックリンク差替えで情報漏れ。ローカル・LOW",
    "todo": "filelock 4.2.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-9jhj-wvmw-cfx5": {
-   "level": "watch",
-   "reason": "i18next-http-backendのnsでプロトコル相対URL。LOW",
-   "todo": "i18next-http-backend 4.0.3に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1531,13 +1503,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-c8p4-j97h-3vg8": {
-   "level": "check",
-   "reason": "Happy DOMで信頼できないHTML解析時にSSRF。HIGH",
-   "todo": "happy-dom 21.0.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-cggf-277g-3q54": {
    "level": "check",
    "reason": "pypdfのページツリー解析で大量メモリ消費。HIGH",
@@ -1593,6 +1558,13 @@
    "todo": "zizmor を 1.28.0 に更新",
    "kev": false,
    "at": "2026-11-10"
+  },
+  "GHSA-f4j9-crrj-867q": {
+   "level": "watch",
+   "reason": "LOW。スロット名がエスケープされず反射型XSSになる",
+   "todo": "@astrojs/svelte 9.1.2 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-f5m9-jfrj-jjj7": {
    "level": "watch",
@@ -1651,13 +1623,6 @@
    "at": "2026-11-02",
    "urgency": "later",
    "comment": "APIトークン認証を使っていなければ次の更新で大丈夫"
-  },
-  "GHSA-fch4-3c6x-j4gc": {
-   "level": "watch",
-   "reason": "AuthlibのJWT bearer grantが別audienceのアサーションを受理。MEDIUM",
-   "todo": "authlib 1.9.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-fj95-fr6c-h845": {
    "level": "watch",
@@ -1735,6 +1700,13 @@
    "todo": "sanitizeFilterの設定を確認し、6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-gg5j-6742-v827": {
+   "level": "watch",
+   "reason": "MEDIUM。VirtualHostやRouteに書いたRBACの上書き設定が効かない",
+   "todo": "@grpc/grpc-js-xds 1.14.2 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-gg6h-894w-4m9c": {
    "level": "check",
@@ -1821,6 +1793,13 @@
    "todo": "@tsparticles/mcp-server を 4.3.2 以降に更新",
    "kev": false,
    "at": "2026-11-10"
+  },
+  "GHSA-h7mg-cq63-vhpq": {
+   "level": "watch",
+   "reason": "MEDIUM。RegExpRouterで一部のパスがワイルドカードのミドルウェアを通らない",
+   "todo": "hono 4.13.16 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-h89v-g948-47vp": {
    "level": "check",
@@ -1941,19 +1920,26 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-jj7h-c3hg-m23x": {
-   "level": "watch",
-   "reason": "Authlibのループバック例外をuserinfoで回避し平文HTTP送信。LOW",
-   "todo": "authlib 1.8.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-jm85-8cpp-9cjc": {
    "level": "check",
    "reason": "AdminNeoのバージョンキャッシュで持続的DoS。HIGH",
    "todo": "AdminNeo 5.5.0以降に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-jmv2-qgxf-f995": {
+   "level": "watch",
+   "reason": "LOW。スロット名がエスケープされず反射型XSSになる",
+   "todo": "@astrojs/solid-js 7.1.2 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
+  "GHSA-jpvv-r467-5p4w": {
+   "level": "watch",
+   "reason": "MEDIUM。パスの\\が区切りとして扱われ、リバースプロキシのパス制限を抜けられる",
+   "todo": "@hono/node-server 2.1.6 / 1.19.18 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-jpxq-7h8p-2q76": {
    "level": "check",
@@ -2074,12 +2060,12 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-mp66-8ww2-pcwm": {
-   "level": "watch",
-   "reason": "GraphQL Toolsの購読結果が別の呼出元に届く。MEDIUM",
-   "todo": "executor-legacy-ws 1.1.36に更新",
+  "GHSA-mmhr-3c5m-f64f": {
+   "level": "check",
+   "reason": "HIGH。子孫セレクタの処理に時間がかかりサービス停止になる",
+   "todo": "soupsieve 4.0.0 以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-13"
   },
   "GHSA-mpqx-q82w-9x46": {
    "level": "check",
@@ -2214,13 +2200,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-q686-2qmg-hqc7": {
-   "level": "watch",
-   "reason": "AuthlibのOpenIDインプリシットで許可外スコープでもIDトークン発行。MEDIUM",
-   "todo": "authlib 1.9.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-q69g-f4f5-v8m7": {
    "level": "watch",
    "reason": "ONNXのサブバイトテンソル展開でDoS。MEDIUM",
@@ -2263,6 +2242,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-qv5m-9pm6-hqp3": {
+   "level": "watch",
+   "reason": "MEDIUM。WebSocket接続の切り替え中に接続が切れるとプロセスが落ちる",
+   "todo": "@hono/node-server 2.1.6 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
   "GHSA-qxg3-46rw-79j8": {
    "level": "check",
    "reason": "code16 Sharpのiframe srcdocで格納型XSS。HIGH",
@@ -2284,12 +2270,12 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-r5wg-q8fc-p6w2": {
-   "level": "check",
-   "reason": "Highcharts Gridのページ送り文言をHTMLとして解析。HIGH",
-   "todo": "grid-lite/grid-pro 3.2.0に更新",
+  "GHSA-r4jh-29pc-gfqr": {
+   "level": "watch",
+   "reason": "MEDIUM。パスワードなどに改行が入ると例外でプロセスが落ちる",
+   "todo": "basic-ftp 6.2.3 以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-13"
   },
   "GHSA-r6hr-vr92-vv28": {
    "level": "check",
@@ -2297,6 +2283,13 @@
    "todo": "phpcsutils 1.2.3に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-r7hq-q2xm-6c5m": {
+   "level": "watch",
+   "reason": "MEDIUM。safe_regexで「または」を含むパターンが部分一致になる",
+   "todo": "@grpc/grpc-js-xds 1.14.2 / 1.13.2 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-r7j4-crjv-h467": {
    "level": "watch",
@@ -2326,13 +2319,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-rcqf-f6h2-ccg9": {
-   "level": "check",
-   "reason": "Highcharts DashboardsのサイドバーラベルをHTML解析。HIGH",
-   "todo": "@highcharts/dashboards 4.2.3に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-rfpc-qcw5-3pc4": {
    "level": "watch",
    "reason": "filelockでPID偽造により保持者のマーカー削除。ローカル・MEDIUM",
@@ -2353,13 +2339,6 @@
    "todo": "0.33.0 以降に更新",
    "kev": false,
    "at": "2026-11-11"
-  },
-  "GHSA-rmxm-3fg6-px4f": {
-   "level": "watch",
-   "reason": "@hono/node-serverのserveStaticで二重デコード。MEDIUM",
-   "todo": "@hono/node-server 2.1.3に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-rw77-vq4g-x3hp": {
    "level": "check",
@@ -2543,6 +2522,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-wqgw-9xfh-qf2g": {
+   "level": "watch",
+   "reason": "MEDIUM。TIFFやEXIFの読み込みでメモリを使い切らされる",
+   "todo": "Pillow 13.0.0 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
   "GHSA-wr5m-5jph-8m96": {
    "level": "watch",
    "reason": "Mongooseのdiscriminatorキーで型変換をすり抜けられる。MEDIUM",
@@ -2606,6 +2592,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-x585-4vv8-2mh2": {
+   "level": "check",
+   "reason": "CRITICAL。ログインなしで管理者になりすませるが、利用者の少ないパッケージ",
+   "todo": "rucio 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
   "GHSA-x8rm-f576-gq67": {
    "level": "check",
    "reason": "graphql-scalarsのPhoneNumberでReDoS。HIGH",
@@ -2619,6 +2612,13 @@
    "todo": "@enspirit/eloを使っていれば1.0.1に更新",
    "kev": false,
    "at": "2026-11-04"
+  },
+  "GHSA-xcvg-w56q-r89m": {
+   "level": "check",
+   "reason": "HIGH。libtiffでTIFFを保存するときだけヒープの書き込みがあふれる",
+   "todo": "Pillow 13.0.0 以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-xggf-m53x-jc3f": {
    "level": "check",
