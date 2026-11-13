@@ -52,6 +52,111 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-r99w-jh2x-3mg9",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128077",
+   "summary": "Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-r99w-jh2x-3mg9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@nuxt/nitro-server",
+     "range": ">= 4.6.0, < 4.6.4",
+     "fixed": "4.6.4"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-3v2p-hm54-8qcq",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128080",
+   "summary": "OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http",
+   "severity": "MEDIUM",
+   "score": 5.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:N/A:N",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-3v2p-hm54-8qcq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@opentelemetry/instrumentation-http",
+     "range": ">= 0.204.0, < 0.222.0",
+     "fixed": "0.222.0"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-mh32-jxcr-mh9f",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126361",
+   "summary": "Astro: XSS via attribute injection in dynamic tag names",
+   "severity": "LOW",
+   "score": 2.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-mh32-jxcr-mh9f",
+   "kev": false,
+   "packages": [
+    {
+     "name": "astro",
+     "range": "<= 7.4.4",
+     "fixed": "7.4.5"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-r3h5-4585-7x3w",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126364",
+   "summary": "Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-r3h5-4585-7x3w",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@astrojs/node",
+     "range": "<= 11.1.11",
+     "fixed": null
+    },
+    {
+     "name": "astro",
+     "range": ">= 5.14.3, <= 7.4.6",
+     "fixed": "7.4.7"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-mjrq-cffv-q4qc",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128070",
+   "summary": "Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-mjrq-cffv-q4qc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@nuxt/schema",
+     "range": ">= 3.5.0, < 4.6.4",
+     "fixed": "4.6.4"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
    "id": "GHSA-46wx-v44x-9hh2",
    "ecosystem": "npm",
    "cve": "CVE-2026-126355",
@@ -2342,106 +2447,6 @@
      "name": "mem0ai",
      "range": "< 3.1.6",
      "fixed": "3.1.6"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-4vjg-vx72-qq4g",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116673",
-   "summary": "systeminformation has path traversal in Linux networkStats() that allows symlink-based file disclosure outside /sys/class/net",
-   "severity": "LOW",
-   "score": 3.3,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-4vjg-vx72-qq4g",
-   "kev": false,
-   "packages": [
-    {
-     "name": "systeminformation",
-     "range": "< 5.33.14",
-     "fixed": "5.33.14"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-7648-jmwf-vw7j",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116674",
-   "summary": "systeminformation has prototype pollution in `networkStats()` via the interface name",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-7648-jmwf-vw7j",
-   "kev": false,
-   "packages": [
-    {
-     "name": "systeminformation",
-     "range": "< 5.33.13",
-     "fixed": "5.33.13"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-x8rm-f576-gq67",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-115887",
-   "summary": "graphql-scalars PhoneNumber scalar is vulnerable to regular expression denial of service",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-x8rm-f576-gq67",
-   "kev": false,
-   "packages": [
-    {
-     "name": "graphql-scalars",
-     "range": ">= 1.24.1, <= 2.0.0",
-     "fixed": "2.0.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-3cmx-xjww-583x",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118258",
-   "summary": "i18next-http-backend: Query-parameter injection through & and = in lng when loadPath/addPath puts {{lng}} in the query string",
-   "severity": "LOW",
-   "score": 3.7,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-3cmx-xjww-583x",
-   "kev": false,
-   "packages": [
-    {
-     "name": "i18next-http-backend",
-     "range": "< 4.0.4",
-     "fixed": "4.0.4"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-gg6h-894w-4m9c",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116795",
-   "summary": "RE2JS: Quadratic-time denial of service in re2js lookbehind matching",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-gg6h-894w-4m9c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "re2js",
-     "range": ">= 2.2.0, < 2.8.7",
-     "fixed": "2.8.7"
     }
    ],
    "first_seen": "0000-00-00"

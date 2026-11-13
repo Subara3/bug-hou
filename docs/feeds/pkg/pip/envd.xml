@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜envd（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/envd.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/envd.xml</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: envd: Host file disclosure through requirements path traversal and TOCTOU (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-jv6m-48w5-5rpr"/>
+<id>urn:bug-hou:GHSA-jv6m-48w5-5rpr</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;envd &amp;gt;= 0.3.38, &amp;lt; 1.3.6 → 1.3.6&lt;/p&gt;&lt;p&gt;CVE-2026-128079&lt;/p&gt;</content>
+</entry>
+</feed>

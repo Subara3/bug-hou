@@ -653,6 +653,31 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-63hm-g96r-2m2q",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-128083",
+   "summary": "Laravel: Task Output Injection - Concurrency Process",
+   "severity": "LOW",
+   "score": 2.3,
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:L/VI:L/VA:L/SC:L/SI:L/SA:L",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-63hm-g96r-2m2q",
+   "kev": false,
+   "packages": [
+    {
+     "name": "laravel/framework",
+     "range": "< 12.71.0",
+     "fixed": "12.71.0"
+    },
+    {
+     "name": "laravel/framework",
+     "range": ">= 13.0.0, < 13.40.0",
+     "fixed": "13.40.0"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
    "id": "GHSA-g6f8-c3x9-jv7f",
    "ecosystem": "composer",
    "cve": "CVE-2026-84987",
@@ -2983,26 +3008,6 @@
      "name": "getgrav/grav",
      "range": ">= 1.5.2, <= 2.0.12",
      "fixed": "2.0.13"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-w3f4-8pj2-599w",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-69089",
-   "summary": "Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images",
-   "severity": "HIGH",
-   "score": 8.7,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-w3f4-8pj2-599w",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": "= 2.0.10",
-     "fixed": "2.0.11"
     }
    ],
    "first_seen": "2026-11-02"

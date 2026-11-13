@@ -7,6 +7,13 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
+<title>Node.js: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r99w-jh2x-3mg9"/>
+<id>urn:bug-hou:GHSA-r99w-jh2x-3mg9</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128077&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Node.js: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r7hq-q2xm-6c5m"/>
 <id>urn:bug-hou:GHSA-r7hq-q2xm-6c5m</id>
@@ -21,11 +28,32 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスワードなどに改行が入ると例外でプロセスが落ちる&lt;br&gt;→ basic-ftp 6.2.3 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Node.js: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r3h5-4585-7x3w"/>
+<id>urn:bug-hou:GHSA-r3h5-4585-7x3w</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@astrojs/node &amp;lt;= 11.1.11, astro &amp;gt;= 5.14.3, &amp;lt;= 7.4.6 → 7.4.7&lt;/p&gt;&lt;p&gt;CVE-2026-126364&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Node.js: @hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-qv5m-9pm6-hqp3"/>
 <id>urn:bug-hou:GHSA-qv5m-9pm6-hqp3</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。WebSocket接続の切り替え中に接続が切れるとプロセスが落ちる&lt;br&gt;→ @hono/node-server 2.1.6 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-mjrq-cffv-q4qc"/>
+<id>urn:bug-hou:GHSA-mjrq-cffv-q4qc</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@nuxt/schema &amp;gt;= 3.5.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128070&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Astro: XSS via attribute injection in dynamic tag names (LOW)</title>
+<link href="https://github.com/advisories/GHSA-mh32-jxcr-mh9f"/>
+<id>urn:bug-hou:GHSA-mh32-jxcr-mh9f</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;astro &amp;lt;= 7.4.4 → 7.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-126361&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: @hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy (MEDIUM)</title>
@@ -89,6 +117,13 @@
 <id>urn:bug-hou:GHSA-46wx-v44x-9hh2</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。csrf()がハイパーリンク監査(text/ping)の送信を確認しない&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126355&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3v2p-hm54-8qcq"/>
+<id>urn:bug-hou:GHSA-3v2p-hm54-8qcq</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@opentelemetry/instrumentation-http &amp;gt;= 0.204.0, &amp;lt; 0.222.0 → 0.222.0&lt;/p&gt;&lt;p&gt;CVE-2026-128080&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection (LOW)</title>
@@ -320,40 +355,5 @@
 <id>urn:bug-hou:GHSA-96wc-2m84-2cj7</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。循環するシンボリック参照で処理が終わらなくなる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass) (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-6w3r-6hpr-hp6p"/>
-<id>urn:bug-hou:GHSA-6w3r-6hpr-hp6p</id>
-<updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。PSDのレイヤー読み込みでメモリ上限をすり抜け、大量に使われる&lt;br&gt;→ ag-psd を 31.0.1 以降に更新&lt;/p&gt;&lt;p&gt;ag-psd &amp;lt;= 31.0.0 → 31.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-63501&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: tsParticles: Malformed JSON requests can terminate the @tsparticles/mcp-server HTTP process (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-4p8p-pjpq-2w7h"/>
-<id>urn:bug-hou:GHSA-4p8p-pjpq-2w7h</id>
-<updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。壊れたJSONを送るとMCPサーバーのHTTPプロセスが落ちる&lt;br&gt;→ @tsparticles/mcp-server を 4.3.1 以降に更新&lt;/p&gt;&lt;p&gt;@tsparticles/mcp-server &amp;lt;= 4.3.0 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-76892&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: tsParticles: Unbounded HTTP Request Body Buffering in @tsparticles/mcp-server Leads to Remote DoS (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-447x-qqwf-m7xq"/>
-<id>urn:bug-hou:GHSA-447x-qqwf-m7xq</id>
-<updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。MCPサーバーがリクエスト本文を際限なくため込み、外から止められる&lt;br&gt;→ @tsparticles/mcp-server を 4.3.1 以降に更新&lt;/p&gt;&lt;p&gt;@tsparticles/mcp-server &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-63655&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: filecoin-pin: Unbounded DAG pinning can exhaust server resources (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-m5ph-mmg5-6w5h"/>
-<id>urn:bug-hou:GHSA-m5ph-mmg5-6w5h</id>
-<updated>2026-11-05T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。上限のないDAGのピン留めでサーバーの資源を使い切られるおそれ&lt;br&gt;→ filecoin-pinを使っているなら1.1.1に更新&lt;/p&gt;&lt;p&gt;filecoin-pin &amp;lt;= 1.1.0 → 1.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-62300&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: @payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-mc8m-rr6c-r5qr"/>
-<id>urn:bug-hou:GHSA-mc8m-rr6c-r5qr</id>
-<updated>2026-11-04T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。Vercel Blob用ストレージ連携でアップロードのアクセス制限を回避できる&lt;br&gt;→ 使っていれば3.90.0以降に更新&lt;/p&gt;&lt;p&gt;@payloadcms/storage-vercel-blob &amp;gt;= 3.25.0, &amp;lt; 3.90.0 → 3.90.0, @payloadcms/storage-vercel-blob &amp;gt;= 4.0.0-canary.0, &amp;lt; 4.0.0-canary.34 → 4.0.0-canary.34&lt;/p&gt;&lt;p&gt;CVE-2026-93363&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -14,7 +14,7 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; React Server Componentsでログインなしに外からRCE。CRITICAL&lt;br&gt;→ react-server-dom-*を19.0.9 / 19.1.10 / 19.2.9 / 19.3.1 以降に更新&lt;/p&gt;&lt;p&gt;react-server-dom-parcel &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-parcel &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-parcel &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-parcel &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-turbopack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-turbopack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-turbopack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-turbopack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-webpack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-webpack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-webpack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-webpack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-126187&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要対応] Apache / nginx: CVE-2026-119618</title>
+<title>[要対応] Apache / nginx: CVE-2026-119618 8.1 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-119618"/>
 <id>urn:bug-hou:CVE-2026-119618</id>
 <updated>2026-11-11T00:00:00Z</updated>
