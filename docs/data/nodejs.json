@@ -52,6 +52,276 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-46wx-v44x-9hh2",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126355",
+   "summary": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-46wx-v44x-9hh2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "hono",
+     "range": "< 4.13.16",
+     "fixed": "4.13.16"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-4h7h-rv7c-7m2v",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126356",
+   "summary": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-4h7h-rv7c-7m2v",
+   "kev": false,
+   "packages": [
+    {
+     "name": "hono",
+     "range": ">= 4.5.1, <= 4.13.15",
+     "fixed": "4.13.16"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-4m76-xfj5-7975",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126357",
+   "summary": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-4m76-xfj5-7975",
+   "kev": false,
+   "packages": [
+    {
+     "name": "hono",
+     "range": "< 4.13.16",
+     "fixed": "4.13.16"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-h7mg-cq63-vhpq",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126358",
+   "summary": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-h7mg-cq63-vhpq",
+   "kev": false,
+   "packages": [
+    {
+     "name": "hono",
+     "range": ">= 4.1.4, <= 4.13.15",
+     "fixed": "4.13.16"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-3gg2-335m-rxc6",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126359",
+   "summary": "Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
+   "severity": "LOW",
+   "score": 3.4,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:N/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-3gg2-335m-rxc6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "hono",
+     "range": ">= 3.12.0, <= 4.13.15",
+     "fixed": "4.13.16"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-r7hq-q2xm-6c5m",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126367",
+   "summary": "@grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation",
+   "severity": "MEDIUM",
+   "score": 4.8,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-r7hq-q2xm-6c5m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@grpc/grpc-js-xds",
+     "range": ">= 1.14.0, < 1.14.2",
+     "fixed": "1.14.2"
+    },
+    {
+     "name": "@grpc/grpc-js-xds",
+     "range": "< 1.13.2",
+     "fixed": "1.13.2"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-gg5j-6742-v827",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128065",
+   "summary": "@grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-gg5j-6742-v827",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@grpc/grpc-js-xds",
+     "range": ">= 1.14.0, < 1.14.2",
+     "fixed": "1.14.2"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-jmv2-qgxf-f995",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126363",
+   "summary": "Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js",
+   "severity": "LOW",
+   "score": 2.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-jmv2-qgxf-f995",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@astrojs/solid-js",
+     "range": ">= 0.2.0, <= 7.1.1",
+     "fixed": "7.1.2"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-f4j9-crrj-867q",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126362",
+   "summary": "Astro: Reflected XSS via unescaped slot names in @astrojs/svelte",
+   "severity": "LOW",
+   "score": 2.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-f4j9-crrj-867q",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@astrojs/svelte",
+     "range": ">= 5.7.3, <= 9.1.1",
+     "fixed": "9.1.2"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-r4jh-29pc-gfqr",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126346",
+   "summary": "basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-r4jh-29pc-gfqr",
+   "kev": false,
+   "packages": [
+    {
+     "name": "basic-ftp",
+     "range": "<= 6.2.2",
+     "fixed": "6.2.3"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-5pm8-86m8-9m6r",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126345",
+   "summary": "basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list()",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-5pm8-86m8-9m6r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "basic-ftp",
+     "range": "<= 6.2.3",
+     "fixed": "6.2.4"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-qv5m-9pm6-hqp3",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126343",
+   "summary": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-qv5m-9pm6-hqp3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@hono/node-server",
+     "range": ">= 2.0.0, < 2.1.6",
+     "fixed": "2.1.6"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-jpvv-r467-5p4w",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-126210",
+   "summary": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-12",
+   "url": "https://github.com/advisories/GHSA-jpvv-r467-5p4w",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@hono/node-server",
+     "range": ">= 2.0.0, < 2.1.6",
+     "fixed": "2.1.6"
+    },
+    {
+     "name": "@hono/node-server",
+     "range": "< 1.19.18",
+     "fixed": "1.19.18"
+    }
+   ],
+   "first_seen": "2026-11-13"
+  },
+  {
    "id": "GHSA-7m8x-x364-m26j",
    "ecosystem": "npm",
    "cve": null,
@@ -2172,446 +2442,6 @@
      "name": "re2js",
      "range": ">= 2.2.0, < 2.8.7",
      "fixed": "2.8.7"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-9jhj-wvmw-cfx5",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-115730",
-   "summary": "i18next-http-backend: Namespace value starting with / forms a protocol-relative URL when loadPath/addPath places {{ns}} right after a / (bypass of the // check added for GHSA-xvq9-wjp8-hwqf)",
-   "severity": "LOW",
-   "score": 3.1,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-9jhj-wvmw-cfx5",
-   "kev": false,
-   "packages": [
-    {
-     "name": "i18next-http-backend",
-     "range": "< 4.0.3",
-     "fixed": "4.0.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-c8p4-j97h-3vg8",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118660",
-   "summary": "Happy DOM: SSRF via iframe and link stylesheet when parsing untrusted HTML",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-c8p4-j97h-3vg8",
-   "kev": false,
-   "packages": [
-    {
-     "name": "happy-dom",
-     "range": "<= 20.14.6",
-     "fixed": "21.0.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-8rc2-428q-7ww3",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118256",
-   "summary": "Vue I18n: `escapeParameter` does not escape named values when the same call also passes a list",
-   "severity": "LOW",
-   "score": 2.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-8rc2-428q-7ww3",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vue-i18n",
-     "range": ">= 9.0.0-beta.5, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "vue-i18n",
-     "range": ">= 12.0.0-alpha.1, < 12.0.0-alpha.5",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "@intlify/core",
-     "range": ">= 9.0.0-beta.10, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "@intlify/core",
-     "range": ">= 12.0.0-alpha.1, < 12.0.0-alpha.5",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "@intlify/core-base",
-     "range": ">= 9.0.0-beta.12, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "@intlify/core-base",
-     "range": ">= 12.0.0-alpha.1, < 12.0.0-alpha.5",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "petite-vue-i18n",
-     "range": ">= 9.2.0-alpha.7, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "petite-vue-i18n",
-     "range": ">= 12.0.0-alpha.1, < 12.0.0-alpha.5",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "@intlify/vue-i18n-core",
-     "range": ">= 9.2.0-alpha.7, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "@intlify/vue-i18n-core",
-     "range": ">= 12.0.0-alpha.1, < 12.0.0-alpha.5",
-     "fixed": "12.0.0-alpha.5"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-83rm-6c8r-g728",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118257",
-   "summary": "Vue I18n: escapeParameter does not prevent XSS through srcdoc in translation messages",
-   "severity": "HIGH",
-   "score": 7.2,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-83rm-6c8r-g728",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vue-i18n",
-     "range": "= 9.14.5",
-     "fixed": null
-    },
-    {
-     "name": "vue-i18n",
-     "range": "= 10.0.8",
-     "fixed": null
-    },
-    {
-     "name": "vue-i18n",
-     "range": ">= 11.1.10, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "vue-i18n",
-     "range": "= 12.0.0-alpha.4",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "petite-vue-i18n",
-     "range": "= 9.14.5",
-     "fixed": null
-    },
-    {
-     "name": "petite-vue-i18n",
-     "range": "= 10.0.8",
-     "fixed": null
-    },
-    {
-     "name": "petite-vue-i18n",
-     "range": ">= 11.1.10, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "petite-vue-i18n",
-     "range": "= 12.0.0-alpha.4",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "@intlify/core-base",
-     "range": "= 9.14.5",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/core-base",
-     "range": "= 10.0.8",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/core-base",
-     "range": ">= 11.1.10, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "@intlify/core-base",
-     "range": "= 12.0.0-alpha.4",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "@intlify/core",
-     "range": "= 9.14.5",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/core",
-     "range": "= 10.0.8",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/core",
-     "range": ">= 11.1.10, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "@intlify/core",
-     "range": "= 12.0.0-alpha.4",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "@intlify/vue-i18n-core",
-     "range": "= 9.14.5",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/vue-i18n-core",
-     "range": "= 10.0.8",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/vue-i18n-core",
-     "range": ">= 11.1.10, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "@intlify/vue-i18n-core",
-     "range": "= 12.0.0-alpha.4",
-     "fixed": "12.0.0-alpha.5"
-    },
-    {
-     "name": "@intlify/shared",
-     "range": "= 9.14.5",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/shared",
-     "range": "= 10.0.8",
-     "fixed": null
-    },
-    {
-     "name": "@intlify/shared",
-     "range": ">= 11.1.10, < 11.4.14",
-     "fixed": "11.4.14"
-    },
-    {
-     "name": "@intlify/shared",
-     "range": "= 12.0.0-alpha.4",
-     "fixed": "12.0.0-alpha.5"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-5fpq-26gf-qwcr",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118661",
-   "summary": "Happy DOM has cookie scope forgery: no DNS-label boundary on Domain= matching , attacker origin sets victim cookies",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-5fpq-26gf-qwcr",
-   "kev": false,
-   "packages": [
-    {
-     "name": "happy-dom",
-     "range": "<= 20.14.5",
-     "fixed": "20.14.6"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-434m-5hcj-pxf3",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118665",
-   "summary": "GraphQL Tools: Per-request connection parameters persist into later users' WebSocket authentications",
-   "severity": "HIGH",
-   "score": 8.2,
-   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-434m-5hcj-pxf3",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@graphql-tools/executor-legacy-ws",
-     "range": "<= 1.1.35",
-     "fixed": "1.1.36"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-mp66-8ww2-pcwm",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118666",
-   "summary": "GraphQL Tools: Shared legacy executor routes one subscription's results to a different caller",
-   "severity": "MEDIUM",
-   "score": 6.0,
-   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:L/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-mp66-8ww2-pcwm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@graphql-tools/executor-legacy-ws",
-     "range": "<= 1.1.35",
-     "fixed": "1.1.36"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-rmxm-3fg6-px4f",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118663",
-   "summary": "@hono/node-server: `serveStatic` decodes the request path a second time, leading to bypass of middleware on static paths",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-rmxm-3fg6-px4f",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@hono/node-server",
-     "range": ">= 1.19.10, < 2.1.3",
-     "fixed": "2.1.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-6hgp-fmhr-mrg4",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118255",
-   "summary": "Highcharts Grid: `javascript:` URL in credits.href runs script on click",
-   "severity": "HIGH",
-   "score": 8.4,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-6hgp-fmhr-mrg4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/dashboards",
-     "range": ">= 3.2.0, <= 3.6.0",
-     "fixed": "4.0.0"
-    },
-    {
-     "name": "@highcharts/grid-pro",
-     "range": ">= 2.0.0, <= 3.1.0",
-     "fixed": "3.2.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-r5wg-q8fc-p6w2",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118254",
-   "summary": "Highcharts Grid parses pagination language options as HTML",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-r5wg-q8fc-p6w2",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/grid-lite",
-     "range": ">= 2.0.0, <= 3.1.0",
-     "fixed": "3.2.0"
-    },
-    {
-     "name": "@highcharts/grid-pro",
-     "range": ">= 2.0.0, <= 3.1.0",
-     "fixed": "3.2.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-58g7-7f52-h92c",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118253",
-   "summary": "Highcharts Dashboards parses fullscreen labels as HTML",
-   "severity": "HIGH",
-   "score": 8.4,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-58g7-7f52-h92c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/dashboards",
-     "range": ">= 1.0.0, < 4.2.3",
-     "fixed": "4.2.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-rcqf-f6h2-ccg9",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118252",
-   "summary": "Highcharts Dashboards parses sidebar component labels as HTML",
-   "severity": "HIGH",
-   "score": 8.4,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-rcqf-f6h2-ccg9",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@highcharts/dashboards",
-     "range": ">= 1.0.0, <= 4.2.2",
-     "fixed": "4.2.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-5793-x2q3-c3q7",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118251",
-   "summary": "Highcharts: `javascript:` URL in credits.href runs script on click",
-   "severity": "HIGH",
-   "score": 8.4,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:A/VC:H/VI:H/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-5793-x2q3-c3q7",
-   "kev": false,
-   "packages": [
-    {
-     "name": "highcharts",
-     "range": "< 11.4.9",
-     "fixed": "11.4.9"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 12.0.0, < 12.6.1",
-     "fixed": "12.6.1"
-    },
-    {
-     "name": "highcharts",
-     "range": ">= 13.0.0, <= 13.0.2",
-     "fixed": "13.1.0"
     }
    ],
    "first_seen": "0000-00-00"

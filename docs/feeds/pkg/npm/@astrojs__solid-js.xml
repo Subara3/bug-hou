@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@astrojs/solid-js（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@astrojs__solid-js.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@astrojs__solid-js.xml</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js (LOW)</title>
+<link href="https://github.com/advisories/GHSA-jmv2-qgxf-f995"/>
+<id>urn:bug-hou:GHSA-jmv2-qgxf-f995</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@astrojs/solid-js &amp;gt;= 0.2.0, &amp;lt;= 7.1.1 → 7.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126363&lt;/p&gt;</content>
+</entry>
+</feed>

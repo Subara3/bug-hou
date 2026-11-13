@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@hono__node-server.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@hono__node-server.xml</id>
-<updated>2026-10-28T00:00:00Z</updated>
+<updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>npm: @hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-qv5m-9pm6-hqp3"/>
+<id>urn:bug-hou:GHSA-qv5m-9pm6-hqp3</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: @hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-jpvv-r467-5p4w"/>
+<id>urn:bug-hou:GHSA-jpvv-r467-5p4w</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6, @hono/node-server &amp;lt; 1.19.18 → 1.19.18&lt;/p&gt;&lt;p&gt;CVE-2026-126210&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] npm: @hono/node-server: `serveStatic` decodes the request path a second time, leading to bypass of middleware on static paths (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rmxm-3fg6-px4f"/>

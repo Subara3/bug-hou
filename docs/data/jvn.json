@@ -1,5 +1,47 @@
 [
  {
+  "id": "JVN#76799957",
+  "title": "JetBrains製YouTrackにおけるクロスサイトスクリプティングの脆弱性",
+  "url": "https://jvn.jp/jp/JVN76799957/",
+  "desc": "JetBrains s.r.o.が提供するYouTrackには、クロスサイトスクリプティングの脆弱性が存在します。",
+  "date": "2026-11-13"
+ },
+ {
+  "id": "JVNVU#90821966",
+  "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月12日）",
+  "url": "https://jvn.jp/vu/JVNVU90821966/",
+  "desc": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+  "date": "2026-11-13"
+ },
+ {
+  "id": "JVNVU#92656681",
+  "title": "TightVNCおよびUltraVNCのWindows Viewerにおけるヒープベースのバッファオーバーフローの脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU92656681/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-13"
+ },
+ {
+  "id": "JVNVU#95718857",
+  "title": "ImageMagickを利用したアプリケーションにおける任意ファイル読み書きの脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU95718857/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-13"
+ },
+ {
+  "id": "JVNVU#98641453",
+  "title": "PromZardにおけるリモートコード実行の脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU98641453/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-13"
+ },
+ {
+  "id": "JVNVU#99429639",
+  "title": "ComfyUIのComfyUI-Easy-Use拡張機能における認証不要のパストラバーサルの脆弱性",
+  "url": "https://jvn.jp/vu/JVNVU99429639/",
+  "desc": "CERT/CCから本件に関するアドバイザリが公表されました。",
+  "date": "2026-11-13"
+ },
+ {
   "id": "JVNVU#92635551",
   "title": "KUSANAGIにおけるHTTPヘッダーインジェクションの脆弱性",
   "url": "https://jvn.jp/vu/JVNVU92635551/",

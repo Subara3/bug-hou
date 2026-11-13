@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜soupsieve（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/soupsieve.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/soupsieve.xml</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Soup Sieve: Polynomial-time denial of service in the descendant combinator (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mmhr-3c5m-f64f"/>
+<id>urn:bug-hou:GHSA-mmhr-3c5m-f64f</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4j63-6c4x-wfg4"/>
+<id>urn:bug-hou:GHSA-4j63-6c4x-wfg4</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
+</entry>
+</feed>

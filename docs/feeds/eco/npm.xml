@@ -4,8 +4,99 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-12T00:00:00Z</updated>
+<updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r7hq-q2xm-6c5m"/>
+<id>urn:bug-hou:GHSA-r7hq-q2xm-6c5m</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2, @grpc/grpc-js-xds &amp;lt; 1.13.2 → 1.13.2&lt;/p&gt;&lt;p&gt;CVE-2026-126367&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r4jh-29pc-gfqr"/>
+<id>urn:bug-hou:GHSA-r4jh-29pc-gfqr</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: @hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-qv5m-9pm6-hqp3"/>
+<id>urn:bug-hou:GHSA-qv5m-9pm6-hqp3</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: @hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-jpvv-r467-5p4w"/>
+<id>urn:bug-hou:GHSA-jpvv-r467-5p4w</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6, @hono/node-server &amp;lt; 1.19.18 → 1.19.18&lt;/p&gt;&lt;p&gt;CVE-2026-126210&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js (LOW)</title>
+<link href="https://github.com/advisories/GHSA-jmv2-qgxf-f995"/>
+<id>urn:bug-hou:GHSA-jmv2-qgxf-f995</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@astrojs/solid-js &amp;gt;= 0.2.0, &amp;lt;= 7.1.1 → 7.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126363&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h7mg-cq63-vhpq"/>
+<id>urn:bug-hou:GHSA-h7mg-cq63-vhpq</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;gt;= 4.1.4, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126358&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-gg5j-6742-v827"/>
+<id>urn:bug-hou:GHSA-gg5j-6742-v827</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-128065&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte (LOW)</title>
+<link href="https://github.com/advisories/GHSA-f4j9-crrj-867q"/>
+<id>urn:bug-hou:GHSA-f4j9-crrj-867q</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@astrojs/svelte &amp;gt;= 5.7.3, &amp;lt;= 9.1.1 → 9.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126362&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list() (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-5pm8-86m8-9m6r"/>
+<id>urn:bug-hou:GHSA-5pm8-86m8-9m6r</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;basic-ftp &amp;lt;= 6.2.3 → 6.2.4&lt;/p&gt;&lt;p&gt;CVE-2026-126345&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4m76-xfj5-7975"/>
+<id>urn:bug-hou:GHSA-4m76-xfj5-7975</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126357&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4h7h-rv7c-7m2v"/>
+<id>urn:bug-hou:GHSA-4h7h-rv7c-7m2v</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;gt;= 4.5.1, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126356&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-46wx-v44x-9hh2"/>
+<id>urn:bug-hou:GHSA-46wx-v44x-9hh2</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126355&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection (LOW)</title>
+<link href="https://github.com/advisories/GHSA-3gg2-335m-rxc6"/>
+<id>urn:bug-hou:GHSA-3gg2-335m-rxc6</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;gt;= 3.12.0, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126359&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7m8x-x364-m26j"/>
@@ -264,96 +355,5 @@
 <id>urn:bug-hou:GHSA-mc8m-rr6c-r5qr</id>
 <updated>2026-11-04T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。Vercel Blob用ストレージ連携でアップロードのアクセス制限を回避できる&lt;br&gt;→ 使っていれば3.90.0以降に更新&lt;/p&gt;&lt;p&gt;@payloadcms/storage-vercel-blob &amp;gt;= 3.25.0, &amp;lt; 3.90.0 → 3.90.0, @payloadcms/storage-vercel-blob &amp;gt;= 4.0.0-canary.0, &amp;lt; 4.0.0-canary.34 → 4.0.0-canary.34&lt;/p&gt;&lt;p&gt;CVE-2026-93363&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-3cgg-c5pp-57h6"/>
-<id>urn:bug-hou:GHSA-3cgg-c5pp-57h6</id>
-<updated>2026-11-04T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。odf-kitのHTML変換でstyle属性が無害化されずXSSになる&lt;br&gt;→ 使っていれば0.14.2以降に更新&lt;/p&gt;&lt;p&gt;odf-kit &amp;gt;= 0.6.0, &amp;lt; 0.14.2 → 0.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-113787&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Elo backends have code injection via unvalidated emission of programmatic AST fields (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-x9rp-7wh3-2rj5"/>
-<id>urn:bug-hou:GHSA-x9rp-7wh3-2rj5</id>
-<updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @enspirit/eloのHIGH。プログラムで作ったASTの値がそのまま出力されコードを埋め込める&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44265&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: DBHub: MySQL and MariaDB comment interpretation bypasses read-only SQL validation (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-j656-3hf2-fvjc"/>
-<id>urn:bug-hou:GHSA-j656-3hf2-fvjc</id>
-<updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。MySQL・MariaDBのコメントで読み取り専用のSQLチェックをすり抜けられる&lt;br&gt;→ @bytebase/dbhubを使っていれば0.22.6に更新&lt;/p&gt;&lt;p&gt;@bytebase/dbhub &amp;lt; 0.22.6 → 0.22.6&lt;/p&gt;&lt;p&gt;GHSA-j656-3hf2-fvjc&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: SD JWT JS: Tampered disclosures silently dropped instead of rejected (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-f9j6-8p6x-r9j6"/>
-<id>urn:bug-hou:GHSA-f9j6-8p6x-r9j6</id>
-<updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。改ざんされたdisclosureがエラーにならず黙って捨てられる&lt;br&gt;→ @sd-jwt/coreを0.20.0に更新。@sd-jwt/decodeは修正版の記載なし&lt;/p&gt;&lt;p&gt;@sd-jwt/decode &amp;lt;= 0.19.0, @sd-jwt/core &amp;lt;= 0.19.0 → 0.20.0&lt;/p&gt;&lt;p&gt;CVE-2026-62374&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-7w38-ggh5-v542"/>
-<id>urn:bug-hou:GHSA-7w38-ggh5-v542</id>
-<updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないパッケージ@enspirit/eloのCRITICAL。Ruby出力の文字列埋め込みでコード実行&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44266&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-33r5-xmm8-v6x5"/>
-<id>urn:bug-hou:GHSA-33r5-xmm8-v6x5</id>
-<updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないパッケージ@enspirit/eloのCRITICAL。JS出力でサンドボックスを抜けてコード実行&lt;br&gt;→ @enspirit/eloを使っていれば1.0.1に更新&lt;/p&gt;&lt;p&gt;@enspirit/elo &amp;lt;= 1.0.0 → 1.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-44267&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Nuxt dev server arbitrary file read through client error reports (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-x287-wcfc-q46c"/>
-<id>urn:bug-hou:GHSA-x287-wcfc-q46c</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxt開発サーバーで任意ファイル読取。MEDIUM&lt;br&gt;→ @nuxt/vite-builder 4.6.3に更新&lt;/p&gt;&lt;p&gt;@nuxt/vite-builder &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-119198&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: @nx/maven and @nx/gradle have OS command injection via nx.json plugin options (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-qm8w-vx34-5j9j"/>
-<id>urn:bug-hou:GHSA-qm8w-vx34-5j9j</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @nx/maven・@nx/gradleでnx.json経由のコマンド注入。HIGH&lt;br&gt;→ 22.7.9/23.1.2に更新&lt;/p&gt;&lt;p&gt;@nx/maven &amp;gt;= 22.0.2, &amp;lt; 22.7.9 → 22.7.9, @nx/maven &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2, @nx/gradle &amp;gt;= 21.0.0, &amp;lt; 22.7.9 → 22.7.9, @nx/gradle &amp;gt;= 23.0.0, &amp;lt; 23.1.2 → 23.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-119282&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: follow-redirects: Cross-realm sensitiveHeaders arrays are discarded and custom credentials can follow redirects (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-mrwp-f3q8-3g9p"/>
-<id>urn:bug-hou:GHSA-mrwp-f3q8-3g9p</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; follow-redirectsで資格情報がリダイレクト先に送られる。HIGH&lt;br&gt;→ follow-redirects 1.16.2に更新&lt;/p&gt;&lt;p&gt;follow-redirects &amp;gt;= 1.16.0, &amp;lt;= 1.16.1 → 1.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-116689&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-jc66-7q78-782g"/>
-<id>urn:bug-hou:GHSA-jc66-7q78-782g</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのPKCS#12でMAC偽造。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118782&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: @sigstore/oci sends the registry Authorization header to a cross-host blob-upload Location (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-j63v-mwhm-56jx"/>
-<id>urn:bug-hou:GHSA-j63v-mwhm-56jx</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @sigstore/ociが別ホストに認証ヘッダーを送る。HIGH&lt;br&gt;→ @sigstore/oci 0.7.2に更新&lt;/p&gt;&lt;p&gt;@sigstore/oci &amp;lt;= 0.7.1 → 0.7.2&lt;/p&gt;&lt;p&gt;CVE-2026-118763&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Forge: Denial of service in TLS record processing via call stack exhaustion (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-hqq3-7jhf-c5jx"/>
-<id>urn:bug-hou:GHSA-hqq3-7jhf-c5jx</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのTLSレコード処理でスタック枯渇。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119187&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891) (LOW)</title>
-<link href="https://github.com/advisories/GHSA-h6cr-wjv9-3cpp"/>
-<id>urn:bug-hou:GHSA-h6cr-wjv9-3cpp</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのmodInverseで無限ループ。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118781&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -4,8 +4,43 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/pip.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/pip.xml</id>
-<updated>2026-11-11T00:00:00Z</updated>
+<updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xcvg-w56q-r89m"/>
+<id>urn:bug-hou:GHSA-xcvg-w56q-r89m</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128067&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-x585-4vv8-2mh2"/>
+<id>urn:bug-hou:GHSA-x585-4vv8-2mh2</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;rucio &amp;gt;= 1.14.0.post1, &amp;lt; 35.9.1 → 35.9.1, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.1 → 38.6.1, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 40.4.2 → 40.4.2, rucio &amp;gt;= 41.0.0rc1, &amp;lt; 41.1.1 → 41.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-100397&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wqgw-9xfh-qf2g"/>
+<id>urn:bug-hou:GHSA-wqgw-9xfh-qf2g</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128066&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Soup Sieve: Polynomial-time denial of service in the descendant combinator (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mmhr-3c5m-f64f"/>
+<id>urn:bug-hou:GHSA-mmhr-3c5m-f64f</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4j63-6c4x-wfg4"/>
+<id>urn:bug-hou:GHSA-4j63-6c4x-wfg4</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Python: compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout (LOW)</title>
 <link href="https://github.com/advisories/GHSA-hr4h-4c45-v4q4"/>
@@ -238,27 +273,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MCP Python SDKのクライアントがサーバー指定の$ref URLを取得。MEDIUM&lt;br&gt;→ mcp 1.30.0/2.2.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116686&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] Python: Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-q686-2qmg-hqc7"/>
-<id>urn:bug-hou:GHSA-q686-2qmg-hqc7</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibのOpenIDインプリシットで許可外スコープでもIDトークン発行。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114619&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: Authlib: is_secure_transport() loopback exemption can be bypassed with a userinfo component, allowing cleartext-HTTP URLs to non-loopback hosts (LOW)</title>
-<link href="https://github.com/advisories/GHSA-jj7h-c3hg-m23x"/>
-<id>urn:bug-hou:GHSA-jj7h-c3hg-m23x</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Authlibのループバック例外をuserinfoで回避し平文HTTP送信。LOW&lt;br&gt;→ authlib 1.8.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.7.2 → 1.8.0&lt;/p&gt;&lt;p&gt;CVE-2026-114614&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: Authlib: Default JWT bearer grant accepts assertions for the wrong audience (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-fch4-3c6x-j4gc"/>
-<id>urn:bug-hou:GHSA-fch4-3c6x-j4gc</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibのJWT bearer grantが別audienceのアサーションを受理。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114618&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] Python: Authlib: ID token can disable its own nonce validation via the nonce_supported claim (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-c5mf-xmp2-59rc"/>
 <id>urn:bug-hou:GHSA-c5mf-xmp2-59rc</id>
@@ -271,20 +285,6 @@
 <id>urn:bug-hou:GHSA-8m4g-j4wp-wgcg</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Authlibが空のHMAC鍵を受け入れJWS/JWTの署名を偽造可能。HIGH&lt;br&gt;→ Authlib 1.9.1に更新&lt;/p&gt;&lt;p&gt;Authlib &amp;lt; 1.9.1 → 1.9.1&lt;/p&gt;&lt;p&gt;CVE-2026-114616&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-7vr2-2fgp-9w7p"/>
-<id>urn:bug-hou:GHSA-7vr2-2fgp-9w7p</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Authlibのアルゴリズム混同対策が不完全でHMAC署名を偽造可能。HIGH&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.3.1, &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114615&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-45c3-73f7-pv4m"/>
-<id>urn:bug-hou:GHSA-45c3-73f7-pv4m</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dnspythonのfrom_wire_parser()でCPUを過剰消費。HIGH&lt;br&gt;→ dnspython 2.9.0に更新&lt;/p&gt;&lt;p&gt;dnspython &amp;lt; 2.9.0 → 2.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114605&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: pypdf has possible large memory usage when parsing cross-reference streams (HIGH)</title>

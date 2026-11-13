@@ -1,5 +1,77 @@
 [
  {
+  "id": "GHSA-x585-4vv8-2mh2",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-100397",
+  "summary": "Rucio: Unauthenticated administrator impersonation through SSH challenge tokens",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-13",
+  "url": "https://github.com/advisories/GHSA-x585-4vv8-2mh2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "rucio",
+    "range": ">= 1.14.0.post1, < 35.9.1",
+    "fixed": "35.9.1"
+   },
+   {
+    "name": "rucio",
+    "range": ">= 36.0.0rc1, < 38.6.1",
+    "fixed": "38.6.1"
+   },
+   {
+    "name": "rucio",
+    "range": ">= 39.0.0rc1, < 40.4.2",
+    "fixed": "40.4.2"
+   },
+   {
+    "name": "rucio",
+    "range": ">= 41.0.0rc1, < 41.1.1",
+    "fixed": "41.1.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-mmhr-3c5m-f64f",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-126190",
+  "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-13",
+  "url": "https://github.com/advisories/GHSA-mmhr-3c5m-f64f",
+  "kev": false,
+  "packages": [
+   {
+    "name": "soupsieve",
+    "range": "< 4.0.0",
+    "fixed": "4.0.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4j63-6c4x-wfg4",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-126192",
+  "summary": "Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+  "published": "2026-11-13",
+  "url": "https://github.com/advisories/GHSA-4j63-6c4x-wfg4",
+  "kev": false,
+  "packages": [
+   {
+    "name": "soupsieve",
+    "range": "<= 2.9.2",
+    "fixed": "2.10.0"
+   }
+  ]
+ },
+ {
   "id": "GHSA-g6f8-c3x9-jv7f",
   "ecosystem": "composer",
   "cve": "CVE-2026-84987",
@@ -63,6 +135,301 @@
     "name": "signalk-server",
     "range": "< 2.31.0-beta.1",
     "fixed": "2.31.0-beta.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-46wx-v44x-9hh2",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126355",
+  "summary": "Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-46wx-v44x-9hh2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "hono",
+    "range": "< 4.13.16",
+    "fixed": "4.13.16"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4h7h-rv7c-7m2v",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126356",
+  "summary": "Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-4h7h-rv7c-7m2v",
+  "kev": false,
+  "packages": [
+   {
+    "name": "hono",
+    "range": ">= 4.5.1, <= 4.13.15",
+    "fixed": "4.13.16"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4m76-xfj5-7975",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126357",
+  "summary": "Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-4m76-xfj5-7975",
+  "kev": false,
+  "packages": [
+   {
+    "name": "hono",
+    "range": "< 4.13.16",
+    "fixed": "4.13.16"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h7mg-cq63-vhpq",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126358",
+  "summary": "Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-h7mg-cq63-vhpq",
+  "kev": false,
+  "packages": [
+   {
+    "name": "hono",
+    "range": ">= 4.1.4, <= 4.13.15",
+    "fixed": "4.13.16"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3gg2-335m-rxc6",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126359",
+  "summary": "Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection",
+  "severity": "LOW",
+  "score": 3.4,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:N/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-3gg2-335m-rxc6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "hono",
+    "range": ">= 3.12.0, <= 4.13.15",
+    "fixed": "4.13.16"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-r7hq-q2xm-6c5m",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126367",
+  "summary": "@grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation",
+  "severity": "MEDIUM",
+  "score": 4.8,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-r7hq-q2xm-6c5m",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@grpc/grpc-js-xds",
+    "range": ">= 1.14.0, < 1.14.2",
+    "fixed": "1.14.2"
+   },
+   {
+    "name": "@grpc/grpc-js-xds",
+    "range": "< 1.13.2",
+    "fixed": "1.13.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-gg5j-6742-v827",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128065",
+  "summary": "@grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied",
+  "severity": "MEDIUM",
+  "score": 6.9,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-gg5j-6742-v827",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@grpc/grpc-js-xds",
+    "range": ">= 1.14.0, < 1.14.2",
+    "fixed": "1.14.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-jmv2-qgxf-f995",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126363",
+  "summary": "Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-jmv2-qgxf-f995",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@astrojs/solid-js",
+    "range": ">= 0.2.0, <= 7.1.1",
+    "fixed": "7.1.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-f4j9-crrj-867q",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126362",
+  "summary": "Astro: Reflected XSS via unescaped slot names in @astrojs/svelte",
+  "severity": "LOW",
+  "score": 2.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:L/VA:N/SC:L/SI:L/SA:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-f4j9-crrj-867q",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@astrojs/svelte",
+    "range": ">= 5.7.3, <= 9.1.1",
+    "fixed": "9.1.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-r4jh-29pc-gfqr",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126346",
+  "summary": "basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-r4jh-29pc-gfqr",
+  "kev": false,
+  "packages": [
+   {
+    "name": "basic-ftp",
+    "range": "<= 6.2.2",
+    "fixed": "6.2.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-5pm8-86m8-9m6r",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126345",
+  "summary": "basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list()",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-5pm8-86m8-9m6r",
+  "kev": false,
+  "packages": [
+   {
+    "name": "basic-ftp",
+    "range": "<= 6.2.3",
+    "fixed": "6.2.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-qv5m-9pm6-hqp3",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126343",
+  "summary": "@hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-qv5m-9pm6-hqp3",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@hono/node-server",
+    "range": ">= 2.0.0, < 2.1.6",
+    "fixed": "2.1.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-jpvv-r467-5p4w",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-126210",
+  "summary": "@hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-jpvv-r467-5p4w",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@hono/node-server",
+    "range": ">= 2.0.0, < 2.1.6",
+    "fixed": "2.1.6"
+   },
+   {
+    "name": "@hono/node-server",
+    "range": "< 1.19.18",
+    "fixed": "1.19.18"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-wqgw-9xfh-qf2g",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128066",
+  "summary": "Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data",
+  "severity": "MEDIUM",
+  "score": null,
+  "vector": null,
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-wqgw-9xfh-qf2g",
+  "kev": false,
+  "packages": [
+   {
+    "name": "Pillow",
+    "range": "<= 12.3.0",
+    "fixed": "13.0.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xcvg-w56q-r89m",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128067",
+  "summary": "Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size",
+  "severity": "HIGH",
+  "score": 8.4,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-12",
+  "url": "https://github.com/advisories/GHSA-xcvg-w56q-r89m",
+  "kev": false,
+  "packages": [
+   {
+    "name": "Pillow",
+    "range": "<= 12.3.0",
+    "fixed": "13.0.0"
    }
   ]
  },

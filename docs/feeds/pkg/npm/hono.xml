@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜hono（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/hono.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/hono.xml</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h7mg-cq63-vhpq"/>
+<id>urn:bug-hou:GHSA-h7mg-cq63-vhpq</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;gt;= 4.1.4, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126358&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4m76-xfj5-7975"/>
+<id>urn:bug-hou:GHSA-4m76-xfj5-7975</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126357&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4h7h-rv7c-7m2v"/>
+<id>urn:bug-hou:GHSA-4h7h-rv7c-7m2v</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;gt;= 4.5.1, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126356&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-46wx-v44x-9hh2"/>
+<id>urn:bug-hou:GHSA-46wx-v44x-9hh2</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126355&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection (LOW)</title>
+<link href="https://github.com/advisories/GHSA-3gg2-335m-rxc6"/>
+<id>urn:bug-hou:GHSA-3gg2-335m-rxc6</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;hono &amp;gt;= 3.12.0, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126359&lt;/p&gt;</content>
+</entry>
+</feed>

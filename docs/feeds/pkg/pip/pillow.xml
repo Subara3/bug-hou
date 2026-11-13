@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜Pillow（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/pillow.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/pillow.xml</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xcvg-w56q-r89m"/>
+<id>urn:bug-hou:GHSA-xcvg-w56q-r89m</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128067&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wqgw-9xfh-qf2g"/>
+<id>urn:bug-hou:GHSA-wqgw-9xfh-qf2g</id>
+<updated>2026-11-13T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128066&lt;/p&gt;</content>
+</entry>
+</feed>
