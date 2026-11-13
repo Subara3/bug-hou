@@ -7,39 +7,39 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
+<title>[要確認] Python: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xcvg-w56q-r89m"/>
 <id>urn:bug-hou:GHSA-xcvg-w56q-r89m</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128067&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。libtiffでTIFFを保存するときだけヒープの書き込みがあふれる&lt;br&gt;→ Pillow 13.0.0 以降に更新&lt;/p&gt;&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128067&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens (CRITICAL)</title>
+<title>[要確認] Python: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-x585-4vv8-2mh2"/>
 <id>urn:bug-hou:GHSA-x585-4vv8-2mh2</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;rucio &amp;gt;= 1.14.0.post1, &amp;lt; 35.9.1 → 35.9.1, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.1 → 38.6.1, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 40.4.2 → 40.4.2, rucio &amp;gt;= 41.0.0rc1, &amp;lt; 41.1.1 → 41.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-100397&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICAL。ログインなしで管理者になりすませるが、利用者の少ないパッケージ&lt;br&gt;→ rucio 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1 以降に更新&lt;/p&gt;&lt;p&gt;rucio &amp;gt;= 1.14.0.post1, &amp;lt; 35.9.1 → 35.9.1, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.1 → 38.6.1, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 40.4.2 → 40.4.2, rucio &amp;gt;= 41.0.0rc1, &amp;lt; 41.1.1 → 41.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-100397&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data (MEDIUM)</title>
+<title>[様子見] Python: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wqgw-9xfh-qf2g"/>
 <id>urn:bug-hou:GHSA-wqgw-9xfh-qf2g</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128066&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。TIFFやEXIFの読み込みでメモリを使い切らされる&lt;br&gt;→ Pillow 13.0.0 以降に更新&lt;/p&gt;&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128066&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Soup Sieve: Polynomial-time denial of service in the descendant combinator (HIGH)</title>
+<title>[要確認] Python: Soup Sieve: Polynomial-time denial of service in the descendant combinator (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-mmhr-3c5m-f64f"/>
 <id>urn:bug-hou:GHSA-mmhr-3c5m-f64f</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。子孫セレクタの処理に時間がかかりサービス停止になる&lt;br&gt;→ soupsieve 4.0.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
+<title>[様子見] Python: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4j63-6c4x-wfg4"/>
 <id>urn:bug-hou:GHSA-4j63-6c4x-wfg4</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。:has()内の兄弟セレクタで外部のHTMLの処理に時間がかかる&lt;br&gt;→ soupsieve 2.10.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout (LOW)</title>

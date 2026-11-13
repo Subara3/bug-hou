@@ -7,17 +7,17 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
+<title>[様子見] npm: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r7hq-q2xm-6c5m"/>
 <id>urn:bug-hou:GHSA-r7hq-q2xm-6c5m</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2, @grpc/grpc-js-xds &amp;lt; 1.13.2 → 1.13.2&lt;/p&gt;&lt;p&gt;CVE-2026-126367&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。safe_regexで「または」を含むパターンが部分一致になる&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 / 1.13.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2, @grpc/grpc-js-xds &amp;lt; 1.13.2 → 1.13.2&lt;/p&gt;&lt;p&gt;CVE-2026-126367&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied (MEDIUM)</title>
+<title>[様子見] npm: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gg5j-6742-v827"/>
 <id>urn:bug-hou:GHSA-gg5j-6742-v827</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-128065&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。VirtualHostやRouteに書いたRBACの上書き設定が効かない&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-128065&lt;/p&gt;</content>
 </entry>
 </feed>

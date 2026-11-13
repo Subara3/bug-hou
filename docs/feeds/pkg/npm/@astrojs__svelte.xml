@@ -7,10 +7,10 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte (LOW)</title>
+<title>[様子見] npm: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte (LOW)</title>
 <link href="https://github.com/advisories/GHSA-f4j9-crrj-867q"/>
 <id>urn:bug-hou:GHSA-f4j9-crrj-867q</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@astrojs/svelte &amp;gt;= 5.7.3, &amp;lt;= 9.1.1 → 9.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126362&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。スロット名がエスケープされず反射型XSSになる&lt;br&gt;→ @astrojs/svelte 9.1.2 以降に更新&lt;/p&gt;&lt;p&gt;@astrojs/svelte &amp;gt;= 5.7.3, &amp;lt;= 9.1.1 → 9.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126362&lt;/p&gt;</content>
 </entry>
 </feed>

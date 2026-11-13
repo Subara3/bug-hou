@@ -7,17 +7,17 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Soup Sieve: Polynomial-time denial of service in the descendant combinator (HIGH)</title>
+<title>[要確認] pip: Soup Sieve: Polynomial-time denial of service in the descendant combinator (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-mmhr-3c5m-f64f"/>
 <id>urn:bug-hou:GHSA-mmhr-3c5m-f64f</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。子孫セレクタの処理に時間がかかりサービス停止になる&lt;br&gt;→ soupsieve 4.0.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
+<title>[様子見] pip: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4j63-6c4x-wfg4"/>
 <id>urn:bug-hou:GHSA-4j63-6c4x-wfg4</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。:has()内の兄弟セレクタで外部のHTMLの処理に時間がかかる&lt;br&gt;→ soupsieve 2.10.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
 </entry>
 </feed>

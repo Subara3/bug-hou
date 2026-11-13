@@ -7,11 +7,11 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens (CRITICAL)</title>
+<title>[要確認] pip: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-x585-4vv8-2mh2"/>
 <id>urn:bug-hou:GHSA-x585-4vv8-2mh2</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;rucio &amp;gt;= 1.14.0.post1, &amp;lt; 35.9.1 → 35.9.1, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.1 → 38.6.1, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 40.4.2 → 40.4.2, rucio &amp;gt;= 41.0.0rc1, &amp;lt; 41.1.1 → 41.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-100397&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICAL。ログインなしで管理者になりすませるが、利用者の少ないパッケージ&lt;br&gt;→ rucio 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1 以降に更新&lt;/p&gt;&lt;p&gt;rucio &amp;gt;= 1.14.0.post1, &amp;lt; 35.9.1 → 35.9.1, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.1 → 38.6.1, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 40.4.2 → 40.4.2, rucio &amp;gt;= 41.0.0rc1, &amp;lt; 41.1.1 → 41.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-100397&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] pip: rucio has an Authorization Bypass on REST API endpoint for signing URLs (HIGH)</title>

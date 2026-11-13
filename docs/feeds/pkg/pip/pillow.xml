@@ -7,17 +7,17 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
+<title>[要確認] pip: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xcvg-w56q-r89m"/>
 <id>urn:bug-hou:GHSA-xcvg-w56q-r89m</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128067&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。libtiffでTIFFを保存するときだけヒープの書き込みがあふれる&lt;br&gt;→ Pillow 13.0.0 以降に更新&lt;/p&gt;&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128067&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data (MEDIUM)</title>
+<title>[様子見] pip: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wqgw-9xfh-qf2g"/>
 <id>urn:bug-hou:GHSA-wqgw-9xfh-qf2g</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128066&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。TIFFやEXIFの読み込みでメモリを使い切らされる&lt;br&gt;→ Pillow 13.0.0 以降に更新&lt;/p&gt;&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128066&lt;/p&gt;</content>
 </entry>
 </feed>

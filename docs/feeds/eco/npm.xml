@@ -7,95 +7,95 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
+<title>[様子見] Node.js: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r7hq-q2xm-6c5m"/>
 <id>urn:bug-hou:GHSA-r7hq-q2xm-6c5m</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2, @grpc/grpc-js-xds &amp;lt; 1.13.2 → 1.13.2&lt;/p&gt;&lt;p&gt;CVE-2026-126367&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。safe_regexで「または」を含むパターンが部分一致になる&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 / 1.13.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2, @grpc/grpc-js-xds &amp;lt; 1.13.2 → 1.13.2&lt;/p&gt;&lt;p&gt;CVE-2026-126367&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF (MEDIUM)</title>
+<title>[様子見] Node.js: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r4jh-29pc-gfqr"/>
 <id>urn:bug-hou:GHSA-r4jh-29pc-gfqr</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスワードなどに改行が入ると例外でプロセスが落ちる&lt;br&gt;→ basic-ftp 6.2.3 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: @hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process (MEDIUM)</title>
+<title>[様子見] Node.js: @hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-qv5m-9pm6-hqp3"/>
 <id>urn:bug-hou:GHSA-qv5m-9pm6-hqp3</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。WebSocket接続の切り替え中に接続が切れるとプロセスが落ちる&lt;br&gt;→ @hono/node-server 2.1.6 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: @hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy (MEDIUM)</title>
+<title>[様子見] Node.js: @hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-jpvv-r467-5p4w"/>
 <id>urn:bug-hou:GHSA-jpvv-r467-5p4w</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6, @hono/node-server &amp;lt; 1.19.18 → 1.19.18&lt;/p&gt;&lt;p&gt;CVE-2026-126210&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスの\が区切りとして扱われ、リバースプロキシのパス制限を抜けられる&lt;br&gt;→ @hono/node-server 2.1.6 / 1.19.18 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6, @hono/node-server &amp;lt; 1.19.18 → 1.19.18&lt;/p&gt;&lt;p&gt;CVE-2026-126210&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js (LOW)</title>
+<title>[様子見] Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js (LOW)</title>
 <link href="https://github.com/advisories/GHSA-jmv2-qgxf-f995"/>
 <id>urn:bug-hou:GHSA-jmv2-qgxf-f995</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@astrojs/solid-js &amp;gt;= 0.2.0, &amp;lt;= 7.1.1 → 7.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126363&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。スロット名がエスケープされず反射型XSSになる&lt;br&gt;→ @astrojs/solid-js 7.1.2 以降に更新&lt;/p&gt;&lt;p&gt;@astrojs/solid-js &amp;gt;= 0.2.0, &amp;lt;= 7.1.1 → 7.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126363&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator (MEDIUM)</title>
+<title>[様子見] Node.js: Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-h7mg-cq63-vhpq"/>
 <id>urn:bug-hou:GHSA-h7mg-cq63-vhpq</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;hono &amp;gt;= 4.1.4, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126358&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。RegExpRouterで一部のパスがワイルドカードのミドルウェアを通らない&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;gt;= 4.1.4, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126358&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied (MEDIUM)</title>
+<title>[様子見] Node.js: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-gg5j-6742-v827"/>
 <id>urn:bug-hou:GHSA-gg5j-6742-v827</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-128065&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。VirtualHostやRouteに書いたRBACの上書き設定が効かない&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-128065&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte (LOW)</title>
+<title>[様子見] Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte (LOW)</title>
 <link href="https://github.com/advisories/GHSA-f4j9-crrj-867q"/>
 <id>urn:bug-hou:GHSA-f4j9-crrj-867q</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@astrojs/svelte &amp;gt;= 5.7.3, &amp;lt;= 9.1.1 → 9.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126362&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。スロット名がエスケープされず反射型XSSになる&lt;br&gt;→ @astrojs/svelte 9.1.2 以降に更新&lt;/p&gt;&lt;p&gt;@astrojs/svelte &amp;gt;= 5.7.3, &amp;lt;= 9.1.1 → 9.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126362&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list() (MEDIUM)</title>
+<title>[様子見] Node.js: basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5pm8-86m8-9m6r"/>
 <id>urn:bug-hou:GHSA-5pm8-86m8-9m6r</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;basic-ftp &amp;lt;= 6.2.3 → 6.2.4&lt;/p&gt;&lt;p&gt;CVE-2026-126345&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。MLSD一覧の__proto__でClient.list()が落ちる&lt;br&gt;→ basic-ftp 6.2.4 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.3 → 6.2.4&lt;/p&gt;&lt;p&gt;CVE-2026-126345&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix (MEDIUM)</title>
+<title>[様子見] Node.js: Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4m76-xfj5-7975"/>
 <id>urn:bug-hou:GHSA-4m76-xfj5-7975</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126357&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。mount()の中に置いたミドルウェアを通らないパスがある&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126357&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters (MEDIUM)</title>
+<title>[様子見] Node.js: Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4h7h-rv7c-7m2v"/>
 <id>urn:bug-hou:GHSA-4h7h-rv7c-7m2v</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;hono &amp;gt;= 4.5.1, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126356&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。multipart送信で余分な項目があるとフォームの検証が飛ばされる&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;gt;= 4.5.1, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126356&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`) (MEDIUM)</title>
+<title>[様子見] Node.js: Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-46wx-v44x-9hh2"/>
 <id>urn:bug-hou:GHSA-46wx-v44x-9hh2</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126355&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。csrf()がハイパーリンク監査(text/ping)の送信を確認しない&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126355&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection (LOW)</title>
+<title>[様子見] Node.js: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection (LOW)</title>
 <link href="https://github.com/advisories/GHSA-3gg2-335m-rxc6"/>
 <id>urn:bug-hou:GHSA-3gg2-335m-rxc6</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;hono &amp;gt;= 3.12.0, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126359&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。cssヘルパーで閉じタグが分かれているとHTMLを埋め込まれる&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;gt;= 3.12.0, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126359&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients (MEDIUM)</title>

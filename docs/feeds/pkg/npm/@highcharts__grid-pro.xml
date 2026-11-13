@@ -28,17 +28,17 @@
 <content type="html">&lt;p&gt;@highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/dashboards = 3.6.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-116797&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: Highcharts Grid parses pagination language options as HTML (HIGH)</title>
+<title>npm: Highcharts Grid parses pagination language options as HTML (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r5wg-q8fc-p6w2"/>
 <id>urn:bug-hou:GHSA-r5wg-q8fc-p6w2</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highcharts Gridのページ送り文言をHTMLとして解析。HIGH&lt;br&gt;→ grid-lite/grid-pro 3.2.0に更新&lt;/p&gt;&lt;p&gt;@highcharts/grid-lite &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118254&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;@highcharts/grid-lite &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118254&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: Highcharts Grid: `javascript:` URL in credits.href runs script on click (HIGH)</title>
+<title>npm: Highcharts Grid: `javascript:` URL in credits.href runs script on click (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-6hgp-fmhr-mrg4"/>
 <id>urn:bug-hou:GHSA-6hgp-fmhr-mrg4</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Highcharts Gridのcredits.hrefでjavascript: URL実行。HIGH&lt;br&gt;→ dashboards 4.0.0/grid-pro 3.2.0に更新&lt;/p&gt;&lt;p&gt;@highcharts/dashboards &amp;gt;= 3.2.0, &amp;lt;= 3.6.0 → 4.0.0, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118255&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;@highcharts/dashboards &amp;gt;= 3.2.0, &amp;lt;= 3.6.0 → 4.0.0, @highcharts/grid-pro &amp;gt;= 2.0.0, &amp;lt;= 3.1.0 → 3.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-118255&lt;/p&gt;</content>
 </entry>
 </feed>

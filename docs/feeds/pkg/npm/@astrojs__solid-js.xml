@@ -7,10 +7,10 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js (LOW)</title>
+<title>[様子見] npm: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js (LOW)</title>
 <link href="https://github.com/advisories/GHSA-jmv2-qgxf-f995"/>
 <id>urn:bug-hou:GHSA-jmv2-qgxf-f995</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@astrojs/solid-js &amp;gt;= 0.2.0, &amp;lt;= 7.1.1 → 7.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126363&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。スロット名がエスケープされず反射型XSSになる&lt;br&gt;→ @astrojs/solid-js 7.1.2 以降に更新&lt;/p&gt;&lt;p&gt;@astrojs/solid-js &amp;gt;= 0.2.0, &amp;lt;= 7.1.1 → 7.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126363&lt;/p&gt;</content>
 </entry>
 </feed>

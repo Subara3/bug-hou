@@ -7,17 +7,17 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF (MEDIUM)</title>
+<title>[様子見] npm: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r4jh-29pc-gfqr"/>
 <id>urn:bug-hou:GHSA-r4jh-29pc-gfqr</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスワードなどに改行が入ると例外でプロセスが落ちる&lt;br&gt;→ basic-ftp 6.2.3 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list() (MEDIUM)</title>
+<title>[様子見] npm: basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5pm8-86m8-9m6r"/>
 <id>urn:bug-hou:GHSA-5pm8-86m8-9m6r</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;basic-ftp &amp;lt;= 6.2.3 → 6.2.4&lt;/p&gt;&lt;p&gt;CVE-2026-126345&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。MLSD一覧の__proto__でClient.list()が落ちる&lt;br&gt;→ basic-ftp 6.2.4 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.3 → 6.2.4&lt;/p&gt;&lt;p&gt;CVE-2026-126345&lt;/p&gt;</content>
 </entry>
 </feed>

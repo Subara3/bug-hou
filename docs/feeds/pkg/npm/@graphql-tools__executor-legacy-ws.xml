@@ -7,17 +7,17 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] npm: GraphQL Tools: Shared legacy executor routes one subscription's results to a different caller (MEDIUM)</title>
+<title>npm: GraphQL Tools: Shared legacy executor routes one subscription's results to a different caller (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mp66-8ww2-pcwm"/>
 <id>urn:bug-hou:GHSA-mp66-8ww2-pcwm</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GraphQL Toolsの購読結果が別の呼出元に届く。MEDIUM&lt;br&gt;→ executor-legacy-ws 1.1.36に更新&lt;/p&gt;&lt;p&gt;@graphql-tools/executor-legacy-ws &amp;lt;= 1.1.35 → 1.1.36&lt;/p&gt;&lt;p&gt;CVE-2026-118666&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;@graphql-tools/executor-legacy-ws &amp;lt;= 1.1.35 → 1.1.36&lt;/p&gt;&lt;p&gt;CVE-2026-118666&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: GraphQL Tools: Per-request connection parameters persist into later users' WebSocket authentications (HIGH)</title>
+<title>npm: GraphQL Tools: Per-request connection parameters persist into later users' WebSocket authentications (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-434m-5hcj-pxf3"/>
 <id>urn:bug-hou:GHSA-434m-5hcj-pxf3</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GraphQL ToolsのWebSocket認証情報が他の利用者に残る。HIGH&lt;br&gt;→ executor-legacy-ws 1.1.36に更新&lt;/p&gt;&lt;p&gt;@graphql-tools/executor-legacy-ws &amp;lt;= 1.1.35 → 1.1.36&lt;/p&gt;&lt;p&gt;CVE-2026-118665&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;@graphql-tools/executor-legacy-ws &amp;lt;= 1.1.35 → 1.1.36&lt;/p&gt;&lt;p&gt;CVE-2026-118665&lt;/p&gt;</content>
 </entry>
 </feed>
