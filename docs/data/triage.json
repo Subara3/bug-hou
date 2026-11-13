@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-12T00:46:18Z",
+ "updated_at": "2026-11-13T00:45:28Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -180,6 +180,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "CVE-2026-16052": {
+   "level": "watch",
+   "reason": "LOW。http.cookies.Morselで属性値のセミコロンがそのまま出力される",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "CVE-2026-17084": {
    "level": "watch",
@@ -1181,12 +1188,12 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-7pgq-cr25-xvc8": {
-   "level": "check",
-   "reason": "Gravのブループリント動的フィールドで任意の静的メソッド呼出。HIGH",
-   "todo": "getgrav/grav 2.0.11に更新",
+  "GHSA-7m8x-x364-m26j": {
+   "level": "watch",
+   "reason": "MEDIUM。Signal K Serverのログが未認証のWebSocketに見える",
+   "todo": "signalk-serverを2.31.0-beta.1以降に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-13"
   },
   "GHSA-7rv5-mrxv-xcr9": {
    "level": "check",
@@ -1510,13 +1517,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-c4wf-2xxc-68qm": {
-   "level": "check",
-   "reason": "GravのdynamicDataField()が検証なしに任意のcallableを実行。HIGH",
-   "todo": "getgrav/grav 2.0.9に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-c5mf-xmp2-59rc": {
    "level": "watch",
    "reason": "AuthlibでIDトークン自身がnonce検証を無効化できる。MEDIUM",
@@ -1708,6 +1708,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-g6f8-c3x9-jv7f": {
+   "level": "watch",
+   "reason": "MEDIUM。code16/sharpのautocomplete経由のSSRF",
+   "todo": "code16/sharpを9.23.0（10系は10.0.0-beta.4）以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
+  },
   "GHSA-g7vj-c29h-3h5m": {
    "level": "check",
    "reason": "Flarum OAuthのDiscord連携で認証なし乗っ取り。利用者の少ない拡張のCRITICAL",
@@ -1765,6 +1772,13 @@
    "todo": "craft-freeform 5.10.14に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-h24v-f482-8cwf": {
+   "level": "watch",
+   "reason": "MEDIUM。code16/sharpのembed_keyで任意クラスを生成できる",
+   "todo": "code16/sharpを9.23.0（10系は10.0.0-beta.4）以降に更新",
+   "kev": false,
+   "at": "2026-11-13"
   },
   "GHSA-h2r5-x5m7-3935": {
    "level": "watch",
@@ -2339,13 +2353,6 @@
    "todo": "0.33.0 以降に更新",
    "kev": false,
    "at": "2026-11-11"
-  },
-  "GHSA-rmqc-xvr3-v46c": {
-   "level": "check",
-   "reason": "Highchartsのseries.keysでプロトタイプ汚染。HIGH",
-   "todo": "highcharts 11.4.9/12.6.1/13.1.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-rmxm-3fg6-px4f": {
    "level": "watch",
