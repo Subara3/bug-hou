@@ -7,11 +7,11 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[様子見] pip: Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF (MEDIUM)</title>
+<title>pip: Authlib: Unvalidated request_uri fetch in JWT-secured authorization request (JAR) leading to SSRF (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x4rv-c3wx-4cr8"/>
 <id>urn:bug-hou:GHSA-x4rv-c3wx-4cr8</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibのJARで未検証のrequest_uriを取得しSSRF。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;gt;= 1.6.0, &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114620&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;authlib &amp;gt;= 1.6.0, &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114620&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>pip: Authlib: OpenID implicit grant checks raw scope instead of allowed scope before issuing ID tokens (MEDIUM)</title>
@@ -35,11 +35,11 @@
 <content type="html">&lt;p&gt;authlib &amp;lt; 1.9.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114618&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] pip: Authlib: ID token can disable its own nonce validation via the nonce_supported claim (MEDIUM)</title>
+<title>pip: Authlib: ID token can disable its own nonce validation via the nonce_supported claim (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-c5mf-xmp2-59rc"/>
 <id>urn:bug-hou:GHSA-c5mf-xmp2-59rc</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; AuthlibでIDトークン自身がnonce検証を無効化できる。MEDIUM&lt;br&gt;→ authlib 1.9.0に更新&lt;/p&gt;&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114617&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;authlib &amp;lt;= 1.8.0 → 1.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-114617&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>pip: Authlib incomplete algorithm-confusion fix permits HMAC forgery with prefixed public keys (HIGH)</title>

@@ -7,11 +7,11 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
+<title>[様子見] npm: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r99w-jh2x-3mg9"/>
 <id>urn:bug-hou:GHSA-r99w-jh2x-3mg9</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128077&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 先頭の//でミドルウェアのパス判定をすり抜けられるがMEDIUM&lt;br&gt;→ @nuxt/nitro-server 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128077&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>

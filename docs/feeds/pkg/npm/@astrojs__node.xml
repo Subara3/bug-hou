@@ -7,10 +7,10 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems (MEDIUM)</title>
+<title>[様子見] npm: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r3h5-4585-7x3w"/>
 <id>urn:bug-hou:GHSA-r3h5-4585-7x3w</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@astrojs/node &amp;lt;= 11.1.11, astro &amp;gt;= 5.14.3, &amp;lt;= 7.4.6 → 7.4.7&lt;/p&gt;&lt;p&gt;CVE-2026-126364&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; @astrojs/nodeの画像処理で隣のフォルダのファイルが読めるMEDIUM&lt;br&gt;→ astro 7.4.7に更新。@astrojs/nodeは修正版なし&lt;/p&gt;&lt;p&gt;@astrojs/node &amp;lt;= 11.1.11, astro &amp;gt;= 5.14.3, &amp;lt;= 7.4.6 → 7.4.7&lt;/p&gt;&lt;p&gt;CVE-2026-126364&lt;/p&gt;</content>
 </entry>
 </feed>

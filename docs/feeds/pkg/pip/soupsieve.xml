@@ -14,18 +14,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。子孫セレクタの処理に時間がかかりサービス停止になる&lt;br&gt;→ soupsieve 4.0.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack (MEDIUM)</title>
+<title>[様子見] pip: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7g44-g9rc-x53w"/>
 <id>urn:bug-hou:GHSA-7g44-g9rc-x53w</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;soupsieve &amp;gt;= 0.4, &amp;lt;= 2.10 → 3.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-126193&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 入れ子のセレクタで呼び出しが深くなりすぎるMEDIUM&lt;br&gt;→ soupsieve 3.0.2に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;gt;= 0.4, &amp;lt;= 2.10 → 3.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-126193&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Soup Sieve: Exponential ReDoS in selector compilation via \9-run in CSS_ESCAPES/IDENTIFIER (HIGH)</title>
+<title>[要確認] pip: Soup Sieve: Exponential ReDoS in selector compilation via \9-run in CSS_ESCAPES/IDENTIFIER (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-6655-6qjp-jx7x"/>
 <id>urn:bug-hou:GHSA-6655-6qjp-jx7x</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;soupsieve &amp;lt;= 2.10 → 3.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-126191&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; セレクタの処理で正規表現が極端に遅くなるHIGH。広く使われる本体ではない&lt;br&gt;→ soupsieve 3.0.2に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt;= 2.10 → 3.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-126191&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] pip: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>

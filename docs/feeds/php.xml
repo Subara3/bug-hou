@@ -7,11 +7,11 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>PHP: Laravel: Task Output Injection - Concurrency Process (LOW)</title>
+<title>[様子見] PHP: Laravel: Task Output Injection - Concurrency Process (LOW)</title>
 <link href="https://github.com/advisories/GHSA-63hm-g96r-2m2q"/>
 <id>urn:bug-hou:GHSA-63hm-g96r-2m2q</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;laravel/framework &amp;lt; 12.71.0 → 12.71.0, laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.40.0 → 13.40.0&lt;/p&gt;&lt;p&gt;CVE-2026-128083&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LaravelのConcurrencyのタスク出力への注入でLOW&lt;br&gt;→ 12.71.0 / 13.40.0 以降に更新&lt;/p&gt;&lt;p&gt;laravel/framework &amp;lt; 12.71.0 → 12.71.0, laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.40.0 → 13.40.0&lt;/p&gt;&lt;p&gt;CVE-2026-128083&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: code16/sharp: Arbitrary class instantiation through the embed_key API parameter (MEDIUM)</title>

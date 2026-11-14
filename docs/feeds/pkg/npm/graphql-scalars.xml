@@ -7,10 +7,10 @@
 <updated>2026-10-28T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] npm: graphql-scalars PhoneNumber scalar is vulnerable to regular expression denial of service (HIGH)</title>
+<title>npm: graphql-scalars PhoneNumber scalar is vulnerable to regular expression denial of service (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-x8rm-f576-gq67"/>
 <id>urn:bug-hou:GHSA-x8rm-f576-gq67</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; graphql-scalarsのPhoneNumberでReDoS。HIGH&lt;br&gt;→ graphql-scalars 2.0.1に更新&lt;/p&gt;&lt;p&gt;graphql-scalars &amp;gt;= 1.24.1, &amp;lt;= 2.0.0 → 2.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-115887&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;graphql-scalars &amp;gt;= 1.24.1, &amp;lt;= 2.0.0 → 2.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-115887&lt;/p&gt;</content>
 </entry>
 </feed>

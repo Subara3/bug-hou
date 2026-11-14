@@ -7,10 +7,10 @@
 <updated>2026-11-02T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] pip: Hydra legacy target blacklist permits unsafe PyYAML loading (HIGH)</title>
+<title>pip: Hydra legacy target blacklist permits unsafe PyYAML loading (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-wf6j-7hvr-gr93"/>
 <id>urn:bug-hou:GHSA-wf6j-7hvr-gr93</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Hydraの旧ターゲット拒否リストで安全でないPyYAML読込を許す。HIGH&lt;br&gt;→ hydra-core 1.3.8/1.4.0rc3に更新&lt;/p&gt;&lt;p&gt;hydra-core &amp;gt;= 1.3.6, &amp;lt; 1.3.8 → 1.3.8, hydra-core &amp;gt;= 1.4.0.dev9, &amp;lt; 1.4.0rc3 → 1.4.0rc3&lt;/p&gt;&lt;p&gt;GHSA-wf6j-7hvr-gr93&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;hydra-core &amp;gt;= 1.3.6, &amp;lt; 1.3.8 → 1.3.8, hydra-core &amp;gt;= 1.4.0.dev9, &amp;lt; 1.4.0rc3 → 1.4.0rc3&lt;/p&gt;&lt;p&gt;GHSA-wf6j-7hvr-gr93&lt;/p&gt;</content>
 </entry>
 </feed>

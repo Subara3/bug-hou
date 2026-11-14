@@ -21,11 +21,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravでadmin.users権限者がスーパー管理者に昇格。HIGH&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75837&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] composer: Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images (HIGH)</title>
+<title>composer: Grav: Path Traversal in ImageMedium::watermark() — arbitrary file disclosure via publicly-cached images (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-w3f4-8pj2-599w"/>
 <id>urn:bug-hou:GHSA-w3f4-8pj2-599w</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのwatermark()でパストラバーサルし任意ファイル漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.11に更新&lt;/p&gt;&lt;p&gt;getgrav/grav = 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69089&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;getgrav/grav = 2.0.10 → 2.0.11&lt;/p&gt;&lt;p&gt;CVE-2026-69089&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] composer: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>

@@ -7,10 +7,10 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: envd: Host file disclosure through requirements path traversal and TOCTOU (MEDIUM)</title>
+<title>[様子見] pip: envd: Host file disclosure through requirements path traversal and TOCTOU (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-jv6m-48w5-5rpr"/>
 <id>urn:bug-hou:GHSA-jv6m-48w5-5rpr</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;envd &amp;gt;= 0.3.38, &amp;lt; 1.3.6 → 1.3.6&lt;/p&gt;&lt;p&gt;CVE-2026-128079&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; envdのrequirementsのパス指定でホストのファイルが漏れるMEDIUM&lt;br&gt;→ envd 1.3.6に更新&lt;/p&gt;&lt;p&gt;envd &amp;gt;= 0.3.38, &amp;lt; 1.3.6 → 1.3.6&lt;/p&gt;&lt;p&gt;CVE-2026-128079&lt;/p&gt;</content>
 </entry>
 </feed>

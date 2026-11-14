@@ -7,10 +7,10 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http (MEDIUM)</title>
+<title>[様子見] npm: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3v2p-hm54-8qcq"/>
 <id>urn:bug-hou:GHSA-3v2p-hm54-8qcq</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@opentelemetry/instrumentation-http &amp;gt;= 0.204.0, &amp;lt; 0.222.0 → 0.222.0&lt;/p&gt;&lt;p&gt;CVE-2026-128080&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; instrumentation-httpで秘密の情報がログに残るMEDIUM&lt;br&gt;→ @opentelemetry/instrumentation-http 0.222.0に更新&lt;/p&gt;&lt;p&gt;@opentelemetry/instrumentation-http &amp;gt;= 0.204.0, &amp;lt; 0.222.0 → 0.222.0&lt;/p&gt;&lt;p&gt;CVE-2026-128080&lt;/p&gt;</content>
 </entry>
 </feed>

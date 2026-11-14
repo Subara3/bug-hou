@@ -7,11 +7,11 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
+<title>[様子見] Node.js: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r99w-jh2x-3mg9"/>
 <id>urn:bug-hou:GHSA-r99w-jh2x-3mg9</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128077&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 先頭の//でミドルウェアのパス判定をすり抜けられるがMEDIUM&lt;br&gt;→ @nuxt/nitro-server 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128077&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
@@ -28,11 +28,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスワードなどに改行が入ると例外でプロセスが落ちる&lt;br&gt;→ basic-ftp 6.2.3 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems (MEDIUM)</title>
+<title>[様子見] Node.js: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r3h5-4585-7x3w"/>
 <id>urn:bug-hou:GHSA-r3h5-4585-7x3w</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@astrojs/node &amp;lt;= 11.1.11, astro &amp;gt;= 5.14.3, &amp;lt;= 7.4.6 → 7.4.7&lt;/p&gt;&lt;p&gt;CVE-2026-126364&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; @astrojs/nodeの画像処理で隣のフォルダのファイルが読めるMEDIUM&lt;br&gt;→ astro 7.4.7に更新。@astrojs/nodeは修正版なし&lt;/p&gt;&lt;p&gt;@astrojs/node &amp;lt;= 11.1.11, astro &amp;gt;= 5.14.3, &amp;lt;= 7.4.6 → 7.4.7&lt;/p&gt;&lt;p&gt;CVE-2026-126364&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: @hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process (MEDIUM)</title>
@@ -42,18 +42,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。WebSocket接続の切り替え中に接続が切れるとプロセスが落ちる&lt;br&gt;→ @hono/node-server 2.1.6 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file (MEDIUM)</title>
+<title>[様子見] Node.js: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mjrq-cffv-q4qc"/>
 <id>urn:bug-hou:GHSA-mjrq-cffv-q4qc</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nuxt/schema &amp;gt;= 3.5.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128070&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxtの開発サーバーで親フォルダのファイルが見えるMEDIUM&lt;br&gt;→ @nuxt/schema 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/schema &amp;gt;= 3.5.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128070&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Astro: XSS via attribute injection in dynamic tag names (LOW)</title>
+<title>[様子見] Node.js: Astro: XSS via attribute injection in dynamic tag names (LOW)</title>
 <link href="https://github.com/advisories/GHSA-mh32-jxcr-mh9f"/>
 <id>urn:bug-hou:GHSA-mh32-jxcr-mh9f</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;astro &amp;lt;= 7.4.4 → 7.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-126361&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 動的なタグ名の属性注入によるXSSでLOW&lt;br&gt;→ astro 7.4.5以降に更新&lt;/p&gt;&lt;p&gt;astro &amp;lt;= 7.4.4 → 7.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-126361&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: @hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy (MEDIUM)</title>
@@ -119,11 +119,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。csrf()がハイパーリンク監査(text/ping)の送信を確認しない&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126355&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http (MEDIUM)</title>
+<title>[様子見] Node.js: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3v2p-hm54-8qcq"/>
 <id>urn:bug-hou:GHSA-3v2p-hm54-8qcq</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@opentelemetry/instrumentation-http &amp;gt;= 0.204.0, &amp;lt; 0.222.0 → 0.222.0&lt;/p&gt;&lt;p&gt;CVE-2026-128080&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; instrumentation-httpで秘密の情報がログに残るMEDIUM&lt;br&gt;→ @opentelemetry/instrumentation-http 0.222.0に更新&lt;/p&gt;&lt;p&gt;@opentelemetry/instrumentation-http &amp;gt;= 0.204.0, &amp;lt; 0.222.0 → 0.222.0&lt;/p&gt;&lt;p&gt;CVE-2026-128080&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection (LOW)</title>

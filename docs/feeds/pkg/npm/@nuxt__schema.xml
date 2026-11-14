@@ -7,10 +7,10 @@
 <updated>2026-11-13T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file (MEDIUM)</title>
+<title>[様子見] npm: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mjrq-cffv-q4qc"/>
 <id>urn:bug-hou:GHSA-mjrq-cffv-q4qc</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nuxt/schema &amp;gt;= 3.5.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128070&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxtの開発サーバーで親フォルダのファイルが見えるMEDIUM&lt;br&gt;→ @nuxt/schema 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/schema &amp;gt;= 3.5.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128070&lt;/p&gt;</content>
 </entry>
 </feed>
