@@ -330,6 +330,206 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-89p3-fcch-88ph",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126299",
+   "summary": "NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-14",
+   "url": "https://github.com/advisories/GHSA-89p3-fcch-88ph",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-r53h-rw34-8h97",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126298",
+   "summary": "NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-14",
+   "url": "https://github.com/advisories/GHSA-r53h-rw34-8h97",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-v8f3-6phw-6mh9",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126297",
+   "summary": "NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-14",
+   "url": "https://github.com/advisories/GHSA-v8f3-6phw-6mh9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-fg9w-wfp5-j933",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126295",
+   "summary": "NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:L",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-fg9w-wfp5-j933",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": ">= 3.10.0, <= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-gpwc-27cw-rh9r",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-gpwc-27cw-rh9r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": ">= 3.6, <= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-ffr9-mgrr-wcvr",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126300",
+   "summary": "NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-ffr9-mgrr-wcvr",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": ">= 3.2.5, <= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-8fx7-8jr8-84rv",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126303",
+   "summary": "NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-8fx7-8jr8-84rv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-qg35-44qx-7vrr",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126304",
+   "summary": "NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-qg35-44qx-7vrr",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": ">= 3.10.0, <= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-5cjw-f85j-cv6r",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126347",
+   "summary": "Tornado: Open redirect via triple-slash redirect paths",
+   "severity": "LOW",
+   "score": 3.1,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-5cjw-f85j-cv6r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "tornado",
+     "range": "<= 6.6.0",
+     "fixed": "6.6.1"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-vvf4-9x63-8xvv",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128089",
+   "summary": "dnspython has excessive memory and CPU use",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-vvf4-9x63-8xvv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "dnspython",
+     "range": "< 2.9.2",
+     "fixed": "2.9.2"
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
    "id": "GHSA-jv6m-48w5-5rpr",
    "ecosystem": "pip",
    "cve": "CVE-2026-128079",
@@ -408,6 +608,166 @@
     }
    ],
    "first_seen": "2026-11-13"
+  },
+  {
+   "id": "GHSA-rg32-vgf9-927c",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-rg32-vgf9-927c",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-7r4r-6ppg-7ff8",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-7r4r-6ppg-7ff8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-4hvg-fv5c-9936",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Unbounded CPU consumption in NLTK SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-4hvg-fv5c-9936",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-jh6r-h4rx-2j3w",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Quadratic-time CPU denial of service in NLTK CCG lexicon parser (fromstring) on wide bracket bodies and operator chains",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-jh6r-h4rx-2j3w",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-g5wx-957h-f4wj",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-g5wx-957h-f4wj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-6665-2vj3-h76r",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0)",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-6665-2vj3-h76r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-qvhx-rvgc-jhwf",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-qvhx-rvgc-jhwf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-f7j6-hf97-9v99",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read",
+   "severity": "HIGH",
+   "score": 7.0,
+   "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-f7j6-hf97-9v99",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-14"
   },
   {
    "id": "GHSA-x585-4vv8-2mh2",
@@ -2023,396 +2383,6 @@
     }
    ],
    "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-8mx5-7m5m-r77g",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112910",
-   "summary": "filelock: WindowsFileLock ignores mode: a 0o600 lock file and the ReadWriteLock database inherit the directory ACL",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-8mx5-7m5m-r77g",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.10.0, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-cwqr-hh33-gh44",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112915",
-   "summary": "filelock ReadWriteLock: a crafted lock database makes every acquire stall or hang regardless of timeout",
-   "severity": "MEDIUM",
-   "score": 5.5,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-cwqr-hh33-gh44",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.20.4, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-rfpc-qcw5-3pc4",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112939",
-   "summary": "filelock: SoftFileLock removes a live holder's marker when another user forges the PID in a writable marker",
-   "severity": "MEDIUM",
-   "score": 4.7,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-rfpc-qcw5-3pc4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.22.0, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-9j6q-wvj5-jgjg",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112912",
-   "summary": "filelock: Symlink swap during SoftFileLock's writability check leaks whether a path exists and is writable by the lock taker",
-   "severity": "LOW",
-   "score": 2.5,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-9j6q-wvj5-jgjg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.32.6, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-69hj-f68j-2879",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112909",
-   "summary": "filelock: UnixFileLock truncates and chmods any regular file another user renames or hard-links onto the lock path",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-69hj-f68j-2879",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": "<= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-j8f7-rjxc-mr56",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112936",
-   "summary": "filelock: ReadWriteLock follows a symlink at the lock path into SQLite",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-j8f7-rjxc-mr56",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.20.4, <= 4.0.8",
-     "fixed": "4.0.9"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-m462-7rxw-wvpg",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112938",
-   "summary": "filelock: StrictSoftFileLock follows a symbolic link swapped in at <path>.filelock and creates claim files in a directory another local user chooses",
-   "severity": "MEDIUM",
-   "score": 5.8,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-m462-7rxw-wvpg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.30.0, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-fj95-fr6c-h845",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112934",
-   "summary": "filelock: SoftReadWriteLock holder refresh writes through a hard link and hangs on a named pipe that another local user renames over its record",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-fj95-fr6c-h845",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 4.0.0, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-fq56-3cx3-fjxp",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112935",
-   "summary": "filelock: SoftFileLock stale-lock break removes a live lock file on a reused inode number and admits two holders",
-   "severity": "MEDIUM",
-   "score": 4.7,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-fq56-3cx3-fjxp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.22.0, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-3fx2-cqw9-xr3c",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-118667",
-   "summary": "LangGraph: Unencoded identifiers in LangGraph SDK v3 streaming can redirect authenticated GET requests",
-   "severity": "MEDIUM",
-   "score": 4.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-3fx2-cqw9-xr3c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "langgraph-sdk",
-     "range": ">= 0.4.0, < 0.4.6",
-     "fixed": "0.4.6"
-    },
-    {
-     "name": "langgraph",
-     "range": ">= 1.2.3, < 1.2.14",
-     "fixed": "1.2.14"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-5j9r-fx4x-rpvg",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-58273",
-   "summary": "rucio has an Authorization Bypass on REST API endpoint for signing URLs",
-   "severity": "HIGH",
-   "score": 8.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-5j9r-fx4x-rpvg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "rucio",
-     "range": ">= 1.16.1, < 35.9.0",
-     "fixed": "35.9.0"
-    },
-    {
-     "name": "rucio",
-     "range": ">= 36.0.0rc1, < 38.6.0",
-     "fixed": "38.6.0"
-    },
-    {
-     "name": "rucio",
-     "range": ">= 39.0.0rc1, < 41.0.0rc1",
-     "fixed": "41.0.0rc1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-m65p-9j7q-6w33",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116690",
-   "summary": "MLflow vulnerable to arbitrary file read on unauthenticated servers via prompt model version source",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-m65p-9j7q-6w33",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mlflow",
-     "range": ">= 3.10.0, < 3.17.0",
-     "fixed": "3.17.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-j7qq-vr8c-xvw3",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116691",
-   "summary": "MLflow CrewAI autologging records LLM provider API keys in logged trace spans",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-j7qq-vr8c-xvw3",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mlflow",
-     "range": ">= 2.19.0, < 3.17.0",
-     "fixed": "3.17.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-26p8-2jq9-3vq9",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116692",
-   "summary": "MLflow vulnerable to remote code execution on unauthenticated servers via third-party scorer deserialization importing caller-placed artifact modules",
-   "severity": "CRITICAL",
-   "score": 9.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-26p8-2jq9-3vq9",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mlflow",
-     "range": ">= 3.12.0rc0, < 3.17.0",
-     "fixed": "3.17.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-w4fh-qvv9-3v23",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116684",
-   "summary": "Model Context Protocol Python SDK: Server bearer-token authentication accepts tokens issued for a different resource server",
-   "severity": "MEDIUM",
-   "score": 6.8,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-w4fh-qvv9-3v23",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mcp",
-     "range": ">= 2.0.0, < 2.2.0",
-     "fixed": "2.2.0"
-    },
-    {
-     "name": "mcp",
-     "range": ">= 1.10.0, < 1.30.0",
-     "fixed": "1.30.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-f5m9-jfrj-jjj7",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116694",
-   "summary": "OpenTelemetry Python: Unbounded memory allocation in Jaeger baggage propagation",
-   "severity": "MEDIUM",
-   "score": 6.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-f5m9-jfrj-jjj7",
-   "kev": false,
-   "packages": [
-    {
-     "name": "opentelemetry-propagator-jaeger",
-     "range": "<= 1.44.0",
-     "fixed": "1.45.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-5h93-6whr-6q8j",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116685",
-   "summary": "Model Context Protocol Python SDK: HTTP client transports followed cross-origin redirects carrying custom headers and bodies",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-5h93-6whr-6q8j",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mcp",
-     "range": ">= 2.0.0, < 2.2.0",
-     "fixed": "2.2.0"
-    },
-    {
-     "name": "mcp",
-     "range": ">= 1.8.0, < 1.30.0",
-     "fixed": "1.30.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-rwrf-2pqf-9j8j",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116686",
-   "summary": "Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-   "published": "2026-10-27",
-   "url": "https://github.com/advisories/GHSA-rwrf-2pqf-9j8j",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mcp",
-     "range": ">= 2.0.0, < 2.2.0",
-     "fixed": "2.2.0"
-    },
-    {
-     "name": "mcp",
-     "range": ">= 1.10.0, < 1.30.0",
-     "fixed": "1.30.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
   }
  ],
  "eol": {

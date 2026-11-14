@@ -4,8 +4,134 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/pip.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/pip.xml</id>
-<updated>2026-11-13T00:00:00Z</updated>
+<updated>2026-11-14T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: dnspython has excessive memory and CPU use (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-vvf4-9x63-8xvv"/>
+<id>urn:bug-hou:GHSA-vvf4-9x63-8xvv</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;dnspython &amp;lt; 2.9.2 → 2.9.2&lt;/p&gt;&lt;p&gt;CVE-2026-128089&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-v8f3-6phw-6mh9"/>
+<id>urn:bug-hou:GHSA-v8f3-6phw-6mh9</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126297&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rg32-vgf9-927c"/>
+<id>urn:bug-hou:GHSA-rg32-vgf9-927c</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-rg32-vgf9-927c&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r53h-rw34-8h97"/>
+<id>urn:bug-hou:GHSA-r53h-rw34-8h97</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126298&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qvhx-rvgc-jhwf"/>
+<id>urn:bug-hou:GHSA-qvhx-rvgc-jhwf</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-qvhx-rvgc-jhwf&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-qg35-44qx-7vrr"/>
+<id>urn:bug-hou:GHSA-qg35-44qx-7vrr</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.10.0, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126304&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: Quadratic-time CPU denial of service in NLTK CCG lexicon parser (fromstring) on wide bracket bodies and operator chains (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-jh6r-h4rx-2j3w"/>
+<id>urn:bug-hou:GHSA-jh6r-h4rx-2j3w</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-jh6r-h4rx-2j3w&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-gpwc-27cw-rh9r"/>
+<id>urn:bug-hou:GHSA-gpwc-27cw-rh9r</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.6, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-gpwc-27cw-rh9r&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-g5wx-957h-f4wj"/>
+<id>urn:bug-hou:GHSA-g5wx-957h-f4wj</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-g5wx-957h-f4wj&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-fg9w-wfp5-j933"/>
+<id>urn:bug-hou:GHSA-fg9w-wfp5-j933</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.10.0, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126295&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: Quadratic CPU exhaustion in TreebankWordTokenizer.span_tokenize via list.pop(0) in quote-restore loop (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-ffr9-mgrr-wcvr"/>
+<id>urn:bug-hou:GHSA-ffr9-mgrr-wcvr</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.2.5, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126300&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: BllipParser passes caller-supplied model paths to the bllipparser C extension with no pathsec check, enabling arbitrary read (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-f7j6-hf97-9v99"/>
+<id>urn:bug-hou:GHSA-f7j6-hf97-9v99</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-f7j6-hf97-9v99&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: Unbounded CPU consumption in SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8fx7-8jr8-84rv"/>
+<id>urn:bug-hou:GHSA-8fx7-8jr8-84rv</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126303&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: NLTK: Quadratic-time CPU denial of service in CCG lexicon parser (fromstring) on wide bracket bodies and operator chains (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-89p3-fcch-88ph"/>
+<id>urn:bug-hou:GHSA-89p3-fcch-88ph</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126299&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: Symlink escape in YCOECorpusReader lets a psd/pos directory symlink read files outside the corpus root within the data sandbox (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7r4r-6ppg-7ff8"/>
+<id>urn:bug-hou:GHSA-7r4r-6ppg-7ff8</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-7r4r-6ppg-7ff8&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: Quadratic-time CPU denial of service in Tree.chomsky_normal_form right-factor binarization via list.pop(0) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-6665-2vj3-h76r"/>
+<id>urn:bug-hou:GHSA-6665-2vj3-h76r</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-6665-2vj3-h76r&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Tornado: Open redirect via triple-slash redirect paths (LOW)</title>
+<link href="https://github.com/advisories/GHSA-5cjw-f85j-cv6r"/>
+<id>urn:bug-hou:GHSA-5cjw-f85j-cv6r</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tornado &amp;lt;= 6.6.0 → 6.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-126347&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Duplicate Advisory: Unbounded CPU consumption in NLTK SteppingRecursiveDescentParser.parse() with ambiguous or self-embedding grammars (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4hvg-fv5c-9936"/>
+<id>urn:bug-hou:GHSA-4hvg-fv5c-9936</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3&lt;/p&gt;&lt;p&gt;GHSA-4hvg-fv5c-9936&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] Python: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xcvg-w56q-r89m"/>
@@ -229,131 +355,5 @@
 <id>urn:bug-hou:GHSA-9vhv-g5hf-m7m7</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MEDIUMだが、初期設定で認証なしに外へ公開し、--shell付きだと外からコマンドを実行される&lt;br&gt;→ fast-agent-mcp を 0.7.21 以降に更新&lt;/p&gt;&lt;p&gt;fast-agent-mcp &amp;lt;= 0.7.20 → 0.7.21&lt;/p&gt;&lt;p&gt;CVE-2026-102610&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Code Graph RAG structural tools follow out-of-root symlinks (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-85gg-2gfq-q95m"/>
-<id>urn:bug-hou:GHSA-85gg-2gfq-q95m</id>
-<updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。構造解析ツールがルート外へのシンボリックリンクをたどる&lt;br&gt;→ code-graph-rag を 0.0.587 以降に更新&lt;/p&gt;&lt;p&gt;code-graph-rag &amp;lt;= 0.0.586 → 0.0.587&lt;/p&gt;&lt;p&gt;CVE-2026-87008&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: fastapi-code-generator: Import-time RCE via response status-code key -&gt; unescaped @app.get(..., responses={...}) dict (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-6xmv-cjr5-w3q8"/>
-<id>urn:bug-hou:GHSA-6xmv-cjr5-w3q8</id>
-<updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICALだが利用者の少ないパッケージ。応答コードのキー経由で生成コードにコードを仕込まれる&lt;br&gt;→ fastapi-code-generator を 0.8.1 以降に更新&lt;/p&gt;&lt;p&gt;fastapi-code-generator &amp;lt; 0.8.1 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-63469&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: GeoNode has Stored XSS in Documents metadata abstract field (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-r4hm-p9f9-fj9v"/>
-<id>urn:bug-hou:GHSA-r4hm-p9f9-fj9v</id>
-<updated>2026-11-07T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GeoNodeの文書メタデータ概要欄の保存型XSSでMEDIUM&lt;br&gt;→ GeoNodeを5.0.3以降に更新&lt;/p&gt;&lt;p&gt;GeoNode &amp;lt; 5.0.3 → 5.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-55649&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: GeoNode has Unrestricted File Upload (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-fqpv-mq26-pr4j"/>
-<id>urn:bug-hou:GHSA-fqpv-mq26-pr4j</id>
-<updated>2026-11-07T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; GeoNodeのファイルアップロード制限不備でMEDIUM&lt;br&gt;→ GeoNodeを5.0.3以降に更新&lt;/p&gt;&lt;p&gt;GeoNode &amp;lt;= 5.0.2 → 5.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-46429&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: GeoNode has OS command injection via uploaded file layer name (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-9fpx-fr6j-2vh6"/>
-<id>urn:bug-hou:GHSA-9fpx-fr6j-2vh6</id>
-<updated>2026-11-07T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GeoNodeでアップロードしたファイルのレイヤー名からOSコマンドを実行されるHIGH&lt;br&gt;→ GeoNodeを5.1.0以降に更新&lt;/p&gt;&lt;p&gt;GeoNode &amp;lt; 5.1.0 → 5.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-33050&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Banks: Unsafe importlib.import_module of attacker-controlled Tool.import_path in CompletionExtension allows RCE (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-64vx-6h2c-rjh7"/>
-<id>urn:bug-hou:GHSA-64vx-6h2c-rjh7</id>
-<updated>2026-11-05T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。CompletionExtensionで外から渡したimport_pathを読み込みRCEになる&lt;br&gt;→ banksを使っているなら2.4.3に更新&lt;/p&gt;&lt;p&gt;banks &amp;lt;= 2.4.2 → 2.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-61536&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Stanza: RCE via pickle deserialization in the lemmatizer (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-gh9r-c94j-cmp5"/>
-<id>urn:bug-hou:GHSA-gh9r-c94j-cmp5</id>
-<updated>2026-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; stanzaのHIGH。lemmatizerのpickle読み込みでコード実行&lt;br&gt;→ stanza 1.14.0を使っていれば1.15.0に更新&lt;/p&gt;&lt;p&gt;stanza = 1.14.0 → 1.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-115878&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-rwrf-2pqf-9j8j"/>
-<id>urn:bug-hou:GHSA-rwrf-2pqf-9j8j</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MCP Python SDKのクライアントがサーバー指定の$ref URLを取得。MEDIUM&lt;br&gt;→ mcp 1.30.0/2.2.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.10.0, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-116686&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: pypdf has possible large memory usage when parsing cross-reference streams (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-x3rh-gjgm-fmqc"/>
-<id>urn:bug-hou:GHSA-x3rh-gjgm-fmqc</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pypdfの相互参照ストリーム解析で大量メモリ。HIGH&lt;br&gt;→ pypdf 6.21.3以降に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.3 → 6.21.3&lt;/p&gt;&lt;p&gt;CVE-2026-119209&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: GraphQL-core has denial of service via memory leak in aborted validations (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-mpqx-q82w-9x46"/>
-<id>urn:bug-hou:GHSA-mpqx-q82w-9x46</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GraphQL-coreの中断した検証でメモリリーク。HIGH&lt;br&gt;→ graphql-core 3.3.1に更新&lt;/p&gt;&lt;p&gt;graphql-core &amp;gt;= 3.3.0a3, &amp;lt; 3.3.1 → 3.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-119286&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: pyasn1 has quadratic-complexity denial of service in binary REAL decoding (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-mm57-4v3p-rchx"/>
-<id>urn:bug-hou:GHSA-mm57-4v3p-rchx</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pyasn1のREALデコードで二乗時間のDoS。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;lt;= 0.6.4 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119197&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: pypdf has possible infinite loop when cloning dictionaries (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-mfr5-77xh-9j7h"/>
-<id>urn:bug-hou:GHSA-mfr5-77xh-9j7h</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pypdfの辞書複製で無限ループ。HIGH&lt;br&gt;→ pypdf 6.21.4に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.4 → 6.21.4&lt;/p&gt;&lt;p&gt;CVE-2026-119205&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-jpxq-7h8p-2q76"/>
-<id>urn:bug-hou:GHSA-jpxq-7h8p-2q76</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; joserfcのJWE recipients無制限でCPU枯渇。HIGH&lt;br&gt;→ joserfc 1.7.5以降に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.5 → 1.7.5&lt;/p&gt;&lt;p&gt;CVE-2026-119283&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-fm9c-5rcf-2q5p"/>
-<id>urn:bug-hou:GHSA-fm9c-5rcf-2q5p</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pyasn1のスキーマなしコンテナデコードで二乗時間。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;gt;= 0.3.3, &amp;lt; 0.6.5 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119194&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: pypdf has possible large memory usage when parsing page tree (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-cggf-277g-3q54"/>
-<id>urn:bug-hou:GHSA-cggf-277g-3q54</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pypdfのページツリー解析で大量メモリ消費。HIGH&lt;br&gt;→ pypdf 6.21.4に更新&lt;/p&gt;&lt;p&gt;pypdf &amp;lt; 6.21.4 → 6.21.4&lt;/p&gt;&lt;p&gt;CVE-2026-119204&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Authlib RFC 7592 examples omit registration-access-token client binding (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-c73q-w75p-j82v"/>
-<id>urn:bug-hou:GHSA-c73q-w75p-j82v</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AuthlibのRFC 7592の例でトークンとクライアントの紐付けが欠落。HIGH&lt;br&gt;→ Authlib 1.9.1に更新&lt;/p&gt;&lt;p&gt;Authlib &amp;gt;= 0.15, &amp;lt;= 1.9.0 → 1.9.1&lt;/p&gt;&lt;p&gt;CVE-2026-116672&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-9pg5-8c7x-5hfx"/>
-<id>urn:bug-hou:GHSA-9pg5-8c7x-5hfx</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; joserfcのJWSサイズ確認前にメモリ確保。MEDIUM&lt;br&gt;→ joserfc 1.7.6に更新&lt;/p&gt;&lt;p&gt;joserfc &amp;lt; 1.7.6 → 1.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-119284&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-9m75-vc3g-4x39"/>
-<id>urn:bug-hou:GHSA-9m75-vc3g-4x39</id>
-<updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pyasn1の構造化文字列デコードで二乗時間のDoS。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;lt;= 0.6.4 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119195&lt;/p&gt;</content>
 </entry>
 </feed>

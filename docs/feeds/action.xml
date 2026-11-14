@@ -38,13 +38,6 @@ Affected releases of mod_h2 from GitHub: from 2.0.8 through 2.0.42.&lt;/p&gt;</c
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; WordPress本体のRCEでKEV掲載。本体の更新中にログインなしでコードを実行される&lt;br&gt;→ 4.7〜7.1.3が影響。修正版に更新する&lt;/p&gt;&lt;p&gt;WordPress Core is vulnerable to Remote Code Execution in versions 4.7 through 7.1.3. This is due to predictable, web-accessible staging paths used during full-package core upgrades. This makes it possible for unauthenticated attackers to execute code on the server during the upgrade window.&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要対応] Python: MLflow vulnerable to remote code execution on unauthenticated servers via third-party scorer deserialization importing caller-placed artifact modules (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-26p8-2jq9-3vq9"/>
-<id>urn:bug-hou:GHSA-26p8-2jq9-3vq9</id>
-<updated>2026-10-27T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; MLflowのCRITICAL。認証なしのサーバーなら外から任意のコードを実行される&lt;br&gt;→ mlflowを3.17.0以降に更新&lt;/p&gt;&lt;p&gt;mlflow &amp;gt;= 3.12.0rc0, &amp;lt; 3.17.0 → 3.17.0&lt;/p&gt;&lt;p&gt;CVE-2026-116692&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要対応] Python: CVE-2026-115557 9.4 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-115557"/>
 <id>urn:bug-hou:CVE-2026-115557</id>

@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/tornado.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/pip/tornado.xml</id>
-<updated>2026-10-28T00:00:00Z</updated>
+<updated>2026-11-14T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>pip: Tornado: Open redirect via triple-slash redirect paths (LOW)</title>
+<link href="https://github.com/advisories/GHSA-5cjw-f85j-cv6r"/>
+<id>urn:bug-hou:GHSA-5cjw-f85j-cv6r</id>
+<updated>2026-11-14T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tornado &amp;lt;= 6.6.0 → 6.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-126347&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] pip: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r4j5-9xpp-3985"/>
