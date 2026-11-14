@@ -7,11 +7,11 @@
 <updated>2026-11-14T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: dnspython has excessive memory and CPU use (HIGH)</title>
+<title>[要確認] pip: dnspython has excessive memory and CPU use (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-vvf4-9x63-8xvv"/>
 <id>urn:bug-hou:GHSA-vvf4-9x63-8xvv</id>
 <updated>2026-11-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;dnspython &amp;lt; 2.9.2 → 2.9.2&lt;/p&gt;&lt;p&gt;CVE-2026-128089&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; dnspythonでメモリとCPUを使いすぎる。HIGH&lt;br&gt;→ dnspythonの利用を確認し、2.9.2に更新&lt;/p&gt;&lt;p&gt;dnspython &amp;lt; 2.9.2 → 2.9.2&lt;/p&gt;&lt;p&gt;CVE-2026-128089&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>pip: dnspython dns.name.from_wire_parser() excessive CPU use (HIGH)</title>

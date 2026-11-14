@@ -7,11 +7,11 @@
 <updated>2026-11-14T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Tornado: Open redirect via triple-slash redirect paths (LOW)</title>
+<title>[様子見] pip: Tornado: Open redirect via triple-slash redirect paths (LOW)</title>
 <link href="https://github.com/advisories/GHSA-5cjw-f85j-cv6r"/>
 <id>urn:bug-hou:GHSA-5cjw-f85j-cv6r</id>
 <updated>2026-11-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tornado &amp;lt;= 6.6.0 → 6.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-126347&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Tornadoでスラッシュ3つのパスによるオープンリダイレクト。LOW&lt;/p&gt;&lt;p&gt;tornado &amp;lt;= 6.6.0 → 6.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-126347&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] pip: Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks (MEDIUM)</title>

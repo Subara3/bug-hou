@@ -7,11 +7,11 @@
 <updated>2026-11-14T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: ag-psd can exhaust memory when parsing crafted PSD dimensions (HIGH)</title>
+<title>[要確認] npm: ag-psd can exhaust memory when parsing crafted PSD dimensions (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-qfx6-q44v-9qqw"/>
 <id>urn:bug-hou:GHSA-qfx6-q44v-9qqw</id>
 <updated>2026-11-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;ag-psd &amp;lt; 31.0.0 → 31.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-62297&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; ag-psdで細工したPSDの寸法を読むとメモリを使い切る。HIGH&lt;br&gt;→ ag-psdの利用を確認し、31.0.0に更新&lt;/p&gt;&lt;p&gt;ag-psd &amp;lt; 31.0.0 → 31.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-62297&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: ag-psd: Uncontrolled Memory Allocation in PSD Layer Decoding (totalMemoryLimit bypass) (HIGH)</title>

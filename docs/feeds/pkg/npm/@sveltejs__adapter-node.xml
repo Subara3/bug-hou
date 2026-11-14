@@ -7,10 +7,10 @@
 <updated>2026-11-14T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch` (MEDIUM)</title>
+<title>[様子見] npm: SvelteKit: `@sveltejs/adapter-node` crashes when proxying certain requests via `fetch` (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rqw3-x7hx-mm3p"/>
 <id>urn:bug-hou:GHSA-rqw3-x7hx-mm3p</id>
 <updated>2026-11-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@sveltejs/adapter-node &amp;gt;= 5.5.7, &amp;lt; 5.5.8 → 5.5.8, @sveltejs/adapter-node &amp;gt;= 6.0.0-next.0, &amp;lt; 6.0.1 → 6.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-128123&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; adapter-nodeがfetchで特定のリクエストを中継すると落ちる。MEDIUM&lt;/p&gt;&lt;p&gt;@sveltejs/adapter-node &amp;gt;= 5.5.7, &amp;lt; 5.5.8 → 5.5.8, @sveltejs/adapter-node &amp;gt;= 6.0.0-next.0, &amp;lt; 6.0.1 → 6.0.1&lt;/p&gt;&lt;p&gt;CVE-2026-128123&lt;/p&gt;</content>
 </entry>
 </feed>
