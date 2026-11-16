@@ -4,8 +4,43 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/nltk.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/pip/nltk.xml</id>
-<updated>2026-11-14T00:00:00Z</updated>
+<updated>2026-11-16T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>pip: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-xmfg-f9cm-w86q"/>
+<id>urn:bug-hou:GHSA-xmfg-f9cm-w86q</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126302&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Duplicate Advisory: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-x4p7-2mv3-x7px"/>
+<id>urn:bug-hou:GHSA-x4p7-2mv3-x7px</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-x4p7-2mv3-x7px&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Duplicate Advisory: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-w2j9-qh3j-4h63"/>
+<id>urn:bug-hou:GHSA-w2j9-qh3j-4h63</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3&lt;/p&gt;&lt;p&gt;GHSA-w2j9-qh3j-4h63&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7mxv-7h3q-9324"/>
+<id>urn:bug-hou:GHSA-7mxv-7h3q-9324</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128134&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-59f9-gqg8-mqpj"/>
+<id>urn:bug-hou:GHSA-59f9-gqg8-mqpj</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126296&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] pip: NLTK: Quadratic-time CPU denial of service in ConllCorpusReader SRL instance builder via nested span rescan (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-v8f3-6phw-6mh9"/>
@@ -53,7 +88,7 @@
 <link href="https://github.com/advisories/GHSA-gpwc-27cw-rh9r"/>
 <id>urn:bug-hou:GHSA-gpwc-27cw-rh9r</id>
 <updated>2026-11-14T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; NLTKのLegalitySyllableTokenizerでCPUを使い切る。MEDIUM&lt;/p&gt;&lt;p&gt;nltk &amp;gt;= 3.6, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-gpwc-27cw-rh9r&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; NLTKのLegalitySyllableTokenizerでCPUを使い切る。MEDIUM&lt;/p&gt;&lt;p&gt;nltk &amp;gt;= 3.6, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126301&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] pip: Duplicate Advisory: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE (MEDIUM)</title>

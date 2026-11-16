@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@nuxt/vite-server（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@nuxt__vite-server.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@nuxt__vite-server.xml</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-f3x9-2chm-73c8"/>
+<id>urn:bug-hou:GHSA-f3x9-2chm-73c8</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nuxt &amp;gt;= 4.0.0, &amp;lt; 4.6.4 → 4.6.4, nuxt &amp;gt;= 3.0.0, &amp;lt; 4.0.0, @nuxt/nitro-server &amp;gt;= 4.2.0, &amp;lt; 4.6.4 → 4.6.4, @nuxt/nitro-server &amp;gt;= 3.20.0, &amp;lt; 4.0.0, @nuxt/vite-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128071&lt;/p&gt;</content>
+</entry>
+</feed>

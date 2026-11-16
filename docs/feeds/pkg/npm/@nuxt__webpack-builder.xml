@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@nuxt/webpack-builder（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@nuxt__webpack-builder.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@nuxt__webpack-builder.xml</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages (LOW)</title>
+<link href="https://github.com/advisories/GHSA-x2wv-5868-p7v2"/>
+<id>urn:bug-hou:GHSA-x2wv-5868-p7v2</id>
+<updated>2026-11-16T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@nuxt/webpack-builder &amp;gt;= 4.0.0, &amp;lt; 4.6.4 → 4.6.4, @nuxt/webpack-builder &amp;gt;= 3.0.0, &amp;lt; 4.0.0, @nuxt/rspack-builder &amp;gt;= 4.0.0, &amp;lt; 4.6.4 → 4.6.4, @nuxt/rspack-builder &amp;gt;= 3.12.2, &amp;lt; 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128072&lt;/p&gt;</content>
+</entry>
+</feed>

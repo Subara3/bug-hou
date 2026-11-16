@@ -41,7 +41,7 @@
   {
    "id": "CVE-2026-115559",
    "published": "2026-11-10",
-   "modified": "2026-11-10",
+   "modified": "2026-11-16",
    "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
@@ -50,7 +50,9 @@
    "desc": "IMAP4.starttls() wraps the socket in TLS but leaves self._readbuf, imaplib's own read-ahead buffer, untouched. Any plaintext bytes that arrived in the same recv() as the tagged OK to STARTTLS are returned by readline() after the handshake, so the client treats them as the first responses on the protected channel. A network attacker who cannot break TLS can append forged lines after the server's OK, let the handshake complete with the real server and a valid certificate, and have the client accept the forged CAPABILITY and the forged tagged completion of the next command. This is the STARTTLS command/response injection class of CVE-2011-0411.",
    "kev": false,
    "affects": [],
-   "cwe": [],
+   "cwe": [
+    "CWE-319"
+   ],
    "first_seen": "2026-11-10"
   },
   {
@@ -291,44 +293,249 @@
     "CWE-22"
    ],
    "first_seen": "0000-00-00"
-  },
-  {
-   "id": "CVE-2026-17084",
-   "published": "2026-08-18",
-   "modified": "2026-11-10",
-   "status": "Awaiting Analysis",
-   "score": 6.0,
-   "severity": "MEDIUM",
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-   "cvss": "4.0",
-   "desc": "The \"stringprep\" module didn't process characters from RFC 3454 tables \nB.2 or B.3 correctly: the latest Unicode codepoint attributes were used \ninstead of the specified Unicode 3.2.0. This behavior would cause \nmismatches when processing domain names using IDNA 2003 (the \"idna\" \ncodec) and the in_table_b2() function of the \"stringprep\" module. This \nonly affects domain names containing characters that were not previously\n registered or had their Unicode attributes such as case-folding \nbehavior updated since Unicode 3.2.0.",
-   "kev": false,
-   "affects": [],
-   "cwe": [
-    "CWE-436"
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "CVE-2026-15806",
-   "published": "2026-08-18",
-   "modified": "2026-11-10",
-   "status": "Awaiting Analysis",
-   "score": 6.0,
-   "severity": "MEDIUM",
-   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-   "cvss": "4.0",
-   "desc": "The HTTPPasswordMgr class in the urllib.request module, along with its subclasses HTTPPasswordMgrWithDefaultRealm and HTTPPasswordMgrWithPriorAuth, did not take the URL scheme into account when matching stored credentials against a requested URL. Credentials added for an https:// URL were also used for requests to the same host over http://, so an attacker able to redirect or downgrade a client to plain HTTP (for example, via an HTTPS-to-HTTP redirect or an on-path position) could capture credentials in cleartext. Credentials added for http:// URLs could likewise be sent over https://.\n\nCredential matching is now scoped by URL scheme. Credentials registered with a URL that includes a scheme are only used for requests with the same scheme. Credentials registered with a bare authority (such as example.com or example.com:8080) continue to match any scheme, preserving compatibility with existing code, including proxy authentication.\n\nUsers who cannot upgrade immediately can mitigate by ensuring that applications never make plain http:// requests to hosts for which credentials are registered, for example by not following redirects to http:// URLs.",
-   "kev": false,
-   "affects": [],
-   "cwe": [
-    "CWE-319",
-    "CWE-522"
-   ],
-   "first_seen": "0000-00-00"
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-7mxv-7h3q-9324",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128134",
+   "summary": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+   "severity": "HIGH",
+   "score": 7.8,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-jm3w-gw2p-xjfj",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128124",
+   "summary": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
+   "severity": "HIGH",
+   "score": 8.2,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-5pv8-vvhc-h7jv",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128125",
+   "summary": "AIOHTTP: Unbounded cookie storage in client CookieJar",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-xgw8-8ccx-rmqh",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128126",
+   "summary": "AIOHTTP: Too many URL-encoded form fields block the event loop",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-24c4-3p7v-29cm",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128127",
+   "summary": "AIOHTTP: Base64 multipart parts bypass client_max_size",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-24c4-3p7v-29cm",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-3rp8-rxj8-mvjw",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128128",
+   "summary": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-pw86-h8fm-j323",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128129",
+   "summary": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
+   "severity": "HIGH",
+   "score": 8.2,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-pw86-h8fm-j323",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-28qf-cpwq-vmc2",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128130",
+   "summary": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+   "severity": "HIGH",
+   "score": 8.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-h4cc-hm5h-fmm9",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128131",
+   "summary": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-5rmc-48h2-hvcm",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-128132",
+   "summary": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aiohttp",
+     "range": "<= 3.14.3",
+     "fixed": "3.14.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-xmfg-f9cm-w86q",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126302",
+   "summary": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": ">= 3.9.4, <= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-59f9-gqg8-mqpj",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-126296",
+   "summary": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "<= 3.10.3",
+     "fixed": "3.10.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
   {
    "id": "GHSA-89p3-fcch-88ph",
    "ecosystem": "pip",
@@ -412,7 +619,7 @@
   {
    "id": "GHSA-gpwc-27cw-rh9r",
    "ecosystem": "pip",
-   "cve": null,
+   "cve": "CVE-2026-126301",
    "summary": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
    "severity": "MEDIUM",
    "score": 5.3,
@@ -610,6 +817,26 @@
    "first_seen": "2026-11-13"
   },
   {
+   "id": "GHSA-w2j9-qh3j-4h63",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+   "severity": "MEDIUM",
+   "score": 4.8,
+   "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-w2j9-qh3j-4h63",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": ">= 3.9.4, <= 3.10.3",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
    "id": "GHSA-rg32-vgf9-927c",
    "ecosystem": "pip",
    "cve": null,
@@ -668,6 +895,26 @@
     }
    ],
    "first_seen": "2026-11-14"
+  },
+  {
+   "id": "GHSA-x4p7-2mv3-x7px",
+   "ecosystem": "pip",
+   "cve": null,
+   "summary": "Duplicate Advisory: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-13",
+   "url": "https://github.com/advisories/GHSA-x4p7-2mv3-x7px",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nltk",
+     "range": "< 3.10.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-16"
   },
   {
    "id": "GHSA-jh6r-h4rx-2j3w",
@@ -2100,286 +2347,6 @@
      "name": "onnx",
      "range": "<= 1.21.0",
      "fixed": "1.22.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-vvpg-rrww-wpmh",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115917",
-   "summary": "vLLM: Permissive default CORS origins allow cross-origin requests to the vLLM HTTP server",
-   "severity": "LOW",
-   "score": 3.4,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:N/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-vvpg-rrww-wpmh",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": "< 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-8397-8qf6-f2gm",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115913",
-   "summary": "vLLM: Phi-4 multimodal audio encoder materializes and retains full attention matrices: a single max-length audio OOM-crashes the vLLM engine",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-8397-8qf6-f2gm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": "< 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-gq5q-89c7-vhvx",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115914",
-   "summary": "vLLM DeepSeek-OCR image processing vulnerable to denial of service",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-gq5q-89c7-vhvx",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": ">= 0.11.1, < 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-h3rc-j82p-2c3h",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115915",
-   "summary": "vLLM: Untrusted EPS inputs can trigger denial of service or Ghostscript RCE",
-   "severity": "HIGH",
-   "score": 8.1,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-h3rc-j82p-2c3h",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": "< 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-6757-hggm-hp2w",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115912",
-   "summary": "vLLM: Public multimodal SHM handle forgery reaches worker-side `pickle.loads()` with insecure serialization disabled",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-6757-hggm-hp2w",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": "< 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-q97c-p368-75c4",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115916",
-   "summary": "vLLM: Out-of-vocabulary prompt token id passes input validation and triggers a CUDA device-side assert (engine crash / DoS)",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-q97c-p368-75c4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": "< 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-x567-49g5-p4cf",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115918",
-   "summary": "vLLM: Responses API bypasses trust_request_chat_template for chat_template_kwargs",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-x567-49g5-p4cf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": ">= 0.16.0, < 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-542m-9234-8gvf",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115911",
-   "summary": "vLLM: DoS via unbounded chat_template Jinja2 rendering exhausts the renderer thread pool",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-542m-9234-8gvf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vllm",
-     "range": ">= 0.19.0, < 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-8prr-f582-jqq3",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115885",
-   "summary": "LangGraph CLI prints the registry push token in `langgraph deploy --verbose` output",
-   "severity": "MEDIUM",
-   "score": 4.1,
-   "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-8prr-f582-jqq3",
-   "kev": false,
-   "packages": [
-    {
-     "name": "langgraph-cli",
-     "range": ">= 0.4.15, <= 0.4.31",
-     "fixed": "0.4.32"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-pjh6-c8mg-3x7m",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116579",
-   "summary": "Autobahn Python: permessage-brotli inflates a whole frame before maxMessagePayloadSize is checked (incomplete fix of GHSA-hxp9-w8x3-p566)",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-pjh6-c8mg-3x7m",
-   "kev": false,
-   "packages": [
-    {
-     "name": "autobahn",
-     "range": ">= 26.7.1, < 26.10.1",
-     "fixed": "26.10.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-4hm6-w6qq-w73v",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-118668",
-   "summary": "LangGraph JavaScript custom authentication may permit cross-user Store access",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-4hm6-w6qq-w73v",
-   "kev": false,
-   "packages": [
-    {
-     "name": "langgraph-api",
-     "range": ">= 0.1.2, < 0.15.0",
-     "fixed": "0.15.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-wfhq-q4j2-c37m",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112941",
-   "summary": "filelock: SoftReadWriteLock follows a lock tree swapped in after its first acquire and writes lock records into directories of the user running the lock",
-   "severity": "LOW",
-   "score": 3.3,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-wfhq-q4j2-c37m",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 4.1.0, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-6627-m3xw-93mp",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112908",
-   "summary": "filelock: StrictSoftFileLock creates its claim directories without the lock mode, so another local user with a write bit on them can end a live hold",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-6627-m3xw-93mp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.30.0, <= 4.2.0",
-     "fixed": "4.2.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-9c4x-gm8v-wgc4",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-112911",
-   "summary": "filelock: StrictSoftFileLock and SoftReadWriteLock adopt a protocol directory another user created first, losing mutual exclusion",
-   "severity": "MEDIUM",
-   "score": 6.3,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-9c4x-gm8v-wgc4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filelock",
-     "range": ">= 3.30.0, <= 4.2.0",
-     "fixed": "4.2.1"
     }
    ],
    "first_seen": "0000-00-00"

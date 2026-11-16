@@ -1,5 +1,483 @@
 [
  {
+  "id": "GHSA-mfr8-8qww-v76h",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119790",
+  "summary": "Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
+  "kev": false,
+  "packages": [
+   {
+    "name": "next",
+    "range": ">= 16.3.0, <= 16.4.4",
+    "fixed": "16.4.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-hf59-9xwc-2g4p",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128076",
+  "summary": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+  "severity": "LOW",
+  "score": 3.1,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nuxt",
+    "range": ">= 4.4.6, < 4.6.4",
+    "fixed": "4.6.4"
+   },
+   {
+    "name": "nuxt",
+    "range": ">= 3.21.6, < 4.0.0",
+    "fixed": null
+   },
+   {
+    "name": "@nuxt/nitro-server",
+    "range": ">= 4.4.6, < 4.6.4",
+    "fixed": "4.6.4"
+   },
+   {
+    "name": "@nuxt/nitro-server",
+    "range": ">= 3.21.6, < 4.0.0",
+    "fixed": null
+   }
+  ]
+ },
+ {
+  "id": "GHSA-96x6-fvhx-49hg",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128075",
+  "summary": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nuxt",
+    "range": ">= 4.0.0, < 4.6.4",
+    "fixed": "4.6.4"
+   },
+   {
+    "name": "nuxt",
+    "range": ">= 3.0.0, < 4.0.0",
+    "fixed": null
+   }
+  ]
+ },
+ {
+  "id": "GHSA-r9jc-w898-3fv6",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128074",
+  "summary": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+  "severity": "MEDIUM",
+  "score": 6.9,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nuxt",
+    "range": ">= 4.6.0, < 4.6.4",
+    "fixed": "4.6.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-x2wv-5868-p7v2",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128072",
+  "summary": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+  "severity": "LOW",
+  "score": 3.1,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-x2wv-5868-p7v2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@nuxt/webpack-builder",
+    "range": ">= 4.0.0, < 4.6.4",
+    "fixed": "4.6.4"
+   },
+   {
+    "name": "@nuxt/webpack-builder",
+    "range": ">= 3.0.0, < 4.0.0",
+    "fixed": null
+   },
+   {
+    "name": "@nuxt/rspack-builder",
+    "range": ">= 4.0.0, < 4.6.4",
+    "fixed": "4.6.4"
+   },
+   {
+    "name": "@nuxt/rspack-builder",
+    "range": ">= 3.12.2, < 4.0.0",
+    "fixed": null
+   }
+  ]
+ },
+ {
+  "id": "GHSA-f3x9-2chm-73c8",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128071",
+  "summary": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nuxt",
+    "range": ">= 4.0.0, < 4.6.4",
+    "fixed": "4.6.4"
+   },
+   {
+    "name": "nuxt",
+    "range": ">= 3.0.0, < 4.0.0",
+    "fixed": null
+   },
+   {
+    "name": "@nuxt/nitro-server",
+    "range": ">= 4.2.0, < 4.6.4",
+    "fixed": "4.6.4"
+   },
+   {
+    "name": "@nuxt/nitro-server",
+    "range": ">= 3.20.0, < 4.0.0",
+    "fixed": null
+   },
+   {
+    "name": "@nuxt/vite-server",
+    "range": ">= 4.6.0, < 4.6.4",
+    "fixed": "4.6.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-m9j8-jcmv-hp69",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128118",
+  "summary": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@sveltejs/kit",
+    "range": ">= 3.0.0, <= 3.1.0",
+    "fixed": "3.1.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3r8g-jcqq-3p5j",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128120",
+  "summary": "SvelteKit: DoS while parsing form data from a remote functions `form`",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@sveltejs/kit",
+    "range": ">= 2.42.0, <= 3.1.0",
+    "fixed": "3.1.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6cf5-gc4q-fm3x",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128119",
+  "summary": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@sveltejs/kit",
+    "range": ">= 2.60.1, <= 3.1.0",
+    "fixed": "3.1.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rqp5-r3wg-vg35",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-128116",
+  "summary": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@sveltejs/kit",
+    "range": ">= 3.0.0, < 3.1.1",
+    "fixed": "3.1.1"
+   },
+   {
+    "name": "@sveltejs/kit",
+    "range": "< 2.70.4",
+    "fixed": "2.70.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7mxv-7h3q-9324",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128134",
+  "summary": "NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element",
+  "severity": "HIGH",
+  "score": 7.8,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-7mxv-7h3q-9324",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-jm3w-gw2p-xjfj",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128124",
+  "summary": "AIOHTTP: Event loop stall in add_domain() wildcard matching",
+  "severity": "HIGH",
+  "score": 8.2,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-jm3w-gw2p-xjfj",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-5pv8-vvhc-h7jv",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128125",
+  "summary": "AIOHTTP: Unbounded cookie storage in client CookieJar",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-5pv8-vvhc-h7jv",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xgw8-8ccx-rmqh",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128126",
+  "summary": "AIOHTTP: Too many URL-encoded form fields block the event loop",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-xgw8-8ccx-rmqh",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-24c4-3p7v-29cm",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128127",
+  "summary": "AIOHTTP: Base64 multipart parts bypass client_max_size",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-24c4-3p7v-29cm",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3rp8-rxj8-mvjw",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128128",
+  "summary": "AIOHTTP: WebSocket max_msg_size bypass via integer overflow",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-3rp8-rxj8-mvjw",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-pw86-h8fm-j323",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128129",
+  "summary": "AIOHTTP: Unbounded buffering of data received during an upgrade request",
+  "severity": "HIGH",
+  "score": 8.2,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-pw86-h8fm-j323",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-28qf-cpwq-vmc2",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128130",
+  "summary": "AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade",
+  "severity": "HIGH",
+  "score": 8.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-28qf-cpwq-vmc2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h4cc-hm5h-fmm9",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128131",
+  "summary": "AIOHTTP: Concatenated compressed streams cause excessive CPU use",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-h4cc-hm5h-fmm9",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-5rmc-48h2-hvcm",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128132",
+  "summary": "AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-5rmc-48h2-hvcm",
+  "kev": false,
+  "packages": [
+   {
+    "name": "aiohttp",
+    "range": "<= 3.14.3",
+    "fixed": "3.14.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xmfg-f9cm-w86q",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-126302",
+  "summary": "NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-xmfg-f9cm-w86q",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.9.4, <= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-59f9-gqg8-mqpj",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-126296",
+  "summary": "NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-59f9-gqg8-mqpj",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
   "id": "GHSA-89p3-fcch-88ph",
   "ecosystem": "pip",
   "cve": "CVE-2026-126299",
@@ -475,7 +953,7 @@
  {
   "id": "GHSA-gpwc-27cw-rh9r",
   "ecosystem": "pip",
-  "cve": null,
+  "cve": "CVE-2026-126301",
   "summary": "NLTK: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
   "severity": "MEDIUM",
   "score": 5.3,
@@ -729,6 +1207,44 @@
   "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:N/UI:N/VC:H/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
   "published": "2026-11-13",
   "url": "https://github.com/advisories/GHSA-f7j6-hf97-9v99",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "< 3.10.4",
+    "fixed": null
+   }
+  ]
+ },
+ {
+  "id": "GHSA-w2j9-qh3j-4h63",
+  "ecosystem": "pip",
+  "cve": null,
+  "summary": "Duplicate Advisory: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases",
+  "severity": "MEDIUM",
+  "score": 4.8,
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-13",
+  "url": "https://github.com/advisories/GHSA-w2j9-qh3j-4h63",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.9.4, <= 3.10.3",
+    "fixed": null
+   }
+  ]
+ },
+ {
+  "id": "GHSA-x4p7-2mv3-x7px",
+  "ecosystem": "pip",
+  "cve": null,
+  "summary": "Duplicate Advisory: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop",
+  "severity": "MEDIUM",
+  "score": 6.9,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-13",
+  "url": "https://github.com/advisories/GHSA-x4p7-2mv3-x7px",
   "kev": false,
   "packages": [
    {

@@ -52,6 +52,266 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-mfr8-8qww-v76h",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119790",
+   "summary": "Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache()",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-mfr8-8qww-v76h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "next",
+     "range": ">= 16.3.0, <= 16.4.4",
+     "fixed": "16.4.5"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-hf59-9xwc-2g4p",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128076",
+   "summary": "Nuxt: Colliding island props can share one `/__nuxt_island` path (incomplete fix for CVE-2026-46342)",
+   "severity": "LOW",
+   "score": 3.1,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-hf59-9xwc-2g4p",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nuxt",
+     "range": ">= 4.4.6, < 4.6.4",
+     "fixed": "4.6.4"
+    },
+    {
+     "name": "nuxt",
+     "range": ">= 3.21.6, < 4.0.0",
+     "fixed": null
+    },
+    {
+     "name": "@nuxt/nitro-server",
+     "range": ">= 4.4.6, < 4.6.4",
+     "fixed": "4.6.4"
+    },
+    {
+     "name": "@nuxt/nitro-server",
+     "range": ">= 3.21.6, < 4.0.0",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-96x6-fvhx-49hg",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128075",
+   "summary": "Nuxt exposes the message and data of unhandled errors thrown during server rendering",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-96x6-fvhx-49hg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nuxt",
+     "range": ">= 4.0.0, < 4.6.4",
+     "fixed": "4.6.4"
+    },
+    {
+     "name": "nuxt",
+     "range": ">= 3.0.0, < 4.0.0",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-r9jc-w898-3fv6",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128074",
+   "summary": "Nuxt payload URL generation has quadratic cost for repeated slashes in the request path",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-r9jc-w898-3fv6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nuxt",
+     "range": ">= 4.6.0, < 4.6.4",
+     "fixed": "4.6.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-x2wv-5868-p7v2",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128072",
+   "summary": "@nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages",
+   "severity": "LOW",
+   "score": 3.1,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-x2wv-5868-p7v2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@nuxt/webpack-builder",
+     "range": ">= 4.0.0, < 4.6.4",
+     "fixed": "4.6.4"
+    },
+    {
+     "name": "@nuxt/webpack-builder",
+     "range": ">= 3.0.0, < 4.0.0",
+     "fixed": null
+    },
+    {
+     "name": "@nuxt/rspack-builder",
+     "range": ">= 4.0.0, < 4.6.4",
+     "fixed": "4.6.4"
+    },
+    {
+     "name": "@nuxt/rspack-builder",
+     "range": ">= 3.12.2, < 4.0.0",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-f3x9-2chm-73c8",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128071",
+   "summary": "Nuxt: Incomplete fix for GHSA-6gq8-jgmh-3ffp: an encoded slash (`%2F`) in the request path bypasses route rules on catch-all page routes",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-f3x9-2chm-73c8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nuxt",
+     "range": ">= 4.0.0, < 4.6.4",
+     "fixed": "4.6.4"
+    },
+    {
+     "name": "nuxt",
+     "range": ">= 3.0.0, < 4.0.0",
+     "fixed": null
+    },
+    {
+     "name": "@nuxt/nitro-server",
+     "range": ">= 4.2.0, < 4.6.4",
+     "fixed": "4.6.4"
+    },
+    {
+     "name": "@nuxt/nitro-server",
+     "range": ">= 3.20.0, < 4.0.0",
+     "fixed": null
+    },
+    {
+     "name": "@nuxt/vite-server",
+     "range": ">= 4.6.0, < 4.6.4",
+     "fixed": "4.6.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-m9j8-jcmv-hp69",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128118",
+   "summary": "SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-m9j8-jcmv-hp69",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@sveltejs/kit",
+     "range": ">= 3.0.0, <= 3.1.0",
+     "fixed": "3.1.1"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-3r8g-jcqq-3p5j",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128120",
+   "summary": "SvelteKit: DoS while parsing form data from a remote functions `form`",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-3r8g-jcqq-3p5j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@sveltejs/kit",
+     "range": ">= 2.42.0, <= 3.1.0",
+     "fixed": "3.1.1"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-6cf5-gc4q-fm3x",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128119",
+   "summary": "SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-6cf5-gc4q-fm3x",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@sveltejs/kit",
+     "range": ">= 2.60.1, <= 3.1.0",
+     "fixed": "3.1.1"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
+   "id": "GHSA-rqp5-r3wg-vg35",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-128116",
+   "summary": "SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:N/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-rqp5-r3wg-vg35",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@sveltejs/kit",
+     "range": ">= 3.0.0, < 3.1.1",
+     "fixed": "3.1.1"
+    },
+    {
+     "name": "@sveltejs/kit",
+     "range": "< 2.70.4",
+     "fixed": "2.70.4"
+    }
+   ],
+   "first_seen": "2026-11-16"
+  },
+  {
    "id": "GHSA-qfx6-q44v-9qqw",
    "ecosystem": "npm",
    "cve": "CVE-2026-62297",
@@ -2242,231 +2502,6 @@
      "name": "@nx/gradle",
      "range": ">= 23.0.0, < 23.1.2",
      "fixed": "23.1.2"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-qr28-fpjm-wq7f",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118664",
-   "summary": "decode-uri-component vulnerable to denial of service via quadratic replacement of percent-encoded runs",
-   "severity": "HIGH",
-   "score": 8.2,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-qr28-fpjm-wq7f",
-   "kev": false,
-   "packages": [
-    {
-     "name": "decode-uri-component",
-     "range": "<= 0.5.0",
-     "fixed": "0.5.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-8g5g-mxqh-grgj",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118662",
-   "summary": "Vite: `server.fs.deny` bypassed with queries",
-   "severity": "MEDIUM",
-   "score": 6.9,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:H/SI:N/SA:N",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-8g5g-mxqh-grgj",
-   "kev": false,
-   "packages": [
-    {
-     "name": "vite",
-     "range": "= 6.4.4",
-     "fixed": "6.4.5"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-w9x9-j56r-h98r",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "@eeacms/volto-chatbot has Unauthenticated Danswer API Confused Deputy Proxy",
-   "severity": "HIGH",
-   "score": 8.2,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-w9x9-j56r-h98r",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@eeacms/volto-chatbot",
-     "range": "<= 2.0.3",
-     "fixed": "2.0.4"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-c33x-vcv4-vg3g",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "Cedar: JSON template is in scope missing slot-id validation allows link panic and decision divergence",
-   "severity": "LOW",
-   "score": 2.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:H/UI:N/VC:N/VI:N/VA:L/SC:L/SI:L/SA:L",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-c33x-vcv4-vg3g",
-   "kev": false,
-   "packages": [
-    {
-     "name": "cedar-policy",
-     "range": ">= 4.0.0, < 4.11.1",
-     "fixed": "4.11.1"
-    },
-    {
-     "name": "cedar-policy",
-     "range": ">= 3.0.0, < 3.4.3",
-     "fixed": "3.4.3"
-    },
-    {
-     "name": "@cedar-policy/cedar-wasm",
-     "range": ">= 4.0.1, < 4.11.1",
-     "fixed": "4.11.1"
-    },
-    {
-     "name": "@cedar-policy/cedar-wasm",
-     "range": ">= 3.2.0, < 3.4.3",
-     "fixed": "3.4.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-q344-5v34-gm84",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-62264",
-   "summary": "@sylphx/pdf-reader-mcp: HTTP transport accepts unauthenticated requests despite a configured MCP_API_KEY",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-q344-5v34-gm84",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@sylphx/pdf-reader-mcp",
-     "range": ">= 2.2.0, < 3.0.1",
-     "fixed": "3.0.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-r899-h629-j84r",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-61448",
-   "summary": "Parse Server vulnerable to stored XSS via malformed Content-Type bypassing file upload extension blocklist",
-   "severity": "LOW",
-   "score": 2.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:P/VC:N/VI:L/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-r899-h629-j84r",
-   "kev": false,
-   "packages": [
-    {
-     "name": "parse-server",
-     "range": ">= 9.0.0, < 9.10.0-alpha.2",
-     "fixed": "9.10.0-alpha.2"
-    },
-    {
-     "name": "parse-server",
-     "range": "<= 8.6.83",
-     "fixed": "8.6.84"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-3f7j-7jwc-fxfj",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116576",
-   "summary": "systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks",
-   "severity": "HIGH",
-   "score": 7.8,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-3f7j-7jwc-fxfj",
-   "kev": false,
-   "packages": [
-    {
-     "name": "systeminformation",
-     "range": "< 5.33.16",
-     "fixed": "5.33.16"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-w658-mh9p-ww8f",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-115923",
-   "summary": "Backstage catalog rules can be bypassed for URL locations using encoded path segments",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-w658-mh9p-ww8f",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@backstage/plugin-catalog-backend",
-     "range": "< 3.9.2",
-     "fixed": "3.9.2"
-    },
-    {
-     "name": "@backstage/plugin-catalog-backend",
-     "range": ">= 4.0.0, < 4.0.2",
-     "fixed": "4.0.2"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-jf75-q64q-g65r",
-   "ecosystem": "npm",
-   "cve": null,
-   "summary": "Waline login accepts a non-string email as a match-all MongoDB query",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-jf75-q64q-g65r",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@waline/vercel",
-     "range": "<= 1.40.3",
-     "fixed": "1.41.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-f86p-h4j2-7qgj",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116583",
-   "summary": "Seroval: Code injection through a typed array's own constructor property",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:P/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-f86p-h4j2-7qgj",
-   "kev": false,
-   "packages": [
-    {
-     "name": "seroval",
-     "range": ">= 1.6.0, < 1.6.11",
-     "fixed": "1.6.11"
     }
    ],
    "first_seen": "0000-00-00"
