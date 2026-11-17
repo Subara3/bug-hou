@@ -7,32 +7,32 @@
 <updated>2026-11-16T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution (MEDIUM)</title>
+<title>[様子見] npm: SvelteKit: Protocol-relative module import during server-side route resolution allows cross-origin script execution (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rqp5-r3wg-vg35"/>
 <id>urn:bug-hou:GHSA-rqp5-r3wg-vg35</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@sveltejs/kit &amp;gt;= 3.0.0, &amp;lt; 3.1.1 → 3.1.1, @sveltejs/kit &amp;lt; 2.70.4 → 2.70.4&lt;/p&gt;&lt;p&gt;CVE-2026-128116&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。ルート解決時に別オリジンのスクリプトを読み込むおそれ&lt;br&gt;→ @sveltejs/kit 3.1.1 または 2.70.4に更新&lt;/p&gt;&lt;p&gt;@sveltejs/kit &amp;gt;= 3.0.0, &amp;lt; 3.1.1 → 3.1.1, @sveltejs/kit &amp;lt; 2.70.4 → 2.70.4&lt;/p&gt;&lt;p&gt;CVE-2026-128116&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle (HIGH)</title>
+<title>[要確認] npm: SvelteKit: Build-time server-only module import guard could fail, resulting in server secrets being statically replaced in client bundle (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-m9j8-jcmv-hp69"/>
 <id>urn:bug-hou:GHSA-m9j8-jcmv-hp69</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@sveltejs/kit &amp;gt;= 3.0.0, &amp;lt;= 3.1.0 → 3.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-128118&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。サーバー用の秘密の値がクライアント側のコードに入ることがある&lt;br&gt;→ @sveltejs/kit 3.1.1に更新し、配布済みのコードに秘密がないか確認&lt;/p&gt;&lt;p&gt;@sveltejs/kit &amp;gt;= 3.0.0, &amp;lt;= 3.1.0 → 3.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-128118&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations (MEDIUM)</title>
+<title>[様子見] npm: SvelteKit: Private `query.batch` functions could collide, producing unexpected parameter / function combinations (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6cf5-gc4q-fm3x"/>
 <id>urn:bug-hou:GHSA-6cf5-gc4q-fm3x</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@sveltejs/kit &amp;gt;= 2.60.1, &amp;lt;= 3.1.0 → 3.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-128119&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。query.batch関数どうしが衝突することがある&lt;br&gt;→ @sveltejs/kit 3.1.1に更新&lt;/p&gt;&lt;p&gt;@sveltejs/kit &amp;gt;= 2.60.1, &amp;lt;= 3.1.0 → 3.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-128119&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: SvelteKit: DoS while parsing form data from a remote functions `form` (HIGH)</title>
+<title>[要確認] npm: SvelteKit: DoS while parsing form data from a remote functions `form` (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3r8g-jcqq-3p5j"/>
 <id>urn:bug-hou:GHSA-3r8g-jcqq-3p5j</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@sveltejs/kit &amp;gt;= 2.42.0, &amp;lt;= 3.1.0 → 3.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-128120&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。remote functionsのformを使う場合にサービスを止められる&lt;br&gt;→ @sveltejs/kit 3.1.1に更新&lt;/p&gt;&lt;p&gt;@sveltejs/kit &amp;gt;= 2.42.0, &amp;lt;= 3.1.0 → 3.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-128120&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: SvelteKit: adapter-node crashes with an unhandled URIError when `reroute` rewrites malformed pathnames (MEDIUM)</title>

@@ -7,66 +7,66 @@
 <updated>2026-11-16T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: AIOHTTP: Too many URL-encoded form fields block the event loop (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: Too many URL-encoded form fields block the event loop (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xgw8-8ccx-rmqh"/>
 <id>urn:bug-hou:GHSA-xgw8-8ccx-rmqh</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128126&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。フォームの項目が多すぎると処理が止まる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128126&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: Unbounded buffering of data received during an upgrade request (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: Unbounded buffering of data received during an upgrade request (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-pw86-h8fm-j323"/>
 <id>urn:bug-hou:GHSA-pw86-h8fm-j323</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128129&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。upgradeリクエスト中のデータを上限なくためこむ&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128129&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: Event loop stall in add_domain() wildcard matching (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: Event loop stall in add_domain() wildcard matching (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jm3w-gw2p-xjfj"/>
 <id>urn:bug-hou:GHSA-jm3w-gw2p-xjfj</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128124&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。add_domain()のワイルドカード照合で処理が止まる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128124&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: Concatenated compressed streams cause excessive CPU use (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: Concatenated compressed streams cause excessive CPU use (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-h4cc-hm5h-fmm9"/>
 <id>urn:bug-hou:GHSA-h4cc-hm5h-fmm9</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128131&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。圧縮データをつなげて送るとCPUを使いすぎる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128131&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-5rmc-48h2-hvcm"/>
 <id>urn:bug-hou:GHSA-5rmc-48h2-hvcm</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128132&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。小さいか圧縮したメッセージでWebSocket受信キューの上限をこえられる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128132&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: Unbounded cookie storage in client CookieJar (MEDIUM)</title>
+<title>[様子見] pip: AIOHTTP: Unbounded cookie storage in client CookieJar (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5pv8-vvhc-h7jv"/>
 <id>urn:bug-hou:GHSA-5pv8-vvhc-h7jv</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128125&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。クライアントのCookieJarに上限なくクッキーがたまる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128125&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: WebSocket max_msg_size bypass via integer overflow (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: WebSocket max_msg_size bypass via integer overflow (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3rp8-rxj8-mvjw"/>
 <id>urn:bug-hou:GHSA-3rp8-rxj8-mvjw</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128128&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。WebSocketのmax_msg_sizeの上限をこえられる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128128&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-28qf-cpwq-vmc2"/>
 <id>urn:bug-hou:GHSA-28qf-cpwq-vmc2</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128130&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。Python版パーサーでupgradeを断ったあとにリクエスト再送とバッファ増加&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128130&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: AIOHTTP: Base64 multipart parts bypass client_max_size (HIGH)</title>
+<title>[要確認] pip: AIOHTTP: Base64 multipart parts bypass client_max_size (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-24c4-3p7v-29cm"/>
 <id>urn:bug-hou:GHSA-24c4-3p7v-29cm</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128127&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。Base64のmultipartでclient_max_sizeの上限をこえられる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128127&lt;/p&gt;</content>
 </entry>
 </feed>

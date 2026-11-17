@@ -7,102 +7,102 @@
 <updated>2026-11-16T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases (MEDIUM)</title>
+<title>[様子見] Python: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xmfg-f9cm-w86q"/>
 <id>urn:bug-hou:GHSA-xmfg-f9cm-w86q</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126302&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。chat80.sql_queryでシンボリックリンクから範囲外を読める&lt;br&gt;→ nltk 3.10.4に更新&lt;/p&gt;&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126302&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: Too many URL-encoded form fields block the event loop (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: Too many URL-encoded form fields block the event loop (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xgw8-8ccx-rmqh"/>
 <id>urn:bug-hou:GHSA-xgw8-8ccx-rmqh</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128126&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。フォームの項目が多すぎると処理が止まる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128126&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Duplicate Advisory: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop (MEDIUM)</title>
+<title>[様子見] Python: Duplicate Advisory: Quadratic CPU exhaustion in LegalitySyllableTokenizer.tokenize via unguarded onset reversal loop (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x4p7-2mv3-x7px"/>
 <id>urn:bug-hou:GHSA-x4p7-2mv3-x7px</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-x4p7-2mv3-x7px&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。重複した勧告。音節の分割処理でCPUを使いすぎる&lt;br&gt;→ nltk 3.10.4より前が対象なので3.10.4以降に更新&lt;/p&gt;&lt;p&gt;nltk &amp;lt; 3.10.4&lt;/p&gt;&lt;p&gt;GHSA-x4p7-2mv3-x7px&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Duplicate Advisory: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases (MEDIUM)</title>
+<title>[様子見] Python: Duplicate Advisory: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-w2j9-qh3j-4h63"/>
 <id>urn:bug-hou:GHSA-w2j9-qh3j-4h63</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3&lt;/p&gt;&lt;p&gt;GHSA-w2j9-qh3j-4h63&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。重複した勧告。chat80.sql_queryのシンボリックリンク問題&lt;/p&gt;&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3&lt;/p&gt;&lt;p&gt;GHSA-w2j9-qh3j-4h63&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: Unbounded buffering of data received during an upgrade request (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: Unbounded buffering of data received during an upgrade request (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-pw86-h8fm-j323"/>
 <id>urn:bug-hou:GHSA-pw86-h8fm-j323</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128129&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。upgradeリクエスト中のデータを上限なくためこむ&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128129&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: Event loop stall in add_domain() wildcard matching (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: Event loop stall in add_domain() wildcard matching (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jm3w-gw2p-xjfj"/>
 <id>urn:bug-hou:GHSA-jm3w-gw2p-xjfj</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128124&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。add_domain()のワイルドカード照合で処理が止まる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128124&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: Concatenated compressed streams cause excessive CPU use (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: Concatenated compressed streams cause excessive CPU use (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-h4cc-hm5h-fmm9"/>
 <id>urn:bug-hou:GHSA-h4cc-hm5h-fmm9</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128131&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。圧縮データをつなげて送るとCPUを使いすぎる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128131&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element (HIGH)</title>
+<title>[要確認] Python: NLTK dot2img runs Graphviz 'dot' without the trusted-exec chokepoint, enabling local code execution via a writable PATH element (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7mxv-7h3q-9324"/>
 <id>urn:bug-hou:GHSA-7mxv-7h3q-9324</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128134&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。dot2imgを使い、PATHに書き込める場所がある場合だけコード実行&lt;br&gt;→ nltk 3.10.4に更新&lt;/p&gt;&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128134&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: WebSocket receive queue limits bypassed by small or compressed messages (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-5rmc-48h2-hvcm"/>
 <id>urn:bug-hou:GHSA-5rmc-48h2-hvcm</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128132&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。小さいか圧縮したメッセージでWebSocket受信キューの上限をこえられる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128132&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: Unbounded cookie storage in client CookieJar (MEDIUM)</title>
+<title>[様子見] Python: AIOHTTP: Unbounded cookie storage in client CookieJar (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5pv8-vvhc-h7jv"/>
 <id>urn:bug-hou:GHSA-5pv8-vvhc-h7jv</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128125&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。クライアントのCookieJarに上限なくクッキーがたまる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128125&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE (MEDIUM)</title>
+<title>[様子見] Python: NLTK: Path Traversal in save_maxent_params / load_maxent_params Allow Arbitrary File READ/WRITE (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-59f9-gqg8-mqpj"/>
 <id>urn:bug-hou:GHSA-59f9-gqg8-mqpj</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126296&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。maxentパラメータの保存・読込でパスを外れて読み書きできる&lt;br&gt;→ nltk 3.10.4に更新&lt;/p&gt;&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-126296&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: WebSocket max_msg_size bypass via integer overflow (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: WebSocket max_msg_size bypass via integer overflow (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3rp8-rxj8-mvjw"/>
 <id>urn:bug-hou:GHSA-3rp8-rxj8-mvjw</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128128&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。WebSocketのmax_msg_sizeの上限をこえられる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128128&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: Pure-Python parser request replay and buffer growth behind a declined upgrade (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-28qf-cpwq-vmc2"/>
 <id>urn:bug-hou:GHSA-28qf-cpwq-vmc2</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128130&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。Python版パーサーでupgradeを断ったあとにリクエスト再送とバッファ増加&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128130&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: AIOHTTP: Base64 multipart parts bypass client_max_size (HIGH)</title>
+<title>[要確認] Python: AIOHTTP: Base64 multipart parts bypass client_max_size (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-24c4-3p7v-29cm"/>
 <id>urn:bug-hou:GHSA-24c4-3p7v-29cm</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128127&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。Base64のmultipartでclient_max_sizeの上限をこえられる&lt;br&gt;→ aiohttp 3.14.4に更新&lt;/p&gt;&lt;p&gt;aiohttp &amp;lt;= 3.14.3 → 3.14.4&lt;/p&gt;&lt;p&gt;CVE-2026-128127&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: dnspython has excessive memory and CPU use (HIGH)</title>

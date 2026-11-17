@@ -7,10 +7,10 @@
 <updated>2026-11-16T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages (LOW)</title>
+<title>[様子見] npm: @nuxt/webpack-builder and @nuxt/rspack-builder dev server serves built source to DNS rebinding pages (LOW)</title>
 <link href="https://github.com/advisories/GHSA-x2wv-5868-p7v2"/>
 <id>urn:bug-hou:GHSA-x2wv-5868-p7v2</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@nuxt/webpack-builder &amp;gt;= 4.0.0, &amp;lt; 4.6.4 → 4.6.4, @nuxt/webpack-builder &amp;gt;= 3.0.0, &amp;lt; 4.0.0, @nuxt/rspack-builder &amp;gt;= 4.0.0, &amp;lt; 4.6.4 → 4.6.4, @nuxt/rspack-builder &amp;gt;= 3.12.2, &amp;lt; 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128072&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。開発サーバーだけの問題&lt;br&gt;→ @nuxt/webpack-builder・rspack-builder 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/webpack-builder &amp;gt;= 4.0.0, &amp;lt; 4.6.4 → 4.6.4, @nuxt/webpack-builder &amp;gt;= 3.0.0, &amp;lt; 4.0.0, @nuxt/rspack-builder &amp;gt;= 4.0.0, &amp;lt; 4.6.4 → 4.6.4, @nuxt/rspack-builder &amp;gt;= 3.12.2, &amp;lt; 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128072&lt;/p&gt;</content>
 </entry>
 </feed>

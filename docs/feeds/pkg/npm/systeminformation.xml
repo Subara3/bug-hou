@@ -21,10 +21,10 @@
 <content type="html">&lt;p&gt;systeminformation &amp;lt; 5.33.14 → 5.33.14&lt;/p&gt;&lt;p&gt;CVE-2026-116673&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks (HIGH)</title>
+<title>npm: systeminformation vulnerable to Windows command injection in services() through Unicode quotation marks (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3f7j-7jwc-fxfj"/>
 <id>urn:bug-hou:GHSA-3f7j-7jwc-fxfj</id>
 <updated>2026-10-28T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; systeminformationのWindowsでコマンド注入。HIGH&lt;br&gt;→ systeminformation 5.33.16に更新&lt;/p&gt;&lt;p&gt;systeminformation &amp;lt; 5.33.16 → 5.33.16&lt;/p&gt;&lt;p&gt;CVE-2026-116576&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;systeminformation &amp;lt; 5.33.16 → 5.33.16&lt;/p&gt;&lt;p&gt;CVE-2026-116576&lt;/p&gt;</content>
 </entry>
 </feed>

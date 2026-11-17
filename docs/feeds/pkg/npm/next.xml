@@ -7,10 +7,10 @@
 <updated>2026-11-16T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache() (MEDIUM)</title>
+<title>[様子見] npm: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mfr8-8qww-v76h"/>
 <id>urn:bug-hou:GHSA-mfr8-8qww-v76h</id>
 <updated>2026-11-16T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.3.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119790&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。'use cache'をunstable_cache()経由で呼ぶ場合の情報漏れ&lt;br&gt;→ next 16.4.5に更新&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.3.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119790&lt;/p&gt;</content>
 </entry>
 </feed>
