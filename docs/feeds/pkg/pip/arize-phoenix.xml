@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜arize-phoenix（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/arize-phoenix.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/arize-phoenix.xml</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Phoenix: Format String Injection in applyChatTemplate (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-gfv3-m769-5xm3"/>
+<id>urn:bug-hou:GHSA-gfv3-m769-5xm3</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;arize-phoenix &amp;gt;= 13.0.0, &amp;lt; 15.7.0 → 15.7.0&lt;/p&gt;&lt;p&gt;CVE-2026-53998&lt;/p&gt;</content>
+</entry>
+</feed>

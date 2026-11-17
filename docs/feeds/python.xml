@@ -14,11 +14,25 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。範囲外のReceived日付で例外が出て処理が止まる&lt;br&gt;→ mail-parserを4.6.3に更新&lt;/p&gt;&lt;p&gt;mail-parser &amp;gt;= 3.7.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-129300&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Python: pympp allows excessive sponsored transaction fees through padded calldata (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-v858-xh7w-8jr5"/>
+<id>urn:bug-hou:GHSA-v858-xh7w-8jr5</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;pympp &amp;lt; 0.9.1 → 0.9.1&lt;/p&gt;&lt;p&gt;CVE-2026-63634&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] Python: mail-parser is vulnerable to polynomial ReDoS in email header parsing (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r7w7-vpq8-c5vv"/>
 <id>urn:bug-hou:GHSA-r7w7-vpq8-c5vv</id>
 <updated>2026-11-17T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mail-parserのHIGH。メールヘッダーの解析でReDoS&lt;br&gt;→ mail-parserを4.6.1以降に更新&lt;/p&gt;&lt;p&gt;mail-parser &amp;gt;= 4.2.0, &amp;lt; 4.6.1 → 4.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-129295&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Phoenix: Format String Injection in applyChatTemplate (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-gfv3-m769-5xm3"/>
+<id>urn:bug-hou:GHSA-gfv3-m769-5xm3</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;arize-phoenix &amp;gt;= 13.0.0, &amp;lt; 15.7.0 → 15.7.0&lt;/p&gt;&lt;p&gt;CVE-2026-53998&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: mail-parser: Path Traversal vulnerability in attachment extraction (MEDIUM)</title>
@@ -341,24 +355,5 @@
 <id>urn:bug-hou:GHSA-4j63-6c4x-wfg4</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。:has()内の兄弟セレクタで外部のHTMLの処理に時間がかかる&lt;br&gt;→ soupsieve 2.10.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: CVE-2026-16052 2.3 LOW</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-16052"/>
-<id>urn:bug-hou:CVE-2026-16052</id>
-<updated>2026-11-12T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。http.cookies.Morselで属性値のセミコロンがそのまま出力される&lt;/p&gt;&lt;p&gt;The http.cookies.Morsel class allows separator semicolons in attribute
-values
-and includes them verbatim in all output formats. An attacker who can
-control
-these values could use this to relax the cookie's Domain or SameSite
-restrictions.&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout (LOW)</title>
-<link href="https://github.com/advisories/GHSA-hr4h-4c45-v4q4"/>
-<id>urn:bug-hou:GHSA-hr4h-4c45-v4q4</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; compose-lintのJSON・SARIF出力経由でCIにコマンドを差し込める。LOW&lt;br&gt;→ compose-lintを0.32.0に更新&lt;/p&gt;&lt;p&gt;compose-lint = 0.31.0 → 0.32.0&lt;/p&gt;&lt;p&gt;CVE-2026-125122&lt;/p&gt;</content>
 </entry>
 </feed>

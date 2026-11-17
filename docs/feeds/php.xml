@@ -35,11 +35,32 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。XHTMLのdata URIを使ったXSS&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-88987&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>PHP: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-pr4x-6fj4-gm4h"/>
+<id>urn:bug-hou:GHSA-pr4x-6fj4-gm4h</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;egroupware/egroupware &amp;lt; 23.1.20260601 → 23.1.20260601, egroupware/egroupware &amp;gt;= 26.0.20251208, &amp;lt; 26.6.20260616 → 26.6.20260616&lt;/p&gt;&lt;p&gt;CVE-2026-63672&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] PHP: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-c94f-87xg-65wf"/>
 <id>urn:bug-hou:GHSA-c94f-87xg-65wf</id>
 <updated>2026-11-17T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SilverstripeのHIGHのRCE。i18nTextCollectorTaskのwriter引数経由&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;gt;= 6.0.0, &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91115&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Filament Curator: Stored XSS via unsanitized SVG upload served inline (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-8vm9-f75m-5h2m"/>
+<id>urn:bug-hou:GHSA-8vm9-f75m-5h2m</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt;= 5.1.1 → 5.1.2, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt;= 4.1.1 → 4.1.2, awcodes/filament-curator &amp;gt;= 3.0.0, &amp;lt;= 3.7.8 → 3.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-69241&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-828w-6qgx-3rcf"/>
+<id>urn:bug-hou:GHSA-828w-6qgx-3rcf</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt; 5.1.1 → 5.1.1, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt; 4.1.1 → 4.1.1, awcodes/filament-curator &amp;gt;= 3.2.4, &amp;lt; 3.7.8 → 3.7.8&lt;/p&gt;&lt;p&gt;CVE-2026-63389&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change (MEDIUM)</title>
@@ -110,13 +131,6 @@
 <id>urn:bug-hou:GHSA-w998-qmw9-mf4m</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: CakePHP: Multiple methods in FunctionsBuilder vulnerable to SQL injection (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-vjqc-q4mp-2rvf"/>
-<id>urn:bug-hou:GHSA-vjqc-q4mp-2rvf</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CakePHPのFunctionsBuilderのSQLインジェクション。使っている場合に影響&lt;br&gt;→ cakephp/database 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7、cakephp 4.5.12 に更新&lt;/p&gt;&lt;p&gt;cakephp/database &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/database &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/database &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/database &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/cakephp &amp;lt; 4.5.12 → 4.5.12, cakephp/cakephp &amp;gt;= 4.6.0, &amp;lt; 4.6.5 → 4.6.5, cakephp/cakephp &amp;gt;= 5.0.0, &amp;lt; 5.1.9 → 5.1.9, cakephp/cakephp &amp;gt;= 5.2.0, &amp;lt; 5.2.14 → 5.2.14, cakephp/cakephp &amp;gt;= 5.3.0, &amp;lt; 5.3.7 → 5.3.7, cakephp/database &amp;gt;= 3.0.0, &amp;lt; 4.5.12 → 4.5.12&lt;/p&gt;&lt;p&gt;CVE-2026-79752&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] PHP: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>
@@ -266,25 +280,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのplugin-asset-map.phpで認証なしパストラバーサル。HIGH&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-74907&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] PHP: Grav: media_directory() Twig function allows filesystem path traversal and file content disclosure from sandboxed page content (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-47ch-6w46-6xm7"/>
-<id>urn:bug-hou:GHSA-47ch-6w46-6xm7</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのmedia_directory()でパストラバーサルとファイル内容漏洩。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72697&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] PHP: Semantic MediaWiki has reflected XSS in Special:Ask plain table headers (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3jp5-3h47-28qf"/>
 <id>urn:bug-hou:GHSA-3jp5-3h47-28qf</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSpecial:Ask表ヘッダーで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77606&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Grav: UserInterface offsetget/offsetexists allow-listed in Twig sandbox let editor-authored content leak hashed_password and 2FA secrets via offsetGet() (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-3jhr-mxmx-38cx"/>
-<id>urn:bug-hou:GHSA-3jhr-mxmx-38cx</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのTwigサンドボックスで編集者がパスワードハッシュや2FA秘密を取得。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-76839&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery (MEDIUM)</title>

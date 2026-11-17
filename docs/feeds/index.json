@@ -1,6 +1,7 @@
 {
 "composer": {
 "adminneo-org/adminneo": "pkg/composer/adminneo-org__adminneo.xml",
+"awcodes/filament-curator": "pkg/composer/awcodes__filament-curator.xml",
 "cachethq/cachet": "pkg/composer/cachethq__cachet.xml",
 "cakephp/cakephp": "pkg/composer/cakephp__cakephp.xml",
 "cakephp/database": "pkg/composer/cakephp__database.xml",
@@ -11,6 +12,7 @@
 "contao/contao": "pkg/composer/contao__contao.xml",
 "contao/core-bundle": "pkg/composer/contao__core-bundle.xml",
 "dolibarr/dolibarr": "pkg/composer/dolibarr__dolibarr.xml",
+"egroupware/egroupware": "pkg/composer/egroupware__egroupware.xml",
 "enshrined/svg-sanitize": "pkg/composer/enshrined__svg-sanitize.xml",
 "filament/filament": "pkg/composer/filament__filament.xml",
 "filegator/filegator": "pkg/composer/filegator__filegator.xml",
@@ -190,6 +192,7 @@
 "agno": "pkg/pip/agno.xml",
 "aiohttp": "pkg/pip/aiohttp.xml",
 "aj": "pkg/pip/aj.xml",
+"arize-phoenix": "pkg/pip/arize-phoenix.xml",
 "authlib": "pkg/pip/authlib.xml",
 "autobahn": "pkg/pip/autobahn.xml",
 "autogen": "pkg/pip/autogen.xml",
@@ -236,6 +239,7 @@
 "pyasn1": "pkg/pip/pyasn1.xml",
 "pylint": "pkg/pip/pylint.xml",
 "pymongo": "pkg/pip/pymongo.xml",
+"pympp": "pkg/pip/pympp.xml",
 "pypdf": "pkg/pip/pypdf.xml",
 "rembg": "pkg/pip/rembg.xml",
 "rucio": "pkg/pip/rucio.xml",

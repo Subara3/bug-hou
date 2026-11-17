@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜awcodes/filament-curator（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/awcodes__filament-curator.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/awcodes__filament-curator.xml</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: Filament Curator: Stored XSS via unsanitized SVG upload served inline (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-8vm9-f75m-5h2m"/>
+<id>urn:bug-hou:GHSA-8vm9-f75m-5h2m</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt;= 5.1.1 → 5.1.2, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt;= 4.1.1 → 4.1.2, awcodes/filament-curator &amp;gt;= 3.0.0, &amp;lt;= 3.7.8 → 3.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-69241&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-828w-6qgx-3rcf"/>
+<id>urn:bug-hou:GHSA-828w-6qgx-3rcf</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt; 5.1.1 → 5.1.1, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt; 4.1.1 → 4.1.1, awcodes/filament-curator &amp;gt;= 3.2.4, &amp;lt; 3.7.8 → 3.7.8&lt;/p&gt;&lt;p&gt;CVE-2026-63389&lt;/p&gt;</content>
+</entry>
+</feed>

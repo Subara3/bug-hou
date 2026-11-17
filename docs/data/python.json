@@ -7,7 +7,7 @@
   {
    "id": "CVE-2026-16052",
    "published": "2026-11-12",
-   "modified": "2026-11-12",
+   "modified": "2026-11-17",
    "status": "Awaiting Analysis",
    "score": 2.3,
    "severity": "LOW",
@@ -276,26 +276,49 @@
     "CWE-400"
    ],
    "first_seen": "0000-00-00"
-  },
-  {
-   "id": "CVE-2026-19672",
-   "published": "2026-08-19",
-   "modified": "2026-08-28",
-   "status": "Awaiting Analysis",
-   "score": 6.3,
-   "severity": "MEDIUM",
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-   "cvss": "4.0",
-   "desc": "The tarfile module's tar and data\n extraction filters created directories outside the destination for \nmembers whose name leaves the destination and returns to it, such as ../evil/../dest/sub/file. The containment check used the resolved path, but intermediate directories were created from the name as given.\n\nOnly\n empty directories are created outside the destination. Member contents \nare still extracted inside it. To return to the destination the member's\n name must contain the destination directory's own final component, so \nextraction into a secure randomised directory is not affected.\n\nThis affects POSIX platforms only. On Windows, .. components are collapsed before the path reaches the filesystem, so the directories outside the destination are never created.",
-   "kev": false,
-   "affects": [],
-   "cwe": [
-    "CWE-22"
-   ],
-   "first_seen": "0000-00-00"
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-v858-xh7w-8jr5",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-63634",
+   "summary": "pympp allows excessive sponsored transaction fees through padded calldata",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-17",
+   "url": "https://github.com/advisories/GHSA-v858-xh7w-8jr5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "pympp",
+     "range": "< 0.9.1",
+     "fixed": "0.9.1"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "GHSA-gfv3-m769-5xm3",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-53998",
+   "summary": "Phoenix: Format String Injection in applyChatTemplate",
+   "severity": "CRITICAL",
+   "score": 10.0,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:L",
+   "published": "2026-11-17",
+   "url": "https://github.com/advisories/GHSA-gfv3-m769-5xm3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "arize-phoenix",
+     "range": ">= 13.0.0, < 15.7.0",
+     "fixed": "15.7.0"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
   {
    "id": "GHSA-8cgq-x343-p74c",
    "ecosystem": "pip",
@@ -2296,46 +2319,6 @@
    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
    "published": "2026-10-28",
    "url": "https://github.com/advisories/GHSA-r4j5-9xpp-3985",
-   "kev": false,
-   "packages": [
-    {
-     "name": "tornado",
-     "range": "< 6.6",
-     "fixed": "6.6"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-pw9p-v7r6-gx4p",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116578",
-   "summary": "Tornado: Open redirect in RedirectHandler via protocol-relative URLs",
-   "severity": "LOW",
-   "score": 2.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:N/VA:N/SC:N/SI:L/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-pw9p-v7r6-gx4p",
-   "kev": false,
-   "packages": [
-    {
-     "name": "tornado",
-     "range": "< 6.6",
-     "fixed": "6.6"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-pcg2-g6cj-q92c",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116577",
-   "summary": "Tornado: Quadratic CPU usage when parsing HTTP headers with line folding",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-pcg2-g6cj-q92c",
    "kev": false,
    "packages": [
     {

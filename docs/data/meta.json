@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-17T07:56:52Z",
+ "fetched_at": "2026-11-17T20:57:46Z",
  "days": 90,
  "targets": [
   {
@@ -38,7 +38,7 @@
   {
    "id": "python",
    "label": "Python",
-   "cves": 17,
+   "cves": 16,
    "critical": 2,
    "high": 3,
    "kev_recent": 0,
@@ -51,7 +51,7 @@
    "label": "Apache / nginx",
    "cves": 43,
    "critical": 7,
-   "high": 26,
+   "high": 27,
    "kev_recent": 0,
    "kev_total": 4,
    "ghsa": 0,
