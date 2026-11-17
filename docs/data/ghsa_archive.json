@@ -478,6 +478,315 @@
   ]
  },
  {
+  "id": "GHSA-c94f-87xg-65wf",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-91115",
+  "summary": "Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter",
+  "severity": "HIGH",
+  "score": 8.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-c94f-87xg-65wf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "silverstripe/framework",
+    "range": ">= 6.0.0, < 6.2.13",
+    "fixed": "6.2.13"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4qv2-g5vp-wjjw",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-91113",
+  "summary": "Silverstripe Framework: User-controlled ClassName allows unauthorized record type change",
+  "severity": "MEDIUM",
+  "score": 4.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-4qv2-g5vp-wjjw",
+  "kev": false,
+  "packages": [
+   {
+    "name": "silverstripe/framework",
+    "range": "< 6.2.13",
+    "fixed": "6.2.13"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rg72-5958-c65m",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-91112",
+  "summary": "Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation",
+  "severity": "MEDIUM",
+  "score": 6.8,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-rg72-5958-c65m",
+  "kev": false,
+  "packages": [
+   {
+    "name": "silverstripe/framework",
+    "range": "< 6.2.13",
+    "fixed": "6.2.13"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3qh3-54qg-gpq3",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-88989",
+  "summary": "Silverstripe Framework: Auth bypass GridFieldDetailForm",
+  "severity": "MEDIUM",
+  "score": 4.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-3qh3-54qg-gpq3",
+  "kev": false,
+  "packages": [
+   {
+    "name": "silverstripe/framework",
+    "range": "< 6.2.13",
+    "fixed": "6.2.13"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xwg4-8hqh-79jq",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-88988",
+  "summary": "Silverstripe Framework: XSS via SVG data URI",
+  "severity": "MEDIUM",
+  "score": 5.4,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-xwg4-8hqh-79jq",
+  "kev": false,
+  "packages": [
+   {
+    "name": "silverstripe/framework",
+    "range": "< 6.2.13",
+    "fixed": "6.2.13"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-qqrg-8jpm-8mph",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-88987",
+  "summary": "Silverstripe Framework: XSS via XHTML data URI",
+  "severity": "MEDIUM",
+  "score": 5.4,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-qqrg-8jpm-8mph",
+  "kev": false,
+  "packages": [
+   {
+    "name": "silverstripe/framework",
+    "range": "< 6.2.13",
+    "fixed": "6.2.13"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-w553-pwx6-3mg9",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-63182",
+  "summary": "lightsaml allows Signature wrapping bypass",
+  "severity": "HIGH",
+  "score": 8.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-w553-pwx6-3mg9",
+  "kev": false,
+  "packages": [
+   {
+    "name": "litesaml/lightsaml",
+    "range": ">= 5.0.0, < 5.0.1",
+    "fixed": "5.0.1"
+   },
+   {
+    "name": "litesaml/lightsaml",
+    "range": ">= 4.0.0, < 4.7.1",
+    "fixed": "4.7.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7h45-q5jx-7r87",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-129239",
+  "summary": "Directus: Share update allows reassigning user_created and role",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-7h45-q5jx-7r87",
+  "kev": false,
+  "packages": [
+   {
+    "name": "directus",
+    "range": "< 12.3.1",
+    "fixed": "12.3.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-jq3q-62jc-fqq9",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-68934",
+  "summary": "code-review-mcp-server: Command injection via unsanitized folderPath/baseBranch parameters",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-jq3q-62jc-fqq9",
+  "kev": false,
+  "packages": [
+   {
+    "name": "code-review-mcp-server",
+    "range": "< 1.5.3",
+    "fixed": "1.5.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8cgq-x343-p74c",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129301",
+  "summary": "mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mail-parser",
+    "range": ">= 4.6.0, < 4.6.3",
+    "fixed": "4.6.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xhrq-2mqv-q8wx",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129300",
+  "summary": "mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mail-parser",
+    "range": ">= 3.7.0, < 4.6.3",
+    "fixed": "4.6.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-24mq-4vc6-2prf",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129299",
+  "summary": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mail-parser",
+    "range": "<= 4.6.1",
+    "fixed": "4.6.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-72px-j8gh-p79x",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129297",
+  "summary": "mail-parser: Sender IP address spoofing in get_server_ipaddress()",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mail-parser",
+    "range": "<= 4.6.1",
+    "fixed": "4.6.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-r7w7-vpq8-c5vv",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129295",
+  "summary": "mail-parser is vulnerable to polynomial ReDoS in email header parsing",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mail-parser",
+    "range": ">= 4.2.0, < 4.6.1",
+    "fixed": "4.6.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-fr3h-cpq2-9496",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129296",
+  "summary": "mail-parser: Path Traversal vulnerability in attachment extraction",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mail-parser",
+    "range": ">= 3.8.0, < 4.6.0",
+    "fixed": "4.6.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-259w-wmqg-fp76",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-86046",
+  "summary": "termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
+  "severity": "HIGH",
+  "score": 7.1,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+  "published": "2026-11-16",
+  "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
+  "kev": false,
+  "packages": [
+   {
+    "name": "termux-sync",
+    "range": "<= 1.2.3",
+    "fixed": "1.2.4"
+   }
+  ]
+ },
+ {
   "id": "GHSA-89p3-fcch-88ph",
   "ecosystem": "pip",
   "cve": "CVE-2026-126299",

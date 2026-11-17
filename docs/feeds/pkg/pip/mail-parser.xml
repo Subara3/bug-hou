@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜mail-parser（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/mail-parser.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/mail-parser.xml</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-xhrq-2mqv-q8wx"/>
+<id>urn:bug-hou:GHSA-xhrq-2mqv-q8wx</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mail-parser &amp;gt;= 3.7.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-129300&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: mail-parser is vulnerable to polynomial ReDoS in email header parsing (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r7w7-vpq8-c5vv"/>
+<id>urn:bug-hou:GHSA-r7w7-vpq8-c5vv</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mail-parser &amp;gt;= 4.2.0, &amp;lt; 4.6.1 → 4.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-129295&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: mail-parser: Path Traversal vulnerability in attachment extraction (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-fr3h-cpq2-9496"/>
+<id>urn:bug-hou:GHSA-fr3h-cpq2-9496</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mail-parser &amp;gt;= 3.8.0, &amp;lt; 4.6.0 → 4.6.0&lt;/p&gt;&lt;p&gt;CVE-2026-129296&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-8cgq-x343-p74c"/>
+<id>urn:bug-hou:GHSA-8cgq-x343-p74c</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mail-parser &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-129301&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: mail-parser: Sender IP address spoofing in get_server_ipaddress() (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-72px-j8gh-p79x"/>
+<id>urn:bug-hou:GHSA-72px-j8gh-p79x</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mail-parser &amp;lt;= 4.6.1 → 4.6.2&lt;/p&gt;&lt;p&gt;CVE-2026-129297&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-24mq-4vc6-2prf"/>
+<id>urn:bug-hou:GHSA-24mq-4vc6-2prf</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mail-parser &amp;lt;= 4.6.1 → 4.6.2&lt;/p&gt;&lt;p&gt;CVE-2026-129299&lt;/p&gt;</content>
+</entry>
+</feed>

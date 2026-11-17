@@ -297,6 +297,146 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-8cgq-x343-p74c",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-129301",
+   "summary": "mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-8cgq-x343-p74c",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mail-parser",
+     "range": ">= 4.6.0, < 4.6.3",
+     "fixed": "4.6.3"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "GHSA-xhrq-2mqv-q8wx",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-129300",
+   "summary": "mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-xhrq-2mqv-q8wx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mail-parser",
+     "range": ">= 3.7.0, < 4.6.3",
+     "fixed": "4.6.3"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "GHSA-24mq-4vc6-2prf",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-129299",
+   "summary": "mail-parser: Uncaught exceptions and silent header loss in mail-parser on attacker-controlled input",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-24mq-4vc6-2prf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mail-parser",
+     "range": "<= 4.6.1",
+     "fixed": "4.6.2"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "GHSA-72px-j8gh-p79x",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-129297",
+   "summary": "mail-parser: Sender IP address spoofing in get_server_ipaddress()",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-72px-j8gh-p79x",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mail-parser",
+     "range": "<= 4.6.1",
+     "fixed": "4.6.2"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "GHSA-r7w7-vpq8-c5vv",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-129295",
+   "summary": "mail-parser is vulnerable to polynomial ReDoS in email header parsing",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-r7w7-vpq8-c5vv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mail-parser",
+     "range": ">= 4.2.0, < 4.6.1",
+     "fixed": "4.6.1"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "GHSA-fr3h-cpq2-9496",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-129296",
+   "summary": "mail-parser: Path Traversal vulnerability in attachment extraction",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-fr3h-cpq2-9496",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mail-parser",
+     "range": ">= 3.8.0, < 4.6.0",
+     "fixed": "4.6.0"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
+   "id": "GHSA-259w-wmqg-fp76",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-86046",
+   "summary": "termux-sync: Arbitrary file write during restore via attacker-controlled manifest source path",
+   "severity": "HIGH",
+   "score": 7.1,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:H",
+   "published": "2026-11-16",
+   "url": "https://github.com/advisories/GHSA-259w-wmqg-fp76",
+   "kev": false,
+   "packages": [
+    {
+     "name": "termux-sync",
+     "range": "<= 1.2.3",
+     "fixed": "1.2.4"
+    }
+   ],
+   "first_seen": "2026-11-17"
+  },
+  {
    "id": "GHSA-7mxv-7h3q-9324",
    "ecosystem": "pip",
    "cve": "CVE-2026-128134",
@@ -2202,151 +2342,6 @@
      "name": "tornado",
      "range": "< 6.6",
      "fixed": "6.6"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-6jp4-8v48-cc5v",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-117601",
-   "summary": "Electrum: Malicious server can replace a just-broadcast tx and try to trick user into RBF-ing it",
-   "severity": "CRITICAL",
-   "score": 9.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-6jp4-8v48-cc5v",
-   "kev": false,
-   "packages": [
-    {
-     "name": "electrum",
-     "range": "< 4.8.3",
-     "fixed": "4.8.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-5324-3w58-qpp2",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116575",
-   "summary": "Mem0: Cross-tenant conversation leak via unescaped delimiter collision in session-scope key (_build_session_scope)",
-   "severity": "MEDIUM",
-   "score": 6.3,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-5324-3w58-qpp2",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mem0ai",
-     "range": "< 2.0.18",
-     "fixed": "2.0.18"
-    },
-    {
-     "name": "mem0ai",
-     "range": "< 3.1.6",
-     "fixed": "3.1.6"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-h2r5-x5m7-3935",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115910",
-   "summary": "Python Social Auth: OpenID Connect nonce is not bound to the browser session, so a stolen authorization code logs the attacker in as the victim",
-   "severity": "MEDIUM",
-   "score": 6.8,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-h2r5-x5m7-3935",
-   "kev": false,
-   "packages": [
-    {
-     "name": "social-auth-core",
-     "range": "<= 6.1.1",
-     "fixed": "6.2.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-6pwm-x34p-fvj2",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115920",
-   "summary": "ONNX: Out-of-bounds read in ConvTranspose shape inference via undersized weight rank",
-   "severity": "MEDIUM",
-   "score": 6.2,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-6pwm-x34p-fvj2",
-   "kev": false,
-   "packages": [
-    {
-     "name": "onnx",
-     "range": ">= 1.2.1, <= 1.21.0",
-     "fixed": "1.22.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-q69g-f4f5-v8m7",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115922",
-   "summary": "ONNX: Denial of service via unchecked expansion of packed sub-byte tensors in ONNX Python APIs",
-   "severity": "MEDIUM",
-   "score": 6.2,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-q69g-f4f5-v8m7",
-   "kev": false,
-   "packages": [
-    {
-     "name": "onnx",
-     "range": "<= 1.21.0",
-     "fixed": "1.22.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-m4pr-6v3c-6fgr",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115921",
-   "summary": "ONNX: Null Pointer Dereference in ScanInferenceFunction Due to Missing Required Attribute",
-   "severity": "MEDIUM",
-   "score": 6.2,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-m4pr-6v3c-6fgr",
-   "kev": false,
-   "packages": [
-    {
-     "name": "onnx",
-     "range": ">= 1.4.0, <= 1.21.0",
-     "fixed": "1.22.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-48m4-24cq-37qf",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115919",
-   "summary": "ONNX: Out-of-Bounds Read in RNN/GRU/LSTM Shape Inference (Old Opsets, Missing Rank Check)",
-   "severity": "MEDIUM",
-   "score": 6.2,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-48m4-24cq-37qf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "onnx",
-     "range": "<= 1.21.0",
-     "fixed": "1.22.0"
     }
    ],
    "first_seen": "0000-00-00"

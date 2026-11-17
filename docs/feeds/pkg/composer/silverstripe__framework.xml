@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜silverstripe/framework（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/silverstripe__framework.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/silverstripe__framework.xml</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: Silverstripe Framework: XSS via SVG data URI (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-xwg4-8hqh-79jq"/>
+<id>urn:bug-hou:GHSA-xwg4-8hqh-79jq</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-88988&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rg72-5958-c65m"/>
+<id>urn:bug-hou:GHSA-rg72-5958-c65m</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91112&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: Silverstripe Framework: XSS via XHTML data URI (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-qqrg-8jpm-8mph"/>
+<id>urn:bug-hou:GHSA-qqrg-8jpm-8mph</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-88987&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-c94f-87xg-65wf"/>
+<id>urn:bug-hou:GHSA-c94f-87xg-65wf</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;silverstripe/framework &amp;gt;= 6.0.0, &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91115&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4qv2-g5vp-wjjw"/>
+<id>urn:bug-hou:GHSA-4qv2-g5vp-wjjw</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91113&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: Silverstripe Framework: Auth bypass GridFieldDetailForm (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3qh3-54qg-gpq3"/>
+<id>urn:bug-hou:GHSA-3qh3-54qg-gpq3</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-88989&lt;/p&gt;</content>
+</entry>
+</feed>

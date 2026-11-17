@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜litesaml/lightsaml（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/litesaml__lightsaml.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/litesaml__lightsaml.xml</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: lightsaml allows Signature wrapping bypass (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-w553-pwx6-3mg9"/>
+<id>urn:bug-hou:GHSA-w553-pwx6-3mg9</id>
+<updated>2026-11-17T00:00:00Z</updated>
+<content type="html">&lt;p&gt;litesaml/lightsaml &amp;gt;= 5.0.0, &amp;lt; 5.0.1 → 5.0.1, litesaml/lightsaml &amp;gt;= 4.0.0, &amp;lt; 4.7.1 → 4.7.1&lt;/p&gt;&lt;p&gt;CVE-2026-63182&lt;/p&gt;</content>
+</entry>
+</feed>
