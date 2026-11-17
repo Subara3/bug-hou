@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T00:46:20Z",
+ "updated_at": "2026-11-17T12:46:11Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -556,12 +556,19 @@
    "kev": false,
    "at": "2026-11-17"
   },
-  "GHSA-269c-h76q-8cxw": {
+  "GHSA-24mq-4vc6-2prf": {
    "level": "watch",
-   "reason": "GravのdetectXssを引用属性で回避し格納型XSS。MEDIUM",
-   "todo": "getgrav/grav 2.0.13に更新",
+   "reason": "MEDIUM。細工したメールで例外やヘッダーの欠落が起きる",
+   "todo": "mail-parserを4.6.2に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-17"
+  },
+  "GHSA-259w-wmqg-fp76": {
+   "level": "check",
+   "reason": "termux-syncのHIGH。復元時にマニフェスト経由で任意のファイルを書き込める",
+   "todo": "termux-syncを1.2.4に更新",
+   "kev": false,
+   "at": "2026-11-17"
   },
   "GHSA-26mh-57q7-jfvr": {
    "level": "check",
@@ -626,13 +633,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-38p6-h87p-r4cg": {
-   "level": "watch",
-   "reason": "GravのCSRF用nonce比較が定数時間でない。LOW",
-   "todo": "getgrav/grav 2.0.16に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-396x-xmvh-p563": {
    "level": "check",
    "reason": "Snipe-ITのアップロードファイルAPIで格納型XSS。HIGH",
@@ -688,6 +688,13 @@
    "todo": "league/commonmark 2.10.2に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-3qh3-54qg-gpq3": {
+   "level": "watch",
+   "reason": "MEDIUM。GridFieldDetailFormでの認可の回避",
+   "todo": "silverstripe/frameworkを6.2.13に更新",
+   "kev": false,
+   "at": "2026-11-17"
   },
   "GHSA-3r8g-jcqq-3p5j": {
    "level": "check",
@@ -787,13 +794,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-48m4-24cq-37qf": {
-   "level": "watch",
-   "reason": "ONNXのRNN系形状推論で境界外読み。MEDIUM",
-   "todo": "onnx 1.22.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-4f5f-j737-pm58": {
    "level": "watch",
    "reason": "REDAXOで認証済み利用者がカラムを列挙。MEDIUM",
@@ -836,6 +836,13 @@
    "kev": false,
    "at": "2026-11-10"
   },
+  "GHSA-4qv2-g5vp-wjjw": {
+   "level": "watch",
+   "reason": "MEDIUM。ClassNameを書き換えてレコードの種類を変えられる",
+   "todo": "silverstripe/frameworkを6.2.13に更新",
+   "kev": false,
+   "at": "2026-11-17"
+  },
   "GHSA-4v9q-p283-qc2m": {
    "level": "check",
    "reason": "Gravのplugin-asset-map.phpで認証なしパストラバーサル。HIGH",
@@ -850,24 +857,10 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-4xm8-rg9h-jhq2": {
-   "level": "check",
-   "reason": "Signal Kのパストラバーサルで秘密鍵漏洩・RCE。利用者の少ないCRITICAL",
-   "todo": "signalk-server 2.34.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-525v-9gp9-w22h": {
    "level": "watch",
    "reason": "node-forgeのTLSクライアントがクラッシュ。MEDIUM",
    "todo": "node-forge 1.4.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-5324-3w58-qpp2": {
-   "level": "watch",
-   "reason": "Mem0でテナント間の会話漏洩。MEDIUM",
-   "todo": "mem0ai 2.0.18/3.1.6に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1095,33 +1088,12 @@
    "kev": false,
    "at": "2026-11-11"
   },
-  "GHSA-6jp4-8v48-cc5v": {
-   "level": "check",
-   "reason": "Electrumで悪意あるサーバーが送信直後の取引を差替え。利用者の少ないCRITICAL",
-   "todo": "electrum 4.8.3に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-6pwm-x34p-fvj2": {
-   "level": "watch",
-   "reason": "ONNXのConvTranspose形状推論で境界外読み。MEDIUM",
-   "todo": "onnx 1.22.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-6qrw-m8cv-hcxf": {
    "level": "check",
    "reason": "node-forgeでRSA署名を偽造できるHIGH。署名検証に使う場合に影響",
    "todo": "1.4.1 に更新",
    "kev": false,
    "at": "2026-11-11"
-  },
-  "GHSA-6qw9-4vv5-jr97": {
-   "level": "watch",
-   "reason": "GravのMarkdown音声・動画sourceのURLで格納型XSS。MEDIUM",
-   "todo": "getgrav/grav 2.0.15に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-6vfx-w7q3-42gq": {
    "level": "check",
@@ -1158,6 +1130,13 @@
    "kev": false,
    "at": "2026-11-10"
   },
+  "GHSA-72px-j8gh-p79x": {
+   "level": "check",
+   "reason": "mail-parserのHIGH。get_server_ipaddress()で送信元IPを偽れる",
+   "todo": "mail-parserを4.6.2に更新",
+   "kev": false,
+   "at": "2026-11-17"
+  },
   "GHSA-752m-7p75-49gf": {
    "level": "watch",
    "reason": "MEDIUM。AltairのiframeでのXSS",
@@ -1185,6 +1164,13 @@
    "todo": "soupsieve 3.0.2に更新",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-7h45-q5jx-7r87": {
+   "level": "watch",
+   "reason": "MEDIUM。Directusの共有の更新でuser_createdやroleを付け替えられる",
+   "todo": "directusを12.3.1に更新",
+   "kev": false,
+   "at": "2026-11-17"
   },
   "GHSA-7m6h-rg42-m449": {
    "level": "watch",
@@ -1284,6 +1270,13 @@
    "kev": false,
    "at": "2026-11-14"
   },
+  "GHSA-8cgq-x343-p74c": {
+   "level": "watch",
+   "reason": "MEDIUM。悪意ある添付1つでwrite_attachments()が止まり残りが保存されない",
+   "todo": "mail-parserを4.6.3に更新",
+   "kev": false,
+   "at": "2026-11-17"
+  },
   "GHSA-8fx7-8jr8-84rv": {
    "level": "check",
    "reason": "NLTKのSteppingRecursiveDescentParserでCPUを使い切る。HIGH",
@@ -1351,13 +1344,6 @@
    "level": "watch",
    "reason": "league/commonmarkのDisallowedRawHtml回避。MEDIUM",
    "todo": "league/commonmark 2.10.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-9ccq-2jfg-qw33": {
-   "level": "watch",
-   "reason": "GravのUri::referrer()で前方一致によるOrigin検証回避。LOW",
-   "todo": "getgrav/grav 2.0.16に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1458,6 +1444,13 @@
    "todo": "Authlib 1.9.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-c94f-87xg-65wf": {
+   "level": "check",
+   "reason": "SilverstripeのHIGHのRCE。i18nTextCollectorTaskのwriter引数経由",
+   "todo": "silverstripe/frameworkを6.2.13に更新",
+   "kev": false,
+   "at": "2026-11-17"
   },
   "GHSA-cggf-277g-3q54": {
    "level": "check",
@@ -1601,17 +1594,17 @@
    "kev": false,
    "at": "2026-11-07"
   },
+  "GHSA-fr3h-cpq2-9496": {
+   "level": "watch",
+   "reason": "MEDIUM。添付ファイルの取り出しでパストラバーサル",
+   "todo": "mail-parserを4.6.0以降に更新",
+   "kev": false,
+   "at": "2026-11-17"
+  },
   "GHSA-g3hv-75wg-m249": {
    "level": "watch",
    "reason": "minimatchのパターン展開でDoS。MEDIUM",
    "todo": "minimatch 11.0.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-g4c3-4g96-6g4m": {
-   "level": "check",
-   "reason": "Chamilo LMSのCStudioアップロードで認証なしRCE。CRITICAL",
-   "todo": "chamilo-lms 2.0.1に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1700,13 +1693,6 @@
    "todo": "code16/sharpを9.23.0（10系は10.0.0-beta.4）以降に更新",
    "kev": false,
    "at": "2026-11-13"
-  },
-  "GHSA-h2r5-x5m7-3935": {
-   "level": "watch",
-   "reason": "Python Social AuthのOIDC nonceがセッションに紐付かない。MEDIUM",
-   "todo": "social-auth-core 6.2.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-h46v-rmh6-fq4f": {
    "level": "watch",
@@ -1911,6 +1897,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-jq3q-62jc-fqq9": {
+   "level": "check",
+   "reason": "code-review-mcp-serverのHIGH。folderPath等の引数からコマンド注入",
+   "todo": "code-review-mcp-serverを1.5.3に更新",
+   "kev": false,
+   "at": "2026-11-17"
+  },
   "GHSA-jr78-w6w5-m8f8": {
    "level": "check",
    "reason": "Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH",
@@ -1924,13 +1917,6 @@
    "todo": "envd 1.3.6に更新",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-m4pr-6v3c-6fgr": {
-   "level": "watch",
-   "reason": "ONNXのScan推論でNULL参照。MEDIUM",
-   "todo": "onnx 1.22.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-m5ph-mmg5-6w5h": {
    "level": "watch",
@@ -2093,13 +2079,6 @@
    "kev": false,
    "at": "2026-11-10"
   },
-  "GHSA-p597-crqc-m349": {
-   "level": "check",
-   "reason": "Gravのsystem/site/theme変数がTwigサンドボックスを素通り。HIGH",
-   "todo": "getgrav/grav 2.0.16に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-p623-mxf7-qxjm": {
    "level": "watch",
    "reason": "LOW。OctoPrintの接続設定での保存型XSS",
@@ -2184,13 +2163,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-q69g-f4f5-v8m7": {
-   "level": "watch",
-   "reason": "ONNXのサブバイトテンソル展開でDoS。MEDIUM",
-   "todo": "onnx 1.22.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-q6jf-24jf-m3cg": {
    "level": "check",
    "reason": "Aspire CLIの情報漏えい。HIGH",
@@ -2219,12 +2191,12 @@
    "kev": false,
    "at": "2026-11-14"
   },
-  "GHSA-qm8w-vx34-5j9j": {
-   "level": "check",
-   "reason": "@nx/maven・@nx/gradleでnx.json経由のコマンド注入。HIGH",
-   "todo": "22.7.9/23.1.2に更新",
+  "GHSA-qqrg-8jpm-8mph": {
+   "level": "watch",
+   "reason": "MEDIUM。XHTMLのdata URIを使ったXSS",
+   "todo": "silverstripe/frameworkを6.2.13に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-17"
   },
   "GHSA-qv5m-9pm6-hqp3": {
    "level": "watch",
@@ -2303,6 +2275,13 @@
    "kev": false,
    "at": "2026-11-11"
   },
+  "GHSA-r7w7-vpq8-c5vv": {
+   "level": "check",
+   "reason": "mail-parserのHIGH。メールヘッダーの解析でReDoS",
+   "todo": "mail-parserを4.6.1以降に更新",
+   "kev": false,
+   "at": "2026-11-17"
+  },
   "GHSA-r925-mgvr-h9cc": {
    "level": "check",
    "reason": "SymfonyのCache-ControlヘッダーでReDoS。HIGH",
@@ -2337,6 +2316,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-rg72-5958-c65m": {
+   "level": "watch",
+   "reason": "MEDIUM。CMS_ACCESS_SecurityAdmin権限を持つ人による権限昇格",
+   "todo": "silverstripe/frameworkを6.2.13に更新",
+   "kev": false,
+   "at": "2026-11-17"
   },
   "GHSA-rhr8-3pm8-cq29": {
    "level": "check",
@@ -2478,6 +2464,13 @@
    "kev": false,
    "at": "2026-11-11"
   },
+  "GHSA-w553-pwx6-3mg9": {
+   "level": "check",
+   "reason": "lightsamlのHIGH。署名ラッピングで署名の検証をすり抜けられる",
+   "todo": "litesaml/lightsamlを5.0.1または4.7.1に更新",
+   "kev": false,
+   "at": "2026-11-17"
+  },
   "GHSA-w7qv-268h-9h3f": {
    "level": "check",
    "reason": "HIGH。オブジェクトの文字列表現に含まれる個人情報が伏せられずログに出る",
@@ -2618,12 +2611,12 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-xjw5-q542-3vmr": {
-   "level": "check",
-   "reason": "Gravでconfig_access有効時にsystem設定の秘密が漏洩。HIGH",
-   "todo": "getgrav/grav 2.0.16に更新",
+  "GHSA-xhrq-2mqv-q8wx": {
+   "level": "watch",
+   "reason": "MEDIUM。範囲外のReceived日付で例外が出て処理が止まる",
+   "todo": "mail-parserを4.6.3に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-17"
   },
   "GHSA-xmfg-f9cm-w86q": {
    "level": "watch",
@@ -2640,6 +2633,13 @@
    "at": "2026-11-11",
    "urgency": "later",
    "comment": "データ上は手が空いたらだが、Server Componentsを外に公開しているなら早めに"
+  },
+  "GHSA-xwg4-8hqh-79jq": {
+   "level": "watch",
+   "reason": "MEDIUM。SVGのdata URIを使ったXSS",
+   "todo": "silverstripe/frameworkを6.2.13に更新",
+   "kev": false,
+   "at": "2026-11-17"
   },
   "GHSA-xwgp-w3pj-q5h3": {
    "level": "check",
