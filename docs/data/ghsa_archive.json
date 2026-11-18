@@ -139,6 +139,68 @@
   ]
  },
  {
+  "id": "GHSA-r7hw-jx6r-756g",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-110782",
+  "summary": "SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+  "published": "2026-11-17",
+  "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
+  "kev": false,
+  "packages": [
+   {
+    "name": "simplesamlphp/saml2",
+    "range": ">= 6.2.2, <= 6.2.3",
+    "fixed": "6.2.4"
+   },
+   {
+    "name": "simplesamlphp/saml2",
+    "range": ">= 7.0.0-rc1, < 7.0.0-rc2",
+    "fixed": "7.0.0-rc2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-x2vm-cf3p-m2w8",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119793",
+  "summary": "libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-17",
+  "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@libp2p/gossipsub",
+    "range": "< 17.0.0",
+    "fixed": "17.0.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rvfr-cqwq-rc4j",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-110789",
+  "summary": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-17",
+  "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@libp2p/crypto",
+    "range": "<= 5.1.21",
+    "fixed": "5.1.22"
+   }
+  ]
+ },
+ {
   "id": "GHSA-mfr8-8qww-v76h",
   "ecosystem": "npm",
   "cve": "CVE-2026-119790",

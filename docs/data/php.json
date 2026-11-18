@@ -653,6 +653,31 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-r7hw-jx6r-756g",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-110782",
+   "summary": "SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding)",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+   "published": "2026-11-17",
+   "url": "https://github.com/advisories/GHSA-r7hw-jx6r-756g",
+   "kev": false,
+   "packages": [
+    {
+     "name": "simplesamlphp/saml2",
+     "range": ">= 6.2.2, <= 6.2.3",
+     "fixed": "6.2.4"
+    },
+    {
+     "name": "simplesamlphp/saml2",
+     "range": ">= 7.0.0-rc1, < 7.0.0-rc2",
+     "fixed": "7.0.0-rc2"
+    }
+   ],
+   "first_seen": "2026-11-18"
+  },
+  {
    "id": "GHSA-8vm9-f75m-5h2m",
    "ecosystem": "composer",
    "cve": "CVE-2026-69241",
@@ -2973,26 +2998,6 @@
      "name": "getgrav/grav",
      "range": "<= 2.0.15",
      "fixed": "2.0.16"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-x424-64qh-5j54",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-84997",
-   "summary": "react/http: A malformed HTTP chunked body can lead to a denial-of-service and peg the CPU",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-x424-64qh-5j54",
-   "kev": false,
-   "packages": [
-    {
-     "name": "react/http",
-     "range": ">= 0.6.0, <= 1.11.0",
-     "fixed": "1.11.1"
     }
    ],
    "first_seen": "2026-11-02"

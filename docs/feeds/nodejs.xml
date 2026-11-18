@@ -4,8 +4,22 @@
 <link href="https://subara3.github.io/bug-hou/#nodejs"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/nodejs.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/nodejs.xml</id>
-<updated>2026-11-17T00:00:00Z</updated>
+<updated>2026-11-18T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-x2vm-cf3p-m2w8"/>
+<id>urn:bug-hou:GHSA-x2vm-cf3p-m2w8</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@libp2p/gossipsub &amp;lt; 17.0.0 → 17.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-119793&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rvfr-cqwq-rc4j"/>
+<id>urn:bug-hou:GHSA-rvfr-cqwq-rc4j</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@libp2p/crypto &amp;lt;= 5.1.21 → 5.1.22&lt;/p&gt;&lt;p&gt;CVE-2026-110789&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vc7v-qv4w-wrv8"/>
@@ -341,19 +355,5 @@
 <id>urn:bug-hou:GHSA-6889-vf6x-f3g5</id>
 <updated>2026-11-11T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのEd25519署名検証の不備。LOW&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125335&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: fast-xml-parser: Quadratic CPU consumption scanning unterminated stop-node tags (LOW)</title>
-<link href="https://github.com/advisories/GHSA-474x-hrwr-fgx4"/>
-<id>urn:bug-hou:GHSA-474x-hrwr-fgx4</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; fast-xml-parserで閉じていないタグの処理が遅くなる。LOW&lt;br&gt;→ fast-xml-parserを5.12.0に更新&lt;/p&gt;&lt;p&gt;fast-xml-parser &amp;lt;= 5.11.2 → 5.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-126066&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Nuxt Content: Unauthenticated SQLite Function DoS via Content Query API (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-xxrh-5hgg-gj4h"/>
-<id>urn:bug-hou:GHSA-xxrh-5hgg-gj4h</id>
-<updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Nuxt Contentでログインなしでサービスを止められるHIGH&lt;br&gt;→ 3.15.2 以降に更新&lt;/p&gt;&lt;p&gt;@nuxt/content &amp;gt;= 3.0.0, &amp;lt; 3.15.2 → 3.15.2&lt;/p&gt;&lt;p&gt;CVE-2026-102650&lt;/p&gt;</content>
 </entry>
 </feed>

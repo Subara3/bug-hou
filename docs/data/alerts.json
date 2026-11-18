@@ -1,5 +1,15 @@
 [
  {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/1118-jre.html",
+  "org": "IPA",
+  "title": "Oracle Java の脆弱性対策について(2026年11月)",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/1118-jre.html",
+  "date": "2026-11-18",
+  "updated": false,
+  "cves": [],
+  "first": "2026-11-18"
+ },
+ {
   "id": "https://www.jpcert.or.jp/at/2026/at260035.html",
   "org": "JPCERT/CC",
   "title": "2026年11月マイクロソフトセキュリティ更新プログラムに関する注意喚起",

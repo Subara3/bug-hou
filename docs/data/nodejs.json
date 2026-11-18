@@ -52,6 +52,46 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-x2vm-cf3p-m2w8",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119793",
+   "summary": "libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-17",
+   "url": "https://github.com/advisories/GHSA-x2vm-cf3p-m2w8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@libp2p/gossipsub",
+     "range": "< 17.0.0",
+     "fixed": "17.0.0"
+    }
+   ],
+   "first_seen": "2026-11-18"
+  },
+  {
+   "id": "GHSA-rvfr-cqwq-rc4j",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-110789",
+   "summary": "libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-17",
+   "url": "https://github.com/advisories/GHSA-rvfr-cqwq-rc4j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@libp2p/crypto",
+     "range": "<= 5.1.21",
+     "fixed": "5.1.22"
+    }
+   ],
+   "first_seen": "2026-11-18"
+  },
+  {
    "id": "GHSA-vc7v-qv4w-wrv8",
    "ecosystem": "npm",
    "cve": "CVE-2026-119351",
@@ -2442,46 +2482,6 @@
      "name": "@nuxt/vite-builder",
      "range": ">= 3.0.0, < 4.6.3",
      "fixed": "4.6.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-j63v-mwhm-56jx",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118763",
-   "summary": "@sigstore/oci sends the registry Authorization header to a cross-host blob-upload Location",
-   "severity": "HIGH",
-   "score": 7.4,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-j63v-mwhm-56jx",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@sigstore/oci",
-     "range": "<= 0.7.1",
-     "fixed": "0.7.2"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-mrwp-f3q8-3g9p",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-116689",
-   "summary": "follow-redirects: Cross-realm sensitiveHeaders arrays are discarded and custom credentials can follow redirects",
-   "severity": "HIGH",
-   "score": 8.2,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-mrwp-f3q8-3g9p",
-   "kev": false,
-   "packages": [
-    {
-     "name": "follow-redirects",
-     "range": ">= 1.16.0, <= 1.16.1",
-     "fixed": "1.16.2"
     }
    ],
    "first_seen": "0000-00-00"

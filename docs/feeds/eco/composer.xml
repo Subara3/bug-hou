@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/composer.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/composer.xml</id>
-<updated>2026-11-17T00:00:00Z</updated>
+<updated>2026-11-18T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r7hw-jx6r-756g"/>
+<id>urn:bug-hou:GHSA-r7hw-jx6r-756g</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;simplesamlphp/saml2 &amp;gt;= 6.2.2, &amp;lt;= 6.2.3 → 6.2.4, simplesamlphp/saml2 &amp;gt;= 7.0.0-rc1, &amp;lt; 7.0.0-rc2 → 7.0.0-rc2&lt;/p&gt;&lt;p&gt;CVE-2026-110782&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] PHP: Silverstripe Framework: XSS via SVG data URI (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xwg4-8hqh-79jq"/>
@@ -117,13 +124,6 @@
 <id>urn:bug-hou:GHSA-xhfv-7758-r9hx</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravでadmin.users権限者がスーパー管理者に昇格。HIGH&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75837&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: react/http: A malformed HTTP chunked body can lead to a denial-of-service and peg the CPU (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-x424-64qh-5j54"/>
-<id>urn:bug-hou:GHSA-x424-64qh-5j54</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; react/httpで不正なチャンク本文によりCPUを占有しDoS。HIGH&lt;br&gt;→ react/http 1.11.1に更新&lt;/p&gt;&lt;p&gt;react/http &amp;gt;= 0.6.0, &amp;lt;= 1.11.0 → 1.11.1&lt;/p&gt;&lt;p&gt;CVE-2026-84997&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
