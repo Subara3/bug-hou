@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T07:32:52Z",
+ "updated_at": "2026-11-18T20:34:58Z",
  "items": {
   "CVE-2025-1218": {
    "u": "later",
@@ -10,7 +10,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.2101
+   "pct": 0.2104
   },
   "CVE-2025-14181": {
    "u": "later",
@@ -21,7 +21,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2442
+   "pct": 0.2445
   },
   "CVE-2026-101019": {
    "u": "later",
@@ -43,7 +43,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0032,
-   "pct": 0.2491
+   "pct": 0.2495
   },
   "CVE-2026-103995": {
    "u": "later",
@@ -54,7 +54,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0036,
-   "pct": 0.3024
+   "pct": 0.3029
   },
   "CVE-2026-104939": {
    "u": "later",
@@ -65,7 +65,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.322
+   "pct": 0.3227
   },
   "CVE-2026-106023": {
    "u": "later",
@@ -75,8 +75,8 @@
    "auto_src": "CISA",
    "imp": "partial",
    "imp_src": "CISA",
-   "epss": 0.003,
-   "pct": 0.2257
+   "epss": 0.0055,
+   "pct": 0.4648
   },
   "CVE-2026-109163": {
    "u": "later",
@@ -86,8 +86,8 @@
    "auto_src": "CISA",
    "imp": "partial",
    "imp_src": "CISA",
-   "epss": 0.0025,
-   "pct": 0.1617
+   "epss": 0.0034,
+   "pct": 0.2777
   },
   "CVE-2026-109618": {
    "u": "now",
@@ -122,6 +122,15 @@
    "epss": 0.8264,
    "pct": 0.9967
   },
+  "CVE-2026-113425": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
+   "imp": "total",
+   "imp_src": "CISA"
+  },
   "CVE-2026-114583": {
    "u": "later",
    "exp": "none",
@@ -131,7 +140,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1807
+   "pct": 0.1809
   },
   "CVE-2026-115557": {
    "u": "later",
@@ -142,7 +151,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0053,
-   "pct": 0.457
+   "pct": 0.4581
   },
   "CVE-2026-115559": {
    "u": "later",
@@ -153,7 +162,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0019,
-   "pct": 0.0846
+   "pct": 0.0847
   },
   "CVE-2026-115791": {
    "u": "later",
@@ -164,7 +173,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0016,
-   "pct": 0.0537
+   "pct": 0.0538
   },
   "CVE-2026-116566": {
    "u": "later",
@@ -175,7 +184,16 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1778
+   "pct": 0.1781
+  },
+  "CVE-2026-118899": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "yes",
+   "auto_src": "CISA",
+   "imp": "partial",
+   "imp_src": "CISA"
   },
   "CVE-2026-119170": {
    "u": "later",
@@ -186,7 +204,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0049,
-   "pct": 0.4257
+   "pct": 0.4268
   },
   "CVE-2026-119618": {
    "u": "later",
@@ -197,7 +215,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0158,
-   "pct": 0.7599
+   "pct": 0.7605
   },
   "CVE-2026-119977": {
    "u": "now",
@@ -208,7 +226,43 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0159,
-   "pct": 0.7602
+   "pct": 0.7609
+  },
+  "CVE-2026-120967": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
+   "imp": "partial",
+   "imp_src": "CISA"
+  },
+  "CVE-2026-120993": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "yes",
+   "auto_src": "CISA",
+   "imp": "partial",
+   "imp_src": "CISA"
+  },
+  "CVE-2026-121810": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
+   "imp": "total",
+   "imp_src": "CISA"
+  },
+  "CVE-2026-123007": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
+   "imp": "total",
+   "imp_src": "CISA"
   },
   "CVE-2026-12345": {
    "u": "later",
@@ -219,7 +273,34 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0034,
-   "pct": 0.2837
+   "pct": 0.2842
+  },
+  "CVE-2026-123633": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
+   "imp": "total",
+   "imp_src": "CISA"
+  },
+  "CVE-2026-123634": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
+   "imp": "total",
+   "imp_src": "CISA"
+  },
+  "CVE-2026-123640": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "yes",
+   "auto_src": "CISA",
+   "imp": "partial",
+   "imp_src": "CISA"
   },
   "CVE-2026-124249": {
    "u": "later",
@@ -230,7 +311,16 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1977
+   "pct": 0.198
+  },
+  "CVE-2026-125283": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "CISA",
+   "auto": "yes",
+   "auto_src": "CISA",
+   "imp": "partial",
+   "imp_src": "CISA"
   },
   "CVE-2026-15176": {
    "u": "later",
@@ -241,7 +331,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.01,
-   "pct": 0.6331
+   "pct": 0.634
   },
   "CVE-2026-15310": {
    "u": "later",
@@ -252,7 +342,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0053,
-   "pct": 0.4516
+   "pct": 0.4526
   },
   "CVE-2026-16052": {
    "u": "later",
@@ -263,7 +353,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2358
+   "pct": 0.2361
   },
   "CVE-2026-17545": {
    "u": "later",
@@ -274,7 +364,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0037,
-   "pct": 0.3112
+   "pct": 0.3118
   },
   "CVE-2026-18329": {
    "u": "later",
@@ -285,7 +375,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0065,
-   "pct": 0.5156
+   "pct": 0.5167
   },
   "CVE-2026-19445": {
    "u": "later",
@@ -296,7 +386,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0052,
-   "pct": 0.4508
+   "pct": 0.4519
   },
   "CVE-2026-19552": {
    "u": "later",
@@ -307,7 +397,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.003,
-   "pct": 0.2325
+   "pct": 0.2328
   },
   "CVE-2026-19553": {
    "u": "later",
@@ -318,7 +408,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0055,
-   "pct": 0.4641
+   "pct": 0.4652
   },
   "CVE-2026-42356": {
    "u": "later",
@@ -329,7 +419,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0044,
-   "pct": 0.3862
+   "pct": 0.3872
   },
   "CVE-2026-42528": {
    "u": "later",
@@ -340,7 +430,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3648
+   "pct": 0.3658
   },
   "CVE-2026-46729": {
    "u": "later",
@@ -351,7 +441,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0045,
-   "pct": 0.3972
+   "pct": 0.3982
   },
   "CVE-2026-47360": {
    "u": "later",
@@ -362,7 +452,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0039,
-   "pct": 0.332
+   "pct": 0.3329
   },
   "CVE-2026-48005": {
    "u": "later",
@@ -373,7 +463,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0056,
-   "pct": 0.4756
+   "pct": 0.4767
   },
   "CVE-2026-56153": {
    "u": "later",
@@ -384,7 +474,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4083
+   "pct": 0.4093
   },
   "CVE-2026-56154": {
    "u": "soon",
@@ -395,7 +485,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0054,
-   "pct": 0.4579
+   "pct": 0.459
   },
   "CVE-2026-56449": {
    "u": "later",
@@ -406,7 +496,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0066,
-   "pct": 0.5205
+   "pct": 0.5217
   },
   "CVE-2026-57941": {
    "u": "soon",
@@ -417,7 +507,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0059,
-   "pct": 0.4899
+   "pct": 0.4912
   },
   "CVE-2026-58415": {
    "u": "later",
@@ -428,7 +518,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0048,
-   "pct": 0.4211
+   "pct": 0.4222
   },
   "CVE-2026-59685": {
    "u": "later",
@@ -439,7 +529,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4083
+   "pct": 0.4093
   },
   "CVE-2026-59797": {
    "u": "soon",
@@ -450,7 +540,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.005,
-   "pct": 0.437
+   "pct": 0.4379
   },
   "CVE-2026-6103": {
    "u": "later",
@@ -461,7 +551,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0016,
-   "pct": 0.0517
+   "pct": 0.0518
   },
   "CVE-2026-63045": {
    "u": "later",
@@ -472,7 +562,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0044,
-   "pct": 0.3886
+   "pct": 0.3895
   },
   "CVE-2026-63292": {
    "u": "later",
@@ -483,7 +573,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0095,
-   "pct": 0.6177
+   "pct": 0.6187
   },
   "CVE-2026-63686": {
    "u": "later",
@@ -494,7 +584,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4046
+   "pct": 0.4056
   },
   "CVE-2026-63718": {
    "u": "later",
@@ -505,7 +595,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3824
+   "pct": 0.3834
   },
   "CVE-2026-66362": {
    "u": "later",
@@ -516,7 +606,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0057,
-   "pct": 0.4793
+   "pct": 0.4804
   },
   "CVE-2026-73636": {
    "u": "later",
@@ -527,7 +617,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.345
+   "pct": 0.3459
   },
   "CVE-2026-73637": {
    "u": "later",
@@ -538,7 +628,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0047,
-   "pct": 0.4092
+   "pct": 0.4102
   },
   "CVE-2026-77180": {
    "u": "later",
@@ -549,7 +639,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.005,
-   "pct": 0.4327
+   "pct": 0.4338
   },
   "CVE-2026-78222": {
    "u": "later",
@@ -560,7 +650,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0062,
-   "pct": 0.5051
+   "pct": 0.5062
   },
   "CVE-2026-78689": {
    "u": "later",
@@ -571,7 +661,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0076,
-   "pct": 0.5589
+   "pct": 0.56
   },
   "CVE-2026-79768": {
    "u": "later",
@@ -582,7 +672,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0055,
-   "pct": 0.4662
+   "pct": 0.4673
   },
   "CVE-2026-82049": {
    "u": "later",
@@ -593,7 +683,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0019,
-   "pct": 0.0845
+   "pct": 0.0846
   },
   "CVE-2026-87902": {
    "u": "now",
@@ -615,7 +705,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0061,
-   "pct": 0.4981
+   "pct": 0.4993
   },
   "CVE-2026-90439": {
    "u": "later",
@@ -626,7 +716,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1741
+   "pct": 0.1744
   },
   "CVE-2026-90797": {
    "u": "later",
@@ -637,7 +727,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0067,
-   "pct": 0.5258
+   "pct": 0.527
   },
   "CVE-2026-90799": {
    "u": "later",
@@ -648,7 +738,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0064,
-   "pct": 0.5152
+   "pct": 0.5163
   },
   "CVE-2026-90800": {
    "u": "later",
@@ -659,7 +749,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0063,
-   "pct": 0.5096
+   "pct": 0.5107
   },
   "CVE-2026-91184": {
    "u": "later",
@@ -670,7 +760,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0048,
-   "pct": 0.4216
+   "pct": 0.4226
   },
   "CVE-2026-91765": {
    "u": "later",
@@ -681,7 +771,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3229
+   "pct": 0.3236
   },
   "CVE-2026-91766": {
    "u": "later",
@@ -692,7 +782,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2142
+   "pct": 0.2146
   },
   "CVE-2026-91767": {
    "u": "later",
@@ -714,7 +804,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3215
+   "pct": 0.3222
   },
   "CVE-2026-91769": {
    "u": "later",
@@ -736,7 +826,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.2033
+   "pct": 0.2036
   },
   "CVE-2026-93479": {
    "u": "later",
@@ -747,7 +837,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.012,
-   "pct": 0.6865
+   "pct": 0.6874
   },
   "CVE-2026-93546": {
    "u": "later",
@@ -758,7 +848,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3769
+   "pct": 0.3779
   },
   "CVE-2026-93682": {
    "u": "soon",
@@ -769,7 +859,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0034,
-   "pct": 0.2732
+   "pct": 0.2736
   },
   "CVE-2026-94197": {
    "u": "later",
@@ -780,7 +870,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0039,
-   "pct": 0.3409
+   "pct": 0.3418
   },
   "CVE-2026-95101": {
    "u": "later",
@@ -791,7 +881,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.2866
+   "pct": 0.2871
   },
   "CVE-2026-96615": {
    "u": "later",
@@ -802,7 +892,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1729
+   "pct": 0.1731
   },
   "CVE-2026-97205": {
    "u": "later",
@@ -813,7 +903,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0083,
-   "pct": 0.5827
+   "pct": 0.5838
   },
   "CVE-2026-97629": {
    "u": "later",
@@ -824,7 +914,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0025,
-   "pct": 0.1596
+   "pct": 0.1597
   },
   "GHSA-24c4-3p7v-29cm": {
    "u": "later",
@@ -835,7 +925,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0055,
-   "pct": 0.4637
+   "pct": 0.4649
   },
   "GHSA-24mq-4vc6-2prf": {
    "u": "later",
@@ -846,7 +936,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0036,
-   "pct": 0.2966
+   "pct": 0.2972
   },
   "GHSA-259w-wmqg-fp76": {
    "u": "later",
@@ -857,7 +947,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.187
+   "pct": 0.1872
   },
   "GHSA-26mh-57q7-jfvr": {
    "u": "soon",
@@ -868,7 +958,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2425
+   "pct": 0.2428
   },
   "GHSA-28qf-cpwq-vmc2": {
    "u": "later",
@@ -879,7 +969,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3712
+   "pct": 0.3722
   },
   "GHSA-2h4w-29cv-2cmv": {
    "u": "later",
@@ -890,7 +980,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.2878
+   "pct": 0.2884
   },
   "GHSA-2phh-27fw-q4gc": {
    "u": "later",
@@ -901,7 +991,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0034,
-   "pct": 0.2773
+   "pct": 0.2778
   },
   "GHSA-2qm8-x737-gmw5": {
    "u": "soon",
@@ -912,7 +1002,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3735,
+   "pct": 0.3745,
    "hist": [
     {
      "at": "2026-11-04",
@@ -934,7 +1024,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3431
+   "pct": 0.344
   },
   "GHSA-2vgq-wchc-25w7": {
    "u": "later",
@@ -956,7 +1046,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0083,
-   "pct": 0.5825
+   "pct": 0.5835
   },
   "GHSA-36h5-qg4p-q2qf": {
    "u": "later",
@@ -967,7 +1057,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0018,
-   "pct": 0.0745
+   "pct": 0.0746
   },
   "GHSA-396x-xmvh-p563": {
    "u": "soon",
@@ -978,7 +1068,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0024,
-   "pct": 0.1534
+   "pct": 0.1536
   },
   "GHSA-3cgg-c5pp-57h6": {
    "u": "later",
@@ -989,7 +1079,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0025,
-   "pct": 0.16
+   "pct": 0.1601
   },
   "GHSA-3g3m-2fjr-6pw4": {
    "u": "later",
@@ -1000,7 +1090,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.2917
+   "pct": 0.2922
   },
   "GHSA-3gg2-335m-rxc6": {
    "u": "later",
@@ -1011,7 +1101,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1809
+   "pct": 0.1811
   },
   "GHSA-3hch-x692-6qj3": {
    "u": "later",
@@ -1022,7 +1112,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0036,
-   "pct": 0.303
+   "pct": 0.3036
   },
   "GHSA-3jp5-3h47-28qf": {
    "u": "later",
@@ -1033,7 +1123,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1823
+   "pct": 0.1826
   },
   "GHSA-3q6v-r5mr-hxv8": {
    "u": "later",
@@ -1053,7 +1143,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0024,
-   "pct": 0.1591
+   "pct": 0.1592
   },
   "GHSA-3r8g-jcqq-3p5j": {
    "u": "later",
@@ -1064,7 +1154,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0035,
-   "pct": 0.2862
+   "pct": 0.2867
   },
   "GHSA-3rp8-rxj8-mvjw": {
    "u": "later",
@@ -1075,7 +1165,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0049,
-   "pct": 0.4234
+   "pct": 0.4246
   },
   "GHSA-3v2p-hm54-8qcq": {
    "u": "later",
@@ -1086,7 +1176,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0036,
-   "pct": 0.306
+   "pct": 0.3066
   },
   "GHSA-3x94-m842-937c": {
    "u": "later",
@@ -1097,7 +1187,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0063,
-   "pct": 0.5061
+   "pct": 0.5072
   },
   "GHSA-3xf4-9g3c-4h4w": {
    "u": "later",
@@ -1130,7 +1220,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3791
+   "pct": 0.38
   },
   "GHSA-4487-j8r4-4g2f": {
    "u": "later",
@@ -1141,7 +1231,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0018,
-   "pct": 0.0744
+   "pct": 0.0745
   },
   "GHSA-44r8-3p76-84mw": {
    "u": "later",
@@ -1152,7 +1242,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0017,
-   "pct": 0.0659
+   "pct": 0.066
   },
   "GHSA-4528-x5fx-h6hg": {
    "u": "soon",
@@ -1163,7 +1253,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0047,
-   "pct": 0.4101,
+   "pct": 0.4112,
    "hist": [
     {
      "at": "2026-11-04",
@@ -1185,7 +1275,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2449
+   "pct": 0.2452
   },
   "GHSA-46wx-v44x-9hh2": {
    "u": "later",
@@ -1196,7 +1286,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0018,
-   "pct": 0.0723
+   "pct": 0.0724
   },
   "GHSA-474x-hrwr-fgx4": {
    "u": "later",
@@ -1207,7 +1297,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4034
+   "pct": 0.4044
   },
   "GHSA-4f5f-j737-pm58": {
    "u": "later",
@@ -1218,7 +1308,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0039,
-   "pct": 0.3343
+   "pct": 0.3351
   },
   "GHSA-4h7h-rv7c-7m2v": {
    "u": "later",
@@ -1229,7 +1319,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0039,
-   "pct": 0.3391
+   "pct": 0.3399
   },
   "GHSA-4hvg-fv5c-9936": {
    "u": "later",
@@ -1249,7 +1339,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0048,
-   "pct": 0.4178
+   "pct": 0.4189
   },
   "GHSA-4m76-xfj5-7975": {
    "u": "later",
@@ -1260,7 +1350,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3476
+   "pct": 0.3485
   },
   "GHSA-4p8p-pjpq-2w7h": {
    "u": "soon",
@@ -1271,7 +1361,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2201
+   "pct": 0.2204
   },
   "GHSA-4qv2-g5vp-wjjw": {
    "u": "later",
@@ -1282,7 +1372,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1852
+   "pct": 0.1855
   },
   "GHSA-4v9q-p283-qc2m": {
    "u": "later",
@@ -1293,7 +1383,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3804
+   "pct": 0.3813
   },
   "GHSA-4vqv-7265-gm2w": {
    "u": "later",
@@ -1304,7 +1394,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0022,
-   "pct": 0.1273
+   "pct": 0.1272
   },
   "GHSA-525v-9gp9-w22h": {
    "u": "later",
@@ -1315,7 +1405,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0022,
-   "pct": 0.1203
+   "pct": 0.1202
   },
   "GHSA-54mm-6729-r5wp": {
    "u": "soon",
@@ -1326,7 +1416,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3661
+   "pct": 0.3671
   },
   "GHSA-5849-834g-hvw5": {
    "u": "later",
@@ -1348,7 +1438,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0041,
-   "pct": 0.3573
+   "pct": 0.3583
   },
   "GHSA-5974-gfqc-wrcm": {
    "u": "later",
@@ -1359,7 +1449,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0019,
-   "pct": 0.0905
+   "pct": 0.0906
   },
   "GHSA-59f9-gqg8-mqpj": {
    "u": "later",
@@ -1370,7 +1460,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0027,
-   "pct": 0.1976
+   "pct": 0.1979
   },
   "GHSA-59xw-qv23-j3rc": {
    "u": "later",
@@ -1381,7 +1471,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.2106
+   "pct": 0.2109
   },
   "GHSA-5cjw-f85j-cv6r": {
    "u": "later",
@@ -1392,7 +1482,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0016,
-   "pct": 0.0555
+   "pct": 0.0556
   },
   "GHSA-5cwg-6vw7-rj6p": {
    "u": "later",
@@ -1414,7 +1504,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0032,
-   "pct": 0.2599
+   "pct": 0.2603
   },
   "GHSA-5mmc-8pc9-wggg": {
    "u": "later",
@@ -1425,7 +1515,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3252
+   "pct": 0.3261
   },
   "GHSA-5pm8-86m8-9m6r": {
    "u": "soon",
@@ -1436,7 +1526,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.005,
-   "pct": 0.4308,
+   "pct": 0.4319,
    "hist": [
     {
      "at": "2026-11-17",
@@ -1458,7 +1548,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0052,
-   "pct": 0.4452
+   "pct": 0.4462
   },
   "GHSA-5rmc-48h2-hvcm": {
    "u": "later",
@@ -1469,7 +1559,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0044,
-   "pct": 0.39
+   "pct": 0.391
   },
   "GHSA-5wcm-3v2w-8362": {
    "u": "later",
@@ -1480,7 +1570,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0041,
-   "pct": 0.3547
+   "pct": 0.3555
   },
   "GHSA-5wg4-q3ww-283h": {
    "u": "later",
@@ -1491,7 +1581,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3456
+   "pct": 0.3465
   },
   "GHSA-5x38-2vff-x55p": {
    "u": "soon",
@@ -1502,7 +1592,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0024,
-   "pct": 0.1554
+   "pct": 0.1555
   },
   "GHSA-5xjx-9qx6-jcrv": {
    "u": "later",
@@ -1513,7 +1603,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0032,
-   "pct": 0.2505
+   "pct": 0.251
   },
   "GHSA-628f-v4f6-p37r": {
    "u": "later",
@@ -1524,7 +1614,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.204
+   "pct": 0.2043
   },
   "GHSA-62m5-6wh8-28x7": {
    "u": "later",
@@ -1546,7 +1636,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1767
+   "pct": 0.1769
   },
   "GHSA-63hm-g96r-2m2q": {
    "u": "later",
@@ -1557,18 +1647,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.007,
-   "pct": 0.5389
-  },
-  "GHSA-648h-gw55-m2g7": {
-   "u": "later",
-   "exp": "none",
-   "exp_src": "CISA",
-   "auto": "no",
-   "auto_src": "CISA",
-   "imp": "partial",
-   "imp_src": "CISA",
-   "epss": 0.0035,
-   "pct": 0.2917
+   "pct": 0.5401
   },
   "GHSA-64vx-6h2c-rjh7": {
    "u": "soon",
@@ -1579,7 +1658,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3223
+   "pct": 0.3231
   },
   "GHSA-65v8-q222-64xx": {
    "u": "soon",
@@ -1590,7 +1669,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0033,
-   "pct": 0.2657,
+   "pct": 0.2662,
    "hist": [
     {
      "at": "2026-11-14",
@@ -1613,7 +1692,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3825
+   "pct": 0.3835
   },
   "GHSA-6665-2vj3-h76r": {
    "u": "later",
@@ -1644,7 +1723,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.2053
+   "pct": 0.2055
   },
   "GHSA-6972-9mcm-vhwj": {
    "u": "soon",
@@ -1655,7 +1734,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.348,
+   "pct": 0.3488,
    "hist": [
     {
      "at": "2026-11-14",
@@ -1677,7 +1756,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.213
+   "pct": 0.2133
   },
   "GHSA-6cv4-p8m7-4r25": {
    "u": "later",
@@ -1688,7 +1767,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0056,
-   "pct": 0.4699
+   "pct": 0.471
   },
   "GHSA-6f4g-xm8v-pgv6": {
    "u": "later",
@@ -1699,7 +1778,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3257
+   "pct": 0.3265
   },
   "GHSA-6qrw-m8cv-hcxf": {
    "u": "later",
@@ -1708,7 +1787,9 @@
    "auto": "yes",
    "auto_src": "CVSS",
    "imp": "partial",
-   "imp_src": "CVSS"
+   "imp_src": "CVSS",
+   "epss": 0.002,
+   "pct": 0.1048
   },
   "GHSA-6vfx-w7q3-42gq": {
    "u": "later",
@@ -1728,7 +1809,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0051,
-   "pct": 0.4409
+   "pct": 0.4419
   },
   "GHSA-6wcv-rj3c-mhv3": {
    "u": "later",
@@ -1739,7 +1820,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0048,
-   "pct": 0.4178
+   "pct": 0.4189
   },
   "GHSA-6wvx-3r32-xmcg": {
    "u": "later",
@@ -1750,7 +1831,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.202
+   "pct": 0.2022
   },
   "GHSA-6xmv-cjr5-w3q8": {
    "u": "soon",
@@ -1761,7 +1842,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2451
+   "pct": 0.2454
   },
   "GHSA-72px-j8gh-p79x": {
    "u": "later",
@@ -1794,7 +1875,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.245
+   "pct": 0.2453
   },
   "GHSA-79wv-8rh2-9vp2": {
    "u": "later",
@@ -1814,7 +1895,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2392,
+   "pct": 0.2395,
    "hist": [
     {
      "at": "2026-11-17",
@@ -1836,7 +1917,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3444
+   "pct": 0.3453
   },
   "GHSA-7m6h-rg42-m449": {
    "u": "later",
@@ -1847,7 +1928,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.2878
+   "pct": 0.2883
   },
   "GHSA-7m8x-x364-m26j": {
    "u": "later",
@@ -1867,7 +1948,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0018,
-   "pct": 0.0807
+   "pct": 0.0808
   },
   "GHSA-7r4r-6ppg-7ff8": {
    "u": "later",
@@ -1887,7 +1968,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.01,
-   "pct": 0.6323
+   "pct": 0.6332
   },
   "GHSA-7wch-p9px-956x": {
    "u": "soon",
@@ -1898,7 +1979,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0067,
-   "pct": 0.5258
+   "pct": 0.5269
   },
   "GHSA-7xv3-gf2g-498h": {
    "u": "later",
@@ -1909,7 +1990,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.2106
+   "pct": 0.2109
   },
   "GHSA-828w-6qgx-3rcf": {
    "u": "later",
@@ -1929,7 +2010,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0058,
-   "pct": 0.4852
+   "pct": 0.4864
   },
   "GHSA-8494-f6mr-cjpv": {
    "u": "soon",
@@ -1940,7 +2021,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0041,
-   "pct": 0.3598,
+   "pct": 0.3607,
    "hist": [
     {
      "at": "2026-11-04",
@@ -1962,7 +2043,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1842
+   "pct": 0.1844
   },
   "GHSA-87mg-5grr-rhwh": {
    "u": "later",
@@ -1973,7 +2054,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.218
+   "pct": 0.2183
   },
   "GHSA-88f4-frh5-gmcr": {
    "u": "later",
@@ -1984,7 +2065,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0045,
-   "pct": 0.3937
+   "pct": 0.3947
   },
   "GHSA-89p3-fcch-88ph": {
    "u": "soon",
@@ -1995,7 +2076,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0058,
-   "pct": 0.4811
+   "pct": 0.4823
   },
   "GHSA-8cgq-x343-p74c": {
    "u": "later",
@@ -2006,7 +2087,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0034,
-   "pct": 0.2731
+   "pct": 0.2736
   },
   "GHSA-8fx7-8jr8-84rv": {
    "u": "soon",
@@ -2017,7 +2098,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0056,
-   "pct": 0.4712
+   "pct": 0.4723
   },
   "GHSA-8fxw-fmj8-xp7j": {
    "u": "later",
@@ -2028,7 +2109,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0033,
-   "pct": 0.2611
+   "pct": 0.2615
   },
   "GHSA-8gpw-xvpf-hvx5": {
    "u": "soon",
@@ -2039,7 +2120,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0053,
-   "pct": 0.4521
+   "pct": 0.4531
   },
   "GHSA-8hrf-8g6f-7xwp": {
    "u": "later",
@@ -2050,7 +2131,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3635
+   "pct": 0.3644
   },
   "GHSA-8v59-qmwv-4p6q": {
    "u": "later",
@@ -2061,7 +2142,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3444
+   "pct": 0.3453
   },
   "GHSA-8vm9-f75m-5h2m": {
    "u": "later",
@@ -2070,7 +2151,9 @@
    "auto": "no",
    "auto_src": "CVSS",
    "imp": "partial",
-   "imp_src": "CVSS"
+   "imp_src": "CVSS",
+   "epss": 0.0031,
+   "pct": 0.2467
   },
   "GHSA-8vv3-6qpc-gpw6": {
    "u": "soon",
@@ -2081,7 +2164,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0018,
-   "pct": 0.076
+   "pct": 0.0761
   },
   "GHSA-96h3-5x6v-m776": {
    "u": "later",
@@ -2092,7 +2175,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0047,
-   "pct": 0.4121
+   "pct": 0.4131
   },
   "GHSA-96wc-2m84-2cj7": {
    "u": "later",
@@ -2103,7 +2186,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3461
+   "pct": 0.347
   },
   "GHSA-96x6-fvhx-49hg": {
    "u": "later",
@@ -2114,7 +2197,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2433
+   "pct": 0.2436
   },
   "GHSA-97jj-33gv-5xf9": {
    "u": "later",
@@ -2134,7 +2217,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0011,
-   "pct": 0.0162
+   "pct": 0.0161
   },
   "GHSA-9fpx-fr6j-2vh6": {
    "u": "later",
@@ -2145,7 +2228,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0065,
-   "pct": 0.5191
+   "pct": 0.5202
   },
   "GHSA-9gh4-xw24-9xh5": {
    "u": "later",
@@ -2156,7 +2239,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0018,
-   "pct": 0.0701
+   "pct": 0.0703
   },
   "GHSA-9m75-vc3g-4x39": {
    "u": "soon",
@@ -2167,7 +2250,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0053,
-   "pct": 0.4523
+   "pct": 0.4533
   },
   "GHSA-9pg5-8c7x-5hfx": {
    "u": "soon",
@@ -2178,7 +2261,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0019,
-   "pct": 0.0893
+   "pct": 0.0894
   },
   "GHSA-9qw7-j9xw-fv9c": {
    "u": "soon",
@@ -2189,7 +2272,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0072,
-   "pct": 0.5437
+   "pct": 0.5448
   },
   "GHSA-9rcc-pmj8-ffhr": {
    "u": "later",
@@ -2209,7 +2292,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3637
+   "pct": 0.3647
   },
   "GHSA-9rjx-3jch-6vjf": {
    "u": "later",
@@ -2220,7 +2303,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0025,
-   "pct": 0.1712
+   "pct": 0.1715
   },
   "GHSA-9v7c-q64q-vv33": {
    "u": "later",
@@ -2231,7 +2314,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0034,
-   "pct": 0.2773
+   "pct": 0.2778
   },
   "GHSA-9vhv-g5hf-m7m7": {
    "u": "later",
@@ -2242,7 +2325,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2198
+   "pct": 0.2201
   },
   "GHSA-9vw2-f4vp-x7gf": {
    "u": "later",
@@ -2253,7 +2336,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0011,
-   "pct": 0.0148
+   "pct": 0.0147
   },
   "GHSA-9wg5-mj3p-v49q": {
    "u": "later",
@@ -2264,7 +2347,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.001,
-   "pct": 0.0101
+   "pct": 0.01
   },
   "GHSA-c73q-w75p-j82v": {
    "u": "later",
@@ -2275,7 +2358,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.2003
+   "pct": 0.2006
   },
   "GHSA-c94f-87xg-65wf": {
    "u": "later",
@@ -2286,7 +2369,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0064,
-   "pct": 0.512
+   "pct": 0.5131
   },
   "GHSA-cggf-277g-3q54": {
    "u": "later",
@@ -2308,7 +2391,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0063,
-   "pct": 0.5068
+   "pct": 0.508
   },
   "GHSA-cp25-j9x5-p5xm": {
    "u": "later",
@@ -2319,7 +2402,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0047,
-   "pct": 0.4141
+   "pct": 0.4151
   },
   "GHSA-cw2g-2vwq-88w6": {
    "u": "later",
@@ -2330,7 +2413,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2247
+   "pct": 0.225
   },
   "GHSA-cx86-7xwp-w9wf": {
    "u": "later",
@@ -2341,7 +2424,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0033,
-   "pct": 0.2648
+   "pct": 0.2653
   },
   "GHSA-cxf4-7mrp-vvpr": {
    "u": "later",
@@ -2352,7 +2435,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0034,
-   "pct": 0.2751
+   "pct": 0.2755
   },
   "GHSA-f3x9-2chm-73c8": {
    "u": "later",
@@ -2363,7 +2446,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1913
+   "pct": 0.1915
   },
   "GHSA-f42p-wjw5-97qh": {
    "u": "soon",
@@ -2374,7 +2457,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0024,
-   "pct": 0.1579,
+   "pct": 0.158,
    "hist": [
     {
      "at": "2026-11-14",
@@ -2397,7 +2480,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.327
+   "pct": 0.3278
   },
   "GHSA-f6v3-2qmr-vfjx": {
    "u": "soon",
@@ -2408,7 +2491,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0039,
-   "pct": 0.3403
+   "pct": 0.3412
   },
   "GHSA-f74m-x83r-c4v4": {
    "u": "later",
@@ -2419,7 +2502,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0019,
-   "pct": 0.0865
+   "pct": 0.0866
   },
   "GHSA-f7j6-hf97-9v99": {
    "u": "later",
@@ -2439,7 +2522,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0047,
-   "pct": 0.411
+   "pct": 0.4121
   },
   "GHSA-f8wv-xp27-6gq7": {
    "u": "soon",
@@ -2450,7 +2533,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0086,
-   "pct": 0.5907
+   "pct": 0.5917
   },
   "GHSA-f9j6-8p6x-r9j6": {
    "u": "soon",
@@ -2484,7 +2567,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0184,
-   "pct": 0.7935
+   "pct": 0.7941
   },
   "GHSA-ffr9-mgrr-wcvr": {
    "u": "later",
@@ -2495,7 +2578,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0047,
-   "pct": 0.4145
+   "pct": 0.4156
   },
   "GHSA-fg9w-wfp5-j933": {
    "u": "later",
@@ -2506,7 +2589,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2187
+   "pct": 0.219
   },
   "GHSA-fm9c-5rcf-2q5p": {
    "u": "soon",
@@ -2517,7 +2600,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3736,
+   "pct": 0.3745,
    "hist": [
     {
      "at": "2026-11-04",
@@ -2539,7 +2622,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1799
+   "pct": 0.1802
   },
   "GHSA-fr3h-cpq2-9496": {
    "u": "later",
@@ -2550,7 +2633,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.006,
-   "pct": 0.4933
+   "pct": 0.4945
   },
   "GHSA-g3hv-75wg-m249": {
    "u": "later",
@@ -2561,7 +2644,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.003,
-   "pct": 0.2318
+   "pct": 0.2322
   },
   "GHSA-g4f2-2pf3-2pwj": {
    "u": "later",
@@ -2572,7 +2655,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0052,
-   "pct": 0.446
+   "pct": 0.4469
   },
   "GHSA-g5wx-957h-f4wj": {
    "u": "later",
@@ -2590,7 +2673,9 @@
    "auto": "no",
    "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CISA"
+   "imp_src": "CISA",
+   "epss": 0.0029,
+   "pct": 0.22
   },
   "GHSA-g7vj-c29h-3h5m": {
    "u": "soon",
@@ -2601,7 +2686,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1978
+   "pct": 0.1981
   },
   "GHSA-gcwf-c25f-p9rv": {
    "u": "later",
@@ -2610,7 +2695,9 @@
    "auto": "no",
    "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CISA"
+   "imp_src": "CISA",
+   "epss": 0.003,
+   "pct": 0.2333
   },
   "GHSA-gfv3-m769-5xm3": {
    "u": "soon",
@@ -2621,7 +2708,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0036,
-   "pct": 0.2986
+   "pct": 0.2992
   },
   "GHSA-gg4r-jv3p-qx3c": {
    "u": "later",
@@ -2632,7 +2719,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0054,
-   "pct": 0.4608
+   "pct": 0.462
   },
   "GHSA-gg5j-6742-v827": {
    "u": "soon",
@@ -2643,7 +2730,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0045,
-   "pct": 0.3946
+   "pct": 0.3956
   },
   "GHSA-gh9r-c94j-cmp5": {
    "u": "later",
@@ -2654,7 +2741,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.006,
-   "pct": 0.492
+   "pct": 0.4932
   },
   "GHSA-gj9m-f8ph-pmhr": {
    "u": "now",
@@ -2664,8 +2751,8 @@
    "auto_src": "CISA",
    "imp": "total",
    "imp_src": "CISA",
-   "epss": 0.0052,
-   "pct": 0.4457
+   "epss": 0.0573,
+   "pct": 0.932
   },
   "GHSA-gpwc-27cw-rh9r": {
    "u": "soon",
@@ -2676,7 +2763,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0051,
-   "pct": 0.4405,
+   "pct": 0.4414,
    "hist": [
     {
      "at": "2026-11-18",
@@ -2698,7 +2785,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0055,
-   "pct": 0.4652
+   "pct": 0.4664
   },
   "GHSA-h24v-f482-8cwf": {
    "u": "later",
@@ -2707,7 +2794,9 @@
    "auto": "no",
    "auto_src": "CVSS",
    "imp": "partial",
-   "imp_src": "CVSS"
+   "imp_src": "CVSS",
+   "epss": 0.0043,
+   "pct": 0.3773
   },
   "GHSA-h46v-rmh6-fq4f": {
    "u": "later",
@@ -2718,7 +2807,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0017,
-   "pct": 0.0653
+   "pct": 0.0654
   },
   "GHSA-h4cc-hm5h-fmm9": {
    "u": "later",
@@ -2729,7 +2818,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0052,
-   "pct": 0.4477
+   "pct": 0.4487
   },
   "GHSA-h667-4jj2-cgv4": {
    "u": "soon",
@@ -2740,7 +2829,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0047,
-   "pct": 0.4105
+   "pct": 0.4115
   },
   "GHSA-h6cr-wjv9-3cpp": {
    "u": "later",
@@ -2751,7 +2840,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0025,
-   "pct": 0.1603
+   "pct": 0.1604
   },
   "GHSA-h7c4-q426-7jh9": {
    "u": "soon",
@@ -2762,7 +2851,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2201
+   "pct": 0.2204
   },
   "GHSA-h7mg-cq63-vhpq": {
    "u": "later",
@@ -2773,7 +2862,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.288
+   "pct": 0.2885
   },
   "GHSA-h89v-g948-47vp": {
    "u": "later",
@@ -2784,7 +2873,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.2915
+   "pct": 0.292
   },
   "GHSA-hf59-9xwc-2g4p": {
    "u": "later",
@@ -2795,7 +2884,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0012,
-   "pct": 0.0168
+   "pct": 0.0167
   },
   "GHSA-hg8h-557g-q8pp": {
    "u": "soon",
@@ -2806,7 +2895,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3489
+   "pct": 0.3498
   },
   "GHSA-hqq3-7jhf-c5jx": {
    "u": "soon",
@@ -2817,7 +2906,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3635,
+   "pct": 0.3644,
    "hist": [
     {
      "at": "2026-11-04",
@@ -2839,7 +2928,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0037,
-   "pct": 0.32
+   "pct": 0.3207
   },
   "GHSA-hw3m-8j5x-94ff": {
    "u": "later",
@@ -2850,7 +2939,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1911
+   "pct": 0.1913
   },
   "GHSA-hxcx-9h4f-42xx": {
    "u": "later",
@@ -2861,7 +2950,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0032,
-   "pct": 0.2599
+   "pct": 0.2603
   },
   "GHSA-j2w7-387v-m2rq": {
    "u": "soon",
@@ -2872,7 +2961,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0066,
-   "pct": 0.5217
+   "pct": 0.5228
   },
   "GHSA-j656-3hf2-fvjc": {
    "u": "later",
@@ -2892,7 +2981,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.003,
-   "pct": 0.2266
+   "pct": 0.227
   },
   "GHSA-jc66-7q78-782g": {
    "u": "soon",
@@ -2925,7 +3014,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3257
+   "pct": 0.3265
   },
   "GHSA-jf9x-2fg2-hx4w": {
    "u": "later",
@@ -2936,7 +3025,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0044,
-   "pct": 0.3883
+   "pct": 0.3893
   },
   "GHSA-jg26-q8hg-3pq4": {
    "u": "later",
@@ -2947,7 +3036,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.367
+   "pct": 0.368
   },
   "GHSA-jh5r-qr3c-85q8": {
    "u": "later",
@@ -2958,7 +3047,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1835
+   "pct": 0.1838
   },
   "GHSA-jh6r-h4rx-2j3w": {
    "u": "later",
@@ -2978,7 +3067,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0052,
-   "pct": 0.4477
+   "pct": 0.4487
   },
   "GHSA-jm85-8cpp-9cjc": {
    "u": "soon",
@@ -2989,7 +3078,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0065,
-   "pct": 0.516
+   "pct": 0.5171
   },
   "GHSA-jmv2-qgxf-f995": {
    "u": "later",
@@ -3000,7 +3089,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.327
+   "pct": 0.3278
   },
   "GHSA-jpvv-r467-5p4w": {
    "u": "later",
@@ -3011,7 +3100,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0037,
-   "pct": 0.3199
+   "pct": 0.3206
   },
   "GHSA-jpxq-7h8p-2q76": {
    "u": "soon",
@@ -3033,7 +3122,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0063,
-   "pct": 0.5085
+   "pct": 0.5097
   },
   "GHSA-jq3q-62jc-fqq9": {
    "u": "later",
@@ -3044,7 +3133,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3752
+   "pct": 0.3762
   },
   "GHSA-jr78-w6w5-m8f8": {
    "u": "later",
@@ -3064,7 +3153,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0013,
-   "pct": 0.0236,
+   "pct": 0.0237,
    "hist": [
     {
      "at": "2026-11-18",
@@ -3087,7 +3176,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0025,
-   "pct": 0.1633
+   "pct": 0.1634
   },
   "GHSA-m63f-xhvm-6mv5": {
    "u": "later",
@@ -3098,7 +3187,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0044,
-   "pct": 0.3912
+   "pct": 0.3922
   },
   "GHSA-m8r3-22v6-g877": {
    "u": "later",
@@ -3120,7 +3209,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.2103
+   "pct": 0.2106
   },
   "GHSA-m9xh-6747-9r6f": {
    "u": "later",
@@ -3131,7 +3220,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0047,
-   "pct": 0.4108
+   "pct": 0.4118
   },
   "GHSA-mc8m-rr6c-r5qr": {
    "u": "later",
@@ -3142,7 +3231,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0018,
-   "pct": 0.0731
+   "pct": 0.0732
   },
   "GHSA-mf2p-h6hf-fcwm": {
    "u": "later",
@@ -3153,7 +3242,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.2895
+   "pct": 0.29
   },
   "GHSA-mf2p-wjp4-99pq": {
    "u": "later",
@@ -3175,7 +3264,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0052,
-   "pct": 0.4468
+   "pct": 0.4478
   },
   "GHSA-mfr5-77xh-9j7h": {
    "u": "later",
@@ -3197,7 +3286,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.004,
-   "pct": 0.3525
+   "pct": 0.3534
   },
   "GHSA-mfxh-vp55-7gc6": {
    "u": "later",
@@ -3208,7 +3297,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1943
+   "pct": 0.1945
   },
   "GHSA-mh32-jxcr-mh9f": {
    "u": "later",
@@ -3219,7 +3308,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0032,
-   "pct": 0.248
+   "pct": 0.2484
   },
   "GHSA-mhf7-xp6r-6qrc": {
    "u": "later",
@@ -3239,7 +3328,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3637
+   "pct": 0.3646
   },
   "GHSA-mm57-4v3p-rchx": {
    "u": "later",
@@ -3250,7 +3339,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3735
+   "pct": 0.3745
   },
   "GHSA-mmhr-3c5m-f64f": {
    "u": "later",
@@ -3261,7 +3350,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0054,
-   "pct": 0.459
+   "pct": 0.4601
   },
   "GHSA-mpqx-q82w-9x46": {
    "u": "later",
@@ -3272,7 +3361,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3701
+   "pct": 0.3711
   },
   "GHSA-mrvp-7wmx-5m4h": {
    "u": "later",
@@ -3283,7 +3372,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2446
+   "pct": 0.2449
   },
   "GHSA-mw6w-2fmv-pvw3": {
    "u": "later",
@@ -3294,7 +3383,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0048,
-   "pct": 0.4181
+   "pct": 0.4191
   },
   "GHSA-p279-5wcv-45vq": {
    "u": "later",
@@ -3305,7 +3394,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3648
+   "pct": 0.3658
   },
   "GHSA-p2mm-64f6-gmpp": {
    "u": "soon",
@@ -3316,7 +3405,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0031,
-   "pct": 0.2451
+   "pct": 0.2454
   },
   "GHSA-p623-mxf7-qxjm": {
    "u": "later",
@@ -3327,7 +3416,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0025,
-   "pct": 0.1608
+   "pct": 0.1609
   },
   "GHSA-p96f-p2p2-2g3h": {
    "u": "later",
@@ -3347,7 +3436,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0036,
-   "pct": 0.3002
+   "pct": 0.3008
   },
   "GHSA-pcrw-h46h-c93h": {
    "u": "later",
@@ -3358,7 +3447,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0057,
-   "pct": 0.4758,
+   "pct": 0.4769,
    "hist": [
     {
      "at": "2026-11-14",
@@ -3389,7 +3478,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0024,
-   "pct": 0.1575
+   "pct": 0.1577
   },
   "GHSA-pr4x-6fj4-gm4h": {
    "u": "later",
@@ -3411,7 +3500,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0063,
-   "pct": 0.5107
+   "pct": 0.5118
   },
   "GHSA-q2j8-x8hf-63ch": {
    "u": "later",
@@ -3422,7 +3511,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1719
+   "pct": 0.1722
   },
   "GHSA-q5fm-9mx6-44f4": {
    "u": "later",
@@ -3433,7 +3522,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0028,
-   "pct": 0.2106
+   "pct": 0.2109
   },
   "GHSA-q5mp-gfjf-cf2j": {
    "u": "later",
@@ -3453,7 +3542,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3681
+   "pct": 0.3691
   },
   "GHSA-q6wp-fr43-gm9v": {
    "u": "later",
@@ -3464,7 +3553,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0019,
-   "pct": 0.0905
+   "pct": 0.0906
   },
   "GHSA-qfx6-q44v-9qqw": {
    "u": "soon",
@@ -3475,7 +3564,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0034,
-   "pct": 0.2774
+   "pct": 0.2778
   },
   "GHSA-qg35-44qx-7vrr": {
    "u": "later",
@@ -3486,7 +3575,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0062,
-   "pct": 0.5031
+   "pct": 0.5043
   },
   "GHSA-qqrg-8jpm-8mph": {
    "u": "later",
@@ -3497,7 +3586,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0023,
-   "pct": 0.1405
+   "pct": 0.1406
   },
   "GHSA-qv5m-9pm6-hqp3": {
    "u": "later",
@@ -3508,7 +3597,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0045,
-   "pct": 0.399
+   "pct": 0.4
   },
   "GHSA-qvhx-rvgc-jhwf": {
    "u": "later",
@@ -3539,7 +3628,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0037,
-   "pct": 0.3197
+   "pct": 0.3204
   },
   "GHSA-r4hm-p9f9-fj9v": {
    "u": "later",
@@ -3550,7 +3639,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0032,
-   "pct": 0.2507
+   "pct": 0.2511
   },
   "GHSA-r4j5-9xpp-3985": {
    "u": "later",
@@ -3561,7 +3650,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3299
+   "pct": 0.3307
   },
   "GHSA-r4jh-29pc-gfqr": {
    "u": "later",
@@ -3572,7 +3661,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0167,
-   "pct": 0.7723
+   "pct": 0.7729
   },
   "GHSA-r53h-rw34-8h97": {
    "u": "later",
@@ -3583,7 +3672,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0058,
-   "pct": 0.4811
+   "pct": 0.4823
   },
   "GHSA-r6hr-vr92-vv28": {
    "u": "later",
@@ -3614,7 +3703,9 @@
    "auto": "no",
    "auto_src": "CISA",
    "imp": "total",
-   "imp_src": "CISA"
+   "imp_src": "CISA",
+   "epss": 0.0034,
+   "pct": 0.2729
   },
   "GHSA-r7j4-crjv-h467": {
    "u": "later",
@@ -3625,7 +3716,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0041,
-   "pct": 0.36
+   "pct": 0.3609
   },
   "GHSA-r7w7-vpq8-c5vv": {
    "u": "later",
@@ -3636,7 +3727,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.005,
-   "pct": 0.4306
+   "pct": 0.4318
   },
   "GHSA-r925-mgvr-h9cc": {
    "u": "later",
@@ -3647,7 +3738,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0048,
-   "pct": 0.4203
+   "pct": 0.4214
   },
   "GHSA-r94f-hx44-8jqf": {
    "u": "soon",
@@ -3658,7 +3749,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.009,
-   "pct": 0.6033
+   "pct": 0.6043
   },
   "GHSA-r99w-jh2x-3mg9": {
    "u": "later",
@@ -3669,7 +3760,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1956
+   "pct": 0.1958
   },
   "GHSA-r9jc-w898-3fv6": {
    "u": "later",
@@ -3680,7 +3771,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0029,
-   "pct": 0.2201
+   "pct": 0.2204
   },
   "GHSA-rg32-vgf9-927c": {
    "u": "later",
@@ -3700,7 +3791,7 @@
    "imp": "total",
    "imp_src": "CVSS",
    "epss": 0.0028,
-   "pct": 0.2092
+   "pct": 0.2095
   },
   "GHSA-rhr8-3pm8-cq29": {
    "u": "soon",
@@ -3711,7 +3802,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0043,
-   "pct": 0.3767
+   "pct": 0.3777
   },
   "GHSA-rm8w-w798-g545": {
    "u": "later",
@@ -3722,7 +3813,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.003,
-   "pct": 0.2349
+   "pct": 0.2352
   },
   "GHSA-rqp5-r3wg-vg35": {
    "u": "later",
@@ -3733,7 +3824,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0026,
-   "pct": 0.1847
+   "pct": 0.1849
   },
   "GHSA-rqw3-x7hx-mm3p": {
    "u": "later",
@@ -3744,7 +3835,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4051
+   "pct": 0.4062
   },
   "GHSA-rvfr-cqwq-rc4j": {
    "u": "later",
@@ -3753,7 +3844,9 @@
    "auto": "yes",
    "auto_src": "CVSS",
    "imp": "partial",
-   "imp_src": "CVSS"
+   "imp_src": "CVSS",
+   "epss": 0.0063,
+   "pct": 0.5091
   },
   "GHSA-rw77-vq4g-x3hp": {
    "u": "later",
@@ -3764,7 +3857,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.1799
+   "pct": 0.1802
   },
   "GHSA-rx7m-wxwq-vxr9": {
    "u": "later",
@@ -3784,7 +3877,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4071
+   "pct": 0.4081
   },
   "GHSA-v383-3rw5-q8rf": {
    "u": "later",
@@ -3795,7 +3888,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0053,
-   "pct": 0.4512
+   "pct": 0.4522
   },
   "GHSA-v3f3-cmj4-cvj9": {
    "u": "later",
@@ -3806,7 +3899,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0051,
-   "pct": 0.4414
+   "pct": 0.4424
   },
   "GHSA-v5fq-cf5m-vwv7": {
    "u": "soon",
@@ -3817,7 +3910,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0051,
-   "pct": 0.4443,
+   "pct": 0.4452,
    "hist": [
     {
      "at": "2026-11-10",
@@ -3839,7 +3932,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0033,
-   "pct": 0.2697
+   "pct": 0.2702
   },
   "GHSA-v858-xh7w-8jr5": {
    "u": "later",
@@ -3850,7 +3943,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2201
+   "pct": 0.2204
   },
   "GHSA-v8f3-6phw-6mh9": {
    "u": "soon",
@@ -3861,7 +3954,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0058,
-   "pct": 0.4811,
+   "pct": 0.4823,
    "hist": [
     {
      "at": "2026-11-18",
@@ -3883,7 +3976,7 @@
    "imp": "partial",
    "imp_src": "CVSS",
    "epss": 0.0024,
-   "pct": 0.1528
+   "pct": 0.1529
   },
   "GHSA-vfmf-q6x9-cw96": {
    "u": "soon",
@@ -3894,7 +3987,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0039,
-   "pct": 0.3357
+   "pct": 0.3365
   },
   "GHSA-vj3q-vp3g-j9c8": {
    "u": "later",
@@ -3905,7 +3998,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0023,
-   "pct": 0.1419
+   "pct": 0.142
   },
   "GHSA-vpp8-g58w-m8mp": {
    "u": "later",
@@ -3925,7 +4018,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0053,
-   "pct": 0.4523,
+   "pct": 0.4533,
    "hist": [
     {
      "at": "2026-11-18",
@@ -3947,7 +4040,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0039,
-   "pct": 0.3381,
+   "pct": 0.3389,
    "hist": [
     {
      "at": "2026-11-10",
@@ -3978,7 +4071,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4028
+   "pct": 0.4039
   },
   "GHSA-w553-pwx6-3mg9": {
    "u": "soon",
@@ -4000,7 +4093,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.003,
-   "pct": 0.2318
+   "pct": 0.2322
   },
   "GHSA-w998-qmw9-mf4m": {
    "u": "later",
@@ -4022,7 +4115,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0045,
-   "pct": 0.3981
+   "pct": 0.3991
   },
   "GHSA-wm25-49w3-5qrg": {
    "u": "later",
@@ -4042,7 +4135,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0038,
-   "pct": 0.3223
+   "pct": 0.3231
   },
   "GHSA-wr5m-5jph-8m96": {
    "u": "later",
@@ -4053,7 +4146,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0034,
-   "pct": 0.2772
+   "pct": 0.2777
   },
   "GHSA-wrr5-j383-f7h2": {
    "u": "later",
@@ -4064,7 +4157,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0025,
-   "pct": 0.1646
+   "pct": 0.1647
   },
   "GHSA-x287-wcfc-q46c": {
    "u": "later",
@@ -4075,7 +4168,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0029,
-   "pct": 0.2174
+   "pct": 0.2177
   },
   "GHSA-x2rp-9qf7-2fmq": {
    "u": "later",
@@ -4086,7 +4179,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0026,
-   "pct": 0.182
+   "pct": 0.1822
   },
   "GHSA-x2vm-cf3p-m2w8": {
    "u": "later",
@@ -4095,7 +4188,9 @@
    "auto": "yes",
    "auto_src": "CVSS",
    "imp": "partial",
-   "imp_src": "CVSS"
+   "imp_src": "CVSS",
+   "epss": 0.0063,
+   "pct": 0.5092
   },
   "GHSA-x2wv-5868-p7v2": {
    "u": "later",
@@ -4117,7 +4212,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0046,
-   "pct": 0.4039
+   "pct": 0.4049
   },
   "GHSA-x3rh-gjgm-fmqc": {
    "u": "later",
@@ -4128,7 +4223,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0027,
-   "pct": 0.1915
+   "pct": 0.1918
   },
   "GHSA-x4p7-2mv3-x7px": {
    "u": "later",
@@ -4146,7 +4241,9 @@
    "auto": "yes",
    "auto_src": "CVSS",
    "imp": "total",
-   "imp_src": "CVSS"
+   "imp_src": "CVSS",
+   "epss": 0.0114,
+   "pct": 0.6734
   },
   "GHSA-x9rp-7wh3-2rj5": {
    "u": "soon",
@@ -4157,7 +4254,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0024,
-   "pct": 0.1581,
+   "pct": 0.1582,
    "hist": [
     {
      "at": "2026-11-10",
@@ -4179,7 +4276,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0045,
-   "pct": 0.3974
+   "pct": 0.3984
   },
   "GHSA-xggf-m53x-jc3f": {
    "u": "soon",
@@ -4190,7 +4287,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.006,
-   "pct": 0.491
+   "pct": 0.4922
   },
   "GHSA-xgw8-8ccx-rmqh": {
    "u": "later",
@@ -4201,7 +4298,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0052,
-   "pct": 0.4477
+   "pct": 0.4487
   },
   "GHSA-xhfv-7758-r9hx": {
    "u": "soon",
@@ -4212,7 +4309,7 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0049,
-   "pct": 0.4302
+   "pct": 0.4313
   },
   "GHSA-xhrq-2mqv-q8wx": {
    "u": "later",
@@ -4223,7 +4320,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.004,
-   "pct": 0.3441
+   "pct": 0.3449
   },
   "GHSA-xmfg-f9cm-w86q": {
    "u": "later",
@@ -4245,7 +4342,18 @@
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0176,
-   "pct": 0.7843
+   "pct": 0.7849
+  },
+  "GHSA-xvcc-vqjv-phqh": {
+   "u": "soon",
+   "exp": "poc",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
+   "imp": "total",
+   "imp_src": "CISA",
+   "epss": 0.0018,
+   "pct": 0.0806
   },
   "GHSA-xwg4-8hqh-79jq": {
    "u": "later",
@@ -4267,7 +4375,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0042,
-   "pct": 0.3693
+   "pct": 0.3703
   },
   "GHSA-xxrh-5hgg-gj4h": {
    "u": "soon",
@@ -4278,7 +4386,7 @@
    "imp": "partial",
    "imp_src": "CISA",
    "epss": 0.0035,
-   "pct": 0.2915,
+   "pct": 0.292,
    "hist": [
     {
      "at": "2026-11-11",

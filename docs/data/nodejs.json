@@ -19,7 +19,7 @@
   {
    "id": "CVE-2026-111497",
    "published": "2026-10-22",
-   "modified": "2026-11-10",
+   "modified": "2026-11-18",
    "status": "Analyzed",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -51,6 +51,26 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-xvcc-vqjv-phqh",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63496",
+   "summary": "augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
+   "severity": "HIGH",
+   "score": 7.8,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+   "published": "2026-11-18",
+   "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@augment-vir/node",
+     "range": "< 31.73.5",
+     "fixed": "31.73.5"
+    }
+   ],
+   "first_seen": "2026-11-18"
+  },
   {
    "id": "GHSA-x2vm-cf3p-m2w8",
    "ecosystem": "npm",
@@ -2461,26 +2481,6 @@
     {
      "name": "@nuxt/vite-builder",
      "range": ">= 4.6.0, < 4.6.3",
-     "fixed": "4.6.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-648h-gw55-m2g7",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-119199",
-   "summary": "Nuxt dev server exposes private runtime config through the Nitro dev bundle",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-648h-gw55-m2g7",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@nuxt/vite-builder",
-     "range": ">= 3.0.0, < 4.6.3",
      "fixed": "4.6.3"
     }
    ],

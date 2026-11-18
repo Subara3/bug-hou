@@ -4,8 +4,157 @@
 <link href="https://subara3.github.io/bug-hou/#webserver"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/webserver.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/webserver.xml</id>
-<updated>2026-11-11T00:00:00Z</updated>
+<updated>2026-11-18T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Apache / nginx: CVE-2026-125283 6.9 MEDIUM</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-125283"/>
+<id>urn:bug-hou:CVE-2026-125283</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;When NGINX Plus or NGINX Open Source is configured to use the try_files and alias directives with a map variable, certain combinations of regular expression captures in map and try_files can cause a segmentation fault in an NGINX worker process.
+
+Impact:
+An attacker could leverage this vulnerability to cause an NGINX worker process to terminate unexpectedly. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-123640 6.9 MEDIUM</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-123640"/>
+<id>urn:bug-hou:CVE-2026-123640</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Description
+When NGINX Plus or NGINX Open Source is configured with the ngx_stream_ssl_preread_module module, a specially crafted ClientHello message from an unauthenticated attacker causes forged values of the ngx_stream_ssl_preread_module variables, affecting virtual server selection. In addition, it may also cause a disagreement with a proxied server terminating the SSL/TLS connection without Transport Layer Security (TLS) 1.3 support.
+
+Impact
+This vulnerability may allow an attacker to forge values of the ngx_stream_ssl_preread_module variables and bypass the NGINX systems stream routing segmentation. As a result, the attacker may be able to route the connection to a privileged or internal backend that should be unreachable and gain access to sensitive information. There is no control plane exposure; this is a data plane issue only.
+
+
+
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-123634 9.2 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-123634"/>
+<id>urn:bug-hou:CVE-2026-123634</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;This issue occurs when NGINX Plus or NGINX Open Source is configured as a proxy, the proxied server name includes variables, and a Server Side Includes (SSI) or mirror directive sends a subrequest to a location that resolves the same server name. Under these conditions, a specially crafted HTTP request may cause a use-after-free condition in a worker process. An attacker may also be able to execute code if Address Space Layout Randomization (ASLR) is disabled or the attacker can bypass ASLR.
+
+Impact: 
+An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or perform remote code execution (RCE)
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-123633 9.2 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-123633"/>
+<id>urn:bug-hou:CVE-2026-123633</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+
+
+
+
+Impact:
+
+
+
+This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-123007 9.2 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-123007"/>
+<id>urn:bug-hou:CVE-2026-123007</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+
+Impact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-121810 9.2 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-121810"/>
+<id>urn:bug-hou:CVE-2026-121810</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;Description:
+This issue affects NGINX Plus and NGINX Open Source configurations that use HTTP/3. A remote, unauthenticated attacker can cause a use-after-free condition in the NGINX worker process, leading to a restart. Exploitation also depends on conditions beyond the attacker’s control. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+
+Impact:
+This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or to possibly trigger a code execution. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-120993 6.9 MEDIUM</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-120993"/>
+<id>urn:bug-hou:CVE-2026-120993</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;When NGINX Plus or NGINX Open Source is configured to use the ngx_stream_ssl_module module with dynamic certificate loading and the ngx_stream_proxy_module module with the proxy_protocol v2 directive, an abbreviated SSL handshake can cause a worker process to terminate.
+
+Impact:
+This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system. This is a data plane vulnerability only; there is no control plane exposure.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-120967 6.3 MEDIUM</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-120967"/>
+<id>urn:bug-hou:CVE-2026-120967</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;When NGINX Plus or NGINX Open Source is configured to require client certificates ("ssl_verify_client on") in a non-default stream virtual server, a remote attacker could bypass verification of client certificates.
+
+Impact:
+An attacker could leverage this vulnerability to bypass verification of client certificates. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-118899 8.7 HIGH</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-118899"/>
+<id>urn:bug-hou:CVE-2026-118899</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+
+Impact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Apache / nginx: CVE-2026-113425 9.2 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-113425"/>
+<id>urn:bug-hou:CVE-2026-113425</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;When NGINX Plus or NGINX Open Source is configured as a mail proxy, undisclosed traffic can cause a use-after-free in an nginx worker process. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+
+Impact:
+A remote unauthenticated attacker may crash an nginx worker process or corrupt its memory, disrupting service. Remote code execution is a potential impact. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要対応] Apache / nginx: CVE-2026-119618 8.1 HIGH</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-119618"/>
@@ -549,74 +698,5 @@ This vulnerability may allow remote attackers to cause a denial-of-service (DoS)
 
 
 Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Apache / nginx: CVE-2026-77180 8.7 HIGH</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-77180"/>
-<id>urn:bug-hou:CVE-2026-77180</id>
-<updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Ingress Controllerのアノテーションで設定注入。認証済み&lt;br&gt;→ Ingress Controllerの利用有無を確認&lt;/p&gt;&lt;p&gt;When NGINX Ingress Controller is configured with Ingress annotations, an injection vulnerability exists in the configuration generator of NGINX Ingress Controller. Multiple user-controllable fields are written into the generated NGINX configuration without sanitization. An authenticated attacker with permission to create or modify these annotations may craft values that inject arbitrary NGINX configuration directives. 
-
-Impact:
-An authenticated attacker granted write access to NGINX Ingress Controller Ingress annotations through the Kubernetes API may be able to inject arbitrary NGINX configuration directives, create or delete files, or disable services. There is no data plane exposure; this is a control plane issue only.
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Apache / nginx: CVE-2026-66362 8.6 HIGH</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-66362"/>
-<id>urn:bug-hou:CVE-2026-66362</id>
-<updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NGINX Gateway Fabricの認証フィルターで設定注入。認証済み&lt;br&gt;→ Gateway Fabricの利用有無を確認&lt;/p&gt;&lt;p&gt;Description:
-When NGINX Plus is configured as the data plane for NGINX Gateway Fabric, an injection vulnerability exists in the NGINX configuration generator component of NGINX Gateway Fabric. User-supplied string values from the Authentication Filter Custom Resource Definition clientID or cookieName fields, or in the clientSecret field of a Secret referenced by an Authentication Filter, are rendered directly into NGINX configuration templates without sanitization or escaping. 
-
-Impact:
-An authenticated attacker with permission to create or modify these resources may craft values that inject arbitrary NGINX configuration directives. This is a control plane issue; there is no data plane exposure.&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Apache / nginx: CVE-2026-18329 8.8 HIGH</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-18329"/>
-<id>urn:bug-hou:CVE-2026-18329</id>
-<updated>2026-09-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; njsのjs_accessで非同期処理の例外によりアクセス制御が崩れる&lt;br&gt;→ njsのjs_access利用有無を確認&lt;/p&gt;&lt;p&gt;Description
-
-NGINX JavaScript (njs) and QuickJS (qjs) engines have a vulnerability when a js_access handler performs asynchronous request body processing and an exception is thrown during asynchronous access-control evaluation before an explicit access denial is returned. An unauthenticated attacker can exploit this vulnerability by sending a crafted HTTP request that triggers an error condition in the access validation logic. This may cause the js_access phase to fail open, allowing the request to proceed instead of being denied, resulting in an authentication or authorization bypass and unauthorized access to protected resources.
-
-Impact
-
-This vulnerability may allow remote attackers to bypass js_access controls. There is no control plane exposure; this is a data plane issue only.
-
-
-
-
-Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[悪用確認] Apache / nginx: CVE-2024-38475 Apache HTTP Server</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2024-38475"/>
-<id>urn:bug-hou:kev:CVE-2024-38475</id>
-<updated>2025-05-01T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Apache HTTP Server Improper Escaping of Output Vulnerability&lt;/p&gt;&lt;p&gt;Apache HTTP Server contains an improper escaping of output vulnerability in mod_rewrite that allows an attacker to map URLs to filesystem locations that are permitted to be served by the server but are not intentionally/directly reachable by any URL, resulting in code execution or source code disclosure.&lt;/p&gt;&lt;p&gt;対応期限 2025-05-22&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[悪用確認] Apache / nginx: CVE-2021-42013 Apache HTTP Server</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2021-42013"/>
-<id>urn:bug-hou:kev:CVE-2021-42013</id>
-<updated>2021-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Apache HTTP Server Path Traversal Vulnerability&lt;/p&gt;&lt;p&gt;Apache HTTP Server contains a path traversal vulnerability that allows an attacker to perform remote code execution if files outside directories configured by Alias-like directives are not under default require all denied or if CGI scripts are enabled. This CVE ID resolves an incomplete patch for CVE-2021-41773.&lt;/p&gt;&lt;p&gt;対応期限 2021-11-17&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[悪用確認] Apache / nginx: CVE-2021-41773 Apache HTTP Server</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2021-41773"/>
-<id>urn:bug-hou:kev:CVE-2021-41773</id>
-<updated>2021-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Apache HTTP Server Path Traversal Vulnerability&lt;/p&gt;&lt;p&gt;Apache HTTP Server contains a path traversal vulnerability that allows an attacker to perform remote code execution if files outside directories configured by Alias-like directives are not under default �require all denied� or if CGI scripts are enabled. The original patch issued under this CVE ID is insufficient, please review remediation information under CVE-2021-42013.&lt;/p&gt;&lt;p&gt;対応期限 2021-11-17&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[悪用確認] Apache / nginx: CVE-2019-0211 Apache HTTP Server</title>
-<link href="https://nvd.nist.gov/vuln/detail/CVE-2019-0211"/>
-<id>urn:bug-hou:kev:CVE-2019-0211</id>
-<updated>2021-11-03T00:00:00Z</updated>
-<content type="html">&lt;p&gt;Apache HTTP Server Privilege Escalation Vulnerability&lt;/p&gt;&lt;p&gt;Apache HTTP Server, with MPM event, worker or prefork, code executing in less-privileged child processes or threads (including scripts executed by an in-process scripting interpreter) could execute code with the privileges of the parent process (usually root) by manipulating the scoreboard.&lt;/p&gt;&lt;p&gt;対応期限 2022-05-03&lt;/p&gt;</content>
 </entry>
 </feed>

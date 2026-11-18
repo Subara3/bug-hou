@@ -7,6 +7,13 @@
 <updated>2026-11-18T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
+<title>Node.js: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern` (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xvcc-vqjv-phqh"/>
+<id>urn:bug-hou:GHSA-xvcc-vqjv-phqh</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@augment-vir/node &amp;lt; 31.73.5 → 31.73.5&lt;/p&gt;&lt;p&gt;CVE-2026-63496&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] Node.js: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-x2vm-cf3p-m2w8"/>
 <id>urn:bug-hou:GHSA-x2vm-cf3p-m2w8</id>
@@ -348,12 +355,5 @@
 <id>urn:bug-hou:GHSA-6972-9mcm-vhwj</id>
 <updated>2026-11-11T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MongooseのSchema.prototype.virtual()でプロトタイプ汚染。MEDIUM&lt;br&gt;→ mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125118&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Forge: Ed25519 signature verification accepts small-order public keys (LOW)</title>
-<link href="https://github.com/advisories/GHSA-6889-vf6x-f3g5"/>
-<id>urn:bug-hou:GHSA-6889-vf6x-f3g5</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのEd25519署名検証の不備。LOW&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125335&lt;/p&gt;</content>
 </entry>
 </feed>

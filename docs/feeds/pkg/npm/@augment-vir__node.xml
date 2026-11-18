@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@augment-vir/node（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@augment-vir__node.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@augment-vir__node.xml</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern` (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xvcc-vqjv-phqh"/>
+<id>urn:bug-hou:GHSA-xvcc-vqjv-phqh</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@augment-vir/node &amp;lt; 31.73.5 → 31.73.5&lt;/p&gt;&lt;p&gt;CVE-2026-63496&lt;/p&gt;</content>
+</entry>
+</feed>

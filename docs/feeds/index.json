@@ -59,6 +59,7 @@
 "@astrojs/node": "pkg/npm/@astrojs__node.xml",
 "@astrojs/solid-js": "pkg/npm/@astrojs__solid-js.xml",
 "@astrojs/svelte": "pkg/npm/@astrojs__svelte.xml",
+"@augment-vir/node": "pkg/npm/@augment-vir__node.xml",
 "@azure/msal-node": "pkg/npm/@azure__msal-node.xml",
 "@backstage/plugin-catalog-backend": "pkg/npm/@backstage__plugin-catalog-backend.xml",
 "@better-auth/drizzle-adapter": "pkg/npm/@better-auth__drizzle-adapter.xml",

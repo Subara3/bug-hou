@@ -1,5 +1,24 @@
 [
  {
+  "id": "GHSA-xvcc-vqjv-phqh",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63496",
+  "summary": "augment-virShell allows Command Injection in `grep()` via Unsanitized `searchPattern`",
+  "severity": "HIGH",
+  "score": 7.8,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-18",
+  "url": "https://github.com/advisories/GHSA-xvcc-vqjv-phqh",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@augment-vir/node",
+    "range": "< 31.73.5",
+    "fixed": "31.73.5"
+   }
+  ]
+ },
+ {
   "id": "GHSA-8vm9-f75m-5h2m",
   "ecosystem": "composer",
   "cve": "CVE-2026-69241",
