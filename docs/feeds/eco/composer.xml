@@ -35,11 +35,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。XHTMLのdata URIを使ったXSS&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-88987&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication (MEDIUM)</title>
+<title>[様子見] PHP: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-pr4x-6fj4-gm4h"/>
 <id>urn:bug-hou:GHSA-pr4x-6fj4-gm4h</id>
 <updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;egroupware/egroupware &amp;lt; 23.1.20260601 → 23.1.20260601, egroupware/egroupware &amp;gt;= 26.0.20251208, &amp;lt; 26.6.20260616 → 26.6.20260616&lt;/p&gt;&lt;p&gt;CVE-2026-63672&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; EGroupwareのSAML認証で利用者がIdPを選べてしまう。MEDIUM&lt;br&gt;→ 使っているなら23.1.20260601 / 26.6.20260616 に更新&lt;/p&gt;&lt;p&gt;egroupware/egroupware &amp;lt; 23.1.20260601 → 23.1.20260601, egroupware/egroupware &amp;gt;= 26.0.20251208, &amp;lt; 26.6.20260616 → 26.6.20260616&lt;/p&gt;&lt;p&gt;CVE-2026-63672&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] PHP: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter (HIGH)</title>
@@ -49,18 +49,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SilverstripeのHIGHのRCE。i18nTextCollectorTaskのwriter引数経由&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;gt;= 6.0.0, &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91115&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Filament Curator: Stored XSS via unsanitized SVG upload served inline (MEDIUM)</title>
+<title>[様子見] PHP: Filament Curator: Stored XSS via unsanitized SVG upload served inline (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-8vm9-f75m-5h2m"/>
 <id>urn:bug-hou:GHSA-8vm9-f75m-5h2m</id>
 <updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt;= 5.1.1 → 5.1.2, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt;= 4.1.1 → 4.1.2, awcodes/filament-curator &amp;gt;= 3.0.0, &amp;lt;= 3.7.8 → 3.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-69241&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Filament CuratorでSVGアップロードによる保存型XSS。MEDIUM&lt;br&gt;→ 使っているなら5.1.2 / 4.1.2 / 3.7.9 に更新&lt;/p&gt;&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt;= 5.1.1 → 5.1.2, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt;= 4.1.1 → 4.1.2, awcodes/filament-curator &amp;gt;= 3.0.0, &amp;lt;= 3.7.8 → 3.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-69241&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search (MEDIUM)</title>
+<title>[様子見] PHP: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-828w-6qgx-3rcf"/>
 <id>urn:bug-hou:GHSA-828w-6qgx-3rcf</id>
 <updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt; 5.1.1 → 5.1.1, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt; 4.1.1 → 4.1.1, awcodes/filament-curator &amp;gt;= 3.2.4, &amp;lt; 3.7.8 → 3.7.8&lt;/p&gt;&lt;p&gt;CVE-2026-63389&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Filament Curatorの検索で別テナントのメディア情報が見える。MEDIUM&lt;br&gt;→ 使っているなら5.1.1 / 4.1.1 / 3.7.8 に更新&lt;/p&gt;&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt; 5.1.1 → 5.1.1, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt; 4.1.1 → 4.1.1, awcodes/filament-curator &amp;gt;= 3.2.4, &amp;lt; 3.7.8 → 3.7.8&lt;/p&gt;&lt;p&gt;CVE-2026-63389&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Silverstripe Framework: User-controlled ClassName allows unauthorized record type change (MEDIUM)</title>

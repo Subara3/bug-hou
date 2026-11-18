@@ -7,10 +7,10 @@
 <updated>2026-11-17T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication (MEDIUM)</title>
+<title>[様子見] composer: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-pr4x-6fj4-gm4h"/>
 <id>urn:bug-hou:GHSA-pr4x-6fj4-gm4h</id>
 <updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;egroupware/egroupware &amp;lt; 23.1.20260601 → 23.1.20260601, egroupware/egroupware &amp;gt;= 26.0.20251208, &amp;lt; 26.6.20260616 → 26.6.20260616&lt;/p&gt;&lt;p&gt;CVE-2026-63672&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; EGroupwareのSAML認証で利用者がIdPを選べてしまう。MEDIUM&lt;br&gt;→ 使っているなら23.1.20260601 / 26.6.20260616 に更新&lt;/p&gt;&lt;p&gt;egroupware/egroupware &amp;lt; 23.1.20260601 → 23.1.20260601, egroupware/egroupware &amp;gt;= 26.0.20251208, &amp;lt; 26.6.20260616 → 26.6.20260616&lt;/p&gt;&lt;p&gt;CVE-2026-63672&lt;/p&gt;</content>
 </entry>
 </feed>

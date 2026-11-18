@@ -7,10 +7,10 @@
 <updated>2026-11-17T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Phoenix: Format String Injection in applyChatTemplate (CRITICAL)</title>
+<title>[要確認] pip: Phoenix: Format String Injection in applyChatTemplate (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-gfv3-m769-5xm3"/>
 <id>urn:bug-hou:GHSA-gfv3-m769-5xm3</id>
 <updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;arize-phoenix &amp;gt;= 13.0.0, &amp;lt; 15.7.0 → 15.7.0&lt;/p&gt;&lt;p&gt;CVE-2026-53998&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; PhoenixのapplyChatTemplateで書式文字列の注入。利用者の少ないパッケージのCRITICAL&lt;br&gt;→ arize-phoenixの利用有無を確認し、15.7.0に更新&lt;/p&gt;&lt;p&gt;arize-phoenix &amp;gt;= 13.0.0, &amp;lt; 15.7.0 → 15.7.0&lt;/p&gt;&lt;p&gt;CVE-2026-53998&lt;/p&gt;</content>
 </entry>
 </feed>

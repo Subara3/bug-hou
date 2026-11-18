@@ -7,11 +7,11 @@
 <updated>2026-11-17T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata (MEDIUM)</title>
+<title>[様子見] npm: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vc7v-qv4w-wrv8"/>
 <id>urn:bug-hou:GHSA-vc7v-qv4w-wrv8</id>
 <updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.2.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119351&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsの入れ子の'use cache'でルートパラメータ間にキャッシュが漏れる。MEDIUM&lt;br&gt;→ 16.2〜16.4.4を使っているなら16.4.5に更新&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.2.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119351&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: Next.js: Information disclosure across root params when a 'use cache' function is called through unstable_cache() (MEDIUM)</title>
