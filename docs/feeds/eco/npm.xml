@@ -7,18 +7,18 @@
 <updated>2026-11-18T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config (HIGH)</title>
+<title>[要確認] Node.js: libp2p: gossipsub creates a permanent topics-map entry per distinct subscription with no cap in the default config (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-x2vm-cf3p-m2w8"/>
 <id>urn:bug-hou:GHSA-x2vm-cf3p-m2w8</id>
 <updated>2026-11-18T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@libp2p/gossipsub &amp;lt; 17.0.0 → 17.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-119793&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @libp2p/gossipsubで購読ごとに記録が上限なく増える（標準設定）&lt;br&gt;→ 17.0.0以降に更新&lt;/p&gt;&lt;p&gt;@libp2p/gossipsub &amp;lt; 17.0.0 → 17.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-119793&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth (HIGH)</title>
+<title>[要確認] Node.js: libp2p: ASN.1 DER decoder drives an unbounded synchronous loop on attacker-controlled length fields, stalling the Node event loop pre-auth (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rvfr-cqwq-rc4j"/>
 <id>urn:bug-hou:GHSA-rvfr-cqwq-rc4j</id>
 <updated>2026-11-18T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@libp2p/crypto &amp;lt;= 5.1.21 → 5.1.22&lt;/p&gt;&lt;p&gt;CVE-2026-110789&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @libp2p/cryptoで細工した長さの値によりログイン前にイベントループが止まる&lt;br&gt;→ 5.1.22以降に更新&lt;/p&gt;&lt;p&gt;@libp2p/crypto &amp;lt;= 5.1.21 → 5.1.22&lt;/p&gt;&lt;p&gt;CVE-2026-110789&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata (MEDIUM)</title>
