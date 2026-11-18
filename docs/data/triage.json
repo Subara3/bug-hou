@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-17T12:46:11Z",
+ "updated_at": "2026-11-18T00:46:01Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -213,13 +213,6 @@
    "level": "check",
    "reason": "wrap_bio()でserver_hostname未指定時にホスト名検証が飛ばされる",
    "todo": "wrap_bio()にserver_hostnameを渡しているか確認",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "CVE-2026-19672": {
-   "level": "watch",
-   "reason": "tarfileのフィルターで展開先外に空ディレクトリ作成。MEDIUM",
-   "todo": "",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -668,13 +661,6 @@
    "kev": false,
    "at": "2026-11-11"
   },
-  "GHSA-3jhr-mxmx-38cx": {
-   "level": "check",
-   "reason": "GravのTwigサンドボックスで編集者がパスワードハッシュや2FA秘密を取得。HIGH",
-   "todo": "getgrav/grav 2.0.16に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-3jp5-3h47-28qf": {
    "level": "watch",
    "reason": "Semantic MediaWikiのSpecial:Ask表ヘッダーで反射型XSS。MEDIUM",
@@ -786,13 +772,6 @@
    "todo": "fast-xml-parserを5.12.0に更新",
    "kev": false,
    "at": "2026-11-11"
-  },
-  "GHSA-47ch-6w46-6xm7": {
-   "level": "check",
-   "reason": "Gravのmedia_directory()でパストラバーサルとファイル内容漏洩。HIGH",
-   "todo": "getgrav/grav 2.0.16に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-4f5f-j737-pm58": {
    "level": "watch",
@@ -1214,19 +1193,19 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-7wpf-ch8f-5f4x": {
-   "level": "watch",
-   "reason": "signalk-serverのアイコン取得でSSRF。MEDIUM",
-   "todo": "signalk-server 2.34.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-7xv3-gf2g-498h": {
    "level": "watch",
    "reason": "Semantic MediaWikiのSpecial:Askのsepで反射型XSS。MEDIUM",
    "todo": "semantic-media-wiki 7.2.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-828w-6qgx-3rcf": {
+   "level": "watch",
+   "reason": "Filament Curatorの検索で別テナントのメディア情報が見える。MEDIUM",
+   "todo": "使っているなら5.1.1 / 4.1.1 / 3.7.8 に更新",
+   "kev": false,
+   "at": "2026-11-18"
   },
   "GHSA-8332-j7wj-wjw4": {
    "level": "check",
@@ -1311,6 +1290,13 @@
    "todo": "compose-lintを0.32.0に更新",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-8vm9-f75m-5h2m": {
+   "level": "watch",
+   "reason": "Filament CuratorでSVGアップロードによる保存型XSS。MEDIUM",
+   "todo": "使っているなら5.1.2 / 4.1.2 / 3.7.9 に更新",
+   "kev": false,
+   "at": "2026-11-18"
   },
   "GHSA-8vv3-6qpc-gpw6": {
    "level": "check",
@@ -1642,6 +1628,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-10"
+  },
+  "GHSA-gfv3-m769-5xm3": {
+   "level": "check",
+   "reason": "PhoenixのapplyChatTemplateで書式文字列の注入。利用者の少ないパッケージのCRITICAL",
+   "todo": "arize-phoenixの利用有無を確認し、15.7.0に更新",
+   "kev": false,
+   "at": "2026-11-18"
   },
   "GHSA-gg4r-jv3p-qx3c": {
    "level": "check",
@@ -2100,13 +2093,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-pcg2-g6cj-q92c": {
-   "level": "watch",
-   "reason": "Tornadoのヘッダー折り返し解析で二乗時間。MEDIUM",
-   "todo": "tornado 6.6に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-pcrw-h46h-c93h": {
    "level": "check",
    "reason": "MongooseのsanitizeFilterがcountDocumentsで効かない。この設定に頼る場合のみ影響",
@@ -2128,19 +2114,19 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-pr4x-6fj4-gm4h": {
+   "level": "watch",
+   "reason": "EGroupwareのSAML認証で利用者がIdPを選べてしまう。MEDIUM",
+   "todo": "使っているなら23.1.20260601 / 26.6.20260616 に更新",
+   "kev": false,
+   "at": "2026-11-18"
+  },
   "GHSA-pw86-h8fm-j323": {
    "level": "check",
    "reason": "HIGH。upgradeリクエスト中のデータを上限なくためこむ",
    "todo": "aiohttp 3.14.4に更新",
    "kev": false,
    "at": "2026-11-17"
-  },
-  "GHSA-pw9p-v7r6-gx4p": {
-   "level": "watch",
-   "reason": "TornadoのRedirectHandlerでオープンリダイレクト。LOW",
-   "todo": "tornado 6.6に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-q2j8-x8hf-63ch": {
    "level": "watch",
@@ -2401,12 +2387,26 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-v858-xh7w-8jr5": {
+   "level": "watch",
+   "reason": "pymppで水増しされたcalldataにより肩代わり手数料が過大になる。MEDIUM",
+   "todo": "使っているなら0.9.1に更新",
+   "kev": false,
+   "at": "2026-11-18"
+  },
   "GHSA-v8f3-6phw-6mh9": {
    "level": "check",
    "reason": "NLTKのConllCorpusReaderでCPUを使い切る。HIGH",
    "todo": "NLTKの利用を確認し、3.10.4に更新",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-vc7v-qv4w-wrv8": {
+   "level": "watch",
+   "reason": "Next.jsの入れ子の'use cache'でルートパラメータ間にキャッシュが漏れる。MEDIUM",
+   "todo": "16.2〜16.4.4を使っているなら16.4.5に更新",
+   "kev": false,
+   "at": "2026-11-18"
   },
   "GHSA-vfmf-q6x9-cw96": {
    "level": "check",
@@ -2419,13 +2419,6 @@
    "level": "check",
    "reason": "code16 Sharpのサニタイザー回避で格納型XSS。HIGH",
    "todo": "code16/sharp 9.22.5に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-vjqc-q4mp-2rvf": {
-   "level": "check",
-   "reason": "CakePHPのFunctionsBuilderのSQLインジェクション。使っている場合に影響",
-   "todo": "cakephp/database 4.6.5 / 5.1.9 / 5.2.14 / 5.3.7、cakephp 4.5.12 に更新",
    "kev": false,
    "at": "2026-11-02"
   },
