@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T00:46:01Z",
+ "updated_at": "2026-11-18T12:45:53Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -1785,13 +1785,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-j63v-mwhm-56jx": {
-   "level": "check",
-   "reason": "@sigstore/ociが別ホストに認証ヘッダーを送る。HIGH",
-   "todo": "@sigstore/oci 0.7.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-j656-3hf2-fvjc": {
    "level": "watch",
    "reason": "MEDIUM。MySQL・MariaDBのコメントで読み取り専用のSQLチェックをすり抜けられる",
@@ -2044,13 +2037,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-mrwp-f3q8-3g9p": {
-   "level": "check",
-   "reason": "follow-redirectsで資格情報がリダイレクト先に送られる。HIGH",
-   "todo": "follow-redirects 1.16.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-mw6w-2fmv-pvw3": {
    "level": "watch",
    "reason": "adapter-nodeでrerouteが不正なパスを書き換えると落ちる。MEDIUM",
@@ -2254,6 +2240,13 @@
    "kev": false,
    "at": "2026-11-13"
   },
+  "GHSA-r7hw-jx6r-756g": {
+   "level": "check",
+   "reason": "simplesamlphp/saml2でHTTP-Artifactの署名確認をすり抜けられる。以前の修正が不十分だった",
+   "todo": "6.2.4以降、7系は7.0.0-rc2以降に更新",
+   "kev": false,
+   "at": "2026-11-18"
+  },
   "GHSA-r7j4-crjv-h467": {
    "level": "watch",
    "reason": "MEDIUM。compose-lintの出力からCIのコマンドを出せる",
@@ -2337,6 +2330,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-rvfr-cqwq-rc4j": {
+   "level": "check",
+   "reason": "@libp2p/cryptoで細工した長さの値によりログイン前にイベントループが止まる",
+   "todo": "5.1.22以降に更新",
+   "kev": false,
+   "at": "2026-11-18"
   },
   "GHSA-rw77-vq4g-x3hp": {
    "level": "check",
@@ -2527,6 +2527,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-x2vm-cf3p-m2w8": {
+   "level": "check",
+   "reason": "@libp2p/gossipsubで購読ごとに記録が上限なく増える（標準設定）",
+   "todo": "17.0.0以降に更新",
+   "kev": false,
+   "at": "2026-11-18"
+  },
   "GHSA-x2wv-5868-p7v2": {
    "level": "watch",
    "reason": "LOW。開発サーバーだけの問題",
@@ -2545,13 +2552,6 @@
    "level": "check",
    "reason": "pypdfの相互参照ストリーム解析で大量メモリ。HIGH",
    "todo": "pypdf 6.21.3以降に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-x424-64qh-5j54": {
-   "level": "check",
-   "reason": "react/httpで不正なチャンク本文によりCPUを占有しDoS。HIGH",
-   "todo": "react/http 1.11.1に更新",
    "kev": false,
    "at": "2026-11-02"
   },
