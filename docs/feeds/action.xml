@@ -4,8 +4,54 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/action.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/action.xml</id>
-<updated>2026-11-11T00:00:00Z</updated>
+<updated>2026-11-18T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>[要対応] Apache / nginx: CVE-2026-123633 9.2 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-123633"/>
+<id>urn:bug-hou:CVE-2026-123633</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; nginx本体。HTTP/2で受けてプロキシする構成でuse-after-free、RCEの恐れ&lt;br&gt;→ 公式の告知で修正版を確認して更新&lt;/p&gt;&lt;p&gt;When NGINX Plus or NGINX Open Source is configured to use HTTP/2 for client connections and proxy client requests to a backend, a specially crafted request can result in use-after-free in the worker process, if this process is running low on worker_connections. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+
+
+
+
+Impact:
+
+
+
+This vulnerability may allow remote attackers to cause a denial-of-service (DoS) on the NGINX system or may allow a code execution. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[要対応] Apache / nginx: CVE-2026-123007 9.2 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-123007"/>
+<id>urn:bug-hou:CVE-2026-123007</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; nginx本体。HTTP/2使用時に認証なしでヒープ溢れ、RCEの恐れ。CRITICAL&lt;br&gt;→ 公式の告知で修正版を確認して更新&lt;/p&gt;&lt;p&gt;This issue affects NGINX Plus or NGINX Open Source configurations that use HTTP/2. When NGINX processes undisclosed traffic, the flow control window can exceed the allowed threshold, potentially resulting in a heap buffer overflow typically followed by an NGINX worker segmentation fault. Additionally, attackers can execute code on systems with Address Space Layout Randomization (ASLR) disabled or when the attacker can bypass ASLR.
+
+Impact: An attacker could leverage this vulnerability to crash the NGINX worker process, corrupt its memory, or potentially execute code remotely. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>[要対応] Apache / nginx: CVE-2026-118899 8.7 HIGH</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-118899"/>
+<id>urn:bug-hou:CVE-2026-118899</id>
+<updated>2026-11-18T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; nginx本体。TLSv1.3有効のsslリスナーで認証なしに無限ループのDoS。HIGH&lt;br&gt;→ 公式の告知で修正版を確認して更新&lt;/p&gt;&lt;p&gt;When using the listen directive with the ssl parameter in the http block with TLSv1.3 enabled, an attacker can use a specially crafted TLS connection to cause an infinite loop in the NGINX worker process while reading the HTTP request body. As a result, the worker process stops accepting new connections and processing existing connections. Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.
+
+Impact: This vulnerability allows a remote, unauthenticated attacker to cause a denial-of-service (DoS) of NGINX. There is no control plane exposure; this is a data plane issue only.
+
+
+
+Note: Software versions which have reached End of Technical Support (EoTS) are not evaluated.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要対応] Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"/>
