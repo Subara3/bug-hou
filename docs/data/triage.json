@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T00:46:43Z",
+ "updated_at": "2026-11-19T12:46:11Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -639,13 +639,6 @@
    "kev": false,
    "at": "2026-11-17"
   },
-  "GHSA-26mh-57q7-jfvr": {
-   "level": "check",
-   "reason": "PraisonAIのASTサンドボックス破りでRCE。HIGH",
-   "todo": "praisonai 4.6.78に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-28qf-cpwq-vmc2": {
    "level": "check",
    "reason": "HIGH。Python版パーサーでupgradeを断ったあとにリクエスト再送とバッファ増加",
@@ -659,6 +652,13 @@
    "todo": "ag2 1.1.1 以降に更新。autogenは修正版なし",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-2m9m-6cr5-9x25": {
+   "level": "check",
+   "reason": "mssql-mcpの書き込み用ツールでSQLインジェクション。利用者の少ないパッケージ",
+   "todo": "core・serverは0.6.0、reader・writerは0.5.0に更新",
+   "kev": false,
+   "at": "2026-11-19"
   },
   "GHSA-2phh-27fw-q4gc": {
    "level": "watch",
@@ -783,13 +783,6 @@
    "level": "check",
    "reason": "PhpSpreadsheetのXmlScanner回避でXXE。HIGH",
    "todo": "PhpSpreadsheet 5.10.0/3.10.8などに更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-3xf4-9g3c-4h4w": {
-   "level": "watch",
-   "reason": "Nuxt開発サーバーでappSecretが露出。MEDIUM",
-   "todo": "@nuxt/vite-builder 4.6.3に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -974,6 +967,13 @@
    "todo": "node-forge 1.4.1に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-5g9x-qwh5-33x4": {
+   "level": "watch",
+   "reason": "MEDIUM。権限確認の抜けで、本来できない操作ができてしまう",
+   "todo": "djangocms-versioningを2.6.1に更新",
+   "kev": false,
+   "at": "2026-11-19"
   },
   "GHSA-5gmm-hjfj-8ff7": {
    "level": "watch",
@@ -1220,6 +1220,13 @@
    "kev": false,
    "at": "2026-11-17"
   },
+  "GHSA-7jvc-9xq8-frff": {
+   "level": "watch",
+   "reason": "MEDIUM。ログイン済みの人がOAuthトークンをGitHub以外へ送らせられる",
+   "todo": "outstaticを2.2.1に更新",
+   "kev": false,
+   "at": "2026-11-19"
+  },
   "GHSA-7m6h-rg42-m449": {
    "level": "watch",
    "reason": "FilamentのMFA管理操作で再認証なし。MEDIUM",
@@ -1276,6 +1283,13 @@
    "kev": false,
    "at": "2026-11-18"
   },
+  "GHSA-82w8-65qw-gch6": {
+   "level": "check",
+   "reason": "ALTCHAの検証で、署名がないと署名チェックが飛ばされる",
+   "todo": "altcha-org/altchaを2.0.3に更新",
+   "kev": false,
+   "at": "2026-11-19"
+  },
   "GHSA-8332-j7wj-wjw4": {
    "level": "check",
    "reason": "Mongooseが継承プロパティまで書き換え、サービス停止などが起きる。HIGH",
@@ -1310,6 +1324,13 @@
    "todo": "0.32.0 以降に更新",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-88q3-gch3-5396": {
+   "level": "check",
+   "reason": "ダウンロードしたネイティブ部品を改ざんの確認なしで読み込む",
+   "todo": "install-artifact-from-githubを1.7.0に更新",
+   "kev": false,
+   "at": "2026-11-19"
   },
   "GHSA-89p3-fcch-88ph": {
    "level": "check",
@@ -1462,13 +1483,6 @@
    "level": "watch",
    "reason": "svg-sanitizeの回避で格納型XSS。MEDIUM",
    "todo": "svg-sanitize 1.0.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-9v7c-q64q-vv33": {
-   "level": "watch",
-   "reason": "Nuxtでドットセグメントによりミドルウェア判定回避。MEDIUM",
-   "todo": "nuxt 4.6.3に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1945,13 +1959,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-jq29-c7v8-rg55": {
-   "level": "check",
-   "reason": "GravのdeleteFile()でパストラバーサルし任意ファイル削除。HIGH",
-   "todo": "getgrav/grav 2.0.16に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-jq3q-62jc-fqq9": {
    "level": "check",
    "reason": "code-review-mcp-serverのHIGH。folderPath等の引数からコマンド注入",
@@ -2274,13 +2281,6 @@
    "kev": false,
    "at": "2026-11-07"
   },
-  "GHSA-r4j5-9xpp-3985": {
-   "level": "watch",
-   "reason": "Tornadoの細かいチャンクでイベントループ停止。MEDIUM",
-   "todo": "tornado 6.6に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-r4jh-29pc-gfqr": {
    "level": "watch",
    "reason": "MEDIUM。パスワードなどに改行が入ると例外でプロセスが落ちる",
@@ -2477,6 +2477,13 @@
    "kev": false,
    "at": "2026-11-18"
   },
+  "GHSA-vf85-8ff2-3r9w": {
+   "level": "watch",
+   "reason": "MEDIUM。版の破棄・編集への切り替えで対象ごとの権限確認がない",
+   "todo": "django-filerを3.5.0に更新",
+   "kev": false,
+   "at": "2026-11-19"
+  },
   "GHSA-vfmf-q6x9-cw96": {
    "level": "check",
    "reason": "GravのdetectXss回避で格納型XSS。CRITICAL",
@@ -2581,13 +2588,6 @@
    "todo": "2.1.15 以降に更新",
    "kev": false,
    "at": "2026-11-11"
-  },
-  "GHSA-x287-wcfc-q46c": {
-   "level": "watch",
-   "reason": "Nuxt開発サーバーで任意ファイル読取。MEDIUM",
-   "todo": "@nuxt/vite-builder 4.6.3に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-x2rp-9qf7-2fmq": {
    "level": "watch",
