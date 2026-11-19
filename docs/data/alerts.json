@@ -13,6 +13,16 @@
   "first": "2026-11-19"
  },
  {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261119.html",
+  "org": "IPA",
+  "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について（11月）",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261119.html",
+  "date": "2026-11-19",
+  "updated": false,
+  "cves": [],
+  "first": "2026-11-19"
+ },
+ {
   "id": "https://www.ipa.go.jp/security/security-alert/2026/1118-jre.html",
   "org": "IPA",
   "title": "Oracle Java の脆弱性対策について(2026年11月)",

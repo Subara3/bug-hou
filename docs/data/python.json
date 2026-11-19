@@ -280,6 +280,146 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-r7wg-f7r2-8wf7",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-76818",
+   "summary": "Axon: Download of Code Without Integrity Check in axon-mcp",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-r7wg-f7r2-8wf7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "axon-mcp",
+     "range": "<= 0.1.0",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-pj7p-238h-76pv",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-69139",
+   "summary": "djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-pj7p-238h-76pv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "djangocms-moderation",
+     "range": "<= 2.3.0",
+     "fixed": "2.4.0"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-8776-qf3h-26r3",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-71535",
+   "summary": "Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path",
+   "severity": "HIGH",
+   "score": 7.1,
+   "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-8776-qf3h-26r3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mareforma",
+     "range": ">= 0.3.0, < 0.3.7",
+     "fixed": "0.3.7"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-xfq4-8hf9-5h43",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-71534",
+   "summary": "Mareforma: transparency_logged trusts the unsigned rekor block",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:L/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-xfq4-8hf9-5h43",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mareforma",
+     "range": ">= 0.3.0, < 0.3.8",
+     "fixed": "0.3.8"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-rgg9-956j-3378",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-71500",
+   "summary": "Mareforma: invalidated claims still promote to REPLICATED",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "vector": "CVSS:4.0/AV:L/AC:L/AT:P/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-rgg9-956j-3378",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mareforma",
+     "range": ">= 0.3.0, < 0.3.8",
+     "fixed": "0.3.8"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-hxh5-gp44-rc6p",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-71536",
+   "summary": "Mareforma: verify_bundle never checks a per-claim signature",
+   "severity": "HIGH",
+   "score": 7.0,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:H/VA:N/SC:N/SI:H/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-hxh5-gp44-rc6p",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mareforma",
+     "range": ">= 0.3.0, < 0.3.8",
+     "fixed": "0.3.8"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-m29v-3g7g-9c63",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-71533",
+   "summary": "Mareforma: search_claims skips verify-on-read, serving forged rows",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-m29v-3g7g-9c63",
+   "kev": false,
+   "packages": [
+    {
+     "name": "mareforma",
+     "range": "= 0.3.7",
+     "fixed": "0.3.8"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
    "id": "GHSA-vf85-8ff2-3r9w",
    "ecosystem": "pip",
    "cve": "CVE-2026-69131",
@@ -2185,146 +2325,6 @@
      "name": "pyasn1",
      "range": "<= 0.6.4",
      "fixed": "0.6.5"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-fm9c-5rcf-2q5p",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-119194",
-   "summary": "pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-fm9c-5rcf-2q5p",
-   "kev": false,
-   "packages": [
-    {
-     "name": "pyasn1",
-     "range": ">= 0.3.3, < 0.6.5",
-     "fixed": "0.6.5"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-mpqx-q82w-9x46",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-119286",
-   "summary": "GraphQL-core has denial of service via memory leak in aborted validations",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-mpqx-q82w-9x46",
-   "kev": false,
-   "packages": [
-    {
-     "name": "graphql-core",
-     "range": ">= 3.3.0a3, < 3.3.1",
-     "fixed": "3.3.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-7984-qgvg-3j9c",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-118669",
-   "summary": "OAuthLib: Token grants can use attacker-supplied client_id for authorization after authenticating a different client",
-   "severity": "HIGH",
-   "score": 8.4,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:H/VA:N/SC:H/SI:H/SA:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-7984-qgvg-3j9c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "oauthlib",
-     "range": "< 4.0.0",
-     "fixed": "4.0.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-9gh4-xw24-9xh5",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-116677",
-   "summary": "OpenWISP Controller CA CRL REST API does not scope requests to managed organizations",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-9gh4-xw24-9xh5",
-   "kev": false,
-   "packages": [
-    {
-     "name": "openwisp-controller",
-     "range": ">= 1.0.0, < 1.3.2",
-     "fixed": "1.3.2"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-9pg5-8c7x-5hfx",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-119284",
-   "summary": "joserfc: Compact JWS size guard allocates attacker-controlled segments before rejection",
-   "severity": "MEDIUM",
-   "score": 6.9,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-9pg5-8c7x-5hfx",
-   "kev": false,
-   "packages": [
-    {
-     "name": "joserfc",
-     "range": "< 1.7.6",
-     "fixed": "1.7.6"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-jpxq-7h8p-2q76",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-119283",
-   "summary": "joserfc: Unbounded JWE General JSON `recipients` Array Leads to CPU Exhaustion (DoS) via Repeated RSA Private-Key Decryption",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-jpxq-7h8p-2q76",
-   "kev": false,
-   "packages": [
-    {
-     "name": "joserfc",
-     "range": "< 1.7.5",
-     "fixed": "1.7.5"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-vpp8-g58w-m8mp",
-   "ecosystem": "pip",
-   "cve": null,
-   "summary": "Twisted: Unauthenticated Remote Denial of Service in the Twisted HTTP/2 Server via Rapid Stream Reset",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-vpp8-g58w-m8mp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "Twisted",
-     "range": "<= 26.4.0",
-     "fixed": "26.10.0rc1"
     }
    ],
    "first_seen": "0000-00-00"

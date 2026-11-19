@@ -7,6 +7,13 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
+<title>Node.js: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-vg83-hcp4-5qcc"/>
+<id>urn:bug-hou:GHSA-vg83-hcp4-5qcc</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@apireno/domshell &amp;lt; 2.0.8 → 2.0.8&lt;/p&gt;&lt;p&gt;CVE-2026-75518&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] Node.js: install-artifact-from-github loads downloaded native artifacts without integrity verification (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-88q3-gch3-5396"/>
 <id>urn:bug-hou:GHSA-88q3-gch3-5396</id>
@@ -14,11 +21,25 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; ダウンロードしたネイティブ部品を改ざんの確認なしで読み込む&lt;br&gt;→ install-artifact-from-githubを1.7.0に更新&lt;/p&gt;&lt;p&gt;install-artifact-from-github &amp;lt;= 1.6.0 → 1.7.0&lt;/p&gt;&lt;p&gt;CVE-2026-73864&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Node.js: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-833v-v58w-294h"/>
+<id>urn:bug-hou:GHSA-833v-v58w-294h</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@doist/todoist-mcp &amp;lt;= 10.3.2 → 10.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-76807&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Node.js: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7jvc-9xq8-frff"/>
 <id>urn:bug-hou:GHSA-7jvc-9xq8-frff</id>
 <updated>2026-11-19T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。ログイン済みの人がOAuthトークンをGitHub以外へ送らせられる&lt;br&gt;→ outstaticを2.2.1に更新&lt;/p&gt;&lt;p&gt;outstatic &amp;lt;= 2.2.0 → 2.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-71425&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-4c2f-96cf-f5fc"/>
+<id>urn:bug-hou:GHSA-4c2f-96cf-f5fc</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@openeudi/openid4vp &amp;lt;= 0.8.0 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-75522&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses (HIGH)</title>
@@ -334,26 +355,5 @@
 <id>urn:bug-hou:GHSA-q6jf-24jf-m3cg</id>
 <updated>2026-11-11T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Aspire CLIの情報漏えい。HIGH&lt;br&gt;→ Aspire.Cliの利用有無を確認し、13.6.5に更新&lt;/p&gt;&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120792&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Microsoft Security Advisory CVE-2026-120778 - Aspire Elevation of Privilege Vulnerability (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-m63f-xhvm-6mv5"/>
-<id>urn:bug-hou:GHSA-m63f-xhvm-6mv5</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Aspire CLIの権限昇格。HIGH&lt;br&gt;→ Aspire.Cliの利用有無を確認し、13.6.5に更新&lt;/p&gt;&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120778&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Forge: TLS client crash on a handshake record received without a session (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-j8rw-jp99-435v"/>
-<id>urn:bug-hou:GHSA-j8rw-jp99-435v</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのTLSクライアントがセッションなしの受信で落ちる。MEDIUM&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125334&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Mongoose: Connection-level sanitizeFilter not applied (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-gg4r-jv3p-qx3c"/>
-<id>urn:bug-hou:GHSA-gg4r-jv3p-qx3c</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Mongooseで接続単位のsanitizeFilterが効かない。設定している場合に影響&lt;br&gt;→ sanitizeFilterの設定を確認し、6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;gt;= 6.0.0, &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125119&lt;/p&gt;</content>
 </entry>
 </feed>

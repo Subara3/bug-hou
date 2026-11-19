@@ -1,13 +1,13 @@
 {
- "fetched_at": "2026-11-19T07:27:42Z",
+ "fetched_at": "2026-11-19T20:39:18Z",
  "days": 90,
  "targets": [
   {
    "id": "php",
    "label": "PHP",
-   "cves": 13,
-   "critical": 2,
-   "high": 1,
+   "cves": 30,
+   "critical": 9,
+   "high": 5,
    "kev_recent": 2,
    "kev_total": 13,
    "ghsa": 100,

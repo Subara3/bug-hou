@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜djangocms-moderation（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/djangocms-moderation.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/djangocms-moderation.xml</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-pj7p-238h-76pv"/>
+<id>urn:bug-hou:GHSA-pj7p-238h-76pv</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;djangocms-moderation &amp;lt;= 2.3.0 → 2.4.0&lt;/p&gt;&lt;p&gt;CVE-2026-69139&lt;/p&gt;</content>
+</entry>
+</feed>

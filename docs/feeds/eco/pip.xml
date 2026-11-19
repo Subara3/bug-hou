@@ -7,11 +7,60 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
+<title>Python: Mareforma: transparency_logged trusts the unsigned rekor block (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-xfq4-8hf9-5h43"/>
+<id>urn:bug-hou:GHSA-xfq4-8hf9-5h43</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71534&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Python: django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vf85-8ff2-3r9w"/>
 <id>urn:bug-hou:GHSA-vf85-8ff2-3r9w</id>
 <updated>2026-11-19T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。版の破棄・編集への切り替えで対象ごとの権限確認がない&lt;br&gt;→ django-filerを3.5.0に更新&lt;/p&gt;&lt;p&gt;django-filer &amp;lt;= 3.4.4 → 3.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-69131&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Mareforma: invalidated claims still promote to REPLICATED (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rgg9-956j-3378"/>
+<id>urn:bug-hou:GHSA-rgg9-956j-3378</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71500&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Axon: Download of Code Without Integrity Check in axon-mcp (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r7wg-f7r2-8wf7"/>
+<id>urn:bug-hou:GHSA-r7wg-f7r2-8wf7</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;axon-mcp &amp;lt;= 0.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-76818&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-pj7p-238h-76pv"/>
+<id>urn:bug-hou:GHSA-pj7p-238h-76pv</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;djangocms-moderation &amp;lt;= 2.3.0 → 2.4.0&lt;/p&gt;&lt;p&gt;CVE-2026-69139&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Mareforma: search_claims skips verify-on-read, serving forged rows (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-m29v-3g7g-9c63"/>
+<id>urn:bug-hou:GHSA-m29v-3g7g-9c63</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma = 0.3.7 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71533&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Mareforma: verify_bundle never checks a per-claim signature (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-hxh5-gp44-rc6p"/>
+<id>urn:bug-hou:GHSA-hxh5-gp44-rc6p</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71536&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8776-qf3h-26r3"/>
+<id>urn:bug-hou:GHSA-8776-qf3h-26r3</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.7 → 0.3.7&lt;/p&gt;&lt;p&gt;CVE-2026-71535&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization (MEDIUM)</title>
@@ -306,54 +355,5 @@
 <id>urn:bug-hou:GHSA-4hvg-fv5c-9936</id>
 <updated>2026-11-14T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SteppingRecursiveDescentParserのCPU使い切りの重複情報。HIGH&lt;br&gt;→ NLTKの利用を確認し、3.10.3より新しい版に更新&lt;/p&gt;&lt;p&gt;nltk &amp;lt;= 3.10.3&lt;/p&gt;&lt;p&gt;GHSA-4hvg-fv5c-9936&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-xcvg-w56q-r89m"/>
-<id>urn:bug-hou:GHSA-xcvg-w56q-r89m</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。libtiffでTIFFを保存するときだけヒープの書き込みがあふれる&lt;br&gt;→ Pillow 13.0.0 以降に更新&lt;/p&gt;&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128067&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Rucio: Unauthenticated administrator impersonation through SSH challenge tokens (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-x585-4vv8-2mh2"/>
-<id>urn:bug-hou:GHSA-x585-4vv8-2mh2</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CRITICAL。ログインなしで管理者になりすませるが、利用者の少ないパッケージ&lt;br&gt;→ rucio 35.9.1 / 38.6.1 / 40.4.2 / 41.1.1 以降に更新&lt;/p&gt;&lt;p&gt;rucio &amp;gt;= 1.14.0.post1, &amp;lt; 35.9.1 → 35.9.1, rucio &amp;gt;= 36.0.0rc1, &amp;lt; 38.6.1 → 38.6.1, rucio &amp;gt;= 39.0.0rc1, &amp;lt; 40.4.2 → 40.4.2, rucio &amp;gt;= 41.0.0rc1, &amp;lt; 41.1.1 → 41.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-100397&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-wqgw-9xfh-qf2g"/>
-<id>urn:bug-hou:GHSA-wqgw-9xfh-qf2g</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。TIFFやEXIFの読み込みでメモリを使い切らされる&lt;br&gt;→ Pillow 13.0.0 以降に更新&lt;/p&gt;&lt;p&gt;Pillow &amp;lt;= 12.3.0 → 13.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-128066&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Soup Sieve: Polynomial-time denial of service in the descendant combinator (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-mmhr-3c5m-f64f"/>
-<id>urn:bug-hou:GHSA-mmhr-3c5m-f64f</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。子孫セレクタの処理に時間がかかりサービス停止になる&lt;br&gt;→ soupsieve 4.0.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt; 4.0.0 → 4.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-126190&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: OpenTelemetry Python API: Denial of service through quadratic-time traceparent parsing (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-mf5v-w3w3-f6cg"/>
-<id>urn:bug-hou:GHSA-mf5v-w3w3-f6cg</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; traceparentの解析が遅くなりサービスが止まるMEDIUM&lt;br&gt;→ opentelemetry-api 1.45.2に更新&lt;/p&gt;&lt;p&gt;opentelemetry-api &amp;lt;= 1.45.1 → 1.45.2&lt;/p&gt;&lt;p&gt;CVE-2026-126360&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: envd: Host file disclosure through requirements path traversal and TOCTOU (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-jv6m-48w5-5rpr"/>
-<id>urn:bug-hou:GHSA-jv6m-48w5-5rpr</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; envdのrequirementsのパス指定でホストのファイルが漏れるMEDIUM&lt;br&gt;→ envd 1.3.6に更新&lt;/p&gt;&lt;p&gt;envd &amp;gt;= 0.3.38, &amp;lt; 1.3.6 → 1.3.6&lt;/p&gt;&lt;p&gt;CVE-2026-128079&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: Soup Sieve: Uncontrolled recursion in CSS parser lets nested pseudo-class selectors exhaust the Python call stack (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-7g44-g9rc-x53w"/>
-<id>urn:bug-hou:GHSA-7g44-g9rc-x53w</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 入れ子のセレクタで呼び出しが深くなりすぎるMEDIUM&lt;br&gt;→ soupsieve 3.0.2に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;gt;= 0.4, &amp;lt;= 2.10 → 3.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-126193&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜mareforma（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/mareforma.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/mareforma.xml</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Mareforma: transparency_logged trusts the unsigned rekor block (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-xfq4-8hf9-5h43"/>
+<id>urn:bug-hou:GHSA-xfq4-8hf9-5h43</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71534&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Mareforma: invalidated claims still promote to REPLICATED (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rgg9-956j-3378"/>
+<id>urn:bug-hou:GHSA-rgg9-956j-3378</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71500&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Mareforma: search_claims skips verify-on-read, serving forged rows (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-m29v-3g7g-9c63"/>
+<id>urn:bug-hou:GHSA-m29v-3g7g-9c63</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma = 0.3.7 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71533&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Mareforma: verify_bundle never checks a per-claim signature (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-hxh5-gp44-rc6p"/>
+<id>urn:bug-hou:GHSA-hxh5-gp44-rc6p</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71536&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8776-qf3h-26r3"/>
+<id>urn:bug-hou:GHSA-8776-qf3h-26r3</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.7 → 0.3.7&lt;/p&gt;&lt;p&gt;CVE-2026-71535&lt;/p&gt;</content>
+</entry>
+</feed>

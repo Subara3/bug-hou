@@ -7,6 +7,27 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
+<title>PHP: Jane: Instantiation RCE via parameter description -&gt; raw PHPDoc */ breakout (jane-php/open-api-3) (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-xwcw-j52r-34x4"/>
+<id>urn:bug-hou:GHSA-xwcw-j52r-34x4</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63411&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Jane: Instantiation RCE via header parameter name -&gt; raw PHPDoc */ breakout (jane-php/open-api-3) (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-x9xr-53qx-9qcf"/>
+<id>urn:bug-hou:GHSA-x9xr-53qx-9qcf</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63413&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Jane: Instantiation RCE via query parameter name -&gt; raw PHPDoc */ breakout (jane-php/open-api-3) (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-q8v2-3j4h-xg2p"/>
+<id>urn:bug-hou:GHSA-q8v2-3j4h-xg2p</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63412&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] PHP: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-82w8-65qw-gch6"/>
 <id>urn:bug-hou:GHSA-82w8-65qw-gch6</id>
@@ -140,13 +161,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] PHP: Grav: detectXss() misses an event-handler attribute after an unpaired quote in an unquoted attribute value, giving stored XSS (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-vfmf-q6x9-cw96"/>
-<id>urn:bug-hou:GHSA-vfmf-q6x9-cw96</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdetectXss回避で格納型XSS。CRITICAL&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75828&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] PHP: Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-v3f3-cmj4-cvj9"/>
 <id>urn:bug-hou:GHSA-v3f3-cmj4-cvj9</id>
@@ -224,13 +238,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Freeformの送信値で限定的なTwigテンプレート注入。MEDIUM&lt;br&gt;→ craft-freeform 5.10.14に更新&lt;/p&gt;&lt;p&gt;solspace/craft-freeform &amp;gt;= 5.0.0, &amp;lt;= 5.10.13 → 5.10.14&lt;/p&gt;&lt;p&gt;CVE-2026-73858&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] PHP: Grav: Blueprint dynamic-data bare-function branch is denylist-gated and omits error_log, giving arbitrary file write (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-f8wv-xp27-6gq7"/>
-<id>urn:bug-hou:GHSA-f8wv-xp27-6gq7</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのブループリント動的データでerror_logから任意ファイル書込。CRITICAL&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-75827&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] PHP: Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cx86-7xwp-w9wf"/>
 <id>urn:bug-hou:GHSA-cx86-7xwp-w9wf</id>
@@ -271,13 +278,6 @@
 <id>urn:bug-hou:GHSA-59xw-qv23-j3rc</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSearchByPropertyで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77608&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Grav: Unauthenticated Path Traversal via Missing Directory-Boundary Check in `plugin-asset-map.php` Static Asset Server (`index.php`) (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-4v9q-p283-qc2m"/>
-<id>urn:bug-hou:GHSA-4v9q-p283-qc2m</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravのplugin-asset-map.phpで認証なしパストラバーサル。HIGH&lt;br&gt;→ getgrav/grav 2.0.15に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.14 → 2.0.15&lt;/p&gt;&lt;p&gt;CVE-2026-74907&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Semantic MediaWiki has reflected XSS in Special:Ask plain table headers (MEDIUM)</title>
