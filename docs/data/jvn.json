@@ -1,5 +1,26 @@
 [
  {
+  "id": "JVNVU#98354779",
+  "title": "Siemens製品に対するアップデート（2026年11月）",
+  "url": "https://jvn.jp/vu/JVNVU98354779/",
+  "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
+  "date": "2026-11-19"
+ },
+ {
+  "id": "JVN#29068051",
+  "title": "ブラウザ拡張機能「Win Bird 授業支援」におけるクロスサイトスクリプティングの脆弱性",
+  "url": "https://jvn.jp/jp/JVN29068051/",
+  "desc": "ウィンバード株式会社が提供するブラウザ拡張機能「Win Bird 授業支援」には、クロスサイトスクリプティングの脆弱性が存在します。",
+  "date": "2026-11-19"
+ },
+ {
+  "id": "JVN#28897261",
+  "title": "複数のRuijie Networks製品におけるOSコマンドインジェクションの脆弱性",
+  "url": "https://jvn.jp/jp/JVN28897261/",
+  "desc": "Ruijie Networks Co., Ltd.が提供する複数の製品には、OSコマンドインジェクションの脆弱性が存在します。",
+  "date": "2026-11-19"
+ },
+ {
   "id": "JVNVU#99608534",
   "title": "OpenJDKにおけるヒープベースのバッファオーバーフローの脆弱性",
   "url": "https://jvn.jp/vu/JVNVU99608534/",
@@ -145,13 +166,6 @@
   "url": "https://jvn.jp/vu/JVNVU90805396/",
   "desc": "The Apache Software Foundationから、Apache HTTP Server 2.4系における複数の脆弱性に対応したApache HTTP Server 2.4.71が公開されました。",
   "date": "2026-11-12"
- },
- {
-  "id": "JVNVU#98354779",
-  "title": "Siemens製品に対するアップデート（2026年11月）",
-  "url": "https://jvn.jp/vu/JVNVU98354779/",
-  "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
-  "date": "2026-11-11"
  },
  {
   "id": "JVNVU#99905564",

@@ -52,6 +52,81 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-2m9m-6cr5-9x25",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63129",
+   "summary": "mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses",
+   "severity": "HIGH",
+   "score": 8.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-2m9m-6cr5-9x25",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@connorbritain/mssql-mcp-core",
+     "range": "<= 0.5.0",
+     "fixed": "0.6.0"
+    },
+    {
+     "name": "@connorbritain/mssql-mcp-reader",
+     "range": "<= 0.4.2",
+     "fixed": "0.5.0"
+    },
+    {
+     "name": "@connorbritain/mssql-mcp-writer",
+     "range": "<= 0.4.2",
+     "fixed": "0.5.0"
+    },
+    {
+     "name": "@connorbritain/mssql-mcp-server",
+     "range": "<= 0.5.2",
+     "fixed": "0.6.0"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-88q3-gch3-5396",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-73864",
+   "summary": "install-artifact-from-github loads downloaded native artifacts without integrity verification",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+   "published": "2026-11-18",
+   "url": "https://github.com/advisories/GHSA-88q3-gch3-5396",
+   "kev": false,
+   "packages": [
+    {
+     "name": "install-artifact-from-github",
+     "range": "<= 1.6.0",
+     "fixed": "1.7.0"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-7jvc-9xq8-frff",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-71425",
+   "summary": "Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-18",
+   "url": "https://github.com/advisories/GHSA-7jvc-9xq8-frff",
+   "kev": false,
+   "packages": [
+    {
+     "name": "outstatic",
+     "range": "<= 2.2.0",
+     "fixed": "2.2.1"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
    "id": "GHSA-xvcc-vqjv-phqh",
    "ecosystem": "npm",
    "cve": "CVE-2026-63496",
@@ -2417,71 +2492,6 @@
      "name": "node-forge",
      "range": "<= 1.4.0",
      "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-3xf4-9g3c-4h4w",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-119201",
-   "summary": "Nuxt dev server exposes generated appSecret through Vite file serving",
-   "severity": "MEDIUM",
-   "score": 4.8,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-3xf4-9g3c-4h4w",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@nuxt/vite-builder",
-     "range": ">= 4.6.0, < 4.6.3",
-     "fixed": "4.6.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-9v7c-q64q-vv33",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-119200",
-   "summary": "Nuxt: Dot segments in the request path bypass `server/middleware` path checks and server route rules on page routes",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-9v7c-q64q-vv33",
-   "kev": false,
-   "packages": [
-    {
-     "name": "nuxt",
-     "range": ">= 4.6.0, < 4.6.3",
-     "fixed": "4.6.3"
-    },
-    {
-     "name": "@nuxt/nitro-server",
-     "range": ">= 4.6.0, < 4.6.3",
-     "fixed": "4.6.3"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-x287-wcfc-q46c",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-119198",
-   "summary": "Nuxt dev server arbitrary file read through client error reports",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-x287-wcfc-q46c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@nuxt/vite-builder",
-     "range": ">= 4.6.0, < 4.6.3",
-     "fixed": "4.6.3"
     }
    ],
    "first_seen": "0000-00-00"

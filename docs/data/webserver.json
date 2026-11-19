@@ -52,7 +52,7 @@
   {
    "id": "CVE-2026-113425",
    "published": "2026-11-18",
-   "modified": "2026-11-18",
+   "modified": "2026-11-19",
    "status": "Received",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -120,7 +120,7 @@
   {
    "id": "CVE-2026-121810",
    "published": "2026-11-18",
-   "modified": "2026-11-18",
+   "modified": "2026-11-19",
    "status": "Received",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -137,7 +137,7 @@
   {
    "id": "CVE-2026-123007",
    "published": "2026-11-18",
-   "modified": "2026-11-18",
+   "modified": "2026-11-19",
    "status": "Received",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -155,7 +155,7 @@
   {
    "id": "CVE-2026-123633",
    "published": "2026-11-18",
-   "modified": "2026-11-18",
+   "modified": "2026-11-19",
    "status": "Received",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -172,7 +172,7 @@
   {
    "id": "CVE-2026-123634",
    "published": "2026-11-18",
-   "modified": "2026-11-18",
+   "modified": "2026-11-19",
    "status": "Received",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -1202,5 +1202,19 @@
    "first_seen": "2026-11-12"
   }
  ],
- "alerts": []
+ "alerts": [
+  {
+   "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20261119.html",
+   "org": "IPA",
+   "title": "NGINXの複数の脆弱性対策について（CVE-2026-123007、CVE-2026-123633等）",
+   "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261119.html",
+   "date": "2026-11-19",
+   "updated": false,
+   "cves": [
+    "CVE-2026-123007",
+    "CVE-2026-123633"
+   ],
+   "first": "2026-11-19"
+  }
+ ]
 }

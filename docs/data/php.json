@@ -653,6 +653,26 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-82w8-65qw-gch6",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-71481",
+   "summary": "ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+   "published": "2026-11-18",
+   "url": "https://github.com/advisories/GHSA-82w8-65qw-gch6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "altcha-org/altcha",
+     "range": ">= 2.0.0, < 2.0.3",
+     "fixed": "2.0.3"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
    "id": "GHSA-r7hw-jx6r-756g",
    "ecosystem": "composer",
    "cve": "CVE-2026-110782",
@@ -2978,26 +2998,6 @@
      "name": "getgrav/grav",
      "range": "<= 2.0.14",
      "fixed": "2.0.15"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-jq29-c7v8-rg55",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-72695",
-   "summary": "Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion",
-   "severity": "HIGH",
-   "score": 7.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-jq29-c7v8-rg55",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": "<= 2.0.15",
-     "fixed": "2.0.16"
     }
    ],
    "first_seen": "2026-11-02"

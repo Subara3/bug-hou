@@ -211,7 +211,7 @@
   {
    "id": "CVE-2026-12345",
    "published": "2026-09-29",
-   "modified": "2026-10-26",
+   "modified": "2026-11-19",
    "status": "Awaiting Analysis",
    "score": 5.9,
    "severity": "MEDIUM",
@@ -279,6 +279,46 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-vf85-8ff2-3r9w",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-69131",
+   "summary": "django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+   "published": "2026-11-18",
+   "url": "https://github.com/advisories/GHSA-vf85-8ff2-3r9w",
+   "kev": false,
+   "packages": [
+    {
+     "name": "django-filer",
+     "range": "<= 3.4.4",
+     "fixed": "3.5.0"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
+  {
+   "id": "GHSA-5g9x-qwh5-33x4",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-69138",
+   "summary": "djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H",
+   "published": "2026-11-18",
+   "url": "https://github.com/advisories/GHSA-5g9x-qwh5-33x4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "djangocms-versioning",
+     "range": "<= 2.6.0",
+     "fixed": "2.6.1"
+    }
+   ],
+   "first_seen": "2026-11-19"
+  },
   {
    "id": "GHSA-v858-xh7w-8jr5",
    "ecosystem": "pip",
@@ -2285,46 +2325,6 @@
      "name": "Twisted",
      "range": "<= 26.4.0",
      "fixed": "26.10.0rc1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-26mh-57q7-jfvr",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-61438",
-   "summary": "PraisonAI vulnerable to Remote Code Execution via Broken AST Sandbox",
-   "severity": "HIGH",
-   "score": 7.3,
-   "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
-   "published": "2026-10-29",
-   "url": "https://github.com/advisories/GHSA-26mh-57q7-jfvr",
-   "kev": false,
-   "packages": [
-    {
-     "name": "praisonai",
-     "range": "< 4.6.78",
-     "fixed": "4.6.78"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-r4j5-9xpp-3985",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-115927",
-   "summary": "Tornado: Event loop blocking and excess memory use from chunked bodies with many small chunks",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
-   "published": "2026-10-28",
-   "url": "https://github.com/advisories/GHSA-r4j5-9xpp-3985",
-   "kev": false,
-   "packages": [
-    {
-     "name": "tornado",
-     "range": "< 6.6",
-     "fixed": "6.6"
     }
    ],
    "first_seen": "0000-00-00"

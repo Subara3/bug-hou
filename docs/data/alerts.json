@@ -1,5 +1,18 @@
 [
  {
+  "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20261119.html",
+  "org": "IPA",
+  "title": "NGINXの複数の脆弱性対策について（CVE-2026-123007、CVE-2026-123633等）",
+  "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261119.html",
+  "date": "2026-11-19",
+  "updated": false,
+  "cves": [
+   "CVE-2026-123007",
+   "CVE-2026-123633"
+  ],
+  "first": "2026-11-19"
+ },
+ {
   "id": "https://www.ipa.go.jp/security/security-alert/2026/1118-jre.html",
   "org": "IPA",
   "title": "Oracle Java の脆弱性対策について(2026年11月)",

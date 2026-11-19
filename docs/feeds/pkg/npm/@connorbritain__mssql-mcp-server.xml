@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@connorbritain/mssql-mcp-server（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@connorbritain__mssql-mcp-server.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@connorbritain__mssql-mcp-server.xml</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2m9m-6cr5-9x25"/>
+<id>urn:bug-hou:GHSA-2m9m-6cr5-9x25</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@connorbritain/mssql-mcp-core &amp;lt;= 0.5.0 → 0.6.0, @connorbritain/mssql-mcp-reader &amp;lt;= 0.4.2 → 0.5.0, @connorbritain/mssql-mcp-writer &amp;lt;= 0.4.2 → 0.5.0, @connorbritain/mssql-mcp-server &amp;lt;= 0.5.2 → 0.6.0&lt;/p&gt;&lt;p&gt;CVE-2026-63129&lt;/p&gt;</content>
+</entry>
+</feed>

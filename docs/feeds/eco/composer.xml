@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/composer.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/composer.xml</id>
-<updated>2026-11-18T00:00:00Z</updated>
+<updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-82w8-65qw-gch6"/>
+<id>urn:bug-hou:GHSA-82w8-65qw-gch6</id>
+<updated>2026-11-19T00:00:00Z</updated>
+<content type="html">&lt;p&gt;altcha-org/altcha &amp;gt;= 2.0.0, &amp;lt; 2.0.3 → 2.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-71481&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] PHP: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r7hw-jx6r-756g"/>
@@ -187,13 +194,6 @@
 <id>urn:bug-hou:GHSA-jr78-w6w5-m8f8</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH&lt;br&gt;→ semantic-media-wiki 7.3.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.0.0, &amp;lt;= 7.2.1 → 7.3.0&lt;/p&gt;&lt;p&gt;GHSA-jr78-w6w5-m8f8&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-jq29-c7v8-rg55"/>
-<id>urn:bug-hou:GHSA-jq29-c7v8-rg55</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdeleteFile()でパストラバーサルし任意ファイル削除。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72695&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated) (MEDIUM)</title>
