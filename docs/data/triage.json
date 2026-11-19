@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-18T12:45:53Z",
+ "updated_at": "2026-11-19T00:46:43Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -84,6 +84,13 @@
    "urgency": "now",
    "comment": "圧縮データを外から受け取るなら、すぐ更新したほうがいい"
   },
+  "CVE-2026-113425": {
+   "level": "check",
+   "reason": "nginxをメールプロキシにしている場合のみ影響。use-after-freeでRCEの恐れ",
+   "todo": "mailモジュールの利用有無を確認し、使っていれば修正版に更新",
+   "kev": false,
+   "at": "2026-11-19"
+  },
   "CVE-2026-114583": {
    "level": "watch",
    "reason": "tarfileのtar_filterを細工リンクで回避。ローカル・MEDIUM",
@@ -121,6 +128,15 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "CVE-2026-118899": {
+   "level": "action",
+   "reason": "nginx本体。TLSv1.3有効のsslリスナーで認証なしに無限ループのDoS。HIGH",
+   "todo": "公式の告知で修正版を確認して更新",
+   "kev": false,
+   "at": "2026-11-19",
+   "urgency": "later",
+   "comment": "HTTPSで公開しているなら影響しやすい。データ上は急ぎではないので次の更新で直せばいい"
+  },
   "CVE-2026-119170": {
    "level": "check",
    "reason": "OpenSSLをFIPSモードで使うPython 3.14.10だけが影響。hashlibの制限が効かなくなる",
@@ -146,6 +162,36 @@
    "urgency": "now",
    "comment": "外に公開しているサイトはすぐ対応して。更新作業の最中が狙われるので、作業中は外から見えないようにしたい"
   },
+  "CVE-2026-120967": {
+   "level": "watch",
+   "reason": "streamの非デフォルト仮想サーバーでクライアント証明書の確認を回避。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-19"
+  },
+  "CVE-2026-120993": {
+   "level": "watch",
+   "reason": "stream_sslの動的証明書とproxy_protocol v2の組合せでワーカー停止。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-19"
+  },
+  "CVE-2026-121810": {
+   "level": "check",
+   "reason": "HTTP/3を使う設定のみ影響。use-after-freeでDoSやRCEの恐れ",
+   "todo": "HTTP/3の利用有無を確認し、使っていれば修正版に更新",
+   "kev": false,
+   "at": "2026-11-19"
+  },
+  "CVE-2026-123007": {
+   "level": "action",
+   "reason": "nginx本体。HTTP/2使用時に認証なしでヒープ溢れ、RCEの恐れ。CRITICAL",
+   "todo": "公式の告知で修正版を確認して更新",
+   "kev": false,
+   "at": "2026-11-19",
+   "urgency": "later",
+   "comment": "HTTP/2を有効にして公開しているなら対象。データ上は急ぎではないので次の更新で大丈夫"
+  },
   "CVE-2026-12345": {
    "level": "watch",
    "reason": "TemporaryDirectory削除時の競合。ローカル・MEDIUM",
@@ -153,12 +199,42 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "CVE-2026-123633": {
+   "level": "action",
+   "reason": "nginx本体。HTTP/2で受けてプロキシする構成でuse-after-free、RCEの恐れ",
+   "todo": "公式の告知で修正版を確認して更新",
+   "kev": false,
+   "at": "2026-11-19",
+   "urgency": "later",
+   "comment": "worker_connectionsが残り少ないときだけ起きる。データ上は急ぎではないので次の更新でいい"
+  },
+  "CVE-2026-123634": {
+   "level": "check",
+   "reason": "変数入りのプロキシ先とSSIかmirrorを組み合わせた設定のみ影響。RCEの恐れ",
+   "todo": "該当する設定があるか確認し、あれば修正版に更新",
+   "kev": false,
+   "at": "2026-11-19"
+  },
+  "CVE-2026-123640": {
+   "level": "watch",
+   "reason": "ssl_preread使用時に細工したClientHelloで振り分けを偽れる。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-19"
+  },
   "CVE-2026-124249": {
    "level": "watch",
    "reason": "MEDIUM。共有のCookieJarで他のドメインのクッキーを消される",
    "todo": "",
    "kev": false,
    "at": "2026-11-10"
+  },
+  "CVE-2026-125283": {
+   "level": "watch",
+   "reason": "try_filesとaliasをmap変数と使う設定でワーカーが落ちる。MEDIUM",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-19"
   },
   "CVE-2026-15176": {
    "level": "check",
@@ -989,13 +1065,6 @@
    "todo": "12.71.0 / 13.40.0 以降に更新",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-648h-gw55-m2g7": {
-   "level": "watch",
-   "reason": "Nuxt開発サーバーで非公開設定が露出。MEDIUM",
-   "todo": "@nuxt/vite-builder 4.6.3に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-64vx-6h2c-rjh7": {
    "level": "check",
@@ -2626,6 +2695,13 @@
    "at": "2026-11-11",
    "urgency": "later",
    "comment": "データ上は手が空いたらだが、Server Componentsを外に公開しているなら早めに"
+  },
+  "GHSA-xvcc-vqjv-phqh": {
+   "level": "check",
+   "reason": "@augment-vir/nodeのgrep()でコマンド注入。利用者の少ないパッケージのHIGH",
+   "todo": "使っていれば31.73.5以降に更新",
+   "kev": false,
+   "at": "2026-11-19"
   },
   "GHSA-xwg4-8hqh-79jq": {
    "level": "watch",
