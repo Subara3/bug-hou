@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
-<title>バグ報｜tinymce（composer）</title>
+<title>バグ報｜TinyMCE（composer）</title>
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/tinymce.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/composer/tinymce.xml</id>

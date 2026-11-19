@@ -7,11 +7,11 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>PHP: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent (HIGH)</title>
+<title>[要確認] PHP: ALTCHA PHP: verifySolution bypasses HMAC signature check when challenge signature is absent (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-82w8-65qw-gch6"/>
 <id>urn:bug-hou:GHSA-82w8-65qw-gch6</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;altcha-org/altcha &amp;gt;= 2.0.0, &amp;lt; 2.0.3 → 2.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-71481&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; ALTCHAの検証で、署名がないと署名チェックが飛ばされる&lt;br&gt;→ altcha-org/altchaを2.0.3に更新&lt;/p&gt;&lt;p&gt;altcha-org/altcha &amp;gt;= 2.0.0, &amp;lt; 2.0.3 → 2.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-71481&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] PHP: SAML2: Incomplete fix of CVE-2026-49283: unsigned embedded Response bypasses HTTP-Artifact signature verification (no embedded-Issuer binding) (HIGH)</title>

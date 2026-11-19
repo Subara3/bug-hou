@@ -7,10 +7,10 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins (MEDIUM)</title>
+<title>[様子見] npm: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7jvc-9xq8-frff"/>
 <id>urn:bug-hou:GHSA-7jvc-9xq8-frff</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;outstatic &amp;lt;= 2.2.0 → 2.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-71425&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。ログイン済みの人がOAuthトークンをGitHub以外へ送らせられる&lt;br&gt;→ outstaticを2.2.1に更新&lt;/p&gt;&lt;p&gt;outstatic &amp;lt;= 2.2.0 → 2.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-71425&lt;/p&gt;</content>
 </entry>
 </feed>

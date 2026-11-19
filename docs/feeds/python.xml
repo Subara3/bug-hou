@@ -7,18 +7,18 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions (MEDIUM)</title>
+<title>[様子見] Python: django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vf85-8ff2-3r9w"/>
 <id>urn:bug-hou:GHSA-vf85-8ff2-3r9w</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;django-filer &amp;lt;= 3.4.4 → 3.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-69131&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。版の破棄・編集への切り替えで対象ごとの権限確認がない&lt;br&gt;→ django-filerを3.5.0に更新&lt;/p&gt;&lt;p&gt;django-filer &amp;lt;= 3.4.4 → 3.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-69131&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization (MEDIUM)</title>
+<title>[様子見] Python: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-5g9x-qwh5-33x4"/>
 <id>urn:bug-hou:GHSA-5g9x-qwh5-33x4</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;djangocms-versioning &amp;lt;= 2.6.0 → 2.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-69138&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。権限確認の抜けで、本来できない操作ができてしまう&lt;br&gt;→ djangocms-versioningを2.6.1に更新&lt;/p&gt;&lt;p&gt;djangocms-versioning &amp;lt;= 2.6.0 → 2.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-69138&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date (MEDIUM)</title>

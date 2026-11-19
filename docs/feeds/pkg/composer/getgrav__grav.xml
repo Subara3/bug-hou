@@ -56,11 +56,11 @@
 <content type="html">&lt;p&gt;getgrav/grav &amp;lt; 2.0.16 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72698&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] composer: Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion (HIGH)</title>
+<title>composer: Grav: Path Traversal in MediaUploadTrait::deleteFile() Allows Arbitrary File Deletion (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-jq29-c7v8-rg55"/>
 <id>urn:bug-hou:GHSA-jq29-c7v8-rg55</id>
 <updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; GravのdeleteFile()でパストラバーサルし任意ファイル削除。HIGH&lt;br&gt;→ getgrav/grav 2.0.16に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72695&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;getgrav/grav &amp;lt;= 2.0.15 → 2.0.16&lt;/p&gt;&lt;p&gt;CVE-2026-72695&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>composer: Grav: Stored CSS injection via Markdown image resize() bypasses prior media style sanitizers in Grav (MEDIUM)</title>
