@@ -453,7 +453,7 @@
   {
    "id": "CVE-2026-109618",
    "published": "2026-10-21",
-   "modified": "2026-11-18",
+   "modified": "2026-11-20",
    "status": "Analyzed",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -494,7 +494,7 @@
   {
    "id": "CVE-2026-109619",
    "published": "2026-10-21",
-   "modified": "2026-11-18",
+   "modified": "2026-11-20",
    "status": "Analyzed",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -954,6 +954,76 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-prhx-9q2h-ph2x",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-103026",
+   "summary": "Paymenter: Unauthenticated arbitrary method invocation in Livewire components",
+   "severity": "HIGH",
+   "score": 8.1,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-prhx-9q2h-ph2x",
+   "kev": false,
+   "packages": [
+    {
+     "name": "paymenter/paymenter",
+     "range": "<= 1.5.6",
+     "fixed": "1.5.7"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-9657-8vc2-7g2p",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-115463",
+   "summary": "Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",
+   "severity": "HIGH",
+   "score": 7.4,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-9657-8vc2-7g2p",
+   "kev": false,
+   "packages": [
+    {
+     "name": "poweradmin/poweradmin",
+     "range": ">= 4.0.0, < 4.2.6",
+     "fixed": "4.2.6"
+    },
+    {
+     "name": "poweradmin/poweradmin",
+     "range": ">= 4.3.0, < 4.3.5",
+     "fixed": "4.3.5"
+    },
+    {
+     "name": "poweradmin/poweradmin",
+     "range": ">= 4.4.0, < 4.4.1",
+     "fixed": "4.4.1"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-66q9-mxf2-xqw6",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-103035",
+   "summary": "TeamPass folder re-parenting authorization bypass",
+   "severity": "HIGH",
+   "score": 8.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-66q9-mxf2-xqw6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "nilsteampassnet/TeamPass",
+     "range": "< 3.2.2.0",
+     "fixed": "3.2.2.0"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
   {
    "id": "GHSA-wgvx-x5g3-9v29",
    "ecosystem": "composer",
@@ -3248,70 +3318,19 @@
     }
    ],
    "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-jr78-w6w5-m8f8",
-   "ecosystem": "composer",
-   "cve": null,
-   "summary": "Semantic MediaWiki'a missing authorization in the smwtask API module allows unauthenticated access to admin-only maintenance tasks",
-   "severity": "HIGH",
-   "score": 7.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-jr78-w6w5-m8f8",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": ">= 3.0.0, <= 7.2.1",
-     "fixed": "7.3.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-9rcc-pmj8-ffhr",
-   "ecosystem": "composer",
-   "cve": null,
-   "summary": "Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354)",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-9rcc-pmj8-ffhr",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": ">= 4.2.0, <= 7.2.0",
-     "fixed": "7.2.1"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-cx86-7xwp-w9wf",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-77616",
-   "summary": "Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-cx86-7xwp-w9wf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": ">= 7.0.0, <= 7.1.0",
-     "fixed": "7.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
   }
  ],
  "eol": {
   "php": [
+   {
+    "cycle": "8.6",
+    "releaseDate": "2026-11-19",
+    "support": "2028-12-31",
+    "eol": "2030-12-31",
+    "latest": "8.6.0",
+    "latestReleaseDate": "2026-11-19",
+    "lts": false
+   },
    {
     "cycle": "8.5",
     "releaseDate": "2025-11-20",
@@ -3373,15 +3392,6 @@
     "eol": "2022-11-28",
     "latest": "7.4.33",
     "latestReleaseDate": "2022-11-03",
-    "lts": false
-   },
-   {
-    "cycle": "7.3",
-    "releaseDate": "2018-12-06",
-    "support": "2020-12-06",
-    "eol": "2021-12-06",
-    "latest": "7.3.33",
-    "latestReleaseDate": "2021-11-18",
     "lts": false
    }
   ]

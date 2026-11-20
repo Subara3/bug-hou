@@ -304,6 +304,192 @@
   ]
  },
  {
+  "id": "GHSA-prhx-9q2h-ph2x",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-103026",
+  "summary": "Paymenter: Unauthenticated arbitrary method invocation in Livewire components",
+  "severity": "HIGH",
+  "score": 8.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-prhx-9q2h-ph2x",
+  "kev": false,
+  "packages": [
+   {
+    "name": "paymenter/paymenter",
+    "range": "<= 1.5.6",
+    "fixed": "1.5.7"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9657-8vc2-7g2p",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-115463",
+  "summary": "Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window",
+  "severity": "HIGH",
+  "score": 7.4,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-9657-8vc2-7g2p",
+  "kev": false,
+  "packages": [
+   {
+    "name": "poweradmin/poweradmin",
+    "range": ">= 4.0.0, < 4.2.6",
+    "fixed": "4.2.6"
+   },
+   {
+    "name": "poweradmin/poweradmin",
+    "range": ">= 4.3.0, < 4.3.5",
+    "fixed": "4.3.5"
+   },
+   {
+    "name": "poweradmin/poweradmin",
+    "range": ">= 4.4.0, < 4.4.1",
+    "fixed": "4.4.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-66q9-mxf2-xqw6",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-103035",
+  "summary": "TeamPass folder re-parenting authorization bypass",
+  "severity": "HIGH",
+  "score": 8.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:H",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-66q9-mxf2-xqw6",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nilsteampassnet/TeamPass",
+    "range": "< 3.2.2.0",
+    "fixed": "3.2.2.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-vcx7-pfrh-mcfg",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-115565",
+  "summary": "storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output",
+  "severity": "MEDIUM",
+  "score": 5.7,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:H/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-vcx7-pfrh-mcfg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "storyblok-backup",
+    "range": "<= 0.7.0",
+    "fixed": "0.7.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3g82-77xr-68x5",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63386",
+  "summary": "js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-3g82-77xr-68x5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "js-toml",
+    "range": "< 1.1.3",
+    "fixed": "1.1.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-jwgx-mp9m-jwcr",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-58192",
+  "summary": "appium allows unauthenticated arbitrary file/directory deletion in @appium/storage-plugin",
+  "severity": "HIGH",
+  "score": 8.6,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-jwgx-mp9m-jwcr",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@appium/storage-plugin",
+    "range": "< 1.1.6",
+    "fixed": "1.1.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6499-jgj4-2wpf",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-104773",
+  "summary": "CKAN: Session Fixation in Registration View",
+  "severity": "MEDIUM",
+  "score": 6.8,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "ckan",
+    "range": "< 2.10.11",
+    "fixed": "2.10.11"
+   },
+   {
+    "name": "ckan",
+    "range": ">= 2.11.0, < 2.11.6",
+    "fixed": "2.11.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-wcqj-wx85-c75p",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-130176",
+  "summary": "aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-wcqj-wx85-c75p",
+  "kev": false,
+  "packages": [
+   {
+    "name": "amqtt",
+    "range": ">= 0.11.0, <= 0.12.0",
+    "fixed": "0.12.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-2hjf-7455-w946",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-104199",
+  "summary": "aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-2hjf-7455-w946",
+  "kev": false,
+  "packages": [
+   {
+    "name": "amqtt",
+    "range": ">= 0.11.0, <= 0.11.3",
+    "fixed": "0.11.4"
+   }
+  ]
+ },
+ {
   "id": "GHSA-2m9m-6cr5-9x25",
   "ecosystem": "npm",
   "cve": "CVE-2026-63129",

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜poweradmin/poweradmin（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/poweradmin__poweradmin.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/poweradmin__poweradmin.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9657-8vc2-7g2p"/>
+<id>urn:bug-hou:GHSA-9657-8vc2-7g2p</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;poweradmin/poweradmin &amp;gt;= 4.0.0, &amp;lt; 4.2.6 → 4.2.6, poweradmin/poweradmin &amp;gt;= 4.3.0, &amp;lt; 4.3.5 → 4.3.5, poweradmin/poweradmin &amp;gt;= 4.4.0, &amp;lt; 4.4.1 → 4.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-115463&lt;/p&gt;</content>
+</entry>
+</feed>

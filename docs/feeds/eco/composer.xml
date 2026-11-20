@@ -28,6 +28,13 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; BoltのListFormatHelperでSQLインジェクション。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77378&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>PHP: Paymenter: Unauthenticated arbitrary method invocation in Livewire components (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-prhx-9q2h-ph2x"/>
+<id>urn:bug-hou:GHSA-prhx-9q2h-ph2x</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-103026&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] PHP: October: Media Library Crop Handler Bypasses Upload Extension Allowlist (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mqwx-84vv-mp26"/>
 <id>urn:bug-hou:GHSA-mqwx-84vv-mp26</id>
@@ -40,6 +47,20 @@
 <id>urn:bug-hou:GHSA-c3cj-3p6p-j822</id>
 <updated>2026-11-20T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Janeのコード生成時に$refの解決でSSRFとファイル読み出し&lt;br&gt;→ jane-php/open-api-3を7.12.0に更新&lt;/p&gt;&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63415&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9657-8vc2-7g2p"/>
+<id>urn:bug-hou:GHSA-9657-8vc2-7g2p</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;poweradmin/poweradmin &amp;gt;= 4.0.0, &amp;lt; 4.2.6 → 4.2.6, poweradmin/poweradmin &amp;gt;= 4.3.0, &amp;lt; 4.3.5 → 4.3.5, poweradmin/poweradmin &amp;gt;= 4.4.0, &amp;lt; 4.4.1 → 4.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-115463&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: TeamPass folder re-parenting authorization bypass (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-66q9-mxf2-xqw6"/>
+<id>urn:bug-hou:GHSA-66q9-mxf2-xqw6</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nilsteampassnet/TeamPass &amp;lt; 3.2.2.0 → 3.2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-103035&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Bolt: Information disclosure through unfiltered public relation API endpoint (MEDIUM)</title>
@@ -238,13 +259,6 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのパッケージ更新にCSRF対策がない。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] PHP: Semantic MediaWiki'a missing authorization in the smwtask API module allows unauthenticated access to admin-only maintenance tasks (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-jr78-w6w5-m8f8"/>
-<id>urn:bug-hou:GHSA-jr78-w6w5-m8f8</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH&lt;br&gt;→ semantic-media-wiki 7.3.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.0.0, &amp;lt;= 7.2.1 → 7.3.0&lt;/p&gt;&lt;p&gt;GHSA-jr78-w6w5-m8f8&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] PHP: Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-jg26-q8hg-3pq4"/>
 <id>urn:bug-hou:GHSA-jg26-q8hg-3pq4</id>
@@ -257,20 +271,6 @@
 <id>urn:bug-hou:GHSA-gxrg-x694-283w</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Freeformの送信値で限定的なTwigテンプレート注入。MEDIUM&lt;br&gt;→ craft-freeform 5.10.14に更新&lt;/p&gt;&lt;p&gt;solspace/craft-freeform &amp;gt;= 5.0.0, &amp;lt;= 5.10.13 → 5.10.14&lt;/p&gt;&lt;p&gt;CVE-2026-73858&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Semantic MediaWiki affected by reflected XSS in `Special:Ask` via a forged cursor pagination token (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-cx86-7xwp-w9wf"/>
-<id>urn:bug-hou:GHSA-cx86-7xwp-w9wf</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのSpecial:Askで偽造トークンの反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 7.0.0, &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77616&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Semantic MediaWiki's Special:FacetedSearch cstate hidden inputs enable reflected XSS (residual of CVE-2025-10354) (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-9rcc-pmj8-ffhr"/>
-<id>urn:bug-hou:GHSA-9rcc-pmj8-ffhr</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのFacetedSearchで反射型XSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.1に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 4.2.0, &amp;lt;= 7.2.0 → 7.2.1&lt;/p&gt;&lt;p&gt;GHSA-9rcc-pmj8-ffhr&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: WPGraphQL: Contributor can publish and modify posts without the required capabilities via updatePost (MEDIUM)</title>

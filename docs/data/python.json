@@ -5,6 +5,23 @@
  "kev": [],
  "cves": [
   {
+   "id": "CVE-2026-133949",
+   "published": "2026-11-20",
+   "modified": "2026-11-20",
+   "status": "Received",
+   "score": 9.3,
+   "severity": "CRITICAL",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "pip prior to v26.2.2 the certifi bundled with pip contains the compromised eMudhra certificates. \n\n\n\n\nUpgrading to a secure version of pip should be done either by first upgrading Python to a version that rejects the compromised intermediates (CVE-2026-115557) or use hash pinning with a known-secure version of pip. pip is not vulnerable when using a Python version that rejects the compromised certificates. See the references below for more information.",
+   "kev": false,
+   "affects": [],
+   "cwe": [
+    "CWE-295"
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "CVE-2026-16052",
    "published": "2026-11-12",
    "modified": "2026-11-17",
@@ -279,6 +296,71 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-6499-jgj4-2wpf",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-104773",
+   "summary": "CKAN: Session Fixation in Registration View",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-6499-jgj4-2wpf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "ckan",
+     "range": "< 2.10.11",
+     "fixed": "2.10.11"
+    },
+    {
+     "name": "ckan",
+     "range": ">= 2.11.0, < 2.11.6",
+     "fixed": "2.11.6"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-wcqj-wx85-c75p",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-130176",
+   "summary": "aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-wcqj-wx85-c75p",
+   "kev": false,
+   "packages": [
+    {
+     "name": "amqtt",
+     "range": ">= 0.11.0, <= 0.12.0",
+     "fixed": "0.12.1"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-2hjf-7455-w946",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-104199",
+   "summary": "aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-2hjf-7455-w946",
+   "kev": false,
+   "packages": [
+    {
+     "name": "amqtt",
+     "range": ">= 0.11.0, <= 0.11.3",
+     "fixed": "0.11.4"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
   {
    "id": "GHSA-9x8x-crjq-g64h",
    "ecosystem": "pip",
@@ -2235,71 +2317,6 @@
      "name": "compose-lint",
      "range": ">= 0.31.0, < 0.32.0",
      "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "2026-11-10"
-  },
-  {
-   "id": "GHSA-p623-mxf7-qxjm",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-123364",
-   "summary": "OctoPrint: Stored XSS via saved connection parameters",
-   "severity": "LOW",
-   "score": 2.4,
-   "vector": "CVSS:4.0/AV:A/AC:L/AT:N/PR:L/UI:P/VC:L/VI:L/VA:L/SC:L/SI:L/SA:N",
-   "published": "2026-11-10",
-   "url": "https://github.com/advisories/GHSA-p623-mxf7-qxjm",
-   "kev": false,
-   "packages": [
-    {
-     "name": "OctoPrint",
-     "range": ">= 2.0.0rc1, <= 2.0.0rc6",
-     "fixed": "2.0.0rc7"
-    }
-   ],
-   "first_seen": "2026-11-10"
-  },
-  {
-   "id": "GHSA-rm8w-w798-g545",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-123796",
-   "summary": "compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env`",
-   "severity": "LOW",
-   "score": 2.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-11-10",
-   "url": "https://github.com/advisories/GHSA-rm8w-w798-g545",
-   "kev": false,
-   "packages": [
-    {
-     "name": "compose-lint",
-     "range": "= 0.32.0",
-     "fixed": "0.33.0"
-    },
-    {
-     "name": "tmatens/compose-lint",
-     "range": "= 0.32.0",
-     "fixed": "0.33.0"
-    }
-   ],
-   "first_seen": "2026-11-10"
-  },
-  {
-   "id": "GHSA-3hch-x692-6qj3",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-103002",
-   "summary": "GPUStack: Missing authorization on several cluster and resource endpoints allows cross-user access and cluster takeover",
-   "severity": "HIGH",
-   "score": 8.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-11-10",
-   "url": "https://github.com/advisories/GHSA-3hch-x692-6qj3",
-   "kev": false,
-   "packages": [
-    {
-     "name": "gpustack",
-     "range": ">= 2.2.0, < 2.2.2",
-     "fixed": "2.2.2"
     }
    ],
    "first_seen": "2026-11-10"

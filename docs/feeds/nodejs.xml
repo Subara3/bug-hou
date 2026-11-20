@@ -14,6 +14,13 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsのCache Componentsでキャッシュ汚染。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.4.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119350&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Node.js: storyblok-backup: Stored path traversal via unsanitized Storyblok component names in backup output (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-vcx7-pfrh-mcfg"/>
+<id>urn:bug-hou:GHSA-vcx7-pfrh-mcfg</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;storyblok-backup &amp;lt;= 0.7.0 → 0.7.1&lt;/p&gt;&lt;p&gt;CVE-2026-115565&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Node.js: Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rhh4-g77r-r9qj"/>
 <id>urn:bug-hou:GHSA-rhh4-g77r-r9qj</id>
@@ -40,6 +47,13 @@
 <id>urn:bug-hou:GHSA-mc8w-wjhw-45x5</id>
 <updated>2026-11-20T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Etherpadでログインなしに任意のファイルを読める。CRITICAL&lt;br&gt;→ ep_etherpad-liteを3.3.3に更新&lt;/p&gt;&lt;p&gt;ep_etherpad-lite &amp;gt;= 1.8.14, &amp;lt; 3.3.3 → 3.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-114516&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: appium allows unauthenticated arbitrary file/directory deletion in @appium/storage-plugin (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-jwgx-mp9m-jwcr"/>
+<id>urn:bug-hou:GHSA-jwgx-mp9m-jwcr</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@appium/storage-plugin &amp;lt; 1.1.6 → 1.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-58192&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak (MEDIUM)</title>
@@ -89,6 +103,13 @@
 <id>urn:bug-hou:GHSA-3mgh-93r5-r7jf</id>
 <updated>2026-11-20T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CodeWhaleでシェル実行が自動承認され、気づかずにRCE&lt;br&gt;→ codewhaleを0.9.0に更新&lt;/p&gt;&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83816&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: js-toml allows uncontrolled recursion in `load()` leading `RangeError` (stack exhaustion) on deeply nested input (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3g82-77xr-68x5"/>
+<id>urn:bug-hou:GHSA-3g82-77xr-68x5</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;js-toml &amp;lt; 1.1.3 → 1.1.3&lt;/p&gt;&lt;p&gt;CVE-2026-63386&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write (MEDIUM)</title>
@@ -334,26 +355,5 @@
 <id>urn:bug-hou:GHSA-jpvv-r467-5p4w</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスの\が区切りとして扱われ、リバースプロキシのパス制限を抜けられる&lt;br&gt;→ @hono/node-server 2.1.6 / 1.19.18 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6, @hono/node-server &amp;lt; 1.19.18 → 1.19.18&lt;/p&gt;&lt;p&gt;CVE-2026-126210&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/solid-js (LOW)</title>
-<link href="https://github.com/advisories/GHSA-jmv2-qgxf-f995"/>
-<id>urn:bug-hou:GHSA-jmv2-qgxf-f995</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。スロット名がエスケープされず反射型XSSになる&lt;br&gt;→ @astrojs/solid-js 7.1.2 以降に更新&lt;/p&gt;&lt;p&gt;@astrojs/solid-js &amp;gt;= 0.2.0, &amp;lt;= 7.1.1 → 7.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126363&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Hono: RegExpRouter skips wildcard middleware for some route sets and for paths with an encoded line terminator (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-h7mg-cq63-vhpq"/>
-<id>urn:bug-hou:GHSA-h7mg-cq63-vhpq</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。RegExpRouterで一部のパスがワイルドカードのミドルウェアを通らない&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;gt;= 4.1.4, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126358&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: @grpc/grpc-js: RBAC override configs in VirtualHost and Route resources are not applied (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-gg5j-6742-v827"/>
-<id>urn:bug-hou:GHSA-gg5j-6742-v827</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。VirtualHostやRouteに書いたRBACの上書き設定が効かない&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-128065&lt;/p&gt;</content>
 </entry>
 </feed>

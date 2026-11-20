@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜nilsteampassnet/TeamPass（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/nilsteampassnet__teampass.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/nilsteampassnet__teampass.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: TeamPass folder re-parenting authorization bypass (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-66q9-mxf2-xqw6"/>
+<id>urn:bug-hou:GHSA-66q9-mxf2-xqw6</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nilsteampassnet/TeamPass &amp;lt; 3.2.2.0 → 3.2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-103035&lt;/p&gt;</content>
+</entry>
+</feed>

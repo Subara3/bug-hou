@@ -387,8 +387,8 @@
     "releaseDate": "2026-08-19",
     "support": true,
     "eol": false,
-    "latest": "7.1.4",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "7.1.5",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    },
    {
@@ -396,8 +396,8 @@
     "releaseDate": "2026-05-20",
     "support": "2026-08-19",
     "eol": false,
-    "latest": "7.0.8",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "7.0.9",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    },
    {
@@ -405,8 +405,8 @@
     "releaseDate": "2025-12-02",
     "support": "2026-05-20",
     "eol": false,
-    "latest": "6.9.11",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "6.9.12",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    },
    {
@@ -414,8 +414,8 @@
     "releaseDate": "2025-04-15",
     "support": "2025-12-02",
     "eol": false,
-    "latest": "6.8.12",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "6.8.13",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    },
    {
@@ -423,8 +423,8 @@
     "releaseDate": "2024-11-12",
     "support": "2025-04-15",
     "eol": false,
-    "latest": "6.7.11",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "6.7.12",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    },
    {
@@ -432,8 +432,8 @@
     "releaseDate": "2024-07-16",
     "support": "2024-11-12",
     "eol": false,
-    "latest": "6.6.11",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "6.6.12",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    },
    {
@@ -441,8 +441,8 @@
     "releaseDate": "2024-04-02",
     "support": "2024-07-16",
     "eol": false,
-    "latest": "6.5.14",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "6.5.15",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    },
    {
@@ -450,8 +450,8 @@
     "releaseDate": "2023-11-07",
     "support": "2024-04-02",
     "eol": false,
-    "latest": "6.4.14",
-    "latestReleaseDate": "2026-10-28",
+    "latest": "6.4.15",
+    "latestReleaseDate": "2026-11-18",
     "lts": false
    }
   ]

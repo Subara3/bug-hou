@@ -28,6 +28,13 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; BoltのListFormatHelperでSQLインジェクション。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77378&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>PHP: Paymenter: Unauthenticated arbitrary method invocation in Livewire components (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-prhx-9q2h-ph2x"/>
+<id>urn:bug-hou:GHSA-prhx-9q2h-ph2x</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-103026&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] PHP: October: Media Library Crop Handler Bypasses Upload Extension Allowlist (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mqwx-84vv-mp26"/>
 <id>urn:bug-hou:GHSA-mqwx-84vv-mp26</id>
@@ -40,6 +47,20 @@
 <id>urn:bug-hou:GHSA-c3cj-3p6p-j822</id>
 <updated>2026-11-20T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Janeのコード生成時に$refの解決でSSRFとファイル読み出し&lt;br&gt;→ jane-php/open-api-3を7.12.0に更新&lt;/p&gt;&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63415&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-9657-8vc2-7g2p"/>
+<id>urn:bug-hou:GHSA-9657-8vc2-7g2p</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;poweradmin/poweradmin &amp;gt;= 4.0.0, &amp;lt; 4.2.6 → 4.2.6, poweradmin/poweradmin &amp;gt;= 4.3.0, &amp;lt; 4.3.5 → 4.3.5, poweradmin/poweradmin &amp;gt;= 4.4.0, &amp;lt; 4.4.1 → 4.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-115463&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: TeamPass folder re-parenting authorization bypass (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-66q9-mxf2-xqw6"/>
+<id>urn:bug-hou:GHSA-66q9-mxf2-xqw6</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nilsteampassnet/TeamPass &amp;lt; 3.2.2.0 → 3.2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-103035&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Bolt: Information disclosure through unfiltered public relation API endpoint (MEDIUM)</title>
@@ -402,26 +423,5 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <id>urn:bug-hou:GHSA-w998-qmw9-mf4m</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-v3f3-cmj4-cvj9"/>
-<id>urn:bug-hou:GHSA-v3f3-cmj4-cvj9</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; FormieのフォームSSRFで保存済み連携の認証情報が漏洩。HIGH&lt;br&gt;→ verbb/formie 2.2.23/3.1.31に更新&lt;/p&gt;&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76086&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()` (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-mf2p-wjp4-99pq"/>
-<id>urn:bug-hou:GHSA-mf2p-wjp4-99pq</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアマネージャー種別名で格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63001&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-m8r3-22v6-g877"/>
-<id>urn:bug-hou:GHSA-m8r3-22v6-g877</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのパッケージ更新にCSRF対策がない。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
 </entry>
 </feed>

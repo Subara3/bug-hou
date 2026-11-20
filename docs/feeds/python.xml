@@ -35,6 +35,13 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NLTKのZIP展開でデータ置き場の外のファイルを上書き&lt;br&gt;→ nltkを3.10.4に更新&lt;/p&gt;&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128135&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Python: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-wcqj-wx85-c75p"/>
+<id>urn:bug-hou:GHSA-wcqj-wx85-c75p</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;amqtt &amp;gt;= 0.11.0, &amp;lt;= 0.12.0 → 0.12.1&lt;/p&gt;&lt;p&gt;CVE-2026-130176&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Python: Guard Core: Whitespace-collapse preprocessing permanently disables the CRLF-anchored http-splitting and command-injection detectors in the default detection mode (LOW)</title>
 <link href="https://github.com/advisories/GHSA-w7wg-6q7v-44f2"/>
 <id>urn:bug-hou:GHSA-w7wg-6q7v-44f2</id>
@@ -203,6 +210,13 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Flyto2 CoreのSSRF対策をDNSリバインディングで回避&lt;br&gt;→ flyto-coreを2.26.8に更新&lt;/p&gt;&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77316&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Python: CKAN: Session Fixation in Registration View (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6499-jgj4-2wpf"/>
+<id>urn:bug-hou:GHSA-6499-jgj4-2wpf</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ckan &amp;lt; 2.10.11 → 2.10.11, ckan &amp;gt;= 2.11.0, &amp;lt; 2.11.6 → 2.11.6&lt;/p&gt;&lt;p&gt;CVE-2026-104773&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[様子見] Python: NLTK: Uncontrolled recursion in Tree.fromlist causes denial of service via deeply nested list input (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-63wh-5r5m-wxr7"/>
 <id>urn:bug-hou:GHSA-63wh-5r5m-wxr7</id>
@@ -245,11 +259,30 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Flyto2 Coreのページ送りで次のURLを確かめずSSRF&lt;br&gt;→ flyto-coreを2.26.8に更新&lt;/p&gt;&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77315&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>Python: aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2hjf-7455-w946"/>
+<id>urn:bug-hou:GHSA-2hjf-7455-w946</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;amqtt &amp;gt;= 0.11.0, &amp;lt;= 0.11.3 → 0.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-104199&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] Python: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-24pw-rf5p-mgp7"/>
 <id>urn:bug-hou:GHSA-24pw-rf5p-mgp7</id>
 <updated>2026-11-20T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Jupyter MCP ServerのHTTP単体モードで認証なしに乗っ取られる&lt;br&gt;→ jupyter-mcp-serverを1.0.3に更新&lt;/p&gt;&lt;p&gt;jupyter-mcp-server &amp;lt;= 1.0.2 → 1.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-77318&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: CVE-2026-133949 9.3 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-133949"/>
+<id>urn:bug-hou:CVE-2026-133949</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;pip prior to v26.2.2 the certifi bundled with pip contains the compromised eMudhra certificates. 
+
+
+
+
+Upgrading to a secure version of pip should be done either by first upgrading Python to a version that rejects the compromised intermediates (CVE-2026-115557) or use hash pinning with a known-secure version of pip. pip is not vulnerable when using a Python version that rejects the compromised certificates. See the references below for more information.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: Mareforma: transparency_logged trusts the unsigned rekor block (MEDIUM)</title>
@@ -327,33 +360,5 @@
 <id>urn:bug-hou:GHSA-v858-xh7w-8jr5</id>
 <updated>2026-11-17T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; pymppで水増しされたcalldataにより肩代わり手数料が過大になる。MEDIUM&lt;br&gt;→ 使っているなら0.9.1に更新&lt;/p&gt;&lt;p&gt;pympp &amp;lt; 0.9.1 → 0.9.1&lt;/p&gt;&lt;p&gt;CVE-2026-63634&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: mail-parser is vulnerable to polynomial ReDoS in email header parsing (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-r7w7-vpq8-c5vv"/>
-<id>urn:bug-hou:GHSA-r7w7-vpq8-c5vv</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mail-parserのHIGH。メールヘッダーの解析でReDoS&lt;br&gt;→ mail-parserを4.6.1以降に更新&lt;/p&gt;&lt;p&gt;mail-parser &amp;gt;= 4.2.0, &amp;lt; 4.6.1 → 4.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-129295&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Phoenix: Format String Injection in applyChatTemplate (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-gfv3-m769-5xm3"/>
-<id>urn:bug-hou:GHSA-gfv3-m769-5xm3</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; PhoenixのapplyChatTemplateで書式文字列の注入。利用者の少ないパッケージのCRITICAL&lt;br&gt;→ arize-phoenixの利用有無を確認し、15.7.0に更新&lt;/p&gt;&lt;p&gt;arize-phoenix &amp;gt;= 13.0.0, &amp;lt; 15.7.0 → 15.7.0&lt;/p&gt;&lt;p&gt;CVE-2026-53998&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: mail-parser: Path Traversal vulnerability in attachment extraction (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-fr3h-cpq2-9496"/>
-<id>urn:bug-hou:GHSA-fr3h-cpq2-9496</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。添付ファイルの取り出しでパストラバーサル&lt;br&gt;→ mail-parserを4.6.0以降に更新&lt;/p&gt;&lt;p&gt;mail-parser &amp;gt;= 3.8.0, &amp;lt; 4.6.0 → 4.6.0&lt;/p&gt;&lt;p&gt;CVE-2026-129296&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: mail-parser: One hostile attachment aborts `write_attachments()` and silently drops the rest of the batch (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-8cgq-x343-p74c"/>
-<id>urn:bug-hou:GHSA-8cgq-x343-p74c</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。悪意ある添付1つでwrite_attachments()が止まり残りが保存されない&lt;br&gt;→ mail-parserを4.6.3に更新&lt;/p&gt;&lt;p&gt;mail-parser &amp;gt;= 4.6.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-129301&lt;/p&gt;</content>
 </entry>
 </feed>
