@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜october/october（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/october__october.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/october__october.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: October: Media Library Crop Handler Bypasses Upload Extension Allowlist (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-mqwx-84vv-mp26"/>
+<id>urn:bug-hou:GHSA-mqwx-84vv-mp26</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;october/october &amp;lt;= 3.7.13, october/october &amp;gt;= 4.0.0, &amp;lt;= 4.3.1 → 4.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-63193&lt;/p&gt;</content>
+</entry>
+</feed>

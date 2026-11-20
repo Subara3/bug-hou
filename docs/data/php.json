@@ -151,8 +151,8 @@
   {
    "id": "CVE-2026-115560",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -169,8 +169,8 @@
   {
    "id": "CVE-2026-126714",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -188,7 +188,7 @@
    "id": "CVE-2026-127960",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 8.7,
    "severity": "HIGH",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -206,7 +206,7 @@
    "id": "CVE-2026-128064",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 8.2,
    "severity": "HIGH",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -222,8 +222,8 @@
   {
    "id": "CVE-2026-128090",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 7.7,
    "severity": "HIGH",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -240,8 +240,8 @@
   {
    "id": "CVE-2026-129182",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -258,8 +258,8 @@
   {
    "id": "CVE-2026-129289",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -276,8 +276,8 @@
   {
    "id": "CVE-2026-129291",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 8.8,
    "severity": "HIGH",
    "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -294,7 +294,7 @@
    "id": "CVE-2026-129292",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 5.3,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -311,7 +311,7 @@
    "id": "CVE-2026-129438",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -328,8 +328,8 @@
   {
    "id": "CVE-2026-129474",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -346,7 +346,7 @@
    "id": "CVE-2026-129481",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -363,8 +363,8 @@
   {
    "id": "CVE-2026-129496",
    "published": "2026-11-19",
-   "modified": "2026-11-19",
-   "status": "Received",
+   "modified": "2026-11-20",
+   "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -382,7 +382,7 @@
    "id": "CVE-2026-129501",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -400,7 +400,7 @@
    "id": "CVE-2026-129506",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -417,7 +417,7 @@
    "id": "CVE-2026-129538",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 6.9,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:L/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -436,7 +436,7 @@
    "id": "CVE-2026-15353",
    "published": "2026-11-19",
    "modified": "2026-11-19",
-   "status": "Received",
+   "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -954,6 +954,191 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-wgvx-x5g3-9v29",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-63012",
+   "summary": "baserCMS administrative API authorization bypass through session fallback",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-wgvx-x5g3-9v29",
+   "kev": false,
+   "packages": [
+    {
+     "name": "baserproject/baser-core",
+     "range": "<= 5.2.3",
+     "fixed": "5.3.0"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-2pj4-v76f-wjvx",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-62955",
+   "summary": "baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass)",
+   "severity": "HIGH",
+   "score": 7.2,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-2pj4-v76f-wjvx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "baserproject/baser-core",
+     "range": "< 5.3.0",
+     "fixed": "5.3.0"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-r7h9-qx4h-77j5",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77378",
+   "summary": "Bolt ListFormatHelper SQL injection",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:L",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-r7h9-qx4h-77j5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "bolt/core",
+     "range": "< 6.1.4",
+     "fixed": "6.1.4"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-3xjf-9q55-vxw4",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77380",
+   "summary": "Bolt: Prevent SSRF due to unchecked followed redirects",
+   "severity": "MEDIUM",
+   "score": 5.2,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:L/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-3xjf-9q55-vxw4",
+   "kev": false,
+   "packages": [
+    {
+     "name": "bolt/core",
+     "range": "< 6.1.5",
+     "fixed": "6.1.5"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-6358-jg5p-hmjj",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77379",
+   "summary": "Bolt: Information disclosure through unfiltered public relation API endpoint",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-6358-jg5p-hmjj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "bolt/core",
+     "range": "< 6.1.4",
+     "fixed": "6.1.4"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-2535-j2pq-qq4r",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77377",
+   "summary": "Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints",
+   "severity": "MEDIUM",
+   "score": 5.2,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:L/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-2535-j2pq-qq4r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "bolt/core",
+     "range": "< 6.1.4",
+     "fixed": "6.1.4"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-xr6g-7g83-j865",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-77376",
+   "summary": "Bolt: Open redirect enables post-authentication redirection to arbitrary domains",
+   "severity": "MEDIUM",
+   "score": 6.1,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-xr6g-7g83-j865",
+   "kev": false,
+   "packages": [
+    {
+     "name": "bolt/core",
+     "range": "< 6.1.4",
+     "fixed": "6.1.4"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-c3cj-3p6p-j822",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-63415",
+   "summary": "Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php)",
+   "severity": "HIGH",
+   "score": 7.0,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-c3cj-3p6p-j822",
+   "kev": false,
+   "packages": [
+    {
+     "name": "jane-php/open-api-3",
+     "range": "< 7.12.0",
+     "fixed": "7.12.0"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-mqwx-84vv-mp26",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-63193",
+   "summary": "October: Media Library Crop Handler Bypasses Upload Extension Allowlist",
+   "severity": "MEDIUM",
+   "score": 5.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-mqwx-84vv-mp26",
+   "kev": false,
+   "packages": [
+    {
+     "name": "october/october",
+     "range": "<= 3.7.13",
+     "fixed": null
+    },
+    {
+     "name": "october/october",
+     "range": ">= 4.0.0, <= 4.3.1",
+     "fixed": "4.3.2"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
   {
    "id": "GHSA-q8v2-3j4h-xg2p",
    "ecosystem": "composer",
@@ -3123,186 +3308,6 @@
     }
    ],
    "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-q5fm-9mx6-44f4",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-77610",
-   "summary": "Semantic MediaWiki has a query debug output XSS (`DebugFormatter`)",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-q5fm-9mx6-44f4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": "<= 7.1.0",
-     "fixed": "7.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-hw3m-8j5x-94ff",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-77609",
-   "summary": "Semantic MediaWiki has an open redirect in Special:URIResolver",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-hw3m-8j5x-94ff",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": "<= 7.1.0",
-     "fixed": "7.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-7xv3-gf2g-498h",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-77607",
-   "summary": "Semantic MediaWiki affected by Special:Ask table `sep` parameter reflected XSS",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-7xv3-gf2g-498h",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": "<= 7.1.0",
-     "fixed": "7.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-59xw-qv23-j3rc",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-77608",
-   "summary": "Semantic MediaWiki has reflected XSS in `Special:SearchByProperty` (`property` and `value` parameters)",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-59xw-qv23-j3rc",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": "<= 7.1.0",
-     "fixed": "7.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-3jp5-3h47-28qf",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-77606",
-   "summary": "Semantic MediaWiki has reflected XSS in Special:Ask plain table headers",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-3jp5-3h47-28qf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": "<= 7.1.0",
-     "fixed": "7.2.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-hg8h-557g-q8pp",
-   "ecosystem": "composer",
-   "cve": "CVE-2025-61682",
-   "summary": "Semantic MediaWiki vulnerable to stored XSS through wikitext via improper use of non-reserved data attributes",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-hg8h-557g-q8pp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "mediawiki/semantic-media-wiki",
-     "range": ">= 3.1.0, < 7.0.0",
-     "fixed": "7.0.0"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-r94f-hx44-8jqf",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-72819",
-   "summary": "Grav CMS vulnerable to remote code execution via .zip file upload",
-   "severity": "HIGH",
-   "score": 8.7,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-r94f-hx44-8jqf",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": "< 2.0.13",
-     "fixed": "2.0.13"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-xhfv-7758-r9hx",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-75837",
-   "summary": "Grav: Missing admin.super guard on core group blueprint access field allows admin.users operator to escalate to super-admin",
-   "severity": "HIGH",
-   "score": 7.7,
-   "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:L/UI:N/VC:H/VI:H/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-xhfv-7758-r9hx",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": "< 2.0.14",
-     "fixed": "2.0.14"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-q2j8-x8hf-63ch",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-75834",
-   "summary": "Grav: Single invalid UTF-8 byte disables every rule in Security::detectXss(), bypassing the page-content XSS safety gate",
-   "severity": "MEDIUM",
-   "score": 5.1,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:P/VC:N/VI:N/VA:N/SC:L/SI:L/SA:N",
-   "published": "2026-09-17",
-   "url": "https://github.com/advisories/GHSA-q2j8-x8hf-63ch",
-   "kev": false,
-   "packages": [
-    {
-     "name": "getgrav/grav",
-     "range": "< 2.0.14",
-     "fixed": "2.0.14"
-    }
-   ],
-   "first_seen": "2026-11-02"
   }
  ],
  "eol": {
@@ -3401,6 +3406,29 @@
  ],
  "alerts": [
   {
+   "id": "https://www.jpcert.or.jp/at/2026/at260033.html",
+   "org": "JPCERT/CC",
+   "title": "PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
+   "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
+   "date": "2026-11-20",
+   "updated": true,
+   "cves": [
+    "CVE-2026-109618",
+    "CVE-2026-109619"
+   ],
+   "first": "2026-10-29"
+  },
+  {
+   "id": "https://www.ipa.go.jp/security/security-alert/2026/alert20261120.html",
+   "org": "IPA",
+   "title": "PHPの脆弱性対策について（2026年11月）",
+   "url": "https://www.ipa.go.jp/security/security-alert/2026/alert20261120.html",
+   "date": "2026-11-20",
+   "updated": false,
+   "cves": [],
+   "first": "2026-11-20"
+  },
+  {
    "id": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261119.html",
    "org": "IPA",
    "title": "【事前準備のお願い】PHPのセキュリティリリース公開予定について（11月）",
@@ -3422,19 +3450,6 @@
     "CVE-2026-109619"
    ],
    "first": "2026-10-22"
-  },
-  {
-   "id": "https://www.jpcert.or.jp/at/2026/at260033.html",
-   "org": "JPCERT/CC",
-   "title": "PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起",
-   "url": "https://www.jpcert.or.jp/at/2026/at260033.html",
-   "date": "2026-10-29",
-   "updated": true,
-   "cves": [
-    "CVE-2026-109618",
-    "CVE-2026-109619"
-   ],
-   "first": "2026-10-29"
   },
   {
    "id": "https://www.ipa.go.jp/security/security-alert/2026/pre-alert20261021.html",

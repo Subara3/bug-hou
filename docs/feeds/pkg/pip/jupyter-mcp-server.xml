@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜jupyter-mcp-server（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/jupyter-mcp-server.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/jupyter-mcp-server.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-9x8x-crjq-g64h"/>
+<id>urn:bug-hou:GHSA-9x8x-crjq-g64h</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;jupyter-mcp-server &amp;lt;= 1.0.2 → 1.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-77359&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-24pw-rf5p-mgp7"/>
+<id>urn:bug-hou:GHSA-24pw-rf5p-mgp7</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;jupyter-mcp-server &amp;lt;= 1.0.2 → 1.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-77318&lt;/p&gt;</content>
+</entry>
+</feed>

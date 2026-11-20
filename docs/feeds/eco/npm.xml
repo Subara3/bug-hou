@@ -4,8 +4,92 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-19T00:00:00Z</updated>
+<updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-vvgp-ww4w-46vf"/>
+<id>urn:bug-hou:GHSA-vvgp-ww4w-46vf</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;next &amp;gt;= 16.4.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119350&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-rhh4-g77r-r9qj"/>
+<id>urn:bug-hou:GHSA-rhh4-g77r-r9qj</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119349&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-pc58-hwjq-p385"/>
+<id>urn:bug-hou:GHSA-pc58-hwjq-p385</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5, next &amp;lt;= 15.5.28 → 15.5.29&lt;/p&gt;&lt;p&gt;CVE-2026-119348&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-mx6p-3fg7-v6pj"/>
+<id>urn:bug-hou:GHSA-mx6p-3fg7-v6pj</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;obsidian-sync-mcp &amp;lt;= 0.5.6 → 0.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-77283&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Etherpad: Pre-auth arbitrary file read (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-mc8w-wjhw-45x5"/>
+<id>urn:bug-hou:GHSA-mc8w-wjhw-45x5</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ep_etherpad-lite &amp;gt;= 1.8.14, &amp;lt; 3.3.3 → 3.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-114516&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-hj9c-qx2w-g7mh"/>
+<id>urn:bug-hou:GHSA-hj9c-qx2w-g7mh</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tiny-secp256k1 &amp;gt;= 2.1.0, &amp;lt; 2.2.5 → 2.2.5, @bitcoin-js/tiny-secp256k1-asmjs &amp;gt;= 2.2.2, &amp;lt; 2.2.5 → 2.2.5&lt;/p&gt;&lt;p&gt;CVE-2026-107853&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-f3mh-rxg3-f5g2"/>
+<id>urn:bug-hou:GHSA-f3mh-rxg3-f5g2</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119346&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8hp3-xxrg-v9c8"/>
+<id>urn:bug-hou:GHSA-8hp3-xxrg-v9c8</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83817&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Next.js: SVG rejection bypass in the image optimization (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-7qx7-33qx-rqx2"/>
+<id>urn:bug-hou:GHSA-7qx7-33qx-rqx2</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119347&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Effect: ReDoS in Schema.TemplateLiteral compiled regex (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7589-6fvf-x4pw"/>
+<id>urn:bug-hou:GHSA-7589-6fvf-x4pw</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;effect &amp;lt;= 3.22.0 → 3.22.1&lt;/p&gt;&lt;p&gt;CVE-2026-121707&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-4rj4-rcrq-gr92"/>
+<id>urn:bug-hou:GHSA-4rj4-rcrq-gr92</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;safari-mcp &amp;lt; 2.22.15 → 2.22.15&lt;/p&gt;&lt;p&gt;GHSA-4rj4-rcrq-gr92&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-3mgh-93r5-r7jf"/>
+<id>urn:bug-hou:GHSA-3mgh-93r5-r7jf</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83816&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vg83-hcp4-5qcc"/>
@@ -271,89 +355,5 @@
 <id>urn:bug-hou:GHSA-gg5j-6742-v827</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。VirtualHostやRouteに書いたRBACの上書き設定が効かない&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2&lt;/p&gt;&lt;p&gt;CVE-2026-128065&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Astro: Reflected XSS via unescaped slot names in @astrojs/svelte (LOW)</title>
-<link href="https://github.com/advisories/GHSA-f4j9-crrj-867q"/>
-<id>urn:bug-hou:GHSA-f4j9-crrj-867q</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。スロット名がエスケープされず反射型XSSになる&lt;br&gt;→ @astrojs/svelte 9.1.2 以降に更新&lt;/p&gt;&lt;p&gt;@astrojs/svelte &amp;gt;= 5.7.3, &amp;lt;= 9.1.1 → 9.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-126362&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: basic-ftp: Uncaught TypeError in MLSD directory-listing parser via __proto__ fact name causes DoS in Client.list() (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-5pm8-86m8-9m6r"/>
-<id>urn:bug-hou:GHSA-5pm8-86m8-9m6r</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。MLSD一覧の__proto__でClient.list()が落ちる&lt;br&gt;→ basic-ftp 6.2.4 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.3 → 6.2.4&lt;/p&gt;&lt;p&gt;CVE-2026-126345&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Hono: `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-4m76-xfj5-7975"/>
-<id>urn:bug-hou:GHSA-4m76-xfj5-7975</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。mount()の中に置いたミドルウェアを通らないパスがある&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126357&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Hono: `validator('form')` skips validation for `multipart/form-data` requests with extra parameters (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-4h7h-rv7c-7m2v"/>
-<id>urn:bug-hou:GHSA-4h7h-rv7c-7m2v</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。multipart送信で余分な項目があるとフォームの検証が飛ばされる&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;gt;= 4.5.1, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126356&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Hono: `csrf()` does not check requests sent by hyperlink auditing (`text/ping`) (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-46wx-v44x-9hh2"/>
-<id>urn:bug-hou:GHSA-46wx-v44x-9hh2</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。csrf()がハイパーリンク監査(text/ping)の送信を確認しない&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;lt; 4.13.16 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126355&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: OpenTelemetry JavaScript: Insertion of Sensitive Information into Log File and Exposure of Sensitive Information to an Unauthorized Actor in @opentelemetry/instrumentation-http (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-3v2p-hm54-8qcq"/>
-<id>urn:bug-hou:GHSA-3v2p-hm54-8qcq</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; instrumentation-httpで秘密の情報がログに残るMEDIUM&lt;br&gt;→ @opentelemetry/instrumentation-http 0.222.0に更新&lt;/p&gt;&lt;p&gt;@opentelemetry/instrumentation-http &amp;gt;= 0.204.0, &amp;lt; 0.222.0 → 0.222.0&lt;/p&gt;&lt;p&gt;CVE-2026-128080&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Hono: `css` helper does not escape a closing tag split between the template and an interpolated value, allowing HTML injection (LOW)</title>
-<link href="https://github.com/advisories/GHSA-3gg2-335m-rxc6"/>
-<id>urn:bug-hou:GHSA-3gg2-335m-rxc6</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。cssヘルパーで閉じタグが分かれているとHTMLを埋め込まれる&lt;br&gt;→ hono 4.13.16 以降に更新&lt;/p&gt;&lt;p&gt;hono &amp;gt;= 3.12.0, &amp;lt;= 4.13.15 → 4.13.16&lt;/p&gt;&lt;p&gt;CVE-2026-126359&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Signal K Server: Buffered logs exposed to unauthenticated WebSocket clients (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-7m8x-x364-m26j"/>
-<id>urn:bug-hou:GHSA-7m8x-x364-m26j</id>
-<updated>2026-11-12T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。Signal K Serverのログが未認証のWebSocketに見える&lt;br&gt;→ signalk-serverを2.31.0-beta.1以降に更新&lt;/p&gt;&lt;p&gt;signalk-server &amp;lt; 2.31.0-beta.1 → 2.31.0-beta.1&lt;/p&gt;&lt;p&gt;GHSA-7m8x-x364-m26j&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要対応] Node.js: React: Unauthenticated Remote Code Execution in React Server Components (CRITICAL)</title>
-<link href="https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"/>
-<id>urn:bug-hou:GHSA-xqc2-xf4c-x3h3</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; React Server Componentsでログインなしに外からRCE。CRITICAL&lt;br&gt;→ react-server-dom-*を19.0.9 / 19.1.10 / 19.2.9 / 19.3.1 以降に更新&lt;/p&gt;&lt;p&gt;react-server-dom-parcel &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-parcel &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-parcel &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-parcel &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-turbopack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-turbopack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-turbopack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-turbopack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1, react-server-dom-webpack &amp;gt;= 19.0.0, &amp;lt; 19.0.9 → 19.0.9, react-server-dom-webpack &amp;gt;= 19.1.0, &amp;lt; 19.1.10 → 19.1.10, react-server-dom-webpack &amp;gt;= 19.2.0, &amp;lt; 19.2.9 → 19.2.9, react-server-dom-webpack &amp;gt;= 19.3.0, &amp;lt; 19.3.1 → 19.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-126187&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Mongoose: Discriminator key values matching inherited properties (e.g. __t: 'constructor') bypass schema casting and can poison collections (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-wr5m-5jph-8m96"/>
-<id>urn:bug-hou:GHSA-wr5m-5jph-8m96</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Mongooseのdiscriminatorキーで型変換をすり抜けられる。MEDIUM&lt;br&gt;→ mongooseを6.13.12 / 7.8.13 / 8.24.7 / 9.11.4 に更新&lt;/p&gt;&lt;p&gt;mongoose &amp;lt; 6.13.12 → 6.13.12, mongoose &amp;gt;= 7.0.0, &amp;lt; 7.8.13 → 7.8.13, mongoose &amp;gt;= 8.0.0, &amp;lt; 8.24.7 → 8.24.7, mongoose &amp;gt;= 9.0.0, &amp;lt; 9.11.4 → 9.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-125116&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Forge: TLS client crash on an unsupported ServerHello compression method (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-w4xr-hqv8-ch44"/>
-<id>urn:bug-hou:GHSA-w4xr-hqv8-ch44</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのTLSクライアントが特定の応答で落ちる。MEDIUM&lt;br&gt;→ node-forgeを1.4.3に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.2 → 1.4.3&lt;/p&gt;&lt;p&gt;CVE-2026-125332&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Node.js: Microsoft Security Advisory CVE-2026-120792 - Aspire Information Disclosure Vulnerability (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-q6jf-24jf-m3cg"/>
-<id>urn:bug-hou:GHSA-q6jf-24jf-m3cg</id>
-<updated>2026-11-11T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Aspire CLIの情報漏えい。HIGH&lt;br&gt;→ Aspire.Cliの利用有無を確認し、13.6.5に更新&lt;/p&gt;&lt;p&gt;Aspire.Cli &amp;gt;= 13.2.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.linux-musl-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-x64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, Aspire.Cli.osx-arm64 &amp;gt;= 13.3.0, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-linux-musl-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-x64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5, @microsoft/aspire-cli-osx-arm64 &amp;gt;= 13.4.2, &amp;lt; 13.6.5 → 13.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-120792&lt;/p&gt;</content>
 </entry>
 </feed>

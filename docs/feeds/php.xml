@@ -4,8 +4,71 @@
 <link href="https://subara3.github.io/bug-hou/#php"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/php.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/php.xml</id>
-<updated>2026-11-19T00:00:00Z</updated>
+<updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: Bolt: Open redirect enables post-authentication redirection to arbitrary domains (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-xr6g-7g83-j865"/>
+<id>urn:bug-hou:GHSA-xr6g-7g83-j865</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77376&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: baserCMS administrative API authorization bypass through session fallback (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-wgvx-x5g3-9v29"/>
+<id>urn:bug-hou:GHSA-wgvx-x5g3-9v29</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;baserproject/baser-core &amp;lt;= 5.2.3 → 5.3.0&lt;/p&gt;&lt;p&gt;CVE-2026-63012&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Bolt ListFormatHelper SQL injection (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-r7h9-qx4h-77j5"/>
+<id>urn:bug-hou:GHSA-r7h9-qx4h-77j5</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77378&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: October: Media Library Crop Handler Bypasses Upload Extension Allowlist (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-mqwx-84vv-mp26"/>
+<id>urn:bug-hou:GHSA-mqwx-84vv-mp26</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;october/october &amp;lt;= 3.7.13, october/october &amp;gt;= 4.0.0, &amp;lt;= 4.3.1 → 4.3.2&lt;/p&gt;&lt;p&gt;CVE-2026-63193&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-c3cj-3p6p-j822"/>
+<id>urn:bug-hou:GHSA-c3cj-3p6p-j822</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63415&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Bolt: Information disclosure through unfiltered public relation API endpoint (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6358-jg5p-hmjj"/>
+<id>urn:bug-hou:GHSA-6358-jg5p-hmjj</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77379&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Bolt: Prevent SSRF due to unchecked followed redirects (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3xjf-9q55-vxw4"/>
+<id>urn:bug-hou:GHSA-3xjf-9q55-vxw4</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.5 → 6.1.5&lt;/p&gt;&lt;p&gt;CVE-2026-77380&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2pj4-v76f-wjvx"/>
+<id>urn:bug-hou:GHSA-2pj4-v76f-wjvx</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;baserproject/baser-core &amp;lt; 5.3.0 → 5.3.0&lt;/p&gt;&lt;p&gt;CVE-2026-62955&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-2535-j2pq-qq4r"/>
+<id>urn:bug-hou:GHSA-2535-j2pq-qq4r</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77377&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] PHP: Jane: Instantiation RCE via parameter description -&gt; raw PHPDoc */ breakout (jane-php/open-api-3) (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-xwcw-j52r-34x4"/>
@@ -334,13 +397,6 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。FileGatorで他の利用者の一時ファイルを読めたり消せたりする&lt;br&gt;→ filegator/filegator を 7.15.0 以降に更新&lt;/p&gt;&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] PHP: Grav: Missing admin.super guard on core group blueprint access field allows admin.users operator to escalate to super-admin (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-xhfv-7758-r9hx"/>
-<id>urn:bug-hou:GHSA-xhfv-7758-r9hx</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Gravでadmin.users権限者がスーパー管理者に昇格。HIGH&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75837&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] PHP: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-w998-qmw9-mf4m"/>
 <id>urn:bug-hou:GHSA-w998-qmw9-mf4m</id>
@@ -355,27 +411,6 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; FormieのフォームSSRFで保存済み連携の認証情報が漏洩。HIGH&lt;br&gt;→ verbb/formie 2.2.23/3.1.31に更新&lt;/p&gt;&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76086&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] PHP: Grav CMS vulnerable to remote code execution via .zip file upload (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-r94f-hx44-8jqf"/>
-<id>urn:bug-hou:GHSA-r94f-hx44-8jqf</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Grav CMSでzipアップロードからRCE。HIGH&lt;br&gt;→ getgrav/grav 2.0.13に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.13 → 2.0.13&lt;/p&gt;&lt;p&gt;CVE-2026-72819&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Semantic MediaWiki has a query debug output XSS (`DebugFormatter`) (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-q5fm-9mx6-44f4"/>
-<id>urn:bug-hou:GHSA-q5fm-9mx6-44f4</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのクエリデバッグ出力でXSS。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77610&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Grav: Single invalid UTF-8 byte disables every rule in Security::detectXss(), bypassing the page-content XSS safety gate (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-q2j8-x8hf-63ch"/>
-<id>urn:bug-hou:GHSA-q2j8-x8hf-63ch</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Gravで不正UTF-8の1バイトによりdetectXssを回避。MEDIUM&lt;br&gt;→ getgrav/grav 2.0.14に更新&lt;/p&gt;&lt;p&gt;getgrav/grav &amp;lt; 2.0.14 → 2.0.14&lt;/p&gt;&lt;p&gt;CVE-2026-75834&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[様子見] PHP: REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()` (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mf2p-wjp4-99pq"/>
 <id>urn:bug-hou:GHSA-mf2p-wjp4-99pq</id>
@@ -388,40 +423,5 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <id>urn:bug-hou:GHSA-m8r3-22v6-g877</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのパッケージ更新にCSRF対策がない。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Semantic MediaWiki'a missing authorization in the smwtask API module allows unauthenticated access to admin-only maintenance tasks (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-jr78-w6w5-m8f8"/>
-<id>urn:bug-hou:GHSA-jr78-w6w5-m8f8</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH&lt;br&gt;→ semantic-media-wiki 7.3.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.0.0, &amp;lt;= 7.2.1 → 7.3.0&lt;/p&gt;&lt;p&gt;GHSA-jr78-w6w5-m8f8&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated) (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-jg26-q8hg-3pq4"/>
-<id>urn:bug-hou:GHSA-jg26-q8hg-3pq4</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Suluのcategoriesパラメータで認証なしJCR-SQL2注入。MEDIUM&lt;br&gt;→ sulu/sulu 2.6.25/3.0.8に更新&lt;/p&gt;&lt;p&gt;sulu/sulu &amp;lt; 2.6.25 → 2.6.25, sulu/sulu &amp;gt;= 3.0.0, &amp;lt; 3.0.8 → 3.0.8&lt;/p&gt;&lt;p&gt;CVE-2026-92692&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Semantic MediaWiki has an open redirect in Special:URIResolver (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-hw3m-8j5x-94ff"/>
-<id>urn:bug-hou:GHSA-hw3m-8j5x-94ff</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Semantic MediaWikiのURIResolverでオープンリダイレクト。MEDIUM&lt;br&gt;→ semantic-media-wiki 7.2.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;lt;= 7.1.0 → 7.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-77609&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Semantic MediaWiki vulnerable to stored XSS through wikitext via improper use of non-reserved data attributes (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-hg8h-557g-q8pp"/>
-<id>urn:bug-hou:GHSA-hg8h-557g-q8pp</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Semantic MediaWikiでwikitextのdata属性から格納型XSS。HIGH&lt;br&gt;→ semantic-media-wiki 7.0.0に更新&lt;/p&gt;&lt;p&gt;mediawiki/semantic-media-wiki &amp;gt;= 3.1.0, &amp;lt; 7.0.0 → 7.0.0&lt;/p&gt;&lt;p&gt;CVE-2025-61682&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Solspace Freeform: Limited Twig template injection via submitted field values (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-gxrg-x694-283w"/>
-<id>urn:bug-hou:GHSA-gxrg-x694-283w</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Freeformの送信値で限定的なTwigテンプレート注入。MEDIUM&lt;br&gt;→ craft-freeform 5.10.14に更新&lt;/p&gt;&lt;p&gt;solspace/craft-freeform &amp;gt;= 5.0.0, &amp;lt;= 5.10.13 → 5.10.14&lt;/p&gt;&lt;p&gt;CVE-2026-73858&lt;/p&gt;</content>
 </entry>
 </feed>

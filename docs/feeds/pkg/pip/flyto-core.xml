@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜flyto-core（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/flyto-core.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/flyto-core.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-pfg2-w999-497v"/>
+<id>urn:bug-hou:GHSA-pfg2-w999-497v</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77313&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429) (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-p34x-fmph-9fjx"/>
+<id>urn:bug-hou:GHSA-p34x-fmph-9fjx</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77312&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-6pm8-6f34-9v3g"/>
+<id>urn:bug-hou:GHSA-6pm8-6f34-9v3g</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77316&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-2mr3-rxrq-238c"/>
+<id>urn:bug-hou:GHSA-2mr3-rxrq-238c</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77315&lt;/p&gt;</content>
+</entry>
+</feed>

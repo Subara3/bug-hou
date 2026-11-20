@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜iSponsorBlockTV（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/isponsorblocktv.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/isponsorblocktv.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery (LOW)</title>
+<link href="https://github.com/advisories/GHSA-56v3-jrq2-4q9m"/>
+<id>urn:bug-hou:GHSA-56v3-jrq2-4q9m</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;iSponsorBlockTV &amp;lt;= 2.10.0 → 2.11.0&lt;/p&gt;&lt;p&gt;CVE-2026-77597&lt;/p&gt;</content>
+</entry>
+</feed>

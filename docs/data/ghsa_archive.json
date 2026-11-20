@@ -1,5 +1,309 @@
 [
  {
+  "id": "GHSA-wgvx-x5g3-9v29",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-63012",
+  "summary": "baserCMS administrative API authorization bypass through session fallback",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-wgvx-x5g3-9v29",
+  "kev": false,
+  "packages": [
+   {
+    "name": "baserproject/baser-core",
+    "range": "<= 5.2.3",
+    "fixed": "5.3.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-2pj4-v76f-wjvx",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-62955",
+  "summary": "baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass)",
+  "severity": "HIGH",
+  "score": 7.2,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-2pj4-v76f-wjvx",
+  "kev": false,
+  "packages": [
+   {
+    "name": "baserproject/baser-core",
+    "range": "< 5.3.0",
+    "fixed": "5.3.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-r7h9-qx4h-77j5",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-77378",
+  "summary": "Bolt ListFormatHelper SQL injection",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:N/I:H/A:L",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-r7h9-qx4h-77j5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "bolt/core",
+    "range": "< 6.1.4",
+    "fixed": "6.1.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3xjf-9q55-vxw4",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-77380",
+  "summary": "Bolt: Prevent SSRF due to unchecked followed redirects",
+  "severity": "MEDIUM",
+  "score": 5.2,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:L/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-3xjf-9q55-vxw4",
+  "kev": false,
+  "packages": [
+   {
+    "name": "bolt/core",
+    "range": "< 6.1.5",
+    "fixed": "6.1.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6358-jg5p-hmjj",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-77379",
+  "summary": "Bolt: Information disclosure through unfiltered public relation API endpoint",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-6358-jg5p-hmjj",
+  "kev": false,
+  "packages": [
+   {
+    "name": "bolt/core",
+    "range": "< 6.1.4",
+    "fixed": "6.1.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-2535-j2pq-qq4r",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-77377",
+  "summary": "Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints",
+  "severity": "MEDIUM",
+  "score": 5.2,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:L/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-2535-j2pq-qq4r",
+  "kev": false,
+  "packages": [
+   {
+    "name": "bolt/core",
+    "range": "< 6.1.4",
+    "fixed": "6.1.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xr6g-7g83-j865",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-77376",
+  "summary": "Bolt: Open redirect enables post-authentication redirection to arbitrary domains",
+  "severity": "MEDIUM",
+  "score": 6.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-xr6g-7g83-j865",
+  "kev": false,
+  "packages": [
+   {
+    "name": "bolt/core",
+    "range": "< 6.1.4",
+    "fixed": "6.1.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-c3cj-3p6p-j822",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-63415",
+  "summary": "Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php)",
+  "severity": "HIGH",
+  "score": 7.0,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:A/VC:H/VI:L/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-c3cj-3p6p-j822",
+  "kev": false,
+  "packages": [
+   {
+    "name": "jane-php/open-api-3",
+    "range": "< 7.12.0",
+    "fixed": "7.12.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-mc8w-wjhw-45x5",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-114516",
+  "summary": "Etherpad: Pre-auth arbitrary file read",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "ep_etherpad-lite",
+    "range": ">= 1.8.14, < 3.3.3",
+    "fixed": "3.3.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9x8x-crjq-g64h",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77359",
+  "summary": "Jupyter MCP Server: Browser DNS rebinding can hijack the Jupyter backend through management routes",
+  "severity": "CRITICAL",
+  "score": 9.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:H/VA:H/SC:H/SI:H/SA:H",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-9x8x-crjq-g64h",
+  "kev": false,
+  "packages": [
+   {
+    "name": "jupyter-mcp-server",
+    "range": "<= 1.0.2",
+    "fixed": "1.0.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-24pw-rf5p-mgp7",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77318",
+  "summary": "Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode",
+  "severity": "HIGH",
+  "score": 7.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:L/VI:H/VA:L/SC:H/SI:H/SA:L",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-24pw-rf5p-mgp7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "jupyter-mcp-server",
+    "range": "<= 1.0.2",
+    "fixed": "1.0.3"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6pm8-6f34-9v3g",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77316",
+  "summary": "Flyto2 Core: SSRF guard bypass via DNS rebinding (validate_url_ssrf resolves-then-connects without pinning)",
+  "severity": "HIGH",
+  "score": 7.1,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-6pm8-6f34-9v3g",
+  "kev": false,
+  "packages": [
+   {
+    "name": "flyto-core",
+    "range": "<= 2.26.7",
+    "fixed": "2.26.8"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-2mr3-rxrq-238c",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77315",
+  "summary": "Flyto2 Core: http.paginate follows server-supplied next-page URLs (Link header / cursor) without SSRF revalidation",
+  "severity": "HIGH",
+  "score": 8.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-2mr3-rxrq-238c",
+  "kev": false,
+  "packages": [
+   {
+    "name": "flyto-core",
+    "range": "<= 2.26.7",
+    "fixed": "2.26.8"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-pfg2-w999-497v",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77313",
+  "summary": "Flyto2 Core: SSRF guard validates the resolved IP but connects by hostname, allowing DNS-rebinding TOCTOU",
+  "severity": "HIGH",
+  "score": 7.1,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-pfg2-w999-497v",
+  "kev": false,
+  "packages": [
+   {
+    "name": "flyto-core",
+    "range": "<= 2.26.7",
+    "fixed": "2.26.8"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-p34x-fmph-9fjx",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77312",
+  "summary": "Flyto2 Core: Arbitrary file write via unguarded data.*/file.* modules (incomplete fix of CVE-2026-67429)",
+  "severity": "CRITICAL",
+  "score": 10.0,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:H/A:H",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-p34x-fmph-9fjx",
+  "kev": false,
+  "packages": [
+   {
+    "name": "flyto-core",
+    "range": "<= 2.26.7",
+    "fixed": "2.26.8"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-86mf-q4h5-69gp",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-59988",
+  "summary": "django-docutils unsafe Docutils defaults allow local file disclosure, SSRF, and stored XSS",
+  "severity": "HIGH",
+  "score": 8.2,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N",
+  "published": "2026-11-20",
+  "url": "https://github.com/advisories/GHSA-86mf-q4h5-69gp",
+  "kev": false,
+  "packages": [
+   {
+    "name": "django-docutils",
+    "range": "< 0.30.0",
+    "fixed": "0.30.0"
+   }
+  ]
+ },
+ {
   "id": "GHSA-2m9m-6cr5-9x25",
   "ecosystem": "npm",
   "cve": "CVE-2026-63129",
@@ -277,6 +581,806 @@
     "name": "mareforma",
     "range": "= 0.3.7",
     "fixed": "0.3.8"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-mqwx-84vv-mp26",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-63193",
+  "summary": "October: Media Library Crop Handler Bypasses Upload Extension Allowlist",
+  "severity": "MEDIUM",
+  "score": 5.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-mqwx-84vv-mp26",
+  "kev": false,
+  "packages": [
+   {
+    "name": "october/october",
+    "range": "<= 3.7.13",
+    "fixed": null
+   },
+   {
+    "name": "october/october",
+    "range": ">= 4.0.0, <= 4.3.1",
+    "fixed": "4.3.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3mgh-93r5-r7jf",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-83816",
+  "summary": "CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE",
+  "severity": "HIGH",
+  "score": 8.1,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-3mgh-93r5-r7jf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "codewhale-tui",
+    "range": "<= 0.8.67",
+    "fixed": "0.9.0"
+   },
+   {
+    "name": "codewhale",
+    "range": "<= 0.8.67",
+    "fixed": "0.9.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8hp3-xxrg-v9c8",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-83817",
+  "summary": "CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-8hp3-xxrg-v9c8",
+  "kev": false,
+  "packages": [
+   {
+    "name": "codewhale-tui",
+    "range": "<= 0.8.67",
+    "fixed": "0.9.0"
+   },
+   {
+    "name": "codewhale",
+    "range": "<= 0.8.67",
+    "fixed": "0.9.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-hj9c-qx2w-g7mh",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-107853",
+  "summary": "tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-hj9c-qx2w-g7mh",
+  "kev": false,
+  "packages": [
+   {
+    "name": "tiny-secp256k1",
+    "range": ">= 2.1.0, < 2.2.5",
+    "fixed": "2.2.5"
+   },
+   {
+    "name": "@bitcoin-js/tiny-secp256k1-asmjs",
+    "range": ">= 2.2.2, < 2.2.5",
+    "fixed": "2.2.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-f3mh-rxg3-f5g2",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119346",
+  "summary": "Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes",
+  "severity": "MEDIUM",
+  "score": 6.0,
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-f3mh-rxg3-f5g2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "next",
+    "range": ">= 15.0.0, <= 15.5.28",
+    "fixed": "15.5.29"
+   },
+   {
+    "name": "next",
+    "range": ">= 16.0.0, <= 16.4.4",
+    "fixed": "16.4.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7qx7-33qx-rqx2",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119347",
+  "summary": "Next.js: SVG rejection bypass in the image optimization",
+  "severity": "MEDIUM",
+  "score": 6.9,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-7qx7-33qx-rqx2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "next",
+    "range": ">= 15.0.0, <= 15.5.28",
+    "fixed": "15.5.29"
+   },
+   {
+    "name": "next",
+    "range": ">= 16.0.0, <= 16.4.4",
+    "fixed": "16.4.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-pc58-hwjq-p385",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119348",
+  "summary": "Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-pc58-hwjq-p385",
+  "kev": false,
+  "packages": [
+   {
+    "name": "next",
+    "range": ">= 16.0.0, <= 16.4.4",
+    "fixed": "16.4.5"
+   },
+   {
+    "name": "next",
+    "range": "<= 15.5.28",
+    "fixed": "15.5.29"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rhh4-g77r-r9qj",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119349",
+  "summary": "Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-rhh4-g77r-r9qj",
+  "kev": false,
+  "packages": [
+   {
+    "name": "next",
+    "range": ">= 16.0.0, <= 16.4.4",
+    "fixed": "16.4.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-vvgp-ww4w-46vf",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-119350",
+  "summary": "Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params",
+  "severity": "MEDIUM",
+  "score": 6.3,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-vvgp-ww4w-46vf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "next",
+    "range": ">= 16.4.0, <= 16.4.4",
+    "fixed": "16.4.5"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-4rj4-rcrq-gr92",
+  "ecosystem": "npm",
+  "cve": null,
+  "summary": "Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped)",
+  "severity": "MEDIUM",
+  "score": 6.2,
+  "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-4rj4-rcrq-gr92",
+  "kev": false,
+  "packages": [
+   {
+    "name": "safari-mcp",
+    "range": "< 2.22.15",
+    "fixed": "2.22.15"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7589-6fvf-x4pw",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-121707",
+  "summary": "Effect: ReDoS in Schema.TemplateLiteral compiled regex",
+  "severity": "HIGH",
+  "score": 8.7,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-7589-6fvf-x4pw",
+  "kev": false,
+  "packages": [
+   {
+    "name": "effect",
+    "range": "<= 3.22.0",
+    "fixed": "3.22.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-mx6p-3fg7-v6pj",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-77283",
+  "summary": "obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode)",
+  "severity": "HIGH",
+  "score": 8.8,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-mx6p-3fg7-v6pj",
+  "kev": false,
+  "packages": [
+   {
+    "name": "obsidian-sync-mcp",
+    "range": "<= 0.5.6",
+    "fixed": "0.5.7"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-wr3g-j6qj-xpgh",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128135",
+  "summary": "NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root",
+  "severity": "HIGH",
+  "score": 7.1,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-wr3g-j6qj-xpgh",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.9.4, <= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-c59x-vh6j-3w8v",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128136",
+  "summary": "NLTK: AllowlistUnpickler does not deny numpy submodule-local file-I/O sinks",
+  "severity": "MEDIUM",
+  "score": 6.1,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-c59x-vh6j-3w8v",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.10.0, < 3.10.4",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-g58v-j9g9-5gfg",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128137",
+  "summary": "NLTK corpus-reader view methods bypass the scoped root sandbox via intermediate-directory symlinks",
+  "severity": "MEDIUM",
+  "score": 5.5,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-g58v-j9g9-5gfg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.9.4, < 3.10.4",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-x8q7-6c7m-52gw",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128138",
+  "summary": "NLTK incomplete fix: additional JVM/JAR sandbox bypass through unvalidated launcher tokens in java() command arguments",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-x8q7-6c7m-52gw",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.10.3, < 3.10.4",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-j8g8-j4j7-8j54",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128139",
+  "summary": "NLTK: XMLCorpusView comment and CDATA parsing permits quadratic CPU denial of service",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-j8g8-j4j7-8j54",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.6, <= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-pcm8-fqjx-rvx8",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-128140",
+  "summary": "NLTK: Downloader cyclic collection indices cause an infinite closure walk",
+  "severity": "MEDIUM",
+  "score": 6.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-pcm8-fqjx-rvx8",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.6.7, < 3.10.4",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9ffx-rrgx-mhgx",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129221",
+  "summary": "NLTK: ARFF_Formatter Injects Weka ARFF Schema Directives via Attacker-Controlled Class Labels",
+  "severity": "MEDIUM",
+  "score": 5.4,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-9ffx-rrgx-mhgx",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-rh8m-wqhc-qmrf",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129222",
+  "summary": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in DependencyGraph.tree()/triples()",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-rh8m-wqhc-qmrf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-8846-p9w9-5frf",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129223",
+  "summary": "Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in Synset.tree()/acyclic_tree() via WordNet relation traversal",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-8846-p9w9-5frf",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-3h95-x772-4765",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129224",
+  "summary": "NLTK: Uncontrolled recursion in CCG lexicon parser causes denial of service via deeply nested category input",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-3h95-x772-4765",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-xfcv-m889-fmqg",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129225",
+  "summary": "NLTK: Uncontrolled recursion in DependencyGraph traversal causes denial of service via deep dependency chains",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-xfcv-m889-fmqg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-w3pv-xfw4-ghr7",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129226",
+  "summary": "NLTK: Uncontrolled recursion in semantic-logic type parser causes denial of service via nested type strings",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-w3pv-xfw4-ghr7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-63wh-5r5m-wxr7",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129227",
+  "summary": "NLTK: Uncontrolled recursion in Tree.fromlist causes denial of service via deeply nested list input",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-63wh-5r5m-wxr7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-f2h2-f4fc-p978",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129228",
+  "summary": "NLTK: Uncontrolled recursion in Toolbox settings helpers causes denial of service via deeply nested input",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-f2h2-f4fc-p978",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-32p6-cwhc-8r78",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129229",
+  "summary": "NLTK: Compile-time regex DoS in NLTK search/tokenizer sinks: quadratic regex-engine compile bypasses the match-only timeout",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-32p6-cwhc-8r78",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.10.0, <= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-53pg-5qp8-mhvr",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129230",
+  "summary": "NLTK: Uncontrolled recursion in WordNet Synset hypernym walkers (max_depth/min_depth/hypernym_paths/hypernym_distances) causes DoS",
+  "severity": "MEDIUM",
+  "score": 5.5,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-53pg-5qp8-mhvr",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-q4c8-9gwf-255x",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129231",
+  "summary": "NLTK: Quadratic-time DoS in SeekableUnicodeStreamReader.readline on an unterminated corpus line via per-iteration full-buffer rescan",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-q4c8-9gwf-255x",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-cj8f-5fp3-6m88",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129232",
+  "summary": "NLTK: Quadratic CPU exhaustion in NLTK XMLCorpusView.read_block via deeply nested XML corpus tags",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-cj8f-5fp3-6m88",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-w674-vqhw-g3pg",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129233",
+  "summary": "NLTK: StreamBackedCorpusView constructor os.stat leaks out-of-root file existence, size, and mtime bypassing pathsec ENFORCE",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-w674-vqhw-g3pg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": ">= 3.10.0, <= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-cc5r-64rf-75hg",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129234",
+  "summary": "NLTK: Untrusted search path in prover9/mace4 config allows local code execution via relative binary_location",
+  "severity": "HIGH",
+  "score": 7.3,
+  "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-cc5r-64rf-75hg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "nltk",
+    "range": "<= 3.10.3",
+    "fixed": "3.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-gm9r-hvc9-96gv",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129304",
+  "summary": "Guard Core: Unvalidated X-Forwarded-For-derived string used as a Redis key component and interpolated into a KEYS glob pattern",
+  "severity": "MEDIUM",
+  "score": 5.4,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-gm9r-hvc9-96gv",
+  "kev": false,
+  "packages": [
+   {
+    "name": "guard-core",
+    "range": ">= 1.0.0, < 3.13.0",
+    "fixed": "3.13.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-w7wg-6q7v-44f2",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129303",
+  "summary": "Guard Core: Whitespace-collapse preprocessing permanently disables the CRLF-anchored http-splitting and command-injection detectors in the default detection mode",
+  "severity": "LOW",
+  "score": 3.7,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-w7wg-6q7v-44f2",
+  "kev": false,
+  "packages": [
+   {
+    "name": "guard-core",
+    "range": ">= 1.0.0, < 3.13.0",
+    "fixed": "3.13.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-r7hm-rjvg-xx7j",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129302",
+  "summary": "Guard Core: Quadratic ReDoS in built-in detection pattern freezes the event loop with a single request",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-r7hm-rjvg-xx7j",
+  "kev": false,
+  "packages": [
+   {
+    "name": "guard-core",
+    "range": ">= 3.5.0, <= 3.12.0",
+    "fixed": "3.13.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-m4g8-47f9-h588",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-129307",
+  "summary": "eml_parser: Algorithmic-complexity DoS (O(n^4) regex backtracking) in Received-header parsing",
+  "severity": "MEDIUM",
+  "score": 5.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-m4g8-47f9-h588",
+  "kev": false,
+  "packages": [
+   {
+    "name": "eml-parser",
+    "range": "<= 3.0.3",
+    "fixed": "3.0.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-qx49-fqc8-xw99",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-115563",
+  "summary": "Model Context Protocol Python SDK: OAuth client could send credentials to an authorization server chosen by the MCP server",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-qx49-fqc8-xw99",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mcp",
+    "range": ">= 2.0.0a1, < 2.2.0",
+    "fixed": "2.2.0"
+   },
+   {
+    "name": "mcp",
+    "range": ">= 1.9.1, < 1.30.0",
+    "fixed": "1.30.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-phmp-hrw4-r36r",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-97698",
+  "summary": "Mistune: Quadratic-time DoS in parse_link_href via unbounded parenthesis scan on empty-label links",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-phmp-hrw4-r36r",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mistune",
+    "range": "< 3.3.4",
+    "fixed": "3.3.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-ww7q-mxrj-5ffg",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-97699",
+  "summary": "Mistune: Quadratic-time DoS in inline image parsing (precedence_scan) bypasses not-is-image guards",
+  "severity": "HIGH",
+  "score": 7.5,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-ww7q-mxrj-5ffg",
+  "kev": false,
+  "packages": [
+   {
+    "name": "mistune",
+    "range": "< 3.3.4",
+    "fixed": "3.3.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-56v3-jrq2-4q9m",
+  "ecosystem": "pip",
+  "cve": "CVE-2026-77597",
+  "summary": "iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery",
+  "severity": "LOW",
+  "score": 3.5,
+  "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+  "published": "2026-11-19",
+  "url": "https://github.com/advisories/GHSA-56v3-jrq2-4q9m",
+  "kev": false,
+  "packages": [
+   {
+    "name": "iSponsorBlockTV",
+    "range": "<= 2.10.0",
+    "fixed": "2.11.0"
    }
   ]
  },

@@ -4,8 +4,148 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/nltk.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/pip/nltk.xml</id>
-<updated>2026-11-16T00:00:00Z</updated>
+<updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>pip: NLTK: Uncontrolled recursion in DependencyGraph traversal causes denial of service via deep dependency chains (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-xfcv-m889-fmqg"/>
+<id>urn:bug-hou:GHSA-xfcv-m889-fmqg</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129225&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK incomplete fix: additional JVM/JAR sandbox bypass through unvalidated launcher tokens in java() command arguments (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-x8q7-6c7m-52gw"/>
+<id>urn:bug-hou:GHSA-x8q7-6c7m-52gw</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.10.3, &amp;lt; 3.10.4 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128138&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: ZIP package extraction follows in-root hardlinks and overwrites files outside the NLTK data root (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-wr3g-j6qj-xpgh"/>
+<id>urn:bug-hou:GHSA-wr3g-j6qj-xpgh</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128135&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: StreamBackedCorpusView constructor os.stat leaks out-of-root file existence, size, and mtime bypassing pathsec ENFORCE (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-w674-vqhw-g3pg"/>
+<id>urn:bug-hou:GHSA-w674-vqhw-g3pg</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.10.0, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129233&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Uncontrolled recursion in semantic-logic type parser causes denial of service via nested type strings (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-w3pv-xfw4-ghr7"/>
+<id>urn:bug-hou:GHSA-w3pv-xfw4-ghr7</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129226&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in DependencyGraph.tree()/triples() (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rh8m-wqhc-qmrf"/>
+<id>urn:bug-hou:GHSA-rh8m-wqhc-qmrf</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129222&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Quadratic-time DoS in SeekableUnicodeStreamReader.readline on an unterminated corpus line via per-iteration full-buffer rescan (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-q4c8-9gwf-255x"/>
+<id>urn:bug-hou:GHSA-q4c8-9gwf-255x</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129231&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Downloader cyclic collection indices cause an infinite closure walk (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-pcm8-fqjx-rvx8"/>
+<id>urn:bug-hou:GHSA-pcm8-fqjx-rvx8</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.6.7, &amp;lt; 3.10.4 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128140&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: XMLCorpusView comment and CDATA parsing permits quadratic CPU denial of service (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-j8g8-j4j7-8j54"/>
+<id>urn:bug-hou:GHSA-j8g8-j4j7-8j54</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.6, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128139&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK corpus-reader view methods bypass the scoped root sandbox via intermediate-directory symlinks (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-g58v-j9g9-5gfg"/>
+<id>urn:bug-hou:GHSA-g58v-j9g9-5gfg</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt; 3.10.4 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128137&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Uncontrolled recursion in Toolbox settings helpers causes denial of service via deeply nested input (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-f2h2-f4fc-p978"/>
+<id>urn:bug-hou:GHSA-f2h2-f4fc-p978</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129228&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Quadratic CPU exhaustion in NLTK XMLCorpusView.read_block via deeply nested XML corpus tags (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-cj8f-5fp3-6m88"/>
+<id>urn:bug-hou:GHSA-cj8f-5fp3-6m88</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129232&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Untrusted search path in prover9/mace4 config allows local code execution via relative binary_location (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-cc5r-64rf-75hg"/>
+<id>urn:bug-hou:GHSA-cc5r-64rf-75hg</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129234&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: AllowlistUnpickler does not deny numpy submodule-local file-I/O sinks (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-c59x-vh6j-3w8v"/>
+<id>urn:bug-hou:GHSA-c59x-vh6j-3w8v</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.10.0, &amp;lt; 3.10.4 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128136&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: ARFF_Formatter Injects Weka ARFF Schema Directives via Attacker-Controlled Class Labels (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9ffx-rrgx-mhgx"/>
+<id>urn:bug-hou:GHSA-9ffx-rrgx-mhgx</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129221&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Natural Language Toolkit (NLTK): Uncontrolled recursion (crash DoS) in Synset.tree()/acyclic_tree() via WordNet relation traversal (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-8846-p9w9-5frf"/>
+<id>urn:bug-hou:GHSA-8846-p9w9-5frf</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129223&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Uncontrolled recursion in Tree.fromlist causes denial of service via deeply nested list input (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-63wh-5r5m-wxr7"/>
+<id>urn:bug-hou:GHSA-63wh-5r5m-wxr7</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129227&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Uncontrolled recursion in WordNet Synset hypernym walkers (max_depth/min_depth/hypernym_paths/hypernym_distances) causes DoS (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-53pg-5qp8-mhvr"/>
+<id>urn:bug-hou:GHSA-53pg-5qp8-mhvr</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129230&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Uncontrolled recursion in CCG lexicon parser causes denial of service via deeply nested category input (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3h95-x772-4765"/>
+<id>urn:bug-hou:GHSA-3h95-x772-4765</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129224&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: NLTK: Compile-time regex DoS in NLTK search/tokenizer sinks: quadratic regex-engine compile bypasses the match-only timeout (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-32p6-cwhc-8r78"/>
+<id>urn:bug-hou:GHSA-32p6-cwhc-8r78</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;nltk &amp;gt;= 3.10.0, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-129229&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] pip: NLTK: Symlink escape in chat80.sql_query bypasses the pathsec data-root sandbox to read out-of-root SQLite databases (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xmfg-f9cm-w86q"/>

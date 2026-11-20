@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜guard-core（pip）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/pip/guard-core.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/pip/guard-core.xml</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>pip: Guard Core: Whitespace-collapse preprocessing permanently disables the CRLF-anchored http-splitting and command-injection detectors in the default detection mode (LOW)</title>
+<link href="https://github.com/advisories/GHSA-w7wg-6q7v-44f2"/>
+<id>urn:bug-hou:GHSA-w7wg-6q7v-44f2</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;guard-core &amp;gt;= 1.0.0, &amp;lt; 3.13.0 → 3.13.0&lt;/p&gt;&lt;p&gt;CVE-2026-129303&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Guard Core: Quadratic ReDoS in built-in detection pattern freezes the event loop with a single request (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r7hm-rjvg-xx7j"/>
+<id>urn:bug-hou:GHSA-r7hm-rjvg-xx7j</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;guard-core &amp;gt;= 3.5.0, &amp;lt;= 3.12.0 → 3.13.0&lt;/p&gt;&lt;p&gt;CVE-2026-129302&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>pip: Guard Core: Unvalidated X-Forwarded-For-derived string used as a Redis key component and interpolated into a KEYS glob pattern (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-gm9r-hvc9-96gv"/>
+<id>urn:bug-hou:GHSA-gm9r-hvc9-96gv</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;guard-core &amp;gt;= 1.0.0, &amp;lt; 3.13.0 → 3.13.0&lt;/p&gt;&lt;p&gt;CVE-2026-129304&lt;/p&gt;</content>
+</entry>
+</feed>

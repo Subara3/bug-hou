@@ -52,6 +52,276 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-mc8w-wjhw-45x5",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-114516",
+   "summary": "Etherpad: Pre-auth arbitrary file read",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-mc8w-wjhw-45x5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "ep_etherpad-lite",
+     "range": ">= 1.8.14, < 3.3.3",
+     "fixed": "3.3.3"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-3mgh-93r5-r7jf",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-83816",
+   "summary": "CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE",
+   "severity": "HIGH",
+   "score": 8.1,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-3mgh-93r5-r7jf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "codewhale-tui",
+     "range": "<= 0.8.67",
+     "fixed": "0.9.0"
+    },
+    {
+     "name": "codewhale",
+     "range": "<= 0.8.67",
+     "fixed": "0.9.0"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-8hp3-xxrg-v9c8",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-83817",
+   "summary": "CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-8hp3-xxrg-v9c8",
+   "kev": false,
+   "packages": [
+    {
+     "name": "codewhale-tui",
+     "range": "<= 0.8.67",
+     "fixed": "0.9.0"
+    },
+    {
+     "name": "codewhale",
+     "range": "<= 0.8.67",
+     "fixed": "0.9.0"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-hj9c-qx2w-g7mh",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-107853",
+   "summary": "tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-hj9c-qx2w-g7mh",
+   "kev": false,
+   "packages": [
+    {
+     "name": "tiny-secp256k1",
+     "range": ">= 2.1.0, < 2.2.5",
+     "fixed": "2.2.5"
+    },
+    {
+     "name": "@bitcoin-js/tiny-secp256k1-asmjs",
+     "range": ">= 2.2.2, < 2.2.5",
+     "fixed": "2.2.5"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-f3mh-rxg3-f5g2",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119346",
+   "summary": "Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes",
+   "severity": "MEDIUM",
+   "score": 6.0,
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:P/VC:H/VI:N/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-f3mh-rxg3-f5g2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "next",
+     "range": ">= 15.0.0, <= 15.5.28",
+     "fixed": "15.5.29"
+    },
+    {
+     "name": "next",
+     "range": ">= 16.0.0, <= 16.4.4",
+     "fixed": "16.4.5"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-7qx7-33qx-rqx2",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119347",
+   "summary": "Next.js: SVG rejection bypass in the image optimization",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-7qx7-33qx-rqx2",
+   "kev": false,
+   "packages": [
+    {
+     "name": "next",
+     "range": ">= 15.0.0, <= 15.5.28",
+     "fixed": "15.5.29"
+    },
+    {
+     "name": "next",
+     "range": ">= 16.0.0, <= 16.4.4",
+     "fixed": "16.4.5"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-pc58-hwjq-p385",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119348",
+   "summary": "Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-pc58-hwjq-p385",
+   "kev": false,
+   "packages": [
+    {
+     "name": "next",
+     "range": ">= 16.0.0, <= 16.4.4",
+     "fixed": "16.4.5"
+    },
+    {
+     "name": "next",
+     "range": "<= 15.5.28",
+     "fixed": "15.5.29"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-rhh4-g77r-r9qj",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119349",
+   "summary": "Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-rhh4-g77r-r9qj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "next",
+     "range": ">= 16.0.0, <= 16.4.4",
+     "fixed": "16.4.5"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-vvgp-ww4w-46vf",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-119350",
+   "summary": "Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params",
+   "severity": "MEDIUM",
+   "score": 6.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-vvgp-ww4w-46vf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "next",
+     "range": ">= 16.4.0, <= 16.4.4",
+     "fixed": "16.4.5"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-4rj4-rcrq-gr92",
+   "ecosystem": "npm",
+   "cve": null,
+   "summary": "Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped)",
+   "severity": "MEDIUM",
+   "score": 6.2,
+   "vector": "CVSS:4.0/AV:L/AC:L/AT:N/PR:L/UI:N/VC:N/VI:N/VA:N/SC:H/SI:H/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-4rj4-rcrq-gr92",
+   "kev": false,
+   "packages": [
+    {
+     "name": "safari-mcp",
+     "range": "< 2.22.15",
+     "fixed": "2.22.15"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-7589-6fvf-x4pw",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-121707",
+   "summary": "Effect: ReDoS in Schema.TemplateLiteral compiled regex",
+   "severity": "HIGH",
+   "score": 8.7,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-7589-6fvf-x4pw",
+   "kev": false,
+   "packages": [
+    {
+     "name": "effect",
+     "range": "<= 3.22.0",
+     "fixed": "3.22.1"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
+   "id": "GHSA-mx6p-3fg7-v6pj",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-77283",
+   "summary": "obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode)",
+   "severity": "HIGH",
+   "score": 8.8,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:H/VI:H/VA:N/SC:H/SI:H/SA:N",
+   "published": "2026-11-19",
+   "url": "https://github.com/advisories/GHSA-mx6p-3fg7-v6pj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "obsidian-sync-mcp",
+     "range": "<= 0.5.6",
+     "fixed": "0.5.7"
+    }
+   ],
+   "first_seen": "2026-11-20"
+  },
+  {
    "id": "GHSA-833v-v58w-294h",
    "ecosystem": "npm",
    "cve": "CVE-2026-76807",
@@ -2240,261 +2510,6 @@
     }
    ],
    "first_seen": "2026-11-03"
-  },
-  {
-   "id": "GHSA-4528-x5fx-h6hg",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118772",
-   "summary": "joi: quadratic-time split in `string().email({ multiple: true })` allows denial of service",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-4528-x5fx-h6hg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "joi",
-     "range": ">= 17.1.1, < 17.13.9",
-     "fixed": "17.13.9"
-    },
-    {
-     "name": "@hapi/joi",
-     "range": ">= 16.0.0, <= 17.1.1",
-     "fixed": null
-    },
-    {
-     "name": "joi",
-     "range": ">= 18.0.0, < 18.3.1",
-     "fixed": "18.3.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-8494-f6mr-cjpv",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-119202",
-   "summary": "@hapi/content: quadratic-time parsing of Content-Disposition parameters allows denial of service",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-8494-f6mr-cjpv",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@hapi/content",
-     "range": "<= 6.0.2",
-     "fixed": "6.0.3"
-    },
-    {
-     "name": "content",
-     "range": ">= 3.0.6, <= 4.0.6",
-     "fixed": null
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-g3hv-75wg-m249",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118764",
-   "summary": "minimatch has potential denial of service via globparts amplification",
-   "severity": "MEDIUM",
-   "score": 6.9,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
-   "kev": false,
-   "packages": [
-    {
-     "name": "minimatch",
-     "range": ">= 7.0.0, < 11.0.1",
-     "fixed": "11.0.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-3g3m-2fjr-6pw4",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118773",
-   "summary": "Glob: AbortSignal cancellation bypass allows post-timeout filesystem traversal",
-   "severity": "MEDIUM",
-   "score": 6.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-3g3m-2fjr-6pw4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "glob",
-     "range": ">= 9.0.0, <= 14.0.1",
-     "fixed": "14.0.2"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-4642-5mcj-2rqw",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118775",
-   "summary": "Forge: ASN.1 OID first arc truncation in asn1.oidToDer",
-   "severity": "LOW",
-   "score": 3.7,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-4642-5mcj-2rqw",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-6wvx-3r32-xmcg",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118777",
-   "summary": "Forge: Prototype Pollution in forge.http cookie handling via a malicious Set-Cookie",
-   "severity": "MEDIUM",
-   "score": 4.8,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-6wvx-3r32-xmcg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-525v-9gp9-w22h",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118778",
-   "summary": "Forge: TLS client crash when the server sends no certificate",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-525v-9gp9-w22h",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-7wch-p9px-956x",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118779",
-   "summary": "Forge: Regular expression denial of service in PEM decoding (pem.decode)",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-7wch-p9px-956x",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-h6cr-wjv9-3cpp",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118781",
-   "summary": "Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891)",
-   "severity": "LOW",
-   "score": 2.9,
-   "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-h6cr-wjv9-3cpp",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-4487-j8r4-4g2f",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118780",
-   "summary": "Forge: verifyCertificateChain() removes trusted CA certificates with the same subject from the CA store",
-   "severity": "LOW",
-   "score": 3.7,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-4487-j8r4-4g2f",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-5cwg-6vw7-rj6p",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-119186",
-   "summary": "Forge: AES-GCM authentication bypass via unvalidated tagLength option",
-   "severity": "MEDIUM",
-   "score": 5.9,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-5cwg-6vw7-rj6p",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-jc66-7q78-782g",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-118782",
-   "summary": "Forge: PKCS#12 MAC forgery and constant-key PBE via zero iteration count",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
-   "published": "2026-10-30",
-   "url": "https://github.com/advisories/GHSA-jc66-7q78-782g",
-   "kev": false,
-   "packages": [
-    {
-     "name": "node-forge",
-     "range": "<= 1.4.0",
-     "fixed": "1.4.1"
-    }
-   ],
-   "first_seen": "0000-00-00"
   }
  ],
  "eol": {
