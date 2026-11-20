@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-19T12:46:11Z",
+ "updated_at": "2026-11-20T00:46:57Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -113,6 +113,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "CVE-2026-115560": {
+   "level": "check",
+   "reason": "セッションの直列化方式がアプリ間や実行中に食い違う場合だけRCEになりうる",
+   "todo": "8.1以前なら8.2以降に上げる",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "CVE-2026-115791": {
    "level": "watch",
@@ -236,6 +243,113 @@
    "kev": false,
    "at": "2026-11-19"
   },
+  "CVE-2026-126714": {
+   "level": "action",
+   "reason": "PHP本体。標準のセッション保存で、書き込みが途中で切れるとログインなしでRCEになりうる。CRITICAL",
+   "todo": "修正版のPHPに更新（対象版は説明文が途中で切れていて不明）",
+   "kev": false,
+   "at": "2026-11-20",
+   "urgency": "later",
+   "comment": "データ上は手が空いたらだが、条件がそろうと危ないので次の更新で必ず入れて"
+  },
+  "CVE-2026-127960": {
+   "level": "check",
+   "reason": "相手が用意したURLをfile_get_contents等で取りに行く場合だけサービスを止められる",
+   "todo": "修正版のPHPに更新（対象は8.1.32〜8.1.34、8.2.28以降の一部など）",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-128064": {
+   "level": "check",
+   "reason": "HTTPS://のような大文字のURLだと暗号化されずに通信が盗み見られる",
+   "todo": "8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 以降に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-128090": {
+   "level": "check",
+   "reason": "OpenSSL署名つきPharを書き換えられる場合だけ署名の確認をすり抜けられる",
+   "todo": "8.2系は8.2.36以降に更新（ほかの系列の版は説明文が途中で切れていて不明）",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129182": {
+   "level": "check",
+   "reason": "ディレクトリごとの設定や.user.iniで特定の項目を変えている場合だけ影響",
+   "todo": "修正版のPHPに更新（対象版は説明文に記載なし）",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129289": {
+   "level": "check",
+   "reason": "nginxやApacheでFastCGIの接続を使い回す設定（既定ではない）の場合だけ影響",
+   "todo": "fastcgi_keep_conn / enablereuse を使っているか確認し、修正版に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129291": {
+   "level": "check",
+   "reason": "PHPコードを動かせる人がroot権限を取れる。catch_workers_outputが有効な場合のみ",
+   "todo": "公式Dockerイメージなどで有効なら修正版に更新（版は説明文が途中で切れていて不明）",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129292": {
+   "level": "watch",
+   "reason": "MEDIUM。PHP-FPMのステータス画面を公開しているとXSS",
+   "todo": "ステータス画面を外に出していないか確認",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129438": {
+   "level": "watch",
+   "reason": "MEDIUM。約2GiBの巨大なURIで文字列化が壊れる",
+   "todo": "",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129474": {
+   "level": "check",
+   "reason": "zend.exception_ignore_argsが無効な場合だけRCEになりうる。本番用php.iniでは防げる",
+   "todo": "zend.exception_ignore_argsを有効にし、修正版に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129481": {
+   "level": "check",
+   "reason": "セッション終了中にアプリ側の処理が致命的エラーになる場合だけメモリ破壊",
+   "todo": "修正版のPHPに更新（対象版は説明文に記載なし）",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129496": {
+   "level": "check",
+   "reason": "起動時にファイルのerror_logへ警告が出る設定の場合、ログインなしでワーカーを落とせる",
+   "todo": "date.timezoneなどの起動時の警告をなくし、修正版に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129501": {
+   "level": "watch",
+   "reason": "MEDIUM。Dom\\XMLDocumentのsaveXml()でプロセスが落ちる",
+   "todo": "8.4.28 / 8.5.13 以降に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129506": {
+   "level": "watch",
+   "reason": "MEDIUM。SOAPの受け口に細工したリクエストでプロセスが落ちる",
+   "todo": "8.2.36 / 8.3.37 / 8.4.28 以降に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
+  "CVE-2026-129538": {
+   "level": "watch",
+   "reason": "MEDIUM。php-cgiのときだけ。PHP-FPMとApacheモジュールは影響なし",
+   "todo": "php-cgiを使っていなければ対応不要",
+   "kev": false,
+   "at": "2026-11-20"
+  },
   "CVE-2026-15176": {
    "level": "check",
    "reason": "aliasとrewriteで$request_filenameを使う設定のnginxのみ影響",
@@ -249,6 +363,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "CVE-2026-15353": {
+   "level": "watch",
+   "reason": "MEDIUM。SOAPで細工した配列からメモリの一部が漏れることがある",
+   "todo": "8.2.36 / 8.3.37 以降に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "CVE-2026-16052": {
    "level": "watch",
@@ -842,6 +963,13 @@
    "kev": false,
    "at": "2026-11-11"
   },
+  "GHSA-4c2f-96cf-f5fc": {
+   "level": "check",
+   "reason": "@openeudi/openid4vpで偽の証明書を受け入れてしまうHIGH",
+   "todo": "使っていれば0.8.1に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
   "GHSA-4f5f-j737-pm58": {
    "level": "watch",
    "reason": "REDAXOで認証済み利用者がカラムを列挙。MEDIUM",
@@ -890,13 +1018,6 @@
    "todo": "silverstripe/frameworkを6.2.13に更新",
    "kev": false,
    "at": "2026-11-17"
-  },
-  "GHSA-4v9q-p283-qc2m": {
-   "level": "check",
-   "reason": "Gravのplugin-asset-map.phpで認証なしパストラバーサル。HIGH",
-   "todo": "getgrav/grav 2.0.15に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-4vqv-7265-gm2w": {
    "level": "check",
@@ -1023,13 +1144,6 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-5x38-2vff-x55p": {
-   "level": "check",
-   "reason": "node-forgeの証明書検証でbasicConstraints回避。HIGH",
-   "todo": "node-forge 1.4.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-5xjx-9qx6-jcrv": {
    "level": "check",
@@ -1192,13 +1306,6 @@
    "kev": false,
    "at": "2026-11-11"
   },
-  "GHSA-7984-qgvg-3j9c": {
-   "level": "check",
-   "reason": "OAuthLibで別クライアントのclient_idで認可される。HIGH",
-   "todo": "oauthlib 4.0.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-79wv-8rh2-9vp2": {
    "level": "check",
    "reason": "AdminNeoのX-Forwarded-PrefixでCookie属性注入。HIGH",
@@ -1297,6 +1404,13 @@
    "kev": false,
    "at": "2026-11-11"
   },
+  "GHSA-833v-v58w-294h": {
+   "level": "check",
+   "reason": "Todoist MCPがDNSリバインディングで外部サイトから操作される。利用者の少ないパッケージのCRITICAL",
+   "todo": "使っていれば10.3.3に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
   "GHSA-8494-f6mr-cjpv": {
    "level": "check",
    "reason": "@hapi/contentのContent-Disposition解析でDoS。HIGH",
@@ -1310,6 +1424,13 @@
    "todo": "code-graph-rag を 0.0.587 以降に更新",
    "kev": false,
    "at": "2026-11-10"
+  },
+  "GHSA-8776-qf3h-26r3": {
+   "level": "check",
+   "reason": "mareformaで署名のない主張がREPLICATEDに昇格できる。HIGH",
+   "todo": "使っていれば0.3.7以降に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "GHSA-87mg-5grr-rhwh": {
    "level": "watch",
@@ -1364,13 +1485,6 @@
    "level": "check",
    "reason": "phpMyFAQの二要素ログインでパスワード確認を回避。HIGH",
    "todo": "phpMyFAQ 4.1.6に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-8hrf-8g6f-7xwp": {
-   "level": "check",
-   "reason": "node-forgeのTLSレコード処理でDoS。HIGH",
-   "todo": "node-forge 1.4.1に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1437,24 +1551,10 @@
    "kev": false,
    "at": "2026-11-07"
   },
-  "GHSA-9gh4-xw24-9xh5": {
-   "level": "watch",
-   "reason": "OpenWISPのCRL APIが組織で絞られない。MEDIUM",
-   "todo": "openwisp-controller 1.3.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-9m75-vc3g-4x39": {
    "level": "check",
    "reason": "pyasn1の構造化文字列デコードで二乗時間のDoS。HIGH",
    "todo": "pyasn1 0.6.5に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-9pg5-8c7x-5hfx": {
-   "level": "watch",
-   "reason": "joserfcのJWSサイズ確認前にメモリ確保。MEDIUM",
-   "todo": "joserfc 1.7.6に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -1612,13 +1712,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-f8wv-xp27-6gq7": {
-   "level": "check",
-   "reason": "Gravのブループリント動的データでerror_logから任意ファイル書込。CRITICAL",
-   "todo": "getgrav/grav 2.0.15に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-f9j6-8p6x-r9j6": {
    "level": "check",
    "reason": "HIGH。改ざんされたdisclosureがエラーにならず黙って捨てられる",
@@ -1648,13 +1741,6 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-fm9c-5rcf-2q5p": {
-   "level": "check",
-   "reason": "pyasn1のスキーマなしコンテナデコードで二乗時間。HIGH",
-   "todo": "pyasn1 0.6.5に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-fqpv-mq26-pr4j": {
    "level": "watch",
@@ -1833,13 +1919,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-hqq3-7jhf-c5jx": {
-   "level": "check",
-   "reason": "node-forgeのTLSレコード処理でスタック枯渇。HIGH",
-   "todo": "node-forge 1.4.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-hr4h-4c45-v4q4": {
    "level": "watch",
    "reason": "compose-lintのJSON・SARIF出力経由でCIにコマンドを差し込める。LOW",
@@ -1860,6 +1939,13 @@
    "todo": "Snipe-IT 8.7.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-hxh5-gp44-rc6p": {
+   "level": "check",
+   "reason": "mareformaのverify_bundleが主張ごとの署名を確かめない。HIGH",
+   "todo": "使っていれば0.3.8に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "GHSA-j2w7-387v-m2rq": {
    "level": "check",
@@ -1952,13 +2038,6 @@
    "kev": false,
    "at": "2026-11-13"
   },
-  "GHSA-jpxq-7h8p-2q76": {
-   "level": "check",
-   "reason": "joserfcのJWE recipients無制限でCPU枯渇。HIGH",
-   "todo": "joserfc 1.7.5以降に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-jq3q-62jc-fqq9": {
    "level": "check",
    "reason": "code-review-mcp-serverのHIGH。folderPath等の引数からコマンド注入",
@@ -1979,6 +2058,13 @@
    "todo": "envd 1.3.6に更新",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-m29v-3g7g-9c63": {
+   "level": "watch",
+   "reason": "MEDIUM。mareformaのsearch_claimsが偽の行を返しうる",
+   "todo": "使っていれば0.3.8に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "GHSA-m5ph-mmg5-6w5h": {
    "level": "watch",
@@ -2099,13 +2185,6 @@
    "kev": false,
    "at": "2026-11-13"
   },
-  "GHSA-mpqx-q82w-9x46": {
-   "level": "check",
-   "reason": "GraphQL-coreの中断した検証でメモリリーク。HIGH",
-   "todo": "graphql-core 3.3.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-mrvp-7wmx-5m4h": {
    "level": "watch",
    "reason": "Contaoの画像コントローラーでパストラバーサル。MEDIUM",
@@ -2176,6 +2255,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-pj7p-238h-76pv": {
+   "level": "watch",
+   "reason": "MEDIUM。管理画面で関係ないスタッフにコメントが見える",
+   "todo": "djangocms-moderationを2.4.0に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
   "GHSA-pr4x-6fj4-gm4h": {
    "level": "watch",
    "reason": "EGroupwareのSAML認証で利用者がIdPを選べてしまう。MEDIUM",
@@ -2224,6 +2310,13 @@
    "todo": "core-bundle 5.7.12に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-q8v2-3j4h-xg2p": {
+   "level": "check",
+   "reason": "jane-php/open-api-3でクエリ引数名からコードを差し込める。利用者の少ないパッケージのCRITICAL",
+   "todo": "使っていれば7.12.0に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "GHSA-qfx6-q44v-9qqw": {
    "level": "check",
@@ -2330,6 +2423,13 @@
    "kev": false,
    "at": "2026-11-17"
   },
+  "GHSA-r7wg-f7r2-8wf7": {
+   "level": "check",
+   "reason": "axon-mcpが中身を確かめずにコードを取得する。HIGH",
+   "todo": "修正版なし。使っていれば利用を見直す",
+   "kev": false,
+   "at": "2026-11-20"
+  },
   "GHSA-r925-mgvr-h9cc": {
    "level": "check",
    "reason": "SymfonyのCache-ControlヘッダーでReDoS。HIGH",
@@ -2371,6 +2471,13 @@
    "todo": "silverstripe/frameworkを6.2.13に更新",
    "kev": false,
    "at": "2026-11-17"
+  },
+  "GHSA-rgg9-956j-3378": {
+   "level": "watch",
+   "reason": "MEDIUM。mareformaで無効にした主張がまだ昇格する",
+   "todo": "使っていれば0.3.8に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "GHSA-rhr8-3pm8-cq29": {
    "level": "check",
@@ -2484,24 +2591,17 @@
    "kev": false,
    "at": "2026-11-19"
   },
-  "GHSA-vfmf-q6x9-cw96": {
-   "level": "check",
-   "reason": "GravのdetectXss回避で格納型XSS。CRITICAL",
-   "todo": "getgrav/grav 2.0.15に更新",
+  "GHSA-vg83-hcp4-5qcc": {
+   "level": "watch",
+   "reason": "MEDIUM。DOMShellで読み取り専用のはずのevalが書き込みできる",
+   "todo": "使っていれば2.0.8に更新",
    "kev": false,
-   "at": "2026-11-02"
+   "at": "2026-11-20"
   },
   "GHSA-vj3q-vp3g-j9c8": {
    "level": "check",
    "reason": "code16 Sharpのサニタイザー回避で格納型XSS。HIGH",
    "todo": "code16/sharp 9.22.5に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-vpp8-g58w-m8mp": {
-   "level": "check",
-   "reason": "TwistedのHTTP/2サーバーで認証なしDoS。HIGH",
-   "todo": "Twisted 26.10.0rc1以降に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2645,12 +2745,26 @@
    "kev": false,
    "at": "2026-11-04"
   },
+  "GHSA-x9xr-53qx-9qcf": {
+   "level": "check",
+   "reason": "jane-php/open-api-3でヘッダー引数名からコードを差し込める。利用者の少ないパッケージのCRITICAL",
+   "todo": "使っていれば7.12.0に更新",
+   "kev": false,
+   "at": "2026-11-20"
+  },
   "GHSA-xcvg-w56q-r89m": {
    "level": "check",
    "reason": "HIGH。libtiffでTIFFを保存するときだけヒープの書き込みがあふれる",
    "todo": "Pillow 13.0.0 以降に更新",
    "kev": false,
    "at": "2026-11-13"
+  },
+  "GHSA-xfq4-8hf9-5h43": {
+   "level": "watch",
+   "reason": "MEDIUM。mareformaが署名のないrekorブロックを信用する",
+   "todo": "使っていれば0.3.8に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "GHSA-xggf-m53x-jc3f": {
    "level": "check",
@@ -2702,6 +2816,13 @@
    "todo": "使っていれば31.73.5以降に更新",
    "kev": false,
    "at": "2026-11-19"
+  },
+  "GHSA-xwcw-j52r-34x4": {
+   "level": "check",
+   "reason": "jane-php/open-api-3で引数の説明文からコードを差し込める。利用者の少ないパッケージのCRITICAL",
+   "todo": "使っていれば7.12.0に更新",
+   "kev": false,
+   "at": "2026-11-20"
   },
   "GHSA-xwg4-8hqh-79jq": {
    "level": "watch",
