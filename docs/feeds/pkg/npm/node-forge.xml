@@ -77,11 +77,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのPKCS#12でMAC偽造。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118782&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: Forge: Denial of service in TLS record processing via call stack exhaustion (HIGH)</title>
+<title>npm: Forge: Denial of service in TLS record processing via call stack exhaustion (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-hqq3-7jhf-c5jx"/>
 <id>urn:bug-hou:GHSA-hqq3-7jhf-c5jx</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのTLSレコード処理でスタック枯渇。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119187&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119187&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: Forge: Denial of Service via infinite loop in BigInteger.modInverse() with negative input (incomplete fix of CVE-2026-33891) (LOW)</title>
@@ -91,11 +91,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのmodInverseで無限ループ。LOW&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118781&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message (HIGH)</title>
+<title>npm: Forge: Denial of service in TLS record processing via a record interleaved with a fragmented handshake message (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-8hrf-8g6f-7xwp"/>
 <id>urn:bug-hou:GHSA-8hrf-8g6f-7xwp</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeのTLSレコード処理でDoS。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119188&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119188&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] npm: Forge: Regular expression denial of service in PEM decoding (pem.decode) (HIGH)</title>
@@ -112,11 +112,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; node-forgeのforge.httpでプロトタイプ汚染。MEDIUM&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-118777&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] npm: Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13 (HIGH)</title>
+<title>npm: Forge: X.509 basicConstraints bypass in verifyCertificateChain() via deprecated extension OIDs 2.5.29.10 and 2.5.29.13 (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-5x38-2vff-x55p"/>
 <id>urn:bug-hou:GHSA-5x38-2vff-x55p</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; node-forgeの証明書検証でbasicConstraints回避。HIGH&lt;br&gt;→ node-forge 1.4.1に更新&lt;/p&gt;&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119190&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;node-forge &amp;lt;= 1.4.0 → 1.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-119190&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: Forge: AES-GCM authentication bypass via unvalidated tagLength option (MEDIUM)</title>

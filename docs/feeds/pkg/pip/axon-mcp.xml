@@ -7,10 +7,10 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Axon: Download of Code Without Integrity Check in axon-mcp (HIGH)</title>
+<title>[要確認] pip: Axon: Download of Code Without Integrity Check in axon-mcp (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r7wg-f7r2-8wf7"/>
 <id>urn:bug-hou:GHSA-r7wg-f7r2-8wf7</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;axon-mcp &amp;lt;= 0.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-76818&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; axon-mcpが中身を確かめずにコードを取得する。HIGH&lt;br&gt;→ 修正版なし。使っていれば利用を見直す&lt;/p&gt;&lt;p&gt;axon-mcp &amp;lt;= 0.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-76818&lt;/p&gt;</content>
 </entry>
 </feed>

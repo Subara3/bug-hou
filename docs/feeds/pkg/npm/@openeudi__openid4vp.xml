@@ -7,10 +7,10 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature (HIGH)</title>
+<title>[要確認] npm: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4c2f-96cf-f5fc"/>
 <id>urn:bug-hou:GHSA-4c2f-96cf-f5fc</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@openeudi/openid4vp &amp;lt;= 0.8.0 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-75522&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @openeudi/openid4vpで偽の証明書を受け入れてしまうHIGH&lt;br&gt;→ 使っていれば0.8.1に更新&lt;/p&gt;&lt;p&gt;@openeudi/openid4vp &amp;lt;= 0.8.0 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-75522&lt;/p&gt;</content>
 </entry>
 </feed>

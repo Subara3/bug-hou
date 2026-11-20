@@ -7,11 +7,11 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: Mareforma: transparency_logged trusts the unsigned rekor block (MEDIUM)</title>
+<title>[様子見] Python: Mareforma: transparency_logged trusts the unsigned rekor block (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xfq4-8hf9-5h43"/>
 <id>urn:bug-hou:GHSA-xfq4-8hf9-5h43</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71534&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。mareformaが署名のないrekorブロックを信用する&lt;br&gt;→ 使っていれば0.3.8に更新&lt;/p&gt;&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71534&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: django-filer: Missing per-object authorization on `discard` and `edit_redirect` version transitions (MEDIUM)</title>
@@ -21,46 +21,46 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。版の破棄・編集への切り替えで対象ごとの権限確認がない&lt;br&gt;→ django-filerを3.5.0に更新&lt;/p&gt;&lt;p&gt;django-filer &amp;lt;= 3.4.4 → 3.5.0&lt;/p&gt;&lt;p&gt;CVE-2026-69131&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Mareforma: invalidated claims still promote to REPLICATED (MEDIUM)</title>
+<title>[様子見] Python: Mareforma: invalidated claims still promote to REPLICATED (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rgg9-956j-3378"/>
 <id>urn:bug-hou:GHSA-rgg9-956j-3378</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71500&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。mareformaで無効にした主張がまだ昇格する&lt;br&gt;→ 使っていれば0.3.8に更新&lt;/p&gt;&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71500&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Axon: Download of Code Without Integrity Check in axon-mcp (HIGH)</title>
+<title>[要確認] Python: Axon: Download of Code Without Integrity Check in axon-mcp (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-r7wg-f7r2-8wf7"/>
 <id>urn:bug-hou:GHSA-r7wg-f7r2-8wf7</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;axon-mcp &amp;lt;= 0.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-76818&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; axon-mcpが中身を確かめずにコードを取得する。HIGH&lt;br&gt;→ 修正版なし。使っていれば利用を見直す&lt;/p&gt;&lt;p&gt;axon-mcp &amp;lt;= 0.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-76818&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist (MEDIUM)</title>
+<title>[様子見] Python: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-pj7p-238h-76pv"/>
 <id>urn:bug-hou:GHSA-pj7p-238h-76pv</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;djangocms-moderation &amp;lt;= 2.3.0 → 2.4.0&lt;/p&gt;&lt;p&gt;CVE-2026-69139&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。管理画面で関係ないスタッフにコメントが見える&lt;br&gt;→ djangocms-moderationを2.4.0に更新&lt;/p&gt;&lt;p&gt;djangocms-moderation &amp;lt;= 2.3.0 → 2.4.0&lt;/p&gt;&lt;p&gt;CVE-2026-69139&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Mareforma: search_claims skips verify-on-read, serving forged rows (MEDIUM)</title>
+<title>[様子見] Python: Mareforma: search_claims skips verify-on-read, serving forged rows (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-m29v-3g7g-9c63"/>
 <id>urn:bug-hou:GHSA-m29v-3g7g-9c63</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mareforma = 0.3.7 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71533&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。mareformaのsearch_claimsが偽の行を返しうる&lt;br&gt;→ 使っていれば0.3.8に更新&lt;/p&gt;&lt;p&gt;mareforma = 0.3.7 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71533&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Mareforma: verify_bundle never checks a per-claim signature (HIGH)</title>
+<title>[要確認] Python: Mareforma: verify_bundle never checks a per-claim signature (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-hxh5-gp44-rc6p"/>
 <id>urn:bug-hou:GHSA-hxh5-gp44-rc6p</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71536&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mareformaのverify_bundleが主張ごとの署名を確かめない。HIGH&lt;br&gt;→ 使っていれば0.3.8に更新&lt;/p&gt;&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71536&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path (HIGH)</title>
+<title>[要確認] Python: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-8776-qf3h-26r3"/>
 <id>urn:bug-hou:GHSA-8776-qf3h-26r3</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.7 → 0.3.7&lt;/p&gt;&lt;p&gt;CVE-2026-71535&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mareformaで署名のない主張がREPLICATEDに昇格できる。HIGH&lt;br&gt;→ 使っていれば0.3.7以降に更新&lt;/p&gt;&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.7 → 0.3.7&lt;/p&gt;&lt;p&gt;CVE-2026-71535&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization (MEDIUM)</title>

@@ -14,11 +14,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pyasn1のREALデコードで二乗時間のDoS。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;lt;= 0.6.4 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119197&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] pip: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding (HIGH)</title>
+<title>pip: pyasn1 has quadratic CPU use in schemaless BER/CER/DER container decoding (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-fm9c-5rcf-2q5p"/>
 <id>urn:bug-hou:GHSA-fm9c-5rcf-2q5p</id>
 <updated>2026-10-30T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; pyasn1のスキーマなしコンテナデコードで二乗時間。HIGH&lt;br&gt;→ pyasn1 0.6.5に更新&lt;/p&gt;&lt;p&gt;pyasn1 &amp;gt;= 0.3.3, &amp;lt; 0.6.5 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119194&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;pyasn1 &amp;gt;= 0.3.3, &amp;lt; 0.6.5 → 0.6.5&lt;/p&gt;&lt;p&gt;CVE-2026-119194&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] pip: pyasn1 has quadratic-time denial of service in constructed string and indefinite-length ANY decoding (HIGH)</title>

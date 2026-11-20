@@ -7,10 +7,10 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server (CRITICAL)</title>
+<title>[要確認] npm: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-833v-v58w-294h"/>
 <id>urn:bug-hou:GHSA-833v-v58w-294h</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@doist/todoist-mcp &amp;lt;= 10.3.2 → 10.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-76807&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Todoist MCPがDNSリバインディングで外部サイトから操作される。利用者の少ないパッケージのCRITICAL&lt;br&gt;→ 使っていれば10.3.3に更新&lt;/p&gt;&lt;p&gt;@doist/todoist-mcp &amp;lt;= 10.3.2 → 10.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-76807&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,11 +7,11 @@
 <updated>2026-11-19T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write (MEDIUM)</title>
+<title>[様子見] Node.js: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vg83-hcp4-5qcc"/>
 <id>urn:bug-hou:GHSA-vg83-hcp4-5qcc</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@apireno/domshell &amp;lt; 2.0.8 → 2.0.8&lt;/p&gt;&lt;p&gt;CVE-2026-75518&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。DOMShellで読み取り専用のはずのevalが書き込みできる&lt;br&gt;→ 使っていれば2.0.8に更新&lt;/p&gt;&lt;p&gt;@apireno/domshell &amp;lt; 2.0.8 → 2.0.8&lt;/p&gt;&lt;p&gt;CVE-2026-75518&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: install-artifact-from-github loads downloaded native artifacts without integrity verification (HIGH)</title>
@@ -21,11 +21,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; ダウンロードしたネイティブ部品を改ざんの確認なしで読み込む&lt;br&gt;→ install-artifact-from-githubを1.7.0に更新&lt;/p&gt;&lt;p&gt;install-artifact-from-github &amp;lt;= 1.6.0 → 1.7.0&lt;/p&gt;&lt;p&gt;CVE-2026-73864&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server (CRITICAL)</title>
+<title>[要確認] Node.js: Todoist MCP Server: Browser DNS rebinding lets websites write and delete Todoist data through local MCP server (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-833v-v58w-294h"/>
 <id>urn:bug-hou:GHSA-833v-v58w-294h</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@doist/todoist-mcp &amp;lt;= 10.3.2 → 10.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-76807&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Todoist MCPがDNSリバインディングで外部サイトから操作される。利用者の少ないパッケージのCRITICAL&lt;br&gt;→ 使っていれば10.3.3に更新&lt;/p&gt;&lt;p&gt;@doist/todoist-mcp &amp;lt;= 10.3.2 → 10.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-76807&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: Outstatic: Authenticated GitHub REST proxy can send OAuth token to non-GitHub origins (MEDIUM)</title>
@@ -35,11 +35,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。ログイン済みの人がOAuthトークンをGitHub以外へ送らせられる&lt;br&gt;→ outstaticを2.2.1に更新&lt;/p&gt;&lt;p&gt;outstatic &amp;lt;= 2.2.0 → 2.2.1&lt;/p&gt;&lt;p&gt;CVE-2026-71425&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature (HIGH)</title>
+<title>[要確認] Node.js: OpenID4VP: X.509 chain validation accepts a forged certificate that reuses a trusted anchor's Subject DN without verifying its signature (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-4c2f-96cf-f5fc"/>
 <id>urn:bug-hou:GHSA-4c2f-96cf-f5fc</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@openeudi/openid4vp &amp;lt;= 0.8.0 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-75522&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @openeudi/openid4vpで偽の証明書を受け入れてしまうHIGH&lt;br&gt;→ 使っていれば0.8.1に更新&lt;/p&gt;&lt;p&gt;@openeudi/openid4vp &amp;lt;= 0.8.0 → 0.8.1&lt;/p&gt;&lt;p&gt;CVE-2026-75522&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: mssql-mcp-core: SQL injection in mssql-mcp write tools via unparameterized table names and WHERE clauses (HIGH)</title>
