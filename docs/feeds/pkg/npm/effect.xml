@@ -7,11 +7,11 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Effect: ReDoS in Schema.TemplateLiteral compiled regex (HIGH)</title>
+<title>[要確認] npm: Effect: ReDoS in Schema.TemplateLiteral compiled regex (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7589-6fvf-x4pw"/>
 <id>urn:bug-hou:GHSA-7589-6fvf-x4pw</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;effect &amp;lt;= 3.22.0 → 3.22.1&lt;/p&gt;&lt;p&gt;CVE-2026-121707&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; EffectのSchema.TemplateLiteralの正規表現でReDoS&lt;br&gt;→ effectを3.22.1に更新&lt;/p&gt;&lt;p&gt;effect &amp;lt;= 3.22.0 → 3.22.1&lt;/p&gt;&lt;p&gt;CVE-2026-121707&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: Effect: Cookie attribute injection via domain, path, and name fields in @effect/platform makeCookie() (MEDIUM)</title>

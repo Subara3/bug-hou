@@ -7,17 +7,17 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Mistune: Quadratic-time DoS in inline image parsing (precedence_scan) bypasses not-is-image guards (HIGH)</title>
+<title>[要確認] pip: Mistune: Quadratic-time DoS in inline image parsing (precedence_scan) bypasses not-is-image guards (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-ww7q-mxrj-5ffg"/>
 <id>urn:bug-hou:GHSA-ww7q-mxrj-5ffg</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mistune &amp;lt; 3.3.4 → 3.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-97699&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Mistuneの画像解析で処理が重くなりサービス停止&lt;br&gt;→ mistuneを3.3.4に更新&lt;/p&gt;&lt;p&gt;mistune &amp;lt; 3.3.4 → 3.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-97699&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: Mistune: Quadratic-time DoS in parse_link_href via unbounded parenthesis scan on empty-label links (HIGH)</title>
+<title>[要確認] pip: Mistune: Quadratic-time DoS in parse_link_href via unbounded parenthesis scan on empty-label links (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-phmp-hrw4-r36r"/>
 <id>urn:bug-hou:GHSA-phmp-hrw4-r36r</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mistune &amp;lt; 3.3.4 → 3.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-97698&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Mistuneのリンク解析で処理が重くなりサービス停止&lt;br&gt;→ mistuneを3.3.4に更新&lt;/p&gt;&lt;p&gt;mistune &amp;lt; 3.3.4 → 3.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-97698&lt;/p&gt;</content>
 </entry>
 </feed>

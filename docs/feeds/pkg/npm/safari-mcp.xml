@@ -7,10 +7,10 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped) (MEDIUM)</title>
+<title>[様子見] npm: Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4rj4-rcrq-gr92"/>
 <id>urn:bug-hou:GHSA-4rj4-rcrq-gr92</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;safari-mcp &amp;lt; 2.22.15 → 2.22.15&lt;/p&gt;&lt;p&gt;GHSA-4rj4-rcrq-gr92&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Safari MCPで引数からJavaScriptを差し込める。MEDIUM&lt;/p&gt;&lt;p&gt;safari-mcp &amp;lt; 2.22.15 → 2.22.15&lt;/p&gt;&lt;p&gt;GHSA-4rj4-rcrq-gr92&lt;/p&gt;</content>
 </entry>
 </feed>

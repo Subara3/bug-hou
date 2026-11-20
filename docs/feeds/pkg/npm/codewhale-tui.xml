@@ -7,17 +7,17 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution (HIGH)</title>
+<title>[要確認] npm: CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-8hp3-xxrg-v9c8"/>
 <id>urn:bug-hou:GHSA-8hp3-xxrg-v9c8</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83817&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CodeWhaleの定期実行で自動承認が初期設定で有効になっている&lt;br&gt;→ codewhaleを0.9.0に更新&lt;/p&gt;&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83817&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE (HIGH)</title>
+<title>[要確認] npm: CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3mgh-93r5-r7jf"/>
 <id>urn:bug-hou:GHSA-3mgh-93r5-r7jf</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83816&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CodeWhaleでシェル実行が自動承認され、気づかずにRCE&lt;br&gt;→ codewhaleを0.9.0に更新&lt;/p&gt;&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83816&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -7,10 +7,10 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery (LOW)</title>
+<title>[様子見] pip: iSponsorBlockTV: SSRF via Malicious SSDP Response Spoofing in Local Device Discovery (LOW)</title>
 <link href="https://github.com/advisories/GHSA-56v3-jrq2-4q9m"/>
 <id>urn:bug-hou:GHSA-56v3-jrq2-4q9m</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;iSponsorBlockTV &amp;lt;= 2.10.0 → 2.11.0&lt;/p&gt;&lt;p&gt;CVE-2026-77597&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; iSponsorBlockTVの機器探索で偽の応答からSSRF。LOW&lt;/p&gt;&lt;p&gt;iSponsorBlockTV &amp;lt;= 2.10.0 → 2.11.0&lt;/p&gt;&lt;p&gt;CVE-2026-77597&lt;/p&gt;</content>
 </entry>
 </feed>

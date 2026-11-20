@@ -7,10 +7,10 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak (MEDIUM)</title>
+<title>[様子見] npm: tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-hj9c-qx2w-g7mh"/>
 <id>urn:bug-hou:GHSA-hj9c-qx2w-g7mh</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tiny-secp256k1 &amp;gt;= 2.1.0, &amp;lt; 2.2.5 → 2.2.5, @bitcoin-js/tiny-secp256k1-asmjs &amp;gt;= 2.2.2, &amp;lt; 2.2.5 → 2.2.5&lt;/p&gt;&lt;p&gt;CVE-2026-107853&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; tiny-secp256k1でwasm失敗後に不正な値を受け入れる。MEDIUM&lt;/p&gt;&lt;p&gt;tiny-secp256k1 &amp;gt;= 2.1.0, &amp;lt; 2.2.5 → 2.2.5, @bitcoin-js/tiny-secp256k1-asmjs &amp;gt;= 2.2.2, &amp;lt; 2.2.5 → 2.2.5&lt;/p&gt;&lt;p&gt;CVE-2026-107853&lt;/p&gt;</content>
 </entry>
 </feed>

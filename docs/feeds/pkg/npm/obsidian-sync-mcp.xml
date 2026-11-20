@@ -7,10 +7,10 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode) (HIGH)</title>
+<title>[要確認] npm: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-mx6p-3fg7-v6pj"/>
 <id>urn:bug-hou:GHSA-mx6p-3fg7-v6pj</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;obsidian-sync-mcp &amp;lt;= 0.5.6 → 0.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-77283&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; obsidian-sync-mcpを認証なしで使うとDNSリバインディングで操作される&lt;br&gt;→ obsidian-sync-mcpを0.5.7に更新&lt;/p&gt;&lt;p&gt;obsidian-sync-mcp &amp;lt;= 0.5.6 → 0.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-77283&lt;/p&gt;</content>
 </entry>
 </feed>

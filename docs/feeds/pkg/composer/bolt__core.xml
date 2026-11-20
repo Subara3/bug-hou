@@ -7,38 +7,38 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: Bolt: Open redirect enables post-authentication redirection to arbitrary domains (MEDIUM)</title>
+<title>[様子見] composer: Bolt: Open redirect enables post-authentication redirection to arbitrary domains (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xr6g-7g83-j865"/>
 <id>urn:bug-hou:GHSA-xr6g-7g83-j865</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77376&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Boltでログイン後に任意のサイトへ飛ばされる。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77376&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Bolt ListFormatHelper SQL injection (MEDIUM)</title>
+<title>[様子見] composer: Bolt ListFormatHelper SQL injection (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-r7h9-qx4h-77j5"/>
 <id>urn:bug-hou:GHSA-r7h9-qx4h-77j5</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77378&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; BoltのListFormatHelperでSQLインジェクション。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77378&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Bolt: Information disclosure through unfiltered public relation API endpoint (MEDIUM)</title>
+<title>[様子見] composer: Bolt: Information disclosure through unfiltered public relation API endpoint (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6358-jg5p-hmjj"/>
 <id>urn:bug-hou:GHSA-6358-jg5p-hmjj</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77379&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Boltの公開APIから情報が漏れる。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77379&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Bolt: Prevent SSRF due to unchecked followed redirects (MEDIUM)</title>
+<title>[様子見] composer: Bolt: Prevent SSRF due to unchecked followed redirects (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-3xjf-9q55-vxw4"/>
 <id>urn:bug-hou:GHSA-3xjf-9q55-vxw4</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.5 → 6.1.5&lt;/p&gt;&lt;p&gt;CVE-2026-77380&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Boltでリダイレクト先を確かめずSSRF。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.5 → 6.1.5&lt;/p&gt;&lt;p&gt;CVE-2026-77380&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints (MEDIUM)</title>
+<title>[様子見] composer: Bolt: Server-Side Request Forgery (SSRF) in URL-upload and embed endpoints (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-2535-j2pq-qq4r"/>
 <id>urn:bug-hou:GHSA-2535-j2pq-qq4r</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77377&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; BoltのURLアップロードと埋め込み機能でSSRF。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77377&lt;/p&gt;</content>
 </entry>
 </feed>

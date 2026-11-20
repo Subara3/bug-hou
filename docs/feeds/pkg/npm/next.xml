@@ -7,39 +7,39 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params (MEDIUM)</title>
+<title>[様子見] npm: Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vvgp-ww4w-46vf"/>
 <id>urn:bug-hou:GHSA-vvgp-ww4w-46vf</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.4.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119350&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsのCache Componentsでキャッシュ汚染。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.4.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119350&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments (MEDIUM)</title>
+<title>[様子見] npm: Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rhh4-g77r-r9qj"/>
 <id>urn:bug-hou:GHSA-rhh4-g77r-r9qj</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119349&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsのuse cacheで別ユーザーのキャッシュが見える。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119349&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses (MEDIUM)</title>
+<title>[様子見] npm: Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-pc58-hwjq-p385"/>
 <id>urn:bug-hou:GHSA-pc58-hwjq-p385</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5, next &amp;lt;= 15.5.28 → 15.5.29&lt;/p&gt;&lt;p&gt;CVE-2026-119348&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; セルフホストのNext.jsで別の利用者の応答が混ざる。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5, next &amp;lt;= 15.5.28 → 15.5.29&lt;/p&gt;&lt;p&gt;CVE-2026-119348&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes (MEDIUM)</title>
+<title>[様子見] npm: Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-f3mh-rxg3-f5g2"/>
 <id>urn:bug-hou:GHSA-f3mh-rxg3-f5g2</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119346&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsのEdge runtimeでHttpOnlyのクッキーが漏れる。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119346&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>npm: Next.js: SVG rejection bypass in the image optimization (MEDIUM)</title>
+<title>[様子見] npm: Next.js: SVG rejection bypass in the image optimization (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7qx7-33qx-rqx2"/>
 <id>urn:bug-hou:GHSA-7qx7-33qx-rqx2</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119347&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsの画像最適化でSVGの拒否を回避。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119347&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] npm: Next.js: Cache leak across root param values in nested 'use cache' functions via delayed inner stream metadata (MEDIUM)</title>

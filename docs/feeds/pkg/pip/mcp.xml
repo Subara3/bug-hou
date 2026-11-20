@@ -7,11 +7,11 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Model Context Protocol Python SDK: OAuth client could send credentials to an authorization server chosen by the MCP server (HIGH)</title>
+<title>[要確認] pip: Model Context Protocol Python SDK: OAuth client could send credentials to an authorization server chosen by the MCP server (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-qx49-fqc8-xw99"/>
 <id>urn:bug-hou:GHSA-qx49-fqc8-xw99</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;mcp &amp;gt;= 2.0.0a1, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.9.1, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-115563&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; MCP Python SDKのOAuthで認証情報が別のサーバーに送られる&lt;br&gt;→ mcpを1.30.0 / 2.2.0に更新&lt;/p&gt;&lt;p&gt;mcp &amp;gt;= 2.0.0a1, &amp;lt; 2.2.0 → 2.2.0, mcp &amp;gt;= 1.9.1, &amp;lt; 1.30.0 → 1.30.0&lt;/p&gt;&lt;p&gt;CVE-2026-115563&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>pip: Model Context Protocol Python SDK: Client fetched server-chosen $ref URLs while validating tool results against output schemas (MEDIUM)</title>

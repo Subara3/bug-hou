@@ -7,88 +7,88 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params (MEDIUM)</title>
+<title>[様子見] Node.js: Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vvgp-ww4w-46vf"/>
 <id>urn:bug-hou:GHSA-vvgp-ww4w-46vf</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.4.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119350&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsのCache Componentsでキャッシュ汚染。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.4.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119350&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments (MEDIUM)</title>
+<title>[様子見] Node.js: Next.js: Cross-user cache disclosure and poisoning in Next.js use cache with binary arguments (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-rhh4-g77r-r9qj"/>
 <id>urn:bug-hou:GHSA-rhh4-g77r-r9qj</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119349&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsのuse cacheで別ユーザーのキャッシュが見える。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119349&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses (MEDIUM)</title>
+<title>[様子見] Node.js: Next.js: Cross-client response injection and disclosure in self-hosted Next.js applications forwarding fetched responses (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-pc58-hwjq-p385"/>
 <id>urn:bug-hou:GHSA-pc58-hwjq-p385</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5, next &amp;lt;= 15.5.28 → 15.5.29&lt;/p&gt;&lt;p&gt;CVE-2026-119348&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; セルフホストのNext.jsで別の利用者の応答が混ざる。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5, next &amp;lt;= 15.5.28 → 15.5.29&lt;/p&gt;&lt;p&gt;CVE-2026-119348&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode) (HIGH)</title>
+<title>[要確認] Node.js: obsidian-sync-mcp: Missing Host/Origin validation lets a public website drive a victim's Obsidian vault via DNS rebinding (no-auth mode) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-mx6p-3fg7-v6pj"/>
 <id>urn:bug-hou:GHSA-mx6p-3fg7-v6pj</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;obsidian-sync-mcp &amp;lt;= 0.5.6 → 0.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-77283&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; obsidian-sync-mcpを認証なしで使うとDNSリバインディングで操作される&lt;br&gt;→ obsidian-sync-mcpを0.5.7に更新&lt;/p&gt;&lt;p&gt;obsidian-sync-mcp &amp;lt;= 0.5.6 → 0.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-77283&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Etherpad: Pre-auth arbitrary file read (CRITICAL)</title>
+<title>[要対応] Node.js: Etherpad: Pre-auth arbitrary file read (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-mc8w-wjhw-45x5"/>
 <id>urn:bug-hou:GHSA-mc8w-wjhw-45x5</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;ep_etherpad-lite &amp;gt;= 1.8.14, &amp;lt; 3.3.3 → 3.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-114516&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Etherpadでログインなしに任意のファイルを読める。CRITICAL&lt;br&gt;→ ep_etherpad-liteを3.3.3に更新&lt;/p&gt;&lt;p&gt;ep_etherpad-lite &amp;gt;= 1.8.14, &amp;lt; 3.3.3 → 3.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-114516&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak (MEDIUM)</title>
+<title>[様子見] Node.js: tiny-secp256k1: Stale buffer after ignored wasm failure accepts invalid infinity tweak (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-hj9c-qx2w-g7mh"/>
 <id>urn:bug-hou:GHSA-hj9c-qx2w-g7mh</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tiny-secp256k1 &amp;gt;= 2.1.0, &amp;lt; 2.2.5 → 2.2.5, @bitcoin-js/tiny-secp256k1-asmjs &amp;gt;= 2.2.2, &amp;lt; 2.2.5 → 2.2.5&lt;/p&gt;&lt;p&gt;CVE-2026-107853&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; tiny-secp256k1でwasm失敗後に不正な値を受け入れる。MEDIUM&lt;/p&gt;&lt;p&gt;tiny-secp256k1 &amp;gt;= 2.1.0, &amp;lt; 2.2.5 → 2.2.5, @bitcoin-js/tiny-secp256k1-asmjs &amp;gt;= 2.2.2, &amp;lt; 2.2.5 → 2.2.5&lt;/p&gt;&lt;p&gt;CVE-2026-107853&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes (MEDIUM)</title>
+<title>[様子見] Node.js: Next.js: HttpOnly cookie exposure through internal response header on Next.js Edge runtime routes (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-f3mh-rxg3-f5g2"/>
 <id>urn:bug-hou:GHSA-f3mh-rxg3-f5g2</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119346&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsのEdge runtimeでHttpOnlyのクッキーが漏れる。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119346&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution (HIGH)</title>
+<title>[要確認] Node.js: CodeWhale: Automation auto_approve defaults to true, bypassing the task-path hardening fix for silent recurring agent execution (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-8hp3-xxrg-v9c8"/>
 <id>urn:bug-hou:GHSA-8hp3-xxrg-v9c8</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83817&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CodeWhaleの定期実行で自動承認が初期設定で有効になっている&lt;br&gt;→ codewhaleを0.9.0に更新&lt;/p&gt;&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83817&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Next.js: SVG rejection bypass in the image optimization (MEDIUM)</title>
+<title>[様子見] Node.js: Next.js: SVG rejection bypass in the image optimization (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-7qx7-33qx-rqx2"/>
 <id>urn:bug-hou:GHSA-7qx7-33qx-rqx2</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119347&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Next.jsの画像最適化でSVGの拒否を回避。MEDIUM&lt;/p&gt;&lt;p&gt;next &amp;gt;= 15.0.0, &amp;lt;= 15.5.28 → 15.5.29, next &amp;gt;= 16.0.0, &amp;lt;= 16.4.4 → 16.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-119347&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Effect: ReDoS in Schema.TemplateLiteral compiled regex (HIGH)</title>
+<title>[要確認] Node.js: Effect: ReDoS in Schema.TemplateLiteral compiled regex (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-7589-6fvf-x4pw"/>
 <id>urn:bug-hou:GHSA-7589-6fvf-x4pw</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;effect &amp;lt;= 3.22.0 → 3.22.1&lt;/p&gt;&lt;p&gt;CVE-2026-121707&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; EffectのSchema.TemplateLiteralの正規表現でReDoS&lt;br&gt;→ effectを3.22.1に更新&lt;/p&gt;&lt;p&gt;effect &amp;lt;= 3.22.0 → 3.22.1&lt;/p&gt;&lt;p&gt;CVE-2026-121707&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped) (MEDIUM)</title>
+<title>[様子見] Node.js: Safari MCP: JavaScript injection through single-quoted tool arguments (backslash not escaped) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4rj4-rcrq-gr92"/>
 <id>urn:bug-hou:GHSA-4rj4-rcrq-gr92</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;safari-mcp &amp;lt; 2.22.15 → 2.22.15&lt;/p&gt;&lt;p&gt;GHSA-4rj4-rcrq-gr92&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Safari MCPで引数からJavaScriptを差し込める。MEDIUM&lt;/p&gt;&lt;p&gt;safari-mcp &amp;lt; 2.22.15 → 2.22.15&lt;/p&gt;&lt;p&gt;GHSA-4rj4-rcrq-gr92&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Node.js: CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE (HIGH)</title>
+<title>[要確認] Node.js: CodeWhale: exec_shell parallel-readonly classifier auto-approves fd/rg/git grep exec flags enabling silent RCE (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-3mgh-93r5-r7jf"/>
 <id>urn:bug-hou:GHSA-3mgh-93r5-r7jf</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83816&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; CodeWhaleでシェル実行が自動承認され、気づかずにRCE&lt;br&gt;→ codewhaleを0.9.0に更新&lt;/p&gt;&lt;p&gt;codewhale-tui &amp;lt;= 0.8.67 → 0.9.0, codewhale &amp;lt;= 0.8.67 → 0.9.0&lt;/p&gt;&lt;p&gt;CVE-2026-83816&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: DOMShell: domshell_eval classified as read-tier can execute side-effecting JavaScript without --allow-write (MEDIUM)</title>

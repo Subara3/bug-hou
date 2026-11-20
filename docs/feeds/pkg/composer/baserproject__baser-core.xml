@@ -7,17 +7,17 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: baserCMS administrative API authorization bypass through session fallback (MEDIUM)</title>
+<title>[様子見] composer: baserCMS administrative API authorization bypass through session fallback (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-wgvx-x5g3-9v29"/>
 <id>urn:bug-hou:GHSA-wgvx-x5g3-9v29</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;baserproject/baser-core &amp;lt;= 5.2.3 → 5.3.0&lt;/p&gt;&lt;p&gt;CVE-2026-63012&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; baserCMSの管理APIでセッション経由の認可回避。MEDIUM&lt;/p&gt;&lt;p&gt;baserproject/baser-core &amp;lt;= 5.2.3 → 5.3.0&lt;/p&gt;&lt;p&gt;CVE-2026-63012&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>composer: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass) (HIGH)</title>
+<title>[要確認] composer: baserCMS: Path Traversal Bypass via realpath() in BcThemeFileService (CVE-2026-30940 Patch Bypass) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-2pj4-v76f-wjvx"/>
 <id>urn:bug-hou:GHSA-2pj4-v76f-wjvx</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;baserproject/baser-core &amp;lt; 5.3.0 → 5.3.0&lt;/p&gt;&lt;p&gt;CVE-2026-62955&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; baserCMSのテーマファイル処理でパストラバーサル。過去の修正の回避&lt;br&gt;→ baser-coreを5.3.0に更新&lt;/p&gt;&lt;p&gt;baserproject/baser-core &amp;lt; 5.3.0 → 5.3.0&lt;/p&gt;&lt;p&gt;CVE-2026-62955&lt;/p&gt;</content>
 </entry>
 </feed>

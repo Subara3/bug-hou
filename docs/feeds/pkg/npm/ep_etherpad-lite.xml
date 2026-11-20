@@ -7,10 +7,10 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Etherpad: Pre-auth arbitrary file read (CRITICAL)</title>
+<title>[要対応] npm: Etherpad: Pre-auth arbitrary file read (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-mc8w-wjhw-45x5"/>
 <id>urn:bug-hou:GHSA-mc8w-wjhw-45x5</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;ep_etherpad-lite &amp;gt;= 1.8.14, &amp;lt; 3.3.3 → 3.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-114516&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Etherpadでログインなしに任意のファイルを読める。CRITICAL&lt;br&gt;→ ep_etherpad-liteを3.3.3に更新&lt;/p&gt;&lt;p&gt;ep_etherpad-lite &amp;gt;= 1.8.14, &amp;lt; 3.3.3 → 3.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-114516&lt;/p&gt;</content>
 </entry>
 </feed>

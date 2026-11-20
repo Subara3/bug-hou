@@ -7,11 +7,11 @@
 <updated>2026-11-20T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php) (HIGH)</title>
+<title>[要確認] composer: Jane: $ref resolution performs SSRF + LFI (path traversal) at code-generation time (jane-php) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-c3cj-3p6p-j822"/>
 <id>urn:bug-hou:GHSA-c3cj-3p6p-j822</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63415&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Janeのコード生成時に$refの解決でSSRFとファイル読み出し&lt;br&gt;→ jane-php/open-api-3を7.12.0に更新&lt;/p&gt;&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63415&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] composer: Jane: Instantiation RCE via parameter description -&gt; raw PHPDoc */ breakout (jane-php/open-api-3) (CRITICAL)</title>
