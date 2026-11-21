@@ -28,10 +28,10 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; セレクタの処理で正規表現が極端に遅くなるHIGH。広く使われる本体ではない&lt;br&gt;→ soupsieve 3.0.2に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt;= 2.10 → 3.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-126191&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] pip: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
+<title>pip: Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4j63-6c4x-wfg4"/>
 <id>urn:bug-hou:GHSA-4j63-6c4x-wfg4</id>
 <updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。:has()内の兄弟セレクタで外部のHTMLの処理に時間がかかる&lt;br&gt;→ soupsieve 2.10.0 以降に更新&lt;/p&gt;&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;soupsieve &amp;lt;= 2.9.2 → 2.10.0&lt;/p&gt;&lt;p&gt;CVE-2026-126192&lt;/p&gt;</content>
 </entry>
 </feed>

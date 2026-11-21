@@ -7,10 +7,10 @@
 <updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: svglib: Exponential resource consumption via nested &lt;use&gt; references in svg2rlg (HIGH)</title>
+<title>[要確認] pip: svglib: Exponential resource consumption via nested &lt;use&gt; references in svg2rlg (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-555j-qj3j-c8jv"/>
 <id>urn:bug-hou:GHSA-555j-qj3j-c8jv</id>
 <updated>2026-11-21T00:00:00Z</updated>
-<content type="html">&lt;p&gt;svglib &amp;lt;= 2.3.0 → 2.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-132275&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; svglibで入れ子のuse参照を含むSVGを変換すると資源を使い切るHIGH&lt;br&gt;→ svglibを2.3.1に更新&lt;/p&gt;&lt;p&gt;svglib &amp;lt;= 2.3.0 → 2.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-132275&lt;/p&gt;</content>
 </entry>
 </feed>

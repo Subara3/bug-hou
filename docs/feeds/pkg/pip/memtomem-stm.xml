@@ -7,17 +7,17 @@
 <updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session (LOW)</title>
+<title>[様子見] pip: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session (LOW)</title>
 <link href="https://github.com/advisories/GHSA-72jh-722p-rqr3"/>
 <id>urn:bug-hou:GHSA-72jh-722p-rqr3</id>
 <updated>2026-11-21T00:00:00Z</updated>
-<content type="html">&lt;p&gt;memtomem-stm &amp;gt;= 0.1.2, &amp;lt;= 0.1.33 → 0.1.34&lt;/p&gt;&lt;p&gt;CVE-2026-77331&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; memtomem-stmの再接続まわりの不具合で深刻度は低&lt;br&gt;→ memtomem-stmを0.1.34に更新&lt;/p&gt;&lt;p&gt;memtomem-stm &amp;gt;= 0.1.2, &amp;lt;= 0.1.33 → 0.1.34&lt;/p&gt;&lt;p&gt;CVE-2026-77331&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>pip: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary (LOW)</title>
+<title>[様子見] pip: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary (LOW)</title>
 <link href="https://github.com/advisories/GHSA-43hx-xm7w-3mhj"/>
 <id>urn:bug-hou:GHSA-43hx-xm7w-3mhj</id>
 <updated>2026-11-21T00:00:00Z</updated>
-<content type="html">&lt;p&gt;memtomem-stm &amp;gt;= 0.1.0, &amp;lt;= 0.1.33 → 0.1.34&lt;/p&gt;&lt;p&gt;CVE-2026-77332&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; memtomem-stmでMarkdownの区切りを越えてデータが出る。深刻度は低&lt;br&gt;→ memtomem-stmを0.1.34に更新&lt;/p&gt;&lt;p&gt;memtomem-stm &amp;gt;= 0.1.0, &amp;lt;= 0.1.33 → 0.1.34&lt;/p&gt;&lt;p&gt;CVE-2026-77332&lt;/p&gt;</content>
 </entry>
 </feed>

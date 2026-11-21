@@ -7,10 +7,10 @@
 <updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: Inscriptis: Quadratic memory growth from sibling &lt;table&gt; elements in get_text() (MEDIUM)</title>
+<title>[様子見] pip: Inscriptis: Quadratic memory growth from sibling &lt;table&gt; elements in get_text() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q87h-c5m7-659j"/>
 <id>urn:bug-hou:GHSA-q87h-c5m7-659j</id>
 <updated>2026-11-21T00:00:00Z</updated>
-<content type="html">&lt;p&gt;inscriptis &amp;gt;= 2.0.0, &amp;lt;= 2.7.5 → 2.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-132277&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Inscriptisでtableが並ぶHTMLを渡すとメモリが増える。深刻度は中&lt;br&gt;→ inscriptisを2.7.6に更新&lt;/p&gt;&lt;p&gt;inscriptis &amp;gt;= 2.0.0, &amp;lt;= 2.7.5 → 2.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-132277&lt;/p&gt;</content>
 </entry>
 </feed>

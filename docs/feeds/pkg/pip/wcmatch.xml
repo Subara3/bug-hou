@@ -7,10 +7,10 @@
 <updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags) (MEDIUM)</title>
+<title>[様子見] pip: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-53pm-wgxf-c6qf"/>
 <id>urn:bug-hou:GHSA-53pm-wgxf-c6qf</id>
 <updated>2026-11-21T00:00:00Z</updated>
-<content type="html">&lt;p&gt;wcmatch &amp;lt;= 11.1 → 11.2&lt;/p&gt;&lt;p&gt;CVE-2026-132276&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; wcmatchで外から来た名前を照合すると処理が重くなる。深刻度は中&lt;br&gt;→ wcmatchを11.2に更新&lt;/p&gt;&lt;p&gt;wcmatch &amp;lt;= 11.1 → 11.2&lt;/p&gt;&lt;p&gt;CVE-2026-132276&lt;/p&gt;</content>
 </entry>
 </feed>
