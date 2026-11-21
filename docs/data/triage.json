@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T12:46:34Z",
+ "updated_at": "2026-11-21T00:46:16Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -349,6 +349,15 @@
    "todo": "php-cgiを使っていなければ対応不要",
    "kev": false,
    "at": "2026-11-20"
+  },
+  "CVE-2026-133949": {
+   "level": "action",
+   "reason": "pipに同梱の証明書に問題のあるeMudhra証明書が入っている。CRITICAL",
+   "todo": "pipを26.2.2以降に。先にPythonを更新するかハッシュ固定で入れる",
+   "kev": false,
+   "at": "2026-11-21",
+   "urgency": "soon",
+   "comment": "今週中に更新を。問題の証明書をはじく版のPythonなら影響なし"
   },
   "CVE-2026-15176": {
    "level": "check",
@@ -781,6 +790,13 @@
    "kev": false,
    "at": "2026-11-17"
   },
+  "GHSA-2hjf-7455-w946": {
+   "level": "check",
+   "reason": "aMQTTで正規表現の処理が重くなるなどしてサービスが止まる",
+   "todo": "amqttを0.11.4に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-2m9m-6cr5-9x25": {
    "level": "check",
    "reason": "mssql-mcpの書き込み用ツールでSQLインジェクション。利用者の少ないパッケージ",
@@ -858,6 +874,13 @@
    "kev": false,
    "at": "2026-11-05"
   },
+  "GHSA-3g82-77xr-68x5": {
+   "level": "watch",
+   "reason": "js-tomlで深く入れ子の入力を読むとスタックがあふれる。MEDIUM",
+   "todo": "1.1.3に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-3gg2-335m-rxc6": {
    "level": "watch",
    "reason": "LOW。cssヘルパーで閉じタグが分かれているとHTMLを埋め込まれる",
@@ -871,13 +894,6 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-20"
-  },
-  "GHSA-3hch-x692-6qj3": {
-   "level": "check",
-   "reason": "GPUStackで認可の確認が抜けていて他の利用者の資源を触れるHIGH",
-   "todo": "2.2.2 以降に更新",
-   "kev": false,
-   "at": "2026-11-11"
   },
   "GHSA-3mgh-93r5-r7jf": {
    "level": "check",
@@ -1166,6 +1182,13 @@
    "kev": false,
    "at": "2026-11-20"
   },
+  "GHSA-6499-jgj4-2wpf": {
+   "level": "watch",
+   "reason": "CKANの登録画面でセッション固定。MEDIUM",
+   "todo": "2.10.11 / 2.11.6 に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-6655-6qjp-jx7x": {
    "level": "check",
    "reason": "セレクタの処理で正規表現が極端に遅くなるHIGH。広く使われる本体ではない",
@@ -1179,6 +1202,13 @@
    "todo": "NLTKの利用を確認し、3.10.4以降に更新",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-66q9-mxf2-xqw6": {
+   "level": "check",
+   "reason": "TeamPassでフォルダの親を付け替えて権限チェックをすり抜けられる",
+   "todo": "TeamPassを3.2.2.0に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-6889-vf6x-f3g5": {
    "level": "watch",
@@ -1460,6 +1490,13 @@
    "kev": false,
    "at": "2026-11-11"
   },
+  "GHSA-9657-8vc2-7g2p": {
+   "level": "check",
+   "reason": "Poweradminのメール2段階認証が回数制限なしで総当たりできる。パスワードが知られている場合",
+   "todo": "4.2.6 / 4.3.5 / 4.4.1 に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-96h3-5x6v-m776": {
    "level": "watch",
    "reason": "Composerの既存修正をシンボリックリンクで回避。MEDIUM",
@@ -1508,13 +1545,6 @@
    "todo": "isomorphic-git を 1.38.6 以降に更新",
    "kev": false,
    "at": "2026-11-10"
-  },
-  "GHSA-9rcc-pmj8-ffhr": {
-   "level": "watch",
-   "reason": "Semantic MediaWikiのFacetedSearchで反射型XSS。MEDIUM",
-   "todo": "semantic-media-wiki 7.2.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-9rg8-2wvr-fgjh": {
    "level": "check",
@@ -1600,13 +1630,6 @@
    "kev": false,
    "at": "2026-11-10"
   },
-  "GHSA-cx86-7xwp-w9wf": {
-   "level": "watch",
-   "reason": "Semantic MediaWikiのSpecial:Askで偽造トークンの反射型XSS。MEDIUM",
-   "todo": "semantic-media-wiki 7.2.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-cxf4-7mrp-vvpr": {
    "level": "watch",
    "reason": "Flysystemのパス制御文字チェック回避。LOW",
@@ -1669,13 +1692,6 @@
    "todo": "YOURLS 1.10.5に更新",
    "kev": false,
    "at": "2026-11-02"
-  },
-  "GHSA-f9j6-8p6x-r9j6": {
-   "level": "check",
-   "reason": "HIGH。改ざんされたdisclosureがエラーにならず黙って捨てられる",
-   "todo": "@sd-jwt/coreを0.20.0に更新。@sd-jwt/decodeは修正版の記載なし",
-   "kev": false,
-   "at": "2026-11-03"
   },
   "GHSA-f9x3-7vq9-cph6": {
    "level": "action",
@@ -1868,13 +1884,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-j656-3hf2-fvjc": {
-   "level": "watch",
-   "reason": "MEDIUM。MySQL・MariaDBのコメントで読み取り専用のSQLチェックをすり抜けられる",
-   "todo": "@bytebase/dbhubを使っていれば0.22.6に更新",
-   "kev": false,
-   "at": "2026-11-03"
-  },
   "GHSA-j8g8-j4j7-8j54": {
    "level": "check",
    "reason": "NLTKのXMLCorpusViewで処理が重くなりサービス停止",
@@ -1952,19 +1961,19 @@
    "kev": false,
    "at": "2026-11-17"
   },
-  "GHSA-jr78-w6w5-m8f8": {
-   "level": "check",
-   "reason": "Semantic MediaWikiのsmwtask APIで認証なしに管理タスク実行。HIGH",
-   "todo": "semantic-media-wiki 7.3.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-jv6m-48w5-5rpr": {
    "level": "watch",
    "reason": "envdのrequirementsのパス指定でホストのファイルが漏れるMEDIUM",
    "todo": "envd 1.3.6に更新",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-jwgx-mp9m-jwcr": {
+   "level": "check",
+   "reason": "@appium/storage-pluginでログインなしに任意のファイルを消せる",
+   "todo": "@appium/storage-pluginを1.1.6に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-m29v-3g7g-9c63": {
    "level": "watch",
@@ -2136,13 +2145,6 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-p623-mxf7-qxjm": {
-   "level": "watch",
-   "reason": "LOW。OctoPrintの接続設定での保存型XSS",
-   "todo": "2.0.0rc7 以降に更新",
-   "kev": false,
-   "at": "2026-11-11"
-  },
   "GHSA-p96f-p2p2-2g3h": {
    "level": "watch",
    "reason": "AdminNeoのSQLite関連RCE。MEDIUM",
@@ -2219,6 +2221,13 @@
    "todo": "使っているなら23.1.20260601 / 26.6.20260616 に更新",
    "kev": false,
    "at": "2026-11-18"
+  },
+  "GHSA-prhx-9q2h-ph2x": {
+   "level": "check",
+   "reason": "Paymenterでログインなしに任意のメソッドを呼び出せる",
+   "todo": "Paymenterを1.5.7に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-pw86-h8fm-j323": {
    "level": "check",
@@ -2451,13 +2460,6 @@
    "kev": false,
    "at": "2026-11-11"
   },
-  "GHSA-rm8w-w798-g545": {
-   "level": "watch",
-   "reason": "LOW。compose-lintが.envの秘密情報を出力に含める",
-   "todo": "0.33.0 以降に更新",
-   "kev": false,
-   "at": "2026-11-11"
-  },
   "GHSA-rqp5-r3wg-vg35": {
    "level": "watch",
    "reason": "MEDIUM。ルート解決時に別オリジンのスクリプトを読み込むおそれ",
@@ -2549,6 +2551,13 @@
    "kev": false,
    "at": "2026-11-18"
   },
+  "GHSA-vcx7-pfrh-mcfg": {
+   "level": "watch",
+   "reason": "storyblok-backupのパストラバーサル。MEDIUM",
+   "todo": "0.7.1に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-vf85-8ff2-3r9w": {
    "level": "watch",
    "reason": "MEDIUM。版の破棄・編集への切り替えで対象ごとの権限確認がない",
@@ -2632,6 +2641,13 @@
    "todo": "redaxo 5.21.2に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-wcqj-wx85-c75p": {
+   "level": "check",
+   "reason": "aMQTTでQoS 2のやりとりがメモリを食いつぶしサービスが止まる",
+   "todo": "amqttを0.12.1に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-wgvx-x5g3-9v29": {
    "level": "watch",
@@ -2730,13 +2746,6 @@
    "todo": "nltkを3.10.4に更新",
    "kev": false,
    "at": "2026-11-20"
-  },
-  "GHSA-x9rp-7wh3-2rj5": {
-   "level": "check",
-   "reason": "@enspirit/eloのHIGH。プログラムで作ったASTの値がそのまま出力されコードを埋め込める",
-   "todo": "@enspirit/eloを使っていれば1.0.1に更新",
-   "kev": false,
-   "at": "2026-11-04"
   },
   "GHSA-x9xr-53qx-9qcf": {
    "level": "check",
