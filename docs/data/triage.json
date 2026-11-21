@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T00:46:16Z",
+ "updated_at": "2026-11-21T12:46:13Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -748,6 +748,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-23w9-4pg3-xwm3": {
+   "level": "watch",
+   "reason": "ContaoのCSV取り込み画面の権限チェック不備で深刻度は中",
+   "todo": "contao/core-bundleを5.3.50または5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-24c4-3p7v-29cm": {
    "level": "check",
    "reason": "HIGH。Base64のmultipartでclient_max_sizeの上限をこえられる",
@@ -782,6 +789,13 @@
    "todo": "termux-syncを1.2.4に更新",
    "kev": false,
    "at": "2026-11-17"
+  },
+  "GHSA-25qc-m4pw-2w8r": {
+   "level": "check",
+   "reason": "Budibaseでログインなしに管理者を作れるHIGH。修正版はまだない",
+   "todo": "修正版が出たら更新。それまで/api/global/users/initへの外からの接続を確認",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-28qf-cpwq-vmc2": {
    "level": "check",
@@ -846,13 +860,6 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-33r5-xmm8-v6x5": {
-   "level": "check",
-   "reason": "利用者の少ないパッケージ@enspirit/eloのCRITICAL。JS出力でサンドボックスを抜けてコード実行",
-   "todo": "@enspirit/eloを使っていれば1.0.1に更新",
-   "kev": false,
-   "at": "2026-11-04"
-  },
   "GHSA-36h5-qg4p-q2qf": {
    "level": "check",
    "reason": "mail-mime-parserの添付ファイル名でCRLFヘッダー注入。HIGH",
@@ -866,13 +873,6 @@
    "todo": "Snipe-IT 8.7.0に更新",
    "kev": false,
    "at": "2026-11-02"
-  },
-  "GHSA-3cgg-c5pp-57h6": {
-   "level": "watch",
-   "reason": "MEDIUM。odf-kitのHTML変換でstyle属性が無害化されずXSSになる",
-   "todo": "使っていれば0.14.2以降に更新",
-   "kev": false,
-   "at": "2026-11-05"
   },
   "GHSA-3g82-77xr-68x5": {
    "level": "watch",
@@ -923,6 +923,13 @@
    "kev": false,
    "at": "2026-11-17"
   },
+  "GHSA-3r9g-pfhv-3228": {
+   "level": "watch",
+   "reason": "Contaoのメールマガジン機能の権限チェック漏れで深刻度は中",
+   "todo": "contao/newsletter-bundleを5.3.50または5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-3rp8-rxj8-mvjw": {
    "level": "check",
    "reason": "HIGH。WebSocketのmax_msg_sizeの上限をこえられる",
@@ -950,6 +957,13 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-20"
+  },
+  "GHSA-43hx-xm7w-3mhj": {
+   "level": "watch",
+   "reason": "memtomem-stmでMarkdownの区切りを越えてデータが出る。深刻度は低",
+   "todo": "memtomem-stmを0.1.34に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-447x-qqwf-m7xq": {
    "level": "check",
@@ -1007,13 +1021,6 @@
    "kev": false,
    "at": "2026-11-14"
   },
-  "GHSA-4j63-6c4x-wfg4": {
-   "level": "watch",
-   "reason": "MEDIUM。:has()内の兄弟セレクタで外部のHTMLの処理に時間がかかる",
-   "todo": "soupsieve 2.10.0 以降に更新",
-   "kev": false,
-   "at": "2026-11-13"
-  },
   "GHSA-4m76-xfj5-7975": {
    "level": "watch",
    "reason": "MEDIUM。mount()の中に置いたミドルウェアを通らないパスがある",
@@ -1049,12 +1056,26 @@
    "kev": false,
    "at": "2026-11-20"
   },
+  "GHSA-53pm-wgxf-c6qf": {
+   "level": "watch",
+   "reason": "wcmatchで外から来た名前を照合すると処理が重くなる。深刻度は中",
+   "todo": "wcmatchを11.2に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-54mm-6729-r5wp": {
    "level": "check",
    "reason": "Leantimeで認証済み利用者が管理者に昇格。HIGH",
    "todo": "Leantime 3.10.0に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-555j-qj3j-c8jv": {
+   "level": "check",
+   "reason": "svglibで入れ子のuse参照を含むSVGを変換すると資源を使い切るHIGH",
+   "todo": "svglibを2.3.1に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-56v3-jrq2-4q9m": {
    "level": "watch",
@@ -1097,13 +1118,6 @@
    "todo": "djangocms-versioningを2.6.1に更新",
    "kev": false,
    "at": "2026-11-19"
-  },
-  "GHSA-5gmm-hjfj-8ff7": {
-   "level": "watch",
-   "reason": "Paymenterのダウングレード処理で返金の二重取り競合。MEDIUM",
-   "todo": "paymenter 1.5.7に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-5mmc-8pc9-wggg": {
    "level": "watch",
@@ -1273,6 +1287,13 @@
    "kev": false,
    "at": "2026-11-10"
   },
+  "GHSA-72jh-722p-rqr3": {
+   "level": "watch",
+   "reason": "memtomem-stmの再接続まわりの不具合で深刻度は低",
+   "todo": "memtomem-stmを0.1.34に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-72px-j8gh-p79x": {
    "level": "check",
    "reason": "mail-parserのHIGH。get_server_ipaddress()で送信元IPを偽れる",
@@ -1356,13 +1377,6 @@
    "todo": "NLTKの利用を確認し、3.10.4以降に更新",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-7w38-ggh5-v542": {
-   "level": "check",
-   "reason": "利用者の少ないパッケージ@enspirit/eloのCRITICAL。Ruby出力の文字列埋め込みでコード実行",
-   "todo": "@enspirit/eloを使っていれば1.0.1に更新",
-   "kev": false,
-   "at": "2026-11-04"
   },
   "GHSA-828w-6qgx-3rcf": {
    "level": "watch",
@@ -1468,13 +1482,6 @@
    "todo": "codewhaleを0.9.0に更新",
    "kev": false,
    "at": "2026-11-20"
-  },
-  "GHSA-8v59-qmwv-4p6q": {
-   "level": "watch",
-   "reason": "compose-lintのエラー出力経由でCIにコマンドを差し込める。LOW",
-   "todo": "compose-lintを0.32.0に更新",
-   "kev": false,
-   "at": "2026-11-11"
   },
   "GHSA-8vm9-f75m-5h2m": {
    "level": "watch",
@@ -1821,6 +1828,13 @@
    "kev": false,
    "at": "2026-11-17"
   },
+  "GHSA-h57j-5f5m-789v": {
+   "level": "watch",
+   "reason": "Contaoの検索結果ページのXSSで深刻度は中",
+   "todo": "contao/core-bundleを5.3.50または5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-h7c4-q426-7jh9": {
    "level": "watch",
    "reason": "MEDIUM。MCPサーバーのHTTPモードを1つの接続が独占し、新しい接続を断れる",
@@ -1855,13 +1869,6 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-20"
-  },
-  "GHSA-hr4h-4c45-v4q4": {
-   "level": "watch",
-   "reason": "compose-lintのJSON・SARIF出力経由でCIにコマンドを差し込める。LOW",
-   "todo": "compose-lintを0.32.0に更新",
-   "kev": false,
-   "at": "2026-11-11"
   },
   "GHSA-hxcx-9h4f-42xx": {
    "level": "check",
@@ -1961,6 +1968,13 @@
    "kev": false,
    "at": "2026-11-17"
   },
+  "GHSA-jrjx-9jjw-747m": {
+   "level": "check",
+   "reason": "AIT-GUIでログインなしにPythonを実行できるHIGH。利用者の少ないパッケージ",
+   "todo": "ait-guiを2.5.1に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-jv6m-48w5-5rpr": {
    "level": "watch",
    "reason": "envdのrequirementsのパス指定でホストのファイルが漏れるMEDIUM",
@@ -2003,13 +2017,6 @@
    "kev": false,
    "at": "2026-11-11"
   },
-  "GHSA-m8r3-22v6-g877": {
-   "level": "watch",
-   "reason": "REDAXOのパッケージ更新にCSRF対策がない。MEDIUM",
-   "todo": "redaxo 5.21.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-m9j8-jcmv-hp69": {
    "level": "check",
    "reason": "HIGH。サーバー用の秘密の値がクライアント側のコードに入ることがある",
@@ -2044,13 +2051,6 @@
    "level": "check",
    "reason": "TinyMCEのmediaプラグインでXSS。HIGH",
    "todo": "TinyMCE 8.9.3または7.9.4に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-mf2p-wjp4-99pq": {
-   "level": "watch",
-   "reason": "REDAXOのメディアマネージャー種別名で格納型XSS。MEDIUM",
-   "todo": "redaxo 5.21.2に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2264,6 +2264,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-q87h-c5m7-659j": {
+   "level": "watch",
+   "reason": "Inscriptisでtableが並ぶHTMLを渡すとメモリが増える。深刻度は中",
+   "todo": "inscriptisを2.7.6に更新",
+   "kev": false,
+   "at": "2026-11-21"
+  },
   "GHSA-q8v2-3j4h-xg2p": {
    "level": "check",
    "reason": "jane-php/open-api-3でクエリ引数名からコードを差し込める。利用者の少ないパッケージのCRITICAL",
@@ -2319,6 +2326,13 @@
    "todo": "code16/sharp 9.22.5に更新",
    "kev": false,
    "at": "2026-11-02"
+  },
+  "GHSA-r2q3-7m4h-63qg": {
+   "level": "check",
+   "reason": "Budibaseのビルダー画面に保存型XSSがあり、権限の違う利用者に影響",
+   "todo": "修正版はまだない。出たら@budibase/serverを更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-r3h5-4585-7x3w": {
    "level": "watch",
@@ -2376,13 +2390,6 @@
    "kev": false,
    "at": "2026-11-18"
   },
-  "GHSA-r7j4-crjv-h467": {
-   "level": "watch",
-   "reason": "MEDIUM。compose-lintの出力からCIのコマンドを出せる",
-   "todo": "0.32.0 以降に更新",
-   "kev": false,
-   "at": "2026-11-11"
-  },
   "GHSA-r7w7-vpq8-c5vv": {
    "level": "check",
    "reason": "mail-parserのHIGH。メールヘッダーの解析でReDoS",
@@ -2417,6 +2424,13 @@
    "todo": "nuxt 4.6.4に更新",
    "kev": false,
    "at": "2026-11-17"
+  },
+  "GHSA-r9qp-pqx5-8369": {
+   "level": "check",
+   "reason": "Contaoの管理者でない利用者が自分を管理者相当にできる。ログインが必要",
+   "todo": "contao/core-bundleを5.3.50または5.7.12に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-rg32-vgf9-927c": {
    "level": "watch",
@@ -2635,13 +2649,6 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-w998-qmw9-mf4m": {
-   "level": "watch",
-   "reason": "REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM",
-   "todo": "redaxo 5.21.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-wcqj-wx85-c75p": {
    "level": "check",
    "reason": "aMQTTでQoS 2のやりとりがメモリを食いつぶしサービスが止まる",
@@ -2662,13 +2669,6 @@
    "todo": "AdminNeo 5.5.1に更新",
    "kev": false,
    "at": "2026-11-02"
-  },
-  "GHSA-wqgw-9xfh-qf2g": {
-   "level": "watch",
-   "reason": "MEDIUM。TIFFやEXIFの読み込みでメモリを使い切らされる",
-   "todo": "Pillow 13.0.0 以降に更新",
-   "kev": false,
-   "at": "2026-11-13"
   },
   "GHSA-wr3g-j6qj-xpgh": {
    "level": "check",
@@ -2753,13 +2753,6 @@
    "todo": "使っていれば7.12.0に更新",
    "kev": false,
    "at": "2026-11-20"
-  },
-  "GHSA-xcvg-w56q-r89m": {
-   "level": "check",
-   "reason": "HIGH。libtiffでTIFFを保存するときだけヒープの書き込みがあふれる",
-   "todo": "Pillow 13.0.0 以降に更新",
-   "kev": false,
-   "at": "2026-11-13"
   },
   "GHSA-xfcv-m889-fmqg": {
    "level": "watch",
@@ -2846,6 +2839,13 @@
    "todo": "3.12.18 / 3.13.10 以降に更新",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-xxqp-5qx8-gj5q": {
+   "level": "check",
+   "reason": "MQTTブローカーAedesで例外や資源の使いすぎが起きるHIGH",
+   "todo": "aedesを1.1.1に更新",
+   "kev": false,
+   "at": "2026-11-21"
   },
   "GHSA-xxrh-5hgg-gj4h": {
    "level": "check",
