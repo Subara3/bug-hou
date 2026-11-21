@@ -14,11 +14,11 @@
 <content type="html">&lt;p&gt;compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0, tmatens/compose-lint &amp;gt;= 0.2.0, &amp;lt;= 0.24.0 → 0.25.0&lt;/p&gt;&lt;p&gt;CVE-2026-123373&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] pip: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env` (LOW)</title>
+<title>pip: compose-lint: Incomplete fix for GHSA-jf3h-8jvx-vcrg: a run stopped at the finding limit quotes a secret from a CI-generated `.env` (LOW)</title>
 <link href="https://github.com/advisories/GHSA-rm8w-w798-g545"/>
 <id>urn:bug-hou:GHSA-rm8w-w798-g545</id>
 <updated>2026-11-10T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LOW。compose-lintが.envの秘密情報を出力に含める&lt;br&gt;→ 0.33.0 以降に更新&lt;/p&gt;&lt;p&gt;compose-lint = 0.32.0 → 0.33.0, tmatens/compose-lint = 0.32.0 → 0.33.0&lt;/p&gt;&lt;p&gt;CVE-2026-123796&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;compose-lint = 0.32.0 → 0.33.0, tmatens/compose-lint = 0.32.0 → 0.33.0&lt;/p&gt;&lt;p&gt;CVE-2026-123796&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>pip: compose-lint: A pull request can make compose-lint quote a secret from a CI-generated `.env` into its findings (LOW)</title>

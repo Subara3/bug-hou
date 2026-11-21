@@ -28,11 +28,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; BoltのListFormatHelperでSQLインジェクション。MEDIUM&lt;/p&gt;&lt;p&gt;bolt/core &amp;lt; 6.1.4 → 6.1.4&lt;/p&gt;&lt;p&gt;CVE-2026-77378&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Paymenter: Unauthenticated arbitrary method invocation in Livewire components (HIGH)</title>
+<title>[要確認] PHP: Paymenter: Unauthenticated arbitrary method invocation in Livewire components (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-prhx-9q2h-ph2x"/>
 <id>urn:bug-hou:GHSA-prhx-9q2h-ph2x</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-103026&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Paymenterでログインなしに任意のメソッドを呼び出せる&lt;br&gt;→ Paymenterを1.5.7に更新&lt;/p&gt;&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-103026&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: October: Media Library Crop Handler Bypasses Upload Extension Allowlist (MEDIUM)</title>
@@ -49,18 +49,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Janeのコード生成時に$refの解決でSSRFとファイル読み出し&lt;br&gt;→ jane-php/open-api-3を7.12.0に更新&lt;/p&gt;&lt;p&gt;jane-php/open-api-3 &amp;lt; 7.12.0 → 7.12.0&lt;/p&gt;&lt;p&gt;CVE-2026-63415&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window (HIGH)</title>
+<title>[要確認] PHP: Poweradmin: The email second factor is an mt_rand() six-digit code verified with no attempt limit or lockout, so an attacker holding the password can brute-force it within the validity window (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-9657-8vc2-7g2p"/>
 <id>urn:bug-hou:GHSA-9657-8vc2-7g2p</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;poweradmin/poweradmin &amp;gt;= 4.0.0, &amp;lt; 4.2.6 → 4.2.6, poweradmin/poweradmin &amp;gt;= 4.3.0, &amp;lt; 4.3.5 → 4.3.5, poweradmin/poweradmin &amp;gt;= 4.4.0, &amp;lt; 4.4.1 → 4.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-115463&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Poweradminのメール2段階認証が回数制限なしで総当たりできる。パスワードが知られている場合&lt;br&gt;→ 4.2.6 / 4.3.5 / 4.4.1 に更新&lt;/p&gt;&lt;p&gt;poweradmin/poweradmin &amp;gt;= 4.0.0, &amp;lt; 4.2.6 → 4.2.6, poweradmin/poweradmin &amp;gt;= 4.3.0, &amp;lt; 4.3.5 → 4.3.5, poweradmin/poweradmin &amp;gt;= 4.4.0, &amp;lt; 4.4.1 → 4.4.1&lt;/p&gt;&lt;p&gt;CVE-2026-115463&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: TeamPass folder re-parenting authorization bypass (HIGH)</title>
+<title>[要確認] PHP: TeamPass folder re-parenting authorization bypass (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-66q9-mxf2-xqw6"/>
 <id>urn:bug-hou:GHSA-66q9-mxf2-xqw6</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;nilsteampassnet/TeamPass &amp;lt; 3.2.2.0 → 3.2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-103035&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; TeamPassでフォルダの親を付け替えて権限チェックをすり抜けられる&lt;br&gt;→ TeamPassを3.2.2.0に更新&lt;/p&gt;&lt;p&gt;nilsteampassnet/TeamPass &amp;lt; 3.2.2.0 → 3.2.2.0&lt;/p&gt;&lt;p&gt;CVE-2026-103035&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Bolt: Information disclosure through unfiltered public relation API endpoint (MEDIUM)</title>

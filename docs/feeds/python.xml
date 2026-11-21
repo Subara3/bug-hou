@@ -35,11 +35,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; NLTKのZIP展開でデータ置き場の外のファイルを上書き&lt;br&gt;→ nltkを3.10.4に更新&lt;/p&gt;&lt;p&gt;nltk &amp;gt;= 3.9.4, &amp;lt;= 3.10.3 → 3.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-128135&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes (HIGH)</title>
+<title>[要確認] Python: aMQTT: Denial of Service (DoS) via Memory Leak in Unmanaged QoS 2 Session Handshakes (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-wcqj-wx85-c75p"/>
 <id>urn:bug-hou:GHSA-wcqj-wx85-c75p</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;amqtt &amp;gt;= 0.11.0, &amp;lt;= 0.12.0 → 0.12.1&lt;/p&gt;&lt;p&gt;CVE-2026-130176&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; aMQTTでQoS 2のやりとりがメモリを食いつぶしサービスが止まる&lt;br&gt;→ amqttを0.12.1に更新&lt;/p&gt;&lt;p&gt;amqtt &amp;gt;= 0.11.0, &amp;lt;= 0.12.0 → 0.12.1&lt;/p&gt;&lt;p&gt;CVE-2026-130176&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: Guard Core: Whitespace-collapse preprocessing permanently disables the CRLF-anchored http-splitting and command-injection detectors in the default detection mode (LOW)</title>
@@ -210,11 +210,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Flyto2 CoreのSSRF対策をDNSリバインディングで回避&lt;br&gt;→ flyto-coreを2.26.8に更新&lt;/p&gt;&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77316&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: CKAN: Session Fixation in Registration View (MEDIUM)</title>
+<title>[様子見] Python: CKAN: Session Fixation in Registration View (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6499-jgj4-2wpf"/>
 <id>urn:bug-hou:GHSA-6499-jgj4-2wpf</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;ckan &amp;lt; 2.10.11 → 2.10.11, ckan &amp;gt;= 2.11.0, &amp;lt; 2.11.6 → 2.11.6&lt;/p&gt;&lt;p&gt;CVE-2026-104773&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; CKANの登録画面でセッション固定。MEDIUM&lt;br&gt;→ 2.10.11 / 2.11.6 に更新&lt;/p&gt;&lt;p&gt;ckan &amp;lt; 2.10.11 → 2.10.11, ckan &amp;gt;= 2.11.0, &amp;lt; 2.11.6 → 2.11.6&lt;/p&gt;&lt;p&gt;CVE-2026-104773&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: NLTK: Uncontrolled recursion in Tree.fromlist causes denial of service via deeply nested list input (MEDIUM)</title>
@@ -259,11 +259,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Flyto2 Coreのページ送りで次のURLを確かめずSSRF&lt;br&gt;→ flyto-coreを2.26.8に更新&lt;/p&gt;&lt;p&gt;flyto-core &amp;lt;= 2.26.7 → 2.26.8&lt;/p&gt;&lt;p&gt;CVE-2026-77315&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation (HIGH)</title>
+<title>[要確認] Python: aMQTT: Inefficient Regular Expression Complexity and Uncontrolled Resource Consumption and Improper Input Validation (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-2hjf-7455-w946"/>
 <id>urn:bug-hou:GHSA-2hjf-7455-w946</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;amqtt &amp;gt;= 0.11.0, &amp;lt;= 0.11.3 → 0.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-104199&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; aMQTTで正規表現の処理が重くなるなどしてサービスが止まる&lt;br&gt;→ amqttを0.11.4に更新&lt;/p&gt;&lt;p&gt;amqtt &amp;gt;= 0.11.0, &amp;lt;= 0.11.3 → 0.11.4&lt;/p&gt;&lt;p&gt;CVE-2026-104199&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Python: Jupyter MCP Server: Unauthenticated management routes can hijack the Jupyter backend in standalone HTTP mode (HIGH)</title>
@@ -273,11 +273,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Jupyter MCP ServerのHTTP単体モードで認証なしに乗っ取られる&lt;br&gt;→ jupyter-mcp-serverを1.0.3に更新&lt;/p&gt;&lt;p&gt;jupyter-mcp-server &amp;lt;= 1.0.2 → 1.0.3&lt;/p&gt;&lt;p&gt;CVE-2026-77318&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>Python: CVE-2026-133949 9.3 CRITICAL</title>
+<title>[要対応] Python: CVE-2026-133949 9.3 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-133949"/>
 <id>urn:bug-hou:CVE-2026-133949</id>
 <updated>2026-11-20T00:00:00Z</updated>
-<content type="html">&lt;p&gt;pip prior to v26.2.2 the certifi bundled with pip contains the compromised eMudhra certificates. 
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; pipに同梱の証明書に問題のあるeMudhra証明書が入っている。CRITICAL&lt;br&gt;→ pipを26.2.2以降に。先にPythonを更新するかハッシュ固定で入れる&lt;/p&gt;&lt;p&gt;pip prior to v26.2.2 the certifi bundled with pip contains the compromised eMudhra certificates. 
 
 
 

@@ -14,6 +14,18 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Etherpadでログインなしに任意のファイルを読める。CRITICAL&lt;br&gt;→ ep_etherpad-liteを3.3.3に更新&lt;/p&gt;&lt;p&gt;ep_etherpad-lite &amp;gt;= 1.8.14, &amp;lt; 3.3.3 → 3.3.3&lt;/p&gt;&lt;p&gt;CVE-2026-114516&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>[要対応] Python: CVE-2026-133949 9.3 CRITICAL</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-133949"/>
+<id>urn:bug-hou:CVE-2026-133949</id>
+<updated>2026-11-20T00:00:00Z</updated>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; pipに同梱の証明書に問題のあるeMudhra証明書が入っている。CRITICAL&lt;br&gt;→ pipを26.2.2以降に。先にPythonを更新するかハッシュ固定で入れる&lt;/p&gt;&lt;p&gt;pip prior to v26.2.2 the certifi bundled with pip contains the compromised eMudhra certificates. 
+
+
+
+
+Upgrading to a secure version of pip should be done either by first upgrading Python to a version that rejects the compromised intermediates (CVE-2026-115557) or use hash pinning with a known-secure version of pip. pip is not vulnerable when using a Python version that rejects the compromised certificates. See the references below for more information.&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要対応] PHP: CVE-2026-126714 9.2 CRITICAL</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-126714"/>
 <id>urn:bug-hou:CVE-2026-126714</id>
