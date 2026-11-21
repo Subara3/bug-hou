@@ -4,8 +4,36 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/composer.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/composer.xml</id>
-<updated>2026-11-20T00:00:00Z</updated>
+<updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r9qp-pqx5-8369"/>
+<id>urn:bug-hou:GHSA-r9qp-pqx5-8369</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104883&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: contao/core-bundle: Cross-site scripting in the frontend search results (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h57j-5f5m-789v"/>
+<id>urn:bug-hou:GHSA-h57j-5f5m-789v</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 4.9.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104884&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3r9g-pfhv-3228"/>
+<id>urn:bug-hou:GHSA-3r9g-pfhv-3228</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/newsletter-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/newsletter-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104881&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: contao/core-bundle: Improper access control in the CSV import wizard (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-23w9-4pg3-xwm3"/>
+<id>urn:bug-hou:GHSA-23w9-4pg3-xwm3</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104882&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] PHP: Bolt: Open redirect enables post-authentication redirection to arbitrary domains (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xr6g-7g83-j865"/>
@@ -231,32 +259,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。FileGatorで他の利用者の一時ファイルを読めたり消せたりする&lt;br&gt;→ filegator/filegator を 7.15.0 以降に更新&lt;/p&gt;&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] PHP: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-w998-qmw9-mf4m"/>
-<id>urn:bug-hou:GHSA-w998-qmw9-mf4m</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
-</entry>
-<entry>
 <title>[要確認] PHP: Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-v3f3-cmj4-cvj9"/>
 <id>urn:bug-hou:GHSA-v3f3-cmj4-cvj9</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; FormieのフォームSSRFで保存済み連携の認証情報が漏洩。HIGH&lt;br&gt;→ verbb/formie 2.2.23/3.1.31に更新&lt;/p&gt;&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76086&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()` (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-mf2p-wjp4-99pq"/>
-<id>urn:bug-hou:GHSA-mf2p-wjp4-99pq</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアマネージャー種別名で格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63001&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-m8r3-22v6-g877"/>
-<id>urn:bug-hou:GHSA-m8r3-22v6-g877</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのパッケージ更新にCSRF対策がない。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: Sulu: JCR-SQL2 injection via `categories` query parameter (unauthenticated) (MEDIUM)</title>
@@ -278,13 +285,6 @@
 <id>urn:bug-hou:GHSA-5mmc-8pc9-wggg</id>
 <updated>2026-11-02T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; WPGraphQLで寄稿者が権限なしに投稿を公開・変更。MEDIUM&lt;/p&gt;&lt;p&gt;wp-graphql/wp-graphql &amp;lt; 2.22.2&lt;/p&gt;&lt;p&gt;CVE-2026-88974&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade) (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-5gmm-hjfj-8ff7"/>
-<id>urn:bug-hou:GHSA-5gmm-hjfj-8ff7</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Paymenterのダウングレード処理で返金の二重取り競合。MEDIUM&lt;br&gt;→ paymenter 1.5.7に更新&lt;/p&gt;&lt;p&gt;paymenter/paymenter &amp;lt;= 1.5.6 → 1.5.7&lt;/p&gt;&lt;p&gt;CVE-2026-71537&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery (MEDIUM)</title>

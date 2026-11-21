@@ -4,8 +4,50 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/pip.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/pip.xml</id>
-<updated>2026-11-20T00:00:00Z</updated>
+<updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: Inscriptis: Quadratic memory growth from sibling &lt;table&gt; elements in get_text() (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-q87h-c5m7-659j"/>
+<id>urn:bug-hou:GHSA-q87h-c5m7-659j</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;inscriptis &amp;gt;= 2.0.0, &amp;lt;= 2.7.5 → 2.7.6&lt;/p&gt;&lt;p&gt;CVE-2026-132277&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: AIT-GUI route chain allows unauthenticated Python execution in server process (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-jrjx-9jjw-747m"/>
+<id>urn:bug-hou:GHSA-jrjx-9jjw-747m</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ait-gui &amp;gt;= 1.0.0, &amp;lt;= 2.5.0 → 2.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-77309&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session (LOW)</title>
+<link href="https://github.com/advisories/GHSA-72jh-722p-rqr3"/>
+<id>urn:bug-hou:GHSA-72jh-722p-rqr3</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;memtomem-stm &amp;gt;= 0.1.2, &amp;lt;= 0.1.33 → 0.1.34&lt;/p&gt;&lt;p&gt;CVE-2026-77331&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: svglib: Exponential resource consumption via nested &lt;use&gt; references in svg2rlg (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-555j-qj3j-c8jv"/>
+<id>urn:bug-hou:GHSA-555j-qj3j-c8jv</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;svglib &amp;lt;= 2.3.0 → 2.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-132275&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-53pm-wgxf-c6qf"/>
+<id>urn:bug-hou:GHSA-53pm-wgxf-c6qf</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;wcmatch &amp;lt;= 11.1 → 11.2&lt;/p&gt;&lt;p&gt;CVE-2026-132276&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Python: memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary (LOW)</title>
+<link href="https://github.com/advisories/GHSA-43hx-xm7w-3mhj"/>
+<id>urn:bug-hou:GHSA-43hx-xm7w-3mhj</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;memtomem-stm &amp;gt;= 0.1.0, &amp;lt;= 0.1.33 → 0.1.34&lt;/p&gt;&lt;p&gt;CVE-2026-77332&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Python: NLTK: Uncontrolled recursion in DependencyGraph traversal causes denial of service via deep dependency chains (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xfcv-m889-fmqg"/>
@@ -313,47 +355,5 @@
 <id>urn:bug-hou:GHSA-m29v-3g7g-9c63</id>
 <updated>2026-11-19T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。mareformaのsearch_claimsが偽の行を返しうる&lt;br&gt;→ 使っていれば0.3.8に更新&lt;/p&gt;&lt;p&gt;mareforma = 0.3.7 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71533&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Mareforma: verify_bundle never checks a per-claim signature (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-hxh5-gp44-rc6p"/>
-<id>urn:bug-hou:GHSA-hxh5-gp44-rc6p</id>
-<updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mareformaのverify_bundleが主張ごとの署名を確かめない。HIGH&lt;br&gt;→ 使っていれば0.3.8に更新&lt;/p&gt;&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71536&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Mareforma: Unsigned Claims Can Be Promoted to REPLICATED via Missing Signature Enforcement in Convergence Path (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-8776-qf3h-26r3"/>
-<id>urn:bug-hou:GHSA-8776-qf3h-26r3</id>
-<updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mareformaで署名のない主張がREPLICATEDに昇格できる。HIGH&lt;br&gt;→ 使っていれば0.3.7以降に更新&lt;/p&gt;&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.7 → 0.3.7&lt;/p&gt;&lt;p&gt;CVE-2026-71535&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: djangocms-versioning: Authorization Bypass Through User-Controlled Key and Missing Authorization (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-5g9x-qwh5-33x4"/>
-<id>urn:bug-hou:GHSA-5g9x-qwh5-33x4</id>
-<updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。権限確認の抜けで、本来できない操作ができてしまう&lt;br&gt;→ djangocms-versioningを2.6.1に更新&lt;/p&gt;&lt;p&gt;djangocms-versioning &amp;lt;= 2.6.0 → 2.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-69138&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: mail-parser: Uncaught `OverflowError` / `OSError` on an out-of-range `Received` date (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-xhrq-2mqv-q8wx"/>
-<id>urn:bug-hou:GHSA-xhrq-2mqv-q8wx</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。範囲外のReceived日付で例外が出て処理が止まる&lt;br&gt;→ mail-parserを4.6.3に更新&lt;/p&gt;&lt;p&gt;mail-parser &amp;gt;= 3.7.0, &amp;lt; 4.6.3 → 4.6.3&lt;/p&gt;&lt;p&gt;CVE-2026-129300&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: pympp allows excessive sponsored transaction fees through padded calldata (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-v858-xh7w-8jr5"/>
-<id>urn:bug-hou:GHSA-v858-xh7w-8jr5</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; pymppで水増しされたcalldataにより肩代わり手数料が過大になる。MEDIUM&lt;br&gt;→ 使っているなら0.9.1に更新&lt;/p&gt;&lt;p&gt;pympp &amp;lt; 0.9.1 → 0.9.1&lt;/p&gt;&lt;p&gt;CVE-2026-63634&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: mail-parser is vulnerable to polynomial ReDoS in email header parsing (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-r7w7-vpq8-c5vv"/>
-<id>urn:bug-hou:GHSA-r7w7-vpq8-c5vv</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; mail-parserのHIGH。メールヘッダーの解析でReDoS&lt;br&gt;→ mail-parserを4.6.1以降に更新&lt;/p&gt;&lt;p&gt;mail-parser &amp;gt;= 4.2.0, &amp;lt; 4.6.1 → 4.6.1&lt;/p&gt;&lt;p&gt;CVE-2026-129295&lt;/p&gt;</content>
 </entry>
 </feed>

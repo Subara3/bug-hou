@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@budibase/server（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@budibase__server.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@budibase__server.xml</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r2q3-7m4h-63qg"/>
+<id>urn:bug-hou:GHSA-r2q3-7m4h-63qg</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@budibase/server &amp;lt;= 3.38.1&lt;/p&gt;&lt;p&gt;CVE-2026-122244&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>npm: Budibase: Unauthenticated global-admin &amp; database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-25qc-m4pw-2w8r"/>
+<id>urn:bug-hou:GHSA-25qc-m4pw-2w8r</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@budibase/server &amp;lt;= 3.38.1&lt;/p&gt;&lt;p&gt;CVE-2026-122247&lt;/p&gt;</content>
+</entry>
+</feed>

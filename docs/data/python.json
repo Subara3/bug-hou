@@ -297,6 +297,126 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-53pm-wgxf-c6qf",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-132276",
+   "summary": "wcmatch: Polynomial-time ReDoS when matching untrusted names against multi-star patterns (default flags)",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-53pm-wgxf-c6qf",
+   "kev": false,
+   "packages": [
+    {
+     "name": "wcmatch",
+     "range": "<= 11.1",
+     "fixed": "11.2"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-q87h-c5m7-659j",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-132277",
+   "summary": "Inscriptis: Quadratic memory growth from sibling <table> elements in get_text()",
+   "severity": "MEDIUM",
+   "score": 5.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-q87h-c5m7-659j",
+   "kev": false,
+   "packages": [
+    {
+     "name": "inscriptis",
+     "range": ">= 2.0.0, <= 2.7.5",
+     "fixed": "2.7.6"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-555j-qj3j-c8jv",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-132275",
+   "summary": "svglib: Exponential resource consumption via nested <use> references in svg2rlg",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-555j-qj3j-c8jv",
+   "kev": false,
+   "packages": [
+    {
+     "name": "svglib",
+     "range": "<= 2.3.0",
+     "fixed": "2.3.1"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-72jh-722p-rqr3",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-77331",
+   "summary": "memtomem-stm: Concurrent LTM recovery can duplicate reconnects or reuse a cancelled transport session",
+   "severity": "LOW",
+   "score": 2.0,
+   "vector": "CVSS:4.0/AV:L/AC:H/AT:P/PR:L/UI:N/VC:N/VI:L/VA:L/SC:N/SI:N/SA:L",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-72jh-722p-rqr3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "memtomem-stm",
+     "range": ">= 0.1.2, <= 0.1.33",
+     "fixed": "0.1.34"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-43hx-xm7w-3mhj",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-77332",
+   "summary": "memtomem-stm: Surfaced memory data can escape the Markdown compatibility boundary",
+   "severity": "LOW",
+   "score": 2.3,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-43hx-xm7w-3mhj",
+   "kev": false,
+   "packages": [
+    {
+     "name": "memtomem-stm",
+     "range": ">= 0.1.0, <= 0.1.33",
+     "fixed": "0.1.34"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-jrjx-9jjw-747m",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-77309",
+   "summary": "AIT-GUI route chain allows unauthenticated Python execution in server process",
+   "severity": "HIGH",
+   "score": 8.8,
+   "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-jrjx-9jjw-747m",
+   "kev": false,
+   "packages": [
+    {
+     "name": "ait-gui",
+     "range": ">= 1.0.0, <= 2.5.0",
+     "fixed": "2.5.1"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
    "id": "GHSA-6499-jgj4-2wpf",
    "ecosystem": "pip",
    "cve": "CVE-2026-104773",
@@ -2200,126 +2320,6 @@
     }
    ],
    "first_seen": "2026-11-13"
-  },
-  {
-   "id": "GHSA-4j63-6c4x-wfg4",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-126192",
-   "summary": "Soup Sieve: General sibling combinator inside :has() matches untrusted HTML in quadratic time",
-   "severity": "MEDIUM",
-   "score": 6.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N",
-   "published": "2026-11-13",
-   "url": "https://github.com/advisories/GHSA-4j63-6c4x-wfg4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "soupsieve",
-     "range": "<= 2.9.2",
-     "fixed": "2.10.0"
-    }
-   ],
-   "first_seen": "2026-11-13"
-  },
-  {
-   "id": "GHSA-wqgw-9xfh-qf2g",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-128066",
-   "summary": "Pillow: Memory DoS in TIFF and EXIF IFD parsing via overlapping tag data",
-   "severity": "MEDIUM",
-   "score": null,
-   "vector": null,
-   "published": "2026-11-12",
-   "url": "https://github.com/advisories/GHSA-wqgw-9xfh-qf2g",
-   "kev": false,
-   "packages": [
-    {
-     "name": "Pillow",
-     "range": "<= 12.3.0",
-     "fixed": "13.0.0"
-    }
-   ],
-   "first_seen": "2026-11-13"
-  },
-  {
-   "id": "GHSA-xcvg-w56q-r89m",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-128067",
-   "summary": "Pillow: Heap buffer overflow saving TIFF with libtiff when tags override image size",
-   "severity": "HIGH",
-   "score": 8.4,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:H/VI:L/VA:H/SC:N/SI:N/SA:N",
-   "published": "2026-11-12",
-   "url": "https://github.com/advisories/GHSA-xcvg-w56q-r89m",
-   "kev": false,
-   "packages": [
-    {
-     "name": "Pillow",
-     "range": "<= 12.3.0",
-     "fixed": "13.0.0"
-    }
-   ],
-   "first_seen": "2026-11-13"
-  },
-  {
-   "id": "GHSA-8v59-qmwv-4p6q",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-125123",
-   "summary": "compose-lint: File paths embedded in pull requests can inject CI workflow commands through command-line error messages ",
-   "severity": "LOW",
-   "score": 2.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
-   "published": "2026-11-10",
-   "url": "https://github.com/advisories/GHSA-8v59-qmwv-4p6q",
-   "kev": false,
-   "packages": [
-    {
-     "name": "compose-lint",
-     "range": "= 0.31.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "2026-11-11"
-  },
-  {
-   "id": "GHSA-hr4h-4c45-v4q4",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-125122",
-   "summary": "compose-lint: Text in a pull request can issue CI workflow commands through JSON and SARIF output on stdout",
-   "severity": "LOW",
-   "score": 2.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
-   "published": "2026-11-10",
-   "url": "https://github.com/advisories/GHSA-hr4h-4c45-v4q4",
-   "kev": false,
-   "packages": [
-    {
-     "name": "compose-lint",
-     "range": "= 0.31.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "2026-11-11"
-  },
-  {
-   "id": "GHSA-r7j4-crjv-h467",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-125121",
-   "summary": "compose-lint: Text in a pull request can still issue CI workflow commands through compose-lint 0.31.0's output",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:N/VI:L/VA:N/SC:N/SI:L/SA:N",
-   "published": "2026-11-10",
-   "url": "https://github.com/advisories/GHSA-r7j4-crjv-h467",
-   "kev": false,
-   "packages": [
-    {
-     "name": "compose-lint",
-     "range": ">= 0.31.0, < 0.32.0",
-     "fixed": "0.32.0"
-    }
-   ],
-   "first_seen": "2026-11-10"
   }
  ],
  "eol": {

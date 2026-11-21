@@ -4,8 +4,29 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-20T00:00:00Z</updated>
+<updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: Aedes has Uncaught Exception and Uncontrolled Resource Consumption (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-xxqp-5qx8-gj5q"/>
+<id>urn:bug-hou:GHSA-xxqp-5qx8-gj5q</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;aedes &amp;lt; 1.1.1 → 1.1.1&lt;/p&gt;&lt;p&gt;CVE-2026-63341&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r2q3-7m4h-63qg"/>
+<id>urn:bug-hou:GHSA-r2q3-7m4h-63qg</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@budibase/server &amp;lt;= 3.38.1&lt;/p&gt;&lt;p&gt;CVE-2026-122244&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Budibase: Unauthenticated global-admin &amp; database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-25qc-m4pw-2w8r"/>
+<id>urn:bug-hou:GHSA-25qc-m4pw-2w8r</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@budibase/server &amp;lt;= 3.38.1&lt;/p&gt;&lt;p&gt;CVE-2026-122247&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: Next.js: Cache poisoning of shared fallback shells in Cache Components via request-supplied placeholder route params (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-vvgp-ww4w-46vf"/>
@@ -334,26 +355,5 @@
 <id>urn:bug-hou:GHSA-qv5m-9pm6-hqp3</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。WebSocket接続の切り替え中に接続が切れるとプロセスが落ちる&lt;br&gt;→ @hono/node-server 2.1.6 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Nuxt dev server serves files from a parent directory with a stray lockfile or workspace file (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-mjrq-cffv-q4qc"/>
-<id>urn:bug-hou:GHSA-mjrq-cffv-q4qc</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Nuxtの開発サーバーで親フォルダのファイルが見えるMEDIUM&lt;br&gt;→ @nuxt/schema 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/schema &amp;gt;= 3.5.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128070&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Astro: XSS via attribute injection in dynamic tag names (LOW)</title>
-<link href="https://github.com/advisories/GHSA-mh32-jxcr-mh9f"/>
-<id>urn:bug-hou:GHSA-mh32-jxcr-mh9f</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 動的なタグ名の属性注入によるXSSでLOW&lt;br&gt;→ astro 7.4.5以降に更新&lt;/p&gt;&lt;p&gt;astro &amp;lt;= 7.4.4 → 7.4.5&lt;/p&gt;&lt;p&gt;CVE-2026-126361&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: @hono/node-server: Backslash in the request path is parsed as a path separator, bypassing path-based access control at a reverse proxy (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-jpvv-r467-5p4w"/>
-<id>urn:bug-hou:GHSA-jpvv-r467-5p4w</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスの\が区切りとして扱われ、リバースプロキシのパス制限を抜けられる&lt;br&gt;→ @hono/node-server 2.1.6 / 1.19.18 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6, @hono/node-server &amp;lt; 1.19.18 → 1.19.18&lt;/p&gt;&lt;p&gt;CVE-2026-126210&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -4,8 +4,29 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/contao__core-bundle.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/pkg/composer/contao__core-bundle.xml</id>
-<updated>2026-10-09T00:00:00Z</updated>
+<updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>composer: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r9qp-pqx5-8369"/>
+<id>urn:bug-hou:GHSA-r9qp-pqx5-8369</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104883&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: contao/core-bundle: Cross-site scripting in the frontend search results (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h57j-5f5m-789v"/>
+<id>urn:bug-hou:GHSA-h57j-5f5m-789v</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 4.9.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104884&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>composer: contao/core-bundle: Improper access control in the CSV import wizard (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-23w9-4pg3-xwm3"/>
+<id>urn:bug-hou:GHSA-23w9-4pg3-xwm3</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104882&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] composer: Contao: Protected page content is disclosed to anonymous visitors after contao.search.index_protected is disabled (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-x2rp-9qf7-2fmq"/>

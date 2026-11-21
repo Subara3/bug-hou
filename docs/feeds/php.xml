@@ -4,8 +4,36 @@
 <link href="https://subara3.github.io/bug-hou/#php"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/php.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/php.xml</id>
-<updated>2026-11-20T00:00:00Z</updated>
+<updated>2026-11-21T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-r9qp-pqx5-8369"/>
+<id>urn:bug-hou:GHSA-r9qp-pqx5-8369</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104883&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: contao/core-bundle: Cross-site scripting in the frontend search results (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h57j-5f5m-789v"/>
+<id>urn:bug-hou:GHSA-h57j-5f5m-789v</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 4.9.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104884&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-3r9g-pfhv-3228"/>
+<id>urn:bug-hou:GHSA-3r9g-pfhv-3228</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/newsletter-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/newsletter-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104881&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: contao/core-bundle: Improper access control in the CSV import wizard (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-23w9-4pg3-xwm3"/>
+<id>urn:bug-hou:GHSA-23w9-4pg3-xwm3</id>
+<updated>2026-11-21T00:00:00Z</updated>
+<content type="html">&lt;p&gt;contao/core-bundle &amp;gt;= 5.0.0, &amp;lt; 5.3.50 → 5.3.50, contao/core-bundle &amp;gt;= 5.4.0-RC1, &amp;lt; 5.7.12 → 5.7.12&lt;/p&gt;&lt;p&gt;CVE-2026-104882&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] PHP: Bolt: Open redirect enables post-authentication redirection to arbitrary domains (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-xr6g-7g83-j865"/>
@@ -395,33 +423,5 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <id>urn:bug-hou:GHSA-h24v-f482-8cwf</id>
 <updated>2026-11-12T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。code16/sharpのembed_keyで任意クラスを生成できる&lt;br&gt;→ code16/sharpを9.23.0（10系は10.0.0-beta.4）以降に更新&lt;/p&gt;&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84974&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: code16/sharp: Server-side request forgery through an unanchored autocomplete endpoint check (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-g6f8-c3x9-jv7f"/>
-<id>urn:bug-hou:GHSA-g6f8-c3x9-jv7f</id>
-<updated>2026-11-12T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。code16/sharpのautocomplete経由のSSRF&lt;br&gt;→ code16/sharpを9.23.0（10系は10.0.0-beta.4）以降に更新&lt;/p&gt;&lt;p&gt;code16/sharp &amp;lt; 9.23.0 → 9.23.0, code16/sharp &amp;gt;= 10.0.0-beta.1, &amp;lt; 10.0.0-beta.4 → 10.0.0-beta.4&lt;/p&gt;&lt;p&gt;CVE-2026-84987&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: FileGator: Missing authorization in GET /batchdownload allows cross-user retrieval of another user's archive (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-f74m-x83r-c4v4"/>
-<id>urn:bug-hou:GHSA-f74m-x83r-c4v4</id>
-<updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。FileGatorで他の利用者のまとめてダウンロードを取得できる&lt;br&gt;→ filegator/filegator を 7.15.0 以降に更新&lt;/p&gt;&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94618&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: FileGator: Missing authorization in POST /upload allows cross-user read and deletion of temporary files (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-44r8-3p76-84mw"/>
-<id>urn:bug-hou:GHSA-44r8-3p76-84mw</id>
-<updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。FileGatorで他の利用者の一時ファイルを読めたり消せたりする&lt;br&gt;→ filegator/filegator を 7.15.0 以降に更新&lt;/p&gt;&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-w998-qmw9-mf4m"/>
-<id>urn:bug-hou:GHSA-w998-qmw9-mf4m</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOのメディアプール同期でファイル名の格納型XSS。MEDIUM&lt;br&gt;→ redaxo 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63002&lt;/p&gt;</content>
 </entry>
 </feed>

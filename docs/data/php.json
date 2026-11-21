@@ -955,6 +955,106 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-h57j-5f5m-789v",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-104884",
+   "summary": "contao/core-bundle: Cross-site scripting in the frontend search results",
+   "severity": "MEDIUM",
+   "score": 5.4,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-h57j-5f5m-789v",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 4.9.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-r9qp-pqx5-8369",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-104883",
+   "summary": "contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators",
+   "severity": "HIGH",
+   "score": 7.2,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-r9qp-pqx5-8369",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.0.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-23w9-4pg3-xwm3",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-104882",
+   "summary": "contao/core-bundle: Improper access control in the CSV import wizard",
+   "severity": "MEDIUM",
+   "score": 6.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-23w9-4pg3-xwm3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.0.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/core-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-3r9g-pfhv-3228",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-104881",
+   "summary": "contao/newsletter-bundle: Contao newsletter custom actions bypass channel-scoped authorization",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-3r9g-pfhv-3228",
+   "kev": false,
+   "packages": [
+    {
+     "name": "contao/newsletter-bundle",
+     "range": ">= 5.0.0, < 5.3.50",
+     "fixed": "5.3.50"
+    },
+    {
+     "name": "contao/newsletter-bundle",
+     "range": ">= 5.4.0-RC1, < 5.7.12",
+     "fixed": "5.7.12"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
    "id": "GHSA-prhx-9q2h-ph2x",
    "ecosystem": "composer",
    "cve": "CVE-2026-103026",
@@ -3235,86 +3335,6 @@
      "name": "wp-graphql/wp-graphql",
      "range": "< 2.22.2",
      "fixed": null
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-m8r3-22v6-g877",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-63000",
-   "summary": "REDAXO: Missing CSRF Protection on Package Update Action Allows Forced Addon Updates",
-   "severity": "MEDIUM",
-   "score": 6.4,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:H/A:L",
-   "published": "2026-09-23",
-   "url": "https://github.com/advisories/GHSA-m8r3-22v6-g877",
-   "kev": false,
-   "packages": [
-    {
-     "name": "redaxo/source",
-     "range": "<= 5.21.1",
-     "fixed": "5.21.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-w998-qmw9-mf4m",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-63002",
-   "summary": "REDAXO: Stored XSS in Mediapool Sync Page via Unescaped Filesystem Filenames",
-   "severity": "MEDIUM",
-   "score": 4.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-23",
-   "url": "https://github.com/advisories/GHSA-w998-qmw9-mf4m",
-   "kev": false,
-   "packages": [
-    {
-     "name": "redaxo/source",
-     "range": "<= 5.21.1",
-     "fixed": "5.21.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-mf2p-wjp4-99pq",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-63001",
-   "summary": "REDAXO: Stored XSS via Unescaped Media Manager Type Name in `mediaIsInUse()`",
-   "severity": "MEDIUM",
-   "score": 4.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-09-23",
-   "url": "https://github.com/advisories/GHSA-mf2p-wjp4-99pq",
-   "kev": false,
-   "packages": [
-    {
-     "name": "redaxo/source",
-     "range": "<= 5.21.1",
-     "fixed": "5.21.2"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-5gmm-hjfj-8ff7",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-71537",
-   "summary": "Paymenter has a credit-refund double-spend race condition in service downgrade (doUpgrade)",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
-   "published": "2026-09-18",
-   "url": "https://github.com/advisories/GHSA-5gmm-hjfj-8ff7",
-   "kev": false,
-   "packages": [
-    {
-     "name": "paymenter/paymenter",
-     "range": "<= 1.5.6",
-     "fixed": "1.5.7"
     }
    ],
    "first_seen": "2026-11-02"

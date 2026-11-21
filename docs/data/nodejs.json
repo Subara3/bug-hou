@@ -52,6 +52,66 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-25qc-m4pw-2w8r",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-122247",
+   "summary": "Budibase: Unauthenticated global-admin & database creation via tenant-confusion bypass of the one-time init guard (`POST /api/global/users/init`)",
+   "severity": "HIGH",
+   "score": 8.2,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-25qc-m4pw-2w8r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@budibase/server",
+     "range": "<= 3.38.1",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-r2q3-7m4h-63qg",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-122244",
+   "summary": "Budibase: Cross-privilege Stored XSS in the Budibase Builder via broken HTML-escaping in `jsonFormatter.format()` rendered through `{@html}` in the CSP-less Builder origin",
+   "severity": "HIGH",
+   "score": 7.7,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:N",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-r2q3-7m4h-63qg",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@budibase/server",
+     "range": "<= 3.38.1",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
+   "id": "GHSA-xxqp-5qx8-gj5q",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63341",
+   "summary": "Aedes has Uncaught Exception and Uncontrolled Resource Consumption",
+   "severity": "HIGH",
+   "score": 7.5,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+   "published": "2026-11-20",
+   "url": "https://github.com/advisories/GHSA-xxqp-5qx8-gj5q",
+   "kev": false,
+   "packages": [
+    {
+     "name": "aedes",
+     "range": "< 1.1.1",
+     "fixed": "1.1.1"
+    }
+   ],
+   "first_seen": "2026-11-21"
+  },
+  {
    "id": "GHSA-vcx7-pfrh-mcfg",
    "ecosystem": "npm",
    "cve": "CVE-2026-115565",
@@ -2445,66 +2505,6 @@
     }
    ],
    "first_seen": "2026-11-04"
-  },
-  {
-   "id": "GHSA-3cgg-c5pp-57h6",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-113787",
-   "summary": "odf-kit: HTML injection leading to XSS in odtToHtml() and odsToHtml() via unescaped style attribute values",
-   "severity": "MEDIUM",
-   "score": 6.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-   "published": "2026-11-04",
-   "url": "https://github.com/advisories/GHSA-3cgg-c5pp-57h6",
-   "kev": false,
-   "packages": [
-    {
-     "name": "odf-kit",
-     "range": ">= 0.6.0, < 0.14.2",
-     "fixed": "0.14.2"
-    }
-   ],
-   "first_seen": "2026-11-04"
-  },
-  {
-   "id": "GHSA-33r5-xmm8-v6x5",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-44267",
-   "summary": "Elo JavaScript emitter has sandbox escape to arbitrary Node.js / browser code execution via unfiltered `.constructor` member access",
-   "severity": "CRITICAL",
-   "score": 9.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-11-03",
-   "url": "https://github.com/advisories/GHSA-33r5-xmm8-v6x5",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@enspirit/elo",
-     "range": "<= 1.0.0",
-     "fixed": "1.0.1"
-    }
-   ],
-   "first_seen": "2026-11-03"
-  },
-  {
-   "id": "GHSA-7w38-ggh5-v542",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-44266",
-   "summary": "Elo Ruby backend has Remote Code Execution via unescaped `#{...}` interpolation in emitted string literals and subtype-constraint labels",
-   "severity": "CRITICAL",
-   "score": 9.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-   "published": "2026-11-03",
-   "url": "https://github.com/advisories/GHSA-7w38-ggh5-v542",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@enspirit/elo",
-     "range": "<= 1.0.0",
-     "fixed": "1.0.1"
-    }
-   ],
-   "first_seen": "2026-11-03"
   }
  ],
  "eol": {
