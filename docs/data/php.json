@@ -151,7 +151,7 @@
   {
    "id": "CVE-2026-115560",
    "published": "2026-11-19",
-   "modified": "2026-11-20",
+   "modified": "2026-11-22",
    "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -169,7 +169,7 @@
   {
    "id": "CVE-2026-126714",
    "published": "2026-11-19",
-   "modified": "2026-11-20",
+   "modified": "2026-11-22",
    "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -258,7 +258,7 @@
   {
    "id": "CVE-2026-129289",
    "published": "2026-11-19",
-   "modified": "2026-11-20",
+   "modified": "2026-11-22",
    "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -328,7 +328,7 @@
   {
    "id": "CVE-2026-129474",
    "published": "2026-11-19",
-   "modified": "2026-11-20",
+   "modified": "2026-11-22",
    "status": "Awaiting Analysis",
    "score": 9.2,
    "severity": "CRITICAL",
