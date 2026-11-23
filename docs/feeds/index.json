@@ -59,6 +59,7 @@
 "tinymce/tinymce": "pkg/composer/tinymce__tinymce.xml",
 "verbb/formie": "pkg/composer/verbb__formie.xml",
 "wp-graphql/wp-graphql": "pkg/composer/wp-graphql__wp-graphql.xml",
+"wwbn/avideo": "pkg/composer/wwbn__avideo.xml",
 "yourls/yourls": "pkg/composer/yourls__yourls.xml",
 "zbateson/mail-mime-parser": "pkg/composer/zbateson__mail-mime-parser.xml"
 },
@@ -179,6 +180,7 @@
 "happy-dom": "pkg/npm/happy-dom.xml",
 "highcharts": "pkg/npm/highcharts.xml",
 "hono": "pkg/npm/hono.xml",
+"i18next": "pkg/npm/i18next.xml",
 "i18next-http-backend": "pkg/npm/i18next-http-backend.xml",
 "install-artifact-from-github": "pkg/npm/install-artifact-from-github.xml",
 "isomorphic-git": "pkg/npm/isomorphic-git.xml",
@@ -218,7 +220,8 @@
 "tinymce/tinymce": "pkg/npm/tinymce__tinymce.xml",
 "undici": "pkg/npm/undici.xml",
 "vite": "pkg/npm/vite.xml",
-"vue-i18n": "pkg/npm/vue-i18n.xml"
+"vue-i18n": "pkg/npm/vue-i18n.xml",
+"xo-server": "pkg/npm/xo-server.xml"
 },
 "pip": {
 "ag2": "pkg/pip/ag2.xml",

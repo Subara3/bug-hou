@@ -52,6 +52,66 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-9x82-4j54-863h",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63476",
+   "summary": "isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS)",
+   "severity": "MEDIUM",
+   "score": 4.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+   "published": "2026-11-23",
+   "url": "https://github.com/advisories/GHSA-9x82-4j54-863h",
+   "kev": false,
+   "packages": [
+    {
+     "name": "isomorphic-git",
+     "range": "< 1.38.6",
+     "fixed": "1.38.6"
+    }
+   ],
+   "first_seen": "2026-11-23"
+  },
+  {
+   "id": "GHSA-6jcc-5g8w-32mx",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-63402",
+   "summary": "i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",
+   "severity": "MEDIUM",
+   "score": 5.9,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:H",
+   "published": "2026-11-23",
+   "url": "https://github.com/advisories/GHSA-6jcc-5g8w-32mx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "i18next",
+     "range": "< 26.3.4",
+     "fixed": "26.3.4"
+    }
+   ],
+   "first_seen": "2026-11-23"
+  },
+  {
+   "id": "GHSA-2r3w-c2vx-fv5g",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-133469",
+   "summary": "Xen Orchestra: Empty-object login token",
+   "severity": "CRITICAL",
+   "score": 9.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-23",
+   "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g",
+   "kev": false,
+   "packages": [
+    {
+     "name": "xo-server",
+     "range": "<= 5.7.4",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-23"
+  },
+  {
    "id": "GHSA-25qc-m4pw-2w8r",
    "ecosystem": "npm",
    "cve": "CVE-2026-122247",
@@ -2440,71 +2500,6 @@
     }
    ],
    "first_seen": "2026-11-09"
-  },
-  {
-   "id": "GHSA-9qw7-j9xw-fv9c",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-63395",
-   "summary": "isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE)",
-   "severity": "HIGH",
-   "score": 8.8,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-   "published": "2026-11-09",
-   "url": "https://github.com/advisories/GHSA-9qw7-j9xw-fv9c",
-   "kev": false,
-   "packages": [
-    {
-     "name": "isomorphic-git",
-     "range": "<= 1.38.5",
-     "fixed": "1.38.6"
-    }
-   ],
-   "first_seen": "2026-11-09"
-  },
-  {
-   "id": "GHSA-m5ph-mmg5-6w5h",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-62300",
-   "summary": "filecoin-pin: Unbounded DAG pinning can exhaust server resources",
-   "severity": "MEDIUM",
-   "score": 6.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-11-05",
-   "url": "https://github.com/advisories/GHSA-m5ph-mmg5-6w5h",
-   "kev": false,
-   "packages": [
-    {
-     "name": "filecoin-pin",
-     "range": "<= 1.1.0",
-     "fixed": "1.1.1"
-    }
-   ],
-   "first_seen": "2026-11-05"
-  },
-  {
-   "id": "GHSA-mc8m-rr6c-r5qr",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-93363",
-   "summary": "@payloadcms/storage-vercel-blob has access control bypass of uploads in Vercel Storage adapter",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-11-04",
-   "url": "https://github.com/advisories/GHSA-mc8m-rr6c-r5qr",
-   "kev": false,
-   "packages": [
-    {
-     "name": "@payloadcms/storage-vercel-blob",
-     "range": ">= 3.25.0, < 3.90.0",
-     "fixed": "3.90.0"
-    },
-    {
-     "name": "@payloadcms/storage-vercel-blob",
-     "range": ">= 4.0.0-canary.0, < 4.0.0-canary.34",
-     "fixed": "4.0.0-canary.34"
-    }
-   ],
-   "first_seen": "2026-11-04"
   }
  ],
  "eol": {

@@ -5,10 +5,28 @@
  "kev": [],
  "cves": [
   {
+   "id": "CVE-2026-107784",
+   "published": "2026-11-23",
+   "modified": "2026-11-23",
+   "status": "Awaiting Analysis",
+   "score": 6.3,
+   "severity": "MEDIUM",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "On Windows, the tarfile \"tar\" and \"data\" extraction filters did not reject member names or link targets that have a drive but no root, such as \"C:foo\". When extracting to a relative destination, such a member was written to the current working directory of that drive instead of the destination, and a symbolic link with such a target pointed outside the destination. The filters now refuse these member names and link targets with AbsolutePathError and AbsoluteLinkError.",
+   "kev": false,
+   "affects": [],
+   "cwe": [
+    "CWE-22",
+    "CWE-59"
+   ],
+   "first_seen": "2026-11-23"
+  },
+  {
    "id": "CVE-2026-133949",
    "published": "2026-11-20",
-   "modified": "2026-11-20",
-   "status": "Received",
+   "modified": "2026-11-23",
+   "status": "Awaiting Analysis",
    "score": 9.3,
    "severity": "CRITICAL",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -274,23 +292,6 @@
    "cwe": [
     "CWE-22",
     "CWE-59"
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "CVE-2026-15310",
-   "published": "2026-08-25",
-   "modified": "2026-11-10",
-   "status": "Awaiting Analysis",
-   "score": 2.1,
-   "severity": "LOW",
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:A/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
-   "cvss": "4.0",
-   "desc": "When decompressing crafted zip files using the bzip/LZMA/Zstandard \n\ncompressions, Python could use an attacker-controlled size to \n\npre-allocate memory, possibly resulting in memory exhaustion.",
-   "kev": false,
-   "affects": [],
-   "cwe": [
-    "CWE-400"
    ],
    "first_seen": "0000-00-00"
   }

@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/#python"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/python.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/python.xml</id>
-<updated>2026-11-21T00:00:00Z</updated>
+<updated>2026-11-23T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: CVE-2026-107784 6.3 MEDIUM</title>
+<link href="https://nvd.nist.gov/vuln/detail/CVE-2026-107784"/>
+<id>urn:bug-hou:CVE-2026-107784</id>
+<updated>2026-11-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;On Windows, the tarfile "tar" and "data" extraction filters did not reject member names or link targets that have a drive but no root, such as "C:foo". When extracting to a relative destination, such a member was written to the current working directory of that drive instead of the destination, and a symbolic link with such a target pointed outside the destination. The filters now refuse these member names and link targets with AbsolutePathError and AbsoluteLinkError.&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Python: Inscriptis: Quadratic memory growth from sibling &lt;table&gt; elements in get_text() (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-q87h-c5m7-659j"/>
@@ -353,12 +360,5 @@ Upgrading to a secure version of pip should be done either by first upgrading Py
 <id>urn:bug-hou:GHSA-r7wg-f7r2-8wf7</id>
 <updated>2026-11-19T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; axon-mcpが中身を確かめずにコードを取得する。HIGH&lt;br&gt;→ 修正版なし。使っていれば利用を見直す&lt;/p&gt;&lt;p&gt;axon-mcp &amp;lt;= 0.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-76818&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Python: djangocms-moderation: Moderation comments disclosed to non-participant staff via the admin changelist (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-pj7p-238h-76pv"/>
-<id>urn:bug-hou:GHSA-pj7p-238h-76pv</id>
-<updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。管理画面で関係ないスタッフにコメントが見える&lt;br&gt;→ djangocms-moderationを2.4.0に更新&lt;/p&gt;&lt;p&gt;djangocms-moderation &amp;lt;= 2.3.0 → 2.4.0&lt;/p&gt;&lt;p&gt;CVE-2026-69139&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -1,5 +1,81 @@
 [
  {
+  "id": "GHSA-j44m-77cc-p3cc",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-63492",
+  "summary": "AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
+  "severity": "HIGH",
+  "score": 8.1,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-23",
+  "url": "https://github.com/advisories/GHSA-j44m-77cc-p3cc",
+  "kev": false,
+  "packages": [
+   {
+    "name": "wwbn/avideo",
+    "range": "< 29.1.0",
+    "fixed": "29.1.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-9x82-4j54-863h",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63476",
+  "summary": "isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS)",
+  "severity": "MEDIUM",
+  "score": 4.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+  "published": "2026-11-23",
+  "url": "https://github.com/advisories/GHSA-9x82-4j54-863h",
+  "kev": false,
+  "packages": [
+   {
+    "name": "isomorphic-git",
+    "range": "< 1.38.6",
+    "fixed": "1.38.6"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-6jcc-5g8w-32mx",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-63402",
+  "summary": "i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS)",
+  "severity": "MEDIUM",
+  "score": 5.9,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:H",
+  "published": "2026-11-23",
+  "url": "https://github.com/advisories/GHSA-6jcc-5g8w-32mx",
+  "kev": false,
+  "packages": [
+   {
+    "name": "i18next",
+    "range": "< 26.3.4",
+    "fixed": "26.3.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-2r3w-c2vx-fv5g",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-133469",
+  "summary": "Xen Orchestra: Empty-object login token",
+  "severity": "CRITICAL",
+  "score": 9.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-23",
+  "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g",
+  "kev": false,
+  "packages": [
+   {
+    "name": "xo-server",
+    "range": "<= 5.7.4",
+    "fixed": null
+   }
+  ]
+ },
+ {
   "id": "GHSA-wgvx-x5g3-9v29",
   "ecosystem": "composer",
   "cve": "CVE-2026-63012",

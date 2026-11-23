@@ -4,8 +4,29 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-21T00:00:00Z</updated>
+<updated>2026-11-23T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-9x82-4j54-863h"/>
+<id>urn:bug-hou:GHSA-9x82-4j54-863h</id>
+<updated>2026-11-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;isomorphic-git &amp;lt; 1.38.6 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63476&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS) (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-6jcc-5g8w-32mx"/>
+<id>urn:bug-hou:GHSA-6jcc-5g8w-32mx</id>
+<updated>2026-11-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;i18next &amp;lt; 26.3.4 → 26.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-63402&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>Node.js: Xen Orchestra: Empty-object login token (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"/>
+<id>urn:bug-hou:GHSA-2r3w-c2vx-fv5g</id>
+<updated>2026-11-23T00:00:00Z</updated>
+<content type="html">&lt;p&gt;xo-server &amp;lt;= 5.7.4&lt;/p&gt;&lt;p&gt;CVE-2026-133469&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] Node.js: Aedes has Uncaught Exception and Uncontrolled Resource Consumption (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-xxqp-5qx8-gj5q"/>
@@ -334,26 +355,5 @@
 <id>urn:bug-hou:GHSA-r7hq-q2xm-6c5m</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。safe_regexで「または」を含むパターンが部分一致になる&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 / 1.13.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2, @grpc/grpc-js-xds &amp;lt; 1.13.2 → 1.13.2&lt;/p&gt;&lt;p&gt;CVE-2026-126367&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: basic-ftp: Uncaught exception crashes the Node.js process when a password (or resumed-download path) contains CR/LF (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-r4jh-29pc-gfqr"/>
-<id>urn:bug-hou:GHSA-r4jh-29pc-gfqr</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。パスワードなどに改行が入ると例外でプロセスが落ちる&lt;br&gt;→ basic-ftp 6.2.3 以降に更新&lt;/p&gt;&lt;p&gt;basic-ftp &amp;lt;= 6.2.2 → 6.2.3&lt;/p&gt;&lt;p&gt;CVE-2026-126346&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Astro: Image endpoint in @astrojs/node can read files from a case-variant sibling of the output directory on case-sensitive filesystems (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-r3h5-4585-7x3w"/>
-<id>urn:bug-hou:GHSA-r3h5-4585-7x3w</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; @astrojs/nodeの画像処理で隣のフォルダのファイルが読めるMEDIUM&lt;br&gt;→ astro 7.4.7に更新。@astrojs/nodeは修正版なし&lt;/p&gt;&lt;p&gt;@astrojs/node &amp;lt;= 11.1.11, astro &amp;gt;= 5.14.3, &amp;lt;= 7.4.6 → 7.4.7&lt;/p&gt;&lt;p&gt;CVE-2026-126364&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: @hono/node-server: Unhandled `ECONNRESET` on the socket during an asynchronous WebSocket upgrade crashes the process (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-qv5m-9pm6-hqp3"/>
-<id>urn:bug-hou:GHSA-qv5m-9pm6-hqp3</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。WebSocket接続の切り替え中に接続が切れるとプロセスが落ちる&lt;br&gt;→ @hono/node-server 2.1.6 以降に更新&lt;/p&gt;&lt;p&gt;@hono/node-server &amp;gt;= 2.0.0, &amp;lt; 2.1.6 → 2.1.6&lt;/p&gt;&lt;p&gt;CVE-2026-126343&lt;/p&gt;</content>
 </entry>
 </feed>

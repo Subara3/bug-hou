@@ -50,6 +50,23 @@
  ],
  "cves": [
   {
+   "id": "CVE-2026-132779",
+   "published": "2026-11-23",
+   "modified": "2026-11-23",
+   "status": "Awaiting Analysis",
+   "score": 6.9,
+   "severity": "MEDIUM",
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
+   "cvss": "4.0",
+   "desc": "When NGINX Plus or NGINX Open Source is configured to use TLS 1.3 early data using the ssl_early_data on directive, an attacker can use a specially crafted TLS 1.3 connection to drive an NGINX worker into a tight loop in which it repeatedly retries the same send without ever making progress. The worker continues accepting new connections and handling existing ones, but one CPU core is pinned at 100%.\n\nImpact:\nSystem performance can degrade until the NGINX worker process is either forced to restart or is manually restarted. This vulnerability may allow an unauthenticated attacker to cause a degradation of service that can lead to a denial-of-service (DoS) on the NGINX system. There is no control plane exposure; this is a data plane issue only.\n\nNote: Software versions which have reached End of Technical Support (EoTS) are not evaluated.",
+   "kev": false,
+   "affects": [],
+   "cwe": [
+    "CWE-835"
+   ],
+   "first_seen": "2026-11-23"
+  },
+  {
    "id": "CVE-2026-113425",
    "published": "2026-11-18",
    "modified": "2026-11-20",
@@ -86,8 +103,8 @@
   {
    "id": "CVE-2026-120967",
    "published": "2026-11-18",
-   "modified": "2026-11-18",
-   "status": "Received",
+   "modified": "2026-11-23",
+   "status": "Awaiting Analysis",
    "score": 6.3,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:H/AT:N/PR:N/UI:N/VC:L/VI:L/VA:N/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",
@@ -103,8 +120,8 @@
   {
    "id": "CVE-2026-120993",
    "published": "2026-11-18",
-   "modified": "2026-11-18",
-   "status": "Received",
+   "modified": "2026-11-23",
+   "status": "Awaiting Analysis",
    "score": 6.9,
    "severity": "MEDIUM",
    "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:L/SC:N/SI:N/SA:N/E:X/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:X/AU:X/R:X/V:X/RE:X/U:X",

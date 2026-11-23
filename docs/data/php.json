@@ -955,6 +955,26 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-j44m-77cc-p3cc",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-63492",
+   "summary": "AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
+   "severity": "HIGH",
+   "score": 8.1,
+   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-23",
+   "url": "https://github.com/advisories/GHSA-j44m-77cc-p3cc",
+   "kev": false,
+   "packages": [
+    {
+     "name": "wwbn/avideo",
+     "range": "< 29.1.0",
+     "fixed": "29.1.0"
+    }
+   ],
+   "first_seen": "2026-11-23"
+  },
+  {
    "id": "GHSA-h57j-5f5m-789v",
    "ecosystem": "composer",
    "cve": "CVE-2026-104884",
@@ -3315,26 +3335,6 @@
      "name": "solspace/craft-freeform",
      "range": ">= 5.0.0, <= 5.10.13",
      "fixed": "5.10.14"
-    }
-   ],
-   "first_seen": "2026-11-02"
-  },
-  {
-   "id": "GHSA-5mmc-8pc9-wggg",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-88974",
-   "summary": "WPGraphQL: Contributor can publish and modify posts without the required capabilities via updatePost",
-   "severity": "MEDIUM",
-   "score": 5.4,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
-   "published": "2026-09-23",
-   "url": "https://github.com/advisories/GHSA-5mmc-8pc9-wggg",
-   "kev": false,
-   "packages": [
-    {
-     "name": "wp-graphql/wp-graphql",
-     "range": "< 2.22.2",
-     "fixed": null
     }
    ],
    "first_seen": "2026-11-02"
