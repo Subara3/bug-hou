@@ -7,11 +7,11 @@
 <updated>2026-11-23T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>PHP: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword (HIGH)</title>
+<title>[要確認] PHP: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-j44m-77cc-p3cc"/>
 <id>urn:bug-hou:GHSA-j44m-77cc-p3cc</id>
 <updated>2026-11-23T00:00:00Z</updated>
-<content type="html">&lt;p&gt;wwbn/avideo &amp;lt; 29.1.0 → 29.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-63492&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AVideoのAPIでOSコマンド注入。利用者の限られるパッケージのHIGH&lt;br&gt;→ wwbn/avideoを使っていれば29.1.0に更新&lt;/p&gt;&lt;p&gt;wwbn/avideo &amp;lt; 29.1.0 → 29.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-63492&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] PHP: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators (HIGH)</title>

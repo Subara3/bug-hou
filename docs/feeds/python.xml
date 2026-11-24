@@ -7,11 +7,11 @@
 <updated>2026-11-23T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Python: CVE-2026-107784 6.3 MEDIUM</title>
+<title>[様子見] Python: CVE-2026-107784 6.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-107784"/>
 <id>urn:bug-hou:CVE-2026-107784</id>
 <updated>2026-11-23T00:00:00Z</updated>
-<content type="html">&lt;p&gt;On Windows, the tarfile "tar" and "data" extraction filters did not reject member names or link targets that have a drive but no root, such as "C:foo". When extracting to a relative destination, such a member was written to the current working directory of that drive instead of the destination, and a symbolic link with such a target pointed outside the destination. The filters now refuse these member names and link targets with AbsolutePathError and AbsoluteLinkError.&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Windowsでtarfileの展開先の外に書き込まれる。MEDIUM&lt;br&gt;→ Windowsで信頼できないtarを展開していないか確認&lt;/p&gt;&lt;p&gt;On Windows, the tarfile "tar" and "data" extraction filters did not reject member names or link targets that have a drive but no root, such as "C:foo". When extracting to a relative destination, such a member was written to the current working directory of that drive instead of the destination, and a symbolic link with such a target pointed outside the destination. The filters now refuse these member names and link targets with AbsolutePathError and AbsoluteLinkError.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Python: Inscriptis: Quadratic memory growth from sibling &lt;table&gt; elements in get_text() (MEDIUM)</title>

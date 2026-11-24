@@ -7,10 +7,10 @@
 <updated>2026-11-23T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS) (MEDIUM)</title>
+<title>[様子見] npm: i18next deepExtend recurses into inherited built-ins, allowing corruption of shared built-in objects (DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-6jcc-5g8w-32mx"/>
 <id>urn:bug-hou:GHSA-6jcc-5g8w-32mx</id>
 <updated>2026-11-23T00:00:00Z</updated>
-<content type="html">&lt;p&gt;i18next &amp;lt; 26.3.4 → 26.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-63402&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; i18nextのdeepExtendで組み込みオブジェクトが壊されるDoS。MEDIUM&lt;br&gt;→ i18nextを使っていれば26.3.4に更新&lt;/p&gt;&lt;p&gt;i18next &amp;lt; 26.3.4 → 26.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-63402&lt;/p&gt;</content>
 </entry>
 </feed>

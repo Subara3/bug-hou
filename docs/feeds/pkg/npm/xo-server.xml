@@ -7,10 +7,10 @@
 <updated>2026-11-23T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>npm: Xen Orchestra: Empty-object login token (CRITICAL)</title>
+<title>[要確認] npm: Xen Orchestra: Empty-object login token (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"/>
 <id>urn:bug-hou:GHSA-2r3w-c2vx-fv5g</id>
 <updated>2026-11-23T00:00:00Z</updated>
-<content type="html">&lt;p&gt;xo-server &amp;lt;= 5.7.4&lt;/p&gt;&lt;p&gt;CVE-2026-133469&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Xen Orchestraのログイン用トークンの不備。利用者の限られるパッケージのCRITICAL&lt;br&gt;→ xo-serverを使っているか確認。修正版はまだ書かれていない&lt;/p&gt;&lt;p&gt;xo-server &amp;lt;= 5.7.4&lt;/p&gt;&lt;p&gt;CVE-2026-133469&lt;/p&gt;</content>
 </entry>
 </feed>
