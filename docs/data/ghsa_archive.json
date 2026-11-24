@@ -1,8 +1,70 @@
 [
  {
+  "id": "GHSA-g9x9-q7qj-6mv5",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-63305",
+  "summary": "AVideo API FFmpeg process permits OS command injection via notifyCode/callback",
+  "severity": "HIGH",
+  "score": 8.1,
+  "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-24",
+  "url": "https://github.com/advisories/GHSA-g9x9-q7qj-6mv5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "wwbn/avideo",
+    "range": "< 29.1.0",
+    "fixed": "29.1.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-48qj-5wxh-m8hc",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-59192",
+  "summary": "Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization",
+  "severity": "MEDIUM",
+  "score": 6.9,
+  "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:L/VA:N/SC:N/SI:N/SA:N",
+  "published": "2026-11-24",
+  "url": "https://github.com/advisories/GHSA-48qj-5wxh-m8hc",
+  "kev": false,
+  "packages": [
+   {
+    "name": "cakephp/twig-view",
+    "range": "< 1.3.3",
+    "fixed": "1.3.3"
+   },
+   {
+    "name": "cakephp/twig-view",
+    "range": ">= 2.0.0, < 2.1.2",
+    "fixed": "2.1.2"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-c4hm-4h84-2cf3",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-59726",
+  "summary": "ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments",
+  "severity": "CRITICAL",
+  "score": 10.0,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+  "published": "2026-11-24",
+  "url": "https://github.com/advisories/GHSA-c4hm-4h84-2cf3",
+  "kev": false,
+  "packages": [
+   {
+    "name": "ruflo",
+    "range": "< 3.16.3",
+    "fixed": "3.16.3"
+   }
+  ]
+ },
+ {
   "id": "GHSA-j44m-77cc-p3cc",
   "ecosystem": "composer",
-  "cve": "CVE-2026-63492",
+  "cve": "CVE-2026-63304",
   "summary": "AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword",
   "severity": "HIGH",
   "score": 8.1,

@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-23T00:00:00Z</updated>
+<updated>2026-11-24T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-c4hm-4h84-2cf3"/>
+<id>urn:bug-hou:GHSA-c4hm-4h84-2cf3</id>
+<updated>2026-11-24T00:00:00Z</updated>
+<content type="html">&lt;p&gt;ruflo &amp;lt; 3.16.3 → 3.16.3&lt;/p&gt;&lt;p&gt;CVE-2026-59726&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Node.js: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-9x82-4j54-863h"/>
@@ -348,12 +355,5 @@
 <id>urn:bug-hou:GHSA-r99w-jh2x-3mg9</id>
 <updated>2026-11-13T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 先頭の//でミドルウェアのパス判定をすり抜けられるがMEDIUM&lt;br&gt;→ @nuxt/nitro-server 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128077&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: @grpc/grpc-js: safe_regex incorrectly applies partial string matching for patterns with alternation (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-r7hq-q2xm-6c5m"/>
-<id>urn:bug-hou:GHSA-r7hq-q2xm-6c5m</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。safe_regexで「または」を含むパターンが部分一致になる&lt;br&gt;→ @grpc/grpc-js-xds 1.14.2 / 1.13.2 以降に更新&lt;/p&gt;&lt;p&gt;@grpc/grpc-js-xds &amp;gt;= 1.14.0, &amp;lt; 1.14.2 → 1.14.2, @grpc/grpc-js-xds &amp;lt; 1.13.2 → 1.13.2&lt;/p&gt;&lt;p&gt;CVE-2026-126367&lt;/p&gt;</content>
 </entry>
 </feed>

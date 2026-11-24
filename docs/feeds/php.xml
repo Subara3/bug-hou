@@ -4,14 +4,28 @@
 <link href="https://subara3.github.io/bug-hou/#php"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/php.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/php.xml</id>
-<updated>2026-11-23T00:00:00Z</updated>
+<updated>2026-11-24T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: AVideo API FFmpeg process permits OS command injection via notifyCode/callback (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-g9x9-q7qj-6mv5"/>
+<id>urn:bug-hou:GHSA-g9x9-q7qj-6mv5</id>
+<updated>2026-11-24T00:00:00Z</updated>
+<content type="html">&lt;p&gt;wwbn/avideo &amp;lt; 29.1.0 → 29.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-63305&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-48qj-5wxh-m8hc"/>
+<id>urn:bug-hou:GHSA-48qj-5wxh-m8hc</id>
+<updated>2026-11-24T00:00:00Z</updated>
+<content type="html">&lt;p&gt;cakephp/twig-view &amp;lt; 1.3.3 → 1.3.3, cakephp/twig-view &amp;gt;= 2.0.0, &amp;lt; 2.1.2 → 2.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-59192&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] PHP: AVideo API vulnerable to OS command injection through an unescaped FFmpeg process keyword (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-j44m-77cc-p3cc"/>
 <id>urn:bug-hou:GHSA-j44m-77cc-p3cc</id>
 <updated>2026-11-23T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AVideoのAPIでOSコマンド注入。利用者の限られるパッケージのHIGH&lt;br&gt;→ wwbn/avideoを使っていれば29.1.0に更新&lt;/p&gt;&lt;p&gt;wwbn/avideo &amp;lt; 29.1.0 → 29.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-63492&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AVideoのAPIでOSコマンド注入。利用者の限られるパッケージのHIGH&lt;br&gt;→ wwbn/avideoを使っていれば29.1.0に更新&lt;/p&gt;&lt;p&gt;wwbn/avideo &amp;lt; 29.1.0 → 29.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-63304&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] PHP: contao/core-bundle: Non-admin users can self-grant permissions that implicitly make them administrators (HIGH)</title>
@@ -409,19 +423,5 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <id>urn:bug-hou:GHSA-4qv2-g5vp-wjjw</id>
 <updated>2026-11-17T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。ClassNameを書き換えてレコードの種類を変えられる&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91113&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Silverstripe Framework: Auth bypass GridFieldDetailForm (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-3qh3-54qg-gpq3"/>
-<id>urn:bug-hou:GHSA-3qh3-54qg-gpq3</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。GridFieldDetailFormでの認可の回避&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-88989&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Laravel: Task Output Injection - Concurrency Process (LOW)</title>
-<link href="https://github.com/advisories/GHSA-63hm-g96r-2m2q"/>
-<id>urn:bug-hou:GHSA-63hm-g96r-2m2q</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; LaravelのConcurrencyのタスク出力への注入でLOW&lt;br&gt;→ 12.71.0 / 13.40.0 以降に更新&lt;/p&gt;&lt;p&gt;laravel/framework &amp;lt; 12.71.0 → 12.71.0, laravel/framework &amp;gt;= 13.0.0, &amp;lt; 13.40.0 → 13.40.0&lt;/p&gt;&lt;p&gt;CVE-2026-128083&lt;/p&gt;</content>
 </entry>
 </feed>

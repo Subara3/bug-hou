@@ -19,7 +19,7 @@
   {
    "id": "CVE-2026-111497",
    "published": "2026-10-22",
-   "modified": "2026-11-18",
+   "modified": "2026-11-24",
    "status": "Analyzed",
    "score": 9.2,
    "severity": "CRITICAL",
@@ -51,6 +51,26 @@
   }
  ],
  "ghsa": [
+  {
+   "id": "GHSA-c4hm-4h84-2cf3",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-59726",
+   "summary": "ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments",
+   "severity": "CRITICAL",
+   "score": 10.0,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+   "published": "2026-11-24",
+   "url": "https://github.com/advisories/GHSA-c4hm-4h84-2cf3",
+   "kev": false,
+   "packages": [
+    {
+     "name": "ruflo",
+     "range": "< 3.16.3",
+     "fixed": "3.16.3"
+    }
+   ],
+   "first_seen": "2026-11-24"
+  },
   {
    "id": "GHSA-9x82-4j54-863h",
    "ecosystem": "npm",
@@ -2471,26 +2491,6 @@
    "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
    "published": "2026-11-09",
    "url": "https://github.com/advisories/GHSA-cw2g-2vwq-88w6",
-   "kev": false,
-   "packages": [
-    {
-     "name": "isomorphic-git",
-     "range": "<= 1.38.5",
-     "fixed": "1.38.6"
-    }
-   ],
-   "first_seen": "2026-11-09"
-  },
-  {
-   "id": "GHSA-96wc-2m84-2cj7",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-63475",
-   "summary": "isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS)",
-   "severity": "MEDIUM",
-   "score": 4.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
-   "published": "2026-11-09",
-   "url": "https://github.com/advisories/GHSA-96wc-2m84-2cj7",
    "kev": false,
    "packages": [
     {

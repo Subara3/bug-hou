@@ -52,7 +52,7 @@
   {
    "id": "CVE-2026-132779",
    "published": "2026-11-23",
-   "modified": "2026-11-23",
+   "modified": "2026-11-24",
    "status": "Awaiting Analysis",
    "score": 6.9,
    "severity": "MEDIUM",
