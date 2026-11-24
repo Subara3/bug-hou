@@ -1140,8 +1140,8 @@
     "releaseDate": "2026-05-13",
     "support": null,
     "eol": false,
-    "latest": "1.31.9",
-    "latestReleaseDate": "2026-11-18",
+    "latest": "1.31.10",
+    "latestReleaseDate": "2026-11-23",
     "lts": false
    },
    {
@@ -1149,8 +1149,8 @@
     "releaseDate": "2026-04-14",
     "support": null,
     "eol": false,
-    "latest": "1.30.7",
-    "latestReleaseDate": "2026-11-18",
+    "latest": "1.30.8",
+    "latestReleaseDate": "2026-11-23",
     "lts": false
    },
    {

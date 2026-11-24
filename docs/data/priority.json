@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-23T23:56:39Z",
+ "updated_at": "2026-11-24T09:57:31Z",
  "items": {
   "CVE-2025-1218": {
    "u": "later",
@@ -1186,11 +1186,11 @@
   "GHSA-2535-j2pq-qq4r": {
    "u": "later",
    "exp": "none",
-   "exp_src": "",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0033,
    "pct": 0.266
   },
@@ -1208,11 +1208,11 @@
   "GHSA-25qc-m4pw-2w8r": {
    "u": "later",
    "exp": "none",
-   "exp_src": "",
+   "exp_src": "CISA",
    "auto": "yes",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0084,
    "pct": 0.5874
   },
@@ -1230,22 +1230,22 @@
   "GHSA-2hjf-7455-w946": {
    "u": "later",
    "exp": "none",
-   "exp_src": "",
-   "auto": "yes",
-   "auto_src": "CVSS",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0066,
    "pct": 0.5247
   },
   "GHSA-2m9m-6cr5-9x25": {
    "u": "later",
    "exp": "none",
-   "exp_src": "",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "total",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0055,
    "pct": 0.4711
   },
@@ -1272,15 +1272,26 @@
    "pct": 0.2784
   },
   "GHSA-2pj4-v76f-wjvx": {
-   "u": "later",
-   "exp": "none",
-   "exp_src": "",
+   "u": "soon",
+   "exp": "poc",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "total",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0106,
-   "pct": 0.6545
+   "pct": 0.6545,
+   "hist": [
+    {
+     "at": "2026-11-24",
+     "from": "later",
+     "to": "soon",
+     "why": [
+      "exp:none>poc"
+     ],
+     "src": "CISA"
+    }
+   ]
   },
   "GHSA-2r3w-c2vx-fv5g": {
    "u": "soon",
@@ -1889,11 +1900,11 @@
   "GHSA-66q9-mxf2-xqw6": {
    "u": "later",
    "exp": "none",
-   "exp_src": "",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0035,
    "pct": 0.2973
   },
@@ -1976,12 +1987,12 @@
   },
   "GHSA-6pm8-6f34-9v3g": {
    "u": "later",
-   "exp": "none",
-   "exp_src": "",
+   "exp": "poc",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0035,
    "pct": 0.2887
   },
@@ -3208,15 +3219,27 @@
    "pct": 0.4525
   },
   "GHSA-m29v-3g7g-9c63": {
-   "u": "later",
+   "u": "soon",
    "exp": "none",
-   "exp_src": "",
-   "auto": "no",
-   "auto_src": "CVSS",
-   "imp": "partial",
-   "imp_src": "CVSS",
+   "exp_src": "CISA",
+   "auto": "yes",
+   "auto_src": "CISA",
+   "imp": "total",
+   "imp_src": "CISA",
    "epss": 0.0008,
-   "pct": 0.0024
+   "pct": 0.0024,
+   "hist": [
+    {
+     "at": "2026-11-24",
+     "from": "later",
+     "to": "soon",
+     "why": [
+      "auto:no>yes",
+      "imp:partial>total"
+     ],
+     "src": ""
+    }
+   ]
   },
   "GHSA-m4g8-47f9-h588": {
    "u": "later",
@@ -3427,15 +3450,26 @@
    "pct": 0.3668
   },
   "GHSA-p34x-fmph-9fjx": {
-   "u": "later",
-   "exp": "none",
-   "exp_src": "",
+   "u": "soon",
+   "exp": "poc",
+   "exp_src": "CISA",
    "auto": "yes",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0075,
-   "pct": 0.5584
+   "pct": 0.5584,
+   "hist": [
+    {
+     "at": "2026-11-24",
+     "from": "later",
+     "to": "soon",
+     "why": [
+      "exp:none>poc"
+     ],
+     "src": "CISA"
+    }
+   ]
   },
   "GHSA-p96f-p2p2-2g3h": {
    "u": "later",
@@ -4335,12 +4369,12 @@
   },
   "GHSA-wr3g-j6qj-xpgh": {
    "u": "later",
-   "exp": "none",
-   "exp_src": "",
+   "exp": "poc",
+   "exp_src": "CISA",
    "auto": "no",
-   "auto_src": "CVSS",
+   "auto_src": "CISA",
    "imp": "partial",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0022,
    "pct": 0.1322
   },
@@ -4575,12 +4609,12 @@
   },
   "GHSA-xwcw-j52r-34x4": {
    "u": "soon",
-   "exp": "none",
-   "exp_src": "",
-   "auto": "yes",
-   "auto_src": "CVSS",
+   "exp": "poc",
+   "exp_src": "CISA",
+   "auto": "no",
+   "auto_src": "CISA",
    "imp": "total",
-   "imp_src": "CVSS",
+   "imp_src": "CISA",
    "epss": 0.0047,
    "pct": 0.4133
   },

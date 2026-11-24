@@ -4,7 +4,14 @@
   "title": "Siemens製品に対するアップデート（2026年11月）",
   "url": "https://jvn.jp/vu/JVNVU98354779/",
   "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
-  "date": "2026-11-20"
+  "date": "2026-11-24"
+ },
+ {
+  "id": "JVN#84156789",
+  "title": "Zoraxyにおける複数の脆弱性",
+  "url": "https://jvn.jp/jp/JVN84156789/",
+  "desc": "Zoraxy Projectが提供するZoraxyには、複数の脆弱性が存在します。",
+  "date": "2026-11-24"
  },
  {
   "id": "JVN#64740097",
