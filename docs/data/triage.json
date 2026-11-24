@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-21T12:46:13Z",
+ "updated_at": "2026-11-24T00:45:53Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -49,6 +49,13 @@
    "todo": "mod_mdを使っているか確認し、2.4.69より後の版に更新",
    "kev": false,
    "at": "2026-11-12"
+  },
+  "CVE-2026-107784": {
+   "level": "watch",
+   "reason": "Windowsでtarfileの展開先の外に書き込まれる。MEDIUM",
+   "todo": "Windowsで信頼できないtarを展開していないか確認",
+   "kev": false,
+   "at": "2026-11-24"
   },
   "CVE-2026-109163": {
    "level": "check",
@@ -350,6 +357,13 @@
    "kev": false,
    "at": "2026-11-20"
   },
+  "CVE-2026-132779": {
+   "level": "watch",
+   "reason": "nginxでssl_early_data onのときだけCPUを使い切らせるDoS。MEDIUM",
+   "todo": "ssl_early_data onを使っているか確認",
+   "kev": false,
+   "at": "2026-11-24"
+  },
   "CVE-2026-133949": {
    "level": "action",
    "reason": "pipに同梱の証明書に問題のあるeMudhra証明書が入っている。CRITICAL",
@@ -363,13 +377,6 @@
    "level": "check",
    "reason": "aliasとrewriteで$request_filenameを使う設定のnginxのみ影響",
    "todo": "該当する設定がないか確認",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "CVE-2026-15310": {
-   "level": "watch",
-   "reason": "細工zipの展開でメモリ枯渇。LOW",
-   "todo": "",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -839,6 +846,13 @@
    "kev": false,
    "at": "2026-11-20"
   },
+  "GHSA-2r3w-c2vx-fv5g": {
+   "level": "check",
+   "reason": "Xen Orchestraのログイン用トークンの不備。利用者の限られるパッケージのCRITICAL",
+   "todo": "xo-serverを使っているか確認。修正版はまだ書かれていない",
+   "kev": false,
+   "at": "2026-11-24"
+  },
   "GHSA-2v3c-qxhr-7vpv": {
    "level": "check",
    "reason": "Symfony YAMLの再帰でプロセスがクラッシュ。HIGH",
@@ -1119,13 +1133,6 @@
    "kev": false,
    "at": "2026-11-19"
   },
-  "GHSA-5mmc-8pc9-wggg": {
-   "level": "watch",
-   "reason": "WPGraphQLで寄稿者が権限なしに投稿を公開・変更。MEDIUM",
-   "todo": "",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-5pm8-86m8-9m6r": {
    "level": "watch",
    "reason": "MEDIUM。MLSD一覧の__proto__でClient.list()が落ちる",
@@ -1258,6 +1265,13 @@
    "todo": "node-forgeを1.4.3に更新",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-6jcc-5g8w-32mx": {
+   "level": "watch",
+   "reason": "i18nextのdeepExtendで組み込みオブジェクトが壊されるDoS。MEDIUM",
+   "todo": "i18nextを使っていれば26.3.4に更新",
+   "kev": false,
+   "at": "2026-11-24"
   },
   "GHSA-6pm8-6f34-9v3g": {
    "level": "check",
@@ -1546,13 +1560,6 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-9qw7-j9xw-fv9c": {
-   "level": "check",
-   "reason": "HIGH。checkout時にディレクトリのシンボリックリンク経由で外にファイルを書かれる",
-   "todo": "isomorphic-git を 1.38.6 以降に更新",
-   "kev": false,
-   "at": "2026-11-10"
-  },
   "GHSA-9rg8-2wvr-fgjh": {
    "level": "check",
    "reason": "Formieの通知再送で認可なく個人情報が見える。HIGH",
@@ -1580,6 +1587,13 @@
    "todo": "1.4.1 に更新",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-9x82-4j54-863h": {
+   "level": "watch",
+   "reason": "isomorphic-gitでメモリを使い切らせるDoS。MEDIUM",
+   "todo": "isomorphic-gitを使っていれば1.38.6に更新",
+   "kev": false,
+   "at": "2026-11-24"
   },
   "GHSA-9x8x-crjq-g64h": {
    "level": "check",
@@ -1891,6 +1905,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-j44m-77cc-p3cc": {
+   "level": "check",
+   "reason": "AVideoのAPIでOSコマンド注入。利用者の限られるパッケージのHIGH",
+   "todo": "wwbn/avideoを使っていれば29.1.0に更新",
+   "kev": false,
+   "at": "2026-11-24"
+  },
   "GHSA-j8g8-j4j7-8j54": {
    "level": "check",
    "reason": "NLTKのXMLCorpusViewで処理が重くなりサービス停止",
@@ -2003,13 +2024,6 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-m5ph-mmg5-6w5h": {
-   "level": "watch",
-   "reason": "MEDIUM。上限のないDAGのピン留めでサーバーの資源を使い切られるおそれ",
-   "todo": "filecoin-pinを使っているなら1.1.1に更新",
-   "kev": false,
-   "at": "2026-11-06"
-  },
   "GHSA-m63f-xhvm-6mv5": {
    "level": "check",
    "reason": "Aspire CLIの権限昇格。HIGH",
@@ -2030,13 +2044,6 @@
    "todo": "svg-sanitize 1.0.0に更新",
    "kev": false,
    "at": "2026-11-02"
-  },
-  "GHSA-mc8m-rr6c-r5qr": {
-   "level": "watch",
-   "reason": "MEDIUM。Vercel Blob用ストレージ連携でアップロードのアクセス制限を回避できる",
-   "todo": "使っていれば3.90.0以降に更新",
-   "kev": false,
-   "at": "2026-11-05"
   },
   "GHSA-mc8w-wjhw-45x5": {
    "level": "action",
