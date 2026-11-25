@@ -7,10 +7,10 @@
 <updated>2026-11-25T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>pip: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass) (HIGH)</title>
+<title>[要確認] pip: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass) (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-859w-52fx-hcm6"/>
 <id>urn:bug-hou:GHSA-859w-52fx-hcm6</id>
 <updated>2026-11-25T00:00:00Z</updated>
-<content type="html">&lt;p&gt;soapbar &amp;lt; 0.13.0 → 0.13.0&lt;/p&gt;&lt;p&gt;CVE-2026-64855&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; HIGH。soapbarの署名検証で埋め込み証明書を信じてしまい、署名の偽造や認証のすり抜けが起きる&lt;br&gt;→ soapbar を 0.13.0 以降に更新&lt;/p&gt;&lt;p&gt;soapbar &amp;lt; 0.13.0 → 0.13.0&lt;/p&gt;&lt;p&gt;CVE-2026-64855&lt;/p&gt;</content>
 </entry>
 </feed>
