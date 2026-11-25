@@ -7,7 +7,7 @@
 <updated>2026-11-23T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>[要確認] npm: Xen Orchestra: Empty-object login token (CRITICAL)</title>
+<title>[要確認] npm: Xen Orchestra: Empty-object login token (CRITICAL) ⚠KEV</title>
 <link href="https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"/>
 <id>urn:bug-hou:GHSA-2r3w-c2vx-fv5g</id>
 <updated>2026-11-23T00:00:00Z</updated>

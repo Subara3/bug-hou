@@ -14,6 +14,20 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。利用者が指定したテンプレートのパスから任意のファイルが読まれるおそれ&lt;br&gt;→ cakephp/twig-view を 1.3.3 / 2.1.2 以降に更新&lt;/p&gt;&lt;p&gt;cakephp/twig-view &amp;lt; 1.3.3 → 1.3.3, cakephp/twig-view &amp;gt;= 2.0.0, &amp;lt; 2.1.2 → 2.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-59191&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>PHP: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h746-qpxh-ph7g"/>
+<id>urn:bug-hou:GHSA-h746-qpxh-ph7g</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;petebishwhip/laradocs &amp;gt;= 0.4.0, &amp;lt; 1.0.0 → 1.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-65973&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: livewire-powergrid: SQL injection via sortDirection in naturalSort queries (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7fgc-3h6c-698r"/>
+<id>urn:bug-hou:GHSA-7fgc-3h6c-698r</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;power-components/livewire-powergrid &amp;gt;= 6.0.0, &amp;lt; 6.10.4 → 6.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-65971&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] PHP: AVideo API FFmpeg process permits OS command injection via notifyCode/callback (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-g9x9-q7qj-6mv5"/>
 <id>urn:bug-hou:GHSA-g9x9-q7qj-6mv5</id>
@@ -409,19 +423,5 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <id>urn:bug-hou:GHSA-c94f-87xg-65wf</id>
 <updated>2026-11-17T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SilverstripeのHIGHのRCE。i18nTextCollectorTaskのwriter引数経由&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;gt;= 6.0.0, &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91115&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Filament Curator: Stored XSS via unsanitized SVG upload served inline (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-8vm9-f75m-5h2m"/>
-<id>urn:bug-hou:GHSA-8vm9-f75m-5h2m</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Filament CuratorでSVGアップロードによる保存型XSS。MEDIUM&lt;br&gt;→ 使っているなら5.1.2 / 4.1.2 / 3.7.9 に更新&lt;/p&gt;&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt;= 5.1.1 → 5.1.2, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt;= 4.1.1 → 4.1.2, awcodes/filament-curator &amp;gt;= 3.0.0, &amp;lt;= 3.7.8 → 3.7.9&lt;/p&gt;&lt;p&gt;CVE-2026-69241&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Filament Curator: Cross-tenant media metadata disclosure via Curator picker search (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-828w-6qgx-3rcf"/>
-<id>urn:bug-hou:GHSA-828w-6qgx-3rcf</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Filament Curatorの検索で別テナントのメディア情報が見える。MEDIUM&lt;br&gt;→ 使っているなら5.1.1 / 4.1.1 / 3.7.8 に更新&lt;/p&gt;&lt;p&gt;awcodes/filament-curator &amp;gt;= 5.0.0, &amp;lt; 5.1.1 → 5.1.1, awcodes/filament-curator &amp;gt;= 4.0.0, &amp;lt; 4.1.1 → 4.1.1, awcodes/filament-curator &amp;gt;= 3.2.4, &amp;lt; 3.7.8 → 3.7.8&lt;/p&gt;&lt;p&gt;CVE-2026-63389&lt;/p&gt;</content>
 </entry>
 </feed>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜@waline/client（npm）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/npm/@waline__client.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/npm/@waline__client.xml</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>npm: @waline/client vulnerable to stored XSS through unsanitized comment edit previews (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-crj3-q72p-ggqm"/>
+<id>urn:bug-hou:GHSA-crj3-q72p-ggqm</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@waline/client &amp;lt;= 3.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-64670&lt;/p&gt;</content>
+</entry>
+</feed>

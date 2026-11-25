@@ -955,6 +955,46 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-7fgc-3h6c-698r",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-65971",
+   "summary": "livewire-powergrid: SQL injection via sortDirection in naturalSort queries",
+   "severity": "HIGH",
+   "score": 7.6,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+   "published": "2026-11-25",
+   "url": "https://github.com/advisories/GHSA-7fgc-3h6c-698r",
+   "kev": false,
+   "packages": [
+    {
+     "name": "power-components/livewire-powergrid",
+     "range": ">= 6.0.0, < 6.10.4",
+     "fixed": "6.10.4"
+    }
+   ],
+   "first_seen": "2026-11-25"
+  },
+  {
+   "id": "GHSA-h746-qpxh-ph7g",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-65973",
+   "summary": "laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR",
+   "severity": "MEDIUM",
+   "score": 6.4,
+   "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+   "published": "2026-11-25",
+   "url": "https://github.com/advisories/GHSA-h746-qpxh-ph7g",
+   "kev": false,
+   "packages": [
+    {
+     "name": "petebishwhip/laradocs",
+     "range": ">= 0.4.0, < 1.0.0",
+     "fixed": "1.0.0"
+    }
+   ],
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "GHSA-hq9r-72jq-2pxp",
    "ecosystem": "composer",
    "cve": "CVE-2026-59191",
@@ -3285,56 +3325,6 @@
      "name": "redaxo/source",
      "range": "<= 5.21.1",
      "fixed": "5.21.2"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-9rg8-2wvr-fgjh",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-76089",
-   "summary": "Formie: Missing authorization on sent notification resend modal exposes submission PII",
-   "severity": "HIGH",
-   "score": 7.7,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
-   "published": "2026-09-23",
-   "url": "https://github.com/advisories/GHSA-9rg8-2wvr-fgjh",
-   "kev": false,
-   "packages": [
-    {
-     "name": "verbb/formie",
-     "range": ">= 3.0.0, < 3.1.31",
-     "fixed": "3.1.31"
-    },
-    {
-     "name": "verbb/formie",
-     "range": "< 2.2.23",
-     "fixed": "2.2.23"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-584p-f93j-wpgc",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-76087",
-   "summary": "Formie: Unauthenticated users can overwrite incomplete submissions via submit action",
-   "severity": "HIGH",
-   "score": 8.2,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
-   "published": "2026-09-23",
-   "url": "https://github.com/advisories/GHSA-584p-f93j-wpgc",
-   "kev": false,
-   "packages": [
-    {
-     "name": "verbb/formie",
-     "range": ">= 3.0.0, < 3.1.31",
-     "fixed": "3.1.31"
-    },
-    {
-     "name": "verbb/formie",
-     "range": "< 2.2.23",
-     "fixed": "2.2.23"
     }
    ],
    "first_seen": "0000-00-00"

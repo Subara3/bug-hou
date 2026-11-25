@@ -1,5 +1,62 @@
 [
  {
+  "id": "GHSA-7fgc-3h6c-698r",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-65971",
+  "summary": "livewire-powergrid: SQL injection via sortDirection in naturalSort queries",
+  "severity": "HIGH",
+  "score": 7.6,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:L",
+  "published": "2026-11-25",
+  "url": "https://github.com/advisories/GHSA-7fgc-3h6c-698r",
+  "kev": false,
+  "packages": [
+   {
+    "name": "power-components/livewire-powergrid",
+    "range": ">= 6.0.0, < 6.10.4",
+    "fixed": "6.10.4"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-h746-qpxh-ph7g",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-65973",
+  "summary": "laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR",
+  "severity": "MEDIUM",
+  "score": 6.4,
+  "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H",
+  "published": "2026-11-25",
+  "url": "https://github.com/advisories/GHSA-h746-qpxh-ph7g",
+  "kev": false,
+  "packages": [
+   {
+    "name": "petebishwhip/laradocs",
+    "range": ">= 0.4.0, < 1.0.0",
+    "fixed": "1.0.0"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-crj3-q72p-ggqm",
+  "ecosystem": "npm",
+  "cve": "CVE-2026-64670",
+  "summary": "@waline/client vulnerable to stored XSS through unsanitized comment edit previews",
+  "severity": "CRITICAL",
+  "score": 9.3,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+  "published": "2026-11-25",
+  "url": "https://github.com/advisories/GHSA-crj3-q72p-ggqm",
+  "kev": false,
+  "packages": [
+   {
+    "name": "@waline/client",
+    "range": "<= 3.16.2",
+    "fixed": null
+   }
+  ]
+ },
+ {
   "id": "GHSA-g9x9-q7qj-6mv5",
   "ecosystem": "composer",
   "cve": "CVE-2026-63305",
@@ -171,7 +228,7 @@
   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
   "published": "2026-11-23",
   "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g",
-  "kev": false,
+  "kev": true,
   "packages": [
    {
     "name": "xo-server",

@@ -52,6 +52,26 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-crj3-q72p-ggqm",
+   "ecosystem": "npm",
+   "cve": "CVE-2026-64670",
+   "summary": "@waline/client vulnerable to stored XSS through unsanitized comment edit previews",
+   "severity": "CRITICAL",
+   "score": 9.3,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:N",
+   "published": "2026-11-25",
+   "url": "https://github.com/advisories/GHSA-crj3-q72p-ggqm",
+   "kev": false,
+   "packages": [
+    {
+     "name": "@waline/client",
+     "range": "<= 3.16.2",
+     "fixed": null
+    }
+   ],
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "GHSA-c4hm-4h84-2cf3",
    "ecosystem": "npm",
    "cve": "CVE-2026-59726",
@@ -121,7 +141,7 @@
    "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
    "published": "2026-11-23",
    "url": "https://github.com/advisories/GHSA-2r3w-c2vx-fv5g",
-   "kev": false,
+   "kev": true,
    "packages": [
     {
      "name": "xo-server",
@@ -2477,26 +2497,6 @@
      "name": "ag-psd",
      "range": "<= 31.0.0",
      "fixed": "31.0.1"
-    }
-   ],
-   "first_seen": "2026-11-09"
-  },
-  {
-   "id": "GHSA-cw2g-2vwq-88w6",
-   "ecosystem": "npm",
-   "cve": "CVE-2026-63478",
-   "summary": "isomorphic-git: Path traversal via a \"..\" tree-entry name writes files outside the working directory on clone/checkout",
-   "severity": "MEDIUM",
-   "score": 5.3,
-   "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
-   "published": "2026-11-09",
-   "url": "https://github.com/advisories/GHSA-cw2g-2vwq-88w6",
-   "kev": false,
-   "packages": [
-    {
-     "name": "isomorphic-git",
-     "range": "<= 1.38.5",
-     "fixed": "1.38.6"
     }
    ],
    "first_seen": "2026-11-09"

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
+<title>バグ報｜power-components/livewire-powergrid（composer）</title>
+<link href="https://subara3.github.io/bug-hou/"/>
+<link rel="self" href="https://subara3.github.io/bug-hou/feeds/pkg/composer/power-components__livewire-powergrid.xml"/>
+<id>https://subara3.github.io/bug-hou/feeds/pkg/composer/power-components__livewire-powergrid.xml</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<author><name>バグ報</name></author>
+<entry>
+<title>composer: livewire-powergrid: SQL injection via sortDirection in naturalSort queries (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7fgc-3h6c-698r"/>
+<id>urn:bug-hou:GHSA-7fgc-3h6c-698r</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;power-components/livewire-powergrid &amp;gt;= 6.0.0, &amp;lt; 6.10.4 → 6.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-65971&lt;/p&gt;</content>
+</entry>
+</feed>

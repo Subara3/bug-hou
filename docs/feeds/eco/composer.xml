@@ -14,6 +14,20 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。利用者が指定したテンプレートのパスから任意のファイルが読まれるおそれ&lt;br&gt;→ cakephp/twig-view を 1.3.3 / 2.1.2 以降に更新&lt;/p&gt;&lt;p&gt;cakephp/twig-view &amp;lt; 1.3.3 → 1.3.3, cakephp/twig-view &amp;gt;= 2.0.0, &amp;lt; 2.1.2 → 2.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-59191&lt;/p&gt;</content>
 </entry>
 <entry>
+<title>PHP: laradocs  Command injection via unescaped Node.js binary path in KaTeX SSR (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-h746-qpxh-ph7g"/>
+<id>urn:bug-hou:GHSA-h746-qpxh-ph7g</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;petebishwhip/laradocs &amp;gt;= 0.4.0, &amp;lt; 1.0.0 → 1.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-65973&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: livewire-powergrid: SQL injection via sortDirection in naturalSort queries (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-7fgc-3h6c-698r"/>
+<id>urn:bug-hou:GHSA-7fgc-3h6c-698r</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;power-components/livewire-powergrid &amp;gt;= 6.0.0, &amp;lt; 6.10.4 → 6.10.4&lt;/p&gt;&lt;p&gt;CVE-2026-65971&lt;/p&gt;</content>
+</entry>
+<entry>
 <title>[要確認] PHP: AVideo API FFmpeg process permits OS command injection via notifyCode/callback (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-g9x9-q7qj-6mv5"/>
 <id>urn:bug-hou:GHSA-g9x9-q7qj-6mv5</id>
@@ -341,19 +355,5 @@
 <id>urn:bug-hou:GHSA-6vfx-w7q3-42gq</id>
 <updated>2026-10-30T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; AdminNeoのSQLite一覧から任意ファイル削除。HIGH&lt;br&gt;→ AdminNeo 5.5.1に更新&lt;/p&gt;&lt;p&gt;adminneo-org/adminneo &amp;lt; 5.5.1 → 5.5.1&lt;/p&gt;&lt;p&gt;CVE-2026-96633&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: PocketMine-MP has potential memory/network vulnerability from repeated ResourcePackClientResponsePacket packets (LOW)</title>
-<link href="https://github.com/advisories/GHSA-pg53-p7qp-65cv"/>
-<id>urn:bug-hou:GHSA-pg53-p7qp-65cv</id>
-<updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; PocketMine-MPの繰り返しパケットによる負荷。LOW&lt;br&gt;→ 5.44.2に更新&lt;/p&gt;&lt;p&gt;pocketmine/pocketmine-mp &amp;lt; 5.44.2 → 5.44.2&lt;/p&gt;&lt;p&gt;GHSA-pg53-p7qp-65cv&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: MultiFactor Authentication for SilverStripe can bypass MFA during password reset flow (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-68wq-phq7-p2vg"/>
-<id>urn:bug-hou:GHSA-68wq-phq7-p2vg</id>
-<updated>2026-10-29T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; SilverStripe MFAがパスワードリセットで回避可能。MEDIUM&lt;br&gt;→ silverstripe/mfa 6.0.0に更新&lt;/p&gt;&lt;p&gt;silverstripe/mfa &amp;lt; 6.0.0 → 6.0.0&lt;/p&gt;&lt;p&gt;CVE-2026-55186&lt;/p&gt;</content>
 </entry>
 </feed>

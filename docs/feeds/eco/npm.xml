@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/npm.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/npm.xml</id>
-<updated>2026-11-24T00:00:00Z</updated>
+<updated>2026-11-25T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Node.js: @waline/client vulnerable to stored XSS through unsanitized comment edit previews (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-crj3-q72p-ggqm"/>
+<id>urn:bug-hou:GHSA-crj3-q72p-ggqm</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;@waline/client &amp;lt;= 3.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-64670&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] Node.js: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-c4hm-4h84-2cf3"/>
@@ -28,7 +35,7 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; i18nextのdeepExtendで組み込みオブジェクトが壊されるDoS。MEDIUM&lt;br&gt;→ i18nextを使っていれば26.3.4に更新&lt;/p&gt;&lt;p&gt;i18next &amp;lt; 26.3.4 → 26.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-63402&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Node.js: Xen Orchestra: Empty-object login token (CRITICAL)</title>
+<title>[要確認] Node.js: Xen Orchestra: Empty-object login token (CRITICAL) ⚠KEV</title>
 <link href="https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"/>
 <id>urn:bug-hou:GHSA-2r3w-c2vx-fv5g</id>
 <updated>2026-11-23T00:00:00Z</updated>
@@ -348,12 +355,5 @@
 <id>urn:bug-hou:GHSA-5wg4-q3ww-283h</id>
 <updated>2026-11-14T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; Cloudflare向け_redirectsに任意のルールを入れられる。MEDIUM&lt;/p&gt;&lt;p&gt;@sveltejs/adapter-cloudflare &amp;gt;= 4.7.0, &amp;lt; 7.2.10 → 7.2.10, @sveltejs/adapter-cloudflare &amp;gt;= 8.0.0-next.0, &amp;lt; 8.0.2 → 8.0.2&lt;/p&gt;&lt;p&gt;CVE-2026-128122&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] Node.js: Nuxt: Incomplete fix for GHSA-9v7c-q64q-vv33: a leading `//` in the request path bypasses `server/middleware` path checks and server route rules on page routes (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-r99w-jh2x-3mg9"/>
-<id>urn:bug-hou:GHSA-r99w-jh2x-3mg9</id>
-<updated>2026-11-13T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; 先頭の//でミドルウェアのパス判定をすり抜けられるがMEDIUM&lt;br&gt;→ @nuxt/nitro-server 4.6.4に更新&lt;/p&gt;&lt;p&gt;@nuxt/nitro-server &amp;gt;= 4.6.0, &amp;lt; 4.6.4 → 4.6.4&lt;/p&gt;&lt;p&gt;CVE-2026-128077&lt;/p&gt;</content>
 </entry>
 </feed>
