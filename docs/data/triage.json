@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-24T00:45:53Z",
+ "updated_at": "2026-11-25T00:45:49Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -1007,6 +1007,13 @@
    "kev": false,
    "at": "2026-11-11"
   },
+  "GHSA-48qj-5wxh-m8hc": {
+   "level": "watch",
+   "reason": "MEDIUM。twig-viewのunserializeフィルタで任意のオブジェクトを復元される",
+   "todo": "使っていれば1.3.3 / 2.1.2に更新",
+   "kev": false,
+   "at": "2026-11-25"
+  },
   "GHSA-4c2f-96cf-f5fc": {
    "level": "check",
    "reason": "@openeudi/openid4vpで偽の証明書を受け入れてしまうHIGH",
@@ -1525,13 +1532,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-96wc-2m84-2cj7": {
-   "level": "watch",
-   "reason": "MEDIUM。循環するシンボリック参照で処理が終わらなくなる",
-   "todo": "isomorphic-git を 1.38.6 以降に更新",
-   "kev": false,
-   "at": "2026-11-10"
-  },
   "GHSA-96x6-fvhx-49hg": {
    "level": "watch",
    "reason": "MEDIUM。SSR中の未処理エラーの内容が外に見える",
@@ -1608,6 +1608,13 @@
    "todo": "jane-php/open-api-3を7.12.0に更新",
    "kev": false,
    "at": "2026-11-20"
+  },
+  "GHSA-c4hm-4h84-2cf3": {
+   "level": "check",
+   "reason": "利用者の少ないrufloのCRITICAL。標準のDocker Compose構成でログインなしにコード実行される",
+   "todo": "rufloを使っていれば3.16.3に更新",
+   "kev": false,
+   "at": "2026-11-25"
   },
   "GHSA-c59x-vh6j-3w8v": {
    "level": "watch",
@@ -1779,6 +1786,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-g9x9-q7qj-6mv5": {
+   "level": "check",
+   "reason": "AVideoのHIGH。API経由でOSコマンドを実行される",
+   "todo": "AVideoを使っていれば29.1.0に更新",
+   "kev": false,
+   "at": "2026-11-25"
+  },
   "GHSA-gfv3-m769-5xm3": {
    "level": "check",
    "reason": "PhoenixのapplyChatTemplateで書式文字列の注入。利用者の少ないパッケージのCRITICAL",
@@ -1813,13 +1827,6 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-gxrg-x694-283w": {
-   "level": "watch",
-   "reason": "Freeformの送信値で限定的なTwigテンプレート注入。MEDIUM",
-   "todo": "craft-freeform 5.10.14に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-h24v-f482-8cwf": {
    "level": "watch",
@@ -1932,13 +1939,6 @@
    "todo": "",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-jg26-q8hg-3pq4": {
-   "level": "watch",
-   "reason": "Suluのcategoriesパラメータで認証なしJCR-SQL2注入。MEDIUM",
-   "todo": "sulu/sulu 2.6.25/3.0.8に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-jh5r-qr3c-85q8": {
    "level": "watch",
