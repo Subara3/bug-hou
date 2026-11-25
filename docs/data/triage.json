@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T00:45:49Z",
+ "updated_at": "2026-11-25T12:46:12Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -1427,6 +1427,13 @@
    "kev": false,
    "at": "2026-11-20"
   },
+  "GHSA-859w-52fx-hcm6": {
+   "level": "check",
+   "reason": "HIGH。soapbarの署名検証で埋め込み証明書を信じてしまい、署名の偽造や認証のすり抜けが起きる",
+   "todo": "soapbar を 0.13.0 以降に更新",
+   "kev": false,
+   "at": "2026-11-25"
+  },
   "GHSA-86mf-q4h5-69gp": {
    "level": "check",
    "reason": "django-docutilsの初期設定でファイル読み出し、SSRF、XSS",
@@ -1891,6 +1898,13 @@
    "kev": false,
    "at": "2026-11-20"
   },
+  "GHSA-hq9r-72jq-2pxp": {
+   "level": "watch",
+   "reason": "MEDIUM。利用者が指定したテンプレートのパスから任意のファイルが読まれるおそれ",
+   "todo": "cakephp/twig-view を 1.3.3 / 2.1.2 以降に更新",
+   "kev": false,
+   "at": "2026-11-25"
+  },
   "GHSA-hxcx-9h4f-42xx": {
    "level": "check",
    "reason": "Snipe-ITのAPIトークン経由で2FA回避。HIGH",
@@ -2102,13 +2116,6 @@
    "todo": "@nuxt/schema 4.6.4に更新",
    "kev": false,
    "at": "2026-11-14"
-  },
-  "GHSA-mmhr-3c5m-f64f": {
-   "level": "check",
-   "reason": "HIGH。子孫セレクタの処理に時間がかかりサービス停止になる",
-   "todo": "soupsieve 4.0.0 以降に更新",
-   "kev": false,
-   "at": "2026-11-13"
   },
   "GHSA-mqwx-84vv-mp26": {
    "level": "watch",
@@ -2527,13 +2534,6 @@
    "level": "watch",
    "reason": "svg-sanitizeのDTD属性宣言でクラッシュ。MEDIUM",
    "todo": "svg-sanitize 1.0.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-v3f3-cmj4-cvj9": {
-   "level": "check",
-   "reason": "FormieのフォームSSRFで保存済み連携の認証情報が漏洩。HIGH",
-   "todo": "verbb/formie 2.2.23/3.1.31に更新",
    "kev": false,
    "at": "2026-11-02"
   },
