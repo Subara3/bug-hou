@@ -298,6 +298,7 @@
 "pypdf": "pkg/pip/pypdf.xml",
 "rembg": "pkg/pip/rembg.xml",
 "rucio": "pkg/pip/rucio.xml",
+"soapbar": "pkg/pip/soapbar.xml",
 "social-auth-core": "pkg/pip/social-auth-core.xml",
 "soupsieve": "pkg/pip/soupsieve.xml",
 "stanza": "pkg/pip/stanza.xml",

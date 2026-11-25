@@ -955,6 +955,31 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-hq9r-72jq-2pxp",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-59191",
+   "summary": "TwigView FileLoader may allow arbitrary file reads through user-controlled template paths",
+   "severity": "MEDIUM",
+   "score": 6.9,
+   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:L/VI:N/VA:N/SC:N/SI:N/SA:N",
+   "published": "2026-11-24",
+   "url": "https://github.com/advisories/GHSA-hq9r-72jq-2pxp",
+   "kev": false,
+   "packages": [
+    {
+     "name": "cakephp/twig-view",
+     "range": "< 1.3.3",
+     "fixed": "1.3.3"
+    },
+    {
+     "name": "cakephp/twig-view",
+     "range": ">= 2.0.0, < 2.1.2",
+     "fixed": "2.1.2"
+    }
+   ],
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "GHSA-g9x9-q7qj-6mv5",
    "ecosystem": "composer",
    "cve": "CVE-2026-63305",
@@ -3313,31 +3338,6 @@
     }
    ],
    "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-v3f3-cmj4-cvj9",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-76086",
-   "summary": "Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials",
-   "severity": "HIGH",
-   "score": 8.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:L/A:N",
-   "published": "2026-09-23",
-   "url": "https://github.com/advisories/GHSA-v3f3-cmj4-cvj9",
-   "kev": false,
-   "packages": [
-    {
-     "name": "verbb/formie",
-     "range": ">= 3.0.0, < 3.1.31",
-     "fixed": "3.1.31"
-    },
-    {
-     "name": "verbb/formie",
-     "range": "< 2.2.23",
-     "fixed": "2.2.23"
-    }
-   ],
-   "first_seen": "2026-11-02"
   }
  ],
  "eol": {

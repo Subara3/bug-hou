@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/#python"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/python.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/python.xml</id>
-<updated>2026-11-23T00:00:00Z</updated>
+<updated>2026-11-25T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>Python: soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass) (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-859w-52fx-hcm6"/>
+<id>urn:bug-hou:GHSA-859w-52fx-hcm6</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;soapbar &amp;lt; 0.13.0 → 0.13.0&lt;/p&gt;&lt;p&gt;CVE-2026-64855&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] Python: CVE-2026-107784 6.3 MEDIUM</title>
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-107784"/>
@@ -353,12 +360,5 @@ Upgrading to a secure version of pip should be done either by first upgrading Py
 <id>urn:bug-hou:GHSA-rgg9-956j-3378</id>
 <updated>2026-11-19T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。mareformaで無効にした主張がまだ昇格する&lt;br&gt;→ 使っていれば0.3.8に更新&lt;/p&gt;&lt;p&gt;mareforma &amp;gt;= 0.3.0, &amp;lt; 0.3.8 → 0.3.8&lt;/p&gt;&lt;p&gt;CVE-2026-71500&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] Python: Axon: Download of Code Without Integrity Check in axon-mcp (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-r7wg-f7r2-8wf7"/>
-<id>urn:bug-hou:GHSA-r7wg-f7r2-8wf7</id>
-<updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; axon-mcpが中身を確かめずにコードを取得する。HIGH&lt;br&gt;→ 修正版なし。使っていれば利用を見直す&lt;/p&gt;&lt;p&gt;axon-mcp &amp;lt;= 0.1.0&lt;/p&gt;&lt;p&gt;CVE-2026-76818&lt;/p&gt;</content>
 </entry>
 </feed>

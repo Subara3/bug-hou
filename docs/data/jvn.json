@@ -4,7 +4,35 @@
   "title": "Siemens製品に対するアップデート（2026年11月）",
   "url": "https://jvn.jp/vu/JVNVU98354779/",
   "desc": "Siemensから各製品向けのアドバイザリが公表されました。",
-  "date": "2026-11-24"
+  "date": "2026-11-25"
+ },
+ {
+  "id": "JVNVU#92527429",
+  "title": "Apache Tomcatにおける複数の脆弱性（2026年11月19日）",
+  "url": "https://jvn.jp/vu/JVNVU92527429/",
+  "desc": "The Apache Software Foundationから、Apache Tomcatの11件の脆弱性に対してアドバイザリが公開されました。",
+  "date": "2026-11-25"
+ },
+ {
+  "id": "JVN#78929433",
+  "title": "源内Webにおけるサーバサイドリクエストフォージェリの脆弱性",
+  "url": "https://jvn.jp/jp/JVN78929433/",
+  "desc": "デジタル庁が提供する源内Webには、サーバサイドリクエストフォージェリの脆弱性が存在します。",
+  "date": "2026-11-25"
+ },
+ {
+  "id": "JVNVU#95723901",
+  "title": "OpenSSLにおける脆弱性に対するアップデート（2026年11月24日）",
+  "url": "https://jvn.jp/vu/JVNVU95723901/",
+  "desc": "OpenSSL ProjectからOpenSSL Security Advisory [24th November 2026]が公開されました。",
+  "date": "2026-11-25"
+ },
+ {
+  "id": "JVNVU#93291989",
+  "title": "CISA ICS Advisory / ICS Medical Advisory（2026年11月24日）",
+  "url": "https://jvn.jp/vu/JVNVU93291989/",
+  "desc": "米国CISAがCISA ICS Advisory / ICS Medical Advisoryを公表しました。",
+  "date": "2026-11-25"
  },
  {
   "id": "JVN#84156789",

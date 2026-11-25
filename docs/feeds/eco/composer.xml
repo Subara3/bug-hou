@@ -4,8 +4,15 @@
 <link href="https://subara3.github.io/bug-hou/"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/eco/composer.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/eco/composer.xml</id>
-<updated>2026-11-24T00:00:00Z</updated>
+<updated>2026-11-25T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-hq9r-72jq-2pxp"/>
+<id>urn:bug-hou:GHSA-hq9r-72jq-2pxp</id>
+<updated>2026-11-25T00:00:00Z</updated>
+<content type="html">&lt;p&gt;cakephp/twig-view &amp;lt; 1.3.3 → 1.3.3, cakephp/twig-view &amp;gt;= 2.0.0, &amp;lt; 2.1.2 → 2.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-59191&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[要確認] PHP: AVideo API FFmpeg process permits OS command injection via notifyCode/callback (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-g9x9-q7qj-6mv5"/>
@@ -278,13 +285,6 @@
 <id>urn:bug-hou:GHSA-44r8-3p76-84mw</id>
 <updated>2026-11-09T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。FileGatorで他の利用者の一時ファイルを読めたり消せたりする&lt;br&gt;→ filegator/filegator を 7.15.0 以降に更新&lt;/p&gt;&lt;p&gt;filegator/filegator &amp;lt;= 7.14.4 → 7.15.0&lt;/p&gt;&lt;p&gt;CVE-2026-94619&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Formie: Integration form-settings action allows SSRF and exfiltration of stored integration credentials (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-v3f3-cmj4-cvj9"/>
-<id>urn:bug-hou:GHSA-v3f3-cmj4-cvj9</id>
-<updated>2026-11-02T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; FormieのフォームSSRFで保存済み連携の認証情報が漏洩。HIGH&lt;br&gt;→ verbb/formie 2.2.23/3.1.31に更新&lt;/p&gt;&lt;p&gt;verbb/formie &amp;gt;= 3.0.0, &amp;lt; 3.1.31 → 3.1.31, verbb/formie &amp;lt; 2.2.23 → 2.2.23&lt;/p&gt;&lt;p&gt;CVE-2026-76086&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: AdminNeo: CSRF Token Secret Recoverable from Single Observed Token, Enabling Cross-Site Request Forgery (MEDIUM)</title>

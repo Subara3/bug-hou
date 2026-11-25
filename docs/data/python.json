@@ -298,6 +298,26 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-859w-52fx-hcm6",
+   "ecosystem": "pip",
+   "cve": "CVE-2026-64855",
+   "summary": "soapbar: verify_envelope_bsp accepts an unauthenticated embedded certificate (signature forgery / authentication bypass)",
+   "severity": "HIGH",
+   "score": 8.2,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N",
+   "published": "2026-11-24",
+   "url": "https://github.com/advisories/GHSA-859w-52fx-hcm6",
+   "kev": false,
+   "packages": [
+    {
+     "name": "soapbar",
+     "range": "< 0.13.0",
+     "fixed": "0.13.0"
+    }
+   ],
+   "first_seen": "2026-11-25"
+  },
+  {
    "id": "GHSA-53pm-wgxf-c6qf",
    "ecosystem": "pip",
    "cve": "CVE-2026-132276",
@@ -2298,26 +2318,6 @@
      "name": "rucio",
      "range": ">= 41.0.0rc1, < 41.1.1",
      "fixed": "41.1.1"
-    }
-   ],
-   "first_seen": "2026-11-13"
-  },
-  {
-   "id": "GHSA-mmhr-3c5m-f64f",
-   "ecosystem": "pip",
-   "cve": "CVE-2026-126190",
-   "summary": "Soup Sieve: Polynomial-time denial of service in the descendant combinator",
-   "severity": "HIGH",
-   "score": 7.5,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-   "published": "2026-11-13",
-   "url": "https://github.com/advisories/GHSA-mmhr-3c5m-f64f",
-   "kev": false,
-   "packages": [
-    {
-     "name": "soupsieve",
-     "range": "< 4.0.0",
-     "fixed": "4.0.0"
     }
    ],
    "first_seen": "2026-11-13"
