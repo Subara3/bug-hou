@@ -28,10 +28,10 @@
 <content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63395&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] npm: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS) (MEDIUM)</title>
+<title>npm: isomorphic-git: Circular symbolic references cause non-terminating resolution (DoS) (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-96wc-2m84-2cj7"/>
 <id>urn:bug-hou:GHSA-96wc-2m84-2cj7</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。循環するシンボリック参照で処理が終わらなくなる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63475&lt;/p&gt;</content>
 </entry>
 </feed>

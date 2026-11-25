@@ -7,11 +7,11 @@
 <updated>2026-11-24T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments (CRITICAL)</title>
+<title>[要確認] Node.js: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-c4hm-4h84-2cf3"/>
 <id>urn:bug-hou:GHSA-c4hm-4h84-2cf3</id>
 <updated>2026-11-24T00:00:00Z</updated>
-<content type="html">&lt;p&gt;ruflo &amp;lt; 3.16.3 → 3.16.3&lt;/p&gt;&lt;p&gt;CVE-2026-59726&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないrufloのCRITICAL。標準のDocker Compose構成でログインなしにコード実行される&lt;br&gt;→ rufloを使っていれば3.16.3に更新&lt;/p&gt;&lt;p&gt;ruflo &amp;lt; 3.16.3 → 3.16.3&lt;/p&gt;&lt;p&gt;CVE-2026-59726&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] Node.js: isomorphic-git allows unbounded memory allocation from attacker-controlled delta target size (DoS) (MEDIUM)</title>

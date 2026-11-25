@@ -7,10 +7,10 @@
 <updated>2026-11-24T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>composer: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization (MEDIUM)</title>
+<title>[様子見] composer: Cakephp twig-view unserialize Twig filter allows arbitrary object deserialization (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-48qj-5wxh-m8hc"/>
 <id>urn:bug-hou:GHSA-48qj-5wxh-m8hc</id>
 <updated>2026-11-24T00:00:00Z</updated>
-<content type="html">&lt;p&gt;cakephp/twig-view &amp;lt; 1.3.3 → 1.3.3, cakephp/twig-view &amp;gt;= 2.0.0, &amp;lt; 2.1.2 → 2.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-59192&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。twig-viewのunserializeフィルタで任意のオブジェクトを復元される&lt;br&gt;→ 使っていれば1.3.3 / 2.1.2に更新&lt;/p&gt;&lt;p&gt;cakephp/twig-view &amp;lt; 1.3.3 → 1.3.3, cakephp/twig-view &amp;gt;= 2.0.0, &amp;lt; 2.1.2 → 2.1.2&lt;/p&gt;&lt;p&gt;CVE-2026-59192&lt;/p&gt;</content>
 </entry>
 </feed>
