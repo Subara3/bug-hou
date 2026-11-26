@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-26T00:45:34Z",
+ "updated_at": "2026-11-26T12:46:17Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -252,12 +252,12 @@
   },
   "CVE-2026-126714": {
    "level": "action",
-   "reason": "PHP本体。標準のセッション保存で、書き込みが途中で切れるとログインなしでRCEになりうる。CRITICAL",
-   "todo": "修正版のPHPに更新（対象版は説明文が途中で切れていて不明）",
+   "reason": "PHP本体。標準のセッション保存で書き込みが途中で切れると、ログインなしでRCEになりうる。CRITICAL",
+   "todo": "8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 以降に更新",
    "kev": false,
-   "at": "2026-11-20",
-   "urgency": "later",
-   "comment": "データ上は手が空いたらだが、条件がそろうと危ないので次の更新で必ず入れて"
+   "at": "2026-11-26",
+   "urgency": "soon",
+   "comment": "外に公開しているサイトなら、今週中に更新しておいて"
   },
   "CVE-2026-127960": {
    "level": "check",
@@ -891,13 +891,6 @@
    "kev": false,
    "at": "2026-11-02"
   },
-  "GHSA-396x-xmvh-p563": {
-   "level": "check",
-   "reason": "Snipe-ITのアップロードファイルAPIで格納型XSS。HIGH",
-   "todo": "Snipe-IT 8.7.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-3g82-77xr-68x5": {
    "level": "watch",
    "reason": "js-tomlで深く入れ子の入力を読むとスタックがあふれる。MEDIUM",
@@ -1030,13 +1023,6 @@
    "todo": "使っていれば0.8.1に更新",
    "kev": false,
    "at": "2026-11-20"
-  },
-  "GHSA-4f5f-j737-pm58": {
-   "level": "watch",
-   "reason": "REDAXOで認証済み利用者がカラムを列挙。MEDIUM",
-   "todo": "REDAXO 5.21.2に更新",
-   "kev": false,
-   "at": "2026-11-02"
   },
   "GHSA-4h7h-rv7c-7m2v": {
    "level": "watch",
@@ -1325,6 +1311,13 @@
    "kev": false,
    "at": "2026-11-17"
   },
+  "GHSA-743w-g9pf-8p94": {
+   "level": "check",
+   "reason": "利用者の少ないTastyIgniterのCRITICAL。メールテンプレート編集でRCE",
+   "todo": "tastyigniter/tastyigniter を 4.3.1 に更新",
+   "kev": false,
+   "at": "2026-11-26"
+  },
   "GHSA-752m-7p75-49gf": {
    "level": "watch",
    "reason": "MEDIUM。AltairのiframeでのXSS",
@@ -1408,6 +1401,13 @@
    "todo": "NLTKの利用を確認し、3.10.4以降に更新",
    "kev": false,
    "at": "2026-11-14"
+  },
+  "GHSA-7wwv-x6mc-pxqx": {
+   "level": "check",
+   "reason": "利用者の少ないTastyIgniterのCRITICAL。メディア管理のファイルアップロードでRCE",
+   "todo": "tastyigniter/tastyigniter を 4.3.1 に更新",
+   "kev": false,
+   "at": "2026-11-26"
   },
   "GHSA-828w-6qgx-3rcf": {
    "level": "watch",
@@ -1915,13 +1915,6 @@
    "kev": false,
    "at": "2026-11-25"
   },
-  "GHSA-hxcx-9h4f-42xx": {
-   "level": "check",
-   "reason": "Snipe-ITのAPIトークン経由で2FA回避。HIGH",
-   "todo": "Snipe-IT 8.7.0に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-hxh5-gp44-rc6p": {
    "level": "check",
    "reason": "mareformaのverify_bundleが主張ごとの署名を確かめない。HIGH",
@@ -2127,6 +2120,13 @@
    "kev": false,
    "at": "2026-11-14"
   },
+  "GHSA-mqg7-fw3f-mhp7": {
+   "level": "watch",
+   "reason": "TastyIgniterのファイルアップロードで保存型XSS。MEDIUM",
+   "todo": "tastyigniter/tastyigniter を 4.3.1 に更新",
+   "kev": false,
+   "at": "2026-11-26"
+  },
   "GHSA-mqwx-84vv-mp26": {
    "level": "watch",
    "reason": "October CMSのメディア切り抜きで拡張子制限を回避。MEDIUM",
@@ -2173,13 +2173,6 @@
    "level": "watch",
    "reason": "AdminNeoのSQLite関連RCE。MEDIUM",
    "todo": "AdminNeo 5.5.1に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
-  "GHSA-p9h3-gvpq-5539": {
-   "level": "check",
-   "reason": "Snipe-ITのカスタムフィールド名で格納型XSS。HIGH",
-   "todo": "Snipe-IT 8.7.0に更新",
    "kev": false,
    "at": "2026-11-02"
   },
@@ -2497,6 +2490,13 @@
    "todo": "1.4.1 に更新",
    "kev": false,
    "at": "2026-11-11"
+  },
+  "GHSA-rj59-9f77-mvg5": {
+   "level": "check",
+   "reason": "TastyIgniterのメディアアップロードでパストラバーサル。HIGH",
+   "todo": "tastyigniter/tastyigniter を 4.3.1 に更新",
+   "kev": false,
+   "at": "2026-11-26"
   },
   "GHSA-rqp5-r3wg-vg35": {
    "level": "watch",
