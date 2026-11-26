@@ -7,11 +7,11 @@
 <updated>2026-11-25T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>Node.js: @waline/client vulnerable to stored XSS through unsanitized comment edit previews (CRITICAL)</title>
+<title>[要確認] Node.js: @waline/client vulnerable to stored XSS through unsanitized comment edit previews (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-crj3-q72p-ggqm"/>
 <id>urn:bug-hou:GHSA-crj3-q72p-ggqm</id>
 <updated>2026-11-25T00:00:00Z</updated>
-<content type="html">&lt;p&gt;@waline/client &amp;lt;= 3.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-64670&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; @waline/clientのコメント編集プレビューで保存型XSS。利用者の少ないパッケージのCRITICAL&lt;br&gt;→ 修正版はまだない。3.16.2以下を使っているか確認&lt;/p&gt;&lt;p&gt;@waline/client &amp;lt;= 3.16.2&lt;/p&gt;&lt;p&gt;CVE-2026-64670&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: ruflo MCP bridge allows unauthenticated remote code execution in default Docker Compose deployments (CRITICAL)</title>
@@ -35,11 +35,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; i18nextのdeepExtendで組み込みオブジェクトが壊されるDoS。MEDIUM&lt;br&gt;→ i18nextを使っていれば26.3.4に更新&lt;/p&gt;&lt;p&gt;i18next &amp;lt; 26.3.4 → 26.3.4&lt;/p&gt;&lt;p&gt;CVE-2026-63402&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[要確認] Node.js: Xen Orchestra: Empty-object login token (CRITICAL) ⚠KEV</title>
+<title>[要対応] Node.js: Xen Orchestra: Empty-object login token (CRITICAL) ⚠KEV</title>
 <link href="https://github.com/advisories/GHSA-2r3w-c2vx-fv5g"/>
 <id>urn:bug-hou:GHSA-2r3w-c2vx-fv5g</id>
 <updated>2026-11-23T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; Xen Orchestraのログイン用トークンの不備。利用者の限られるパッケージのCRITICAL&lt;br&gt;→ xo-serverを使っているか確認。修正版はまだ書かれていない&lt;/p&gt;&lt;p&gt;xo-server &amp;lt;= 5.7.4&lt;/p&gt;&lt;p&gt;CVE-2026-133469&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; Xen Orchestra（xo-server）のログイン用トークンの問題でKEV掲載&lt;br&gt;→ 修正版の情報はまだない。5.7.4以下を使っていれば外から触れないようにする&lt;/p&gt;&lt;p&gt;xo-server &amp;lt;= 5.7.4&lt;/p&gt;&lt;p&gt;CVE-2026-133469&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[要確認] Node.js: Aedes has Uncaught Exception and Uncontrolled Resource Consumption (HIGH)</title>

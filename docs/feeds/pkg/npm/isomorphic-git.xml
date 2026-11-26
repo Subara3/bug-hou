@@ -14,11 +14,11 @@
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; isomorphic-gitでメモリを使い切らせるDoS。MEDIUM&lt;br&gt;→ isomorphic-gitを使っていれば1.38.6に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt; 1.38.6 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63476&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] npm: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout (MEDIUM)</title>
+<title>npm: isomorphic-git: Path traversal via a ".." tree-entry name writes files outside the working directory on clone/checkout (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-cw2g-2vwq-88w6"/>
 <id>urn:bug-hou:GHSA-cw2g-2vwq-88w6</id>
 <updated>2026-11-09T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。cloneやcheckoutで作業ディレクトリの外にファイルを書かれる&lt;br&gt;→ isomorphic-git を 1.38.6 以降に更新&lt;/p&gt;&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63478&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;isomorphic-git &amp;lt;= 1.38.5 → 1.38.6&lt;/p&gt;&lt;p&gt;CVE-2026-63478&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>npm: isomorphic-git: Arbitrary file write outside of working tree via directory symlink during checkout (potential RCE) (HIGH)</title>
