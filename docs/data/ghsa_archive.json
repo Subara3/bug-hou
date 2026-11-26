@@ -57,6 +57,82 @@
   ]
  },
  {
+  "id": "GHSA-rj59-9f77-mvg5",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-69181",
+  "summary": "TastyIgniter permits Path Traversal in Media Upload",
+  "severity": "HIGH",
+  "score": 7.6,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:H/A:N",
+  "published": "2026-11-25",
+  "url": "https://github.com/advisories/GHSA-rj59-9f77-mvg5",
+  "kev": false,
+  "packages": [
+   {
+    "name": "tastyigniter/tastyigniter",
+    "range": "< 4.3.1",
+    "fixed": "4.3.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-7wwv-x6mc-pxqx",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-69179",
+  "summary": "TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+  "severity": "CRITICAL",
+  "score": 9.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+  "published": "2026-11-25",
+  "url": "https://github.com/advisories/GHSA-7wwv-x6mc-pxqx",
+  "kev": false,
+  "packages": [
+   {
+    "name": "tastyigniter/tastyigniter",
+    "range": "< 4.3.1",
+    "fixed": "4.3.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-743w-g9pf-8p94",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-69178",
+  "summary": "TastyIgniter mail template editor allows remote code execution via server-side template injection",
+  "severity": "CRITICAL",
+  "score": 9.1,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+  "published": "2026-11-25",
+  "url": "https://github.com/advisories/GHSA-743w-g9pf-8p94",
+  "kev": false,
+  "packages": [
+   {
+    "name": "tastyigniter/tastyigniter",
+    "range": "< 4.3.1",
+    "fixed": "4.3.1"
+   }
+  ]
+ },
+ {
+  "id": "GHSA-mqg7-fw3f-mhp7",
+  "ecosystem": "composer",
+  "cve": "CVE-2026-69177",
+  "summary": "TastyIgniter allows stored XSS via file upload",
+  "severity": "MEDIUM",
+  "score": 6.8,
+  "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+  "published": "2026-11-25",
+  "url": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7",
+  "kev": false,
+  "packages": [
+   {
+    "name": "tastyigniter/tastyigniter",
+    "range": "< 4.3.1",
+    "fixed": "4.3.1"
+   }
+  ]
+ },
+ {
   "id": "GHSA-g9x9-q7qj-6mv5",
   "ecosystem": "composer",
   "cve": "CVE-2026-63305",

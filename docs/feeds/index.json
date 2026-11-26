@@ -57,6 +57,7 @@
 "symfony/http-foundation": "pkg/composer/symfony__http-foundation.xml",
 "symfony/symfony": "pkg/composer/symfony__symfony.xml",
 "symfony/yaml": "pkg/composer/symfony__yaml.xml",
+"tastyigniter/tastyigniter": "pkg/composer/tastyigniter__tastyigniter.xml",
 "thorsten/phpmyfaq": "pkg/composer/thorsten__phpmyfaq.xml",
 "tinymce": "pkg/composer/tinymce.xml",
 "tinymce/tinymce": "pkg/composer/tinymce__tinymce.xml",

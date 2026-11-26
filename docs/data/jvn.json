@@ -1,5 +1,19 @@
 [
  {
+  "id": "JVN#16383801",
+  "title": "Androidアプリ「東京消防庁公式アプリ」におけるパストラバーサルの脆弱性",
+  "url": "https://jvn.jp/jp/JVN16383801/",
+  "desc": "東京消防庁が提供するAndroidアプリ「東京消防庁公式アプリ」には、パストラバーサルの脆弱性が存在します。",
+  "date": "2026-11-26"
+ },
+ {
+  "id": "JVN#25972114",
+  "title": "baserCMSにおける複数の脆弱性",
+  "url": "https://jvn.jp/jp/JVN25972114/",
+  "desc": "baserCMSユーザー会が提供するbaserCMSには、複数の脆弱性が存在します。",
+  "date": "2026-11-26"
+ },
+ {
   "id": "JVNVU#98354779",
   "title": "Siemens製品に対するアップデート（2026年11月）",
   "url": "https://jvn.jp/vu/JVNVU98354779/",

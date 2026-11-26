@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T21:44:20Z",
+ "updated_at": "2026-11-26T08:22:12Z",
  "items": {
   "CVE-2025-1218": {
    "u": "later",
@@ -365,15 +365,26 @@
    "pct": 0.7603
   },
   "CVE-2026-126714": {
-   "u": "later",
+   "u": "soon",
    "exp": "none",
    "exp_src": "CISA",
-   "auto": "no",
+   "auto": "yes",
    "auto_src": "CISA",
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.3377,
-   "pct": 0.9877
+   "pct": 0.9877,
+   "hist": [
+    {
+     "at": "2026-11-26",
+     "from": "later",
+     "to": "soon",
+     "why": [
+      "auto:no>yes"
+     ],
+     "src": ""
+    }
+   ]
   },
   "CVE-2026-127960": {
    "u": "later",
@@ -409,26 +420,48 @@
    "pct": 0.1722
   },
   "CVE-2026-129182": {
-   "u": "later",
+   "u": "soon",
    "exp": "none",
    "exp_src": "CISA",
-   "auto": "no",
+   "auto": "yes",
    "auto_src": "CISA",
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.0067,
-   "pct": 0.4703
+   "pct": 0.4703,
+   "hist": [
+    {
+     "at": "2026-11-26",
+     "from": "later",
+     "to": "soon",
+     "why": [
+      "auto:no>yes"
+     ],
+     "src": ""
+    }
+   ]
   },
   "CVE-2026-129289": {
-   "u": "later",
+   "u": "soon",
    "exp": "none",
    "exp_src": "CISA",
-   "auto": "no",
+   "auto": "yes",
    "auto_src": "CISA",
    "imp": "total",
    "imp_src": "CISA",
    "epss": 0.2479,
-   "pct": 0.9837
+   "pct": 0.9837,
+   "hist": [
+    {
+     "at": "2026-11-26",
+     "from": "later",
+     "to": "soon",
+     "why": [
+      "auto:no>yes"
+     ],
+     "src": ""
+    }
+   ]
   },
   "CVE-2026-129291": {
    "u": "later",
@@ -1374,17 +1407,6 @@
    "epss": 0.0028,
    "pct": 0.1322
   },
-  "GHSA-396x-xmvh-p563": {
-   "u": "soon",
-   "exp": "poc",
-   "exp_src": "CISA",
-   "auto": "no",
-   "auto_src": "CISA",
-   "imp": "total",
-   "imp_src": "CISA",
-   "epss": 0.0036,
-   "pct": 0.221
-  },
   "GHSA-3g82-77xr-68x5": {
    "u": "soon",
    "exp": "poc",
@@ -1589,17 +1611,6 @@
    "imp_src": "CISA",
    "epss": 0.0023,
    "pct": 0.0867
-  },
-  "GHSA-4f5f-j737-pm58": {
-   "u": "later",
-   "exp": "poc",
-   "exp_src": "CISA",
-   "auto": "no",
-   "auto_src": "CISA",
-   "imp": "partial",
-   "imp_src": "CISA",
-   "epss": 0.0039,
-   "pct": 0.2457
   },
   "GHSA-4h7h-rv7c-7m2v": {
    "u": "later",
@@ -2077,6 +2088,15 @@
    "epss": 0.0024,
    "pct": 0.0922
   },
+  "GHSA-743w-g9pf-8p94": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "",
+   "auto": "no",
+   "auto_src": "CVSS",
+   "imp": "total",
+   "imp_src": "CVSS"
+  },
   "GHSA-752m-7p75-49gf": {
    "u": "later",
    "exp": "poc",
@@ -2212,6 +2232,15 @@
    "auto": "yes",
    "auto_src": "CVSS",
    "imp": "partial",
+   "imp_src": "CVSS"
+  },
+  "GHSA-7wwv-x6mc-pxqx": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "",
+   "auto": "no",
+   "auto_src": "CVSS",
+   "imp": "total",
    "imp_src": "CVSS"
   },
   "GHSA-828w-6qgx-3rcf": {
@@ -3051,17 +3080,6 @@
    "epss": 0.0062,
    "pct": 0.4411
   },
-  "GHSA-hxcx-9h4f-42xx": {
-   "u": "later",
-   "exp": "none",
-   "exp_src": "CISA",
-   "auto": "no",
-   "auto_src": "CISA",
-   "imp": "total",
-   "imp_src": "CISA",
-   "epss": 0.0048,
-   "pct": 0.3375
-  },
   "GHSA-hxh5-gp44-rc6p": {
    "u": "later",
    "exp": "none",
@@ -3435,6 +3453,15 @@
    "epss": 0.0043,
    "pct": 0.2898
   },
+  "GHSA-mqg7-fw3f-mhp7": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "",
+   "auto": "no",
+   "auto_src": "CVSS",
+   "imp": "partial",
+   "imp_src": "CVSS"
+  },
   "GHSA-mqwx-84vv-mp26": {
    "u": "later",
    "exp": "none",
@@ -3520,17 +3547,6 @@
    "auto_src": "CVSS",
    "imp": "partial",
    "imp_src": "CVSS"
-  },
-  "GHSA-p9h3-gvpq-5539": {
-   "u": "soon",
-   "exp": "poc",
-   "exp_src": "CISA",
-   "auto": "no",
-   "auto_src": "CISA",
-   "imp": "total",
-   "imp_src": "CISA",
-   "epss": 0.0054,
-   "pct": 0.3894
   },
   "GHSA-pc58-hwjq-p385": {
    "u": "later",
@@ -4060,6 +4076,15 @@
    "imp_src": "CISA",
    "epss": 0.0066,
    "pct": 0.4675
+  },
+  "GHSA-rj59-9f77-mvg5": {
+   "u": "later",
+   "exp": "none",
+   "exp_src": "",
+   "auto": "no",
+   "auto_src": "CVSS",
+   "imp": "partial",
+   "imp_src": "CVSS"
   },
   "GHSA-rqp5-r3wg-vg35": {
    "u": "later",

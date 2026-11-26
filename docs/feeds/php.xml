@@ -4,8 +4,36 @@
 <link href="https://subara3.github.io/bug-hou/#php"/>
 <link rel="self" href="https://subara3.github.io/bug-hou/feeds/php.xml"/>
 <id>https://subara3.github.io/bug-hou/feeds/php.xml</id>
-<updated>2026-11-25T00:00:00Z</updated>
+<updated>2026-11-26T00:00:00Z</updated>
 <author><name>バグ報</name></author>
+<entry>
+<title>PHP: TastyIgniter permits Path Traversal in Media Upload (HIGH)</title>
+<link href="https://github.com/advisories/GHSA-rj59-9f77-mvg5"/>
+<id>urn:bug-hou:GHSA-rj59-9f77-mvg5</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69181&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: TastyIgniter allows stored XSS via file upload (MEDIUM)</title>
+<link href="https://github.com/advisories/GHSA-mqg7-fw3f-mhp7"/>
+<id>urn:bug-hou:GHSA-mqg7-fw3f-mhp7</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69177&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-7wwv-x6mc-pxqx"/>
+<id>urn:bug-hou:GHSA-7wwv-x6mc-pxqx</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69179&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>PHP: TastyIgniter mail template editor allows remote code execution via server-side template injection (CRITICAL)</title>
+<link href="https://github.com/advisories/GHSA-743w-g9pf-8p94"/>
+<id>urn:bug-hou:GHSA-743w-g9pf-8p94</id>
+<updated>2026-11-26T00:00:00Z</updated>
+<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69178&lt;/p&gt;</content>
+</entry>
 <entry>
 <title>[様子見] PHP: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-hq9r-72jq-2pxp"/>
@@ -395,33 +423,5 @@ This issue affects PHP versions before 8.2.36, 8.3.* before 8.3.37, 8.4.* before
 <id>urn:bug-hou:GHSA-w553-pwx6-3mg9</id>
 <updated>2026-11-17T00:00:00Z</updated>
 <content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; lightsamlのHIGH。署名ラッピングで署名の検証をすり抜けられる&lt;br&gt;→ litesaml/lightsamlを5.0.1または4.7.1に更新&lt;/p&gt;&lt;p&gt;litesaml/lightsaml &amp;gt;= 5.0.0, &amp;lt; 5.0.1 → 5.0.1, litesaml/lightsaml &amp;gt;= 4.0.0, &amp;lt; 4.7.1 → 4.7.1&lt;/p&gt;&lt;p&gt;CVE-2026-63182&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Silverstripe Framework: CMS_ACCESS_SecurityAdmin privilege escalation (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-rg72-5958-c65m"/>
-<id>urn:bug-hou:GHSA-rg72-5958-c65m</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。CMS_ACCESS_SecurityAdmin権限を持つ人による権限昇格&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91112&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: Silverstripe Framework: XSS via XHTML data URI (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-qqrg-8jpm-8mph"/>
-<id>urn:bug-hou:GHSA-qqrg-8jpm-8mph</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; MEDIUM。XHTMLのdata URIを使ったXSS&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-88987&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[様子見] PHP: EGroupware: User-Controlled Identity Provider Selection in SAML Authentication (MEDIUM)</title>
-<link href="https://github.com/advisories/GHSA-pr4x-6fj4-gm4h"/>
-<id>urn:bug-hou:GHSA-pr4x-6fj4-gm4h</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; EGroupwareのSAML認証で利用者がIdPを選べてしまう。MEDIUM&lt;br&gt;→ 使っているなら23.1.20260601 / 26.6.20260616 に更新&lt;/p&gt;&lt;p&gt;egroupware/egroupware &amp;lt; 23.1.20260601 → 23.1.20260601, egroupware/egroupware &amp;gt;= 26.0.20251208, &amp;lt; 26.6.20260616 → 26.6.20260616&lt;/p&gt;&lt;p&gt;CVE-2026-63672&lt;/p&gt;</content>
-</entry>
-<entry>
-<title>[要確認] PHP: Silverstripe Framework: RCE via i18nTextCollectorTask writer parameter (HIGH)</title>
-<link href="https://github.com/advisories/GHSA-c94f-87xg-65wf"/>
-<id>urn:bug-hou:GHSA-c94f-87xg-65wf</id>
-<updated>2026-11-17T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; SilverstripeのHIGHのRCE。i18nTextCollectorTaskのwriter引数経由&lt;br&gt;→ silverstripe/frameworkを6.2.13に更新&lt;/p&gt;&lt;p&gt;silverstripe/framework &amp;gt;= 6.0.0, &amp;lt; 6.2.13 → 6.2.13&lt;/p&gt;&lt;p&gt;CVE-2026-91115&lt;/p&gt;</content>
 </entry>
 </feed>

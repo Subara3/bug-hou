@@ -955,6 +955,86 @@
  ],
  "ghsa": [
   {
+   "id": "GHSA-rj59-9f77-mvg5",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-69181",
+   "summary": "TastyIgniter permits Path Traversal in Media Upload",
+   "severity": "HIGH",
+   "score": 7.6,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:H/A:N",
+   "published": "2026-11-25",
+   "url": "https://github.com/advisories/GHSA-rj59-9f77-mvg5",
+   "kev": false,
+   "packages": [
+    {
+     "name": "tastyigniter/tastyigniter",
+     "range": "< 4.3.1",
+     "fixed": "4.3.1"
+    }
+   ],
+   "first_seen": "2026-11-26"
+  },
+  {
+   "id": "GHSA-7wwv-x6mc-pxqx",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-69179",
+   "summary": "TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager",
+   "severity": "CRITICAL",
+   "score": 9.1,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+   "published": "2026-11-25",
+   "url": "https://github.com/advisories/GHSA-7wwv-x6mc-pxqx",
+   "kev": false,
+   "packages": [
+    {
+     "name": "tastyigniter/tastyigniter",
+     "range": "< 4.3.1",
+     "fixed": "4.3.1"
+    }
+   ],
+   "first_seen": "2026-11-26"
+  },
+  {
+   "id": "GHSA-743w-g9pf-8p94",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-69178",
+   "summary": "TastyIgniter mail template editor allows remote code execution via server-side template injection",
+   "severity": "CRITICAL",
+   "score": 9.1,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H",
+   "published": "2026-11-25",
+   "url": "https://github.com/advisories/GHSA-743w-g9pf-8p94",
+   "kev": false,
+   "packages": [
+    {
+     "name": "tastyigniter/tastyigniter",
+     "range": "< 4.3.1",
+     "fixed": "4.3.1"
+    }
+   ],
+   "first_seen": "2026-11-26"
+  },
+  {
+   "id": "GHSA-mqg7-fw3f-mhp7",
+   "ecosystem": "composer",
+   "cve": "CVE-2026-69177",
+   "summary": "TastyIgniter allows stored XSS via file upload",
+   "severity": "MEDIUM",
+   "score": 6.8,
+   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+   "published": "2026-11-25",
+   "url": "https://github.com/advisories/GHSA-mqg7-fw3f-mhp7",
+   "kev": false,
+   "packages": [
+    {
+     "name": "tastyigniter/tastyigniter",
+     "range": "< 4.3.1",
+     "fixed": "4.3.1"
+    }
+   ],
+   "first_seen": "2026-11-26"
+  },
+  {
    "id": "GHSA-7fgc-3h6c-698r",
    "ecosystem": "composer",
    "cve": "CVE-2026-65971",
@@ -3245,86 +3325,6 @@
      "name": "phpmyfaq/phpmyfaq",
      "range": "< 4.2.0-alpha",
      "fixed": "4.2.0-alpha"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-396x-xmvh-p563",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-63498",
-   "summary": "Snipe-IT: Stored XSS via Inline XML Rendering in the Uploaded Files API",
-   "severity": "HIGH",
-   "score": 8.7,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:N",
-   "published": "2026-09-24",
-   "url": "https://github.com/advisories/GHSA-396x-xmvh-p563",
-   "kev": false,
-   "packages": [
-    {
-     "name": "snipe/snipe-it",
-     "range": "< 8.7.0",
-     "fixed": "8.7.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-p9h3-gvpq-5539",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-62368",
-   "summary": "Snipe-IT: Stored XSS via Custom Field name in asset-list column headers",
-   "severity": "HIGH",
-   "score": 8.1,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:N",
-   "published": "2026-09-24",
-   "url": "https://github.com/advisories/GHSA-p9h3-gvpq-5539",
-   "kev": false,
-   "packages": [
-    {
-     "name": "snipe/snipe-it",
-     "range": "< 8.7.0",
-     "fixed": "8.7.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-hxcx-9h4f-42xx",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-63493",
-   "summary": "Snipe-IT: 2FA bypass via the API token flow",
-   "severity": "HIGH",
-   "score": 8.6,
-   "vector": "CVSS:4.0/AV:N/AC:L/AT:N/PR:L/UI:N/VC:H/VI:H/VA:N/SC:N/SI:N/SA:N",
-   "published": "2026-09-24",
-   "url": "https://github.com/advisories/GHSA-hxcx-9h4f-42xx",
-   "kev": false,
-   "packages": [
-    {
-     "name": "snipe/snipe-it",
-     "range": "< 8.7.0",
-     "fixed": "8.7.0"
-    }
-   ],
-   "first_seen": "0000-00-00"
-  },
-  {
-   "id": "GHSA-4f5f-j737-pm58",
-   "ecosystem": "composer",
-   "cve": "CVE-2026-62998",
-   "summary": "REDAXO: Unwhitelisted ORDER BY Column in rex_list Allows Authenticated Column Enumeration",
-   "severity": "MEDIUM",
-   "score": 4.3,
-   "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
-   "published": "2026-09-24",
-   "url": "https://github.com/advisories/GHSA-4f5f-j737-pm58",
-   "kev": false,
-   "packages": [
-    {
-     "name": "redaxo/source",
-     "range": "<= 5.21.1",
-     "fixed": "5.21.2"
     }
    ],
    "first_seen": "0000-00-00"
