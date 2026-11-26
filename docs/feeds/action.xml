@@ -37,7 +37,7 @@ Upgrading to a secure version of pip should be done either by first upgrading Py
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-126714"/>
 <id>urn:bug-hou:CVE-2026-126714</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体。標準のセッション保存で、書き込みが途中で切れるとログインなしでRCEになりうる。CRITICAL&lt;br&gt;→ 修正版のPHPに更新（対象版は説明文が途中で切れていて不明）&lt;/p&gt;&lt;p&gt;Partially overwritten session files can lead to remote code execution.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体。標準のセッション保存で書き込みが途中で切れると、ログインなしでRCEになりうる。CRITICAL&lt;br&gt;→ 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 以降に更新&lt;/p&gt;&lt;p&gt;Partially overwritten session files can lead to remote code execution.
 
 The files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and interrupt a write at a suitable point may inject objects, which can lead to code execution when the application contains a suitable gadget chain. Session data can also be corrupted.
 

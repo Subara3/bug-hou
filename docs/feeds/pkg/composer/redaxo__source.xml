@@ -28,10 +28,10 @@
 <content type="html">&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-63000&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>[様子見] composer: REDAXO: Unwhitelisted ORDER BY Column in rex_list Allows Authenticated Column Enumeration (MEDIUM)</title>
+<title>composer: REDAXO: Unwhitelisted ORDER BY Column in rex_list Allows Authenticated Column Enumeration (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-4f5f-j737-pm58"/>
 <id>urn:bug-hou:GHSA-4f5f-j737-pm58</id>
 <updated>2026-09-24T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; REDAXOで認証済み利用者がカラムを列挙。MEDIUM&lt;br&gt;→ REDAXO 5.21.2に更新&lt;/p&gt;&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-62998&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;redaxo/source &amp;lt;= 5.21.1 → 5.21.2&lt;/p&gt;&lt;p&gt;CVE-2026-62998&lt;/p&gt;</content>
 </entry>
 </feed>

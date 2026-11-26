@@ -7,32 +7,32 @@
 <updated>2026-11-26T00:00:00Z</updated>
 <author><name>バグ報</name></author>
 <entry>
-<title>PHP: TastyIgniter permits Path Traversal in Media Upload (HIGH)</title>
+<title>[要確認] PHP: TastyIgniter permits Path Traversal in Media Upload (HIGH)</title>
 <link href="https://github.com/advisories/GHSA-rj59-9f77-mvg5"/>
 <id>urn:bug-hou:GHSA-rj59-9f77-mvg5</id>
 <updated>2026-11-26T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69181&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; TastyIgniterのメディアアップロードでパストラバーサル。HIGH&lt;br&gt;→ tastyigniter/tastyigniter を 4.3.1 に更新&lt;/p&gt;&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69181&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: TastyIgniter allows stored XSS via file upload (MEDIUM)</title>
+<title>[様子見] PHP: TastyIgniter allows stored XSS via file upload (MEDIUM)</title>
 <link href="https://github.com/advisories/GHSA-mqg7-fw3f-mhp7"/>
 <id>urn:bug-hou:GHSA-mqg7-fw3f-mhp7</id>
 <updated>2026-11-26T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69177&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：様子見&lt;/b&gt; TastyIgniterのファイルアップロードで保存型XSS。MEDIUM&lt;br&gt;→ tastyigniter/tastyigniter を 4.3.1 に更新&lt;/p&gt;&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69177&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager (CRITICAL)</title>
+<title>[要確認] PHP: TastyIgniter allows Remote Code Execution (RCE) via Unrestricted file upload in Media Manager (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-7wwv-x6mc-pxqx"/>
 <id>urn:bug-hou:GHSA-7wwv-x6mc-pxqx</id>
 <updated>2026-11-26T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69179&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないTastyIgniterのCRITICAL。メディア管理のファイルアップロードでRCE&lt;br&gt;→ tastyigniter/tastyigniter を 4.3.1 に更新&lt;/p&gt;&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69179&lt;/p&gt;</content>
 </entry>
 <entry>
-<title>PHP: TastyIgniter mail template editor allows remote code execution via server-side template injection (CRITICAL)</title>
+<title>[要確認] PHP: TastyIgniter mail template editor allows remote code execution via server-side template injection (CRITICAL)</title>
 <link href="https://github.com/advisories/GHSA-743w-g9pf-8p94"/>
 <id>urn:bug-hou:GHSA-743w-g9pf-8p94</id>
 <updated>2026-11-26T00:00:00Z</updated>
-<content type="html">&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69178&lt;/p&gt;</content>
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要確認&lt;/b&gt; 利用者の少ないTastyIgniterのCRITICAL。メールテンプレート編集でRCE&lt;br&gt;→ tastyigniter/tastyigniter を 4.3.1 に更新&lt;/p&gt;&lt;p&gt;tastyigniter/tastyigniter &amp;lt; 4.3.1 → 4.3.1&lt;/p&gt;&lt;p&gt;CVE-2026-69178&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>[様子見] PHP: TwigView FileLoader may allow arbitrary file reads through user-controlled template paths (MEDIUM)</title>
@@ -386,7 +386,7 @@ This issue affects PHP versions from 8.1.32 through 8.1.34, from 8.2.28 before 8
 <link href="https://nvd.nist.gov/vuln/detail/CVE-2026-126714"/>
 <id>urn:bug-hou:CVE-2026-126714</id>
 <updated>2026-11-19T00:00:00Z</updated>
-<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体。標準のセッション保存で、書き込みが途中で切れるとログインなしでRCEになりうる。CRITICAL&lt;br&gt;→ 修正版のPHPに更新（対象版は説明文が途中で切れていて不明）&lt;/p&gt;&lt;p&gt;Partially overwritten session files can lead to remote code execution.
+<content type="html">&lt;p&gt;&lt;b&gt;Claudeの仕分け：要対応&lt;/b&gt; PHP本体。標準のセッション保存で書き込みが途中で切れると、ログインなしでRCEになりうる。CRITICAL&lt;br&gt;→ 8.2.36 / 8.3.37 / 8.4.28 / 8.5.13 以降に更新&lt;/p&gt;&lt;p&gt;Partially overwritten session files can lead to remote code execution.
 
 The files session save handler, which is the default, writes updated session data into the existing session file without first clearing it. If a write is interrupted, the file can contain the beginning of the new session followed by the end of the old one, and bytes of an ordinary string can later be unserialized as objects. An attacker who can influence the session data, for example through session upload progress, and interrupt a write at a suitable point may inject objects, which can lead to code execution when the application contains a suitable gadget chain. Session data can also be corrupted.
 
