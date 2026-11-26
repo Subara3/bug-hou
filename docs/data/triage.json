@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-25T12:46:12Z",
+ "updated_at": "2026-11-26T00:45:34Z",
  "items": {
   "CVE-2025-1218": {
    "level": "watch",
@@ -847,11 +847,21 @@
    "at": "2026-11-20"
   },
   "GHSA-2r3w-c2vx-fv5g": {
-   "level": "check",
-   "reason": "Xen Orchestraのログイン用トークンの不備。利用者の限られるパッケージのCRITICAL",
-   "todo": "xo-serverを使っているか確認。修正版はまだ書かれていない",
-   "kev": false,
-   "at": "2026-11-24"
+   "level": "action",
+   "reason": "Xen Orchestra（xo-server）のログイン用トークンの問題でKEV掲載",
+   "todo": "修正版の情報はまだない。5.7.4以下を使っていれば外から触れないようにする",
+   "kev": true,
+   "at": "2026-11-26",
+   "urgency": "now",
+   "comment": "Xen Orchestraを外に公開しているなら、今すぐ外から触れないようにしたほうがいい",
+   "hist": [
+    {
+     "at": "2026-11-26",
+     "from": "check",
+     "to": "action",
+     "kev": true
+    }
+   ]
   },
   "GHSA-2v3c-qxhr-7vpv": {
    "level": "check",
@@ -1105,13 +1115,6 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-584p-f93j-wpgc": {
-   "level": "check",
-   "reason": "Formieで認証なしに未完了の送信を上書き。HIGH",
-   "todo": "Formie 3.1.31/2.2.23に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-5974-gfqc-wrcm": {
    "level": "watch",
    "reason": "Contaoのテーブルアクセス判定の不備。MEDIUM",
@@ -1343,6 +1346,13 @@
    "kev": false,
    "at": "2026-11-02"
   },
+  "GHSA-7fgc-3h6c-698r": {
+   "level": "check",
+   "reason": "livewire-powergridのSQLインジェクション。利用者の限られるパッケージのHIGH",
+   "todo": "使っていれば6.10.4に更新",
+   "kev": false,
+   "at": "2026-11-26"
+  },
   "GHSA-7g44-g9rc-x53w": {
    "level": "watch",
    "reason": "入れ子のセレクタで呼び出しが深くなりすぎるMEDIUM",
@@ -1567,13 +1577,6 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-9rg8-2wvr-fgjh": {
-   "level": "check",
-   "reason": "Formieの通知再送で認可なく個人情報が見える。HIGH",
-   "todo": "Formie 3.1.31/2.2.23に更新",
-   "kev": false,
-   "at": "2026-11-02"
-  },
   "GHSA-9rjx-3jch-6vjf": {
    "level": "watch",
    "reason": "svg-sanitizeの回避で格納型XSS。MEDIUM",
@@ -1658,12 +1661,12 @@
    "kev": false,
    "at": "2026-11-20"
   },
-  "GHSA-cw2g-2vwq-88w6": {
-   "level": "watch",
-   "reason": "MEDIUM。cloneやcheckoutで作業ディレクトリの外にファイルを書かれる",
-   "todo": "isomorphic-git を 1.38.6 以降に更新",
+  "GHSA-crj3-q72p-ggqm": {
+   "level": "check",
+   "reason": "@waline/clientのコメント編集プレビューで保存型XSS。利用者の少ないパッケージのCRITICAL",
+   "todo": "修正版はまだない。3.16.2以下を使っているか確認",
    "kev": false,
-   "at": "2026-11-10"
+   "at": "2026-11-26"
   },
   "GHSA-cxf4-7mrp-vvpr": {
    "level": "watch",
@@ -1862,6 +1865,13 @@
    "todo": "contao/core-bundleを5.3.50または5.7.12に更新",
    "kev": false,
    "at": "2026-11-21"
+  },
+  "GHSA-h746-qpxh-ph7g": {
+   "level": "watch",
+   "reason": "laradocsのコマンドインジェクションでMEDIUM",
+   "todo": "使っていれば1.0.0に更新",
+   "kev": false,
+   "at": "2026-11-26"
   },
   "GHSA-h7c4-q426-7jh9": {
    "level": "watch",
