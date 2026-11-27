@@ -19,7 +19,7 @@
   {
    "id": "CVE-2026-111497",
    "published": "2026-10-22",
-   "modified": "2026-11-24",
+   "modified": "2026-11-27",
    "status": "Analyzed",
    "score": 9.2,
    "severity": "CRITICAL",
